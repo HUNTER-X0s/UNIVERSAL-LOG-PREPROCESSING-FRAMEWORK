@@ -26,9 +26,7 @@ class RawCaptureServiceTests(unittest.TestCase):
         return self.service.capture(
             RawCaptureInput(
                 payload=payload,
-                transport=TransportMetadata(
-                    protocol=TransportProtocol.HTTP, intake_id="test-http"
-                ),
+                transport=TransportMetadata(protocol=TransportProtocol.HTTP, intake_id="test-http"),
                 request_id="00000000-0000-0000-0000-000000000001",
                 correlation_id="00000000-0000-0000-0000-000000000002",
                 trace_id="0" * 32,
@@ -100,13 +98,23 @@ class HttpRawIntakeTests(unittest.TestCase):
 
         self.assertEqual(recovered.status_code, 200)
         self.assertEqual(recovered.content, payload)
-        self.assertEqual(recovered.headers["X-ULPF-Payload-SHA256"], hashlib.sha256(payload).hexdigest())
+        self.assertEqual(
+            recovered.headers["X-ULPF-Payload-SHA256"], hashlib.sha256(payload).hexdigest()
+        )
 
     def test_http_payload_above_event_limit_is_refused(self) -> None:
         response = self.client.post("/api/v1/intake/raw", content=b"x" * 1_025)
 
         self.assertEqual(response.status_code, 413)
         self.assertEqual(response.json()["code"], "intake_payload_too_large")
+
+    def test_http_headers_above_limit_are_refused_before_capture(self) -> None:
+        response = self.client.post(
+            "/api/v1/intake/raw", content=b"opaque", headers={"x-long": "x" * 2_000}
+        )
+
+        self.assertEqual(response.status_code, 431)
+        self.assertEqual(response.json()["code"], "intake_headers_too_large")
 
     def test_development_retrieval_requires_explicit_enablement(self) -> None:
         disabled_settings = AppSettings(
@@ -134,3 +142,17 @@ class HttpRawIntakeTests(unittest.TestCase):
             )
         self.assertEqual(denied.status_code, 401)
         self.assertEqual(accepted.status_code, 202)
+    def test_global_local_rate_limit_refuses_excess_request(self) -> None:
+        rate_settings = AppSettings(
+            environment="test",
+            service_name="ulpf-api-test",
+            intake_evidence_directory=Path(self._temporary_directory.name) / "rate",
+            intake_http_requests_per_minute=1,
+        )
+        with TestClient(create_app(rate_settings)) as client:
+            first = client.post("/api/v1/intake/raw", content=b"first")
+            second = client.post("/api/v1/intake/raw", content=b"second")
+        self.assertEqual(first.status_code, 202)
+        self.assertEqual(second.status_code, 429)
+        self.assertEqual(second.json()["code"], "intake_rate_limited")
+

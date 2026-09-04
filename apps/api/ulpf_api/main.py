@@ -1,4 +1,4 @@
-"""Process entrypoint for the Phase 1 API shell."""
+"""Process entrypoint for the Phase 2 raw-intake API."""
 
 import uvicorn
 from ulpf_platform.config import get_settings

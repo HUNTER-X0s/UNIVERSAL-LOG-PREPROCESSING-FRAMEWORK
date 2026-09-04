@@ -13,6 +13,7 @@ RUN useradd --create-home --uid 10001 ulpf \
     && pip install --no-cache-dir . \
     && chown -R ulpf:ulpf /app
 
+RUN mkdir -p /app/data/evidence && chown ulpf:ulpf /app/data/evidence
 USER 10001
 EXPOSE 8080
 

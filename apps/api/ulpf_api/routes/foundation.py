@@ -1,4 +1,4 @@
-"""Non-business API routes required by the Phase 1 foundation."""
+"""Health and metadata routes shared by the Phase 2 raw-intake service."""
 
 from datetime import UTC, datetime
 from typing import Literal
@@ -32,7 +32,7 @@ async def health(request: Request) -> HealthResponse:
 
 @router.get("/readiness", response_model=HealthResponse, summary="Foundation readiness")
 async def readiness(request: Request) -> HealthResponse:
-    """Confirm only Phase 1-local prerequisites; future stores are intentionally not checked."""
+    """Confirm local intake prerequisites; the durable object store remains deferred."""
     return _health(request, "ready")
 
 
@@ -44,13 +44,13 @@ async def liveness(request: Request) -> HealthResponse:
 
 @router.get("/metadata", response_model=MetadataResponse, summary="Foundation metadata")
 async def metadata(request: Request) -> MetadataResponse:
-    """Expose accurate foundation metadata without implying business capabilities."""
+    """Expose accurate capture capabilities without implying semantic processing."""
     settings = request.app.state.settings
     return MetadataResponse(
         service=settings.service_name,
         environment=settings.environment,
         api_version="v1",
-        phase="1",
-        capabilities=["health", "readiness", "liveness", "metadata", "openapi"],
-        deferred_capabilities=["ingestion", "parsing", "normalization", "streaming", "persistence"],
+        phase="2",
+        capabilities=["health", "readiness", "liveness", "metadata", "openapi", "raw_intake"],
+        deferred_capabilities=["parsing", "normalization", "streaming", "durable_object_storage"],
     )

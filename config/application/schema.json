@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ULPF Phase 1 application configuration",
+  "title": "ULPF Phase 2 application configuration",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -21,6 +21,71 @@
       "maximum": 16777216
     },
     "api_prefix": {
+    "intake_max_event_bytes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16777216
+    },
+    "intake_max_http_header_bytes": {
+      "type": "integer",
+      "minimum": 1024,
+      "maximum": 65536
+    },
+    "intake_http_requests_per_minute": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100000
+    },
+    "intake_tcp_enabled": {
+      "type": "boolean"
+    },
+    "intake_tcp_host": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "intake_tcp_port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "intake_udp_enabled": {
+      "type": "boolean"
+    },
+    "intake_udp_host": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "intake_udp_port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "intake_max_connections": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1024
+    },
+    "intake_read_timeout_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 60
+    },
+    "intake_evidence_directory": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intake_evidence_max_events": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "intake_evidence_max_bytes": {
+      "type": "integer",
+      "minimum": 1024
+    },
+    "intake_development_retrieval_enabled": {
       "type": "string",
       "pattern": "^/.*[^/]$"
     },

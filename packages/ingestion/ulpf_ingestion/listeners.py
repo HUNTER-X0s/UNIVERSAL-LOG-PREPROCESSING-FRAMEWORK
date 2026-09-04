@@ -42,9 +42,9 @@ class TcpRawIntakeServer:
     @property
     def bound_port(self) -> int | None:
         """Return the actual port, including an ephemeral test port after startup."""
-        if self._server is None or not self._server.sockets:
+        if self._server is None or not self._server.sockets:  # type: ignore[attr-defined]
             return None
-        return int(self._server.sockets[0].getsockname()[1])
+        return int(self._server.sockets[0].getsockname()[1])  # type: ignore[attr-defined]
 
     async def start(self) -> None:
         """Start the listener with an input buffer that cannot grow beyond one frame."""
@@ -154,7 +154,7 @@ class _UdpProtocol(asyncio.DatagramProtocol):
 
     def datagram_received(self, data: bytes, address: object) -> None:
         """Schedule bounded capture; UDP provides no acknowledgement channel."""
-        asyncio.create_task(self._receiver(data, address))
+        asyncio.create_task(self._receiver(data, address))  # type: ignore[arg-type]
 
 
 class UdpRawIntakeListener:

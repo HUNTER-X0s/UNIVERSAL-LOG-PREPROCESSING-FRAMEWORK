@@ -94,7 +94,9 @@ class RawCaptureService:
             )
             raise
 
-        validation = self._registry.validate("raw-event.v1.schema.json", stored.raw_event_contract)
+        validation = self._registry.validate(
+            "raw-event.v1.schema.json", dict(stored.raw_event_contract)
+        )
         if not validation.valid:
             self._metrics.increment("failed", capture_input.transport.protocol)
             self._logger.error(

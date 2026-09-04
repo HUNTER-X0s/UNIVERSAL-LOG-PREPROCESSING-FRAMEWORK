@@ -72,6 +72,12 @@ class InMemoryRawEventSink:
             self._used_bytes += envelope.payload_length
             return stored
 
+    @property
+    def event_ids(self) -> tuple[str, ...]:
+        """Return deterministic test receipt identities without exposing mutable records."""
+        with self._lock:
+            return tuple(sorted(self._events))
+
     def retrieve(self, event_id: str) -> EvidenceRecord:
         """Return exact test bytes after independently checking their SHA-256 value."""
         with self._lock:

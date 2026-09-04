@@ -1,4 +1,4 @@
-"""FastAPI composition root for the ULPF foundation."""
+"""FastAPI composition root for the Phase 2 raw-intake service."""
 
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
@@ -23,7 +23,7 @@ from ulpf_api.routes.intake import router as intake_router
 
 
 def create_app(settings: AppSettings | None = None) -> FastAPI:
-    """Create the API shell without initializing future data-plane dependencies."""
+    """Create the API with raw capture and without parser or stream dependencies."""
     resolved_settings = settings or get_settings()
     configure_logging(resolved_settings)
     logger = get_logger("api.lifecycle")
@@ -38,9 +38,10 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
         finally:
             await intake_runtime.stop()
 
+            logger.info("service_stopped", extra={"component": "api"})
     app = FastAPI(
-        title="ULPF Foundation API",
-        description="Phase 1 health and metadata foundation only.",
+        title="ULPF Raw Intake API",
+        description="Phase 2 opaque raw-event capture; parsing and normalization are deferred.",
         version="0.1.0",
         docs_url=f"{resolved_settings.api_prefix}/docs"
         if resolved_settings.api_documentation_enabled

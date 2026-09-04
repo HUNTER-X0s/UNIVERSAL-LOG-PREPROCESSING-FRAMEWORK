@@ -55,19 +55,17 @@ class ContractRegistry:
         for schema in self._schemas.values():
             Draft202012Validator.check_schema(schema)
 
-    def _load_schemas(self) -> dict[str, dict[str, Any]]:
     @staticmethod
     def _default_schema_directory() -> Path:
         """Resolve source-tree schemas first, then a container/check-out working directory."""
-        source_tree_candidate = (
-            Path(__file__).resolve().parents[3] / "contracts" / "jsonschema"
-        )
+        source_tree_candidate = Path(__file__).resolve().parents[3] / "contracts" / "jsonschema"
         working_directory_candidate = Path.cwd() / "contracts" / "jsonschema"
         for candidate in (source_tree_candidate, working_directory_candidate):
             if candidate.is_dir():
                 return candidate
         return source_tree_candidate
 
+    def _load_schemas(self) -> dict[str, dict[str, Any]]:
         if not self._schema_directory.is_dir():
             raise FileNotFoundError(
                 f"ULPF contract directory does not exist: {self._schema_directory}"

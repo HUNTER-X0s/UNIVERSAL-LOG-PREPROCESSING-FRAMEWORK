@@ -2,7 +2,7 @@
 
 **SIH26156 | National Technical Research Organisation (NTRO)**
 
-This repository contains the frozen **Phase 0 architecture baseline** and a runnable **Phase 1 engineering foundation**. It deliberately contains no ULPF business pipeline implementation, deployed service, parser, benchmark result, or claimed integration.
+This repository contains the frozen **Phase 0 architecture baseline**, Phase 1 foundation, and a runnable **Phase 2 raw-intake boundary**. It captures bounded opaque bytes and receipt metadata; it deliberately contains no parser, normalizer, benchmark result, or claimed external integration.
 
 ULPF is designed as a vendor-agnostic, lossless, traceable, air-gapped preprocessing fabric for heterogeneous perimeter-security telemetry. It preserves source evidence, extracts source-specific fields, creates a versioned ULPF Universal Canonical Event (UCE), and produces controlled interoperability projections for downstream SIEM, data-lake, analytics, and ML consumers.
 
@@ -24,11 +24,11 @@ Phase 0 is complete only when the architecture documents have passed the archite
 
 No dataset, throughput, vendor-support, security-certification, or production-deployment claim should be inferred from this repository.
 
-## Phase 1 status
+## Phase 2 status
 
-**Implemented:** repository structure; Python API and worker shells; typed non-secret configuration; structured logging; correlation/error/safety middleware; health, readiness, liveness, metadata, and OpenAPI foundation; JSON Schema registry and fixtures; tests; lint/format/type/security/boundary/documentation/build checks; local OCI/Compose foundation; CI definition; developer and air-gap guidance.
+**Implemented:** Phase 1 foundation plus bounded HTTP raw capture, optional TCP/UDP listeners, fixture-file intake, exact byte preservation, SHA-256 receipt fingerprinting, frozen RawEvent projection, local development evidence fallback, truthful 202 Captured acknowledgements, configured size/header/rate/auth boundaries, and local transport tests.
 
-**Planned / future:** all ULPF business capabilities, including ingestion, parsing, normalization, evidence persistence, Kafka, data stores, AI onboarding, replay, SIEM/data-lake adapters, and the React operational console.
+**Planned / future:** semantic parsing, normalization, durable S3-compatible evidence storage, Kafka, governance data stores, AI onboarding, replay, SIEM/data-lake adapters, and the React operational console.
 
 ## Quick start
 

@@ -17,3 +17,8 @@ services:
       - /tmp
     security_opt:
       - no-new-privileges:true
+    volumes:
+      - ulpf_evidence:/app/data/evidence
+
+volumes:
+  ulpf_evidence:

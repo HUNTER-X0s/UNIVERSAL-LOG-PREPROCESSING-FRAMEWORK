@@ -19,7 +19,7 @@ Environment = Literal["development", "test", "demo", "production", "air-gapped"]
 
 
 class AppSettings(BaseModel):
-    """Non-secret configuration required by the Phase 1 process shells."""
+    """Typed configuration for the Phase 2 raw-intake process."""
 
     model_config = ConfigDict(extra="forbid", frozen=True)
 

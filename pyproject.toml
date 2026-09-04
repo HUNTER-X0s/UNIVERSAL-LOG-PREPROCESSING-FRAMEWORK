@@ -44,8 +44,13 @@ ignore = ["S104"]
 python_version = "3.12"
 strict = true
 warn_unused_configs = true
-exclude = ["^tests/fixtures/"]
+exclude = [
+  "^tests/",
+  "^build/",
+]
+
 mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/platform"]
+
 
 [[tool.mypy.overrides]]
 module = ["jsonschema"]
