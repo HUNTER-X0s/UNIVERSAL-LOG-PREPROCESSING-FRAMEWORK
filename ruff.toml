@@ -1,0 +1,12 @@
+target-version = "py312"
+line-length = 100
+extend-exclude = [".venv", "build", "dist"]
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+ignore = ["S104"]
+
+[lint.per-file-ignores]
+"tools/security_scan.py" = ["E501"]
+"tools/ulpf.py" = ["E501", "S603"]
+"tools/validate_contracts.py" = ["E402"]

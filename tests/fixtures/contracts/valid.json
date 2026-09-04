@@ -1,0 +1,115 @@
+{
+  "audit-event.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "audit_event_id": "fixture-audit",
+    "occurred_at": "2026-01-01T00:00:00Z",
+    "actor": {"type": "test", "id": "fixture-actor"},
+    "action": "fixture.validate",
+    "outcome": "success",
+    "integrity": {"record_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+  },
+  "dlq-event.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "dlq_event_id": "fixture-dlq",
+    "raw_event_id": "fixture-raw",
+    "source_id": "fixture-source",
+    "evidence": {"payload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "evidence_manifest_id": "fixture-manifest"},
+    "artifact_context": {"parser_selection_status": "not_reached"},
+    "failure": {"code": "fixture_error", "stage": "foundation", "message": "synthetic fixture"},
+    "status": "queued",
+    "attempt_count": 0,
+    "failed_at": "2026-01-01T00:00:00Z",
+    "replay_eligible": false,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  "lineage.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "lineage_id": "fixture-lineage",
+    "raw_event_id": "fixture-raw",
+    "normalized_event_id": "fixture-event",
+    "source_id": "fixture-source",
+    "evidence": {"payload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "evidence_manifest_id": "fixture-manifest"},
+    "processing": {
+      "processing_run_id": "fixture-run",
+      "source_profile": {"id": "fixture-profile", "version": "1.0.0"},
+      "parser": {"id": "fixture-parser", "version": "1.0.0"},
+      "mapping": {"id": "fixture-mapping", "version": "1.0.0"},
+      "schema": {"id": "fixture-schema", "version": "1.0.0"}
+    },
+    "steps": [],
+    "recorded_at": "2026-01-01T00:00:00Z"
+  },
+  "mapping.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "mapping_id": "fixture-mapping",
+    "version": "1.0.0",
+    "source_schema": {"id": "fixture-source-schema", "version": "1.0.0"},
+    "target_schema": {"id": "fixture-uce-schema", "version": "1.0.0"},
+    "rules": [],
+    "status": "draft"
+  },
+  "normalized-event.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "event_id": "fixture-event",
+    "raw_event_id": "fixture-raw",
+    "source_id": "fixture-source",
+    "evidence": {"raw_event_id": "fixture-raw", "payload": {"uri": "memory://fixture", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "byte_length": 0}, "payload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "evidence_manifest_id": "fixture-manifest"},
+    "event": {"time": "2026-01-01T00:00:00Z", "category": "fixture", "type": "foundation", "source": {}, "metadata": {}},
+    "processing": {"processing_run_id": "fixture-run", "source_profile": {"id": "fixture-profile", "version": "1.0.0"}, "parser": {"id": "fixture-parser", "version": "1.0.0"}, "mapping": {"id": "fixture-mapping", "version": "1.0.0"}, "schema": {"id": "fixture-schema", "version": "1.0.0"}, "processed_at": "2026-01-01T00:00:00Z"},
+    "lineage": {"uri": "memory://fixture-lineage", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "byte_length": 0}
+  },
+  "parsed-event.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "parsed_event_id": "fixture-parsed",
+    "raw_event_id": "fixture-raw",
+    "source_id": "fixture-source",
+    "source_resolution": {"status": "unknown"},
+    "parser": {"id": "fixture-parser", "version": "1.0.0"},
+    "status": "parsed",
+    "fields": {},
+    "processed_at": "2026-01-01T00:00:00Z"
+  },
+  "parser.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "parser_id": "fixture-parser",
+    "version": "1.0.0",
+    "status": "draft",
+    "compatibility": {"formats": [], "uce_schema_version": "1.0.0"},
+    "artifact": {"uri": "memory://fixture-parser", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "byte_length": 0},
+    "integrity": {"content_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "signature_status": "unsigned"}
+  },
+  "raw-event.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "raw_event_id": "fixture-raw",
+    "source_id": "fixture-source",
+    "ingested_at": "2026-01-01T00:00:00Z",
+    "payload": {"uri": "memory://fixture-raw", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "byte_length": 0},
+    "integrity": {"payload_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "capture_status": "complete"}
+  },
+  "replay-job.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "replay_job_id": "fixture-replay",
+    "requested_by": "fixture-actor",
+    "scope": {"mode": "sample", "sample_size": 1},
+    "target_versions": {"parser": {"id": "fixture-parser", "version": "1.0.0"}, "mapping": {"id": "fixture-mapping", "version": "1.0.0"}, "schema": {"id": "fixture-schema", "version": "1.0.0"}},
+    "status": "queued",
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  "schema.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "schema_id": "fixture-schema",
+    "version": "1.0.0",
+    "kind": "ulpf",
+    "artifact": {"uri": "memory://fixture-schema", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "byte_length": 0},
+    "compatibility": {"policy": "backward"},
+    "status": "draft"
+  },
+  "source.v1.schema.json": {
+    "contract_version": "1.0.0",
+    "source_id": "fixture-source",
+    "name": "Synthetic foundation fixture",
+    "lifecycle_state": "draft",
+    "profile": {"version": "1.0.0", "vendor": "synthetic", "product": "fixture", "expected_formats": ["synthetic"]}
+  },
+  "ulpf-common.v1.schema.json": {"definition": "identifier", "instance": "fixture-id"}
+}

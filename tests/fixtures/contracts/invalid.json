@@ -1,0 +1,14 @@
+{
+  "audit-event.v1.schema.json": {},
+  "dlq-event.v1.schema.json": {},
+  "lineage.v1.schema.json": {},
+  "mapping.v1.schema.json": {},
+  "normalized-event.v1.schema.json": {},
+  "parsed-event.v1.schema.json": {},
+  "parser.v1.schema.json": {},
+  "raw-event.v1.schema.json": {},
+  "replay-job.v1.schema.json": {},
+  "schema.v1.schema.json": {},
+  "source.v1.schema.json": {},
+  "ulpf-common.v1.schema.json": {"definition": "identifier", "instance": ""}
+}

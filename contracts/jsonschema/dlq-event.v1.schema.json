@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/dlq-event.v1.schema.json",
+  "title": "ULPF DLQEvent v1",
+  "type": "object",
+  "required": ["contract_version", "dlq_event_id", "raw_event_id", "source_id", "evidence", "artifact_context", "failure", "status", "attempt_count", "failed_at", "replay_eligible", "created_at"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "dlq_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "evidence": {
+      "type": "object",
+      "required": ["payload_sha256", "evidence_manifest_id"],
+      "properties": {
+        "payload_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" },
+        "evidence_manifest_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+      },
+      "additionalProperties": false
+    },
+    "artifact_context": {
+      "type": "object",
+      "required": ["parser_selection_status"],
+      "properties": {
+        "parser_selection_status": { "type": "string", "enum": ["selected", "not_selected", "not_reached", "unknown_source"] },
+        "source_profile": { "$ref": "ulpf-common.v1.schema.json#/$defs/nullableVersionedReference" },
+        "parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/nullableVersionedReference" },
+        "mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/nullableVersionedReference" },
+        "schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/nullableVersionedReference" },
+        "processing_run_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+      },
+      "additionalProperties": false
+    },
+    "failure": { "$ref": "ulpf-common.v1.schema.json#/$defs/error" },
+    "status": { "type": "string", "enum": ["queued", "quarantined", "replayed", "resolved", "expired"] },
+    "attempt_count": { "type": "integer", "minimum": 0 },
+    "failed_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "replay_eligible": { "type": "boolean" },
+    "next_retry_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "operator_notes": { "type": "string" },
+    "created_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "updated_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

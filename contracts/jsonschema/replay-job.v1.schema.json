@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/replay-job.v1.schema.json",
+  "title": "ULPF ReplayJob v1",
+  "type": "object",
+  "required": ["contract_version", "replay_job_id", "requested_by", "scope", "target_versions", "status", "created_at"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "replay_job_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "requested_by": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "scope": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": {
+        "mode": { "type": "string", "enum": ["sample", "range", "source", "full", "dlq"] },
+        "source_ids": { "type": "array", "items": { "type": "string" } },
+        "from": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+        "to": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+        "sample_size": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "target_versions": {
+      "type": "object",
+      "required": ["parser", "mapping", "schema"],
+      "properties": {
+        "parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" }
+      },
+      "additionalProperties": false
+    },
+    "status": { "type": "string", "enum": ["queued", "running", "completed", "failed", "cancelled"] },
+    "result": { "type": "object" },
+    "created_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "completed_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

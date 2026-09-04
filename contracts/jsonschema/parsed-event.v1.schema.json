@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/parsed-event.v1.schema.json",
+  "title": "ULPF ParsedEvent v1",
+  "type": "object",
+  "required": ["contract_version", "parsed_event_id", "raw_event_id", "source_id", "source_resolution", "parser", "status", "fields", "processed_at"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "parsed_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_resolution": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["resolved", "unknown", "ambiguous"] },
+        "source_profile": { "$ref": "ulpf-common.v1.schema.json#/$defs/nullableVersionedReference" }
+      },
+      "additionalProperties": false
+    },
+    "parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "format": { "type": "string" },
+    "status": { "type": "string", "enum": ["parsed", "partial", "failed"] },
+    "fields": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "provenance"],
+        "properties": {
+          "value": {},
+          "provenance": { "$ref": "ulpf-common.v1.schema.json#/$defs/fieldProvenance" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "unparsed_fragments": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "$ref": "ulpf-common.v1.schema.json#/$defs/error" } },
+    "processed_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/schema.v1.schema.json",
+  "title": "ULPF Schema Registry Entry v1",
+  "type": "object",
+  "required": ["contract_version", "schema_id", "version", "kind", "artifact", "compatibility", "status"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "schema_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "version": { "$ref": "ulpf-common.v1.schema.json#/$defs/semanticVersion" },
+    "kind": { "type": "string", "enum": ["ulpf", "source", "ocsf_projection", "otel_projection", "ecs_projection"] },
+    "status": { "type": "string", "enum": ["draft", "approved", "published", "deprecated", "revoked"] },
+    "artifact": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+    "compatibility": {
+      "type": "object",
+      "required": ["policy"],
+      "properties": {
+        "policy": { "type": "string", "enum": ["backward", "forward", "full", "none"] },
+        "predecessor": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "migration_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "integrity": { "type": "object" },
+    "published_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/parser.v1.schema.json",
+  "title": "ULPF Parser Pack v1",
+  "type": "object",
+  "required": ["contract_version", "parser_id", "version", "status", "compatibility", "artifact", "integrity"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "parser_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "version": { "$ref": "ulpf-common.v1.schema.json#/$defs/semanticVersion" },
+    "status": { "type": "string", "enum": ["draft", "tested", "approved", "published", "deprecated", "revoked"] },
+    "compatibility": {
+      "type": "object",
+      "required": ["formats", "uce_schema_version"],
+      "properties": {
+        "formats": { "type": "array", "items": { "type": "string" } },
+        "vendors": { "type": "array", "items": { "type": "string" } },
+        "products": { "type": "array", "items": { "type": "string" } },
+        "uce_schema_version": { "$ref": "ulpf-common.v1.schema.json#/$defs/semanticVersion" }
+      },
+      "additionalProperties": false
+    },
+    "artifact": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+    "mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "test_corpus_ref": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+    "integrity": {
+      "type": "object",
+      "required": ["content_sha256", "signature_status"],
+      "properties": {
+        "content_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" },
+        "signature_status": { "type": "string", "enum": ["unsigned", "verified", "failed", "revoked"] },
+        "signing_key_id": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "published_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "deprecation": { "type": "object" }
+  },
+  "additionalProperties": false
+}

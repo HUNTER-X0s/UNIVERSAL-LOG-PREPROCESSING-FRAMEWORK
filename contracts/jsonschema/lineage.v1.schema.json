@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/lineage.v1.schema.json",
+  "title": "ULPF Lineage v1",
+  "type": "object",
+  "required": ["contract_version", "lineage_id", "raw_event_id", "normalized_event_id", "source_id", "evidence", "processing", "steps", "recorded_at"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "lineage_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "normalized_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "evidence": {
+      "type": "object",
+      "required": ["payload_sha256", "evidence_manifest_id"],
+      "properties": {
+        "payload_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" },
+        "evidence_manifest_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+      },
+      "additionalProperties": false
+    },
+    "processing": {
+      "type": "object",
+      "required": ["processing_run_id", "source_profile", "parser", "mapping", "schema"],
+      "properties": {
+        "processing_run_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+        "source_profile": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" }
+      },
+      "additionalProperties": false
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step_id", "stage", "operation_id", "occurred_at", "input_artifact_ids", "output_artifact_ids", "artifact_versions", "outcome"],
+        "properties": {
+          "step_id": { "type": "string" },
+          "stage": { "type": "string" },
+          "operation_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+          "occurred_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+          "input_artifact_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+          },
+          "output_artifact_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+          },
+          "artifact_versions": { "type": "array", "items": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" } },
+          "field_mappings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["output_path", "origin", "transformation_id"],
+              "properties": {
+                "output_path": { "type": "string" },
+                "input_paths": { "type": "array", "items": { "type": "string" } },
+                "raw_paths": { "type": "array", "items": { "type": "string" } },
+                "origin": { "$ref": "ulpf-common.v1.schema.json#/$defs/origin" },
+                "transformation_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+                "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "outcome": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recorded_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

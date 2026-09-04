@@ -1,0 +1,19 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.api
+    environment:
+      ULPF_ENVIRONMENT: development
+      ULPF_SERVICE_NAME: ulpf-api
+      ULPF_LOG_LEVEL: INFO
+      ULPF_REQUEST_MAX_BYTES: "1048576"
+      ULPF_API_PREFIX: /api/v1
+      ULPF_API_DOCUMENTATION_ENABLED: "true"
+    ports:
+      - "8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true

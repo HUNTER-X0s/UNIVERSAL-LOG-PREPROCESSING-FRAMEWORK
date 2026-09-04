@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/mapping.v1.schema.json",
+  "title": "ULPF Mapping v1",
+  "type": "object",
+  "required": ["contract_version", "mapping_id", "version", "source_schema", "target_schema", "rules", "status"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "mapping_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "version": { "$ref": "ulpf-common.v1.schema.json#/$defs/semanticVersion" },
+    "status": { "type": "string", "enum": ["draft", "tested", "approved", "published", "deprecated", "revoked"] },
+    "source_schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "target_schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "inputs", "target_path", "operation", "origin"],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "inputs": { "type": "array", "items": { "type": "string" } },
+          "target_path": { "type": "string" },
+          "operation": { "type": "string" },
+          "origin": { "$ref": "ulpf-common.v1.schema.json#/$defs/origin" },
+          "default_value": {},
+          "explanation": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "approval": { "type": "object" },
+    "created_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

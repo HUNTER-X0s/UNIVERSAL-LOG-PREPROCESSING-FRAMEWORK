@@ -1,0 +1,8 @@
+{
+  "environment": "development",
+  "service_name": "ulpf-api",
+  "log_level": "INFO",
+  "request_max_bytes": 1048576,
+  "api_prefix": "/api/v1",
+  "api_documentation_enabled": true
+}

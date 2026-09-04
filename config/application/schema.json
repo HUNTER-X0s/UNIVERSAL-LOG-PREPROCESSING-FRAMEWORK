@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ULPF Phase 1 application configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "environment": {
+      "enum": ["development", "test", "demo", "production", "air-gapped"]
+    },
+    "service_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "log_level": {
+      "enum": ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+    },
+    "request_max_bytes": {
+      "type": "integer",
+      "minimum": 1024,
+      "maximum": 16777216
+    },
+    "api_prefix": {
+      "type": "string",
+      "pattern": "^/.*[^/]$"
+    },
+    "api_documentation_enabled": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/raw-event.v1.schema.json",
+  "title": "ULPF RawEvent v1",
+  "type": "object",
+  "required": ["contract_version", "raw_event_id", "source_id", "ingested_at", "payload", "integrity"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_sequence": { "type": "string" },
+    "received_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "ingested_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "original_event_time": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "payload": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+    "transport": {
+      "type": "object",
+      "properties": {
+        "protocol": { "type": "string" },
+        "peer_address": { "type": "string" },
+        "listener_id": { "type": "string" },
+        "headers": { "type": "object", "additionalProperties": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["payload_sha256", "capture_status"],
+      "properties": {
+        "payload_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" },
+        "capture_status": { "type": "string", "enum": ["complete", "truncated_by_source", "rejected_before_capture"] },
+        "evidence_manifest_id": { "type": "string" },
+        "previous_evidence_hash": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" }
+      },
+      "additionalProperties": false
+    },
+    "labels": { "type": "object", "additionalProperties": { "type": "string" } },
+    "classification": { "$ref": "ulpf-common.v1.schema.json#/$defs/classification" }
+  },
+  "additionalProperties": false
+}

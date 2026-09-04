@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+  "title": "ULPF Universal Canonical Event (UCE) v1",
+  "type": "object",
+  "required": ["contract_version", "event_id", "raw_event_id", "source_id", "evidence", "event", "processing", "lineage"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "evidence": {
+      "type": "object",
+      "required": ["raw_event_id", "payload", "payload_sha256", "evidence_manifest_id"],
+      "properties": {
+        "raw_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+        "payload": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+        "payload_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" },
+        "evidence_manifest_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" }
+      },
+      "additionalProperties": false
+    },
+    "event": {
+      "type": "object",
+      "required": ["time", "category", "type", "source", "metadata"],
+      "properties": {
+        "time": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+        "category": { "type": "string" },
+        "type": { "type": "string" },
+        "class": { "type": "string" },
+        "action": { "type": "string" },
+        "severity": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "source": { "type": "object" },
+        "destination": { "type": "object" },
+        "network": { "type": "object" },
+        "device": { "type": "object" },
+        "identity": { "type": "object" },
+        "metadata": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "unmapped_fields": { "type": "object", "additionalProperties": true },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "ulpf-common.v1.schema.json#/$defs/fieldProvenance" }
+    },
+    "enrichments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["enrichment", "status", "applied_at"],
+        "properties": {
+          "enrichment": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+          "status": { "type": "string", "enum": ["applied", "unavailable", "failed", "not_requested"] },
+          "applied_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+          "output_paths": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": { "score": { "type": "number", "minimum": 0, "maximum": 100 }, "signals": { "type": "array", "items": { "type": "string" } } },
+      "additionalProperties": false
+    },
+    "processing": {
+      "type": "object",
+      "required": ["processing_run_id", "source_profile", "parser", "mapping", "schema", "processed_at"],
+      "properties": {
+        "processing_run_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+        "source_profile": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "schema": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+        "processed_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+        "deduplication": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "lineage": { "$ref": "ulpf-common.v1.schema.json#/$defs/artifactReference" },
+    "output_projections": { "type": "array", "items": { "type": "string", "enum": ["ulpf", "json", "ndjson", "rest_http", "kafka", "ocsf", "otel", "ecs", "parquet"] } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/source.v1.schema.json",
+  "title": "ULPF Source v1",
+  "type": "object",
+  "required": ["contract_version", "source_id", "name", "lifecycle_state", "profile"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "source_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "lifecycle_state": { "type": "string", "enum": ["draft", "validated", "active", "suspended", "retired"] },
+    "profile": {
+      "type": "object",
+      "required": ["version", "vendor", "product", "expected_formats"],
+      "properties": {
+        "version": { "$ref": "ulpf-common.v1.schema.json#/$defs/semanticVersion" },
+        "vendor": { "type": "string" },
+        "product": { "type": "string" },
+        "device_type": { "type": "string" },
+        "expected_formats": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "timezone": { "type": "string" },
+        "classification": { "$ref": "ulpf-common.v1.schema.json#/$defs/classification" }
+      },
+      "additionalProperties": false
+    },
+    "ingress": { "type": "object" },
+    "active_parser": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "active_mapping": { "$ref": "ulpf-common.v1.schema.json#/$defs/versionedReference" },
+    "created_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "updated_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" }
+  },
+  "additionalProperties": false
+}

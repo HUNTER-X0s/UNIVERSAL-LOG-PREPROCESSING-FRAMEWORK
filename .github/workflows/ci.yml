@@ -1,0 +1,30 @@
+name: Phase 1 foundation checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Python 3.12 verification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned foundation tooling
+        run: |
+          python -m pip install --upgrade pip==25.3 setuptools==75.8.0 wheel==0.45.1
+          python -m pip install -r requirements.resolved.lock
+          python -m pip install --no-deps --no-build-isolation .
+      - name: Run Phase 1 verification
+        run: python tools/ulpf.py verify
+      - name: Run connected dependency audit
+        run: python tools/ulpf.py audit
+      - name: Check repository whitespace
+        run: git diff --check HEAD~1 HEAD || test "$(git rev-list --count HEAD)" -eq 1

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/ulpf-common.v1.schema.json",
+  "title": "ULPF Common Contract Definitions v1",
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "semanticVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:[-+][0-9A-Za-z.-]+)?$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "origin": {
+      "type": "string",
+      "enum": ["observed", "inferred", "enriched", "derived"]
+    },
+    "classification": {
+      "type": "string",
+      "enum": ["public", "internal", "confidential", "restricted"]
+    },
+    "artifactReference": {
+      "type": "object",
+      "required": ["uri", "sha256", "byte_length"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "byte_length": { "type": "integer", "minimum": 0 },
+        "media_type": { "type": "string" },
+        "encoding": { "type": "string" },
+        "retention_class": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "versionedReference": {
+      "type": "object",
+      "required": ["id", "version"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "version": { "$ref": "#/$defs/semanticVersion" },
+        "content_sha256": { "$ref": "#/$defs/sha256" }
+      },
+      "additionalProperties": false
+    },
+    "nullableVersionedReference": {
+      "oneOf": [
+        { "$ref": "#/$defs/versionedReference" },
+        { "type": "null" }
+      ]
+    },
+    "fieldProvenance": {
+      "type": "object",
+      "required": ["origin", "transformation_id"],
+      "properties": {
+        "origin": { "$ref": "#/$defs/origin" },
+        "raw_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "input_field_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "transformation_id": { "$ref": "#/$defs/identifier" },
+        "rule_version": { "$ref": "#/$defs/semanticVersion" },
+        "lineage_step_id": { "$ref": "#/$defs/identifier" },
+        "approval_audit_event_id": { "$ref": "#/$defs/identifier" },
+        "enrichment": { "$ref": "#/$defs/nullableVersionedReference" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "explanation": { "type": "string", "maxLength": 4096 }
+      },
+      "additionalProperties": false
+    },
+    "error": {
+      "type": "object",
+      "required": ["code", "stage", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "stage": { "type": "string" },
+        "message": { "type": "string", "maxLength": 4096 },
+        "recoverable": { "type": "boolean" },
+        "occurred_at": { "$ref": "#/$defs/timestamp" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

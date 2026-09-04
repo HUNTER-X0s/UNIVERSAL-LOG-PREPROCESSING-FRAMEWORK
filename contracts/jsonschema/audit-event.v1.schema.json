@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/contracts/jsonschema/audit-event.v1.schema.json",
+  "title": "ULPF AuditEvent v1",
+  "type": "object",
+  "required": ["contract_version", "audit_event_id", "occurred_at", "actor", "action", "outcome", "integrity"],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "audit_event_id": { "$ref": "ulpf-common.v1.schema.json#/$defs/identifier" },
+    "occurred_at": { "$ref": "ulpf-common.v1.schema.json#/$defs/timestamp" },
+    "actor": { "type": "object", "required": ["type", "id"], "properties": { "type": { "type": "string" }, "id": { "type": "string" }, "roles": { "type": "array", "items": { "type": "string" } } }, "additionalProperties": false },
+    "action": { "type": "string" },
+    "target": { "type": "object" },
+    "outcome": { "type": "string", "enum": ["success", "denied", "failure"] },
+    "request_context": { "type": "object" },
+    "integrity": { "type": "object", "required": ["record_sha256"], "properties": { "record_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" }, "previous_record_sha256": { "$ref": "ulpf-common.v1.schema.json#/$defs/sha256" } }, "additionalProperties": false }
+  },
+  "additionalProperties": false
+}
