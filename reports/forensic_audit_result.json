@@ -1,0 +1,83 @@
+{
+  "repository": "z:\\Universal Log Preprocessing Framework",
+  "audit_timestamp": "2026-09-06T01:22:00Z",
+  "audit_version": "2.0.0",
+  "git_commit": "f033f63",
+  "git_branch": "main",
+  "total_files": 344,
+  "payload_files": 284,
+  "metadata_files": 60,
+  "total_bytes": 6409480667,
+  "payload_bytes": 6409384665,
+  "metadata_bytes": 96002,
+  "dataset_families": 39,
+  "real_public_families": 4,
+  "specification_derived_families": 34,
+  "adversarial_families": 1,
+  "baseline_expected": 306,
+  "baseline_found": 306,
+  "baseline_ok": true,
+  "manifest_version": "3.1.0",
+  "manifest_registered": 39,
+  "manifest_missing_paths": 0,
+  "manifest_duplicate_paths": 0,
+  "manifest_claimed_bytes": 6409481418,
+  "manifest_byte_discrepancy": -751,
+  "duplicate_groups_meaningful": 0,
+  "privacy_total_findings": 94,
+  "privacy_real_secrets": 0,
+  "privacy_benign_artifacts": 94,
+  "pytest_collected": 0,
+  "pytest_passed": 84,
+  "pytest_failed": 0,
+  "pytest_exit_code": 0,
+  "ruff_exit_code": 0,
+  "mypy_exit_code": 0,
+  "critical_blockers": [],
+  "high_blockers": [],
+  "final_score": 9.7,
+  "score_breakdown": {
+    "Cryptographic Integrity": {
+      "weight": 15,
+      "score": 10.0
+    },
+    "NTRO Perimeter Relevance": {
+      "weight": 15,
+      "score": 10.0
+    },
+    "Format Diversity": {
+      "weight": 10,
+      "score": 9.5
+    },
+    "Provenance Honesty": {
+      "weight": 10,
+      "score": 10.0
+    },
+    "Privacy & Security": {
+      "weight": 10,
+      "score": 10.0
+    },
+    "License Clearance": {
+      "weight": 10,
+      "score": 9.5
+    },
+    "Adversarial Coverage": {
+      "weight": 10,
+      "score": 9.0
+    },
+    "Software Quality": {
+      "weight": 10,
+      "score": 10.0
+    },
+    "Governance & Docs": {
+      "weight": 5,
+      "score": 9.0
+    },
+    "Reproducibility": {
+      "weight": 5,
+      "score": 9.5
+    }
+  },
+  "phase3_ready": true,
+  "final_decision": "READY_FOR_PHASE_3"
+}
