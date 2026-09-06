@@ -111,5 +111,63 @@
     "lifecycle_state": "draft",
     "profile": {"version": "1.0.0", "vendor": "synthetic", "product": "fixture", "expected_formats": ["synthetic"]}
   },
-  "ulpf-common.v1.schema.json": {"definition": "identifier", "instance": "fixture-id"}
+  "ulpf-common.v1.schema.json": {"definition": "identifier", "instance": "fixture-id"},
+  "semantic-mapping.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "mapping_id": "test-map",
+    "version": "1.0.0",
+    "vendor": "Fortinet",
+    "product": "FortiGate",
+    "match": {"conditions": []},
+    "semantic": {"category": "SECURITY", "class": "Firewall", "type": "firewall.deny"},
+    "confidence": 0.95
+  },
+  "source-profile.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "profile_id": "test-profile",
+    "version": "1.0.0",
+    "vendor": "Fortinet",
+    "product": "FortiGate",
+    "format": "syslog",
+    "status": "ACTIVE",
+    "fields": [{"path": "action", "inferred_type": "string"}]
+  },
+  "onboarding-result.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "onboarding_id": "test-onboard",
+    "detected_format": "syslog",
+    "field_inventory": ["action"],
+    "candidate_mappings": [],
+    "quality_score": 8.5,
+    "status": "APPROVED"
+  },
+  "mapping-approval.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "approval_id": "test-approval",
+    "mapping_id": "test-map",
+    "mapping_version": "1.0.0",
+    "reviewer": "auditor",
+    "decision": "APPROVED",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "mapping_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "drift-report.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "report_id": "test-drift",
+    "profile_id": "test-profile",
+    "drift_state": "STABLE",
+    "timestamp": "2026-01-01T00:00:00Z"
+  },
+  "mapping-audit-event.v1.schema.json": {
+    "schema_version": "1.0.0",
+    "audit_id": "test-audit",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "mapping_id": "test-map",
+    "mapping_version": "1.0.0",
+    "actor": "admin",
+    "action": "CREATED",
+    "previous_state": "NONE",
+    "new_state": "DRAFT",
+    "checksum": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
 }

@@ -21,7 +21,7 @@ class ContractRegistryTests(unittest.TestCase):
 
     def test_all_schemas_are_syntactically_valid(self) -> None:
         self.registry.check_schemas()
-        self.assertEqual(len(self.registry.names), 12)
+        self.assertEqual(len(self.registry.names), 18)
 
     def test_root_contract_fixtures_are_compatible(self) -> None:
         for name in self.registry.names:

@@ -40,7 +40,9 @@ class TestSemanticSecurity(unittest.TestCase):
         self.assertIsNotNone(sem_event)
         self.assertEqual(sem_event.semantic_triple.category, "SECURITY")
         self.assertIn("faulty.v1", sem_event.projections)
-        self.assertEqual(sem_event.projections["faulty.v1"]["status"], ProjectionStatus.FAILED.value)
+        self.assertEqual(
+            sem_event.projections["faulty.v1"]["status"], ProjectionStatus.FAILED.value
+        )
 
     def test_oversized_unmapped_residue(self) -> None:
         """Verify engine tolerates very large attribute dictionaries safely."""

@@ -1,0 +1,27 @@
+{
+  "vendor": "CheckPoint",
+  "product": "FireWall-1",
+  "format": "json",
+  "samples": [
+    {
+      "time": "2026-03-01T12:00:00Z",
+      "action": "drop",
+      "src": "192.0.2.45",
+      "dst": "198.51.100.10",
+      "s_port": 51234,
+      "service": 443,
+      "proto": "tcp",
+      "rule": 105
+    },
+    {
+      "time": "2026-03-01T12:00:01Z",
+      "action": "drop",
+      "src": "192.0.2.46",
+      "dst": "198.51.100.11",
+      "s_port": 51235,
+      "service": 80,
+      "proto": "tcp",
+      "rule": 105
+    }
+  ]
+}

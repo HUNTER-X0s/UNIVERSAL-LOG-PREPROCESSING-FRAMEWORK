@@ -65,7 +65,6 @@ def normalize_severity(raw_val: Any, is_syslog: bool = False) -> int:
 
     # Numeric input
     if isinstance(raw_val, int | float):
-
         num = int(raw_val)
         if is_syslog and num in _SYSLOG_TO_CANONICAL:
             return _SYSLOG_TO_CANONICAL[num]

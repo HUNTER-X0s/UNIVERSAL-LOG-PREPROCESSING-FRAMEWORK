@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "mapping_id": "paloalto.panos.traffic.deny",
+  "version": "1.0.0",
+  "vendor": "Palo Alto Networks",
+  "product": "PAN-OS",
+  "format": "csv",
+  "description": "Production mapping for Palo Alto PAN-OS drop/reset traffic events.",
+  "priority": 100,
+  "confidence": 0.95,
+  "lifecycle_state": "ACTIVE",
+  "provenance": "VENDOR_PROFILE",
+  "match": {
+    "vendor": "Palo Alto Networks",
+    "product": "PAN-OS",
+    "conditions": [
+      {
+        "field": "action",
+        "op": "in",
+        "value": ["deny", "drop", "reset-client", "reset-server", "reset-both"]
+      }
+    ]
+  },
+  "semantic": {
+    "category": "NETWORK",
+    "class": "TRAFFIC",
+    "type": "DENY",
+    "action": "DENY",
+    "result": "DENIED"
+  },
+  "field_mappings": [
+    { "source_field": "src", "target_field": "event.source.ip", "transform": "copy", "required": true },
+    { "source_field": "dst", "target_field": "event.destination.ip", "transform": "copy", "required": true },
+    { "source_field": "sport", "target_field": "event.source.port", "transform": "copy" },
+    { "source_field": "dport", "target_field": "event.destination.port", "transform": "copy" },
+    { "source_field": "proto", "target_field": "event.network.protocol", "transform": "copy" }
+  ],
+  "entity_rules": [
+    { "source_field": "src", "entity_type": "IP", "role": "source", "confidence": 1.0 },
+    { "source_field": "dst", "entity_type": "IP", "role": "destination", "confidence": 1.0 }
+  ],
+  "indicator_rules": [
+    { "source_field": "dst", "indicator_type": "IP", "confidence": 0.95 }
+  ],
+  "metadata": {
+    "curator": "SecOps Engineering",
+    "verified_air_gap": true
+  }
+}

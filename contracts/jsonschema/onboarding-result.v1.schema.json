@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/schemas/onboarding-result.v1.schema.json",
+  "title": "ULPF Onboarding Result v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "onboarding_id",
+    "detected_format",
+    "field_inventory",
+    "candidate_mappings",
+    "quality_score",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "onboarding_id": { "type": "string" },
+    "sample_hash": { "type": "string" },
+    "sample_count": { "type": "integer", "minimum": 1 },
+    "detected_format": { "type": "string" },
+    "detected_vendor": { "type": "string" },
+    "detected_product": { "type": "string" },
+    "field_inventory": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_mappings": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "quality_score": { "type": "number", "minimum": 0.0, "maximum": 10.0 },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING_REVIEW", "APPROVED", "REJECTED", "COMPILED", "ACTIVE"]
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ai_assisted": { "type": "boolean", "default": false },
+    "ai_metadata": { "type": "object" },
+    "created_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

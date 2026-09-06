@@ -61,9 +61,7 @@ class OTelProjection(BaseProjection):
             {"key": "telemetry.sdk.version", "value": {"string_value": self.version}},
         ]
         host = (
-            semantic_event.correlation_context.host
-            if semantic_event.correlation_context
-            else None
+            semantic_event.correlation_context.host if semantic_event.correlation_context else None
         )
         if host:
             res_attrs.append({"key": "host.name", "value": {"string_value": host}})

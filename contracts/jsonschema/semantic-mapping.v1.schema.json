@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/schemas/semantic-mapping.v1.schema.json",
+  "title": "ULPF Semantic Mapping Definition v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "mapping_id",
+    "version",
+    "vendor",
+    "product",
+    "match",
+    "semantic",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "mapping_id": { "type": "string", "pattern": "^[a-z0-9_.-]+$" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "vendor": { "type": "string", "minLength": 1 },
+    "product": { "type": "string", "minLength": 1 },
+    "format": { "type": "string" },
+    "description": { "type": "string" },
+    "priority": { "type": "integer", "minimum": 0, "maximum": 1000, "default": 100 },
+    "lifecycle_state": {
+      "type": "string",
+      "enum": ["DRAFT", "VALIDATED", "TESTED", "APPROVED", "ACTIVE", "DEPRECATED", "RETIRED"],
+      "default": "DRAFT"
+    },
+    "provenance": {
+      "type": "string",
+      "enum": ["BUILT_IN", "VENDOR_PROFILE", "USER_AUTHORED", "AI_SUGGESTED", "AI_ASSISTED", "IMPORTED", "DERIVED"],
+      "default": "USER_AUTHORED"
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "vendor": { "type": "string" },
+        "product": { "type": "string" },
+        "parser_id": { "type": "string" },
+        "event_type": { "type": "string" },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["field", "op"],
+            "properties": {
+              "field": { "type": "string" },
+              "op": {
+                "type": "string",
+                "enum": ["equals", "not_equals", "in", "not_in", "contains", "prefix", "suffix", "regex_bounded", "exists", "is_null", "numeric_compare"]
+              },
+              "value": {}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "semantic": {
+      "type": "object",
+      "required": ["category", "class", "type"],
+      "properties": {
+        "category": { "type": "string" },
+        "class": { "type": "string" },
+        "type": { "type": "string" },
+        "action": { "type": "string" },
+        "result": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "field_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_field", "target_field"],
+        "properties": {
+          "source_field": { "type": "string" },
+          "target_field": { "type": "string" },
+          "transform": {
+            "type": "string",
+            "enum": ["copy", "lowercase", "uppercase", "trim", "to_int", "to_float", "to_bool", "ip_normalize", "mac_normalize", "hash_normalize"]
+          },
+          "required": { "type": "boolean", "default": false }
+        },
+        "additionalProperties": false
+      }
+    },
+    "entity_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_field", "entity_type"],
+        "properties": {
+          "source_field": { "type": "string" },
+          "entity_type": {
+            "type": "string",
+            "enum": ["IP", "HOST", "USER", "PROCESS", "FILE", "DEVICE", "SERVICE", "CONTAINER", "POD", "CLUSTER", "CLOUD_ACCOUNT", "CLOUD_RESOURCE", "DATABASE", "APPLICATION", "CERTIFICATE", "DOMAIN", "URL"]
+          },
+          "role": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "indicator_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_field", "indicator_type"],
+        "properties": {
+          "source_field": { "type": "string" },
+          "indicator_type": {
+            "type": "string",
+            "enum": ["IP", "DOMAIN", "HASH_MD5", "HASH_SHA256", "HASH_SHA1", "URL", "EMAIL", "CERT_FINGERPRINT", "FILE_HASH"]
+          },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "input_uce", "expected_category", "expected_type"],
+        "properties": {
+          "name": { "type": "string" },
+          "input_uce": { "type": "object" },
+          "expected_category": { "type": "string" },
+          "expected_type": { "type": "string" },
+          "expected_action": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -162,7 +162,6 @@ class XmlParser(BaseParser):
         try:
             root = ET.fromstring(text)  # noqa: S314
         except ET.ParseError as exc:
-
             err = ParseError(
                 code=ErrorCode.MALFORMED_XML,
                 stage="xml_parser",

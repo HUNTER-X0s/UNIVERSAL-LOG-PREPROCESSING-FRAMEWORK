@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/schemas/mapping-audit-event.v1.schema.json",
+  "title": "ULPF Mapping Audit Event v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "audit_id",
+    "timestamp",
+    "mapping_id",
+    "mapping_version",
+    "actor",
+    "action",
+    "previous_state",
+    "new_state",
+    "checksum"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "audit_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "mapping_id": { "type": "string" },
+    "mapping_version": { "type": "string" },
+    "actor": { "type": "string" },
+    "action": {
+      "type": "string",
+      "enum": ["CREATED", "MODIFIED", "VALIDATED", "TESTED", "APPROVED", "ACTIVATED", "DEACTIVATED", "ROLLED_BACK", "DEPRECATED"]
+    },
+    "previous_state": { "type": "string" },
+    "new_state": { "type": "string" },
+    "reason": { "type": "string" },
+    "checksum": { "type": "string" }
+  },
+  "additionalProperties": false
+}

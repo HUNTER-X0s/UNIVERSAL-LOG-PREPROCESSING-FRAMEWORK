@@ -1,0 +1,99 @@
+{
+  "audit": {
+    "name": "ULPF Phase 5 Exit Audit",
+    "date": "2026-09-06",
+    "decision": "TBD",
+    "score": 0.0
+  },
+  "results": {
+    "security_scan": "FAIL",
+    "import_mapping": "PASS",
+    "import_onboarding": "PASS",
+    "import_ai": "PASS",
+    "import_semantic": "PASS",
+    "registry_v1_lifecycle": "PASS",
+    "registry_lifecycle": "FAIL",
+    "compiler_redos": "PASS",
+    "compiler_giant_regex": "PASS",
+    "compiler_checksum_stable": "PASS",
+    "compiler_checksum_semantic": "PASS",
+    "dsl_operators": "PARTIAL",
+    "ai_prompt_injection": "PASS",
+    "ai_output_validation": "PASS",
+    "ai_offline_advisor": "PASS",
+    "ai_optionality": "PASS",
+    "onboarding_service": "PASS",
+    "ai_no_auto_activation": "PASS",
+    "drift_stable": "PASS",
+    "drift_minor": "PASS",
+    "drift_major": "PASS",
+    "drift_no_auto_activate": "PASS",
+    "uce_immutability": "PASS",
+    "residue_preservation": "PASS",
+    "determinism": "FAIL",
+    "performance": {
+      "eps": 4569,
+      "p50_ms": 0.2189,
+      "status": "PASS"
+    },
+    "cross_vendor": "PARTIAL",
+    "phase4_regression": "PASS",
+    "full_suite": "PASS",
+    "git_committed": "FAIL"
+  },
+  "findings": [
+    {
+      "id": "SEC-COMPILE",
+      "severity": "CRITICAL",
+      "description": "Real dangerous use of 'compile('",
+      "evidence": "['packages\\\\mapping\\\\ulpf_mapping\\\\compiler\\\\compiler.py:70: def compile(', 'packages\\\\mapping\\\\ulpf_mapping\\\\compiler\\\\compiler.py:77: return inst.compile(self)', 'packages\\\\mapping\\\\ulpf_mapping\\\\dsl\\\\operators.py:87: return re.compile(pattern)']",
+      "affected": "",
+      "recommended_action": "",
+      "blocking": true
+    },
+    {
+      "id": "REG-LIFECYCLE",
+      "severity": "HIGH",
+      "description": "Registry lifecycle failure",
+      "evidence": "'charmap' codec can't encode character '\\u2192' in position 11: character maps to <undefined>",
+      "affected": "registry.py",
+      "recommended_action": "",
+      "blocking": true
+    },
+    {
+      "id": "DSL-OPS",
+      "severity": "MEDIUM",
+      "description": "DSL operator failures: 2/21",
+      "evidence": "See above",
+      "affected": "operators.py",
+      "recommended_action": "",
+      "blocking": false
+    },
+    {
+      "id": "GIT-UNCOMMIT",
+      "severity": "HIGH",
+      "description": "Phase 5 exists only in working directory \u2014 20 modified, 20 untracked",
+      "evidence": "Not committed to git",
+      "affected": "entire Phase 5",
+      "recommended_action": "Commit Phase 5 to git before freezing",
+      "blocking": true
+    }
+  ],
+  "blockers": [
+    {
+      "id": "SEC-COMPILE",
+      "severity": "CRITICAL",
+      "description": "Real dangerous use of 'compile('",
+      "evidence": "['packages\\\\mapping\\\\ulpf_mapping\\\\compiler\\\\compiler.py:70: def compile(', 'packages\\\\mapping\\\\ulpf_mapping\\\\compiler\\\\compiler.py:77: return inst.compile(self)', 'packages\\\\mapping\\\\ulpf_mapping\\\\dsl\\\\operators.py:87: return re.compile(pattern)']",
+      "affected": "",
+      "recommended_action": "",
+      "blocking": true
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "medium": 1,
+    "low": 0
+  }
+}

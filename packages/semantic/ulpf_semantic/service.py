@@ -23,8 +23,9 @@ class SemanticService:
         mapper: SemanticMapper | None = None,
         projection_registry: ProjectionRegistry | None = None,
         validator: SemanticEventValidator | None = None,
+        registry: Any = None,
     ) -> None:
-        self.mapper = mapper or SemanticMapper()
+        self.mapper = mapper or SemanticMapper(registry=registry)
         self.projection_registry = projection_registry or create_default_projection_registry()
         self.validator = validator or SemanticEventValidator()
 

@@ -101,12 +101,8 @@ class TestSemanticEntities(unittest.TestCase):
             "unmapped_fields": {"session_id": "sess-99"},
         }
         entities = EntityExtractor.extract_entities(uce)
-        ctx1 = EventFingerprinter.build_correlation_context(
-            triple, "deny", "DENIED", entities, uce
-        )
-        ctx2 = EventFingerprinter.build_correlation_context(
-            triple, "deny", "DENIED", entities, uce
-        )
+        ctx1 = EventFingerprinter.build_correlation_context(triple, "deny", "DENIED", entities, uce)
+        ctx2 = EventFingerprinter.build_correlation_context(triple, "deny", "DENIED", entities, uce)
         self.assertEqual(ctx1.equivalence_key, ctx2.equivalence_key)
         self.assertEqual(ctx1.event_fingerprint, ctx2.event_fingerprint)
         self.assertTrue(ctx1.equivalence_key.startswith("eq:"))

@@ -62,7 +62,6 @@ def normalize_timestamp(
 
     # 2. Integer or Float Epoch
     if isinstance(raw_val, int | float):
-
         val = float(raw_val)
         if val > 1e17:  # nanoseconds
             val /= 1e9

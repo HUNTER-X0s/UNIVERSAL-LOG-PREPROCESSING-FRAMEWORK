@@ -53,13 +53,9 @@ def derive_result(
                 status=ResultStatus.SUCCESS.value, detail=f"HTTP status {status_code}"
             )
         if status_code == 401:
-            return SemanticResult(
-                status=ResultStatus.DENIED.value, detail="HTTP 401 Unauthorized"
-            )
+            return SemanticResult(status=ResultStatus.DENIED.value, detail="HTTP 401 Unauthorized")
         if status_code == 403:
-            return SemanticResult(
-                status=ResultStatus.DENIED.value, detail="HTTP 403 Forbidden"
-            )
+            return SemanticResult(status=ResultStatus.DENIED.value, detail="HTTP 403 Forbidden")
         if status_code == 408 or status_code == 504:
             return SemanticResult(
                 status=ResultStatus.TIMEOUT.value, detail=f"HTTP {status_code} Timeout"
@@ -80,7 +76,15 @@ def derive_result(
     if act in ("fail",):
         return SemanticResult(status=ResultStatus.FAILURE.value, detail="Action failure")
     crud_acts = {
-        "create", "delete", "modify", "execute", "start", "stop", "connect", "read", "write"
+        "create",
+        "delete",
+        "modify",
+        "execute",
+        "start",
+        "stop",
+        "connect",
+        "read",
+        "write",
     }
     if act in crud_acts:
         return SemanticResult(status=ResultStatus.SUCCESS.value, detail=f"Action '{act}' completed")

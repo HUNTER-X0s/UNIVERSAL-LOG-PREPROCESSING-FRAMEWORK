@@ -27,9 +27,10 @@ from ulpf_semantic.taxonomy.results import derive_result
 class SemanticMapper:
     """Core mapping engine coordinating semantic interpretation of UCE records."""
 
-    def __init__(self, mapping_version: str = "1.0.0") -> None:
+    def __init__(self, mapping_version: str = "1.0.0", registry: Any = None) -> None:
         self.mapping_version = mapping_version
-        self.classifier = SemanticClassifier(mapping_version=mapping_version)
+        self.registry = registry
+        self.classifier = SemanticClassifier(mapping_version=mapping_version, registry=registry)
 
     def map_uce_to_semantic(self, uce_event: dict[str, Any]) -> SemanticEvent:
         """Transform a UCE event into an explainable SemanticEvent."""
@@ -38,8 +39,8 @@ class SemanticMapper:
         sem_id = f"sem_{uuid.uuid4().hex[:16]}"
         event_body = uce_event.get("event", {})
         unmapped = uce_event.get("unmapped_fields", {})
-        timestamp = (
-            event_body.get("time") or uce_event.get("processing", {}).get("processed_at", "")
+        timestamp = event_body.get("time") or uce_event.get("processing", {}).get(
+            "processed_at", ""
         )
         severity = int(event_body.get("severity", 1))
 

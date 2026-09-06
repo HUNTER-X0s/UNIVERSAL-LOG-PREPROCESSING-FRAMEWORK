@@ -50,6 +50,7 @@ class ProjectionRegistry:
                 results[pid] = res
             except Exception as exc:
                 from ulpf_semantic.projections.base import ProjectionStatus
+
                 results[pid] = ProjectionResult(
                     projection_id=pid,
                     version=proj.version,

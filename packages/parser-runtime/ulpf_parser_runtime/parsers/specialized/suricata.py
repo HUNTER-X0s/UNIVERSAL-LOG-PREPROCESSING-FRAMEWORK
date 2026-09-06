@@ -107,7 +107,6 @@ class SuricataEveParser(BaseParser):
 
         # Alert sub-object
         if "alert" in data and isinstance(data["alert"], dict):
-
             al = data["alert"]
             for a_key in (
                 "action",

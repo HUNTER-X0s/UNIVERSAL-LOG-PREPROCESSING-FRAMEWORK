@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/schemas/source-profile.v1.schema.json",
+  "title": "ULPF Source Profile v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "profile_id",
+    "version",
+    "vendor",
+    "product",
+    "format",
+    "fields",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "profile_id": { "type": "string", "pattern": "^[a-z0-9_.-]+$" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "vendor": { "type": "string" },
+    "product": { "type": "string" },
+    "format": { "type": "string" },
+    "description": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "ACTIVE", "DEPRECATED", "RETIRED"]
+    },
+    "parser_reference": { "type": "string" },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "inferred_type"],
+        "properties": {
+          "path": { "type": "string" },
+          "inferred_type": {
+            "type": "string",
+            "enum": ["string", "integer", "float", "boolean", "timestamp", "ip", "cidr", "domain", "url", "hash", "email", "enum", "object", "array", "unknown"]
+          },
+          "null_frequency": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+          "sample_values": { "type": "array", "items": { "type": "string" } },
+          "cardinality": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "checksum": { "type": "string" },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

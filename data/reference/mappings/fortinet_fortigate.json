@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "mapping_id": "fortinet.fortigate.traffic.deny",
+  "version": "1.0.0",
+  "vendor": "Fortinet",
+  "product": "FortiGate",
+  "format": "kv",
+  "description": "Production mapping for FortiGate firewall drop/deny traffic events.",
+  "priority": 100,
+  "confidence": 0.95,
+  "lifecycle_state": "ACTIVE",
+  "provenance": "VENDOR_PROFILE",
+  "match": {
+    "vendor": "Fortinet",
+    "product": "FortiGate",
+    "conditions": [
+      {
+        "field": "action",
+        "op": "in",
+        "value": ["deny", "drop", "block", "close"]
+      }
+    ]
+  },
+  "semantic": {
+    "category": "NETWORK",
+    "class": "TRAFFIC",
+    "type": "DENY",
+    "action": "DENY",
+    "result": "DENIED"
+  },
+  "field_mappings": [
+    { "source_field": "srcip", "target_field": "event.source.ip", "transform": "copy", "required": true },
+    { "source_field": "dstip", "target_field": "event.destination.ip", "transform": "copy", "required": true },
+    { "source_field": "srcport", "target_field": "event.source.port", "transform": "copy" },
+    { "source_field": "dstport", "target_field": "event.destination.port", "transform": "copy" },
+    { "source_field": "proto", "target_field": "event.network.protocol", "transform": "copy" }
+  ],
+  "entity_rules": [
+    { "source_field": "srcip", "entity_type": "IP", "role": "source", "confidence": 1.0 },
+    { "source_field": "dstip", "entity_type": "IP", "role": "destination", "confidence": 1.0 }
+  ],
+  "indicator_rules": [
+    { "source_field": "dstip", "indicator_type": "IP", "confidence": 0.95 }
+  ],
+  "metadata": {
+    "curator": "SecOps Engineering",
+    "verified_air_gap": true
+  }
+}

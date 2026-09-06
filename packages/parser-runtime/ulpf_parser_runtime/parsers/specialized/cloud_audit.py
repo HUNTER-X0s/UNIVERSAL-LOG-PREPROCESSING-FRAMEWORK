@@ -200,7 +200,6 @@ class CloudAuditParser(BaseParser):
                 if not isinstance(v, dict | list):
                     fields[k] = self.make_field(k, v, Origin.OBSERVED)
 
-
         return ParseResult(
             status=ParseStatus.PARSED,
             parser_id=self.metadata.parser_id,

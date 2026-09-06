@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "mapping_id": "suricata.eve.alert",
+  "version": "1.0.0",
+  "vendor": "Suricata",
+  "product": "EVE",
+  "format": "json",
+  "description": "Production mapping for Suricata EVE IDS alert events.",
+  "priority": 120,
+  "confidence": 0.95,
+  "lifecycle_state": "ACTIVE",
+  "provenance": "VENDOR_PROFILE",
+  "match": {
+    "vendor": "Suricata",
+    "product": "EVE",
+    "conditions": [
+      {
+        "field": "event_type",
+        "op": "equals",
+        "value": "alert"
+      }
+    ]
+  },
+  "semantic": {
+    "category": "SECURITY",
+    "class": "FINDING",
+    "type": "ALERT",
+    "action": "DETECT",
+    "result": "SUCCESS"
+  },
+  "field_mappings": [
+    { "source_field": "src_ip", "target_field": "event.source.ip", "transform": "copy", "required": true },
+    { "source_field": "dest_ip", "target_field": "event.destination.ip", "transform": "copy", "required": true },
+    { "source_field": "src_port", "target_field": "event.source.port", "transform": "copy" },
+    { "source_field": "dest_port", "target_field": "event.destination.port", "transform": "copy" },
+    { "source_field": "proto", "target_field": "event.network.protocol", "transform": "copy" }
+  ],
+  "entity_rules": [
+    { "source_field": "src_ip", "entity_type": "IP", "role": "attacker", "confidence": 0.9 },
+    { "source_field": "dest_ip", "entity_type": "IP", "role": "target", "confidence": 0.9 }
+  ],
+  "indicator_rules": [
+    { "source_field": "src_ip", "indicator_type": "IP", "confidence": 0.95 }
+  ],
+  "metadata": {
+    "curator": "SecOps Engineering",
+    "verified_air_gap": true
+  }
+}

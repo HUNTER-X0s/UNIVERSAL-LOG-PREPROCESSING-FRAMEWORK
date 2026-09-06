@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "profile.fortinet.fortigate",
+  "version": "1.0.0",
+  "vendor": "Fortinet",
+  "product": "FortiGate",
+  "format": "kv",
+  "description": "Baseline source profile for Fortinet FortiGate firewall telemetry.",
+  "status": "ACTIVE",
+  "checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fields": [
+    { "path": "srcip", "inferred_type": "ip", "null_frequency": 0.0, "sample_values": ["10.0.1.20"], "cardinality": 500 },
+    { "path": "dstip", "inferred_type": "ip", "null_frequency": 0.0, "sample_values": ["192.168.1.50"], "cardinality": 1200 },
+    { "path": "srcport", "inferred_type": "integer", "null_frequency": 0.05, "sample_values": ["49152"], "cardinality": 4000 },
+    { "path": "dstport", "inferred_type": "integer", "null_frequency": 0.05, "sample_values": ["443"], "cardinality": 250 },
+    { "path": "action", "inferred_type": "string", "null_frequency": 0.0, "sample_values": ["deny", "accept", "drop"], "cardinality": 5 },
+    { "path": "proto", "inferred_type": "string", "null_frequency": 0.0, "sample_values": ["6", "17"], "cardinality": 4 }
+  ],
+  "created_at": "2026-03-01T00:00:00Z",
+  "updated_at": "2026-03-01T00:00:00Z"
+}

@@ -1,7 +1,7 @@
-"""Deterministic Indicator Extractor for ULPF Phase 4.
+"""Deterministic Indicator Extractor for ULPF Phase 4 & Phase 5.
 
-Extracts verifiable telemetry indicators (IP, Domain, URL, Hash)
-for threat hunting and correlation foundations.
+Extracts verifiable telemetry indicators (IP, Domain, URL, Hash, Email)
+for threat hunting and correlation foundations with bounded complexity.
 """
 
 import ipaddress
@@ -12,7 +12,12 @@ from ulpf_semantic.models import Indicator, IndicatorType
 
 RE_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$")
 RE_MD5 = re.compile(r"^[a-fA-F0-9]{32}$")
+RE_SHA1 = re.compile(r"^[a-fA-F0-9]{40}$")
 RE_SHA256 = re.compile(r"^[a-fA-F0-9]{64}$")
+RE_EMAIL = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+RE_URL = re.compile(r"^https?://[a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=]{1,2048}$")
+
+MAX_INDICATORS_PER_EVENT = 50
 
 
 class IndicatorExtractor:
@@ -57,26 +62,65 @@ class IndicatorExtractor:
                     )
                 )
 
-        # 3. Hash indicators
-        for key, val in unmapped.items():
-            if isinstance(val, str):
-                if RE_SHA256.match(val):
+        # 3. Hash indicators (MD5, SHA1, SHA256)
+        for k, v in unmapped.items():
+            if isinstance(v, str):
+                v_clean = v.strip()
+                if RE_SHA256.match(v_clean):
                     indicators.append(
                         Indicator(
                             indicator_type=IndicatorType.HASH_SHA256.value,
-                            value=val.lower(),
-                            source=f"unmapped:{key}",
+                            value=v_clean.lower(),
+                            source=f"unmapped.{k}",
                             confidence=1.0,
                         )
                     )
-                elif RE_MD5.match(val):
+                elif RE_SHA1.match(v_clean):
+                    indicators.append(
+                        Indicator(
+                            indicator_type=IndicatorType.HASH_SHA1.value,
+                            value=v_clean.lower(),
+                            source=f"unmapped.{k}",
+                            confidence=0.98,
+                        )
+                    )
+                elif RE_MD5.match(v_clean):
                     indicators.append(
                         Indicator(
                             indicator_type=IndicatorType.HASH_MD5.value,
-                            value=val.lower(),
-                            source=f"unmapped:{key}",
+                            value=v_clean.lower(),
+                            source=f"unmapped.{k}",
                             confidence=0.95,
                         )
                     )
 
-        return indicators
+        # 4. Email indicators (Phase 5 Expansion)
+        for k, v in unmapped.items():
+            if isinstance(v, str) and "@" in v:
+                v_clean = v.strip()
+                if len(v_clean) <= 128 and RE_EMAIL.match(v_clean):
+                    indicators.append(
+                        Indicator(
+                            indicator_type=IndicatorType.EMAIL.value,
+                            value=v_clean.lower(),
+                            source=f"unmapped.{k}",
+                            confidence=0.95,
+                        )
+                    )
+
+        # 5. URL indicators (Phase 5 Expansion)
+        url_candidates = {**event_body, **unmapped}
+        for k, v in url_candidates.items():
+            if isinstance(v, str) and (v.startswith("http://") or v.startswith("https://")):
+                v_clean = v.strip()
+                if len(v_clean) <= 2048 and RE_URL.match(v_clean):
+                    indicators.append(
+                        Indicator(
+                            indicator_type=IndicatorType.URL.value,
+                            value=v_clean,
+                            source=f"field.{k}",
+                            confidence=0.95,
+                        )
+                    )
+
+        return indicators[:MAX_INDICATORS_PER_EVENT]

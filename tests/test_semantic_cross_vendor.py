@@ -38,7 +38,9 @@ class TestCrossVendorSemanticConvergence(unittest.TestCase):
         pan_res = PaloAltoPanOSParser().parse(
             FramedRecord(1, pan_raw, raw_bytes, 0, len(raw_bytes), 1)
         )
-        pan_uce = self.canonical_builder.build_uce(pan_res, vendor="Palo Alto Networks", product="PAN-OS")
+        pan_uce = self.canonical_builder.build_uce(
+            pan_res, vendor="Palo Alto Networks", product="PAN-OS"
+        )
         pan_sem = self.service.process_uce(pan_uce)
 
         # 2. FortiGate UTM Log (Deny)
@@ -51,7 +53,9 @@ class TestCrossVendorSemanticConvergence(unittest.TestCase):
         forti_res = FortiGateParser().parse(
             FramedRecord(1, forti_raw, forti_bytes, 0, len(forti_bytes), 1)
         )
-        forti_uce = self.canonical_builder.build_uce(forti_res, vendor="Fortinet", product="FortiGate")
+        forti_uce = self.canonical_builder.build_uce(
+            forti_res, vendor="Fortinet", product="FortiGate"
+        )
         forti_sem = self.service.process_uce(forti_uce)
 
         # 3. Cisco ASA Syslog (Deny)
