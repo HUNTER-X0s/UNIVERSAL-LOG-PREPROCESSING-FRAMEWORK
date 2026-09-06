@@ -1,0 +1,52 @@
+[
+  {
+    "component": "RawEvidenceStore",
+    "failure": "Disk write I/O error or permission denied",
+    "detection": "OSError caught in pipeline",
+    "expected_behavior": "Reject event with PersistenceError, escalate to DLQ, no false acknowledgment",
+    "actual_behavior": "Event routed to DLQ with state=DLQ; no false ack returned",
+    "recovery": "Operator inspects DLQ, repairs filesystem, triggers safe pinned replay",
+    "data_preservation": "VERIFIED (payload stored in DLQ preview)",
+    "severity": "HIGH"
+  },
+  {
+    "component": "DownstreamSiemSink",
+    "failure": "SIEM endpoint unavailable (503 Service Unavailable / Timeout)",
+    "detection": "DeliveryResult.success is False",
+    "expected_behavior": "Isolate failure; canonical raw and UCE records remain intact; retry via OutboxDispatcher; escalate to DLQ on max attempts",
+    "actual_behavior": "OCSF/OTel deliver successfully; Outbox tracks retry attempts; canonical UCE and raw store remain invariant",
+    "recovery": "Automatic exponential retry via OutboxDispatcher; DLQ inspection on terminal exhaustion",
+    "data_preservation": "VERIFIED (canonical record intact)",
+    "severity": "MEDIUM"
+  },
+  {
+    "component": "EventStreamBuffer",
+    "failure": "Partition buffer capacity full (traffic spike / slow consumers)",
+    "detection": "active_depth >= max_partition_capacity",
+    "expected_behavior": "Enforce backpressure; raise BufferFullError under REJECT; route to DLQ under DLQ policy; zero silent loss",
+    "actual_behavior": "BufferFullError raised or overflow routed to DLQ with metric increment",
+    "recovery": "Scale worker consumers or drain buffer",
+    "data_preservation": "VERIFIED (no silent drop)",
+    "severity": "HIGH"
+  },
+  {
+    "component": "ParserRuntime / SemanticEngine",
+    "failure": "Poison message / malformed payload",
+    "detection": "Exception caught in pipeline stage",
+    "expected_behavior": "Capture poison event into DLQ with full error context; acknowledge stream offset so stream does not stall",
+    "actual_behavior": "DLQRecord created; worker acks stream message; pipeline continues processing subsequent events",
+    "recovery": "Operator fixes parser pack or mapping; replays from DLQ",
+    "data_preservation": "VERIFIED",
+    "severity": "MEDIUM"
+  },
+  {
+    "component": "WorkerHost",
+    "failure": "Process receives SIGINT / SIGTERM shutdown signal",
+    "detection": "Signal trapped by WorkerHost",
+    "expected_behavior": "Stop polling, finish inflight tasks, flush outputs, unacknowledged tasks nack'd for replay",
+    "actual_behavior": "Graceful drain executes within timeout; status transitions to STOPPED cleanly",
+    "recovery": "Process exits cleanly; restart safely resumes from committed offsets",
+    "data_preservation": "VERIFIED",
+    "severity": "HIGH"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "bundle_name": "ulpf-airgap-runtime-bundle",
+  "version": "1.0.0",
+  "created_at": "2026-09-07T00:00:00Z",
+  "baseline_commit": "8a7950d",
+  "target_environment": "air-gapped-perimeter",
+  "network_requirement": "ZERO_INTERNET_ACCESS",
+  "components": [
+    {
+      "name": "ulpf-contracts",
+      "path": "contracts/jsonschema",
+      "type": "schema_pack",
+      "hash_algorithm": "SHA-256"
+    },
+    {
+      "name": "ulpf-runtime-packages",
+      "path": "packages",
+      "type": "wheel_or_source",
+      "subpackages": [
+        "ulpf_contracts",
+        "ulpf_domain",
+        "ulpf_ingestion",
+        "ulpf_normalization",
+        "ulpf_parser_runtime",
+        "ulpf_platform",
+        "ulpf_semantic",
+        "ulpf_mapping",
+        "ulpf_onboarding",
+        "ulpf_ai",
+        "ulpf_runtime",
+        "ulpf_streaming",
+        "ulpf_storage",
+        "ulpf_search",
+        "ulpf_delivery",
+        "ulpf_observability"
+      ]
+    },
+    {
+      "name": "offline-ai-advisor",
+      "type": "deterministic_offline_rule_pack",
+      "provider_id": "offline.deterministic.v1",
+      "external_calls": false
+    },
+    {
+      "name": "default-parser-packs",
+      "path": "parser-packs",
+      "type": "parser_definitions"
+    }
+  ],
+  "verification": {
+    "offline_verified": true,
+    "no_remote_telemetry": true,
+    "no_third_party_saas": true
+  }
+}

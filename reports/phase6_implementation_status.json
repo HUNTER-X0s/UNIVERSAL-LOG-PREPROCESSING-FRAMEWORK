@@ -1,0 +1,102 @@
+{
+  "phase": 6,
+  "status": "IMPLEMENTATION_COMPLETE",
+  "baseline_commit": "8a7950d",
+  "runtime": {
+    "pipeline": "ulpf_runtime.pipeline.RuntimePipeline",
+    "lifecycle_states": 12,
+    "poison_event_safety": true,
+    "status": "PASS"
+  },
+  "streaming": {
+    "stream_backend": "ulpf_streaming.memory.MemoryEventStream",
+    "partitioning": "deterministic_sha256",
+    "bounded_capacity": true,
+    "status": "PASS"
+  },
+  "storage": {
+    "raw_evidence_store": "ulpf_storage.raw_fs.FilesystemRawEvidenceRepository",
+    "uce_store": "ulpf_storage.memory.MemoryUCERepository",
+    "semantic_store": "ulpf_storage.memory.MemorySemanticEventRepository",
+    "uce_immutability": "write_once_strictly_enforced",
+    "sha256_verification": true,
+    "status": "PASS"
+  },
+  "search": {
+    "adapter": "ulpf_search.memory.MemorySearchIndex",
+    "bounded_pagination": true,
+    "rebuild_capability": true,
+    "status": "PASS"
+  },
+  "delivery": {
+    "sinks": ["ocsf", "otel", "siem", "datalake"],
+    "failure_isolation": true,
+    "outbox_pattern": true,
+    "status": "PASS"
+  },
+  "api": {
+    "framework": "FastAPI v1",
+    "endpoints": ["/events/ingest", "/events/raw/{id}", "/uce/{id}", "/semantic/{id}", "/search", "/dlq", "/replay", "/health", "/metrics"],
+    "authorization": "role_based (viewer, operator, platform-admin)",
+    "status": "PASS"
+  },
+  "observability": {
+    "metrics_registry": true,
+    "structured_json_logging": true,
+    "secret_redaction": true,
+    "in_process_tracing": true,
+    "status": "PASS"
+  },
+  "security": {
+    "dynamic_code_execution": "CLEAN (0 tokens)",
+    "path_traversal_defense": "VERIFIED",
+    "secret_leakage_defense": "VERIFIED",
+    "airgap_network_import": "CLEAN (0 external network calls)",
+    "status": "PASS"
+  },
+  "replay": {
+    "coordinator": "ulpf_runtime.replay.RuntimeReplayCoordinator",
+    "mapping_version_pinning": "MANDATORY",
+    "audit_trail": true,
+    "status": "PASS"
+  },
+  "resilience": {
+    "backpressure": "VERIFIED (REJECT, BLOCK, DLQ policies)",
+    "retries": "VERIFIED (bounded exponential backoff)",
+    "dlq": "VERIFIED (poison event safe capture)",
+    "graceful_shutdown": "VERIFIED",
+    "status": "PASS"
+  },
+  "airgap": {
+    "bundle_manifest": "deploy/airgap/manifest.json",
+    "network_requirement": "ZERO_INTERNET_ACCESS",
+    "status": "PASS"
+  },
+  "performance": {
+    "raw_persistence_eps": 95890,
+    "streaming_pub_eps": 90853,
+    "e2e_pipeline_eps": 2166,
+    "e2e_p50_latency_ms": 0.397,
+    "status": "PASS"
+  },
+  "regression": {
+    "total_tests": 319,
+    "passed": 319,
+    "failed": 0,
+    "phase0_5_regressions": 0,
+    "status": "PASS"
+  },
+  "findings": [],
+  "limitations": [
+    {
+      "id": "LIM-P6-01",
+      "description": "Production distributed streaming (Kafka) and database (PostgreSQL) are defined through interface adapter boundaries; local runtime operates on high-performance in-memory and filesystem implementations.",
+      "impact": "Single-node production or testing does not require a multi-node cluster."
+    },
+    {
+      "id": "LIM-P6-02",
+      "description": "Historical replay is bounded to 1,000 events per job by default to prevent resource exhaustion.",
+      "impact": "Operators chunk large historical investigations into multiple requests."
+    }
+  ]
+}

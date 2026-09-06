@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-P6-01",
+    "requirement": "Runtime Processing Pipeline (deterministic lifecycle states)",
+    "implementation": "ulpf_runtime.pipeline.RuntimePipeline",
+    "contract": "EventLifecycleState",
+    "test": "tests/test_runtime_pipeline.py",
+    "runtime_evidence": "All 12 states validated; full stage orchestration passing",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-02",
+    "requirement": "Bounded Streaming Buffer & Backpressure",
+    "implementation": "ulpf_streaming.memory.MemoryEventStream, ulpf_runtime.backpressure.BackpressureController",
+    "contract": "EventStream, BufferFullError",
+    "test": "tests/test_stream_adapter.py, tests/test_backpressure.py",
+    "runtime_evidence": "Bounded partition capacity, reject/dlq policies, watermark tracking",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-03",
+    "requirement": "Bounded Retries & Poison Message Dead Letter Queue (DLQ)",
+    "implementation": "ulpf_runtime.retry.BoundedRetryPolicy, ulpf_runtime.dlq.DLQManager",
+    "contract": "DLQRecord, RetryConfig",
+    "test": "tests/test_retry.py, tests/test_dlq.py",
+    "runtime_evidence": "Bounded retries, terminal failure, DLQ payload preview sanitization",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-04",
+    "requirement": "Multi-Tier Durable Storage (Raw Evidence, UCE, SemanticEvent)",
+    "implementation": "ulpf_storage.raw_fs.FilesystemRawEvidenceRepository, ulpf_storage.memory.*",
+    "contract": "RawEvidenceRepository, UCERepository, SemanticEventRepository",
+    "test": "tests/test_storage.py",
+    "runtime_evidence": "SHA-256 verification on read, write-once UCE immutability, multi-attribute querying",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-05",
+    "requirement": "Search and Analytics Indexing with Safe Boundaries",
+    "implementation": "ulpf_search.memory.MemorySearchIndex",
+    "contract": "SearchIndexAdapter, SearchQuery, SearchResult",
+    "test": "tests/test_search_adapter.py",
+    "runtime_evidence": "Bounded query limits, structured filtering, index rebuild for disaster recovery",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-06",
+    "requirement": "Downstream Isolated Delivery & Outbox Pattern",
+    "implementation": "ulpf_delivery.sinks.*, ulpf_delivery.outbox.OutboxDispatcher",
+    "contract": "DeliverySink, DeliveryIntent, OutboxRepository",
+    "test": "tests/test_delivery.py, tests/test_outbox.py",
+    "runtime_evidence": "OCSF/OTel/SIEM/Data Lake fan-out; destination failure isolation",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-07",
+    "requirement": "Historical Replay with Pinned Mapping Versions",
+    "implementation": "ulpf_runtime.replay.RuntimeReplayCoordinator",
+    "contract": "ReplayRequest, ReplayJobResult, AuditActionRecord",
+    "test": "tests/test_replay_runtime.py",
+    "runtime_evidence": "Pinned mapping version enforced; mandatory audit logging",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-08",
+    "requirement": "Operational Health, Readiness, and Liveness",
+    "implementation": "ulpf_runtime.health.HealthRegistry",
+    "contract": "HealthState, DependencyCheckResult",
+    "test": "tests/test_health.py",
+    "runtime_evidence": "/health/live, /health/ready, critical vs non-critical degradation",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-09",
+    "requirement": "Platform Service APIs & Role-Based Authorization",
+    "implementation": "apps/api/ulpf_api/routes/platform.py",
+    "contract": "REST v1 endpoints, X-Role validation",
+    "test": "tests/test_api_contracts.py, tests/test_api_security.py",
+    "runtime_evidence": "Endpoints tested; unauthorized roles return 403 Forbidden",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-10",
+    "requirement": "Operational Observability & Secret Redaction",
+    "implementation": "ulpf_observability.metrics.*, ulpf_observability.logging.*, ulpf_observability.tracing.*",
+    "contract": "OperationalMetricsRegistry, StructuredJsonFormatter, InProcessTracer",
+    "test": "tests/test_observability.py",
+    "runtime_evidence": "Bounded label dimensions, token redaction, in-process trace spans",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-11",
+    "requirement": "Worker Lifecycle & Graceful Shutdown",
+    "implementation": "ulpf_runtime.worker.WorkerHost",
+    "contract": "WorkerStatus, Threading events",
+    "test": "tests/test_shutdown.py",
+    "runtime_evidence": "Clean drain, nack of uncommitted messages, interruptible polling",
+    "status": "PASS"
+  },
+  {
+    "id": "REQ-P6-12",
+    "requirement": "Air-Gapped Operation & Zero Public Network Dependency",
+    "implementation": "deploy/airgap/manifest.json, scripts/run_phase6_security_audit.py",
+    "contract": "AIRGAP_NETWORK_IMPORT scan",
+    "test": "scripts/run_phase6_security_audit.py",
+    "runtime_evidence": "0 dynamic code execution tokens; 0 external network imports in core pipeline",
+    "status": "PASS"
+  }
+]

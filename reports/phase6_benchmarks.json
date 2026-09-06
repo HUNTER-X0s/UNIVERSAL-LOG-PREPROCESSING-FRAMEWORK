@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-09-06T18:34:19.908774+00:00",
+  "environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 16
+  },
+  "sample_event_bytes": 154,
+  "events_per_test": 500,
+  "stages": {
+    "raw_storage": {
+      "events": 500,
+      "duration_sec": 0.0052143000066280365,
+      "eps": 95890.14812428065,
+      "latency_p50_ms": 0.010428600013256073
+    },
+    "streaming_publish": {
+      "events": 500,
+      "duration_sec": 0.005503399996086955,
+      "eps": 90852.92734591554
+    },
+    "streaming_poll_ack": {
+      "events": 500,
+      "duration_sec": 0.0005206000059843063,
+      "eps": 960430.2617220344
+    },
+    "end_to_end_pipeline": {
+      "events": 500,
+      "duration_sec": 0.23080129991285503,
+      "eps": 2166.3656148764667,
+      "latency_p50_ms": 0.3966998774558306,
+      "latency_p95_ms": 0.8125999011099339,
+      "latency_p99_ms": 1.14100007340312
+    }
+  },
+  "gate_status": "PASS"
+}

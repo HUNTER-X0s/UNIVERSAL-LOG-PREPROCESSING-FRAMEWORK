@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ulpf-runtime-api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.runtime
+    ports:
+      - "8000:8000"
+    environment:
+      - ULPF_ENVIRONMENT=production-like
+      - ULPF_API_DOCUMENTATION_ENABLED=true
+      - ULPF_API_PREFIX=/api/v1
+      - ULPF_RAW_BASE_DIR=/app/data/raw
+    volumes:
+      - raw_evidence_data:/app/data/raw
+      - export_data:/app/data/export
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2048M
+
+volumes:
+  raw_evidence_data:
+    driver: local
+  export_data:
+    driver: local

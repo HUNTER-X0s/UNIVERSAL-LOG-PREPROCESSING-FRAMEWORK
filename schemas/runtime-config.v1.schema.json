@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.internal/schemas/v1/runtime-config.v1.schema.json",
+  "title": "ULPFRuntimeConfiguration",
+  "description": "Schema for ULPF Phase 6 operational runtime configuration.",
+  "type": "object",
+  "properties": {
+    "environment": {
+      "type": "string",
+      "enum": ["development", "test", "production-like", "air-gapped"]
+    },
+    "service_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "streaming": {
+      "type": "object",
+      "properties": {
+        "backend": {
+          "type": "string",
+          "enum": ["memory", "kafka"]
+        },
+        "num_partitions": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_partition_capacity": {
+          "type": "integer",
+          "minimum": 100
+        }
+      },
+      "required": ["backend", "num_partitions", "max_partition_capacity"],
+      "additionalProperties": false
+    },
+    "backpressure": {
+      "type": "object",
+      "properties": {
+        "policy": {
+          "type": "string",
+          "enum": ["REJECT", "BLOCK", "DLQ"]
+        },
+        "max_capacity": {
+          "type": "integer",
+          "minimum": 100
+        },
+        "high_watermark": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 0.95
+        }
+      },
+      "required": ["policy", "max_capacity"],
+      "additionalProperties": false
+    },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "raw_backend": {
+          "type": "string",
+          "enum": ["memory", "filesystem", "s3_compatible"]
+        },
+        "raw_base_dir": {
+          "type": "string"
+        },
+        "uce_backend": {
+          "type": "string",
+          "enum": ["memory", "filesystem", "postgresql"]
+        },
+        "semantic_backend": {
+          "type": "string",
+          "enum": ["memory", "filesystem", "postgresql"]
+        }
+      },
+      "required": ["raw_backend", "uce_backend", "semantic_backend"],
+      "additionalProperties": false
+    },
+    "retry": {
+      "type": "object",
+      "properties": {
+        "max_attempts": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "initial_delay_sec": {
+          "type": "number",
+          "minimum": 0.001
+        },
+        "max_delay_sec": {
+          "type": "number",
+          "minimum": 0.1
+        }
+      },
+      "required": ["max_attempts"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["environment", "service_name", "streaming", "storage"],
+  "additionalProperties": false
+}
