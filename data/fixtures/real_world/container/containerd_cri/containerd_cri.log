@@ -1,0 +1,4 @@
+2026-09-05T14:00:00.123456789Z stdout F {"log":"Starting service worker...","level":"info"}
+2026-09-05T14:00:05.987654321Z stderr F Error: Connection to redis:6379 refused
+2026-09-05T14:00:10.000000000Z stdout P This is a partial line split across CRI buffers 
+2026-09-05T14:00:10.000000001Z stdout F continuing on the final frame

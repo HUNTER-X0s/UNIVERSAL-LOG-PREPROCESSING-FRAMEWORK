@@ -1,0 +1,2 @@
+[**] [1:1000001:1] COMMUNITY WEB-ATTACK /etc/passwd access attempt [**] [Classification: Web Application Attack] [Priority: 1] 09/05-14:00:01.123456 198.51.100.15:49152 -> 10.0.0.10:80 TCP TTL:64 TOS:0x0 ID:12345 IpLen:20 DgmLen:450 [**]
+[**] [1:2001219:2] ET SCAN Potential VNC Scan 5900-5920 [**] [Classification: Attempted Information Leak] [Priority: 3] 09/05-14:00:05.654321 203.0.113.77:51234 -> 10.0.0.25:5900 TCP TTL:55 TOS:0x0 ID:54321 IpLen:20 DgmLen:40 [**]

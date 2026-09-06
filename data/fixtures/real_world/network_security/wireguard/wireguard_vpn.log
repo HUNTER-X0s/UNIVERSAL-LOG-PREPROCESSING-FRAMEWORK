@@ -1,0 +1,4 @@
+Sep  5 14:00:00 vpn-edge kernel: [12345.678] wireguard: wg0: Receiving handshake initiation from peer 1 (198.51.100.25:51820)
+Sep  5 14:00:00 vpn-edge kernel: [12345.679] wireguard: wg0: Sending handshake response to peer 1 (198.51.100.25:51820)
+Sep  5 14:00:00 vpn-edge kernel: [12345.680] wireguard: wg0: Keypair 42 created for peer 1
+Sep  5 14:05:00 vpn-edge kernel: [12645.123] wireguard: wg0: Handshake for peer 1 (198.51.100.25:51820) did not complete after 5 seconds, retrying

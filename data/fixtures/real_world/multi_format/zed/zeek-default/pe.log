@@ -1,0 +1,30 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	pe
+#open	2024-04-12-19-29-27
+#fields	ts	id	machine	compile_ts	os	subsystem	is_exe	is_64bit	uses_aslr	uses_dep	uses_code_integrity	uses_seh	has_import_table	has_export_table	has_cert_table	has_debug_data	section_names
+#types	time	string	string	time	string	string	bool	bool	bool	bool	bool	bool	bool	bool	bool	bool	vector[string]
+1521911754.475076	F0xzjz3rr4CCtVDBJc	I386	1278971178.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	F	.text,.data,.rdata,.bss,.idata
+1521911977.127059	Fl73YO3cTWT2KHyK8k	AMD64	1297324984.000000	Windows 7 or Server 2008 R2	WINDOWS_GUI	T	T	T	T	F	T	T	T	T	T	.text,.data,.pdata,.rsrc,.reloc
+1521911977.068955	FdGGu71I4vCKMV7ja	AMD64	1290246306.000000	Windows 7 or Server 2008 R2	WINDOWS_GUI	T	T	T	T	F	T	T	F	T	T	.text,.data,.pdata,.rsrc,.reloc
+1521911976.940920	FQFHqb1X3FFyqYwWpd	AMD64	1290246300.000000	Windows 7 or Server 2008 R2	WINDOWS_GUI	T	T	T	F	F	T	T	F	T	T	.text,.data,.pdata,.rsrc,.reloc
+1521912164.488254	FznA0o1pbDyXo6BOe5	I386	1278971178.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	F	.text,.data,.rdata,.bss,.idata
+1521912164.455516	Fr502N3TQDvtxnpBj6	I386	1278971178.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	F	.text,.data,.rdata,.bss,.idata
+1521912164.799554	FH69o9154XHi81qh0b	I386	1278971178.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	F	.text,.data,.rdata,.bss,.idata
+1521912168.644903	FznA0o1pbDyXo6BOe5	I386	1278971178.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	F	.text,.data,.rdata,.bss,.idata
+1521912212.400229	FK5igWCGyaYUxDmCh	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912212.767219	FhkFI24FtNBFrR5Pf9	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912649.112839	FtOkptIVTLU4nRQw7	AMD64	1521749706.000000	Windows 10	WINDOWS_GUI	T	T	T	T	F	T	T	F	T	T	.text,.rdata,.data,.pdata,.rsrc,.reloc
+1521912688.822477	FKi4pl3VUe06kRwwOk	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912688.989698	F1Ztys2WQxzs3OSRPj	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912773.661071	F8fQbZ2tEz4rHaGO0c	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912774.041003	FA8aav2vf9kTco9et7	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912799.589839	FdzfpI2Ao21SZlTc13	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912799.657260	FYUHTI9gBCYsMuc45	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912828.463674	F8ISQu4kLzjzg5f0k2	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912828.693522	FXFq3x3QtcDeYAEcbi	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912857.843408	Fm7YZ04B6qw2JQiEhe	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+1521912858.105985	FyX1sN2LRPcB5yIde4	I386	1244468931.000000	Windows 95 or NT 4.0	WINDOWS_GUI	T	F	F	F	F	T	T	F	F	T	.text,.rdata,.data,.rsrc
+#close	2024-04-12-19-34-07

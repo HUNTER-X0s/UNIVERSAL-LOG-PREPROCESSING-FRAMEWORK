@@ -1,0 +1,6016 @@
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.609736Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 8::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.612331Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((54+54))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((54+54))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.613252Z,
+    host: 10.47.27.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.683005Z,
+    host: 10.47.3.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.683005Z,
+    host: 10.47.3.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.683005Z,
+    host: 10.47.3.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "SharePoint",
+    version: {
+        major: 15::uint64,
+        minor: 0::uint64,
+        minor2: 0::uint64,
+        minor3: 4420::uint64,
+        addl: null::string
+    },
+    unparsed_version: "SharePoint/15.0.0.4420"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.69341Z,
+    host: 10.128.0.223,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Edge",
+    version: {
+        major: 16::uint64,
+        minor: 16299::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.720042Z,
+    host: 10.0.0.111,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "check_http/v",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "monitoring-plugins 2.0"
+    },
+    unparsed_version: "check_http/v2.0 (monitoring-plugins 2.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.721467Z,
+    host: 10.47.8.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.722877Z,
+    host: 10.47.7.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.809396Z,
+    host: 10.47.3.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:20.916143Z,
+    host: 10.47.27.80,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Apache"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.17069Z,
+    host: 10.47.8.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.222832Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: 61102::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus/61102"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.420828Z,
+    host: 10.128.0.231,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.459579Z,
+    host: 10.47.5.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.988949Z,
+    host: 10.128.0.227,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.990416Z,
+    host: 10.47.23.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:21.990416Z,
+    host: 10.47.23.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:22.314494Z,
+    host: 10.47.5.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "0"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (0.8.16~exp12ubuntu10.27)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:22.409738Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:22.433287Z,
+    host: 10.47.27.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.054151Z,
+    host: 10.47.8.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.054151Z,
+    host: 10.47.8.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.137044Z,
+    host: 10.47.1.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.137044Z,
+    host: 10.47.1.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.16191Z,
+    host: 10.47.23.166,
+    host_p: 2869::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-Windows-NT",
+    version: {
+        major: 5::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "UPnP/1"
+    },
+    unparsed_version: "Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.352226Z,
+    host: 10.47.6.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.352226Z,
+    host: 10.47.6.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.468871Z,
+    host: 10.47.1.208,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.658551Z,
+    host: 10.47.27.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.796465Z,
+    host: 10.128.0.248,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:23.803827Z,
+    host: 10.47.1.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:24.142366Z,
+    host: 10.47.21.172,
+    host_p: 2869::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-Windows-NT",
+    version: {
+        major: 5::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "UPnP/1"
+    },
+    unparsed_version: "Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:24.613134Z,
+    host: 10.47.21.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:24.650859Z,
+    host: 10.47.21.80,
+    host_p: 47001::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:24.742663Z,
+    host: 10.0.0.227,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 64::uint64,
+        minor: 0::uint64,
+        minor2: 3282::uint64,
+        minor3: 186::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:24.991314Z,
+    host: 10.47.2.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:25.110256Z,
+    host: 10.47.8.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:25.110256Z,
+    host: 10.47.8.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:25.157517Z,
+    host: 10.47.24.170,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:25.39417Z,
+    host: 10.47.24.170,
+    host_p: 2869::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-Windows-NT",
+    version: {
+        major: 5::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "UPnP/1"
+    },
+    unparsed_version: "Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:25.563897Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:26.098899Z,
+    host: 10.47.8.218,
+    host_p: 8082::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "MS",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "NET"
+    },
+    unparsed_version: "MS .NET Remoting, MS .NET CLR 4.0.30319.17929"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:26.171926Z,
+    host: 10.47.8.208,
+    host_p: 47001::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:26.213978Z,
+    host: 10.47.2.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:26.231263Z,
+    host: 10.47.5.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:27.058038Z,
+    host: 10.47.7.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:27.156059Z,
+    host: 10.47.21.80,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Apache"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:27.672967Z,
+    host: 10.47.26.160,
+    host_p: 5357::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:27.713433Z,
+    host: 10.128.0.248,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "python-requests",
+    version: {
+        major: 2::uint64,
+        minor: 18::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "python-requests/2.18.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:28.630588Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0+(compatible; MSIE 6.0; Windows 6.1.7600.0; MS .NET Remoting; MS .NET CLR 4.0.30319.1 )"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:28.670457Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 8::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:29.09923Z,
+    host: 10.47.21.172,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:29.16798Z,
+    host: 10.47.23.166,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:29.220344Z,
+    host: 10.47.3.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:29.220344Z,
+    host: 10.47.3.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:29.309221Z,
+    host: 10.0.0.208,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:30.778246Z,
+    host: 10.47.5.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:30.778246Z,
+    host: 10.47.5.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:31.468053Z,
+    host: 10.47.3.151,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:31.593142Z,
+    host: 10.47.3.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:31.632201Z,
+    host: 10.47.2.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:31.632201Z,
+    host: 10.47.2.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:31.650807Z,
+    host: 10.47.3.142,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/6.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.176269Z,
+    host: 10.47.3.155,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.289467Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: 61102::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus/61102"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.290659Z,
+    host: 10.47.3.218,
+    host_p: 8093::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "MS",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "NET"
+    },
+    unparsed_version: "MS .NET Remoting, MS .NET CLR 4.0.30319.17929"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.590924Z,
+    host: 10.47.8.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.59407Z,
+    host: 10.47.3.155,
+    host_p: 2869::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-Windows-NT",
+    version: {
+        major: 5::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "UPnP/1"
+    },
+    unparsed_version: "Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:32.685175Z,
+    host: 10.47.3.142,
+    host_p: 1337::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Indy",
+    version: {
+        major: 9::uint64,
+        minor: 0::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Indy/9.00.10"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:33.069163Z,
+    host: 10.47.4.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:33.139631Z,
+    host: 10.47.2.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:33.139631Z,
+    host: 10.47.2.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:33.715289Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0+(compatible; MSIE 6.0; Windows 6.1.7600.0; MS .NET Remoting; MS .NET CLR 4.0.30319.1 )"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:33.772836Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 8::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:34.845524Z,
+    host: 10.47.5.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:35.482204Z,
+    host: 10.47.1.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:35.482204Z,
+    host: 10.47.1.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:35.78372Z,
+    host: 10.0.0.251,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:36.179954Z,
+    host: 10.47.25.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Windows-Update-Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:36.512805Z,
+    host: 10.47.3.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:36.590865Z,
+    host: 10.47.4.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:37.760977Z,
+    host: 10.47.6.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:38.107695Z,
+    host: 10.47.25.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Windows-Update-Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:38.2227Z,
+    host: 10.47.7.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "0"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (0.8.16~exp12ubuntu10.27)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:39.211694Z,
+    host: 10.47.6.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:39.308625Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:39.698442Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "NESSUS::SOAP",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "NESSUS::SOAP"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:39.743958Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus SOAP",
+    version: {
+        major: 0::uint64,
+        minor: 0::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: "Nessus.org"
+    },
+    unparsed_version: "Nessus SOAP v0.0.1 (Nessus.org)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:40.63333Z,
+    host: 10.47.4.158,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:40.704718Z,
+    host: 10.47.4.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Win32"
+    },
+    unparsed_version: "Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:40.704718Z,
+    host: 10.47.4.142,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 4::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.4.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:40.791196Z,
+    host: 10.47.7.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:41.061764Z,
+    host: 10.47.1.30,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 12::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.12.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:42.273084Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "<script>foo</script>",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "<script>foo</script>"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:42.962412Z,
+    host: 10.47.6.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:44.150372Z,
+    host: 10.47.1.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:45.0393Z,
+    host: 10.47.8.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:45.403551Z,
+    host: 10.47.4.158,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:45.477348Z,
+    host: 10.47.2.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:46.216661Z,
+    host: 10.47.8.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:46.216661Z,
+    host: 10.47.8.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:46.216661Z,
+    host: 10.47.8.218,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "SharePoint",
+    version: {
+        major: 15::uint64,
+        minor: 0::uint64,
+        minor2: 0::uint64,
+        minor3: 4420::uint64,
+        addl: null::string
+    },
+    unparsed_version: "SharePoint/15.0.0.4420"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:47.192737Z,
+    host: 10.47.22.80,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:47.730324Z,
+    host: 10.47.7.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Unix"
+    },
+    unparsed_version: "Apache/2.4.29 (Unix) PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:47.870761Z,
+    host: 10.47.2.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:48.359327Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: 61102::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus/61102"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:49.440291Z,
+    host: 10.47.6.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:49.440291Z,
+    host: 10.47.6.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "ASP.NET",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "ASP.NET"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:52.311014Z,
+    host: 10.47.21.80,
+    host_p: 8069::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Werkzeug",
+    version: {
+        major: 0::uint64,
+        minor: 12::uint64,
+        minor2: 2::uint64,
+        minor3: null::uint64,
+        addl: "Python/3"
+    },
+    unparsed_version: "Werkzeug/0.12.2 Python/3.6.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:57.111133Z,
+    host: 10.47.3.151,
+    host_p: 2869::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-Windows-NT",
+    version: {
+        major: 5::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "UPnP/1"
+    },
+    unparsed_version: "Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:57.305728Z,
+    host: 10.47.1.208,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:57.384541Z,
+    host: 10.47.8.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.4.8"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.4.8)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:57.434363Z,
+    host: 10.47.1.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:58.728746Z,
+    host: 10.47.3.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:59.784038Z,
+    host: 10.47.1.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:15:59.815635Z,
+    host: 10.47.21.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:00.479325Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:01.538262Z,
+    host: 10.47.21.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:01.538262Z,
+    host: 10.47.21.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:06.335513Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((20+90))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((20+90))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:06.338613Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") { ignored; }; echo Content-Type: text/plain ; echo ; echo \"bash_cve",
+    version: {
+        major: 2014::uint64,
+        minor: 6271::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "rce"
+    },
+    unparsed_version: "() { ignored; }; echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6271_rce Output : $((53+11))\""
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:11.948149Z,
+    host: 10.128.0.247,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:12.620394Z,
+    host: 10.47.6.162,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:12.706564Z,
+    host: 10.128.0.202,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 146::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:12.707604Z,
+    host: 10.47.25.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:13.095519Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((84+94))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((84+94))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:13.189428Z,
+    host: 10.47.7.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:13.219558Z,
+    host: 10.128.0.244,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:19.030922Z,
+    host: 10.47.4.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:20.68504Z,
+    host: 10.128.0.220,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:20.822447Z,
+    host: 10.47.1.151,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:23.013591Z,
+    host: 10.47.2.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 58::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:23.554606Z,
+    host: 10.47.8.151,
+    host_p: 10243::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:25.326165Z,
+    host: 10.47.24.80,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:39.739898Z,
+    host: 10.0.0.227,
+    host_p: null::(port=uint16),
+    software_type: "SSH::CLIENT"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 7::uint64,
+        minor: 6::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "OpenSSH_7.6"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:40.046697Z,
+    host: 10.47.8.50,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 7::uint64,
+        minor: 4::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_7.4p1 Raspbian-10+deb9u3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:51.692078Z,
+    host: 10.47.2.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:52.431652Z,
+    host: 10.128.0.233,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:52.436282Z,
+    host: 10.47.25.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:16:58.004176Z,
+    host: 10.128.0.211,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:05.558105Z,
+    host: 10.47.1.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:05.566093Z,
+    host: 10.0.0.85,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "debut",
+    version: {
+        major: 1::uint64,
+        minor: 30::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "debut/1.30"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:07.095564Z,
+    host: 10.47.3.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:09.517387Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((76+73))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((76+73))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:11.335459Z,
+    host: 10.47.5.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Python-urllib",
+    version: {
+        major: 2::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Python-urllib/2.7"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:20.615327Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((72+86))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((72+86))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:24.366869Z,
+    host: 10.47.6.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:25.908294Z,
+    host: 10.47.1.150,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:28.172667Z,
+    host: 10.47.2.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.2.25"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.2.25)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:40.120039Z,
+    host: 10.47.26.160,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:44.018498Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((97+76))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((97+76))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:45.128521Z,
+    host: 10.47.27.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:45.128521Z,
+    host: 10.47.27.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:51.900663Z,
+    host: 10.47.4.58,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx/1.10.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:53.579204Z,
+    host: 10.47.6.161,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:57.918901Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: 61102::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus/61102"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:17:59.110922Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((93+4))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((93+4))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:02.636265Z,
+    host: 10.47.5.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:13.874521Z,
+    host: 10.47.2.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:14.7209Z,
+    host: 10.47.6.173,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:15.388741Z,
+    host: 10.47.6.161,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.638932Z,
+    host: 10.196.136.60,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.682309Z,
+    host: 10.47.27.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.725093Z,
+    host: 10.47.24.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "SimpleHTTP",
+    version: {
+        major: 0::uint64,
+        minor: 6::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "Python/2"
+    },
+    unparsed_version: "SimpleHTTP/0.6 Python/2.7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.770621Z,
+    host: 10.47.23.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.779459Z,
+    host: 10.47.3.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.79486Z,
+    host: 10.47.6.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.804744Z,
+    host: 10.47.8.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.847788Z,
+    host: 10.47.25.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:25.939Z,
+    host: 10.47.26.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.015272Z,
+    host: 10.47.25.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.132292Z,
+    host: 10.47.22.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.13535Z,
+    host: 10.47.1.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.180139Z,
+    host: 10.47.23.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.197704Z,
+    host: 10.47.21.65,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.225066Z,
+    host: 10.47.22.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.225066Z,
+    host: 10.47.22.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.367925Z,
+    host: 10.47.22.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.465611Z,
+    host: 10.47.5.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.470105Z,
+    host: 10.47.7.20,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 7::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/7.2.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.581796Z,
+    host: 10.47.25.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.629798Z,
+    host: 10.47.26.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.629798Z,
+    host: 10.47.26.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.737735Z,
+    host: 10.47.24.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 2::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.737735Z,
+    host: 10.47.24.55,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 2::uint64,
+        minor2: 0::uint64,
+        minor3: 8::uint64,
+        addl: "+etch16"
+    },
+    unparsed_version: "PHP/5.2.0-8+etch16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.834974Z,
+    host: 10.47.26.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:26.980894Z,
+    host: 10.47.24.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-IIS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-IIS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:31.332525Z,
+    host: 10.47.7.153,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "SimpleHTTP",
+    version: {
+        major: 0::uint64,
+        minor: 6::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "Python/2"
+    },
+    unparsed_version: "SimpleHTTP/0.6 Python/2.7.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:32.767991Z,
+    host: 10.47.4.218,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:36.242503Z,
+    host: 10.47.5.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "pkg",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "pkg/1.10.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:40.626765Z,
+    host: 10.47.26.160,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft BITS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft BITS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:41.43646Z,
+    host: 10.128.0.233,
+    host_p: null::(port=uint16),
+    software_type: "SSH::CLIENT"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 7::uint64,
+        minor: 6::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_7.6p1 Debian-4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:41.444677Z,
+    host: 10.47.27.186,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 6::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_6.7p1 Debian-5+deb8u4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:18:53.128419Z,
+    host: 10.47.24.80,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Google Update",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: 33::uint64,
+        minor3: 7::uint64,
+        addl: "winhttp"
+    },
+    unparsed_version: "Google Update/1.3.33.7;winhttp;cup-ecdsa"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:06.753806Z,
+    host: 10.128.0.202,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:08.303539Z,
+    host: 10.47.7.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:08.884018Z,
+    host: 10.47.2.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Python-urllib",
+    version: {
+        major: 3::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Python-urllib/3.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:09.922726Z,
+    host: 10.128.0.241,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "<unknown browser>",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:09.926214Z,
+    host: 10.47.1.208,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Microsoft-HTTPAPI",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-HTTPAPI/2.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:15.128722Z,
+    host: 10.47.6.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:15.145945Z,
+    host: 10.47.26.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:17.527979Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:18.873967Z,
+    host: 10.47.26.186,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 6::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_6.7p1 Debian-5+deb8u4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:24.720411Z,
+    host: 10.47.4.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:25.782798Z,
+    host: 10.47.7.2,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:28.71012Z,
+    host: 10.47.24.186,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 6::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_6.7p1 Debian-5+deb8u4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:35.279862Z,
+    host: 10.47.23.186,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 6::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p1"
+    },
+    unparsed_version: "OpenSSH_6.7p1 Debian-5+deb8u4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:36.81503Z,
+    host: 10.47.25.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft BITS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft BITS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:37.198977Z,
+    host: 10.47.23.55,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 4::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p2"
+    },
+    unparsed_version: "OpenSSH_4.3p2 Debian-9etch3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:42.939306Z,
+    host: 10.47.5.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 49::uint64,
+        minor: 0::uint64,
+        minor2: 2623::uint64,
+        minor3: 111::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:55.551681Z,
+    host: 10.47.5.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: 7::uint64,
+        minor: 9::uint64,
+        minor2: 9600::uint64,
+        minor3: 16403::uint64,
+        addl: "Client"
+    },
+    unparsed_version: "Windows-Update-Agent/7.9.9600.16403 Client-Protocol/1.20"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:19:57.009872Z,
+    host: 10.47.6.159,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:02.64727Z,
+    host: 10.47.25.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:04.254281Z,
+    host: 10.47.1.218,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:09.786044Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((38+88))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((38+88))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:26.756029Z,
+    host: 10.47.2.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:27.49324Z,
+    host: 10.10.12.2,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.0.9.8.4"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.0.9.8.4)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:29.377124Z,
+    host: 10.47.1.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "pkg",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "pkg/1.10.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:30.886301Z,
+    host: 10.128.0.241,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "AnyConnect Darwin_i",
+    version: {
+        major: 386::uint64,
+        minor: 3::uint64,
+        minor2: 1::uint64,
+        minor3: 5160::uint64,
+        addl: null::string
+    },
+    unparsed_version: "AnyConnect Darwin_i386 3.1.05160"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:33.196544Z,
+    host: 10.47.1.20,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:33.867032Z,
+    host: 10.47.3.151,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:34.645059Z,
+    host: 10.47.27.186,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:37.258556Z,
+    host: 10.47.3.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:37.821999Z,
+    host: 10.128.0.215,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 146::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:37.929586Z,
+    host: 10.47.22.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:20:52.356971Z,
+    host: 10.47.5.154,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:04.904906Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: 61102::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus/61102"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:05.882017Z,
+    host: 10.47.24.170,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:10.833578Z,
+    host: 10.47.23.186,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:12.547618Z,
+    host: 10.47.23.55,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:15.692803Z,
+    host: 10.47.24.186,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:15.848411Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 64::uint64,
+        minor: 0::uint64,
+        minor2: 3282::uint64,
+        minor3: 167::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:17.32626Z,
+    host: 10.47.5.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "WSDAPI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "WSDAPI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:17.86596Z,
+    host: 10.47.5.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.0.9.8.4"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.0.9.8.4)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:19.764384Z,
+    host: 10.218.221.240,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:20.596518Z,
+    host: 10.10.18.2,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Go-http-client",
+    version: {
+        major: 1::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Go-http-client/1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:22.210089Z,
+    host: 10.47.1.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-WNS",
+    version: {
+        major: 6::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-WNS/6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:23.255216Z,
+    host: 10.47.8.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:24.564552Z,
+    host: 10.47.3.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:29.331462Z,
+    host: 10.47.27.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 3::uint64,
+        minor2: 11::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.3.11"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:30.648025Z,
+    host: 10.10.16.2,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.0.9.8.4"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.0.9.8.4)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:21:35.850932Z,
+    host: 10.47.5.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:04.80445Z,
+    host: 10.47.3.151,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:21.88867Z,
+    host: 10.47.3.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 49::uint64,
+        minor: 0::uint64,
+        minor2: 2623::uint64,
+        minor3: 111::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:35.067876Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "WPScan",
+    version: {
+        major: 2::uint64,
+        minor: 9::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: "dev"
+    },
+    unparsed_version: "WPScan v2.9.4-dev (http://wpscan.org)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:47.155183Z,
+    host: 10.47.8.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:49.365446Z,
+    host: 10.47.5.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:58.883279Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 5::uint64,
+        minor2: 8::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.8) Gecko/20100202 Firefox/3.5.8"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:58.976228Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "<unknown browser>",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060427 Camino/1.0.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.025256Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Opera/9.51 (Windows NT 5.1; U; es-AR)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.032275Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: 10::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Opera/9.80 (X11; Linux x86_64; U; en-GB) Presto/2.2.15 Version/10.01"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.053096Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 1::uint64,
+        minor: 0::uint64,
+        minor2: 154::uint64,
+        minor3: 43::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.060153Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: 451::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/6.0.451.0 Safari/534.2"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.06645Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 8::uint64,
+        minor: 0::uint64,
+        minor2: 552::uint64,
+        minor3: 343::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; CrOS i686 0.9.128; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.343 Safari/534.10"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.073289Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Opera/9.50 (Macintosh; Intel Mac OS X; U; de)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.093807Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1b1) Gecko/20060708 Firefox/2.0b1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.099338Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 13::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-BR; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.116855Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 9::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:22:59.121634Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: 9::uint64,
+        minor: 51::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.51"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.448704Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 10::uint64,
+        minor: 0::uint64,
+        minor2: 649::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.456482Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Safari",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.46392Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.0.10) Gecko/2009042513 Ubuntu/8.04 (hardy) Firefox/3.0.10"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.46983Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 6::uint64,
+        minor2: 6::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729; .NET4.0E)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.475943Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.7.39 Version/11.00"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.497646Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; sk; rv:1.9) Gecko/2008061015 Firefox/3.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:04.502778Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Safari",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.0; hu-HU) AppleWebKit/528.16 (KHTML, like Gecko) Version/4.0 Safari/528.16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:10.733327Z,
+    host: 10.47.3.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "pkg",
+    version: {
+        major: 1::uint64,
+        minor: 10::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "pkg/1.10.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:13.184851Z,
+    host: 10.47.3.10,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 10::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/10.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.652693Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; ko; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.66072Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 7::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; c .NET CLR 3.0.04506; .NET CLR 3.5.30707; InfoPath.1; el-GR)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.668285Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 16::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.16) Gecko/2009120208 Firefox/3.0.16 FBSMTWB"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.674541Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Safari",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.680191Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9b4) Gecko/2008031318 Firefox/3.0b4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.700316Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Opera",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Opera/9.62 (X11; Linux i686; U; en) Presto/2.1.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:15.705503Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Safari",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/528.4+ (KHTML, like Gecko) Version/4.0dp1 Safari/526.11.2"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:17.61332Z,
+    host: 10.47.1.150,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.162202Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Safari",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: 5::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.168142Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 6::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.1; hu; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 GTB7.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.174008Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 195::uint64,
+        minor3: 17::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.17 Safari/532.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.179921Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 6::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) Gecko/2009020616 Gentoo Firefox/3.0.6"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.200942Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Unspecified WebKit",
+    version: {
+        major: 312::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/312.1 (KHTML, like Gecko) Safari/312"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:21.206179Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 9::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.673898Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 10::uint64,
+        minor: 0::uint64,
+        minor2: 613::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.15 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.613.0 Chrome/10.0.613.0 Safari/534.15"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.681963Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 5::uint64,
+        minor2: 1::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; rv:1.9.1.1) Gecko/20090716 Linux Firefox/3.5.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.694995Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 6::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.3) Gecko/20100404 Ubuntu/10.04 (lucid) Firefox/3.6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.701706Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 5::uint64,
+        minor2: 3::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.3) Gecko/20090919 Firefox/3.5.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.7081Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: 213::uint64,
+        minor3: 1::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.213.1 Safari/532.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.729916Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 6::uint64,
+        minor2: 8::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.2; zh-TW; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.737049Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 12::uint64,
+        minor: 0::uint64,
+        minor2: 742::uint64,
+        minor3: 53::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.53 Safari/534.30"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:23.742911Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.2) Gecko/2008092313 Ubuntu/8.04 (hardy) Firefox/3.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:24.902253Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Nessus",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Nessus"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:29.953473Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: 460::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.460.0 Safari/534.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:29.960518Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 10::uint64,
+        minor: 0::uint64,
+        minor2: 648::uint64,
+        minor3: 133::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.648.133 Chrome/10.0.648.133 Safari/534.16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:29.9658Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 4::uint64,
+        minor: 0::uint64,
+        minor2: 227::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.3 (KHTML, like Gecko) Chrome/4.0.227.0 Safari/532.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:29.976437Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 8::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; it; rv:1.9.0.8) Gecko/2009033100 Ubuntu/9.04 (jaunty) Firefox/3.0.8"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:29.99492Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: 195::uint64,
+        minor3: 3::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.3 Safari/532.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:30.000648Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 1::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 5.1; nl-NL; rv:1.7.5) Gecko/20041202 Firefox/1.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:32.398435Z,
+    host: 10.47.21.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:32.400212Z,
+    host: 10.128.0.233,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 29::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.29 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:32.765517Z,
+    host: 10.47.21.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "CertUtil URL Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "CertUtil URL Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:39.783872Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux x86_64; pl-PL; rv:1.9) Gecko/2008060309 Firefox/3.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:39.798819Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 3::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.16) Gecko/20080716 Firefox/3.07"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:39.814303Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 10::uint64,
+        minor: 0::uint64,
+        minor2: 648::uint64,
+        minor3: 204::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; U; Linux armv7l; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:39.818665Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 2::uint64,
+        minor: 0::uint64,
+        minor2: 174::uint64,
+        minor3: 0::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/530.6 (KHTML, like Gecko) Chrome/2.0.174.0 Safari/530.6"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:23:44.054261Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 56::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:24:05.404621Z,
+    host: 10.132.229.74,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:24:30.614902Z,
+    host: 10.0.0.219,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:24:48.99752Z,
+    host: 10.47.25.80,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Apache"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:25:03.794943Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "curl",
+    version: {
+        major: 7::uint64,
+        minor: 29::uint64,
+        minor2: 0::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "curl/7.29.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:25:13.133317Z,
+    host: 10.47.22.80,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Apache"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:25:44.409465Z,
+    host: 10.47.4.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:00.161991Z,
+    host: 10.47.8.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:06.27538Z,
+    host: 10.47.7.150,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:07.713249Z,
+    host: 10.191.2.236,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:22.211547Z,
+    host: 10.47.7.153,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Python-urllib",
+    version: {
+        major: 2::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Python-urllib/2.7"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:38.717853Z,
+    host: 10.164.94.120,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: ") {",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((79+90))\"; }"
+    },
+    unparsed_version: "() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo \"bash_cve_2014_6278 Output : $((79+90))\"; }"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:39.130295Z,
+    host: 10.47.4.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Python-urllib",
+    version: {
+        major: 2::uint64,
+        minor: 7::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Python-urllib/2.7"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:40.297426Z,
+    host: 10.47.4.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 17::uint64,
+        minor: 0::uint64,
+        minor2: 963::uint64,
+        minor3: 56::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.22+ (KHTML, like Gecko) Chromium/17.0.963.56 Chrome/17.0.963.56 Safari/535.22+"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:45.712154Z,
+    host: 10.47.1.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 49::uint64,
+        minor: 0::uint64,
+        minor2: 2623::uint64,
+        minor3: 111::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:26:53.121744Z,
+    host: 10.128.0.214,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 64::uint64,
+        minor: 0::uint64,
+        minor2: 3282::uint64,
+        minor3: 167::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:06.320161Z,
+    host: 10.47.2.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:11.380769Z,
+    host: 10.47.5.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "<unknown browser>",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:11.813938Z,
+    host: 10.47.8.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.0.9.8.4"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.0.9.8.4)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:23.525477Z,
+    host: 10.47.2.158,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:30.666578Z,
+    host: 10.47.21.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Windows-Update-Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:45.50446Z,
+    host: 10.47.25.80,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::APPSERVER"::=zenum,
+    name: "PHP",
+    version: {
+        major: 5::uint64,
+        minor: 3::uint64,
+        minor2: 11::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "PHP/5.3.11"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:47.434899Z,
+    host: 10.47.23.65,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 7::uint64,
+        minor: 4::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "OpenSSH_7.4"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:53.422122Z,
+    host: 10.47.23.1,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:53.474188Z,
+    host: 10.47.23.166,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 7::uint64,
+        minor: 6::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "OpenSSH_7.6"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:53.661863Z,
+    host: 10.47.23.80,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Apache"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:27:59.446862Z,
+    host: 10.47.23.168,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 5::uint64,
+        minor: 9::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "OpenSSH_5.9"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:28:05.445493Z,
+    host: 10.47.23.186,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "Apache",
+    version: {
+        major: 2::uint64,
+        minor: 4::uint64,
+        minor2: 10::uint64,
+        minor3: null::uint64,
+        addl: "Debian"
+    },
+    unparsed_version: "Apache/2.4.10 (Debian)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:28:05.452055Z,
+    host: 10.47.23.168,
+    host_p: 8080::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "darkhttpd",
+    version: {
+        major: 1::uint64,
+        minor: 8::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "darkhttpd/1.8"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:28:09.783619Z,
+    host: 10.47.5.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Chrome",
+    version: {
+        major: 65::uint64,
+        minor: 0::uint64,
+        minor2: 3325::uint64,
+        minor3: 181::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:28:35.429146Z,
+    host: 10.47.8.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:28:42.263967Z,
+    host: 10.219.216.224,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:29:09.526903Z,
+    host: 10.47.1.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:29:14.315344Z,
+    host: 10.47.1.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:29:26.218876Z,
+    host: 10.47.1.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:29:38.868597Z,
+    host: 10.47.21.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft BITS",
+    version: {
+        major: 7::uint64,
+        minor: 5::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft BITS/7.5"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:29:52.382071Z,
+    host: 10.47.8.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:04.189208Z,
+    host: 10.47.8.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MSIE",
+    version: {
+        major: 11::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:06.94502Z,
+    host: 10.47.8.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:10.413845Z,
+    host: 10.0.0.205,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:10.414202Z,
+    host: 10.47.21.1,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:20.922782Z,
+    host: 10.47.4.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 31::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:28.956732Z,
+    host: 10.47.8.150,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 52::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:36.48823Z,
+    host: 10.47.5.218,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Windows-Update-Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:47.904732Z,
+    host: 10.47.8.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Windows-Update-Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Windows-Update-Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:30:58.520052Z,
+    host: 10.47.8.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "MpCommunication",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "MpCommunication"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:31:14.488351Z,
+    host: 10.47.1.155,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:32:04.822349Z,
+    host: 10.47.8.208,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:32:23.497819Z,
+    host: 10.47.21.80,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:32:23.694591Z,
+    host: 10.47.23.80,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft NCSI",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft NCSI"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:32:53.659199Z,
+    host: 10.47.23.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:32:54.039276Z,
+    host: 10.47.23.82,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "CertUtil URL Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "CertUtil URL Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:19.531744Z,
+    host: 10.248.202.62,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:19.58828Z,
+    host: 10.47.24.25,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:19.655635Z,
+    host: 10.47.24.25,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "CertUtil URL Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "CertUtil URL Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:41.168514Z,
+    host: 10.47.22.1,
+    host_p: 80::(port=uint16),
+    software_type: "HTTP::SERVER"::=zenum,
+    name: "nginx",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "nginx"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:44.620968Z,
+    host: 10.47.26.55,
+    host_p: 22::(port=uint16),
+    software_type: "SSH::SERVER"::=zenum,
+    name: "OpenSSH",
+    version: {
+        major: 4::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "p2"
+    },
+    unparsed_version: "OpenSSH_4.3p2 Debian-9etch3"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:48.462035Z,
+    host: 10.47.23.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:48.691962Z,
+    host: 10.47.23.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "CertUtil URL Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "CertUtil URL Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:54.802241Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "<unknown browser>",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:54.852469Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "SSH::CLIENT"::=zenum,
+    name: "NmapNSE",
+    version: {
+        major: 1::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "NmapNSE_1.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:33:54.854296Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "SSH::CLIENT"::=zenum,
+    name: "Nmap-SSH",
+    version: {
+        major: 1::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "Hostkey"
+    },
+    unparsed_version: "Nmap-SSH1-Hostkey"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:34:15.170789Z,
+    host: 10.128.0.19,
+    host_p: null::(port=uint16),
+    software_type: "SSH::CLIENT"::=zenum,
+    name: "Nmap-SSH",
+    version: {
+        major: 2::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "Hostkey"
+    },
+    unparsed_version: "Nmap-SSH2-Hostkey"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:34:17.841678Z,
+    host: 10.47.24.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Microsoft-CryptoAPI",
+    version: {
+        major: 6::uint64,
+        minor: 1::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Microsoft-CryptoAPI/6.1"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:34:18.104312Z,
+    host: 10.47.24.81,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "CertUtil URL Agent",
+    version: {
+        major: null::uint64,
+        minor: null::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "CertUtil URL Agent"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:34:35.372144Z,
+    host: 10.128.0.222,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Edge",
+    version: {
+        major: 16::uint64,
+        minor: 16299::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:34:59.335541Z,
+    host: 10.47.2.152,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 59::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:35:22.980035Z,
+    host: 10.239.34.35,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Firefox",
+    version: {
+        major: 18::uint64,
+        minor: 0::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: null::string
+    },
+    unparsed_version: "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:36:03.683904Z,
+    host: 10.47.4.100,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Debian APT-HTTP",
+    version: {
+        major: 1::uint64,
+        minor: 3::uint64,
+        minor2: null::uint64,
+        minor3: null::uint64,
+        addl: "1.0.9.8.4"
+    },
+    unparsed_version: "Debian APT-HTTP/1.3 (1.0.9.8.4)"
+}
+{
+    _path: "software",
+    ts: 2018-03-24T17:36:21.915625Z,
+    host: 10.47.4.156,
+    host_p: null::(port=uint16),
+    software_type: "HTTP::BROWSER"::=zenum,
+    name: "Wget",
+    version: {
+        major: 1::uint64,
+        minor: 13::uint64,
+        minor2: 4::uint64,
+        minor3: null::uint64,
+        addl: "linux-gnu"
+    },
+    unparsed_version: "Wget/1.13.4 (linux-gnu)"
+}

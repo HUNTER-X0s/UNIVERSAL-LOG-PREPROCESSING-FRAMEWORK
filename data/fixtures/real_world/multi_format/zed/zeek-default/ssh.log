@@ -1,0 +1,31 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssh
+#open	2024-04-12-19-29-44
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	auth_success	auth_attempts	direction	client	server	cipher_alg	mac_alg	compression_alg	kex_alg	host_key_alg	host_key	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	count	bool	count	enum	string	string	string	string	string	string	string	string	string	string	string	double	double
+1521911799.739898	C2MugGdsn3ZVI1wn6	10.0.0.227	59849	10.47.8.50	22	2	T	1	-	SSH-2.0-OpenSSH_7.6	SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u3	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256	ecdsa-sha2-nistp256	2d:37:6b:11:43:f8:96:08:fe:60:42:20:98:9f:75:af	-	-	-	-	-
+1521911921.436460	CmvGHd2utfyynxhHN4	10.128.0.233	41540	10.47.27.186	22	2	T	1	-	SSH-2.0-OpenSSH_7.6p1 Debian-4	SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256@libssh.org	ecdsa-sha2-nistp256	79:f0:93:5b:02:a4:f4:ff:82:f4:76:ca:4b:dd:ef:25	-	-	-	-	-
+1521911958.864751	CJqhXL1pzFV2qOuS1b	10.128.0.233	36040	10.47.26.186	22	2	F	1	-	SSH-2.0-OpenSSH_7.6p1 Debian-4	SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256@libssh.org	ecdsa-sha2-nistp256	79:f0:93:5b:02:a4:f4:ff:82:f4:76:ca:4b:dd:ef:25	-	-	-	-	-
+1521911975.274165	CJJ8KX1pMoY6Rxn859	10.128.0.233	49378	10.47.23.186	22	2	T	1	-	SSH-2.0-OpenSSH_7.6p1 Debian-4	SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256@libssh.org	ecdsa-sha2-nistp256	79:f0:93:5b:02:a4:f4:ff:82:f4:76:ca:4b:dd:ef:25	-	-	-	-	-
+1521911968.699016	ClGx2e3BpgqmkBvWJh	10.128.0.233	56772	10.47.24.186	22	2	F	1	-	SSH-2.0-OpenSSH_7.6p1 Debian-4	SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256@libssh.org	ecdsa-sha2-nistp256	79:f0:93:5b:02:a4:f4:ff:82:f4:76:ca:4b:dd:ef:25	-	-	-	-	-
+1521911977.198977	C6lib95Ro5wrQGuM7	10.164.94.120	44583	10.47.23.55	22	-	-	0	-	-	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	-	-	-	-	-	-	-	-	-	-	-
+1521912453.519259	CplYFk4kG2jeCHskl9	10.0.0.227	60546	10.47.8.50	22	2	T	1	-	SSH-2.0-OpenSSH_7.6	SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u3	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256	ecdsa-sha2-nistp256	2d:37:6b:11:43:f8:96:08:fe:60:42:20:98:9f:75:af	-	-	-	-	-
+1521912467.429402	Cx5F9oWiKog3x7O07	10.128.0.207	45880	10.47.23.55	22	-	-	0	-	-	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	-	-	-	-	-	-	-	-	-	-	-
+1521912467.434899	CUFm4U3GbBDYdJ8bKh	10.128.0.207	58308	10.47.23.65	22	-	-	0	-	-	SSH-2.0-OpenSSH_7.4	-	-	-	-	-	-	-	-	-	-	-
+1521912473.474188	ChOigBBNTjMstxes	10.128.0.207	47326	10.47.23.166	22	-	-	0	-	-	SSH-2.0-OpenSSH_7.6	-	-	-	-	-	-	-	-	-	-	-
+1521912479.446862	Cr3OX72guCQouVeZb9	10.128.0.207	56598	10.47.23.168	22	-	-	0	-	-	SSH-2.0-OpenSSH_5.9	-	-	-	-	-	-	-	-	-	-	-
+1521912479.448218	Ci1Wmkso3IfwIY7J1	10.128.0.207	50722	10.47.23.186	22	-	-	0	-	-	SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4	-	-	-	-	-	-	-	-	-	-	-
+1521912824.620968	C2ztzJ1KGDWlOcokEg	10.128.0.19	60130	10.47.26.55	22	-	-	0	-	-	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	-	-	-	-	-	-	-	-	-	-	-
+1521912834.675806	C1mGnm48Pupi5cXNag	10.128.0.19	60347	10.47.26.55	22	-	-	0	-	SSH-1.5-NmapNSE_1.0	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	-	-	-	-	-	-	-	-	-	-	-
+1521912834.677181	CzF6Wm29avKL9Mahy9	10.128.0.19	60350	10.47.26.55	22	-	-	0	-	SSH-1.5-Nmap-SSH1-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	-	-	-	-	-	-	-	-	-	-	-
+1521912855.090115	CqUrRD2RBqHpGriFId	10.128.0.19	60376	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	ssh-dss	24:91:bd:84:9a:6f:10:50:82:50:47:a5:2f:e7:96:a3	-	-	-	-	-
+1521912855.440760	CNqPXB63Dc0zzHS02	10.128.0.19	60500	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	ssh-rsa	ff:6b:4d:51:de:49:d5:4f:fd:11:20:69:e7:8b:8b:50	-	-	-	-	-
+1521912859.616205	Cwg7QB1xzuoozNL3g8	10.128.0.19	60504	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	Algorithm negotiation failed	-	-	-	-	-	-
+1521912858.358006	CBHaXW1WFFpF7t30p5	10.128.0.19	60503	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	Algorithm negotiation failed	-	-	-	-	-	-
+1521912856.059752	CiC4n51cKLY7Lt2pU7	10.128.0.19	60502	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	Algorithm negotiation failed	-	-	-	-	-	-
+1521912855.812367	Chfijp4nU2dtSU7tSf	10.128.0.19	60501	10.47.26.55	22	2	-	0	-	SSH-2.0-Nmap-SSH2-Hostkey	SSH-2.0-OpenSSH_4.3p2 Debian-9etch3	aes128-cbc	hmac-md5	none	diffie-hellman-group1-sha1	Algorithm negotiation failed	-	-	-	-	-	-
+1521912984.947911	CKQARJ1YczFE5cq3vf	10.0.0.227	61307	10.47.8.50	22	2	T	1	-	SSH-2.0-OpenSSH_7.6	SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u3	chacha20-poly1305@openssh.com	umac-64-etm@openssh.com	none	curve25519-sha256	ecdsa-sha2-nistp256	2d:37:6b:11:43:f8:96:08:fe:60:42:20:98:9f:75:af	-	-	-	-	-
+#close	2024-04-12-19-34-07

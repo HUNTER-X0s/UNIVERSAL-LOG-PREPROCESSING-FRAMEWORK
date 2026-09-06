@@ -39,6 +39,7 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
             await intake_runtime.stop()
 
             logger.info("service_stopped", extra={"component": "api"})
+
     app = FastAPI(
         title="ULPF Raw Intake API",
         description="Phase 2 opaque raw-event capture; parsing and normalization are deferred.",

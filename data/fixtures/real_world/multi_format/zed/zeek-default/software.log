@@ -1,0 +1,385 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	software
+#open	2024-04-12-19-29-12
+#fields	ts	host	host_p	software_type	name	version.major	version.minor	version.minor2	version.minor3	version.addl	unparsed_version
+#types	time	addr	port	enum	string	count	count	count	count	string	string
+1521911720.609736	10.164.94.120	-	HTTP::BROWSER	MSIE	8	0	-	-	-	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+1521911720.612331	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((54+54))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((54+54))"; }
+1521911720.613252	10.47.27.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911720.683005	10.47.3.218	80	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911720.683005	10.47.3.218	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911720.683005	10.47.3.218	80	HTTP::APPSERVER	SharePoint	15	0	0	4420	-	SharePoint/15.0.0.4420
+1521911720.693410	10.128.0.223	-	HTTP::BROWSER	Edge	16	16299	-	-	-	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+1521911720.720042	10.0.0.111	-	HTTP::BROWSER	check_http/v	2	0	-	-	monitoring-plugins 2.0	check_http/v2.0 (monitoring-plugins 2.0)
+1521911720.721467	10.47.8.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911720.722877	10.47.7.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911720.809396	10.47.3.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911720.916143	10.47.27.80	80	HTTP::SERVER	Apache	-	-	-	-	-	Apache
+1521911721.170690	10.47.8.218	80	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911721.222832	10.164.94.120	-	HTTP::BROWSER	Nessus	61102	-	-	-	-	Nessus/61102
+1521911721.420828	10.128.0.231	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911721.459579	10.47.5.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911721.988949	10.128.0.227	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911721.990416	10.47.23.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911721.990416	10.47.23.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911722.314494	10.47.5.155	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	0	Debian APT-HTTP/1.3 (0.8.16~exp12ubuntu10.27)
+1521911722.409738	10.128.0.19	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911722.433287	10.47.27.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911723.054151	10.47.8.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911723.054151	10.47.8.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911723.137044	10.47.1.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911723.137044	10.47.1.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911723.161910	10.47.23.166	2869	HTTP::SERVER	Microsoft-Windows-NT	5	1	-	-	UPnP/1	Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+1521911723.352226	10.47.6.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911723.352226	10.47.6.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911723.468871	10.47.1.208	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (Windows NT 6.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911723.658551	10.47.27.80	8080	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911723.796465	10.128.0.248	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911723.803827	10.47.1.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911724.142366	10.47.21.172	2869	HTTP::SERVER	Microsoft-Windows-NT	5	1	-	-	UPnP/1	Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+1521911724.613134	10.47.21.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911724.650859	10.47.21.80	47001	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911724.742663	10.0.0.227	-	HTTP::BROWSER	Chrome	64	0	3282	186	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+1521911724.991314	10.47.2.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911725.110256	10.47.8.208	80	HTTP::SERVER	Microsoft-IIS	7	0	-	-	-	Microsoft-IIS/7.0
+1521911725.110256	10.47.8.208	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911725.157517	10.47.24.170	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911725.394170	10.47.24.170	2869	HTTP::SERVER	Microsoft-Windows-NT	5	1	-	-	UPnP/1	Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+1521911725.563897	10.164.94.120	-	HTTP::BROWSER	Nessus	-	-	-	-	-	Nessus
+1521911726.098899	10.47.8.218	8082	HTTP::SERVER	MS	-	-	-	-	NET	MS .NET Remoting, MS .NET CLR 4.0.30319.17929
+1521911726.171926	10.47.8.208	47001	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911726.213978	10.47.2.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911726.231263	10.47.5.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911727.058038	10.47.7.152	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911727.156059	10.47.21.80	80	HTTP::SERVER	Apache	-	-	-	-	-	Apache
+1521911727.672967	10.47.26.160	5357	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911727.713433	10.128.0.248	-	HTTP::BROWSER	python-requests	2	18	4	-	-	python-requests/2.18.4
+1521911728.630588	10.164.94.120	-	HTTP::BROWSER	MSIE	6	0	-	-	-	Mozilla/4.0+(compatible; MSIE 6.0; Windows 6.1.7600.0; MS .NET Remoting; MS .NET CLR 4.0.30319.1 )
+1521911728.670457	10.164.94.120	-	HTTP::BROWSER	MSIE	8	0	-	-	-	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+1521911729.099230	10.47.21.172	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911729.167980	10.47.23.166	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911729.220344	10.47.3.208	80	HTTP::SERVER	Microsoft-IIS	7	0	-	-	-	Microsoft-IIS/7.0
+1521911729.220344	10.47.3.208	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911729.309221	10.0.0.208	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911730.778246	10.47.5.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911730.778246	10.47.5.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911731.468053	10.47.3.151	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911731.593142	10.47.3.218	80	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911731.632201	10.47.2.208	80	HTTP::SERVER	Microsoft-IIS	7	0	-	-	-	Microsoft-IIS/7.0
+1521911731.632201	10.47.2.208	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911731.650807	10.47.3.142	8080	HTTP::SERVER	Microsoft-IIS	6	0	-	-	-	Microsoft-IIS/6.0
+1521911732.176269	10.47.3.155	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911732.289467	10.164.94.120	-	HTTP::BROWSER	Nessus	61102	-	-	-	-	Nessus/61102
+1521911732.290659	10.47.3.218	8093	HTTP::SERVER	MS	-	-	-	-	NET	MS .NET Remoting, MS .NET CLR 4.0.30319.17929
+1521911732.590924	10.47.8.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911732.594070	10.47.3.155	2869	HTTP::SERVER	Microsoft-Windows-NT	5	1	-	-	UPnP/1	Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+1521911732.685175	10.47.3.142	1337	HTTP::SERVER	Indy	9	0	10	-	-	Indy/9.00.10
+1521911733.069163	10.47.4.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911733.139631	10.47.2.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911733.139631	10.47.2.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911733.715289	10.164.94.120	-	HTTP::BROWSER	MSIE	6	0	-	-	-	Mozilla/4.0+(compatible; MSIE 6.0; Windows 6.1.7600.0; MS .NET Remoting; MS .NET CLR 4.0.30319.1 )
+1521911733.772836	10.164.94.120	-	HTTP::BROWSER	MSIE	8	0	-	-	-	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+1521911734.845524	10.47.5.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911735.482204	10.47.1.208	80	HTTP::SERVER	Microsoft-IIS	7	0	-	-	-	Microsoft-IIS/7.0
+1521911735.482204	10.47.1.208	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911735.783720	10.0.0.251	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911736.179954	10.47.25.82	-	HTTP::BROWSER	Windows-Update-Agent	-	-	-	-	-	Windows-Update-Agent
+1521911736.512805	10.47.3.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911736.590865	10.47.4.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911737.760977	10.47.6.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911738.107695	10.47.25.81	-	HTTP::BROWSER	Windows-Update-Agent	-	-	-	-	-	Windows-Update-Agent
+1521911738.222700	10.47.7.153	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	0	Debian APT-HTTP/1.3 (0.8.16~exp12ubuntu10.27)
+1521911739.211694	10.47.6.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911739.308625	10.164.94.120	-	HTTP::BROWSER	Nessus	-	-	-	-	-	Nessus
+1521911739.698442	10.164.94.120	-	HTTP::BROWSER	NESSUS::SOAP	-	-	-	-	-	NESSUS::SOAP
+1521911739.743958	10.164.94.120	-	HTTP::BROWSER	Nessus SOAP	0	0	1	-	Nessus.org	Nessus SOAP v0.0.1 (Nessus.org)
+1521911740.633330	10.47.4.158	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+1521911740.704718	10.47.4.142	80	HTTP::SERVER	Apache	2	4	2	-	Win32	Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4
+1521911740.704718	10.47.4.142	80	HTTP::APPSERVER	PHP	5	4	4	-	-	PHP/5.4.4
+1521911740.791196	10.47.7.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911741.061764	10.47.1.30	80	HTTP::SERVER	nginx	1	12	1	-	-	nginx/1.12.1
+1521911742.273084	10.164.94.120	-	HTTP::BROWSER	<script>foo</script>	-	-	-	-	-	<script>foo</script>
+1521911742.962412	10.47.6.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911744.150372	10.47.1.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911745.039300	10.47.8.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911745.403551	10.47.4.158	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	3	-	-	-	Microsoft-CryptoAPI/6.3
+1521911745.477348	10.47.2.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911746.216661	10.47.8.218	80	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911746.216661	10.47.8.218	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911746.216661	10.47.8.218	80	HTTP::APPSERVER	SharePoint	15	0	0	4420	-	SharePoint/15.0.0.4420
+1521911747.192737	10.47.22.80	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521911747.730324	10.47.7.20	80	HTTP::SERVER	Apache	2	4	29	-	Unix	Apache/2.4.29 (Unix) PHP/7.2.3
+1521911747.870761	10.47.2.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911748.359327	10.164.94.120	-	HTTP::BROWSER	Nessus	61102	-	-	-	-	Nessus/61102
+1521911749.440291	10.47.6.208	80	HTTP::SERVER	Microsoft-IIS	7	0	-	-	-	Microsoft-IIS/7.0
+1521911749.440291	10.47.6.208	80	HTTP::APPSERVER	ASP.NET	-	-	-	-	-	ASP.NET
+1521911752.311014	10.47.21.80	8069	HTTP::SERVER	Werkzeug	0	12	2	-	Python/3	Werkzeug/0.12.2 Python/3.6.4
+1521911757.111133	10.47.3.151	2869	HTTP::SERVER	Microsoft-Windows-NT	5	1	-	-	UPnP/1	Microsoft-Windows-NT/5.1 UPnP/1.0 UPnP-Device-Host/1.0 Microsoft-HTTPAPI/2.0
+1521911757.305728	10.47.1.208	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	0	-	-	-	Microsoft-CryptoAPI/6.0
+1521911757.384541	10.47.8.153	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.4.8	Debian APT-HTTP/1.3 (1.4.8)
+1521911757.434363	10.47.1.152	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521911758.728746	10.47.3.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911759.784038	10.47.1.153	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911759.815635	10.47.21.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911760.479325	10.164.94.120	-	HTTP::BROWSER	Nessus	-	-	-	-	-	Nessus
+1521911761.538262	10.47.21.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911761.538262	10.47.21.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911766.335513	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((20+90))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((20+90))"; }
+1521911766.338613	10.164.94.120	-	HTTP::BROWSER	) { ignored; }; echo Content-Type: text/plain ; echo ; echo "bash_cve	2014	6271	-	-	rce	() { ignored; }; echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6271_rce Output : $((53+11))"
+1521911771.948149	10.128.0.247	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911772.620394	10.47.6.162	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911772.706564	10.128.0.202	-	HTTP::BROWSER	Chrome	65	0	3325	146	-	Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+1521911772.707604	10.47.25.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911773.095519	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((84+94))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((84+94))"; }
+1521911773.189428	10.47.7.154	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911773.219558	10.128.0.244	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911779.030922	10.47.4.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911780.685040	10.128.0.220	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911780.822447	10.47.1.151	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911783.013591	10.47.2.154	-	HTTP::BROWSER	Firefox	58	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+1521911783.554606	10.47.8.151	10243	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911785.326165	10.47.24.80	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521911799.739898	10.0.0.227	-	SSH::CLIENT	OpenSSH	7	6	-	-	-	OpenSSH_7.6
+1521911800.046697	10.47.8.50	22	SSH::SERVER	OpenSSH	7	4	-	-	p1	OpenSSH_7.4p1 Raspbian-10+deb9u3
+1521911811.692078	10.47.2.155	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521911812.431652	10.128.0.233	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911812.436282	10.47.25.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911818.004176	10.128.0.211	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911825.558105	10.47.1.152	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911825.566093	10.0.0.85	80	HTTP::SERVER	debut	1	30	-	-	-	debut/1.30
+1521911827.095564	10.47.3.155	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911829.517387	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((76+73))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((76+73))"; }
+1521911831.335459	10.47.5.155	-	HTTP::BROWSER	Python-urllib	2	7	-	-	-	Python-urllib/2.7
+1521911840.615327	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((72+86))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((72+86))"; }
+1521911844.366869	10.47.6.100	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911845.908294	10.47.1.150	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+1521911848.172667	10.47.2.154	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.2.25	Debian APT-HTTP/1.3 (1.2.25)
+1521911860.120039	10.47.26.160	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521911864.018498	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((97+76))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((97+76))"; }
+1521911865.128521	10.47.27.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911865.128521	10.47.27.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911871.900663	10.47.4.58	80	HTTP::SERVER	nginx	1	10	3	-	-	nginx/1.10.3
+1521911873.579204	10.47.6.161	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+1521911877.918901	10.164.94.120	-	HTTP::BROWSER	Nessus	61102	-	-	-	-	Nessus/61102
+1521911879.110922	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((93+4))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((93+4))"; }
+1521911882.636265	10.47.5.153	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	3	-	-	-	Microsoft-CryptoAPI/6.3
+1521911893.874521	10.47.2.153	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521911894.720900	10.47.6.173	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911895.388741	10.47.6.161	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	3	-	-	-	Microsoft-CryptoAPI/6.3
+1521911905.638932	10.196.136.60	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521911905.682309	10.47.27.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911905.725093	10.47.24.65	80	HTTP::SERVER	SimpleHTTP	0	6	-	-	Python/2	SimpleHTTP/0.6 Python/2.7.5
+1521911905.770621	10.47.23.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911905.779459	10.47.3.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911905.794860	10.47.6.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911905.804744	10.47.8.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911905.847788	10.47.25.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911905.939000	10.47.26.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911906.015272	10.47.25.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911906.132292	10.47.22.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911906.135350	10.47.1.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911906.180139	10.47.23.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911906.197704	10.47.21.65	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911906.225066	10.47.22.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911906.225066	10.47.22.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911906.367925	10.47.22.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911906.465611	10.47.5.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911906.470105	10.47.7.20	80	HTTP::APPSERVER	PHP	7	2	3	-	-	PHP/7.2.3
+1521911906.581796	10.47.25.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911906.629798	10.47.26.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911906.629798	10.47.26.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911906.737735	10.47.24.55	80	HTTP::SERVER	Apache	2	2	3	-	Debian	Apache/2.2.3 (Debian) PHP/5.2.0-8+etch16
+1521911906.737735	10.47.24.55	80	HTTP::APPSERVER	PHP	5	2	0	8	+etch16	PHP/5.2.0-8+etch16
+1521911906.834974	10.47.26.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911906.980894	10.47.24.80	8080	HTTP::SERVER	Microsoft-IIS	7	5	-	-	-	Microsoft-IIS/7.5
+1521911911.332525	10.47.7.153	80	HTTP::SERVER	SimpleHTTP	0	6	-	-	Python/2	SimpleHTTP/0.6 Python/2.7.3
+1521911912.767991	10.47.4.218	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521911916.242503	10.47.5.156	-	HTTP::BROWSER	pkg	1	10	1	-	-	pkg/1.10.1
+1521911920.626765	10.47.26.160	-	HTTP::BROWSER	Microsoft BITS	7	5	-	-	-	Microsoft BITS/7.5
+1521911921.436460	10.128.0.233	-	SSH::CLIENT	OpenSSH	7	6	-	-	p1	OpenSSH_7.6p1 Debian-4
+1521911921.444677	10.47.27.186	22	SSH::SERVER	OpenSSH	6	7	-	-	p1	OpenSSH_6.7p1 Debian-5+deb8u4
+1521911933.128419	10.47.24.80	-	HTTP::BROWSER	Google Update	1	3	33	7	winhttp	Google Update/1.3.33.7;winhttp;cup-ecdsa
+1521911946.753806	10.128.0.202	-	HTTP::BROWSER	MSIE	6	0	-	-	-	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+1521911948.303539	10.47.7.155	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521911948.884018	10.47.2.154	-	HTTP::BROWSER	Python-urllib	3	5	-	-	-	Python-urllib/3.5
+1521911949.922726	10.128.0.241	-	HTTP::BROWSER	<unknown browser>	-	-	-	-	-	Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+1521911949.926214	10.47.1.208	80	HTTP::SERVER	Microsoft-HTTPAPI	2	0	-	-	-	Microsoft-HTTPAPI/2.0
+1521911955.128722	10.47.6.154	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911955.145945	10.47.26.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521911957.527979	10.164.94.120	-	HTTP::BROWSER	Nessus	-	-	-	-	-	Nessus
+1521911958.873967	10.47.26.186	22	SSH::SERVER	OpenSSH	6	7	-	-	p1	OpenSSH_6.7p1 Debian-5+deb8u4
+1521911964.720411	10.47.4.153	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911965.782798	10.47.7.2	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521911968.710120	10.47.24.186	22	SSH::SERVER	OpenSSH	6	7	-	-	p1	OpenSSH_6.7p1 Debian-5+deb8u4
+1521911975.279862	10.47.23.186	22	SSH::SERVER	OpenSSH	6	7	-	-	p1	OpenSSH_6.7p1 Debian-5+deb8u4
+1521911976.815030	10.47.25.81	-	HTTP::BROWSER	Microsoft BITS	7	5	-	-	-	Microsoft BITS/7.5
+1521911977.198977	10.47.23.55	22	SSH::SERVER	OpenSSH	4	3	-	-	p2	OpenSSH_4.3p2 Debian-9etch3
+1521911982.939306	10.47.5.156	-	HTTP::BROWSER	Chrome	49	0	2623	111	-	Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36
+1521911995.551681	10.47.5.153	-	HTTP::BROWSER	Windows-Update-Agent	7	9	9600	16403	Client	Windows-Update-Agent/7.9.9600.16403 Client-Protocol/1.20
+1521911997.009872	10.47.6.159	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912002.647270	10.47.25.82	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912004.254281	10.47.1.218	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912009.786044	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((38+88))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((38+88))"; }
+1521912026.756029	10.47.2.100	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912027.493240	10.10.12.2	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.0.9.8.4	Debian APT-HTTP/1.3 (1.0.9.8.4)
+1521912029.377124	10.47.1.156	-	HTTP::BROWSER	pkg	1	10	1	-	-	pkg/1.10.1
+1521912030.886301	10.128.0.241	-	HTTP::BROWSER	AnyConnect Darwin_i	386	3	1	5160	-	AnyConnect Darwin_i386 3.1.05160
+1521912033.196544	10.47.1.20	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912033.867032	10.47.3.151	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912034.645059	10.47.27.186	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912037.258556	10.47.3.154	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521912037.821999	10.128.0.215	-	HTTP::BROWSER	Chrome	65	0	3325	146	-	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
+1521912037.929586	10.47.22.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521912052.356971	10.47.5.154	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912064.904906	10.164.94.120	-	HTTP::BROWSER	Nessus	61102	-	-	-	-	Nessus/61102
+1521912065.882017	10.47.24.170	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912070.833578	10.47.23.186	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912072.547618	10.47.23.55	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912075.692803	10.47.24.186	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912075.848411	10.128.0.214	-	HTTP::BROWSER	Chrome	64	0	3282	167	-	Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36
+1521912077.326260	10.47.5.153	-	HTTP::BROWSER	WSDAPI	-	-	-	-	-	WSDAPI
+1521912077.865960	10.47.5.100	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.0.9.8.4	Debian APT-HTTP/1.3 (1.0.9.8.4)
+1521912079.764384	10.218.221.240	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912080.596518	10.10.18.2	-	HTTP::BROWSER	Go-http-client	1	1	-	-	-	Go-http-client/1.1
+1521912082.210089	10.47.1.155	-	HTTP::BROWSER	Microsoft-WNS	6	3	-	-	-	Microsoft-WNS/6.3
+1521912083.255216	10.47.8.19	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912084.564552	10.47.3.152	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521912089.331462	10.47.27.80	8080	HTTP::APPSERVER	PHP	5	3	11	-	-	PHP/5.3.11
+1521912090.648025	10.10.16.2	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.0.9.8.4	Debian APT-HTTP/1.3 (1.0.9.8.4)
+1521912095.850932	10.47.5.153	-	HTTP::BROWSER	MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT	-	-	-	-	-	MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT
+1521912124.804450	10.47.3.151	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912141.888670	10.47.3.156	-	HTTP::BROWSER	Chrome	49	0	2623	111	-	Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36
+1521912155.067876	10.128.0.19	-	HTTP::BROWSER	WPScan	2	9	4	-	dev	WPScan v2.9.4-dev (http://wpscan.org)
+1521912167.155183	10.47.8.155	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912169.365446	10.47.5.155	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912178.883279	10.128.0.214	-	HTTP::BROWSER	Firefox	3	5	8	-	-	Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.8) Gecko/20100202 Firefox/3.5.8
+1521912178.976228	10.128.0.214	-	HTTP::BROWSER	<unknown browser>	-	-	-	-	-	Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.3) Gecko/20060427 Camino/1.0.1
+1521912179.025256	10.128.0.214	-	HTTP::BROWSER	Opera	-	-	-	-	-	Opera/9.51 (Windows NT 5.1; U; es-AR)
+1521912179.032275	10.128.0.214	-	HTTP::BROWSER	Opera	10	1	-	-	-	Opera/9.80 (X11; Linux x86_64; U; en-GB) Presto/2.2.15 Version/10.01
+1521912179.053096	10.128.0.214	-	HTTP::BROWSER	Chrome	1	0	154	43	-	Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.43 Safari/525.19
+1521912179.060153	10.128.0.214	-	HTTP::BROWSER	Chrome	6	0	451	0	-	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/6.0.451.0 Safari/534.2
+1521912179.066450	10.128.0.214	-	HTTP::BROWSER	Chrome	8	0	552	343	-	Mozilla/5.0 (X11; U; CrOS i686 0.9.128; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.343 Safari/534.10
+1521912179.073289	10.128.0.214	-	HTTP::BROWSER	Opera	-	-	-	-	-	Opera/9.50 (Macintosh; Intel Mac OS X; U; de)
+1521912179.093807	10.128.0.214	-	HTTP::BROWSER	Firefox	2	0	-	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1b1) Gecko/20060708 Firefox/2.0b1
+1521912179.099338	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	13	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-BR; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13
+1521912179.116855	10.128.0.214	-	HTTP::BROWSER	MSIE	9	0	-	-	-	Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)
+1521912179.121634	10.128.0.214	-	HTTP::BROWSER	Opera	9	51	-	-	-	Mozilla/5.0 (Windows NT 5.1; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.51
+1521912184.448704	10.128.0.214	-	HTTP::BROWSER	Chrome	10	0	649	0	-	Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+1521912184.456482	10.128.0.214	-	HTTP::BROWSER	Safari	4	0	4	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10
+1521912184.463920	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	10	-	-	Mozilla/5.0 (X11; U; Linux i686; fr; rv:1.9.0.10) Gecko/2009042513 Ubuntu/8.04 (hardy) Firefox/3.0.10
+1521912184.469830	10.128.0.214	-	HTTP::BROWSER	Firefox	3	6	6	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729; .NET4.0E)
+1521912184.475943	10.128.0.214	-	HTTP::BROWSER	Opera	11	0	-	-	-	Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.7.39 Version/11.00
+1521912184.497646	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	-	-	-	Mozilla/5.0 (X11; U; Linux i686; sk; rv:1.9) Gecko/2008061015 Firefox/3.0
+1521912184.502778	10.128.0.214	-	HTTP::BROWSER	Safari	4	0	-	-	-	Mozilla/5.0 (Windows; U; Windows NT 6.0; hu-HU) AppleWebKit/528.16 (KHTML, like Gecko) Version/4.0 Safari/528.16
+1521912190.733327	10.47.3.156	-	HTTP::BROWSER	pkg	1	10	1	-	-	pkg/1.10.1
+1521912193.184851	10.47.3.10	-	HTTP::BROWSER	Microsoft-CryptoAPI	10	0	-	-	-	Microsoft-CryptoAPI/10.0
+1521912195.652693	10.128.0.214	-	HTTP::BROWSER	Firefox	3	1	-	-	-	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; ko; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2
+1521912195.660720	10.128.0.214	-	HTTP::BROWSER	MSIE	7	0	-	-	-	Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; c .NET CLR 3.0.04506; .NET CLR 3.5.30707; InfoPath.1; el-GR)
+1521912195.668285	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	16	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.16) Gecko/2009120208 Firefox/3.0.16 FBSMTWB
+1521912195.674541	10.128.0.214	-	HTTP::BROWSER	Safari	4	0	4	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10
+1521912195.680191	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	-	-	-	Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9b4) Gecko/2008031318 Firefox/3.0b4
+1521912195.700316	10.128.0.214	-	HTTP::BROWSER	Opera	-	-	-	-	-	Opera/9.62 (X11; Linux i686; U; en) Presto/2.1.1
+1521912195.705503	10.128.0.214	-	HTTP::BROWSER	Safari	4	0	-	-	-	Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/528.4+ (KHTML, like Gecko) Version/4.0dp1 Safari/526.11.2
+1521912197.613320	10.47.1.150	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912201.162202	10.128.0.214	-	HTTP::BROWSER	Safari	4	0	5	-	-	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7
+1521912201.168142	10.128.0.214	-	HTTP::BROWSER	Firefox	3	6	3	-	-	Mozilla/5.0 (Windows; U; Windows NT 6.1; hu; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 GTB7.1
+1521912201.174008	10.128.0.214	-	HTTP::BROWSER	Chrome	3	0	195	17	-	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.17 Safari/532.0
+1521912201.179921	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	6	-	-	Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) Gecko/2009020616 Gentoo Firefox/3.0.6
+1521912201.200942	10.128.0.214	-	HTTP::BROWSER	Unspecified WebKit	312	1	-	-	-	Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/312.1 (KHTML, like Gecko) Safari/312
+1521912201.206179	10.128.0.214	-	HTTP::BROWSER	MSIE	9	0	-	-	-	Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)
+1521912203.673898	10.128.0.214	-	HTTP::BROWSER	Chrome	10	0	613	0	-	Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.15 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.613.0 Chrome/10.0.613.0 Safari/534.15
+1521912203.681963	10.128.0.214	-	HTTP::BROWSER	Firefox	3	5	1	-	-	Mozilla/5.0 (X11; U; Linux x86_64; rv:1.9.1.1) Gecko/20090716 Linux Firefox/3.5.1
+1521912203.694995	10.128.0.214	-	HTTP::BROWSER	Firefox	3	6	3	-	-	Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.3) Gecko/20100404 Ubuntu/10.04 (lucid) Firefox/3.6.3
+1521912203.701706	10.128.0.214	-	HTTP::BROWSER	Firefox	3	5	3	-	-	Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.3) Gecko/20090919 Firefox/3.5.3
+1521912203.708100	10.128.0.214	-	HTTP::BROWSER	Chrome	4	0	213	1	-	Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.213.1 Safari/532.1
+1521912203.729916	10.128.0.214	-	HTTP::BROWSER	Firefox	3	6	8	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.2; zh-TW; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+1521912203.737049	10.128.0.214	-	HTTP::BROWSER	Chrome	12	0	742	53	-	Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.53 Safari/534.30
+1521912203.742911	10.128.0.214	-	HTTP::BROWSER	Firefox	3	1	-	-	-	Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.2) Gecko/2008092313 Ubuntu/8.04 (hardy) Firefox/3.1
+1521912204.902253	10.164.94.120	-	HTTP::BROWSER	Nessus	-	-	-	-	-	Nessus
+1521912209.953473	10.128.0.214	-	HTTP::BROWSER	Chrome	6	0	460	0	-	Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.460.0 Safari/534.3
+1521912209.960518	10.128.0.214	-	HTTP::BROWSER	Chrome	10	0	648	133	-	Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.648.133 Chrome/10.0.648.133 Safari/534.16
+1521912209.965800	10.128.0.214	-	HTTP::BROWSER	Chrome	4	0	227	0	-	Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.3 (KHTML, like Gecko) Chrome/4.0.227.0 Safari/532.3
+1521912209.976437	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	8	-	-	Mozilla/5.0 (X11; U; Linux x86_64; it; rv:1.9.0.8) Gecko/2009033100 Ubuntu/9.04 (jaunty) Firefox/3.0.8
+1521912209.994920	10.128.0.214	-	HTTP::BROWSER	Chrome	3	0	195	3	-	Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.3 Safari/532.0
+1521912210.000648	10.128.0.214	-	HTTP::BROWSER	Firefox	1	0	-	-	-	Mozilla/5.0 (Windows; U; Windows NT 5.1; nl-NL; rv:1.7.5) Gecko/20041202 Firefox/1.0
+1521912212.398435	10.47.21.82	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912212.400212	10.128.0.233	80	HTTP::SERVER	Apache	2	4	29	-	Debian	Apache/2.4.29 (Debian)
+1521912212.765517	10.47.21.82	-	HTTP::BROWSER	CertUtil URL Agent	-	-	-	-	-	CertUtil URL Agent
+1521912219.783872	10.128.0.214	-	HTTP::BROWSER	Firefox	3	0	-	-	-	Mozilla/5.0 (X11; U; Linux x86_64; pl-PL; rv:1.9) Gecko/2008060309 Firefox/3.0
+1521912219.798819	10.128.0.214	-	HTTP::BROWSER	Firefox	3	7	-	-	-	Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.16) Gecko/20080716 Firefox/3.07
+1521912219.814303	10.128.0.214	-	HTTP::BROWSER	Chrome	10	0	648	204	-	Mozilla/5.0 (X11; U; Linux armv7l; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16
+1521912219.818665	10.128.0.214	-	HTTP::BROWSER	Chrome	2	0	174	0	-	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/530.6 (KHTML, like Gecko) Chrome/2.0.174.0 Safari/530.6
+1521912224.054261	10.128.0.19	-	HTTP::BROWSER	Firefox	56	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0
+1521912245.404621	10.132.229.74	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912270.614902	10.0.0.219	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521912288.997520	10.47.25.80	80	HTTP::SERVER	Apache	-	-	-	-	-	Apache
+1521912303.794943	10.128.0.19	-	HTTP::BROWSER	curl	7	29	0	-	-	curl/7.29.0
+1521912313.133317	10.47.22.80	80	HTTP::SERVER	Apache	-	-	-	-	-	Apache
+1521912344.409465	10.47.4.156	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521912360.161991	10.47.8.19	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521912366.275380	10.47.7.150	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521912367.713249	10.191.2.236	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912382.211547	10.47.7.153	-	HTTP::BROWSER	Python-urllib	2	7	-	-	-	Python-urllib/2.7
+1521912398.717853	10.164.94.120	-	HTTP::BROWSER	) {	-	-	-	-	; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((79+90))"; }	() { _; } >_[$($())] { echo Content-Type: text/plain ; echo ; echo "bash_cve_2014_6278 Output : $((79+90))"; }
+1521912399.130295	10.47.4.156	-	HTTP::BROWSER	Python-urllib	2	7	-	-	-	Python-urllib/2.7
+1521912400.297426	10.47.4.156	-	HTTP::BROWSER	Chrome	17	0	963	56	-	Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.22+ (KHTML, like Gecko) Chromium/17.0.963.56 Chrome/17.0.963.56 Safari/535.22+
+1521912405.712154	10.47.1.156	-	HTTP::BROWSER	Chrome	49	0	2623	111	-	Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) QupZilla/2.1.2 Chrome/49.0.2623.111 Safari/537.36
+1521912413.121744	10.128.0.214	-	HTTP::BROWSER	Chrome	64	0	3282	167	-	Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36
+1521912426.320161	10.47.2.156	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912431.380769	10.47.5.156	-	HTTP::BROWSER	<unknown browser>	-	-	-	-	-	Mozilla/5.0
+1521912431.813938	10.47.8.100	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.0.9.8.4	Debian APT-HTTP/1.3 (1.0.9.8.4)
+1521912443.525477	10.47.2.158	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912450.666578	10.47.21.81	-	HTTP::BROWSER	Windows-Update-Agent	-	-	-	-	-	Windows-Update-Agent
+1521912465.504460	10.47.25.80	8080	HTTP::APPSERVER	PHP	5	3	11	-	-	PHP/5.3.11
+1521912467.434899	10.47.23.65	22	SSH::SERVER	OpenSSH	7	4	-	-	-	OpenSSH_7.4
+1521912473.422122	10.47.23.1	80	HTTP::SERVER	nginx	-	-	-	-	-	nginx
+1521912473.474188	10.47.23.166	22	SSH::SERVER	OpenSSH	7	6	-	-	-	OpenSSH_7.6
+1521912473.661863	10.47.23.80	80	HTTP::SERVER	Apache	-	-	-	-	-	Apache
+1521912479.446862	10.47.23.168	22	SSH::SERVER	OpenSSH	5	9	-	-	-	OpenSSH_5.9
+1521912485.445493	10.47.23.186	80	HTTP::SERVER	Apache	2	4	10	-	Debian	Apache/2.4.10 (Debian)
+1521912485.452055	10.47.23.168	8080	HTTP::SERVER	darkhttpd	1	8	-	-	-	darkhttpd/1.8
+1521912489.783619	10.47.5.152	-	HTTP::BROWSER	Chrome	65	0	3325	181	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+1521912515.429146	10.47.8.152	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912522.263967	10.219.216.224	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912549.526903	10.47.1.100	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912554.315344	10.47.1.155	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+1521912566.218876	10.47.1.155	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	3	-	-	-	Microsoft-CryptoAPI/6.3
+1521912578.868597	10.47.21.81	-	HTTP::BROWSER	Microsoft BITS	7	5	-	-	-	Microsoft BITS/7.5
+1521912592.382071	10.47.8.100	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912604.189208	10.47.8.19	-	HTTP::BROWSER	MSIE	11	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+1521912606.945020	10.47.8.19	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912610.413845	10.0.0.205	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912610.414202	10.47.21.1	80	HTTP::SERVER	nginx	-	-	-	-	-	nginx
+1521912620.922782	10.47.4.155	-	HTTP::BROWSER	Firefox	31	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+1521912628.956732	10.47.8.150	-	HTTP::BROWSER	Firefox	52	0	-	-	-	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+1521912636.488230	10.47.5.218	-	HTTP::BROWSER	Windows-Update-Agent	-	-	-	-	-	Windows-Update-Agent
+1521912647.904732	10.47.8.152	-	HTTP::BROWSER	Windows-Update-Agent	-	-	-	-	-	Windows-Update-Agent
+1521912658.520052	10.47.8.152	-	HTTP::BROWSER	MpCommunication	-	-	-	-	-	MpCommunication
+1521912674.488351	10.47.1.155	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912724.822349	10.47.8.208	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912743.497819	10.47.21.80	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912743.694591	10.47.23.80	-	HTTP::BROWSER	Microsoft NCSI	-	-	-	-	-	Microsoft NCSI
+1521912773.659199	10.47.23.82	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912774.039276	10.47.23.82	-	HTTP::BROWSER	CertUtil URL Agent	-	-	-	-	-	CertUtil URL Agent
+1521912799.531744	10.248.202.62	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912799.588280	10.47.24.25	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	0	-	-	-	Microsoft-CryptoAPI/6.0
+1521912799.655635	10.47.24.25	-	HTTP::BROWSER	CertUtil URL Agent	-	-	-	-	-	CertUtil URL Agent
+1521912821.168514	10.47.22.1	80	HTTP::SERVER	nginx	-	-	-	-	-	nginx
+1521912824.620968	10.47.26.55	22	SSH::SERVER	OpenSSH	4	3	-	-	p2	OpenSSH_4.3p2 Debian-9etch3
+1521912828.462035	10.47.23.81	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912828.691962	10.47.23.81	-	HTTP::BROWSER	CertUtil URL Agent	-	-	-	-	-	CertUtil URL Agent
+1521912834.802241	10.128.0.19	-	HTTP::BROWSER	<unknown browser>	-	-	-	-	-	Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+1521912834.852469	10.128.0.19	-	SSH::CLIENT	NmapNSE	1	0	-	-	-	NmapNSE_1.0
+1521912834.854296	10.128.0.19	-	SSH::CLIENT	Nmap-SSH	1	-	-	-	Hostkey	Nmap-SSH1-Hostkey
+1521912855.170789	10.128.0.19	-	SSH::CLIENT	Nmap-SSH	2	-	-	-	Hostkey	Nmap-SSH2-Hostkey
+1521912857.841678	10.47.24.81	-	HTTP::BROWSER	Microsoft-CryptoAPI	6	1	-	-	-	Microsoft-CryptoAPI/6.1
+1521912858.104312	10.47.24.81	-	HTTP::BROWSER	CertUtil URL Agent	-	-	-	-	-	CertUtil URL Agent
+1521912875.372144	10.128.0.222	-	HTTP::BROWSER	Edge	16	16299	-	-	-	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+1521912899.335541	10.47.2.152	-	HTTP::BROWSER	Firefox	59	0	-	-	-	Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+1521912922.980035	10.239.34.35	-	HTTP::BROWSER	Firefox	18	0	-	-	-	Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0
+1521912963.683904	10.47.4.100	-	HTTP::BROWSER	Debian APT-HTTP	1	3	-	-	1.0.9.8.4	Debian APT-HTTP/1.3 (1.0.9.8.4)
+1521912981.915625	10.47.4.156	-	HTTP::BROWSER	Wget	1	13	4	-	linux-gnu	Wget/1.13.4 (linux-gnu)
+#close	2024-04-12-19-34-07

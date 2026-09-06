@@ -1,0 +1,32 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE123456789",
+        "arn": "arn:aws:iam::123456789012:user/devops_admin",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAEXAMPLE123456789",
+        "userName": "devops_admin"
+      },
+      "eventTime": "2026-09-05T14:00:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.25",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6 Linux/6.1.0",
+      "requestParameters": {
+        "groupIdSet": {}
+      },
+      "responseElements": null,
+      "requestID": "12345678-1234-1234-1234-123456789abc",
+      "eventID": "87654321-4321-4321-4321-cba987654321",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "123456789012",
+      "eventCategory": "Management"
+    }
+  ]
+}

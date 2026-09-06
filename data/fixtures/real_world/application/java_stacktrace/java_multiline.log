@@ -1,0 +1,11 @@
+2026-09-05 14:00:00.123 [main] INFO  com.ulpf.service.IngestService - Initializing ingestion engine on port 8443
+2026-09-05 14:00:05.456 [http-nio-8443-exec-1] ERROR com.ulpf.service.SecurityFilter - Authentication failed for client
+org.springframework.security.authentication.BadCredentialsException: Invalid credentials provided
+	at com.ulpf.security.CustomAuthProvider.authenticate(CustomAuthProvider.java:45)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.ulpf.web.SecurityFilter.doFilter(SecurityFilter.java:62)
+Caused by: java.security.NoSuchAlgorithmException: SHA-512 algorithm provider unavailable
+	at java.base/java.security.MessageDigest.getInstance(MessageDigest.java:172)
+	at com.ulpf.security.Hasher.hash(Hasher.java:23)
+	... 3 more
+2026-09-05 14:00:10.789 [http-nio-8443-exec-2] INFO  com.ulpf.service.AuditLogger - Session terminated successfully

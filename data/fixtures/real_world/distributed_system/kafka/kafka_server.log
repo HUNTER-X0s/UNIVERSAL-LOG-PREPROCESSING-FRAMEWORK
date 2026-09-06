@@ -1,0 +1,4 @@
+[2026-09-05 14:00:00,123] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
+[2026-09-05 14:00:05,456] INFO [GroupCoordinator 1]: Preparing to rebalance group telemetry-workers in mode Cooperative (kafka.coordinator.group.GroupCoordinator)
+[2026-09-05 14:00:05,789] INFO [GroupCoordinator 1]: Stabilized group telemetry-workers generation 42 (kafka.coordinator.group.GroupCoordinator)
+[2026-09-05 14:00:10,000] WARN [ReplicaManager broker=1] High watermark checkpoint for partition raw-events-0 failed (kafka.server.ReplicaManager)

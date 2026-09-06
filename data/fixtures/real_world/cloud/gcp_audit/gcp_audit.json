@@ -1,0 +1,27 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "authenticationInfo": {
+      "principalEmail": "admin@example.com"
+    },
+    "requestMetadata": {
+      "callerIp": "203.0.113.88",
+      "callerSuppliedUserAgent": "google-cloud-sdk"
+    },
+    "serviceName": "compute.googleapis.com",
+    "methodName": "v1.compute.firewalls.insert",
+    "resourceName": "projects/ulpf-prod/global/firewalls/allow-ssh"
+  },
+  "insertId": "123456789abcdef",
+  "resource": {
+    "type": "gce_firewall_rule",
+    "labels": {
+      "firewall_rule_id": "987654321",
+      "project_id": "ulpf-prod"
+    }
+  },
+  "timestamp": "2026-09-05T14:00:00.123456Z",
+  "severity": "NOTICE",
+  "logName": "projects/ulpf-prod/logs/cloudaudit.googleapis.com%2Factivity"
+}

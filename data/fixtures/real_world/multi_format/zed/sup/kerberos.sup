@@ -1,0 +1,275 @@
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:05.713879Z,
+    uid: "CiB1v61O1fMDWoHN2",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 58444::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 808::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:10.609901Z,
+    uid: "C1pbVk4x7zmkCy0P23",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 56824::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 445::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:10.611969Z,
+    uid: "CEj0sS2biDEHPNTnQ4",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 57304::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 139::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:23.116112Z,
+    uid: "CvuMxUb7V20DBTy4",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 40076::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 995::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:23.116199Z,
+    uid: "CqxQV6jqCiNQdTQ19",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 44138::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 993::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:23.136564Z,
+    uid: "COgrE8RnKZ5iZi6G5",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 44764::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 3389::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:33.107116Z,
+    uid: "CKXWMb4EhoEm5Ip8x",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 46114::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 6005::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:33.108469Z,
+    uid: "Ct9sYsJ01lkSo31sf",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 51328::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 6006::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:33.108567Z,
+    uid: "CdnYmsUCDaduIMyQ7",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 39456::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 6007::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:18:33.143296Z,
+    uid: "C73dAg3TNyg3aTgjEk",
+    id: {
+        orig_h: 10.128.0.241,
+        orig_p: 51118::(port=uint16),
+        resp_h: 10.47.1.208,
+        resp_p: 135::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: null::bool,
+    error_msg: null::string,
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}
+{
+    _path: "kerberos",
+    ts: 2018-03-24T17:27:53.434453Z,
+    uid: "CSPQFyC6A6IZOEXi",
+    id: {
+        orig_h: 10.128.0.207,
+        orig_p: 36120::(port=uint16),
+        resp_h: 10.47.23.25,
+        resp_p: 88::port
+    },
+    request_type: "AS",
+    client: "/NM",
+    service: "krbtgt/NM",
+    success: false,
+    error_msg: "KDC_ERR_WRONG_REALM",
+    from: null::time,
+    till: 1970-01-01T00:00:00Z,
+    cipher: null::string,
+    forwardable: true,
+    renewable: true,
+    client_cert_subject: null::string,
+    client_cert_fuid: null::string,
+    server_cert_subject: null::string,
+    server_cert_fuid: null::string
+}

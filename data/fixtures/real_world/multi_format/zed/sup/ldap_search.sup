@@ -1,0 +1,20 @@
+{
+    _path: "ldap_search",
+    ts: 2018-03-24T17:27:53.422018Z,
+    uid: "CF5klN1gDGXhNXrm49",
+    id: {
+        orig_h: 10.128.0.207,
+        orig_p: 57764::(port=uint16),
+        resp_h: 10.47.23.25,
+        resp_p: 389::port
+    },
+    message_id: 7,
+    scope: "base",
+    deref_aliases: "never",
+    base_object: null::string,
+    result_count: 1::uint64,
+    result: "success",
+    diagnostic_message: null::string,
+    filter: "(objectClass=*)",
+    attributes: null::[string]
+}

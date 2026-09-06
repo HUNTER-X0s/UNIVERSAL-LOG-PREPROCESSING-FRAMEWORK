@@ -1,0 +1,2 @@
+Sep  5 14:00:00 lb-edge haproxy[5432]: 198.51.100.25:51234 [05/Sep/2026:14:00:00.123] fe_ingress~ be_api/srv_1 10/0/1/25/36 200 4096 - - ---- 1/1/0/0/0 0/0 "GET /api/v1/status HTTP/1.1"
+Sep  5 14:00:05 lb-edge haproxy[5432]: 203.0.113.99:49821 [05/Sep/2026:14:00:05.456] fe_ingress~ be_api/<NOSRV> -1/-1/-1/-1/0 503 212 - - sC-- 0/0/0/0/0 0/0 "POST /api/v1/checkout HTTP/1.1"

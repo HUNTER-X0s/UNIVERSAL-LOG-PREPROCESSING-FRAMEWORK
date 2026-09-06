@@ -1,0 +1,2 @@
+time="2026-09-05T14:00:00.123456789Z" level=info msg="ignoring event" container=123456789abcdef module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2026-09-05T14:00:05.987654321Z" level=info msg="container started" id=abcdef123456789 image="alpine:3.18" name="test-container" module=daemon

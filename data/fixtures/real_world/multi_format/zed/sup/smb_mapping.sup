@@ -1,0 +1,5895 @@
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:21.382822Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:21.625534Z,
+    uid: "CGLspW1BuwJH6YxjK6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36315::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\SNOZBERRY\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:22.021668Z,
+    uid: "CIhoVU2eDL7FNVcdui",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34691::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\SNOZBERRY\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:24.39886Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:24.619169Z,
+    uid: "CD4EPJ2d8OTFCKYst4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35337::(port=uint16),
+        resp_h: 10.47.27.80,
+        resp_p: 445::port
+    },
+    path: "\\\\PC-NEWMAN\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:25.562072Z,
+    uid: "CjytiV1fS9jLsf2BQa",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45903::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\SNOZBERRY\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:25.849429Z,
+    uid: "CkefDU02F8NaVcPod",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43333::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\SNOZBERRY\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:27.413867Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:30.426093Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:31.475945Z,
+    uid: "CSd2gT3SJCGc37q6D8",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37127::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:33.440053Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:36.306275Z,
+    uid: "CKKAb2cF6j5v4sm52",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33921::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:36.450042Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:37.269187Z,
+    uid: "CpThBT2VEeg0zFOY7",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41827::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:37.284362Z,
+    uid: "CTiYlfGWxw7Ubhbvb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44337::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:38.350281Z,
+    uid: "CnczP739jCfBbJd3lk",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33429::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:39.462775Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:39.632558Z,
+    uid: "CM10444rtqRSnxQB1k",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36669::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:39.827015Z,
+    uid: "CDlNPwzCklTH3aBuk",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41799::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:39.975524Z,
+    uid: "CIX8C32rsovgO98g0e",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35415::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:40.141224Z,
+    uid: "CdpJfd3eoBzU5Asdd4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38803::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:40.609115Z,
+    uid: "CF8Di63Ec09d8QYI5c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41671::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:41.337344Z,
+    uid: "C6jwagTJJ0XlJCSV8",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 40103::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\PC-HELEN\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:41.54242Z,
+    uid: "C7z99C1Wz3MzrlVlIj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38121::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\PC-HELEN\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:41.931403Z,
+    uid: "CyrwP04fIv5fc9kRo1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44533::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\PC-HELEN\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:42.477203Z,
+    uid: "C4RwE01ohVxASBuobd",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52298::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:44.176473Z,
+    uid: "CvpevZ22g7XnhkZeHh",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41143::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\SNOZBERRY\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:48.176362Z,
+    uid: "CdWlRg4J5dLf69ox8a",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38087::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:49.786055Z,
+    uid: "CP8tJ61R9Vv9H4erT1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33109::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:51.666553Z,
+    uid: "Cy0XU73rQmb4L8uMT6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46415::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:51.720524Z,
+    uid: "Ce8oZ32FLitbWVsCa1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41287::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:53.264234Z,
+    uid: "CnwtUEmAbAMtvfP48",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45303::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:53.355836Z,
+    uid: "CDkP6jW78B9Fr10Bj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46525::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:54.391291Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:54.394388Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:54.402605Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:54.592661Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:54.813162Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:57.009252Z,
+    uid: "CKSgKh1oBs72O0S8Ae",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45121::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:15:57.28246Z,
+    uid: "CVAYR72OKFrfEEjqfb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42507::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY4\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:00.488324Z,
+    uid: "Czo8th2jH45ajYOP43",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33257::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:00.499486Z,
+    uid: "CBx6H90t7Vs73lrZj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38821::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:07.287215Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.154\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:07.295698Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.154\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:07.333852Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.154\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:08.423303Z,
+    uid: "Ch9osU1W8UP5mkLjSb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39069::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:10.150851Z,
+    uid: "CuxxHz4L7hg0b40qTb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44113::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:12.404802Z,
+    uid: "CNpX6e1b5T90Fmdmh5",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41927::(port=uint16),
+        resp_h: 10.47.21.172,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:12.498272Z,
+    uid: "CuB1Iq1QXMSTqkFD1h",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43887::(port=uint16),
+        resp_h: 10.47.23.166,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:13.616258Z,
+    uid: "CIuQVlxti5SrlV0s2",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35401::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:15.268461Z,
+    uid: "CypCJJvnA8ObHdUGk",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43552::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:15.618296Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:15.904554Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:17.029943Z,
+    uid: "CRxvOB4bR3xbZxA0H6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38529::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:17.169528Z,
+    uid: "CsNLf93CRynYHDtoRg",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34123::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:18.912928Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:21.183003Z,
+    uid: "Co0D9m1wxjlJQO6lYa",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33369::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:21.422378Z,
+    uid: "C8wnDJ17KLjbRr4c1h",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46453::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:21.925321Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:24.936113Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:27.486227Z,
+    uid: "C3L2IM2a4Tlupb8D6l",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35911::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:27.762895Z,
+    uid: "CKrrMx351YT6Kw0Whi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46553::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:27.781406Z,
+    uid: "C392xzTiJSupBk41d",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 32965::(port=uint16),
+        resp_h: 10.47.24.170,
+        resp_p: 445::port
+    },
+    path: "\\\\PARKINGGARAGE\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:27.947994Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:31.060957Z,
+    uid: "Cv5n1f2x5svy0ExdIa",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 49568::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 445::port
+    },
+    path: null::string,
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:36.982699Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:39.995933Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:40.24687Z,
+    uid: "Cezyr6mZVlDUVorA3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45269::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:41.945679Z,
+    uid: "CMSh7j2NjTOvASwVoe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34071::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:43.007782Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:46.019929Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:47.391555Z,
+    uid: "C31daD2Y1pPU5vjju6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42727::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:47.545088Z,
+    uid: "CptK2y318BKrJYlSnc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38451::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:47.936069Z,
+    uid: "CUAsVY3Ofe43r5vBzi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41973::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:49.02988Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:52.041061Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:55.054032Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:56.089474Z,
+    uid: "CJ5h4a7EyVt4DjJjk",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41417::(port=uint16),
+        resp_h: 10.47.3.155,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY2\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:58.066178Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:16:59.933878Z,
+    uid: "CyEiJr2BikqqGL4POi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 40309::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:01.078187Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:04.091157Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:07.103949Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:10.114406Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:13.128825Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:16.138155Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:19.150396Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:22.164129Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:25.174857Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:28.184082Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:29.288332Z,
+    uid: "CEDvKghvFA8o3nyK1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42891::(port=uint16),
+        resp_h: 10.47.3.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:29.325532Z,
+    uid: "CT984R3T4CIdY5yVV6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46133::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:31.192814Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:34.206676Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:34.911322Z,
+    uid: "CBKaaG3gelaHdhMYS9",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 40355::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 445::port
+    },
+    path: "\\\\GUMMYBACON\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:37.216278Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:40.229154Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:43.244292Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:46.258202Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:49.269389Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:52.282174Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:55.294366Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:17:58.303223Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:01.313703Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:04.326269Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:07.340702Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:10.353341Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:10.937377Z,
+    uid: "C9q0rr4dY9DHbzAAGc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 32931::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\SMARTIES\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:13.363349Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:16.373637Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:19.387597Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:22.399625Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:25.412105Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:28.422598Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:31.436336Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:34.446289Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:37.460414Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:40.474903Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:43.488185Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:46.501447Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:49.513004Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:52.525146Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:55.538598Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:18:58.552758Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:01.565898Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:04.578231Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:07.592518Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:10.605878Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:13.618786Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:16.633367Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:19.648034Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:22.661506Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:25.67417Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:28.688355Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:31.700311Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:34.714835Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:37.726599Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:40.74222Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:43.754531Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:46.764228Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:49.774288Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:52.788718Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:55.800815Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:19:58.813544Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:01.82684Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:04.835839Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:07.843649Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:10.853477Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:13.862975Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:16.872579Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:19.883476Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:22.893131Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:25.906905Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:28.919447Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:31.933346Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:20:34.947763Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:21:24.610856Z,
+    uid: "CAwqj01bB87a677wj4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36021::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\NU019\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:21:24.671459Z,
+    uid: "CmTdkRM9Sz6ap1pP6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33951::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\NU019\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:21:25.000976Z,
+    uid: "CmH4XL3MXAHJCt9X6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36151::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\NU019\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:21:26.142217Z,
+    uid: "CgiKzl1Ozw91Cs4Xfg",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33217::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\NU019\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:34.869392Z,
+    uid: "CMC3Wj17RUi0jabZ1a",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 41563::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:35.022376Z,
+    uid: "C9a5piBUX7GvQIDLa",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42314::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:37.300152Z,
+    uid: "CjpTmE4YNnl2itgKud",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40736::(port=uint16),
+        resp_h: 10.47.27.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.27.25\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:37.757421Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:39.937001Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:42.087711Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:42.129394Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:42.177742Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:42.267453Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:42.381587Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:44.515245Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:44.559664Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:44.614439Z,
+    uid: "CVtgM61DcJBKOKq0h8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33571::(port=uint16),
+        resp_h: 10.47.27.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.27.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:44.894026Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:45.120062Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:45.391637Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:45.515096Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:45.623199Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:45.936511Z,
+    uid: "CtUzfF1q5huZklkJJf",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35557::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.235614Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.295002Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.54864Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.564167Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.839057Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:48.991361Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:49.316223Z,
+    uid: "C7BUeV3hzXYv6rCNc4",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35486::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:22:51.479328Z,
+    uid: "C3I2HS15aj7NBBD274",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42840::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:01.271311Z,
+    uid: "CvYIpP1UTESU6i4IX",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38683::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:01.423468Z,
+    uid: "CZCY2E2ssbuZaq8uR3",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40934::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:03.426562Z,
+    uid: "CIYpiVNReTwbmNtQ6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39039::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:03.599907Z,
+    uid: "CxfNLq120ibps43xg",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43099::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:03.739456Z,
+    uid: "CGNF5QnvdQjUDDE73",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39580::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:05.817663Z,
+    uid: "CYuY8s3c3LU1ow9nv5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39222::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:05.869888Z,
+    uid: "CbqPYP3o06Z10mWJmb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38034::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:07.93674Z,
+    uid: "CeAiMq4plIE8PmYhie",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40115::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:12.901578Z,
+    uid: "CRj0lo4DWCXHSKWbr1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36373::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:13.189272Z,
+    uid: "CrKBv831d6NuIIjLlf",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36931::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:18.75555Z,
+    uid: "CQKBNDiIkbAUfJw45",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43210::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:21.034167Z,
+    uid: "ConU212sjPTKWXdZw5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 44416::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:21.078988Z,
+    uid: "CEJqqc4nmI0OfZSDAl",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42805::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:23.19206Z,
+    uid: "COIjM12MtpcIdvwKAc",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 32868::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:26.050616Z,
+    uid: "C2ogBq46P9OYMGA8A4",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44126::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:26.326386Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:26.64126Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:27.597548Z,
+    uid: "CEMKGc2iNNhzH6OnK8",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 50124::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.80\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:29.650299Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:32.662539Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:34.349195Z,
+    uid: "CojSbu3GXHSh46FGf",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 46788::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:35.677808Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:35.696328Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.82\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:36.442734Z,
+    uid: "CV5hktD3djlgWQrT6",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36074::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:36.479646Z,
+    uid: "CmrmWM2SFhTdCzC7eb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36995::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:38.651403Z,
+    uid: "CtAgWF786MeAE7QB",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35150::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:49.450279Z,
+    uid: "CaIaIL1hlUHJhBUuL4",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43725::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:51.583183Z,
+    uid: "CaivBz3xKcg94svjqa",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43769::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:52.003999Z,
+    uid: "C0AsVoZGqJepE3aK9",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 34872::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:23:54.13983Z,
+    uid: "Cg97Dj4LiYj3meSP38",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45312::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:04.964689Z,
+    uid: "CfzuErlIZC4keJfQb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 34552::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:07.039225Z,
+    uid: "CSE40Q393gOjl8Xyf3",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38877::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:07.669563Z,
+    uid: "CpUN6IaPH2PFqAvs",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42402::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:09.754655Z,
+    uid: "C4ChuFMqnRtIo0U3c",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36878::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:20.108938Z,
+    uid: "CgQKxd2DSjvo0OCPZb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37271::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:22.23948Z,
+    uid: "C2XmyS3f0JiReDijD7",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40727::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:22.562804Z,
+    uid: "CCtlHd4IEpPJQUtDUf",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43093::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:24.63671Z,
+    uid: "CoCt6D496LLWhBgXVa",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36844::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:35.212311Z,
+    uid: "CnxMiWrElVliHvzod",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38124::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:37.260458Z,
+    uid: "CY5c3e3AtEyBNPRqM1",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 34127::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:38.086717Z,
+    uid: "CmWisK2I8ckoGWlfj5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36860::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:40.163242Z,
+    uid: "CG8YEPAXOMTrLgXQ6",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33864::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:50.384502Z,
+    uid: "COfotl3gdlfPkHgnYc",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37006::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:52.4324Z,
+    uid: "CNHBg8askb0tINkQb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36056::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:53.274794Z,
+    uid: "Cr2VJB2a7SNHNj1e59",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 46109::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:24:55.35844Z,
+    uid: "C1PiCl4VOOhDqikqK7",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39989::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:04.128393Z,
+    uid: "CY4FCR5gtbc3UmVr7",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37113::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 445::port
+    },
+    path: "\\\\GUMMYBACON\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:04.358644Z,
+    uid: "ClOgxyCzrBO8pE4Qe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39947::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 445::port
+    },
+    path: "\\\\GUMMYBACON\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:04.395373Z,
+    uid: "Caqfoo11cKNqYyO0sj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39563::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 445::port
+    },
+    path: "\\\\GUMMYBACON\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:05.364102Z,
+    uid: "CPsSU45raxx3rXojl",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33769::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:07.478022Z,
+    uid: "Ch34v04eNChqq7YNR2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35126::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:08.492366Z,
+    uid: "CFMs9A4lS6Ef5N96Hg",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39653::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:10.630584Z,
+    uid: "CuL6W23RC0dlo2SEg4",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45687::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:20.460629Z,
+    uid: "Cjl7VC2ZZ0TyzksNje",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45617::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:22.542301Z,
+    uid: "ClMdOV2CZJLsW2ctUb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 46644::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:23.769017Z,
+    uid: "Cm9jVh2GrujOcIZL36",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 44790::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:25.888187Z,
+    uid: "CsoL0s3GxLlR4F9rF5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42380::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:35.91995Z,
+    uid: "CDS8i73e6YRk9tAkT5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37480::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:38.032395Z,
+    uid: "CiXTV61q7SRlcECKL5",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42765::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:39.184532Z,
+    uid: "C0c3d010iyf3xtqBG3",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45967::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:41.308217Z,
+    uid: "CnLQMJ1BPV1nV8Nvlk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35008::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:46.484256Z,
+    uid: "Cdu5Tv3W4dlNQ4OLJ5",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43961::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:51.544995Z,
+    uid: "Cgn8gG4dPHot8HQGyb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33162::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:53.606572Z,
+    uid: "CVVpY1Jael7uUhaF3",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 42437::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:54.609662Z,
+    uid: "CtT51P3uoaWXRDKMEa",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 41682::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:25:56.709188Z,
+    uid: "CU03jK2YPMB3o38O3e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45431::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:26:06.706018Z,
+    uid: "CxuSd24cbqEsscm06h",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33065::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:26:08.864092Z,
+    uid: "CCJBfv3oIgpzgDhhu9",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33841::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:26:56.221519Z,
+    uid: "CK9fc912gwgDOiMxH1",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38524::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:26:56.886723Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:26:57.684439Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:00.721307Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:03.844795Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:06.87078Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:09.884461Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:11.70412Z,
+    uid: "CiYBed2gDEZwNJILbl",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 50770::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.80\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:12.893809Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:15.9279Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:19.070174Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:22.093353Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:25.138242Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:28.158371Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:31.178135Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:34.188669Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:37.278326Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:40.295286Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:43.434202Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:46.576653Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:49.656915Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:52.666759Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:55.677336Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:27:58.799293Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:01.915908Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:03.256675Z,
+    uid: "Crr7EI2yrVL4ePDl5j",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37797::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\COTTONCANDY024\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:04.941239Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:07.967228Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:11.030365Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:14.068444Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:17.1063Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:20.136724Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:23.156921Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:26.176086Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:29.188219Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:32.205654Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:35.275243Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:38.284679Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:41.339767Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:44.357828Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:47.369318Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:50.377964Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:53.38896Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:56.410601Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:28:59.426747Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:02.449797Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:05.460473Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:08.469037Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:11.499247Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:14.523135Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:17.534182Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:20.551321Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:23.560087Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:26.627248Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:29.638028Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:30.978765Z,
+    uid: "CXThvn1xJkrU9gpPyj",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36777::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:31.00413Z,
+    uid: "CCOLr34wagSkdhtcJ3",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35261::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:31.477547Z,
+    uid: "CQxYev3TfcFRkV79V8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38614::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:31.958862Z,
+    uid: "CrZMa6lXf7SiMMQYb",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40577::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.196276Z,
+    uid: "CPmuyn167GcCJR3Idh",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40567::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.387469Z,
+    uid: "CP93y93uZKo8wW4vU6",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39907::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.655052Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.796607Z,
+    uid: "CboWl9GOm31Tkijqe",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43003::(port=uint16),
+        resp_h: 10.47.27.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.27.25\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.816219Z,
+    uid: "CQ34Zl1WjVvz59SS6g",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35889::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:32.892008Z,
+    uid: "CSSFl2488GR03JE7Z7",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36707::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:33.181619Z,
+    uid: "C2PjBD2z8kxPCkqE43",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33981::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:33.527122Z,
+    uid: "Cyl1KO0ysj1s72htf",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45662::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:33.765445Z,
+    uid: "CGQC8t3QXbWt2Bplz",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38368::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:33.989918Z,
+    uid: "C46ZDP2CrNqvbfxOF",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45304::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.392958Z,
+    uid: "CJrGo72436FpRyeQy9",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37457::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.54479Z,
+    uid: "CeEivBuBNkFVtl9j9",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 36715::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.647823Z,
+    uid: "CxNbAKJwfF9gbY1Wk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 45068::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.745806Z,
+    uid: "C3n8wQ2f8F3x52qZN6",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 32834::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.843226Z,
+    uid: "CQQyB025UmFswS0Qg7",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 33024::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:34.938388Z,
+    uid: "Czk6TNW0WSodoVUF1",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 46047::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:35.037088Z,
+    uid: "C881Hp1hHjqAZwXoEi",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 41300::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:35.138513Z,
+    uid: "CK2ZwF1EUSGv2tUNZa",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 35548::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.22.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:35.678331Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.28979Z,
+    uid: "CZYAc92e4EwGTpeoK8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 41041::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.393898Z,
+    uid: "C7Oyj1Y7kaB9oZdwl",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43588::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.491894Z,
+    uid: "C5GzTsoxhlsaNHFG",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43515::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.595449Z,
+    uid: "CnzgTZ3hY2wXZPwZel",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43450::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.735946Z,
+    uid: "CuKQ934Q16HdWXFhie",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 38868::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.829463Z,
+    uid: "CON1bZ2cM7wWWhhtf4",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 32995::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:37.923042Z,
+    uid: "CdcM6s4LCM0wcmhpwd",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 40330::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:38.024628Z,
+    uid: "C9ux5f3yb47zJPInTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 41714::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:38.122405Z,
+    uid: "CotkBS25XMx3GUdsv",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 34430::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:38.226382Z,
+    uid: "CuYzqf2pFn05WYyMVd",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39256::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.24.25\\admin$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:38.779961Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:41.794626Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:44.929471Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:46.080361Z,
+    uid: "C86BVo1paxrPDzfDNh",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37086::(port=uint16),
+        resp_h: 10.47.8.10,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.10\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:46.138437Z,
+    uid: "CmIin524wEYNaSeAH",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 46940::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:47.94196Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:50.979516Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:53.991461Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:29:57.005061Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:00.016627Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:03.097924Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:04.997509Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:05.000093Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:05.039763Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:06.110095Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:09.12273Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:12.133862Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:15.163741Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:18.174285Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:21.186719Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:23.167929Z,
+    uid: "CryJVgtncb0Xo0X4g",
+    id: {
+        orig_h: 10.128.0.207,
+        orig_p: 38399::(port=uint16),
+        resp_h: 10.47.23.80,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.23.80\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:24.197594Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:27.21177Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:30.224941Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:33.238995Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:34.034229Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:34.038497Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:34.056194Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:36.254477Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:39.266555Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:42.278733Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:45.286914Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:48.297699Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:51.308597Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:54.319747Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:30:57.330013Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:00.360262Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:03.472079Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:06.494142Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:09.5074Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:12.536746Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:15.545151Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.21.81\\ADMIN$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:46.155495Z,
+    uid: "C6EYta3MG5Qq2x4SVh",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 48622::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.142\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:46.221172Z,
+    uid: "CgeKXx4v9ZpYukbIpg",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 34590::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.154\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:46.297026Z,
+    uid: "CoiBbC4xRbqsTi4zq3",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 55540::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.151\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:46.341826Z,
+    uid: "CLdkTn43jKemAY5VG4",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 60016::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.208\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:31:46.408129Z,
+    uid: "CB9FnaHfsK8HYErac",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 57422::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.218\\IPC$",
+    service: null::string,
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:33:04.771773Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:33:04.774638Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\ADMIN$",
+    service: "A:",
+    native_file_system: "NTFS",
+    share_type: "DISK"
+}
+{
+    _path: "smb_mapping",
+    ts: 2018-03-24T17:33:04.79215Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    path: "\\\\10.47.8.19\\IPC$",
+    service: "IPC",
+    native_file_system: null::string,
+    share_type: "PIPE"
+}

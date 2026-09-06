@@ -1,0 +1,2 @@
+<165>1 2026-09-05T14:00:00.000Z edge-gw.corp.net app-server 1234 ID47 [exampleSDID@32473 iut="3" eventSource="AuthService" eventID="1011"] User authentication succeeded for account corp_user
+<134>1 2026-09-05T14:00:05.123Z core-rtr.corp.net ospf 4321 - [trafficMetrics@32473 bytesIn="1048576" bytesOut="2097152" dropped="0"] OSPF neighbor state change full to down on GigabitEthernet0/0

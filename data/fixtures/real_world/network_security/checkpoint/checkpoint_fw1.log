@@ -1,0 +1,2 @@
+time=1620000000|action=drop|orig=192.168.1.1|i/f_dir=inbound|i/f_name=eth0|has_accounting=0|uuid=<00000000,00000000,00000000,00000000>|product=VPN-1 & FireWall-1|proto=6|src=198.51.100.12|dst=10.0.0.50|s_port=49821|service=22|rule=5|rule_name=Drop_External_SSH|reason=Rule base drop|
+time=1620000005|action=accept|orig=192.168.1.1|i/f_dir=outbound|i/f_name=eth1|has_accounting=1|uuid=<00000000,00000000,00000000,00000001>|product=VPN-1 & FireWall-1|proto=6|src=10.0.0.100|dst=203.0.113.15|s_port=52140|service=443|rule=12|rule_name=Outbound_HTTPS|bytes=8412|packets=14|

@@ -1,0 +1,102 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ftp
+#open	2024-04-12-19-29-14
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	user	password	command	arg	mime_type	file_size	reply_code	reply_msg	data_channel.passive	data_channel.orig_h	data_channel.resp_h	data_channel.resp_p	fuid
+#types	time	string	addr	port	addr	port	string	string	string	string	string	count	count	string	bool	addr	addr	port	string
+1521911724.699488	CRJ34i2alWZXGHGfng	10.164.94.120	45905	10.47.27.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,200,63).	T	10.164.94.120	172.20.0.80	51263	-
+1521911724.704286	CRJ34i2alWZXGHGfng	10.164.94.120	45905	10.47.27.80	21	anonymous	nessus@nessus.org	STOR	ftp://10.47.27.80/nessus_test	-	-	550	Access is denied. 	-	-	-	-	-
+1521911724.728288	CDLUSnwp86q8tTWd9	10.164.94.120	37035	10.47.27.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,200,64).	T	10.164.94.120	172.20.0.80	51264	-
+1521911972.257183	CSeBlc2RJFbsTJsTSl	10.164.94.120	42047	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,185).	T	10.164.94.120	172.20.0.80	49337	-
+1521911972.260419	CSeBlc2RJFbsTJsTSl	10.164.94.120	42047	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911972.262875	CSeBlc2RJFbsTJsTSl	10.164.94.120	42047	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,186).	T	10.164.94.120	172.20.0.80	49338	-
+1521911972.266533	CSeBlc2RJFbsTJsTSl	10.164.94.120	42047	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911973.417915	CthKsh4JaZIKbserLe	10.164.94.120	45601	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,188).	T	10.164.94.120	172.20.0.80	49340	-
+1521911973.428759	CthKsh4JaZIKbserLe	10.164.94.120	45601	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911980.103762	Ci1VD243DzAtwMNnul	10.164.94.120	35139	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,190).	T	10.164.94.120	172.20.0.80	49342	-
+1521911980.174147	Ci1VD243DzAtwMNnul	10.164.94.120	35139	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911983.214335	CYHqhO3BvDgZWQF8Ik	10.164.94.120	33239	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,191).	T	10.164.94.120	172.20.0.80	49343	-
+1521911983.221585	CYHqhO3BvDgZWQF8Ik	10.164.94.120	33239	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911986.026371	CyXVer29F0B62ZfPQ3	10.164.94.120	33651	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,192).	T	10.164.94.120	172.20.0.80	49344	-
+1521911986.030299	CyXVer29F0B62ZfPQ3	10.164.94.120	33651	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f/boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911987.059883	Cq6SkQ3WqcsSBpoM4c	10.164.94.120	45117	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,195).	T	10.164.94.120	172.20.0.80	49347	-
+1521911987.067369	Cq6SkQ3WqcsSBpoM4c	10.164.94.120	45117	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c/boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911988.179370	CcZxcD3YVNU6PFDack	10.164.94.120	45093	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,196).	T	10.164.94.120	172.20.0.80	49348	-
+1521911988.185309	CcZxcD3YVNU6PFDack	10.164.94.120	45093	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.../.../.../.../.../.../.../.../.../.../.../.../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911989.298624	Ccvf312bknFpju2Tne	10.164.94.120	35341	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,198).	T	10.164.94.120	172.20.0.80	49350	-
+1521911989.324185	Ccvf312bknFpju2Tne	10.164.94.120	35341	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.../.../.../.../.../.../.../.../.../.../.../.../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911990.365860	CeaEiF8WeGHlEJot	10.164.94.120	33615	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,199).	T	10.164.94.120	172.20.0.80	49351	-
+1521911990.376180	CeaEiF8WeGHlEJot	10.164.94.120	33615	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911991.421769	C2JDiR1Hcu89VJxdg4	10.164.94.120	38243	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,201).	T	10.164.94.120	172.20.0.80	49353	-
+1521911991.426094	C2JDiR1Hcu89VJxdg4	10.164.94.120	38243	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911992.982637	CEtE8BCkI4CGONPya	10.164.94.120	42925	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,203).	T	10.164.94.120	172.20.0.80	49355	-
+1521911993.292722	CEtE8BCkI4CGONPya	10.164.94.120	42925	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f/boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911994.458307	CoDpoi1dTrW95Pvg2e	10.164.94.120	43409	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,204).	T	10.164.94.120	172.20.0.80	49356	-
+1521911994.639855	CoDpoi1dTrW95Pvg2e	10.164.94.120	43409	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c/boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521911995.921520	Cu7je536wEzyIkvRk1	10.164.94.120	38641	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,205).	T	10.164.94.120	172.20.0.80	49357	-
+1521911995.979346	Cu7je536wEzyIkvRk1	10.164.94.120	38641	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911997.800435	C0aPmpy58j12lRm6l	10.164.94.120	33979	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,206).	T	10.164.94.120	172.20.0.80	49358	-
+1521911998.052079	C0aPmpy58j12lRm6l	10.164.94.120	33979	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521911999.282468	CPQZ8T7JOTKcg5ds	10.164.94.120	37417	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,207).	T	10.164.94.120	172.20.0.80	49359	-
+1521911999.309606	CPQZ8T7JOTKcg5ds	10.164.94.120	37417	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912000.355004	CSzwm4daU02So0l0c	10.164.94.120	34149	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,208).	T	10.164.94.120	172.20.0.80	49360	-
+1521912000.357702	CSzwm4daU02So0l0c	10.164.94.120	34149	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912001.781141	CvMlfF4dbXa5f88y47	10.164.94.120	34829	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,209).	T	10.164.94.120	172.20.0.80	49361	-
+1521912001.866990	CvMlfF4dbXa5f88y47	10.164.94.120	34829	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912003.805304	Crtoqt3NUtcDflW7ze	10.164.94.120	33685	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,210).	T	10.164.94.120	172.20.0.80	49362	-
+1521912003.866496	Crtoqt3NUtcDflW7ze	10.164.94.120	33685	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912004.909843	CuFE7n2qH9Z2XraUr7	10.164.94.120	36131	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,211).	T	10.164.94.120	172.20.0.80	49363	-
+1521912004.915186	CuFE7n2qH9Z2XraUr7	10.164.94.120	36131	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912006.614575	Ca1JxL27LTn7TxoWX6	10.164.94.120	37375	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,213).	T	10.164.94.120	172.20.0.80	49365	-
+1521912006.617941	Ca1JxL27LTn7TxoWX6	10.164.94.120	37375	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912007.831840	ChUCdA2Arz5ac4Jdkl	10.164.94.120	46287	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,215).	T	10.164.94.120	172.20.0.80	49367	-
+1521912007.909538	ChUCdA2Arz5ac4Jdkl	10.164.94.120	46287	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912009.044379	Cybk3T1vZ8fefvnPyc	10.164.94.120	39189	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,216).	T	10.164.94.120	172.20.0.80	49368	-
+1521912009.052294	Cybk3T1vZ8fefvnPyc	10.164.94.120	39189	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912010.180729	CsuP132mZ14CFUduKd	10.164.94.120	37015	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,219).	T	10.164.94.120	172.20.0.80	49371	-
+1521912010.184302	CsuP132mZ14CFUduKd	10.164.94.120	37015	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912011.273206	Crof09apH2y0O4gCf	10.164.94.120	44453	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,220).	T	10.164.94.120	172.20.0.80	49372	-
+1521912011.294995	Crof09apH2y0O4gCf	10.164.94.120	44453	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912012.371262	CZbyAgLZYC4ZN10d4	10.164.94.120	41737	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,221).	T	10.164.94.120	172.20.0.80	49373	-
+1521912012.386262	CZbyAgLZYC4ZN10d4	10.164.94.120	41737	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912018.300729	CN5cLa1fBM9K2d0nzi	10.164.94.120	39529	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,222).	T	10.164.94.120	172.20.0.80	49374	-
+1521912018.310010	CN5cLa1fBM9K2d0nzi	10.164.94.120	39529	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912019.510024	Cn2OrJ2qD4os6zKmxe	10.164.94.120	43049	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,223).	T	10.164.94.120	172.20.0.80	49375	-
+1521912019.791378	Cn2OrJ2qD4os6zKmxe	10.164.94.120	43049	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912024.699710	CAMoeG2ma0fZvbxrSj	10.164.94.120	33067	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,224).	T	10.164.94.120	172.20.0.80	49376	-
+1521912024.706009	CAMoeG2ma0fZvbxrSj	10.164.94.120	33067	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912028.486037	CzsNSL2QYDIYfv6Z1c	10.164.94.120	45157	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,225).	T	10.164.94.120	172.20.0.80	49377	-
+1521912028.507753	CzsNSL2QYDIYfv6Z1c	10.164.94.120	45157	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912029.703128	CGdzRk1WOLWWI6KhX3	10.164.94.120	44833	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,226).	T	10.164.94.120	172.20.0.80	49378	-
+1521912029.737588	CGdzRk1WOLWWI6KhX3	10.164.94.120	44833	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/../../../../../../../../../../../../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912031.082776	CcpJVG3ymdHT9XYxGi	10.164.94.120	44489	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,227).	T	10.164.94.120	172.20.0.80	49379	-
+1521912031.092734	CcpJVG3ymdHT9XYxGi	10.164.94.120	44489	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912033.052007	CL2SDU387ecNbhxgN4	10.164.94.120	34645	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,228).	T	10.164.94.120	172.20.0.80	49380	-
+1521912033.077929	CL2SDU387ecNbhxgN4	10.164.94.120	34645	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912037.582688	CaJxqEd6nJXQ4UlW4	10.164.94.120	45963	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,229).	T	10.164.94.120	172.20.0.80	49381	-
+1521912037.615773	CaJxqEd6nJXQ4UlW4	10.164.94.120	45963	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912038.857871	CYd0e427R8cJyV6ahf	10.164.94.120	45021	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,230).	T	10.164.94.120	172.20.0.80	49382	-
+1521912038.901853	CYd0e427R8cJyV6ahf	10.164.94.120	45021	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./.../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912039.955248	CGJ11z4HhX3EbuiBhc	10.164.94.120	46497	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,231).	T	10.164.94.120	172.20.0.80	49383	-
+1521912039.968682	CGJ11z4HhX3EbuiBhc	10.164.94.120	46497	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/.../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912041.412028	CfzIcE2WF3HSJcUgxd	10.164.94.120	46597	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,232).	T	10.164.94.120	172.20.0.80	49384	-
+1521912041.439649	CfzIcE2WF3HSJcUgxd	10.164.94.120	46597	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/.../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912042.631538	CgcKymH1hDRbLWrzb	10.164.94.120	36279	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,233).	T	10.164.94.120	172.20.0.80	49385	-
+1521912042.667113	CgcKymH1hDRbLWrzb	10.164.94.120	36279	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/....../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912044.857108	CJOMfx4XXovSLeCzSe	10.164.94.120	44553	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,235).	T	10.164.94.120	172.20.0.80	49387	-
+1521912044.952412	CJOMfx4XXovSLeCzSe	10.164.94.120	44553	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./\\.../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912046.308947	C1zAdI2zRufE14J3gj	10.164.94.120	41057	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,236).	T	10.164.94.120	172.20.0.80	49388	-
+1521912046.319054	C1zAdI2zRufE14J3gj	10.164.94.120	41057	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./\\.../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912047.471202	CVA4t22M8VU0vfAvM5	10.164.94.120	43429	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,237).	T	10.164.94.120	172.20.0.80	49389	-
+1521912047.508404	CVA4t22M8VU0vfAvM5	10.164.94.120	43429	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...\\boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912048.748784	CGFYAH2y36ZKxx3U1a	10.164.94.120	46725	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,238).	T	10.164.94.120	172.20.0.80	49390	-
+1521912048.761655	CGFYAH2y36ZKxx3U1a	10.164.94.120	46725	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./...\\/boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912049.893856	Cv1ZEev23L5EVY27g	10.164.94.120	39399	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,239).	T	10.164.94.120	172.20.0.80	49391	-
+1521912049.899013	Cv1ZEev23L5EVY27g	10.164.94.120	39399	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..../boot.ini	-	-	550	The system cannot find the path specified. 	-	-	-	-	-
+1521912051.455269	CVPl3K3jzBmoEwuad9	10.164.94.120	39223	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,240).	T	10.164.94.120	172.20.0.80	49392	-
+1521912051.459577	CVPl3K3jzBmoEwuad9	10.164.94.120	39223	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/./..../boot.ini	-	-	550	The system cannot find the file specified. 	-	-	-	-	-
+1521912052.808757	CUXC272BmKGAN3Vyl3	10.164.94.120	46023	10.47.21.80	21	anonymous	nessus@nessus.org	PASV	-	-	-	227	Entering Passive Mode (172,20,0,80,192,241).	T	10.164.94.120	172.20.0.80	49393	-
+1521912052.813450	CUXC272BmKGAN3Vyl3	10.164.94.120	46023	10.47.21.80	21	anonymous	nessus@nessus.org	RETR	ftp://10.47.21.80/C:\\boot.ini	-	-	550	The parameter is incorrect. 	-	-	-	-	-
+#close	2024-04-12-19-34-07

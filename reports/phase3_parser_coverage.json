@@ -1,0 +1,402 @@
+{
+  "generated_at": "2026-09-05T20:43:39.897912+00:00",
+  "phase": "Phase 3: Parser & Normalization Plane",
+  "total_parsers": 20,
+  "supported_formats": [
+    "aws_vpc_flow",
+    "cef",
+    "cisco_syslog",
+    "clf_access",
+    "cloud_audit_json",
+    "combined_access",
+    "csv",
+    "fortigate_kv",
+    "json",
+    "key_value",
+    "leef",
+    "linux_auditd",
+    "ndjson",
+    "opnsense_filterlog",
+    "panos_csv",
+    "snort_fast",
+    "suricata_eve_json",
+    "syslog_rfc3164",
+    "syslog_rfc5424",
+    "tsv",
+    "w3c",
+    "web_access",
+    "xml",
+    "zeek_json",
+    "zeek_tsv"
+  ],
+  "supported_vendors": [
+    "AWS",
+    "Amazon",
+    "Apache",
+    "Azure",
+    "Bro",
+    "Caddy",
+    "Canonical",
+    "Cisco",
+    "Cisco Systems",
+    "Corelight",
+    "Deciso",
+    "FortiGate",
+    "Fortinet",
+    "GCP",
+    "Google",
+    "Linux",
+    "Microsoft",
+    "NGINX",
+    "Netgate",
+    "OISF",
+    "OPNsense",
+    "PAN-OS",
+    "Palo Alto Networks",
+    "PaloAlto",
+    "RedHat",
+    "SUSE",
+    "Snort",
+    "Suricata",
+    "Web",
+    "Zeek",
+    "pfSense"
+  ],
+  "parsers": [
+    {
+      "parser_id": "parser.cisco.asa_ios",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "cisco_syslog",
+        "syslog_rfc3164"
+      ],
+      "supported_vendors": [
+        "Cisco",
+        "Cisco Systems"
+      ],
+      "supported_products": [
+        "ASA",
+        "Adaptive Security Appliance",
+        "IOS-XE",
+        "PIX"
+      ],
+      "priority": 60,
+      "description": "Cisco ASA and IOS-XE perimeter firewall and security syslog parser"
+    },
+    {
+      "parser_id": "parser.cloud.audit_flow",
+      "version": "1.0.0",
+      "tier": "C",
+      "supported_formats": [
+        "cloud_audit_json",
+        "aws_vpc_flow",
+        "json"
+      ],
+      "supported_vendors": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Amazon",
+        "Microsoft",
+        "Google"
+      ],
+      "supported_products": [
+        "CloudTrail",
+        "VPC Flow",
+        "Activity Log",
+        "AuditLog"
+      ],
+      "priority": 50,
+      "description": "AWS CloudTrail, AWS VPC Flow, Azure Activity, and GCP Audit parser"
+    },
+    {
+      "parser_id": "parser.fortinet.fortigate",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "fortigate_kv",
+        "key_value"
+      ],
+      "supported_vendors": [
+        "Fortinet",
+        "FortiGate"
+      ],
+      "supported_products": [
+        "FortiOS",
+        "FortiGate",
+        "FortiWiFi"
+      ],
+      "priority": 60,
+      "description": "Fortinet FortiGate UTM, Traffic, and Event parser"
+    },
+    {
+      "parser_id": "parser.generic.cef",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "cef"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 25,
+      "description": "ArcSight Common Event Format (CEF) generic parser"
+    },
+    {
+      "parser_id": "parser.generic.csv",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "csv"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 10,
+      "description": "Generic CSV parser with delimiter sniffing and bounded parsing"
+    },
+    {
+      "parser_id": "parser.generic.json",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "json"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 10,
+      "description": "Generic JSON parser with depth and key limits"
+    },
+    {
+      "parser_id": "parser.generic.keyvalue",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "key_value"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 10,
+      "description": "Generic key=value log parser with quoted value support"
+    },
+    {
+      "parser_id": "parser.generic.leef",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "leef"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 25,
+      "description": "IBM Log Event Extended Format (LEEF) parser for v1.0 and v2.0"
+    },
+    {
+      "parser_id": "parser.generic.ndjson",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "ndjson"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 10,
+      "description": "NDJSON parser (delegates to GenericJsonParser per line)"
+    },
+    {
+      "parser_id": "parser.generic.w3c",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "w3c"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 20,
+      "description": "W3C Extended Log File Format parser with #Fields directive parsing"
+    },
+    {
+      "parser_id": "parser.generic.xml",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "xml"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 15,
+      "description": "XXE-safe generic XML parser with depth and element bounds"
+    },
+    {
+      "parser_id": "parser.linux.auditd",
+      "version": "1.0.0",
+      "tier": "C",
+      "supported_formats": [
+        "linux_auditd",
+        "key_value"
+      ],
+      "supported_vendors": [
+        "Linux",
+        "RedHat",
+        "Canonical",
+        "SUSE"
+      ],
+      "supported_products": [
+        "auditd",
+        "Linux Kernel Audit",
+        "SELinux"
+      ],
+      "priority": 50,
+      "description": "Linux Audit daemon (auditd) security telemetry parser"
+    },
+    {
+      "parser_id": "parser.opnsense.filterlog",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "opnsense_filterlog",
+        "csv"
+      ],
+      "supported_vendors": [
+        "OPNsense",
+        "pfSense",
+        "Netgate",
+        "Deciso"
+      ],
+      "supported_products": [
+        "filterlog",
+        "pf",
+        "Firewall"
+      ],
+      "priority": 60,
+      "description": "OPNsense and pfSense filterlog packet filter CSV parser"
+    },
+    {
+      "parser_id": "parser.paloalto.panos",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "panos_csv",
+        "csv"
+      ],
+      "supported_vendors": [
+        "Palo Alto Networks",
+        "PaloAlto",
+        "PAN-OS"
+      ],
+      "supported_products": [
+        "PAN-OS",
+        "PA-Series",
+        "Firewall"
+      ],
+      "priority": 60,
+      "description": "Palo Alto Networks PAN-OS Traffic, Threat, and System CSV parser"
+    },
+    {
+      "parser_id": "parser.snort.fast",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "snort_fast"
+      ],
+      "supported_vendors": [
+        "Snort",
+        "Cisco"
+      ],
+      "supported_products": [
+        "Snort",
+        "Snort IDS"
+      ],
+      "priority": 60,
+      "description": "Snort fast alert format parser"
+    },
+    {
+      "parser_id": "parser.suricata.eve",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "suricata_eve_json",
+        "json",
+        "ndjson"
+      ],
+      "supported_vendors": [
+        "Suricata",
+        "OISF"
+      ],
+      "supported_products": [
+        "EVE",
+        "Suricata IDS/IPS"
+      ],
+      "priority": 60,
+      "description": "Suricata EVE JSON security, flow, and IDS alert parser"
+    },
+    {
+      "parser_id": "parser.syslog.rfc3164",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "syslog_rfc3164"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 20,
+      "description": "Generic RFC 3164 BSD Syslog parser"
+    },
+    {
+      "parser_id": "parser.syslog.rfc5424",
+      "version": "1.0.0",
+      "tier": "A",
+      "supported_formats": [
+        "syslog_rfc5424"
+      ],
+      "supported_vendors": [],
+      "supported_products": [],
+      "priority": 20,
+      "description": "Generic RFC 5424 IETF Syslog parser"
+    },
+    {
+      "parser_id": "parser.web.access",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "combined_access",
+        "clf_access",
+        "web_access"
+      ],
+      "supported_vendors": [
+        "NGINX",
+        "Apache",
+        "Caddy",
+        "Web"
+      ],
+      "supported_products": [
+        "NGINX",
+        "httpd",
+        "Apache",
+        "Web Server"
+      ],
+      "priority": 50,
+      "description": "NGINX and Apache Combined Log Format (CLF) web access parser"
+    },
+    {
+      "parser_id": "parser.zeek.telemetry",
+      "version": "1.0.0",
+      "tier": "B",
+      "supported_formats": [
+        "zeek_tsv",
+        "zeek_json",
+        "tsv"
+      ],
+      "supported_vendors": [
+        "Zeek",
+        "Bro",
+        "Corelight"
+      ],
+      "supported_products": [
+        "Zeek",
+        "Bro Network Security Monitor"
+      ],
+      "priority": 60,
+      "description": "Zeek / Bro network telemetry (conn, dns, http, ssl) parser"
+    }
+  ]
+}

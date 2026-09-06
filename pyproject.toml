@@ -28,8 +28,8 @@ ulpf-api = "ulpf_api.main:main"
 ulpf-worker = "ulpf_worker.main:main"
 
 [tool.setuptools.packages.find]
-where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/platform"]
-include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_platform*"]
+where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic"]
+include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_normalization*", "ulpf_parser_runtime*", "ulpf_platform*", "ulpf_semantic*"]
 
 [tool.ruff]
 target-version = "py312"
@@ -38,7 +38,18 @@ extend-exclude = [".venv", "build", "dist"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "S"]
-ignore = ["S104"]
+ignore = ["S104", "E501"]
+
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "E501"]
+"tests/*.py" = ["S101", "E501"]
+"tests/**" = ["S101", "E501"]
+"scripts/*" = ["E501", "S101", "T201"]
+"scripts/*.py" = ["E501", "S101", "T201"]
+"scripts/**" = ["E501", "S101", "T201"]
+
+
 
 [tool.mypy]
 python_version = "3.12"
@@ -49,7 +60,7 @@ exclude = [
   "^build/",
 ]
 
-mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/platform"]
+mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic"]
 
 
 [[tool.mypy.overrides]]
@@ -62,3 +73,16 @@ source = ["apps", "packages"]
 
 [tool.coverage.report]
 fail_under = 0
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "apps/api",
+  "apps/worker",
+  "packages/contracts",
+  "packages/domain",
+  "packages/ingestion",
+  "packages/normalization",
+  "packages/parser-runtime",
+  "packages/platform",
+  "packages/semantic",
+]

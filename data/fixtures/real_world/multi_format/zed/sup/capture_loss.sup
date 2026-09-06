@@ -1,0 +1,27 @@
+{
+    _path: "capture_loss",
+    ts: 2018-03-24T17:16:20.600725Z,
+    ts_delta: 1m,
+    peer: "zeek",
+    gaps: 254::uint64,
+    acks: 181765::uint64,
+    percent_lost: 0.139741
+}
+{
+    _path: "capture_loss",
+    ts: 2018-03-24T17:31:20.600926Z,
+    ts_delta: 15m201us,
+    peer: "zeek",
+    gaps: 1239::uint64,
+    acks: 1371000::uint64,
+    percent_lost: 0.090372
+}
+{
+    _path: "capture_loss",
+    ts: 2018-03-24T17:36:30.158766Z,
+    ts_delta: 5m9.55784s,
+    peer: "zeek",
+    gaps: 826::uint64,
+    acks: 524895::uint64,
+    percent_lost: 0.157365
+}

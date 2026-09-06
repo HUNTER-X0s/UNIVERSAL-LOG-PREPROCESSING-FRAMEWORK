@@ -38,9 +38,16 @@ MANIFEST_PATH = DATA_DIR / "DATASET_MANIFEST.json"
 REPORTS_DIR.mkdir(exist_ok=True)
 
 SKIP_DIRS = {
-    ".git", ".venv", "venv", "__pycache__",
-    ".pytest_cache", ".ruff_cache", ".mypy_cache",
-    "node_modules", "build", "dist",
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".mypy_cache",
+    "node_modules",
+    "build",
+    "dist",
 }
 
 print("=" * 70)
@@ -82,17 +89,24 @@ data_files = [f for f in all_repo_files if f["rel"].startswith("data/")]
 docs_files = [f for f in all_repo_files if f["rel"].startswith("docs/")]
 tests_files = [f for f in all_repo_files if f["rel"].startswith("tests/")]
 apps_files = [
-    f for f in all_repo_files
-    if f["rel"].startswith("apps/") or f["rel"].startswith("packages/")
+    f for f in all_repo_files if f["rel"].startswith("apps/") or f["rel"].startswith("packages/")
 ]
 scripts_files = [f for f in all_repo_files if f["rel"].startswith("scripts/")]
-config_files = [f for f in all_repo_files if f["rel"].startswith("reports/") or
-                f["rel"] in ("pyproject.toml", "ruff.toml", ".gitignore", "README.md")]
+config_files = [
+    f
+    for f in all_repo_files
+    if f["rel"].startswith("reports/")
+    or f["rel"] in ("pyproject.toml", "ruff.toml", ".gitignore", "README.md")
+]
 
 # Metadata vs payload inside data/
 META_NAMES = {
-    "DATASET_MANIFEST.json", "README.md", "LICENSE", "LICENSE.txt",
-    "CITATION", ".gitkeep",
+    "DATASET_MANIFEST.json",
+    "README.md",
+    "LICENSE",
+    "LICENSE.txt",
+    "CITATION",
+    ".gitkeep",
 }
 
 
@@ -221,7 +235,8 @@ print(f"  Manifest claims   : {_m_files} files, {_m_bytes:,} B")
 print(f"  Filesystem actual : {len(data_files)} files, {total_bytes:,} B")
 manifest_byte_diff = (
     total_bytes - manifest_total_bytes_claimed
-    if isinstance(manifest_total_bytes_claimed, int) else "N/A"
+    if isinstance(manifest_total_bytes_claimed, int)
+    else "N/A"
 )
 print(f"  Byte discrepancy  : {manifest_byte_diff}")
 
@@ -244,13 +259,11 @@ for k, v in sorted(prov_counts.items()):
 # ---------------------------------------------------------------------------
 print("\n[STEP 11] PRIVACY & SECRETS FORENSIC SCAN")
 SECRET_PATTERNS = {
-    "private_key":    re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"),
-    "aws_key":        re.compile(r"(?<![A-Z0-9])(AKIA|ASIA)[A-Z0-9]{16}(?![A-Z0-9])"),
-    "jwt":            re.compile(r"eyJ[A-Za-z0-9-_=]+\.eyJ[A-Za-z0-9-_=]+\.[A-Za-z0-9-_.+/=]{10,}"),
-    "ssh_key":        re.compile(r"ssh-(rsa|dss|ed25519)\s+[A-Za-z0-9+/=]{40,}"),
-    "password": re.compile(
-        r"(?i)(password|passwd|pwd)\s*[:=]\s*['\"][^'\"]{6,}['\"]"
-    ),
+    "private_key": re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"),
+    "aws_key": re.compile(r"(?<![A-Z0-9])(AKIA|ASIA)[A-Z0-9]{16}(?![A-Z0-9])"),
+    "jwt": re.compile(r"eyJ[A-Za-z0-9-_=]+\.eyJ[A-Za-z0-9-_=]+\.[A-Za-z0-9-_.+/=]{10,}"),
+    "ssh_key": re.compile(r"ssh-(rsa|dss|ed25519)\s+[A-Za-z0-9+/=]{40,}"),
+    "password": re.compile(r"(?i)(password|passwd|pwd)\s*[:=]\s*['\"][^'\"]{6,}['\"]"),
 }
 BENIGN_STRINGS = {"AKIAEXAMPLE", "nessus@nessus.org"}
 
@@ -269,13 +282,15 @@ for f in data_files:
                         classification = "UNRESOLVED"
                         if any(b in snippet for b in BENIGN_STRINGS):
                             classification = "BENIGN_ARTIFACT"
-                        findings.append({
-                            "file": f["rel"],
-                            "line": lineno,
-                            "type": pname,
-                            "classification": classification,
-                            "snippet": snippet,
-                        })
+                        findings.append(
+                            {
+                                "file": f["rel"],
+                                "line": lineno,
+                                "type": pname,
+                                "classification": classification,
+                                "snippet": snippet,
+                            }
+                        )
     except Exception as exc:
         print(f"    WARN: {f['rel']}: {exc}")
 
@@ -299,8 +314,7 @@ for f in data_files:
 
 all_dup_groups = {h: fs for h, fs in hash_map.items() if len(fs) > 1}
 meaningful_dups = {
-    h: fs for h, fs in all_dup_groups.items()
-    if any(not fn.endswith(".gitkeep") for fn in fs)
+    h: fs for h, fs in all_dup_groups.items() if any(not fn.endswith(".gitkeep") for fn in fs)
 }
 print(f"  All dup groups    : {len(all_dup_groups)} (incl. .gitkeep empty markers)")
 print(f"  Meaningful dups   : {len(meaningful_dups)}")
@@ -387,26 +401,26 @@ if mypy_code != 0:
 if meaningful_dups:
     high_blockers.append(f"UNINTENDED DUPLICATE CONTENT GROUPS: {len(meaningful_dups)}")
 
-phase3_ready = (len(critical_blockers) == 0)
+phase3_ready = len(critical_blockers) == 0
 
 
 # ---------------------------------------------------------------------------
 # SCORE (evidence-based)
 # ---------------------------------------------------------------------------
 score_breakdown = {
-    "Cryptographic Integrity":  (15, 10.0 if baseline_ok and not real_secrets else 0.0),
+    "Cryptographic Integrity": (15, 10.0 if baseline_ok and not real_secrets else 0.0),
     "NTRO Perimeter Relevance": (15, 10.0),  # Palo Alto, Fortinet, Cisco, Juniper, Zeek etc.
-    "Format Diversity":         (10, 9.5),   # 19 formats verified; PCAP excluded
-    "Provenance Honesty":       (10, 10.0),  # REAL_PUBLIC_DATASET separated from SPEC_DERIVED
-    "Privacy & Security":       (10, 10.0 if not real_secrets else 3.0),
-    "License Clearance":        (10, 9.5),   # All open licenses; some unverified details
-    "Adversarial Coverage":     (10, 9.0),   # 8 fixtures, comprehensive
+    "Format Diversity": (10, 9.5),  # 19 formats verified; PCAP excluded
+    "Provenance Honesty": (10, 10.0),  # REAL_PUBLIC_DATASET separated from SPEC_DERIVED
+    "Privacy & Security": (10, 10.0 if not real_secrets else 3.0),
+    "License Clearance": (10, 9.5),  # All open licenses; some unverified details
+    "Adversarial Coverage": (10, 9.0),  # 8 fixtures, comprehensive
     "Software Quality": (
         10,
         10.0 if (pytest_failed == 0 and ruff_code == 0 and mypy_code == 0) else 5.0,
     ),
-    "Governance & Docs":        (5,  9.0),   # Comprehensive; some docs stale
-    "Reproducibility":          (5,  9.5),   # Single-command verifier exists
+    "Governance & Docs": (5, 9.0),  # Comprehensive; some docs stale
+    "Reproducibility": (5, 9.5),  # Single-command verifier exists
 }
 total_weight = sum(w for w, _ in score_breakdown.values())
 weighted_score = sum((w / total_weight) * s for w, s in score_breakdown.values())

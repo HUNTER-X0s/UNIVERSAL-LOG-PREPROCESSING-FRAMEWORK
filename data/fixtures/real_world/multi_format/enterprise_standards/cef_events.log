@@ -1,0 +1,2 @@
+CEF:0|Check Point|VPN-1 & FireWall-1|Gaia|drop|Connection Dropped|High|src=198.51.100.50 dst=10.0.0.10 spt=49152 dpt=22 proto=TCP act=drop reason=Inbound SSH blocked cs1=Outside_Rule cs1Label=RuleName
+CEF:0|Imperva|Incapsula|1.0|1000|SQL Injection Detected|Critical|src=203.0.113.88 dst=192.0.2.100 spt=54321 dpt=443 proto=TCP act=blocked request=/search.php?id=1%27%20OR%201=1-- c6a1=2001:db8::1 c6a1Label=SourceIPv6

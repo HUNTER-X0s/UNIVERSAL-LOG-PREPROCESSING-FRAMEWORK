@@ -1,0 +1,3 @@
+type=SYSCALL msg=audit(1620000000.123:456): arch=c000003e syscall=59 success=yes exit=0 a0=55a1b2c3d4e0 a1=55a1b2c3d520 a2=55a1b2c3d540 a3=7ffe0000 items=2 ppid=1234 pid=5678 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=1 comm="sudo" exe="/usr/bin/sudo" key="privileged_exec"
+type=EXECVE msg=audit(1620000000.123:456): argc=3 a0="sudo" a1="cat" a2="/etc/shadow"
+type=PATH msg=audit(1620000000.123:456): item=0 name="/etc/shadow" inode=123456 dev=fd:00 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL

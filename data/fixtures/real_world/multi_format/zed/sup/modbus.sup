@@ -1,0 +1,4288 @@
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:33.511226Z,
+    uid: "CYmWSL3iXSKUncv8Zg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56952::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:33.9126Z,
+    uid: "CYmWSL3iXSKUncv8Zg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56952::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:53.983631Z,
+    uid: "CM4AJA4rX3Dcepxr37",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56968::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:54.262807Z,
+    uid: "CM4AJA4rX3Dcepxr37",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56968::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:58.29025Z,
+    uid: "CVSHwZ3EAFx1jnyvMj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59857::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:58.516639Z,
+    uid: "CVSHwZ3EAFx1jnyvMj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59857::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:59.524209Z,
+    uid: "C7T2Ca4RNtGifJ4iV9",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59882::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:15:59.675634Z,
+    uid: "C7T2Ca4RNtGifJ4iV9",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59882::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:00.684137Z,
+    uid: "CVosZh3EF4oAYVj3ch",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59883::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:00.791818Z,
+    uid: "CVosZh3EF4oAYVj3ch",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59883::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:01.798769Z,
+    uid: "Cq7gel3j5E63C4DR35",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59884::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:01.991794Z,
+    uid: "Cq7gel3j5E63C4DR35",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 59884::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:14.352737Z,
+    uid: "C8Q1In4d8wB6EDmSXb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56990::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:14.553084Z,
+    uid: "C8Q1In4d8wB6EDmSXb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 56990::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:21.685221Z,
+    uid: "CqZgpab0taO7zs0f5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46596::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:21.882244Z,
+    uid: "CqZgpab0taO7zs0f5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46596::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:27.061563Z,
+    uid: "Cyf0yZUg82O1T7Cv7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60019::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:27.207792Z,
+    uid: "Cyf0yZUg82O1T7Cv7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60019::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:28.214083Z,
+    uid: "Cbq6vXHDXamBeVN25",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60020::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:28.44595Z,
+    uid: "Cbq6vXHDXamBeVN25",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60020::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:29.453374Z,
+    uid: "CTqKS443vsAEZBIWYf",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60034::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:29.553016Z,
+    uid: "CTqKS443vsAEZBIWYf",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60034::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:30.559841Z,
+    uid: "CdDM3N27IALUHz2W7c",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60047::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:35.000408Z,
+    uid: "CVmKmq1Jmk8aQ0MBM9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57012::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:35.194717Z,
+    uid: "CVmKmq1Jmk8aQ0MBM9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57012::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:42.209337Z,
+    uid: "C3rmA71nMmWma3sS2j",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46612::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:42.609232Z,
+    uid: "C3rmA71nMmWma3sS2j",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46612::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:55.6314Z,
+    uid: "CV9KZs4mppk1HqXhee",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57028::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:16:56.097914Z,
+    uid: "CV9KZs4mppk1HqXhee",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57028::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:03.113068Z,
+    uid: "CytPmn4Ry6T5Adua0k",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46628::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:03.316667Z,
+    uid: "CytPmn4Ry6T5Adua0k",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46628::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:16.380116Z,
+    uid: "CLYzF92H4E31bcjNTa",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57044::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:16.799154Z,
+    uid: "CLYzF92H4E31bcjNTa",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57044::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:19.912424Z,
+    uid: "CHYq0y4ZSNI8Dj5QY2",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60257::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:20.214814Z,
+    uid: "CHYq0y4ZSNI8Dj5QY2",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60257::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:21.221104Z,
+    uid: "CCoE0u1ddYM8nswtvj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60258::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:21.515751Z,
+    uid: "CCoE0u1ddYM8nswtvj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60258::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:22.524547Z,
+    uid: "CTuH34kgiaZ3VHWB2",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60284::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:22.852097Z,
+    uid: "CTuH34kgiaZ3VHWB2",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60284::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:23.856569Z,
+    uid: "CaF1Sy5sdud6ZPKn8",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60285::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:23.879918Z,
+    uid: "CmG7RP35MG2qaTBjy1",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46644::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:24.05088Z,
+    uid: "CaF1Sy5sdud6ZPKn8",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60285::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:24.076949Z,
+    uid: "CmG7RP35MG2qaTBjy1",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46644::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:37.165011Z,
+    uid: "CF3GWZ1oyW7g9unWLl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57060::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:37.361527Z,
+    uid: "CF3GWZ1oyW7g9unWLl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57060::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:44.378275Z,
+    uid: "CFgsHEJjXKbgSVtsl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46662::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:44.575311Z,
+    uid: "CFgsHEJjXKbgSVtsl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46662::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:49.106218Z,
+    uid: "CstQ2O3Acv4ypfVFci",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60395::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:49.252583Z,
+    uid: "CstQ2O3Acv4ypfVFci",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60395::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:50.259683Z,
+    uid: "ChxYWS3sfXRbfSJfd9",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60396::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:50.405706Z,
+    uid: "ChxYWS3sfXRbfSJfd9",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60396::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:51.414048Z,
+    uid: "C1TinU1jBDqSo3VErh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60398::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:51.512089Z,
+    uid: "C1TinU1jBDqSo3VErh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60398::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:52.520221Z,
+    uid: "CNm2Y23Q2ep74h6lub",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60400::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:52.716853Z,
+    uid: "CNm2Y23Q2ep74h6lub",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60400::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:57.638176Z,
+    uid: "CJrQxg4lzon6jqOdXh",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57078::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:17:58.034283Z,
+    uid: "CJrQxg4lzon6jqOdXh",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57078::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:05.051485Z,
+    uid: "CPtsWa1DYfk48WI511",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46678::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:05.35687Z,
+    uid: "CPtsWa1DYfk48WI511",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46678::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:18.425964Z,
+    uid: "CWgXO54SHqnP2YiRwd",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57094::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:18.61878Z,
+    uid: "CWgXO54SHqnP2YiRwd",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57094::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:25.641327Z,
+    uid: "CGOIQu3d8YFr8ijmja",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46696::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:25.916689Z,
+    uid: "CGOIQu3d8YFr8ijmja",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46696::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:39.009051Z,
+    uid: "CBy8Oe2u9U06BClOc9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57112::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:39.332115Z,
+    uid: "CBy8Oe2u9U06BClOc9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57112::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:41.841061Z,
+    uid: "Cv6tjC48SBqGavryf7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60679::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:41.99145Z,
+    uid: "Cv6tjC48SBqGavryf7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60679::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:42.998499Z,
+    uid: "Cdx9g8S6RfiOXIRdl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60680::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:43.146441Z,
+    uid: "Cdx9g8S6RfiOXIRdl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60680::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:44.149643Z,
+    uid: "C6CIx02QCEUIRVlxOg",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60681::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:44.262881Z,
+    uid: "C6CIx02QCEUIRVlxOg",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60681::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:45.266836Z,
+    uid: "CdmXTHaAm9WMsYwRb",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60683::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:45.701893Z,
+    uid: "CdmXTHaAm9WMsYwRb",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60683::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:46.407735Z,
+    uid: "ChHcBm3UCeCn9kQgP9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46712::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:18:46.87605Z,
+    uid: "ChHcBm3UCeCn9kQgP9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46712::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:00.001188Z,
+    uid: "Ct3lDT20sc9giYxpQk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57128::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:00.193767Z,
+    uid: "Ct3lDT20sc9giYxpQk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57128::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:07.304439Z,
+    uid: "CGbYxtRJrJ8btLPbi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46728::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:07.499728Z,
+    uid: "CGbYxtRJrJ8btLPbi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46728::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:10.778798Z,
+    uid: "CpxZa1rxy4YO8Vbnc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60839::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:10.935839Z,
+    uid: "CpxZa1rxy4YO8Vbnc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60839::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:11.943163Z,
+    uid: "CzHKpL3PbUqSDVQuu5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60852::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:12.093834Z,
+    uid: "CzHKpL3PbUqSDVQuu5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60852::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:13.101656Z,
+    uid: "CzWdxf4D4cBjRb2aB5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60854::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:13.201424Z,
+    uid: "CzWdxf4D4cBjRb2aB5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60854::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:14.209071Z,
+    uid: "CV2LHO3xounXEHSPn",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60879::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:14.403596Z,
+    uid: "CV2LHO3xounXEHSPn",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 60879::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:20.582939Z,
+    uid: "CZjwhPks8bSD5kCM9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57150::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:20.785807Z,
+    uid: "CZjwhPks8bSD5kCM9",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57150::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:27.893777Z,
+    uid: "ClcTT7bEf3iFq8Zg3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46750::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:28.089988Z,
+    uid: "ClcTT7bEf3iFq8Zg3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46750::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:41.169392Z,
+    uid: "CoyoWs2uQhMseFKBUe",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57168::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:41.640729Z,
+    uid: "CoyoWs2uQhMseFKBUe",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57168::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:48.683699Z,
+    uid: "CHnGFU2eh0aDICg2Xf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46770::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:19:48.880113Z,
+    uid: "CHnGFU2eh0aDICg2Xf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46770::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:01.955928Z,
+    uid: "CABDJf4j4wJFAKtA12",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57186::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:02.292294Z,
+    uid: "CABDJf4j4wJFAKtA12",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57186::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:03.518224Z,
+    uid: "CxVzsY3kcYILvdX9Li",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61109::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:03.682049Z,
+    uid: "CxVzsY3kcYILvdX9Li",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61109::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:04.690356Z,
+    uid: "CG79Ar32fizQdev4y",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61110::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:05.233554Z,
+    uid: "CG79Ar32fizQdev4y",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61110::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:06.237997Z,
+    uid: "CKNGAPRL10sKN8xJ7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61123::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:06.408712Z,
+    uid: "CKNGAPRL10sKN8xJ7",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61123::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:07.414805Z,
+    uid: "CoDH8Q3yMWfSJs4iPe",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61125::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:07.733652Z,
+    uid: "CoDH8Q3yMWfSJs4iPe",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61125::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:09.362583Z,
+    uid: "CJgS4Q2f8KPPoT5Lfh",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46786::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:09.573154Z,
+    uid: "CJgS4Q2f8KPPoT5Lfh",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46786::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:22.596528Z,
+    uid: "CzKNv91ETHM3X6fW5g",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57208::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:22.866373Z,
+    uid: "CzKNv91ETHM3X6fW5g",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57208::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:29.947531Z,
+    uid: "CRiZ6FhSzt4qC53Jl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46808::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:30.335868Z,
+    uid: "CRiZ6FhSzt4qC53Jl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46808::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:32.799773Z,
+    uid: "CT3eI364LXRTswsSh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61270::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:32.946967Z,
+    uid: "CT3eI364LXRTswsSh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61270::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:33.951338Z,
+    uid: "CjGHuUJloJQkQBsJg",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61277::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:34.106746Z,
+    uid: "CjGHuUJloJQkQBsJg",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61277::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:35.11081Z,
+    uid: "CoeBUl44moDBk6LTYd",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61284::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:35.210138Z,
+    uid: "CoeBUl44moDBk6LTYd",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61284::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:36.21473Z,
+    uid: "Cw6l9hd96klak7EYh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61285::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:36.410291Z,
+    uid: "Cw6l9hd96klak7EYh",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61285::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:50.628253Z,
+    uid: "Ca0hhc4haQ58M4vcDk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46824::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:20:50.8246Z,
+    uid: "Ca0hhc4haQ58M4vcDk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46824::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:03.907912Z,
+    uid: "CbZhTX39mnw9C7l7f",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57242::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:04.288697Z,
+    uid: "CbZhTX39mnw9C7l7f",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57242::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:11.307489Z,
+    uid: "CJ8MPs3X7RhCEZhj7",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46842::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:11.767598Z,
+    uid: "CJ8MPs3X7RhCEZhj7",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46842::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:24.895586Z,
+    uid: "C1NTDg32yWFGPzxIC2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57260::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:25.09653Z,
+    uid: "C1NTDg32yWFGPzxIC2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57260::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:25.541168Z,
+    uid: "CQ8Fpr2D7sI8D34NO1",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61480::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:25.699261Z,
+    uid: "CQ8Fpr2D7sI8D34NO1",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61480::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:26.707159Z,
+    uid: "ColpF040v8QvUtc4ya",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61481::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:26.855221Z,
+    uid: "ColpF040v8QvUtc4ya",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61481::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:27.864006Z,
+    uid: "C9KLLg2u1N3QhiO6be",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61482::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:27.969942Z,
+    uid: "C9KLLg2u1N3QhiO6be",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61482::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:32.111689Z,
+    uid: "CUhsnC1w2Z1qn5HmBc",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46860::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:32.306561Z,
+    uid: "CUhsnC1w2Z1qn5HmBc",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46860::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:45.331038Z,
+    uid: "Cmxxq04ShCfJWU3c",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57276::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:45.529997Z,
+    uid: "Cmxxq04ShCfJWU3c",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57276::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:52.546304Z,
+    uid: "CjIvWl4gwCy8eyr6E6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46876::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:52.742543Z,
+    uid: "CjIvWl4gwCy8eyr6E6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46876::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:54.233983Z,
+    uid: "CUrCu025nQrxMYHQQf",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61594::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:54.382273Z,
+    uid: "CUrCu025nQrxMYHQQf",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61594::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:55.38963Z,
+    uid: "CNz8Ip2kSqihwF0WYb",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61607::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:55.545449Z,
+    uid: "CNz8Ip2kSqihwF0WYb",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61607::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:56.551735Z,
+    uid: "CpDAwt3rvePnsLsIJj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61632::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:56.650361Z,
+    uid: "CpDAwt3rvePnsLsIJj",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61632::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:57.653833Z,
+    uid: "CIiqpb4qfcGc6Cl298",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61634::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:21:57.849375Z,
+    uid: "CIiqpb4qfcGc6Cl298",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61634::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:05.768472Z,
+    uid: "CZwh1Y2DvjFipaNCwb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57292::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:05.964025Z,
+    uid: "CZwh1Y2DvjFipaNCwb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57292::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:13.034831Z,
+    uid: "C0wWj72F2nwWxeYxUe",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46892::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:13.232388Z,
+    uid: "C0wWj72F2nwWxeYxUe",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46892::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:26.341329Z,
+    uid: "C2GmxK2pIRWtzuB5n2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57308::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:26.536743Z,
+    uid: "C2GmxK2pIRWtzuB5n2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57308::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:33.646018Z,
+    uid: "CYxQgQ3cqTqWLMRMN",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46908::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:33.84661Z,
+    uid: "CYxQgQ3cqTqWLMRMN",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46908::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:46.914586Z,
+    uid: "C4IL4L3ij7bcC8gCvf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57324::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:46.974778Z,
+    uid: "Ckkcea3hjrGasW1Ljk",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61888::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:47.821219Z,
+    uid: "Ckkcea3hjrGasW1Ljk",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61888::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:47.888388Z,
+    uid: "C4IL4L3ij7bcC8gCvf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57324::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:48.825243Z,
+    uid: "C68J2o4p38Gyx0c5lc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61890::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:48.973698Z,
+    uid: "C68J2o4p38Gyx0c5lc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61890::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:49.97976Z,
+    uid: "Clt6lb22JIt9NDFBEd",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61891::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:50.085381Z,
+    uid: "Clt6lb22JIt9NDFBEd",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61891::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:51.093465Z,
+    uid: "CCHtjr15BVVEktiaF5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61892::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:51.288913Z,
+    uid: "CCHtjr15BVVEktiaF5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 61892::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:54.940873Z,
+    uid: "CZB82PWlrBL5KLI75",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46924::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:22:55.157009Z,
+    uid: "CZB82PWlrBL5KLI75",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46924::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:08.221645Z,
+    uid: "CQUSgSNDzLdMjrUE6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57340::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:08.738314Z,
+    uid: "CQUSgSNDzLdMjrUE6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57340::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:15.836221Z,
+    uid: "C3cxOe4MPPJoMsk8ol",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46940::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:16.031278Z,
+    uid: "C3cxOe4MPPJoMsk8ol",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46940::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:16.35436Z,
+    uid: "CDgTFCrvnz9nfK699",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62062::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:16.49924Z,
+    uid: "CDgTFCrvnz9nfK699",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62062::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:17.507084Z,
+    uid: "CtT0Ua3n4Ms6jSxV01",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62063::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:17.815954Z,
+    uid: "CtT0Ua3n4Ms6jSxV01",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62063::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:18.82172Z,
+    uid: "C0DpjH3B00lXD7VvIc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62064::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:18.922715Z,
+    uid: "C0DpjH3B00lXD7VvIc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62064::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:19.929496Z,
+    uid: "CbfSzq4m50Ysf2xsNk",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62065::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:20.125134Z,
+    uid: "CbfSzq4m50Ysf2xsNk",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62065::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:29.108301Z,
+    uid: "CROOfJ2DfooebsOos2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57358::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:29.303612Z,
+    uid: "CROOfJ2DfooebsOos2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57358::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:36.417179Z,
+    uid: "CBw5vw4i8QK9opvL9g",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46958::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:36.874164Z,
+    uid: "CBw5vw4i8QK9opvL9g",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46958::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:50.00142Z,
+    uid: "C8nkihtYNMZlAdHIk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57374::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:50.196233Z,
+    uid: "C8nkihtYNMZlAdHIk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57374::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:57.301724Z,
+    uid: "CDoDdQ2hcxN5aLybN4",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46974::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:23:57.505364Z,
+    uid: "CDoDdQ2hcxN5aLybN4",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46974::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:09.261694Z,
+    uid: "C5BU2S3xkhLrsqKpsc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62380::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:09.40923Z,
+    uid: "C5BU2S3xkhLrsqKpsc",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62380::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:10.41429Z,
+    uid: "CV1IFq4nII8D540qY5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62393::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:10.571575Z,
+    uid: "CV1IFq4nII8D540qY5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62393::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:10.582646Z,
+    uid: "C2xmmDPUBAicAdHDi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57390::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:10.779457Z,
+    uid: "C2xmmDPUBAicAdHDi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57390::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:11.578562Z,
+    uid: "C4QZvO1SeYVd2KBuA6",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62394::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:11.683406Z,
+    uid: "C4QZvO1SeYVd2KBuA6",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62394::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:12.688002Z,
+    uid: "CLRw6F1fW8ofSz4IHa",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62395::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:12.881624Z,
+    uid: "CLRw6F1fW8ofSz4IHa",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62395::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:17.819911Z,
+    uid: "CY0mCK2q4DyGS43Pv3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46990::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:18.189493Z,
+    uid: "CY0mCK2q4DyGS43Pv3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 46990::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:31.266114Z,
+    uid: "CGjhjS1dNGJNyHgwhi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57410::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:31.458273Z,
+    uid: "CGjhjS1dNGJNyHgwhi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57410::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:37.953288Z,
+    uid: "CNYlOB1gR1DtqLWgM8",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62601::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:38.103835Z,
+    uid: "CNYlOB1gR1DtqLWgM8",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62601::(port=uint16),
+        resp_h: 10.47.3.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:38.5702Z,
+    uid: "CyQEuA4DmH5Xx0VFAf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 47010::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:38.76859Z,
+    uid: "CyQEuA4DmH5Xx0VFAf",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 47010::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:39.111237Z,
+    uid: "CX5MYr1VzxO29TBoK5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62602::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:39.296565Z,
+    uid: "CX5MYr1VzxO29TBoK5",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62602::(port=uint16),
+        resp_h: 10.47.3.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:40.302265Z,
+    uid: "Cu8kPZ2A2gPSapjxfl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62604::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:40.401644Z,
+    uid: "Cu8kPZ2A2gPSapjxfl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62604::(port=uint16),
+        resp_h: 10.47.3.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:41.408697Z,
+    uid: "CWmPJ63jy9gr1eElN",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62605::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:41.816879Z,
+    uid: "CWmPJ63jy9gr1eElN",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62605::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:51.791252Z,
+    uid: "CM4mIaGD0OkPeArMk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57426::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:51.987251Z,
+    uid: "CM4mIaGD0OkPeArMk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57426::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:59.052457Z,
+    uid: "CmYuyR2mRKZObdG46b",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 47026::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:24:59.269564Z,
+    uid: "CmYuyR2mRKZObdG46b",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 47026::(port=uint16),
+        resp_h: 10.47.3.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:12.326871Z,
+    uid: "C7gNE729Rh4pr2vHg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57442::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:12.535069Z,
+    uid: "C7gNE729Rh4pr2vHg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57442::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:30.950141Z,
+    uid: "CjyADi3mgjM6O0KCRi",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62732::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:31.100031Z,
+    uid: "CjyADi3mgjM6O0KCRi",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62732::(port=uint16),
+        resp_h: 10.47.8.51,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:32.106722Z,
+    uid: "CIa4yp1Lps9XdonT6b",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62746::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:32.417003Z,
+    uid: "CIa4yp1Lps9XdonT6b",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62746::(port=uint16),
+        resp_h: 10.47.8.52,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:33.42269Z,
+    uid: "CasjxA499PcupL2I7e",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62750::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 2683::uint64,
+    unit: 32::uint64,
+    func: "unknown-34",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:33.678994Z,
+    uid: "CasjxA499PcupL2I7e",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62750::(port=uint16),
+        resp_h: 10.47.8.53,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:34.657872Z,
+    uid: "CPChaQ3TTbjkBtVSD6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57462::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:34.684824Z,
+    uid: "ClD1to2k2m0g6W2kdl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62763::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:35.400537Z,
+    uid: "CPChaQ3TTbjkBtVSD6",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57462::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:36.201386Z,
+    uid: "ClD1to2k2m0g6W2kdl",
+    id: {
+        orig_h: 10.128.0.248,
+        orig_p: 62763::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:57.495364Z,
+    uid: "CQDSBtaFRoeVFxoc5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57478::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:25:57.688551Z,
+    uid: "CQDSBtaFRoeVFxoc5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57478::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:26:19.723286Z,
+    uid: "C6v77g3o8iEthO6Rn4",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57494::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:26:19.915663Z,
+    uid: "C6v77g3o8iEthO6Rn4",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57494::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:26:41.949915Z,
+    uid: "CP5WAw1i5hyNYmr2H1",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57516::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:26:42.359104Z,
+    uid: "CP5WAw1i5hyNYmr2H1",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57516::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:04.39518Z,
+    uid: "CmMrLl1co322bZV7Fa",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57532::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:05.382444Z,
+    uid: "CmMrLl1co322bZV7Fa",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57532::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:27.516245Z,
+    uid: "CUZTv82VGDRtBcXcNg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57552::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:27.729934Z,
+    uid: "CUZTv82VGDRtBcXcNg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57552::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:49.776202Z,
+    uid: "CR0Lv313xSCRLu3mXg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57568::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:27:50.059834Z,
+    uid: "CR0Lv313xSCRLu3mXg",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57568::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:28:12.089776Z,
+    uid: "CaYNZi1uA9rSLapO4a",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57590::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:28:12.287842Z,
+    uid: "CaYNZi1uA9rSLapO4a",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57590::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:28:34.321778Z,
+    uid: "Cdg6XCAgrUo21RiP2",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57608::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:28:56.359597Z,
+    uid: "CdjKrRrrRs8HbQ1Y5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57624::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:29:18.393263Z,
+    uid: "C3QScR1pOpFoC8uVJc",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57646::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:29:40.42915Z,
+    uid: "C83mq52YrMAAatSDnk",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57676::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:30:02.466537Z,
+    uid: "COBb1F18Ujg3pLaXf4",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57694::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:30:24.504696Z,
+    uid: "CY5vf34J4n4MdkUoW",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57714::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:31:08.578208Z,
+    uid: "COQGXE3nfgLRu3jRXl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57748::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:31:30.61526Z,
+    uid: "CEIXIVxTrTQHOEAh",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57768::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:32:14.699253Z,
+    uid: "CHud4cKryqtDb5h66",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57802::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:33:20.809178Z,
+    uid: "CmhjEG4WTT5UnlOnY3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57860::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:33:20.996555Z,
+    uid: "CmhjEG4WTT5UnlOnY3",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57860::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:33:43.100808Z,
+    uid: "CA7f2RPFQTcpJxiGb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57876::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:33:43.287881Z,
+    uid: "CA7f2RPFQTcpJxiGb",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57876::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:05.421154Z,
+    uid: "CzdFFO2z9DNdT8Cjqi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57892::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:05.622236Z,
+    uid: "CzdFFO2z9DNdT8Cjqi",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57892::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:27.74182Z,
+    uid: "CstWKv2QIFqyGWslek",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57908::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:27.930653Z,
+    uid: "CstWKv2QIFqyGWslek",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57908::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:49.965223Z,
+    uid: "Cvcw3T3jeewn3SHgIl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57924::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:34:50.155831Z,
+    uid: "Cvcw3T3jeewn3SHgIl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57924::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:12.187259Z,
+    uid: "CgA0F24Rc0mRKQ0Eid",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57940::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:12.575912Z,
+    uid: "CgA0F24Rc0mRKQ0Eid",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57940::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:34.712758Z,
+    uid: "CHVUvz1gEtO5lpzh88",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57956::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:34.901Z,
+    uid: "CHVUvz1gEtO5lpzh88",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 57956::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:56.934685Z,
+    uid: "Cpsuvo1JSzt38QMXl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 58000::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:35:57.121861Z,
+    uid: "Cpsuvo1JSzt38QMXl",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 58000::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:36:19.156251Z,
+    uid: "Ch9RY13jCgRsN9IvA5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 58018::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "REQ",
+    exception: null::string
+}
+{
+    _path: "modbus",
+    ts: 2018-03-24T17:36:19.664124Z,
+    uid: "Ch9RY13jCgRsN9IvA5",
+    id: {
+        orig_h: 10.128.0.242,
+        orig_p: 58018::(port=uint16),
+        resp_h: 10.47.8.54,
+        resp_p: 502::port
+    },
+    tid: 31498::uint64,
+    unit: 34::uint64,
+    func: "unknown-100",
+    pdu_type: "RESP",
+    exception: null::string
+}

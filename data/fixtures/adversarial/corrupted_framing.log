@@ -1,0 +1,6 @@
+123 <165>1 2026-09-05T14:00:00Z host app 1 - - Octet counting specifies 123 bytes but stream terminates early
+Partial syslog without timestamp or facility header just raw corrupted bits ÿþý
+2026-09-05T14:00:00Z multiline log start
+   at com.example.service.execute(Service.java:123)
+   at com.example.service.main(Service.java:45)
+   Caused by: java.lang.NullPointerException: object is null

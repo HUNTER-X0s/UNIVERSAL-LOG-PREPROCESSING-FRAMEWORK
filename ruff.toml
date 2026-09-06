@@ -10,3 +10,7 @@ ignore = ["S104"]
 "tools/security_scan.py" = ["E501"]
 "tools/ulpf.py" = ["E501", "S603"]
 "tools/validate_contracts.py" = ["E402"]
+"tests/**" = ["S101", "E501"]
+"scripts/**" = ["E501", "S101", "E402"]
+
+

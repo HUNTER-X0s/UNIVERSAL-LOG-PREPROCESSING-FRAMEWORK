@@ -1,0 +1,86 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dpd
+#open	2024-04-12-19-29-13
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	analyzer	failure_reason
+#types	time	string	addr	port	addr	port	enum	string	string
+1521911721.155638	C8pPAS1MvRUZRkBO18	10.164.94.120	36171	10.47.8.218	80	tcp	HTTP	not a http request line
+1521911721.170690	C8pPAS1MvRUZRkBO18	10.164.94.120	36171	10.47.8.218	80	tcp	HTTP	not a http request line
+1521911722.776251	CXbBd13BPVmJCp3PYf	10.164.94.120	35929	10.47.3.142	8080	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911724.408071	CJIH3SXBY7lZ1MnPd	10.164.94.120	34477	10.47.8.200	80	tcp	HTTP	not a http reply line
+1521911726.098899	CB0GtWVtVNvdadTl	10.164.94.120	39237	10.47.8.218	8082	tcp	HTTP	not a http request line
+1521911726.243403	C9ljCS3QCD4Oh0aBD2	10.164.94.120	42377	10.47.8.218	8093	tcp	HTTP	not a http request line
+1521911726.371568	CqytwY2uEaYvnHTMqi	10.164.94.120	37395	10.47.8.218	32843	tcp	HTTP	not a http request line
+1521911726.384158	Cguy6N1zLrrGNSBkSl	10.164.94.120	38555	10.47.8.218	47001	tcp	HTTP	not a http request line
+1521911728.625383	CGs6TM9CVW5Xwm9b4	10.164.94.120	38235	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911731.640845	C5DBWi4vymDjCGlTcf	10.164.94.120	41803	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911733.701251	CihZ1h3GmzS1MWwK5f	10.164.94.120	43185	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911736.171650	CMtwlS1xgrrtaLFqd9	10.164.94.120	33247	10.47.3.200	80	tcp	HTTP	not a http reply line
+1521911736.728831	Cosf1q1t3MpDLollPf	10.164.94.120	39291	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911736.742872	CmcrDN1pXjLZcTxY24	10.164.94.120	40203	10.47.3.142	8080	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911737.130153	CzOTXe12l424OQcO13	10.164.94.120	43947	10.47.3.200	80	tcp	HTTP	not a http request line
+1521911737.131398	CzOTXe12l424OQcO13	10.164.94.120	43947	10.47.3.200	80	tcp	HTTP	not a http request line
+1521911737.136036	CrLUSG1DNyI2cq8ySl	10.164.94.120	36887	10.47.3.200	8000	tcp	HTTP	not a http request line
+1521911743.151248	CpdXA3lMFrgVWQya2	10.164.94.120	43737	10.47.3.200	80	tcp	HTTP	not a http reply line
+1521911744.807085	Cq8TjeL0iR580Ipuh	10.164.94.120	45645	10.47.8.208	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911747.115968	C0gYc04h3xhzgbAYE9	10.164.94.120	45969	10.47.3.155	2869	tcp	HTTP	not a http request line
+1521911747.119860	CVWF8q3HGwSecIM0Vi	10.164.94.120	35449	10.47.3.155	10243	tcp	HTTP	not a http request line
+1521911748.663008	CQQeZY1vuMMBKL2Xeg	10.164.94.120	44645	10.47.3.218	515	tcp	HTTP	not a http reply line
+1521911748.676158	CfV9sI1pEFZ4rtk8cj	10.164.94.120	35141	10.47.3.218	515	tcp	HTTP	not a http reply line
+1521911749.865779	CDr98Q2Kwn0jPM3kLe	10.164.94.120	46043	10.47.8.200	80	tcp	HTTP	not a http reply line
+1521911753.069298	CQrEPg3WgsOkWtHIVc	10.164.94.120	41613	10.47.8.200	80	tcp	HTTP	not a http request line
+1521911753.070464	CQrEPg3WgsOkWtHIVc	10.164.94.120	41613	10.47.8.200	80	tcp	HTTP	not a http request line
+1521911753.075984	CTxc7r1GldekyKTnec	10.164.94.120	43963	10.47.8.200	8000	tcp	HTTP	not a http request line
+1521911758.207837	CwwLSPEpkm7WfxmCd	10.164.94.120	35685	10.47.8.218	8082	tcp	HTTP	not a http reply line
+1521911758.223631	CvMvLs3z9qIzYmbgo8	10.164.94.120	36995	10.47.8.218	8082	tcp	HTTP	not a http reply line
+1521911768.949776	CMUoKl4ORakA6hbN7i	10.164.94.120	41665	10.47.8.218	515	tcp	HTTP	not a http reply line
+1521911768.961655	CpRTCo1J1pPpZRkdOj	10.164.94.120	39957	10.47.8.218	515	tcp	HTTP	not a http reply line
+1521911774.193266	C02oGuFe0jadmU9Za	10.164.94.120	38451	10.47.3.142	515	tcp	XMPP	Binpac exception: binpac exception: string mismatch at /usr/src/packages/BUILD/src/analyzer/protocol/xmpp/xmpp-protocol.pac:12: \x0aexpected pattern: "<"\x0aactual data: "\x01"
+1521911774.197488	CvdPGe1U3AdLySodt8	10.164.94.120	46243	10.47.3.142	515	tcp	XMPP	Binpac exception: binpac exception: string mismatch at /usr/src/packages/BUILD/src/analyzer/protocol/xmpp/xmpp-protocol.pac:12: \x0aexpected pattern: "<"\x0aactual data: "\x01"
+1521911780.203456	ChvAAO22aZys0UoO36	10.164.94.120	41285	10.47.3.142	8080	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911786.042184	CwLFgnzWqcuJFhddd	10.164.94.120	41491	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911786.045749	CWMKKRNJSMGe7pW8k	10.164.94.120	43163	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911792.131692	C1Il9x4QbEaTHanZB9	10.164.94.120	46541	10.47.3.218	515	tcp	HTTP	not a http reply line
+1521911797.138153	CubTC5uRFWUgWlMrj	10.164.94.120	40149	10.47.3.218	515	tcp	HTTP	not a http reply line
+1521911804.110160	C5zly71B3Aqj5pg6Dl	10.164.94.120	39633	10.47.8.218	515	tcp	HTTP	not a http reply line
+1521911804.128197	CHHoFyycFExSnBKT1	10.164.94.120	39221	10.47.8.218	515	tcp	HTTP	not a http reply line
+1521911809.535087	CeDMaxHdhcx2UwdZh	10.164.94.120	44525	10.47.3.218	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911809.550813	CTqjXN2jl9hXHDj4Vl	10.164.94.120	34973	10.47.3.218	65534	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911829.223587	CCDQYGo6Qiport3wd	10.164.94.120	33885	10.47.8.218	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911829.234363	CsdwSc4pKuhQstlmwc	10.164.94.120	44837	10.47.8.218	8082	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911832.153292	CLqrKC3Jr6LIPGBN77	10.164.94.120	46839	10.47.3.218	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911832.171076	CiJoVa1eqj0wqFNlU1	10.164.94.120	40051	10.47.3.218	65534	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911848.333321	C42fYN2mTjfJVpivS8	10.164.94.120	42179	10.47.8.218	8082	tcp	HTTP	not a http reply line
+1521911871.311353	CtemlXFZJe7hcMln6	10.164.94.120	36015	10.47.8.218	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911871.323569	CRYDxY2W4I6KK1CNn7	10.164.94.120	45911	10.47.8.218	8082	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521911878.087826	CMenwH3IGS9X7Ld8m3	10.164.94.120	32901	10.47.21.80	8080	tcp	HTTP	not a http request line
+1521911878.089173	CMenwH3IGS9X7Ld8m3	10.164.94.120	32901	10.47.21.80	8080	tcp	HTTP	not a http request line
+1521911878.119950	C8VqqP16TQIXOieTVl	10.164.94.120	32777	10.47.21.80	47001	tcp	HTTP	not a http request line
+1521911878.124864	CLAV4J2S2mhvNZh2q7	10.164.94.120	42003	10.47.21.80	80	tcp	HTTP	not a http request line
+1521911878.422700	CLAV4J2S2mhvNZh2q7	10.164.94.120	42003	10.47.21.80	80	tcp	HTTP	not a http request line
+1521911883.666932	Cm0wBjvWzdf33qzw9	10.164.94.120	38099	10.47.21.80	8072	tcp	HTTP	not a http request line
+1521911890.612380	CEj0sS2biDEHPNTnQ4	10.128.0.241	57304	10.47.1.208	139	tcp	KRB_TCP	Binpac exception: binpac exception: out_of_bound: ASN1EncodingMeta:len: 2 > 0
+1521911938.396562	C2HJVq3Laak9wGPEM	10.164.94.120	45433	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911938.401351	CLuwZC3JLd1YhHGYUe	10.164.94.120	42663	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521911967.897850	CZtJFD27J4JJLvPFZd	10.164.94.120	40359	10.47.21.80	8080	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521912020.418989	CyiOlg1tmhITxBXUMl	10.164.94.120	35901	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521912020.427974	CrNhKK3EYfLCDCUeue	10.164.94.120	42779	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521912024.291315	Czv2nZ2WLkG6KF3SJ6	10.164.94.120	37053	10.47.21.80	8080	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 21588
+1521912064.890291	CzXKB740Akg6da2Fd	10.164.94.120	37547	10.47.8.151	10243	tcp	HTTP	not a http request line
+1521912069.464808	CdAhFo2rAq5urHWu2j	10.164.94.120	40805	10.47.8.151	2869	tcp	HTTP	not a http request line
+1521912193.465155	CHs3fk3J5DEXI3oY6	10.164.94.120	36485	10.47.3.142	8080	tcp	HTTP	not a http request line
+1521912193.466311	CHs3fk3J5DEXI3oY6	10.164.94.120	36485	10.47.3.142	8080	tcp	HTTP	not a http request line
+1521912199.469476	Cl5xE03xVnxrti0kGj	10.164.94.120	45399	10.47.3.142	1337	tcp	HTTP	not a http reply line
+1521912303.254171	C1WrVPlBOUvSKJcw5	10.164.94.120	41149	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521912303.258597	CUG8mig5NQHkj0oQj	10.164.94.120	35799	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521912304.395388	CPqqYm4jZFHGSFlzQi	10.164.94.120	34241	10.47.3.142	515	tcp	HTTP	not a http reply line
+1521912473.422827	CsHoJfsCc2UDhjU0l	10.128.0.207	36058	10.47.23.25	139	tcp	HTTP	not a http reply line
+1521912473.423032	CHv4bl3IYqrNhK3pQl	10.128.0.207	39984	10.47.23.81	139	tcp	HTTP	not a http reply line
+1521912479.436459	CMzkwg1ZRLKgPtGJob	10.128.0.207	60858	10.47.23.82	139	tcp	HTTP	not a http reply line
+1521912479.439123	CQ3BCm3yOVKGiEhalg	10.128.0.207	59462	10.47.23.166	139	tcp	HTTP	not a http reply line
+1521912835.962220	CI3MHp2LOcbdibtbDa	10.128.0.19	60407	10.47.26.55	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 8516
+1521912838.911470	C1txUR25jo3Buunilh	10.128.0.19	60441	10.47.26.55	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 8516
+1521912842.175725	CKLLNK3bqgX7zJpeNh	10.128.0.19	60482	10.47.26.55	80	tcp	SSL	Invalid version late in TLS connection. Packet reported version: 8516
+#close	2024-04-12-19-34-07

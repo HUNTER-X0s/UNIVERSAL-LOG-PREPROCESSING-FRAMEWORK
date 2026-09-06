@@ -1,0 +1,80 @@
+{
+  "benchmark_version": "1.0.0",
+  "date": "2026-09-06",
+  "samples_per_benchmark": 1000,
+  "note": "Single-threaded microbenchmarks on development machine.",
+  "results": {
+    "classification": {
+      "n": 1000,
+      "p50_ms": 0.0059,
+      "p95_ms": 0.008,
+      "p99_ms": 0.0142,
+      "mean_ms": 0.0065,
+      "eps": 153678.2
+    },
+    "entity_extraction": {
+      "n": 1000,
+      "p50_ms": 0.0072,
+      "p95_ms": 0.0109,
+      "p99_ms": 0.0135,
+      "mean_ms": 0.0081,
+      "eps": 123403.3
+    },
+    "indicator_extraction": {
+      "n": 1000,
+      "p50_ms": 0.009,
+      "p95_ms": 0.0112,
+      "p99_ms": 0.0286,
+      "mean_ms": 0.0088,
+      "eps": 114170.9
+    },
+    "risk_evaluation": {
+      "n": 1000,
+      "p50_ms": 0.0022,
+      "p95_ms": 0.0032,
+      "p99_ms": 0.0078,
+      "mean_ms": 0.0025,
+      "eps": 395257.4
+    },
+    "ocsf_projection": {
+      "n": 1000,
+      "p50_ms": 0.0061,
+      "p95_ms": 0.0079,
+      "p99_ms": 0.0327,
+      "mean_ms": 0.0067,
+      "eps": 148634.8
+    },
+    "otel_projection": {
+      "n": 1000,
+      "p50_ms": 0.0071,
+      "p95_ms": 0.009,
+      "p99_ms": 0.0193,
+      "mean_ms": 0.0073,
+      "eps": 136692.4
+    },
+    "e2e_firewall": {
+      "n": 1000,
+      "p50_ms": 0.0911,
+      "p95_ms": 0.1268,
+      "p99_ms": 0.2645,
+      "mean_ms": 0.0865,
+      "eps": 11559.7
+    },
+    "e2e_ids": {
+      "n": 1000,
+      "p50_ms": 0.0564,
+      "p95_ms": 0.0684,
+      "p99_ms": 0.1702,
+      "mean_ms": 0.0556,
+      "eps": 17993.5
+    },
+    "e2e_http": {
+      "n": 1000,
+      "p50_ms": 0.0398,
+      "p95_ms": 0.0707,
+      "p99_ms": 0.1682,
+      "mean_ms": 0.0485,
+      "eps": 20610.7
+    }
+  }
+}

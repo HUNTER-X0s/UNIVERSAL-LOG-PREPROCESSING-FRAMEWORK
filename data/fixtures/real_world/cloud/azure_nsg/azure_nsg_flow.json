@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "time": "2026-09-05T14:00:00.0000000Z",
+      "systemId": "00000000-0000-0000-0000-000000000000",
+      "category": "NetworkSecurityGroupFlowEvent",
+      "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000000/RESOURCEGROUPS/RG-PERIMETER/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/NSG-GW",
+      "operationName": "NetworkSecurityGroupFlowEvents",
+      "properties": {
+        "Version": 2,
+        "flows": [
+          {
+            "rule": "DefaultRule_AllowInternetOutBound",
+            "flows": [
+              {
+                "mac": "000D3A123456",
+                "flowTuples": [
+                  "1757080800,10.0.1.4,198.51.100.50,49152,443,T,O,A,B,15,4500,20,12000"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

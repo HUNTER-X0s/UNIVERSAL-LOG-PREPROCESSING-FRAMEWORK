@@ -1,0 +1,315 @@
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:20.629574Z,
+    host: 10.47.3.200,
+    port_num: 443::(port=uint16),
+    subject: "unstructuredName=1315656901\\,564d7761726520496e632e,CN=localhost.localdomain,emailAddress=ssl-certificates@vmware.com,OU=VMware ESX Server Default Certificate,O=VMware\\, Inc,L=Palo Alto,ST=California,C=US",
+    issuer_subject: "O=VMware Installer",
+    serial: "CC57FE54011E"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:20.788325Z,
+    host: 10.47.8.200,
+    port_num: 443::(port=uint16),
+    subject: "unstructuredName=1315656901\\,564d7761726520496e632e,CN=localhost.localdomain,emailAddress=ssl-certificates@vmware.com,OU=VMware ESX Server Default Certificate,O=VMware\\, Inc,L=Palo Alto,ST=California,C=US",
+    issuer_subject: "O=VMware Installer",
+    serial: "CC57FE54011E"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:20.921208Z,
+    host: 10.47.27.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:25.144597Z,
+    host: 10.47.8.208,
+    port_num: 443::(port=uint16),
+    subject: "CN=Snozberry",
+    issuer_subject: "CN=Snozberry",
+    serial: "4876EA91DF62A14F33FD188DB1BCAD"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:25.177168Z,
+    host: 10.47.3.100,
+    port_num: 9390::(port=uint16),
+    subject: "emailAddress=openvassd@nougat,CN=nougat,OU=Server certificate for nougat,O=OpenVAS Users United,L=Los Angeles,C=US",
+    issuer_subject: "emailAddress=ca@nougat,CN=nougat,OU=Certification Authority for nougat,O=OpenVAS Users United,L=Los Angeles,C=US",
+    serial: "01"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:31.006426Z,
+    host: 10.47.26.160,
+    port_num: 3389::(port=uint16),
+    subject: "CN=ParkingGarage",
+    issuer_subject: "CN=ParkingGarage",
+    serial: "2FF933D95486608C469D350152A5270B"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:31.883424Z,
+    host: 10.47.21.25,
+    port_num: 3389::(port=uint16),
+    subject: "CN=Kramer.jerry.land",
+    issuer_subject: "CN=Kramer.jerry.land",
+    serial: "42BD36A7672A9E8C4A48B8F31358DBCF"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:32.521729Z,
+    host: 10.150.0.85,
+    port_num: 443::(port=uint16),
+    subject: "CN=10.150.0.85,O=Internet Widgits Pty Ltd,ST=Some-State,C=AU",
+    issuer_subject: "CN=10.150.0.85,O=Internet Widgits Pty Ltd,ST=Some-State,C=AU",
+    serial: "C5F8CDF3FFCBBF2D"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:46.044279Z,
+    host: 10.47.23.166,
+    port_num: 3389::(port=uint16),
+    subject: "CN=ParkingGarage",
+    issuer_subject: "CN=ParkingGarage",
+    serial: "2FF933D95486608C469D350152A5270B"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:46.078075Z,
+    host: 10.47.21.172,
+    port_num: 3389::(port=uint16),
+    subject: "CN=ParkingGarage",
+    issuer_subject: "CN=ParkingGarage",
+    serial: "2FF933D95486608C469D350152A5270B"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:49.389791Z,
+    host: 10.47.27.55,
+    port_num: 143::(port=uint16),
+    subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    issuer_subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    serial: "F344CE69EA61BBD2"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:51.213195Z,
+    host: 10.47.21.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:15:59.15229Z,
+    host: 10.47.24.170,
+    port_num: 3389::(port=uint16),
+    subject: "CN=ParkingGarage",
+    issuer_subject: "CN=ParkingGarage",
+    serial: "2FF933D95486608C469D350152A5270B"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:14.863921Z,
+    host: 10.104.255.16,
+    port_num: 443::(port=uint16),
+    subject: "OU=VMware,O=VMware,L=Palo Alto,ST=California,C=US,CN=donbot.wrccdc.cpp.edu",
+    issuer_subject: "OU=VMware,O=donbot,ST=California,C=US,DC=local,DC=vsphere,CN=donbot",
+    serial: "C805D626FDCD9AC1"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:15.421651Z,
+    host: 10.47.2.156,
+    port_num: 8445::(port=uint16),
+    subject: "O=Symantec Corporation+CN=cottoncandy-PC+L=Mountain View+OU=ESG+ST=CA+C=US",
+    issuer_subject: "O=Symantec Corporation+CN=cottoncandy-PC+L=Mountain View+OU=ESG+ST=CA+C=US",
+    serial: "-569F830C7EFE69E6025EDBA0067250C4"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:27.112401Z,
+    host: 10.47.8.1,
+    port_num: 443::(port=uint16),
+    subject: "emailAddress=support@paloaltonetworks.com,CN=0ed5ec94a00f5c03cd779af8bafd670a73f40ab1597ac69ffa6a6b7af7e4e099,O=Palo Alto Networks,L=Santa Clara,ST=CA,C=US",
+    issuer_subject: "emailAddress=support@paloaltonetworks.com,CN=localhost,OU=Support,O=Palo Alto Networks,L=Santa Clara,ST=CA,C=US",
+    serial: "CE134D09196DB6D8"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:27.712362Z,
+    host: 10.47.3.155,
+    port_num: 3389::(port=uint16),
+    subject: "CN=CottonCandy2.factory.oompa.loompa",
+    issuer_subject: "CN=CottonCandy2.factory.oompa.loompa",
+    serial: "3503E93CD63AEAAE4CF046F3B9D2B482"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:37.606822Z,
+    host: 10.47.3.218,
+    port_num: 3389::(port=uint16),
+    subject: "CN=Smarties.factory.oompa.loompa",
+    issuer_subject: "CN=Smarties.factory.oompa.loompa",
+    serial: "47CE7E8472CC66BE4F499FC1C02CEF01"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:50.02789Z,
+    host: 10.47.8.208,
+    port_num: 3389::(port=uint16),
+    subject: "CN=Snozberry.factory.oompa.loompa",
+    issuer_subject: "CN=Snozberry.factory.oompa.loompa",
+    serial: "5D4C2B49708236AF4EF9E89F4C8E02BA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:55.406922Z,
+    host: 10.47.22.55,
+    port_num: 143::(port=uint16),
+    subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    issuer_subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    serial: "F344CE69EA61BBD2"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:56.436333Z,
+    host: 10.47.23.55,
+    port_num: 143::(port=uint16),
+    subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    issuer_subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    serial: "F344CE69EA61BBD2"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:16:57.908232Z,
+    host: 10.47.8.218,
+    port_num: 3389::(port=uint16),
+    subject: "CN=Smarties.factory.oompa.loompa",
+    issuer_subject: "CN=Smarties.factory.oompa.loompa",
+    serial: "29299D055209A8934492903CF636F4FB"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:17:15.997784Z,
+    host: 10.47.1.208,
+    port_num: 443::(port=uint16),
+    subject: "CN=Snozberry",
+    issuer_subject: "CN=Snozberry",
+    serial: "4876EA91DF62A14F33FD188DB1BCAD"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:18:26.017839Z,
+    host: 10.47.25.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:18:26.043199Z,
+    host: 10.47.22.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:18:26.215872Z,
+    host: 10.47.26.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:18:26.440012Z,
+    host: 10.47.23.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:18:30.966538Z,
+    host: 10.47.21.1,
+    port_num: 443::(port=uint16),
+    subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    issuer_subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    serial: "00"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:19:05.962216Z,
+    host: 10.47.9.1,
+    port_num: 443::(port=uint16),
+    subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    issuer_subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    serial: "00"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:23:11.533279Z,
+    host: 10.47.24.25,
+    port_num: 3389::(port=uint16),
+    subject: "CN=Kramer.jerry.land",
+    issuer_subject: "CN=Kramer.jerry.land",
+    serial: "42BD36A7672A9E8C4A48B8F31358DBCF"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:27:53.506163Z,
+    host: 10.47.23.1,
+    port_num: 443::(port=uint16),
+    subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    issuer_subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    serial: "00"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:29:38.239369Z,
+    host: 10.128.0.236,
+    port_num: 443::(port=uint16),
+    subject: "C=/C=US/ST=HI/O=Goldner and Sons/OU=1080p/CN=goldner.sons.net/emailAddress=1080p@goldner.sons.net",
+    issuer_subject: "C=/C=US/ST=HI/O=Goldner and Sons/OU=1080p/CN=goldner.sons.net/emailAddress=1080p@goldner.sons.net",
+    serial: "CB11D05B561B4BB1"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:30:50.561505Z,
+    host: 10.47.22.1,
+    port_num: 443::(port=uint16),
+    subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    issuer_subject: "CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US",
+    serial: "00"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:30:57.588206Z,
+    host: 10.47.24.80,
+    port_num: 443::(port=uint16),
+    subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    issuer_subject: "CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami",
+    serial: "EF97295FA8532CBA"
+}
+{
+    _path: "known_certs",
+    ts: 2018-03-24T17:33:55.084529Z,
+    host: 10.47.26.55,
+    port_num: 143::(port=uint16),
+    subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    issuer_subject: "emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server",
+    serial: "F344CE69EA61BBD2"
+}

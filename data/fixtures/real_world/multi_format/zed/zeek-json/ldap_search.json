@@ -1,0 +1,1 @@
+{"_path":"ldap_search","_write_ts":"2018-03-24T17:27:53.423977Z","ts":"2018-03-24T17:27:53.422018Z","uid":"CF5klN1gDGXhNXrm49","id.orig_h":"10.128.0.207","id.orig_p":57764,"id.resp_h":"10.47.23.25","id.resp_p":389,"message_id":7,"scope":"base","deref_aliases":"never","result_count":1,"result":"success","filter":"(objectClass=*)"}

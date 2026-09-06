@@ -142,6 +142,7 @@ class HttpRawIntakeTests(unittest.TestCase):
             )
         self.assertEqual(denied.status_code, 401)
         self.assertEqual(accepted.status_code, 202)
+
     def test_global_local_rate_limit_refuses_excess_request(self) -> None:
         rate_settings = AppSettings(
             environment="test",
@@ -155,4 +156,3 @@ class HttpRawIntakeTests(unittest.TestCase):
         self.assertEqual(first.status_code, 202)
         self.assertEqual(second.status_code, 429)
         self.assertEqual(second.json()["code"], "intake_rate_limited")
-

@@ -224,9 +224,7 @@ class GoldenFixtureTests(unittest.TestCase):
         self.assertEqual(record.payload, b"")
         self.assertEqual(record.raw_event_contract["payload"]["byte_length"], 0)
         expected_sha256 = hashlib.sha256(b"").hexdigest()
-        self.assertEqual(
-            record.raw_event_contract["integrity"]["payload_sha256"], expected_sha256
-        )
+        self.assertEqual(record.raw_event_contract["integrity"]["payload_sha256"], expected_sha256)
 
     def test_whitespace_sensitive_payload(self) -> None:
         """Leading/trailing whitespace must survive without trimming."""
@@ -527,7 +525,6 @@ class ForensicBytePreservationTests(unittest.TestCase):
             self.assertEqual(stored_sha256, input_sha256)
 
 
-
 # ---------------------------------------------------------------------------
 # §54  HTTP integration supplement
 # ---------------------------------------------------------------------------
@@ -636,9 +633,7 @@ class FileFixtureSupplement(unittest.TestCase):
         service = _make_service(self.sink)
         self.adapter = FileFixtureIntakeAdapter(service, maximum_event_bytes=MAX_EVENT_BYTES)
 
-    def _capture_file(
-        self, content: bytes, framing: str = "whole-file"
-    ) -> tuple[str, ...]:
+    def _capture_file(self, content: bytes, framing: str = "whole-file") -> tuple[str, ...]:
         with tempfile.TemporaryDirectory() as tmpdir:
             fixture = Path(tmpdir) / "fixture.raw"
             fixture.write_bytes(content)

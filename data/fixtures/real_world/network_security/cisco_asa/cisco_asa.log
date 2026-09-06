@@ -1,0 +1,4 @@
+Sep  5 14:00:00 fw-perimeter %ASA-6-302013: Built inbound TCP connection 98765432 for outside:198.51.100.50/54321 (198.51.100.50/54321) to dmz:192.168.10.5/80 (192.168.10.5/80)
+Sep  5 14:00:02 fw-perimeter %ASA-4-106023: Deny tcp src outside:203.0.113.88/61234 dst inside:10.0.0.1/445 by access-group "OUTSIDE-IN" [0x12345678, 0x0]
+Sep  5 14:00:10 fw-perimeter %ASA-6-302014: Teardown TCP connection 98765432 for outside:198.51.100.50/54321 to dmz:192.168.10.5/80 duration 0:00:10 bytes 4521 TCP FINs
+Sep  5 14:00:15 fw-perimeter %ASA-4-402116: IP spoof drop: src 10.0.0.99 on interface outside, destination 10.0.1.1

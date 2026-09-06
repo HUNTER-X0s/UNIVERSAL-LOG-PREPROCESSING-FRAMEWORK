@@ -1,0 +1,4 @@
+2026-09-05 14:00:00.123 UTC [1001] postgres@app_db LOG:  duration: 15.432 ms  statement: SELECT id, username, email FROM users WHERE active = true;
+2026-09-05 14:00:05.456 UTC [1002] app_user@app_db ERROR:  relation "restricted_tokens" does not exist at character 15
+2026-09-05 14:00:10.789 UTC [1003] [unknown]@[unknown] LOG:  connection received: host=192.168.1.10 port=54321
+2026-09-05 14:00:10.795 UTC [1003] postgres@app_db LOG:  connection authorized: user=postgres database=app_db SSL enabled (protocol=TLSv1.3, cipher=TLS_AES_256_GCM_SHA384)

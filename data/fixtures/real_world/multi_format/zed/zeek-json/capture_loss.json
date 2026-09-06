@@ -1,0 +1,3 @@
+{"_path":"capture_loss","_write_ts":"2018-03-24T17:16:20.600725Z","ts":"2018-03-24T17:16:20.600725Z","ts_delta":60.0,"peer":"zeek","gaps":254,"acks":181765,"percent_lost":0.13974087420570516}
+{"_path":"capture_loss","_write_ts":"2018-03-24T17:31:20.600926Z","ts":"2018-03-24T17:31:20.600926Z","ts_delta":900.0002009868622,"peer":"zeek","gaps":1239,"acks":1371000,"percent_lost":0.09037199124726478}
+{"_path":"capture_loss","_write_ts":"2018-03-24T17:36:30.158766Z","ts":"2018-03-24T17:36:30.158766Z","ts_delta":309.55784010887146,"peer":"zeek","gaps":826,"acks":524895,"percent_lost":0.15736480629459226}

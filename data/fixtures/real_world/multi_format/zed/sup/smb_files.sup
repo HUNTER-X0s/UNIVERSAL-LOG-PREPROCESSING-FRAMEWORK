@@ -1,0 +1,299 @@
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:15:54.600639Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:16:07.337674Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:22:44.906293Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:22:45.133885Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:22:45.527812Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:22:48.846323Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:23:35.68029Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: "\\\\10.47.21.82\\ADMIN$",
+    name: "Temp\\wdszAPrV.tmp",
+    size: 196::uint64,
+    prev_name: null::string,
+    times: {
+        modified: 2018-03-24T17:19:18.111192Z,
+        accessed: 2018-03-24T17:19:11.777714Z,
+        created: 2018-03-24T17:19:11.777714Z,
+        changed: 2018-03-24T17:19:18.111192Z
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:23:35.700462Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_DELETE"::=zenum,
+    path: "\\\\10.47.21.82\\ADMIN$",
+    name: "Temp\\wdszAPrV.tmp",
+    size: 196::uint64,
+    prev_name: null::string,
+    times: {
+        modified: 2018-03-24T17:19:18.111192Z,
+        accessed: 2018-03-24T17:19:11.777714Z,
+        created: 2018-03-24T17:19:11.777714Z,
+        changed: 2018-03-24T17:19:18.111192Z
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:25:04.360742Z,
+    uid: "ClOgxyCzrBO8pE4Qe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39947::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\browser",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:30:05.04507Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:30:34.059338Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:31:46.158534Z,
+    uid: "C6EYta3MG5Qq2x4SVh",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 48622::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}
+{
+    _path: "smb_files",
+    ts: 2018-03-24T17:33:04.795227Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    fuid: null::string,
+    action: "SMB::FILE_OPEN"::=zenum,
+    path: null::string,
+    name: "\\svcctl",
+    size: 0::uint64,
+    prev_name: null::string,
+    times: {
+        modified: null::time,
+        accessed: null::time,
+        created: null::time,
+        changed: null::time
+    }
+}

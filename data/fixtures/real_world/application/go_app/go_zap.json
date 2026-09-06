@@ -1,0 +1,3 @@
+{"level": "info", "ts": 1757080800.123456, "caller": "server/http.go:85", "msg": "server listening", "transport": "tcp", "addr": ":8080"}
+{"level": "warn", "ts": 1757080805.654321, "caller": "ratelimit/limiter.go:42", "msg": "rate limit exceeded", "client_ip": "198.51.100.99", "bucket": "public_api", "retry_after_ms": 500}
+{"level": "error", "ts": 1757080810.987654, "caller": "storage/s3.go:120", "msg": "failed to upload object", "error": "RequestTimeout", "stacktrace": "main.uploadObject\n\t/build/storage/s3.go:120\nmain.handleRequest\n\t/build/server/http.go:145"}

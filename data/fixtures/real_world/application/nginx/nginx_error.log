@@ -1,0 +1,2 @@
+2026/09/05 14:00:10 [error] 1234#1234: *56 open() "/usr/share/nginx/html/shell.php" failed (2: No such file or directory), client: 198.51.100.200, server: portal.example.com, request: "GET /shell.php HTTP/1.1", host: "portal.example.com"
+2026/09/05 14:00:15 [warn] 1234#1234: *57 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 10.0.1.50, server: api.example.com, request: "POST /upload HTTP/1.1", host: "api.example.com"

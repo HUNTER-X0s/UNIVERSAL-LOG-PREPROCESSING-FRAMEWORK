@@ -1,0 +1,4292 @@
+<USER_REQUEST>
+======================================================================
+ULPF PHASE-3 MASTER IMPLEMENTATION MISSION
+======================================================================
+
+PROJECT:
+Universal Log Pre-processing Framework (ULPF)
+
+SIH PROBLEM STATEMENT:
+SIH26156 — Universal Log Pre-processing Framework
+
+PRIMARY DEPLOYMENT CONTEXT:
+NTRO perimeter network and security telemetry
+
+CURRENT PROJECT STATE:
+- Phase 0 Architecture: FROZEN
+- Phase 1 Foundation: FROZEN
+- Phase 2 Raw Intake Plane: FROZEN
+- Dataset Corpus: FORENSICALLY AUDITED
+- Dataset Corpus: FROZEN
+- Phase 3: AUTHORIZED TO BEGIN
+
+MISSION:
+Implement Phase 3 — the Parser & Normalization Plane — as a production-grade,
+government-grade, security-first, vendor-agnostic, deterministic, extensible
+universal telemetry processing engine.
+
+THIS PHASE IS THE CORE INTELLIGENCE LAYER OF ULPF.
+
+The objective is NOT to build a collection of disconnected vendor-specific
+parsers.
+
+The objective is to build a UNIVERSAL PARSING ARCHITECTURE in which new
+vendors, products, formats, and telemetry types can be onboarded through
+configuration-driven parser packs and stable interfaces rather than
+rewriting the core engine.
+
+The implementation must be:
+- modular,
+- deterministic,
+- explainable,
+- testable,
+- observable,
+- secure,
+- extensible,
+- high-performance,
+- lossless with respect to original evidence,
+- compatible with Phase 1/2 contracts,
+- ready for later AI-assisted onboarding,
+- ready for OCSF/other output projections,
+- suitable for an air-gapped environment.
+
+======================================================================
+0. ABSOLUTE RULE: READ BEFORE IMPLEMENTING
+======================================================================
+
+Before writing code:
+
+READ and understand the frozen architecture and contracts.
+
+Mandatory documents:
+
+docs/ARCHITECTURE_OVERVIEW.md
+docs/SYSTEM_ARCHITECTURE.md
+docs/REQUIREMENTS_TRACEABILITY.md
+docs/DOMAIN_MODEL.md
+docs/DATA_MODEL.md
+docs/EVENT_MODEL.md
+docs/SCHEMA_STRATEGY.md
+docs/PARSER_ARCHITECTURE.md
+docs/NORMALIZATION_ARCHITECTURE.md
+docs/AI_ARCHITECTURE.md
+docs/ONBOARDING_ARCHITECTURE.md
+docs/STREAMING_ARCHITECTURE.md
+docs/STORAGE_ARCHITECTURE.md
+docs/DATA_LAKE_ARCHITECTURE.md
+docs/EVIDENCE_ARCHITECTURE.md
+docs/LINEAGE_ARCHITECTURE.md
+docs/SECURITY_ARCHITECTURE.md
+docs/THREAT_MODEL.md
+docs/AIRGAP_ARCHITECTURE.md
+docs/API_ARCHITECTURE.md
+docs/FRONTEND_ARCHITECTURE.md
+docs/OBSERVABILITY.md
+docs/PERFORMANCE_STRATEGY.md
+docs/TEST_STRATEGY.md
+docs/SCOPE_AND_MVP.md
+docs/IMPLEMENTATION_ROADMAP.md
+docs/DEFINITION_OF_DONE.md
+docs/ARCHITECTURAL_GUARDRAILS.md
+docs/TECHNOLOGY_DECISIONS.md
+
+Also read the final corpus governance:
+
+data/DATASET_MANIFEST.json
+data/README.md
+
+docs/DATASET_CATALOG.md
+docs/DATASET_COVERAGE_MATRIX.md
+docs/DATASET_FORMAT_MATRIX.md
+docs/DATASET_DOMAIN_MATRIX.md
+docs/DATASET_VENDOR_MATRIX.md
+docs/DATASET_NORMALIZATION_TARGETS.md
+docs/DATASET_PHASE3_READINESS.md
+docs/FINAL_PHASE3_GATE.md
+docs/DATASET_PHASE3_BENCHMARK_MATRIX.md
+docs/FINAL_CORPUS_FORENSIC_AUDIT.md
+docs/DATASET_FINAL_FREEZE_REPORT.md
+
+Also inspect:
+
+tests/
+apps/
+packages/
+scripts/
+
+Do not assume previous reports are correct.
+
+======================================================================
+1. PHASE-3 ENTRY GATE
+======================================================================
+
+Before modifying implementation code:
+
+1. Run the current master forensic audit.
+2. Run pytest.
+3. Run ruff.
+4. Run mypy using the repository's correct configured targets.
+5. Verify that Phase 2 is green.
+6. Record current Git commit.
+7. Record current test baseline.
+8. Record current manifest/data state.
+
+Expected baseline from the authorized gate is approximately:
+
+- 344 corpus files
+- 39 registered dataset families
+- frozen raw corpus
+- 306-file historical baseline intact
+- 306/306 baseline SHA-256 match
+- no critical blockers
+- 84/84 existing tests passing
+
+BUT:
+
+DO NOT blindly assume these numbers.
+
+Use actual command results.
+
+Create:
+
+docs/PHASE3_ENTRY_BASELINE.md
+
+This document must contain the actual starting state.
+
+If Phase 1/2 regression already exists before Phase 3 work:
+
+STOP.
+
+Do not attribute the pre-existing failure to Phase 3.
+
+======================================================================
+2. PHASE-3 OBJECTIVE
+======================================================================
+
+Phase 3 must implement:
+
+A. Record framing
+B. Byte/encoding preparation
+C. Format detection
+D. Source/vendor/product detection
+E. Parser registry
+F. Parser pack architecture
+G. Deterministic parsing
+H. Field extraction
+I. Field typing
+J. Semantic classification foundation
+K. Canonical ULPF event construction
+L. Normalization
+M. Unknown-field preservation
+N. Timestamp normalization
+O. Severity normalization
+P. IP/port/protocol normalization
+Q. Action/result normalization
+R. Error classification
+S. Parser confidence
+T. Provenance metadata
+U. Parse lineage
+V. Validation
+W. Dead-letter/error routing
+X. Metrics/tracing hooks
+Y. Benchmark instrumentation
+
+Phase 3 must establish the stable platform on which later phases can build:
+
+Phase 4+:
+- advanced normalization,
+- AI onboarding,
+- no-code parser generation,
+- analytics,
+- correlation,
+- anomaly detection,
+- interoperability,
+- production hardening.
+
+DO NOT prematurely implement those advanced phases unless they are strictly required as foundational interfaces.
+
+======================================================================
+3. CORE ARCHITECTURAL PRINCIPLE
+======================================================================
+
+ULPF MUST NOT become:
+
+"if vendor == X:
+    regex X
+elif vendor == Y:
+    regex Y"
+
+Do not create a giant conditional parser.
+
+Use:
+
+Source
+  ->
+Transport/Frame
+  ->
+Format Detector
+  ->
+Source/Vendor Detector
+  ->
+Parser Registry
+  ->
+Parser Pack
+  ->
+Extractor
+  ->
+Semantic Mapper
+  ->
+Canonical Event
+  ->
+Validator
+  ->
+Output
+
+Core engine = stable.
+
+Parser packs = extensible.
+
+Mappings = declarative where practical.
+
+Rules = versioned.
+
+Schemas = versioned.
+
+Vendor-specific syntax = isolated from core.
+
+======================================================================
+4. DEFINE THE PHASE-3 DOMAIN MODEL
+======================================================================
+
+Establish clear internal concepts:
+
+RawEvent
+FramedRecord
+DetectedFormat
+DetectedSource
+ParserCandidate
+ParserSelection
+ParserPack
+ParseResult
+ExtractedField
+SemanticField
+NormalizedField
+CanonicalEvent
+ParseError
+ValidationResult
+ProvenanceRecord
+ParserConfidence
+ParserMetadata
+NormalizationStatus
+
+Do not collapse these concepts unnecessarily.
+
+Example lifecycle:
+
+RawEvent
+   ↓
+FramedRecord
+   ↓
+DetectionResult
+   ↓
+ParserSelection
+   ↓
+ParseResult
+   ↓
+CanonicalEvent
+
+Each stage must be independently testable.
+
+======================================================================
+5. RAW DATA PRESERVATION
+======================================================================
+
+The raw event must remain authoritative.
+
+Parsing MUST NEVER overwrite raw bytes.
+
+Every Parsed/Canonical event must retain sufficient reference to the original
+evidence.
+
+Depending on the frozen architecture, preserve:
+
+- raw event bytes or immutable evidence reference,
+- SHA-256,
+- source information,
+- ingestion ID,
+- event correlation ID,
+- parser ID,
+- parser version,
+- parse timestamp,
+- schema version.
+
+Example conceptual model:
+
+{
+  "event_id": "...",
+  "raw_evidence_ref": "...",
+  "raw_sha256": "...",
+  "parser": {
+      "id": "...",
+      "version": "...",
+      "confidence": ...
+  },
+  "canonical": {...},
+  "attributes": {...}
+}
+
+Do not unnecessarily duplicate huge raw payloads in every downstream object
+if the evidence architecture defines a reference mechanism.
+
+Lossless evidence has priority.
+
+======================================================================
+6. RECORD FRAMING
+======================================================================
+
+Implement framing as a first-class concern.
+
+Support where required:
+
+- line-delimited records,
+- LF,
+- CRLF,
+- single-record payloads,
+- multiline records,
+- stack traces,
+- CRI partial records,
+- prefixed continuation lines,
+- JSON lines,
+- syslog messages,
+- framed transport records.
+
+The parser must not assume:
+
+"one newline = one event"
+
+Implement a clear framing interface.
+
+Example conceptual interface:
+
+FrameDetector
+RecordFramer
+FramingResult
+
+Framing must be bounded.
+
+Never allow an attacker to create unbounded memory growth through an
+unterminated multiline record.
+
+Define:
+
+- max record bytes,
+- max line bytes,
+- max multiline lines,
+- max nesting depth where applicable,
+- timeout policy,
+- overflow behavior.
+
+======================================================================
+7. ENCODING PREPROCESSING
+======================================================================
+
+Implement safe encoding detection/handling.
+
+At minimum consider:
+
+- UTF-8
+- ASCII
+- UTF-8 BOM
+- invalid UTF-8
+- escaped Unicode
+
+Do not silently destroy invalid bytes.
+
+Possible handling:
+
+VALID
+VALID_WITH_BOM
+LOSSY_DECODE_REQUIRED
+INVALID_ENCODING
+
+If decoding is lossy:
+
+record that fact.
+
+Raw bytes remain authoritative.
+
+======================================================================
+8. FORMAT DETECTION ENGINE
+======================================================================
+
+Implement a deterministic format detection framework.
+
+Candidates may include:
+
+RFC3164
+RFC5424
+JSON
+NDJSON
+Nested JSON
+CSV
+TSV
+KV
+CEF
+LEEF
+XML
+W3C
+Common/Combined Log
+CRI
+Glog
+Multiline text
+Structured application JSON
+OTLP JSON
+Zed/ZSON where explicitly supported
+
+Do NOT use fragile "first regex wins" logic.
+
+Use a scored detection strategy.
+
+For each detector define:
+
+- detector ID
+- detector version
+- applicability
+- evidence checks
+- score
+- confidence
+- ambiguity policy
+
+Example:
+
+DetectionResult:
+{
+  "candidates": [
+     {
+       "format": "json",
+       "score": 0.97,
+       "evidence": [...]
+     }
+  ],
+  "selected": "json",
+  "confidence": 0.97
+}
+
+Detection must remain deterministic.
+
+Do NOT introduce an LLM dependency.
+
+AI-assisted detection belongs to the later AI phase.
+
+======================================================================
+9. FORMAT DETECTOR SAFETY
+======================================================================
+
+Format detection must be:
+
+- bounded,
+- deterministic,
+- cheap,
+- side-effect free,
+- resistant to ReDoS,
+- resistant to malformed input,
+- resistant to giant payloads.
+
+Do not run every expensive detector against every full payload.
+
+Prefer:
+
+cheap signature
+   ↓
+candidate filters
+   ↓
+bounded structural detection
+   ↓
+parser selection
+
+======================================================================
+10. SOURCE / VENDOR / PRODUCT DETECTION
+======================================================================
+
+Implement source detection independently from format detection.
+
+Examples:
+
+format = syslog
+vendor = Cisco
+
+format = syslog
+vendor = Fortinet
+
+format = JSON
+vendor = Suricata
+
+format = JSON
+vendor = AWS
+product = CloudTrail
+
+format = XML
+source = Windows Event Log
+
+Do NOT assume:
+
+one format = one vendor.
+
+Vendor detection should use evidence such as:
+
+- hostname/device identity
+- syslog app-name
+- message ID
+- vendor prefixes
+- distinctive fields
+- structured metadata
+- known field signatures
+
+Return confidence and evidence.
+
+Example:
+
+SourceDetectionResult:
+{
+  "source_type": "firewall",
+  "vendor": "fortinet",
+  "product": "fortigate",
+  "confidence": 0.94,
+  "evidence": [...]
+}
+
+======================================================================
+11. PARSER REGISTRY
+======================================================================
+
+Build a first-class ParserRegistry.
+
+It must support:
+
+register
+unregister where appropriate
+lookup
+discover candidates
+versioning
+capability metadata
+compatibility
+priority
+confidence
+health/status
+
+Example:
+
+ParserRegistry
+    ├── syslog.rfc3164
+    ├── syslog.rfc5424
+    ├── json.generic
+    ├── json.suricata_eve
+    ├── cef.generic
+    ├── leef.generic
+    ├── web.apache
+    ├── web.nginx
+    ├── web.iis_w3c
+    ├── firewall.fortigate
+    ├── firewall.panos
+    ├── firewall.cisco_asa
+    ├── firewall.juniper_srx
+    ├── firewall.checkpoint
+    └── ...
+    
+Do not hardcode registry behavior into API routes.
+
+======================================================================
+12. PARSER PACK ARCHITECTURE
+======================================================================
+
+Parser packs should contain:
+
+metadata
+format definition
+source detection rules
+field extraction rules
+semantic mappings
+validation rules
+version
+tests
+examples
+expected output references
+
+Conceptual:
+
+parser_packs/
+    fortigate/
+        pack.yaml
+        parser.py or declarative rules
+        mappings.yaml
+        tests/
+    panos/
+        ...
+    cisco_asa/
+        ...
+
+Prefer declarative configuration where it remains readable and safe.
+
+Do not force every parser into a DSL if handwritten deterministic code is
+more appropriate.
+
+Use the right abstraction.
+
+======================================================================
+13. PARSER PACK VERSIONING
+======================================================================
+
+Every parser pack must have:
+
+pack_id
+version
+schema_version
+compatible_formats
+vendor
+product
+created_at if governed appropriately
+capabilities
+
+Parser behavior changes must be versioned.
+
+Do not silently change parser semantics.
+
+======================================================================
+14. GENERIC PARSERS
+======================================================================
+
+Do not build only vendor-specific parsers.
+
+Build reusable generic parsers for:
+
+- RFC3164
+- RFC5424
+- JSON
+- NDJSON
+- CSV
+- TSV
+- generic KV
+- CEF
+- LEEF
+- XML
+- W3C
+
+These should provide broad structural parsing.
+
+Then specialized parser packs provide deeper semantic extraction.
+
+This distinction is fundamental.
+
+======================================================================
+15. PHASE-3 INITIAL PARSER COVERAGE
+======================================================================
+
+Prioritize implementation based on NTRO value + corpus diversity.
+
+Tier A — MUST IMPLEMENT
+
+1. RFC3164 Syslog
+2. RFC5424 Syslog
+3. Generic JSON
+4. NDJSON
+5. Generic Key=Value
+6. CSV/TSV
+7. CEF
+8. LEEF
+9. XML
+10. W3C Extended
+
+Tier B — HIGH PRIORITY SPECIALIZED
+
+11. Palo Alto PAN-OS
+12. Fortinet FortiGate
+13. Cisco ASA
+14. Juniper SRX RT_FLOW
+15. Check Point
+16. OPNsense/pfSense filterlog
+17. Suricata EVE
+18. Snort Fast
+19. Zeek
+20. NGINX
+21. Apache
+22. IIS
+23. HAProxy
+24. Envoy
+
+Tier C — UNIVERSAL EXTENSION
+
+25. AWS CloudTrail
+26. AWS VPC Flow
+27. Azure Activity
+28. Azure NSG Flow
+29. GCP Audit
+30. Kubernetes audit
+31. Docker
+32. Containerd CRI
+33. MySQL
+34. PostgreSQL
+35. MongoDB
+36. Redis
+37. Kafka
+38. Windows Event XML
+39. Linux Auditd
+40. OTel LogRecord
+
+Do not implement all Tier C parsers as enormous bespoke modules if generic
+structured parsing plus mappings can satisfy the use case.
+
+Prioritize architectural leverage.
+
+======================================================================
+16. STRUCTURED JSON STRATEGY
+======================================================================
+
+Generic JSON parsing must NOT attempt to understand every vendor's semantic
+meaning.
+
+Separate:
+
+JSON syntax parsing
+
+from:
+
+JSON semantic mapping.
+
+Example:
+
+raw JSON
+    ↓
+generic JSON parser
+    ↓
+object tree
+    ↓
+source-specific mapping
+    ↓
+canonical event
+
+This prevents the JSON parser from becoming vendor-specific.
+
+======================================================================
+17. KEY-VALUE PARSING
+======================================================================
+
+The KV parser must support:
+
+- quoted values,
+- escaped characters,
+- empty values,
+- duplicate keys,
+- optional fields,
+- spaces inside values,
+- equal signs inside values,
+- commas inside quoted values,
+- vendor delimiters where configured.
+
+Do not use naive:
+
+split("=")
+
+Implement a proper bounded tokenizer/parser.
+
+======================================================================
+18. CSV / TSV
+======================================================================
+
+Implement standards-aware parsing.
+
+Handle:
+
+- quoted fields,
+- escaped quotes,
+- commas inside quotes,
+- tabs,
+- missing columns,
+- extra columns,
+- empty columns,
+- headers,
+- schema variation.
+
+Never blindly map columns by index without schema metadata.
+
+Where positional formats are unavoidable:
+
+define explicit field maps.
+
+======================================================================
+19. SYSLOG
+======================================================================
+
+Implement:
+
+RFC3164
+RFC5424
+
+Extract where available:
+
+priority
+facility
+severity
+timestamp
+hostname
+app_name
+proc_id
+msg_id
+structured_data
+message
+
+IMPORTANT:
+
+Syslog transport metadata is NOT necessarily the same thing as the semantic
+event severity.
+
+Keep source observation and derived interpretation separate.
+
+======================================================================
+20. CEF
+======================================================================
+
+Implement:
+
+CEF header parsing
+extension key-value parsing
+
+Handle:
+
+escaped delimiters
+spaces
+equal signs
+optional fields
+unknown extension keys
+
+Normalize standard CEF fields where confidently known.
+
+Preserve all unknown extension keys.
+
+======================================================================
+21. LEEF
+======================================================================
+
+Implement:
+
+header parsing
+delimiter-aware attribute parsing
+version differences
+unknown attributes
+
+Preserve vendor-specific fields.
+
+======================================================================
+22. XML
+======================================================================
+
+Implement safe XML parsing.
+
+Protect against:
+
+XXE
+entity expansion
+quadratic blowup
+deep nesting
+oversized nodes
+malformed XML
+
+Disable unsafe entity resolution.
+
+Implement bounded depth.
+
+======================================================================
+23. JSON SECURITY
+======================================================================
+
+Protect against:
+
+deep nesting
+huge integers
+huge strings
+duplicate keys
+malformed UTF-8
+billion laughs-equivalent structures where applicable
+resource exhaustion
+
+Define explicit limits.
+
+======================================================================
+24. MULTILINE PROCESSING
+======================================================================
+
+Build a configurable multiline engine.
+
+It must support patterns such as:
+
+timestamp starts event
+log-level starts event
+stack trace continuation
+"Caused by:"
+indentation continuation
+Java exception chains
+
+Do not make multiline behavior globally fixed.
+
+It must be configurable per parser pack.
+
+======================================================================
+25. CANONICAL ULPF EVENT
+======================================================================
+
+Implement the internal ULPF Universal Canonical Event model specified by the
+frozen architecture.
+
+The canonical model should support concepts such as:
+
+event identity
+timestamp
+event category/type
+source
+vendor
+product
+host
+device
+process
+user
+source endpoint
+destination endpoint
+protocol
+action
+result
+severity
+message
+network metadata
+request/correlation identity
+trace/span identity
+cloud identity
+container identity
+database identity
+parser metadata
+lineage metadata
+raw evidence reference
+vendor-specific attributes
+
+DO NOT blindly invent fields if the frozen schema already defines them.
+
+Use the frozen architecture as authoritative.
+
+======================================================================
+26. OBSERVED VS DERIVED VS ENRICHED
+======================================================================
+
+The canonical event must preserve the distinction between:
+
+OBSERVED
+DERIVED
+ENRICHED
+INFERRED
+
+Example:
+
+source_ip:
+    observed
+
+event_category:
+    derived
+
+geo_country:
+    enriched
+
+semantic_intent:
+    inferred
+
+Do not allow later enrichments to overwrite original observations.
+
+======================================================================
+27. UNKNOWN FIELD PRESERVATION
+======================================================================
+
+THIS IS A CORE DIFFERENTIATOR.
+
+Unknown source-specific fields MUST NOT disappear.
+
+For every parser:
+
+known fields
++
+unknown fields
+
+must be retained where safe.
+
+Example:
+
+vendor.attributes:
+    {
+       "threat_id": "...",
+       "custom_policy": "...",
+       "vendor_field_x": "..."
+    }
+
+Unknown-field preservation should be tested explicitly.
+
+======================================================================
+28. FIELD TYPING
+======================================================================
+
+Implement safe type normalization for:
+
+string
+boolean
+integer
+float
+timestamp
+IP address
+port
+protocol
+duration
+byte count
+UUID
+enum
+structured object
+array
+
+Do NOT aggressively coerce ambiguous values.
+
+Example:
+
+"00123"
+might be a string or number.
+
+Preserve source semantics if uncertain.
+
+======================================================================
+29. TIMESTAMP NORMALIZATION
+======================================================================
+
+Support:
+
+- RFC timestamps
+- ISO-8601
+- timezone offsets
+- UTC
+- local time
+- epoch seconds
+- epoch milliseconds
+- epoch microseconds
+- epoch nanoseconds
+- milliseconds in text
+- missing timezone
+
+Output:
+
+normalized timestamp
+original timestamp representation
+precision if known
+timezone status
+parse status
+
+Invalid timestamps must NOT silently become valid timestamps.
+
+======================================================================
+30. SEVERITY NORMALIZATION
+======================================================================
+
+Support source-specific severity representations:
+
+numeric
+text
+syslog severity
+CEF severity
+LEEF severity
+vendor severity
+priority
+
+Do not erase:
+
+original severity
+normalized severity
+
+Example:
+
+original:
+"warning"
+
+normalized:
+5
+
+preserve both if architecture allows.
+
+======================================================================
+31. IP / NETWORK NORMALIZATION
+======================================================================
+
+Normalize safely:
+
+IPv4
+IPv6
+source IP
+destination IP
+source port
+destination port
+protocol
+direction
+bytes
+packets
+duration
+
+Do not assume every numeric field is a network quantity.
+
+Validate before mapping.
+
+======================================================================
+32. ACTION / RESULT NORMALIZATION
+======================================================================
+
+Map source-specific values such as:
+
+allow
+accept
+permit
+drop
+deny
+reject
+blocked
+
+into a canonical representation where mapping confidence is high.
+
+Preserve the original source value.
+
+Do not silently equate semantically different values.
+
+======================================================================
+33. EVENT SEMANTIC CLASSIFICATION
+======================================================================
+
+Implement a deterministic first-level event classification.
+
+Examples:
+
+network_connection
+network_flow
+firewall
+dns
+http
+tls
+vpn
+authentication
+authorization
+ids_alert
+ips_alert
+system
+process
+application
+database
+cloud_audit
+container
+kubernetes_audit
+web_access
+web_error
+security_alert
+configuration
+audit
+
+This must be explainable.
+
+Do not build ML classification in Phase 3.
+
+Create an interface for later AI/ML classification.
+
+======================================================================
+34. NORMALIZATION STATUS
+======================================================================
+
+Every event should expose normalization status conceptually:
+
+FULL
+PARTIAL
+NONE
+FAILED
+
+And optionally reasons:
+
+- unknown_format
+- missing_fields
+- ambiguous_mapping
+- invalid_timestamp
+- vendor_extension
+- parser_error
+
+Do not pretend every log can be perfectly normalized.
+
+======================================================================
+35. PARSER CONFIDENCE
+======================================================================
+
+Implement a deterministic confidence model.
+
+Confidence may consider:
+
+- format detection score
+- source detection score
+- parser match
+- required-field presence
+- syntax validity
+- mapping completeness
+- schema validation
+
+Example:
+
+0.98 = strong deterministic match
+0.72 = partial/ambiguous
+0.31 = weak
+
+Confidence MUST be explainable.
+
+Do not use arbitrary numbers without documented logic.
+
+======================================================================
+36. PARSE RESULT CONTRACT
+======================================================================
+
+Define a stable ParseResult containing conceptually:
+
+status
+canonical_event
+extracted_fields
+unknown_fields
+parser_id
+parser_version
+format
+format_confidence
+source_confidence
+normalization_status
+warnings
+errors
+lineage
+raw_evidence_reference
+
+Do not leak exceptions directly through API boundaries.
+
+======================================================================
+37. ERROR TAXONOMY
+======================================================================
+
+Implement structured errors:
+
+UNKNOWN_FORMAT
+UNKNOWN_SOURCE
+AMBIGUOUS_FORMAT
+AMBIGUOUS_SOURCE
+INVALID_ENCODING
+MALFORMED_RECORD
+MALFORMED_JSON
+MALFORMED_XML
+INVALID_CSV
+INVALID_KV
+INVALID_SYSLOG
+INVALID_TIMESTAMP
+FIELD_TYPE_ERROR
+SCHEMA_ERROR
+NORMALIZATION_ERROR
+OVERSIZED_RECORD
+NESTING_LIMIT_EXCEEDED
+MULTILINE_LIMIT_EXCEEDED
+PARSER_TIMEOUT
+RESOURCE_LIMIT
+SECURITY_POLICY_VIOLATION
+INTERNAL_ERROR
+
+Each must include:
+
+code
+severity
+recoverable
+retryable
+operator_message
+safe_internal_context
+
+Never leak raw secrets through errors.
+
+======================================================================
+38. DEAD-LETTER / FAILURE ROUTING
+======================================================================
+
+Failed events must have deterministic handling.
+
+Possible states:
+
+PARSED
+PARTIALLY_PARSED
+REJECTED
+QUARANTINED
+
+For rejected records preserve:
+
+raw evidence reference
+hash
+failure code
+parser candidate
+format candidates
+timestamp of failure
+correlation ID
+
+Do not discard failed evidence.
+
+======================================================================
+39. PARSER FAILURE MUST NEVER DESTROY RAW DATA
+======================================================================
+
+This rule is absolute.
+
+If parser fails:
+
+raw event remains intact.
+
+If normalization fails:
+
+parsed/raw information remains intact.
+
+If schema validation fails:
+
+the original evidence remains available.
+
+======================================================================
+40. SECURITY: REGEX / ReDoS
+======================================================================
+
+All regex-based parsing must be reviewed for ReDoS.
+
+Avoid catastrophic patterns.
+
+Prefer:
+
+- anchored patterns
+- bounded quantifiers
+- explicit tokenization
+- parsers over giant regexes
+
+The adversarial regex stress fixture MUST be used.
+
+Do not claim ReDoS resistance without testing.
+
+======================================================================
+41. SECURITY: RESOURCE BOUNDS
+======================================================================
+
+Define and enforce:
+
+MAX_EVENT_BYTES
+MAX_LINE_BYTES
+MAX_MULTILINE_LINES
+MAX_NESTING_DEPTH
+MAX_FIELDS
+MAX_JSON_STRING_LENGTH
+MAX_ARRAY_LENGTH
+MAX_PARSE_TIME where feasible
+
+These must be configuration-driven.
+
+Never trust source-controlled payloads.
+
+======================================================================
+42. SECURITY: XML
+======================================================================
+
+Disable:
+
+external entities
+external network access
+unsafe entity resolution
+
+Test XML security.
+
+======================================================================
+43. SECURITY: PATH HANDLING
+======================================================================
+
+Parser packs and fixture paths must not permit:
+
+path traversal
+arbitrary file loading
+unsafe dynamic imports
+untrusted code execution
+
+Do not dynamically execute parser code solely because a dataset declares
+a parser name.
+
+======================================================================
+44. SECURITY: PARSER PACK TRUST MODEL
+======================================================================
+
+Design parser packs so that future air-gapped deployment can enforce:
+
+- schema validation
+- signed/verified packs later
+- allowed parser IDs
+- version pinning
+- deterministic execution
+- no network access from parser logic
+- no arbitrary shell execution
+
+Phase 3 does not necessarily need full cryptographic signing implementation
+if reserved for later security hardening, but the architecture must not
+prevent it.
+
+======================================================================
+45. DETERMINISTIC PARSING
+======================================================================
+
+Given identical:
+
+raw bytes
+parser pack version
+configuration
+runtime version
+
+the parser must produce identical results.
+
+Avoid nondeterministic logic.
+
+This is mandatory for:
+
+testing
+forensics
+auditing
+reproducibility
+
+======================================================================
+46. PARSER PRIORITY / AMBIGUITY
+======================================================================
+
+Multiple parsers may match one event.
+
+Implement deterministic tie-breaking.
+
+Possible order:
+
+1. exact source/vendor/product match
+2. exact format match
+3. required signature fields
+4. parser confidence
+5. parser priority
+6. version policy
+
+Never select arbitrarily.
+
+Record the rejected candidates where useful.
+
+======================================================================
+47. NO AI IN CORE PARSING
+======================================================================
+
+Do NOT send every event through an LLM.
+
+Phase 3 parsing must remain:
+
+deterministic
+offline
+fast
+reproducible
+
+AI assistance belongs later for:
+
+unknown-source onboarding
+semantic mapping suggestions
+parser generation
+schema mapping
+human approval
+
+Build interfaces that permit later AI integration.
+
+Do not make Phase 3 dependent on an external API.
+
+======================================================================
+48. TEST CORPUS STRATEGY
+======================================================================
+
+Use the audited dataset corpus.
+
+Create structured parser test suites for:
+
+- real public datasets
+- specification-derived fixtures
+- adversarial fixtures
+- reference/ground truth
+
+Do not alter the source datasets.
+
+Build tests around read-only consumption.
+
+======================================================================
+49. GOLDEN TESTS
+======================================================================
+
+For each major parser create golden cases:
+
+INPUT
+EXPECTED DETECTION
+EXPECTED EXTRACTED FIELDS
+EXPECTED CANONICAL FIELDS
+EXPECTED UNKNOWN FIELDS
+EXPECTED STATUS
+EXPECTED WARNINGS
+
+Where ground truth exists, use it.
+
+For sources without official ground truth:
+
+create ULPF-owned EXPECTED OUTPUT fixtures and label them accordingly.
+
+Never call internally created expected outputs "upstream ground truth."
+
+======================================================================
+50. REQUIRED INITIAL GOLDEN COVERAGE
+======================================================================
+
+At minimum establish golden tests for:
+
+RFC3164
+RFC5424
+JSON
+NDJSON
+KV
+CSV
+TSV
+CEF
+LEEF
+XML
+W3C
+
+Palo Alto
+Fortinet
+Cisco ASA
+Juniper SRX
+Check Point
+OPNsense/pfSense
+Suricata
+Snort
+Zeek
+NGINX
+Apache
+IIS
+AWS CloudTrail
+Azure Activity
+GCP Audit
+Kubernetes
+Containerd CRI
+Windows XML
+Linux Auditd
+MySQL
+PostgreSQL
+MongoDB
+OpenTelemetry
+
+Use the actual corpus where available.
+
+======================================================================
+51. NEGATIVE TESTS
+======================================================================
+
+For every major parser include:
+
+valid
+invalid
+partial
+missing fields
+unknown fields
+schema drift
+wrong encoding
+oversized
+truncated
+multiline corruption
+duplicate fields where relevant
+unexpected delimiters
+
+Parser failures must be deterministic.
+
+======================================================================
+52. PROPERTY / FUZZ TESTING
+======================================================================
+
+Where practical add property-based testing for:
+
+- KV tokenizer
+- CSV parser
+- JSON safety
+- syslog framing
+- multiline framing
+- timestamp parsing
+
+At minimum, adversarial fixtures must execute through the relevant parser.
+
+======================================================================
+53. REFERENCE DATASET USAGE
+======================================================================
+
+Use:
+
+data/reference/
+
+as the source of:
+
+- templates
+- expected outputs
+- schemas
+- ground truth
+- alarm mappings
+- field mappings
+
+Do NOT modify reference data during parser runtime.
+
+======================================================================
+54. BENCHMARKING
+======================================================================
+
+Establish Phase-3 parser benchmark tooling.
+
+Measure:
+
+- format detection latency
+- parse latency
+- normalization latency
+- end-to-end latency
+- events/sec
+- MB/sec
+- CPU
+- memory
+- allocation pressure where practical
+- failure rate
+
+Do not invent target numbers.
+
+Measure actual values.
+
+Benchmark on:
+
+small fixtures
+medium corpus
+large benchmark datasets
+
+Do not read all 6+ GB into RAM.
+
+Use streaming/chunked processing.
+
+======================================================================
+55. LARGE DATASET PROCESSING
+======================================================================
+
+SecRepo and Zed benchmark data are valuable.
+
+Do NOT:
+
+read entire multi-GB datasets into memory
+create enormous Python lists
+duplicate payloads
+rewrite the datasets
+
+Process through:
+
+streaming
+iterators
+bounded batches
+backpressure-aware interfaces
+
+======================================================================
+56. PERFORMANCE DESIGN
+======================================================================
+
+Avoid:
+
+unnecessary JSON serialization/deserialization
+full-document buffering
+repeated regex compilation
+quadratic string concatenation
+repeated field scans
+deep recursive algorithms without limits
+
+Prefer:
+
+compiled reusable patterns
+tokenizers
+iterators
+streaming
+bounded buffers
+lookup tables
+precomputed parser metadata
+
+Profile before optimizing.
+
+Do not optimize based on guesswork.
+
+======================================================================
+57. MULTI-FORMAT BENCHMARK
+======================================================================
+
+Use Zed multi-format data as a benchmark where appropriate.
+
+Compare:
+
+same underlying telemetry
+different representations
+
+This is especially valuable for demonstrating:
+
+FORMAT DETECTION
+PARSER SELECTION
+SEMANTIC CONSISTENCY
+
+The normalized semantic output should remain comparable despite source-format
+differences, subject to available fields.
+
+======================================================================
+58. CROSS-SOURCE NORMALIZATION TEST
+======================================================================
+
+Create demonstrations where semantically equivalent events from different
+vendors converge to the same canonical concepts.
+
+Example:
+
+Cisco firewall:
+deny
+
+Fortinet firewall:
+action="deny"
+
+Palo Alto:
+action="drop"
+
+Canonical:
+action="deny"
+
+BUT:
+
+preserve each original source value.
+
+This demonstrates universal normalization.
+
+======================================================================
+59. CANONICAL EVENT COMPARISON
+======================================================================
+
+Create comparison tests:
+
+SOURCE A
+SOURCE B
+SOURCE C
+
+Then compare:
+
+timestamp
+source
+destination
+protocol
+action
+severity
+event_type
+vendor
+product
+
+This should demonstrate semantic convergence while preserving provenance.
+
+======================================================================
+60. UNKNOWN SOURCE BEHAVIOR
+======================================================================
+
+If no parser matches:
+
+Do NOT crash.
+
+Return:
+
+UNKNOWN_FORMAT
+
+or
+
+UNKNOWN_SOURCE
+
+Preserve:
+
+raw evidence
+detection candidates
+confidence
+sample characteristics
+suggested next action
+
+This is a foundational interface for the future AI-assisted onboarding phase.
+
+======================================================================
+61. FUTURE AI ONBOARDING INTERFACE
+======================================================================
+
+Create interfaces/data structures that later allow:
+
+unknown sample
+    ↓
+detection
+    ↓
+candidate fields
+    ↓
+semantic suggestions
+    ↓
+parser-pack suggestion
+    ↓
+human approval
+    ↓
+versioned parser pack
+
+Do NOT implement the LLM workflow fully in Phase 3.
+
+Implement stable extension points only.
+
+======================================================================
+62. CONFIGURATION-DRIVEN MAPPINGS
+======================================================================
+
+Where appropriate, allow mappings such as:
+
+source_field -> canonical_field
+source_value -> normalized_value
+source_severity -> normalized_severity
+source_action -> canonical_action
+
+But mappings must be:
+
+validated
+versioned
+type-safe
+testable
+
+Do not allow arbitrary executable expressions in configuration.
+
+======================================================================
+63. SCHEMA VALIDATION
+======================================================================
+
+Every canonical event must be validated against the appropriate schema.
+
+Define whether validation happens:
+
+before normalization
+after normalization
+before output
+
+Prefer:
+
+parse
+→ construct
+→ validate
+→ finalize
+
+Do not silently discard invalid fields.
+
+Return structured validation errors.
+
+======================================================================
+64. SCHEMA EVOLUTION
+======================================================================
+
+Canonical schema versions must be explicit.
+
+Parser pack version != canonical schema version.
+
+These concepts must remain separate.
+
+Support forward compatibility where architecture permits.
+
+Unknown source fields must remain available.
+
+======================================================================
+65. OBSERVABILITY
+======================================================================
+
+Instrument Phase 3 with metrics:
+
+events_seen
+events_framed
+format_detected
+format_unknown
+source_detected
+source_unknown
+parser_selected
+parse_success
+parse_partial
+parse_failure
+normalization_success
+normalization_partial
+normalization_failure
+validation_failure
+dlq_count
+bytes_processed
+processing_latency
+parser_latency
+detection_latency
+normalization_latency
+
+Add structured logs.
+
+Do NOT log sensitive raw content by default.
+
+======================================================================
+66. CORRELATION AND LINEAGE
+======================================================================
+
+Every processing operation must maintain correlation/lineage identifiers
+defined by the frozen architecture.
+
+At minimum conceptually:
+
+ingestion_id
+event_id
+raw_evidence_id
+parser_id
+parser_version
+schema_version
+
+Enable:
+
+raw event
+   ↓
+parsed event
+   ↓
+canonical event
+
+traceability.
+
+======================================================================
+67. API / SERVICE INTEGRATION
+======================================================================
+
+Integrate Phase 3 with the existing application boundary without
+embedding parser internals into HTTP routes.
+
+Prefer service interfaces:
+
+ParserService
+DetectionService
+NormalizationService
+
+The API layer should orchestrate, not implement parsing logic.
+
+======================================================================
+68. WORKER INTEGRATION
+======================================================================
+
+Integrate with worker architecture only through stable interfaces.
+
+Do not bypass Phase 2 raw intake.
+
+The intended flow is:
+
+Phase 2 intake
+    ↓
+RawEventEnvelope
+    ↓
+Phase 3 parser service
+    ↓
+Canonical event
+
+Do not read directly from arbitrary files in the production processing path
+unless the architecture explicitly defines a file fixture adapter.
+
+======================================================================
+69. CONFIGURATION
+======================================================================
+
+Make Phase-3 operational limits configurable:
+
+max_event_size
+max_line_size
+max_multiline_lines
+max_nesting_depth
+parser_timeout
+unknown_field_policy
+validation_mode
+confidence_threshold
+fallback_policy
+encoding_policy
+
+Provide secure defaults.
+
+Do not allow unsafe unlimited values.
+
+======================================================================
+70. AIR-GAPPED OPERATION
+======================================================================
+
+Phase 3 must work with:
+
+NO INTERNET
+NO EXTERNAL LLM
+NO CLOUD API
+NO VENDOR API
+
+All deterministic parsing must run locally.
+
+Do not add network dependencies.
+
+======================================================================
+71. ERROR HANDLING
+======================================================================
+
+No raw parser exception should escape uncontrolled.
+
+Use typed internal exceptions or result objects.
+
+Separate:
+
+expected malformed input
+
+from:
+
+unexpected programming bugs.
+
+Programming bugs must remain visible to developers.
+
+Malformed data must be recoverable where possible.
+
+======================================================================
+72. SECURITY TELEMETRY PRESERVATION
+======================================================================
+
+For security-relevant fields, preserve:
+
+- event ID
+- signature ID
+- rule ID
+- action
+- source/destination
+- severity
+- threat indicators
+- vendor-specific identifiers
+- original message
+
+Do not over-normalize security semantics.
+
+======================================================================
+73. NETWORK TELEMETRY PRESERVATION
+======================================================================
+
+For network records preserve where available:
+
+- source IP
+- destination IP
+- source port
+- destination port
+- protocol
+- direction
+- packets
+- bytes
+- duration
+- interface
+- VLAN
+- zone
+- rule/policy
+- session ID
+
+Do not discard fields simply because the canonical model does not yet
+have dedicated fields.
+
+Use extensions/vendor attributes.
+
+======================================================================
+74. CLOUD TELEMETRY PRESERVATION
+======================================================================
+
+Preserve cloud-specific information such as:
+
+account
+project
+subscription
+region
+resource
+principal
+identity
+API action
+service
+request ID
+
+Do not force cloud events into network schemas.
+
+======================================================================
+75. CONTAINER / KUBERNETES PRESERVATION
+======================================================================
+
+Preserve:
+
+cluster
+namespace
+pod
+container
+container ID
+workload
+node
+audit stage
+resource
+verb
+user
+source IP
+
+Respect Kubernetes event semantics.
+
+======================================================================
+76. DATABASE TELEMETRY PRESERVATION
+======================================================================
+
+Preserve where applicable:
+
+database
+user
+session
+query
+duration
+statement
+connection state
+error code
+transaction
+
+Do not execute database queries.
+
+This is log preprocessing only.
+
+======================================================================
+77. APPLICATION STACK TRACE HANDLING
+======================================================================
+
+Multiline exceptions must remain coherent.
+
+Do not tokenize a Java stack trace into independent fake events.
+
+Preserve:
+
+exception type
+message
+stack frames
+caused-by chain
+
+Where possible expose structured representation while preserving original text.
+
+======================================================================
+78. UNKNOWN FIELDS
+======================================================================
+
+Unknown fields are not errors.
+
+They are valuable telemetry.
+
+Default policy:
+
+preserve.
+
+Only drop fields when:
+
+- prohibited by policy,
+- impossible to safely represent,
+- explicitly configured.
+
+Record any dropped field category.
+
+======================================================================
+79. DATA LOSS ACCOUNTING
+======================================================================
+
+Implement explicit accounting:
+
+input_bytes
+parsed_bytes
+preserved_bytes
+rejected_bytes
+unknown_bytes where relevant
+events_received
+events_parsed
+events_failed
+
+No silent loss.
+
+======================================================================
+80. PARSER OBSERVABILITY
+======================================================================
+
+Every parser should expose:
+
+parser_id
+version
+format
+vendor
+product
+capabilities
+success_count
+failure_count
+latency
+confidence distribution where practical
+
+======================================================================
+81. CODE ORGANIZATION
+======================================================================
+
+Use a clean structure compatible with the existing repository.
+
+A conceptual structure may resemble:
+
+packages/
+  ulpf_parsing/
+    detection/
+    framing/
+    registry/
+    parsers/
+    parser_packs/
+    extraction/
+    semantics/
+    normalization/
+    canonical/
+    validation/
+    errors/
+    lineage/
+    observability/
+    security/
+
+Do NOT force this exact structure if the frozen architecture already
+defines a different one.
+
+Integrate cleanly rather than creating a parallel architecture.
+
+======================================================================
+82. DEPENDENCY DISCIPLINE
+======================================================================
+
+Do not add dependencies unnecessarily.
+
+Before adding a dependency:
+
+- verify existing capability,
+- assess security,
+- assess licensing,
+- assess maintenance,
+- assess offline operation,
+- assess startup/performance impact.
+
+Prefer Python standard library where practical.
+
+If adding a parser library:
+
+document why.
+
+======================================================================
+83. TEST PYRAMID
+======================================================================
+
+Implement:
+
+Unit tests
+Integration tests
+Golden tests
+Negative tests
+Security tests
+Property/fuzz tests where practical
+Benchmark tests
+End-to-end tests
+
+The existing 84 Phase-2 tests must continue passing.
+
+Do not weaken existing tests.
+
+======================================================================
+84. TEST ISOLATION
+======================================================================
+
+Tests must not modify the frozen data corpus.
+
+Use read-only fixtures.
+
+Temporary/generated data goes under controlled temporary directories.
+
+======================================================================
+85. REGRESSION TEST
+======================================================================
+
+After each major component:
+
+pytest
+
+At milestone:
+
+pytest
+ruff check .
+mypy
+
+Do not wait until the entire phase is finished to discover regressions.
+
+======================================================================
+86. FORMAT DETECTION BENCHMARK
+======================================================================
+
+Create benchmark cases across:
+
+- obvious format
+- ambiguous format
+- malformed format
+- mixed format
+- empty input
+- very large input
+
+Measure detection correctness and latency.
+
+======================================================================
+87. PARSER ACCURACY METRICS
+======================================================================
+
+Where ground truth exists calculate:
+
+field precision
+field recall
+field F1 where appropriate
+timestamp accuracy
+categorical accuracy
+normalization accuracy
+unknown-field retention
+parse success rate
+
+Do not invent benchmark results.
+
+======================================================================
+88. NORMALIZATION ACCURACY
+======================================================================
+
+Measure whether:
+
+source-specific events
+
+correctly converge on:
+
+canonical semantics.
+
+Examples:
+
+allow
+permit
+accepted
+
+→ canonical equivalent.
+
+But preserve original values.
+
+======================================================================
+89. GOLDEN OUTPUT IMMUTABILITY
+======================================================================
+
+Golden expected outputs are controlled reference artifacts.
+
+Do not automatically regenerate goldens when implementation changes.
+
+If a golden changes:
+
+require explicit explanation in changelog.
+
+======================================================================
+90. DOCUMENTATION
+======================================================================
+
+Create/update:
+
+docs/PHASE3_IMPLEMENTATION.md
+docs/PHASE3_PARSER_ARCHITECTURE.md
+docs/PHASE3_DETECTION_ARCHITECTURE.md
+docs/PHASE3_NORMALIZATION_ARCHITECTURE.md
+docs/PHASE3_CANONICAL_EVENT.md
+docs/PHASE3_ERROR_MODEL.md
+docs/PHASE3_SECURITY.md
+docs/PHASE3_TEST_STRATEGY.md
+docs/PHASE3_BENCHMARKS.md
+docs/PHASE3_PARSER_PACKS.md
+docs/PHASE3_FORMAT_SUPPORT.md
+docs/PHASE3_DATA_LINEAGE.md
+docs/PHASE3_OBSERVABILITY.md
+docs/PHASE3_RUNBOOK.md
+docs/PHASE3_LIMITATIONS.md
+docs/PHASE3_COMPLETION_REPORT.md
+
+Update relevant architecture/roadmap documents only where necessary.
+
+Do not create redundant documentation if equivalent authoritative documents
+already exist.
+
+======================================================================
+91. ARCHITECTURE DECISION RECORDS
+======================================================================
+
+If a significant new architectural decision is introduced:
+
+create a new ADR.
+
+DO NOT rewrite old frozen ADRs to hide a new decision.
+
+Example candidates:
+
+- parser registry design
+- parser pack format
+- detection scoring
+- canonical extension model
+- unknown-field policy
+- parser sandboxing strategy
+
+======================================================================
+92. PHASE-3 API CONTRACT
+======================================================================
+
+Define stable internal interfaces.
+
+Conceptually:
+
+detect(record) -> DetectionResult
+
+parse(record, parser) -> ParseResult
+
+normalize(parsed) -> NormalizationResult
+
+validate(event) -> ValidationResult
+
+process(record) -> ProcessingResult
+
+The actual interface names must follow the repository architecture.
+
+======================================================================
+93. FORMAT + SOURCE MATRIX
+======================================================================
+
+The parser registry must allow combinations such as:
+
+syslog + cisco
+syslog + fortinet
+syslog + juniper
+json + suricata
+json + aws_cloudtrail
+xml + windows
+csv + panos
+csv + opnsense
+kv + fortigate
+
+This is one of the foundations of universality.
+
+======================================================================
+94. FALLBACK STRATEGY
+======================================================================
+
+Implement deterministic fallback.
+
+Example:
+
+specific parser
+    ↓ fail
+generic source parser
+    ↓ fail
+generic format parser
+    ↓ fail
+unknown format
+
+Never allow fallback to silently lose information.
+
+Record what parser level succeeded.
+
+======================================================================
+95. PARTIAL PARSING
+======================================================================
+
+A parser should be able to return partial success.
+
+For example:
+
+timestamp = valid
+source_ip = valid
+destination_ip = valid
+custom_field = unknown
+action = ambiguous
+
+Status:
+
+PARTIALLY_PARSED
+
+Do not reject the entire event unnecessarily.
+
+======================================================================
+96. SOURCE-SPECIFIC EXTENSIONS
+======================================================================
+
+Implement a controlled extension area:
+
+vendor_attributes
+source_attributes
+format_attributes
+
+Do not pollute the universal core schema with every vendor field.
+
+======================================================================
+97. SECURITY CLASSIFICATION
+======================================================================
+
+Do not accidentally turn raw message content into executable behavior.
+
+Everything is DATA.
+
+Treat:
+
+- JSON strings
+- XML strings
+- URLs
+- shell-like text
+- SQL text
+- stack traces
+
+as data, not executable instructions.
+
+======================================================================
+98. SQL / COMMAND LOG HANDLING
+======================================================================
+
+Database/query/process command fields must be treated as telemetry.
+
+Never execute parsed commands.
+
+======================================================================
+99. PARSER REGISTRY DISCOVERY
+======================================================================
+
+The system must allow introspection:
+
+list parsers
+list formats
+list vendors
+list versions
+list capabilities
+list supported fields
+list test status
+
+This will later power the frontend.
+
+======================================================================
+100. DEMO-FIRST ENGINEERING
+======================================================================
+
+The implementation must support a compelling SIH demonstration.
+
+A demo flow should be possible:
+
+INPUT:
+FortiGate log
+
+↓
+
+ULPF detects:
+Syslog / KV / Fortinet
+
+↓
+
+Parser:
+fortigate.vX
+
+↓
+
+Canonical event:
+network/security event
+
+↓
+
+Input:
+Cisco ASA
+
+↓
+
+Same canonical concepts
+
+↓
+
+Input:
+Palo Alto
+
+↓
+
+Same canonical concepts
+
+↓
+
+Input:
+Suricata EVE JSON
+
+↓
+
+Same canonical concepts
+
+↓
+
+Input:
+AWS CloudTrail
+
+↓
+
+Cloud audit event
+
+This demonstrates UNIVERSALITY.
+
+======================================================================
+101. "UNKNOWN LOG" DEMO FOUNDATION
+======================================================================
+
+Phase 3 must provide the foundation for the strongest future demo:
+
+UNKNOWN LOG
+    ↓
+format detected
+    ↓
+source candidates
+    ↓
+parser candidates
+    ↓
+best match / unknown
+    ↓
+structured partial event
+
+Later Phase 5/6 can demonstrate:
+
+AI suggestion
+    ↓
+field mapping
+    ↓
+human approval
+    ↓
+new parser pack
+
+Do not implement the AI workflow now.
+
+Prepare the foundation.
+
+======================================================================
+102. SIH STORY
+======================================================================
+
+Do not frame ULPF as:
+
+"yet another parser."
+
+The implementation should support the story:
+
+"ULPF decouples log collection from semantic understanding.
+
+It preserves original evidence, identifies heterogeneous formats and sources,
+parses them through versioned configuration-driven parser packs, normalizes
+their semantics into a universal canonical event model, retains unknown
+vendor-specific attributes, and produces traceable analytics-ready events."
+
+======================================================================
+103. DIFFERENTIATION FROM EXISTING COLLECTORS
+======================================================================
+
+Do NOT attempt to beat Logstash/Fluent Bit/Vector at raw collection.
+
+ULPF differentiates through:
+
+- universal semantic parsing
+- source/vendor detection
+- parser packs
+- unknown-field preservation
+- canonical normalization
+- traceability
+- confidence
+- evidence lineage
+- parser governance
+- future AI-assisted onboarding
+- air-gapped operation
+- explainability
+
+Phase 3 must strengthen these differentiators.
+
+======================================================================
+104. PERFORMANCE SAFETY
+======================================================================
+
+Do NOT optimize solely for correctness at the expense of practicality.
+
+But do NOT optimize performance by removing:
+
+- raw preservation
+- unknown fields
+- provenance
+- validation
+- security controls
+
+Use profiling to locate bottlenecks.
+
+======================================================================
+105. STREAMING COMPATIBILITY
+======================================================================
+
+The Phase-3 processor must be capable of processing one event at a time
+and bounded batches.
+
+Do not require full dataset loading.
+
+======================================================================
+106. CONCURRENCY
+======================================================================
+
+Phase 3 should be concurrency-safe where architecture requires it.
+
+Avoid mutable global parser state.
+
+Parser registry may be initialized once but should behave safely.
+
+======================================================================
+107. THREAD / PROCESS SAFETY
+======================================================================
+
+Parsers should avoid:
+
+- global mutable buffers
+- cross-event state
+- shared temporary files
+- race-prone caches
+
+Multiline framing may maintain bounded per-stream state.
+
+Make stream state explicit.
+
+======================================================================
+108. CONFIG VALIDATION
+======================================================================
+
+Parser pack configuration must be validated before activation.
+
+Invalid parser pack:
+
+DO NOT activate.
+
+Return structured validation errors.
+
+======================================================================
+109. PARSER PACK TEST REQUIREMENT
+======================================================================
+
+Every parser pack must have:
+
+- positive sample
+- negative sample
+- expected output
+- metadata
+- version
+- capability declaration
+
+A parser pack without tests is incomplete.
+
+======================================================================
+110. COVERAGE POLICY
+======================================================================
+
+Do not claim:
+
+"supported"
+
+unless the implementation has an actual parser path and tests.
+
+Use status:
+
+PLANNED
+FIXTURE_AVAILABLE
+DETECTABLE
+PARSABLE
+NORMALIZABLE
+BENCHMARKED
+PRODUCTION_READY
+
+This terminology must be reflected in documentation.
+
+======================================================================
+111. FORMAT SUPPORT MATRIX
+======================================================================
+
+Create/update:
+
+docs/PHASE3_FORMAT_SUPPORT.md
+
+For every format show:
+
+Detection
+Parsing
+Normalization
+Golden tests
+Negative tests
+Security tests
+Benchmark
+Status
+
+======================================================================
+112. VENDOR SUPPORT MATRIX
+======================================================================
+
+Create:
+
+docs/PHASE3_VENDOR_SUPPORT.md
+
+Include:
+
+vendor
+product
+format
+parser
+version
+fields
+status
+test coverage
+limitations
+
+======================================================================
+113. CANONICAL FIELD COVERAGE
+======================================================================
+
+Build:
+
+docs/PHASE3_CANONICAL_FIELD_COVERAGE.md
+
+For each canonical field:
+
+- datasets exercising it
+- parser
+- source types
+- normalization rule
+- ground truth availability
+- test coverage
+
+======================================================================
+114. PARSER SCORECARD
+======================================================================
+
+Create:
+
+docs/PHASE3_PARSER_SCORECARD.md
+
+Evaluate:
+
+- syntax correctness
+- extraction quality
+- normalization quality
+- unknown-field preservation
+- security
+- determinism
+- test completeness
+- performance
+
+Do not give artificial 10/10 scores.
+
+======================================================================
+115. PHASE-3 SECURITY REVIEW
+======================================================================
+
+Before completion verify:
+
+- no unsafe XML
+- no dangerous eval
+- no arbitrary exec
+- no dynamic shell commands
+- no insecure deserialization
+- regex safety
+- nesting limits
+- event size limits
+- multiline limits
+- parser timeout/guarding
+- safe temporary files
+- safe configuration loading
+- secret-safe errors
+- no external network dependency
+
+======================================================================
+116. TEST DATA PRIVACY
+======================================================================
+
+Never print entire raw records in test failures.
+
+Redact sensitive fields in diagnostics.
+
+Hashes and record IDs may be shown.
+
+======================================================================
+117. FAILURE ISOLATION
+======================================================================
+
+One malformed event must not terminate the entire stream.
+
+Example:
+
+events:
+1 valid
+2 valid
+3 malformed
+4 valid
+5 valid
+
+Expected:
+
+1 parsed
+2 parsed
+3 rejected/partial
+4 parsed
+5 parsed
+
+No stream-wide crash.
+
+======================================================================
+118. ORDERING
+======================================================================
+
+Do not reorder events unless architecture explicitly requires it.
+
+Parser must preserve input event order by default.
+
+======================================================================
+119. IDEMPOTENCE
+======================================================================
+
+Where processing the same immutable raw event multiple times is permitted,
+the deterministic parsed output should remain equivalent.
+
+No duplicate side effects.
+
+======================================================================
+120. TRACEABILITY
+======================================================================
+
+For every canonical event it must be possible to answer:
+
+Which raw event produced this?
+
+Which parser produced it?
+
+Which parser version?
+
+Which format was detected?
+
+Which source/vendor was detected?
+
+Which normalization mappings were applied?
+
+Which fields were derived?
+
+Which fields were unknown?
+
+Which validations passed/failed?
+
+This is mandatory for forensic/government use.
+
+======================================================================
+121. AUDITABLE DECISIONS
+======================================================================
+
+Detection and parser selection should provide explainable evidence.
+
+Example:
+
+format selected = rfc5424
+
+because:
+- version token matched
+- priority token valid
+- structured data block detected
+
+vendor selected = fortinet
+
+because:
+- known app-name signature
+- known field signature
+
+These explanations can later appear in the frontend.
+
+======================================================================
+122. NO MAGIC NUMBERS
+======================================================================
+
+Document:
+
+- confidence thresholds
+- buffer limits
+- max sizes
+- parser priorities
+- field coercion policies
+
+Put them in validated configuration where appropriate.
+
+======================================================================
+123. TYPE SAFETY
+======================================================================
+
+Maintain:
+
+ruff clean
+mypy clean
+
+Avoid:
+
+Any
+unchecked casts
+silent exception swallowing
+
+unless justified and documented.
+
+======================================================================
+124. CODE QUALITY
+======================================================================
+
+Prefer:
+
+small functions
+single responsibility
+clear interfaces
+typed models
+deterministic behavior
+testable components
+
+Avoid:
+
+giant parser classes
+giant if/elif chains
+global mutable state
+hidden coupling
+magic regex lists scattered through the codebase
+
+======================================================================
+125. BACKWARD COMPATIBILITY
+======================================================================
+
+Do not break Phase 1/2 APIs.
+
+Do not rename existing Phase-2 public interfaces without explicit architectural
+reason.
+
+Do not modify the raw intake contract simply to make Phase 3 easier.
+
+Adapt Phase 3 to the frozen upstream interface.
+
+======================================================================
+126. PHASE-3 IMPLEMENTATION ORDER
+======================================================================
+
+Implement in this order:
+
+STEP 1
+Phase-3 baseline verification
+
+STEP 2
+domain models
+
+STEP 3
+error model
+
+STEP 4
+framing interfaces
+
+STEP 5
+encoding handling
+
+STEP 6
+format detection interfaces
+
+STEP 7
+generic detectors
+
+STEP 8
+source/vendor detection
+
+STEP 9
+parser registry
+
+STEP 10
+parser pack contract
+
+STEP 11
+generic JSON parser
+
+STEP 12
+generic KV parser
+
+STEP 13
+CSV/TSV parser
+
+STEP 14
+Syslog RFC3164
+
+STEP 15
+Syslog RFC5424
+
+STEP 16
+CEF
+
+STEP 17
+LEEF
+
+STEP 18
+XML
+
+STEP 19
+W3C
+
+STEP 20
+multiline engine
+
+STEP 21
+canonical event construction
+
+STEP 22
+field typing
+
+STEP 23
+timestamp normalization
+
+STEP 24
+severity normalization
+
+STEP 25
+action/network normalization
+
+STEP 26
+unknown-field preservation
+
+STEP 27
+validation
+
+STEP 28
+failure/DLQ handling
+
+STEP 29
+NTRO vendor parser packs
+
+STEP 30
+network/security parser packs
+
+STEP 31
+web/application parser packs
+
+STEP 32
+cloud/container/database parser packs
+
+STEP 33
+benchmarking
+
+STEP 34
+observability
+
+STEP 35
+security tests
+
+STEP 36
+full regression
+
+STEP 37
+documentation
+
+STEP 38
+Phase-3 final audit
+
+======================================================================
+127. IMPLEMENT IN INCREMENTS
+======================================================================
+
+Do NOT attempt to write the entire Phase 3 in one huge uncontrolled change.
+
+After each logical milestone:
+
+1. run tests,
+2. inspect diff,
+3. verify contracts,
+4. verify no raw data modifications,
+5. continue.
+
+======================================================================
+128. GIT SAFETY
+======================================================================
+
+Before implementation:
+
+record Git commit.
+
+During implementation:
+
+monitor:
+
+git status
+git diff --stat
+git diff
+
+NEVER:
+
+git reset --hard
+git clean -fd
+force push
+delete large data
+rewrite history
+
+unless explicitly required and approved outside this task.
+
+======================================================================
+129. DATASET SAFETY
+======================================================================
+
+Phase 3 must NOT modify:
+
+data/fixtures/real_world/
+data/reference/
+data/benchmarks/
+
+Runtime should read them.
+
+Generated test artifacts must go elsewhere.
+
+======================================================================
+130. PHASE-3 GENERATED TEST ARTIFACTS
+======================================================================
+
+Use controlled locations such as:
+
+tmp/
+artifacts/
+reports/
+test-results/
+
+Do not pollute raw corpus directories.
+
+======================================================================
+131. REFERENCE RELATIONSHIPS
+======================================================================
+
+Connect:
+
+raw fixture
+→ reference template
+→ expected output
+→ parser
+→ canonical event
+
+Maintain machine-readable identifiers where possible.
+
+======================================================================
+132. DATASET-TO-PARSER REGISTRY
+======================================================================
+
+Create a machine-readable map:
+
+dataset
+→ format
+→ detector
+→ parser
+→ expected capabilities
+→ ground truth
+→ tests
+→ benchmark
+
+This will be invaluable later.
+
+======================================================================
+133. PARSER REGISTRY SELF-DESCRIPTION
+======================================================================
+
+The registry should support:
+
+get parser
+get format
+get vendor
+get version
+get capabilities
+get expected fields
+get test status
+
+======================================================================
+134. DETECTION EVIDENCE
+======================================================================
+
+Store detection evidence at least internally.
+
+Avoid logging full raw messages.
+
+Examples:
+
+signature:
+"CEF:"
+header:
+"1|vendor|product"
+
+field:
+"event_type"
+
+======================================================================
+135. NORMALIZATION EVIDENCE
+======================================================================
+
+For important mappings store:
+
+source field
+source value
+canonical field
+canonical value
+mapping rule ID
+mapping version
+confidence/status
+
+This forms the foundation for later explainability.
+
+======================================================================
+136. LINEAGE MODEL
+======================================================================
+
+Each transformation should have lineage.
+
+Conceptually:
+
+raw
+  |
+  +-- frame_id
+  |
+  +-- detection_id
+  |
+  +-- parser_id/version
+  |
+  +-- normalization_rule/version
+  |
+  +-- canonical_event_id
+
+Later evidence systems can use this graph.
+
+======================================================================
+137. PHASE-3 README / RUNBOOK
+======================================================================
+
+Document:
+
+How to register parser
+
+How to add parser pack
+
+How to add mappings
+
+How to add fixture
+
+How to add expected output
+
+How to add tests
+
+How to benchmark parser
+
+How to inspect parse failures
+
+How to troubleshoot format detection
+
+How to run offline
+
+======================================================================
+138. EXTENSIBILITY TEST
+======================================================================
+
+Before completion, prove that adding a hypothetical new vendor does NOT
+require modifying the central parser engine unnecessarily.
+
+Create an architectural test or documented extension exercise.
+
+Example:
+
+Add vendor X based on:
+
+format = JSON
+source signature = X
+mapping = declarative
+
+The registry should discover it without a giant central switch.
+
+======================================================================
+139. UNKNOWN FORMAT TEST
+======================================================================
+
+Feed unknown input.
+
+Expected:
+
+no crash
+no data destruction
+unknown-format status
+confidence
+raw preservation
+structured error
+
+======================================================================
+140. UNKNOWN VENDOR TEST
+======================================================================
+
+Feed known JSON/syslog syntax with unknown vendor signature.
+
+Expected:
+
+format detected
+vendor unknown
+generic parser succeeds where possible
+vendor-specific attributes retained
+no false vendor assignment
+
+======================================================================
+141. AMBIGUOUS FORMAT TEST
+======================================================================
+
+Create intentionally ambiguous input.
+
+Expected:
+
+multiple candidates
+scores
+deterministic selection or explicit ambiguity
+explanation
+
+======================================================================
+142. PARTIAL SUCCESS TEST
+======================================================================
+
+Create record with:
+
+valid timestamp
+valid IP
+invalid optional field
+
+Expected:
+
+partial parsing
+valid fields retained
+invalid field reported
+no catastrophic failure
+
+======================================================================
+143. SCHEMA DRIFT TEST
+======================================================================
+
+Take a supported source and add/remove/reorder fields.
+
+Expected:
+
+parser survives
+unknown fields preserved
+missing optional fields handled
+schema version behavior documented.
+
+======================================================================
+144. ADVERSARIAL TESTS
+======================================================================
+
+Run Phase-3 engine against all adversarial corpus fixtures:
+
+- malformed JSON
+- BOM
+- null bytes
+- deep nesting
+- impossible timestamps
+- delimiter injection
+- regex stress
+- corrupted framing
+
+No crash.
+
+No unbounded memory.
+
+No arbitrary execution.
+
+No silent loss.
+
+======================================================================
+145. REAL DATA TESTS
+======================================================================
+
+Run representative real datasets:
+
+LogHub
+Zed
+SecRepo
+
+against the generic parsers where applicable.
+
+Use small bounded subsets for routine CI.
+
+Use full datasets for controlled benchmark jobs.
+
+======================================================================
+146. NTRO DEMO DATA
+======================================================================
+
+Create an official demo fixture set containing representative events from:
+
+Palo Alto
+Fortinet
+Cisco ASA
+Juniper
+Check Point
+OPNsense/pfSense
+Suricata
+Snort
+Zeek
+
+The demo must show:
+
+heterogeneous inputs
+→ universal pipeline
+→ common canonical semantics
+
+======================================================================
+147. UNIVERSAL DEMO DATA
+======================================================================
+
+Also create a smaller cross-domain set:
+
+Firewall
+Suricata
+NGINX
+Windows
+AWS CloudTrail
+Kubernetes
+PostgreSQL
+MongoDB
+OTel
+
+Demonstrate that the same ULPF architecture handles all of them.
+
+======================================================================
+148. FRONTEND PREPARATION
+======================================================================
+
+Do not implement the full Phase-11 frontend now.
+
+But expose clean APIs/contracts later capable of displaying:
+
+- detected format
+- detected source
+- parser
+- confidence
+- extracted fields
+- normalized fields
+- unknown fields
+- warnings
+- lineage
+- parse status
+
+======================================================================
+149. PHASE-3 API RESPONSE DESIGN
+======================================================================
+
+Define response models capable of supporting a future UI.
+
+Do not expose internal exception traces.
+
+Use stable response contracts.
+
+======================================================================
+150. PERFORMANCE BUDGETING
+======================================================================
+
+Define benchmark methodology.
+
+Do not invent numbers.
+
+Measure:
+
+p50
+p95
+p99
+events/sec
+MB/sec
+CPU
+RAM
+parse error rate
+
+Separate:
+
+detection
+parsing
+normalization
+validation
+end-to-end.
+
+======================================================================
+151. BENCHMARK REPRODUCIBILITY
+======================================================================
+
+Record:
+
+machine
+OS
+Python
+dependency versions
+dataset
+subset
+event count
+bytes
+parser version
+configuration
+benchmark command
+
+======================================================================
+152. NO BENCHMARK CHEATING
+======================================================================
+
+Do not:
+
+- remove difficult events
+- pre-normalize input
+- cache expected outputs as if they were processing
+- exclude failures without reporting them
+- benchmark only easy records
+- ignore malformed events
+
+Benchmark reporting must be honest.
+
+======================================================================
+153. MEMORY BENCHMARK
+======================================================================
+
+Verify parser does not scale memory linearly with multi-GB input.
+
+Use streaming datasets.
+
+Record peak memory where feasible.
+
+======================================================================
+154. DATA LOSS BENCHMARK
+======================================================================
+
+For every benchmark:
+
+received events
++
+parsed events
++
+partial events
++
+rejected events
+
+must reconcile.
+
+No unexplained discrepancy.
+
+======================================================================
+155. FAILURE REPORTING
+======================================================================
+
+Generate machine-readable parse failure reports.
+
+Include:
+
+record ID
+hash
+parser
+format
+error code
+safe summary
+
+Do not expose sensitive raw content.
+
+======================================================================
+156. FINAL PHASE-3 ARCHITECTURE REVIEW
+======================================================================
+
+Before completion, review:
+
+- parser coupling
+- normalization coupling
+- registry coupling
+- security boundaries
+- Phase 2 integration
+- performance
+- error flow
+- lineage
+- configuration
+- extension points
+
+Ask:
+
+"Can another engineer add a new parser without understanding the entire
+ULPF codebase?"
+
+If not, improve the architecture.
+
+======================================================================
+157. FINAL TEST MATRIX
+======================================================================
+
+At minimum verify:
+
+                 Syntax   Detection   Parse   Normalize   Security
+RFC3164             ✓         ✓          ✓        ✓          ✓
+RFC5424             ✓         ✓          ✓        ✓          ✓
+JSON                ✓         ✓          ✓        ✓          ✓
+NDJSON              ✓         ✓          ✓        ✓          ✓
+KV                  ✓         ✓          ✓        ✓          ✓
+CSV                 ✓         ✓          ✓        ✓          ✓
+TSV                 ✓         ✓          ✓        ✓          ✓
+CEF                 ✓         ✓          ✓        ✓          ✓
+LEEF                ✓         ✓          ✓        ✓          ✓
+XML                 ✓         ✓          ✓        ✓          ✓
+W3C                 ✓         ✓          ✓        ✓          ✓
+
+Then specialized NTRO and universal parser packs.
+
+======================================================================
+158. QUALITY GATE
+======================================================================
+
+PHASE 3 IS NOT COMPLETE until:
+
+[ ] Phase 3 entry baseline recorded
+[ ] Phase 1/2 regression suite passes
+[ ] domain models implemented
+[ ] framing layer implemented
+[ ] encoding handling implemented
+[ ] deterministic format detection implemented
+[ ] source/vendor detection implemented
+[ ] parser registry implemented
+[ ] parser pack contract implemented
+[ ] generic parsers implemented
+[ ] canonical event implementation completed
+[ ] field typing implemented
+[ ] timestamp normalization implemented
+[ ] severity normalization implemented
+[ ] network normalization implemented
+[ ] action/result normalization implemented
+[ ] unknown-field preservation implemented
+[ ] validation implemented
+[ ] structured error model implemented
+[ ] failure/DLQ routing implemented
+[ ] parser confidence implemented
+[ ] provenance/lineage implemented
+[ ] security limits implemented
+[ ] ReDoS protections reviewed
+[ ] malformed inputs tested
+[ ] adversarial corpus tested
+[ ] golden tests added
+[ ] negative tests added
+[ ] NTRO parser coverage implemented
+[ ] representative universal parser coverage implemented
+[ ] benchmarks executed
+[ ] benchmark methodology documented
+[ ] observability integrated
+[ ] reproducibility verified
+[ ] no raw dataset mutation
+[ ] Phase 1/2 interfaces unchanged
+[ ] ruff passes
+[ ] mypy passes
+[ ] pytest passes
+[ ] all relevant documentation updated
+[ ] architecture review complete
+[ ] Phase-3 final audit passed
+
+======================================================================
+159. DEFINITION OF DONE
+======================================================================
+
+Phase 3 is DONE when ULPF can take a raw event and deterministically answer:
+
+1. How was the record framed?
+2. What format is it?
+3. What source/vendor/product is it?
+4. Which parser was selected?
+5. Why was that parser selected?
+6. Which fields were extracted?
+7. Which fields were unknown?
+8. How were fields typed?
+9. How were fields normalized?
+10. What canonical event was produced?
+11. What information could not be normalized?
+12. What confidence exists?
+13. What parser version processed it?
+14. What schema version processed it?
+15. Where is the original evidence?
+16. What validation occurred?
+17. What warnings/errors occurred?
+18. Can another engineer reproduce the result?
+
+If these questions cannot be answered:
+
+Phase 3 is incomplete.
+
+======================================================================
+160. FINAL OUTPUT ARTIFACTS
+======================================================================
+
+At completion generate/update:
+
+docs/PHASE3_IMPLEMENTATION.md
+docs/PHASE3_PARSER_ARCHITECTURE.md
+docs/PHASE3_DETECTION_ARCHITECTURE.md
+docs/PHASE3_NORMALIZATION_ARCHITECTURE.md
+docs/PHASE3_CANONICAL_EVENT.md
+docs/PHASE3_ERROR_MODEL.md
+docs/PHASE3_SECURITY.md
+docs/PHASE3_TEST_STRATEGY.md
+docs/PHASE3_BENCHMARKS.md
+docs/PHASE3_PARSER_PACKS.md
+docs/PHASE3_FORMAT_SUPPORT.md
+docs/PHASE3_VENDOR_SUPPORT.md
+docs/PHASE3_CANONICAL_FIELD_COVERAGE.md
+docs/PHASE3_DATA_LINEAGE.md
+docs/PHASE3_OBSERVABILITY.md
+docs/PHASE3_RUNBOOK.md
+docs/PHASE3_LIMITATIONS.md
+docs/PHASE3_SCORECARD.md
+docs/PHASE3_COMPLETION_REPORT.md
+docs/PHASE3_FINAL_AUDIT.md
+
+Create/update machine-readable artifacts where appropriate:
+
+reports/phase3_results.json
+reports/phase3_parser_coverage.json
+reports/phase3_benchmark_results.json
+
+======================================================================
+161. FINAL REGRESSION
+======================================================================
+
+At the end:
+
+1. Run master forensic corpus audit.
+2. Verify baseline SHA-256.
+3. Verify raw dataset byte counts.
+4. Verify data files were not modified.
+5. Run pytest.
+6. Run ruff.
+7. Run mypy.
+8. Run parser/golden tests.
+9. Run security tests.
+10. Run benchmark smoke tests.
+11. Verify manifest untouched or only governance metadata changed legitimately.
+12. Verify Git diff.
+
+Do not claim success without actual command output.
+
+======================================================================
+162. FINAL PHASE-3 REPORT
+======================================================================
+
+Produce a final report containing:
+
+PHASE 3 VERSION
+GIT COMMIT
+ENVIRONMENT
+
+IMPLEMENTED:
+- framing
+- detection
+- parser registry
+- parser packs
+- generic parsers
+- specialized parsers
+- canonical event
+- normalization
+- validation
+- errors
+- lineage
+- confidence
+- observability
+- security
+
+PARSER COUNTS:
+- generic parsers
+- specialized parsers
+- parser packs
+- formats
+- vendors
+
+TEST COUNTS:
+- total
+- passed
+- failed
+- skipped
+
+COVERAGE:
+- NTRO
+- network
+- security
+- OS
+- application
+- cloud
+- container
+- database
+- observability
+
+QUALITY:
+- extraction accuracy where measured
+- normalization accuracy where measured
+- unknown field retention
+- malformed input behavior
+- benchmark throughput
+- memory
+- latency
+
+SECURITY:
+- resource limits
+- ReDoS
+- XML security
+- malformed-input isolation
+
+REGRESSION:
+- Phase 2 tests
+- full tests
+- lint
+- type checks
+
+LIMITATIONS:
+- exact known limitations
+- unsupported formats
+- partial parsers
+- future work
+
+======================================================================
+163. DO NOT INFLATE SUPPORT CLAIMS
+======================================================================
+
+A format is:
+
+DETECTABLE
+if detection works.
+
+PARSABLE
+if parsing works.
+
+NORMALIZABLE
+if canonical mapping works.
+
+BENCHMARKED
+if measured.
+
+PRODUCTION_READY
+only when all required quality gates pass.
+
+Do not call every fixture "supported."
+
+======================================================================
+164. DO NOT INFLATE UNIVERSALITY CLAIMS
+======================================================================
+
+Do not say:
+
+"ULPF parses every log in existence."
+
+Instead state:
+
+"ULPF implements a vendor-agnostic universal parsing and normalization
+architecture demonstrated across heterogeneous network, security,
+application, operating system, cloud, container, database and
+observability telemetry."
+
+Universality is an architecture + demonstrated coverage claim,
+not an infinite dataset claim.
+
+======================================================================
+165. SIH JUDGE DEMONSTRATION REQUIREMENT
+======================================================================
+
+Phase 3 must support the strongest possible technical story:
+
+DEMO 1:
+Fortinet → parse → canonical event
+
+DEMO 2:
+Cisco ASA → parse → same canonical concepts
+
+DEMO 3:
+Palo Alto → parse → same canonical concepts
+
+DEMO 4:
+Suricata → structured JSON → canonical event
+
+DEMO 5:
+AWS CloudTrail → cloud audit canonical event
+
+DEMO 6:
+NGINX → web canonical event
+
+DEMO 7:
+Windows → security event canonical event
+
+DEMO 8:
+Kubernetes → audit event canonical event
+
+DEMO 9:
+Unknown/malformed log → graceful failure + forensic traceability
+
+The frontend comes later, but Phase 3 must expose enough structured results
+for the later frontend to visualize all of this.
+
+======================================================================
+166. COMPETITIVE DIFFERENTIATORS TO PRESERVE
+======================================================================
+
+The implementation must strengthen:
+
+1. Universal format detection
+2. Universal source/vendor detection
+3. Config-driven parser packs
+4. Canonical semantic normalization
+5. Unknown-field preservation
+6. Explainable parser confidence
+7. Raw evidence traceability
+8. Versioned parser governance
+9. Air-gapped deterministic processing
+10. Strong security/resource controls
+
+These are more important than adding hundreds of vendor-specific regexes.
+
+======================================================================
+167. FINAL ARCHITECTURAL TEST
+======================================================================
+
+Before completion, ask:
+
+Can the central engine remain unchanged while we add:
+
+"A new firewall vendor in a new format"?
+
+Can the system:
+
+- register parser,
+- declare detector,
+- define mappings,
+- provide fixtures,
+- provide expected outputs,
+- run tests,
+- activate parser pack?
+
+If yes:
+
+architecture is extensible.
+
+If no:
+
+refactor before completing Phase 3.
+
+======================================================================
+168. FINAL SECURITY TEST
+======================================================================
+
+Feed:
+
+- malformed JSON
+- deep JSON
+- null bytes
+- invalid UTF-8
+- malformed XML
+- ReDoS fixture
+- oversized record
+- multiline explosion
+- invalid timestamps
+- delimiter injection
+
+Required:
+
+NO PROCESS CRASH
+NO UNBOUNDED MEMORY
+NO ARBITRARY EXECUTION
+NO RAW DATA LOSS
+NO SECRET LEAKAGE
+DETERMINISTIC FAILURE
+
+======================================================================
+169. FINAL DATA INTEGRITY TEST
+======================================================================
+
+At completion:
+
+compare all baseline raw-file SHA-256 values.
+
+Required:
+
+BASELINE HASH MISMATCHES = 0
+
+If not:
+
+STOP.
+
+Do not declare Phase 3 complete.
+
+======================================================================
+170. FINAL GO / NO-GO
+======================================================================
+
+Produce:
+
+docs/PHASE3_FINAL_GATE.md
+
+Table:
+
+| Criterion | Status | Evidence | Blocking |
+|-----------|--------|----------|----------|
+
+Possible status:
+
+PASS
+FAIL
+PARTIAL
+N/A
+
+Final decision must be:
+
+PHASE_3_COMPLETE
+
+or
+
+PHASE_3_BLOCKED
+
+Do not use vague wording.
+
+======================================================================
+171. ABSOLUTE FINAL RULE
+======================================================================
+
+DO NOT:
+
+- modify Phase 1/2 contracts without explicit architectural justification
+- modify raw dataset bytes
+- delete difficult fixtures
+- fabricate benchmark numbers
+- fabricate parser support
+- fabricate coverage
+- hide errors
+- swallow malformed events silently
+- introduce external LLM dependency
+- introduce unnecessary cloud dependency
+- hardcode the entire world into a single parser
+- turn the parser registry into a giant conditional
+- silently discard unknown fields
+- silently discard parse failures
+- silently normalize ambiguous semantics
+- claim universal support based solely on dataset presence
+
+ALWAYS:
+
+- preserve raw evidence
+- preserve unknown fields
+- preserve lineage
+- preserve provenance
+- maintain deterministic behavior
+- maintain versioning
+- maintain security boundaries
+- maintain backward compatibility
+- test against the frozen corpus
+- report limitations honestly
+- maintain an air-gapped execution path
+- make parser extension easy
+
+======================================================================
+172. IMPLEMENTATION START
+======================================================================
+
+BEGIN NOW.
+
+FIRST:
+
+1. Read all required architecture and dataset documents.
+2. Execute Phase-3 entry gate.
+3. Record the actual baseline.
+4. Inspect existing source code.
+5. Produce a short internal implementation map.
+6. Implement Phase 3 sequentially according to the architecture.
+
+DO NOT skip baseline verification.
+
+DO NOT begin by rewriting existing code.
+
+DO NOT begin with vendor-specific parsers.
+
+Build the universal foundations first.
+
+At each milestone:
+test
+inspect
+verify
+continue.
+
+At completion:
+run all final audits.
+
+DO NOT START PHASE 4 OR LATER.
+
+STOP after producing:
+
+PHASE_3_COMPLETE
+
+or
+
+PHASE_3_BLOCKED
+
+======================================================================
+ULTIMATE MISSION STATEMENT
+======================================================================
+
+Build ULPF so that it is not merely:
+
+"A log parser."
+
+Build it as:
+
+A UNIVERSAL, VENDOR-AGNOSTIC, SECURITY-FIRST, LOSSLESS,
+DETERMINISTIC, EXTENSIBLE TELEMETRY UNDERSTANDING ENGINE
+
+that can transform heterogeneous enterprise telemetry into a
+traceable canonical representation while preserving original evidence
+and vendor-specific information.
+
+The implementation must make the following future architecture possible:
+
+RAW TELEMETRY
+      ↓
+SAFE INTAKE
+      ↓
+RECORD FRAMING
+      ↓
+FORMAT DETECTION
+      ↓
+SOURCE / VENDOR DETECTION
+      ↓
+PARSER REGISTRY
+      ↓
+VERSIONED PARSER PACK
+      ↓
+FIELD EXTRACTION
+      ↓
+SEMANTIC MAPPING
+      ↓
+TYPE NORMALIZATION
+      ↓
+ULPF UNIVERSAL CANONICAL EVENT
+      ↓
+VALIDATION
+      ↓
+LINEAGE + CONFIDENCE
+      ↓
+ANALYTICS-READY OUTPUT
+
+with:
+
+RAW EVIDENCE PRESERVED
+UNKNOWN FIELDS PRESERVED
+FAILURES TRACEABLE
+SECURITY BOUNDARIES ENFORCED
+PROCESSING DETERMINISTIC
+AIR-GAPPED OPERATION AVAILABLE
+
+This is the foundation on which later ULPF intelligence,
+AI-assisted onboarding, no-code parser generation,
+security analytics, correlation, anomaly detection,
+interoperability, and production hardening will be built.
+
+BUILD THE FOUNDATION CORRECTLY.
+
+DO NOT SACRIFICE ARCHITECTURAL QUALITY FOR SPEED.
+
+DO NOT SACRIFICE DATA INTEGRITY FOR DEMONSTRATION.
+
+DO NOT SACRIFICE SECURITY FOR CONVENIENCE.
+
+DO NOT SACRIFICE UNIVERSALITY FOR A COLLECTION OF SPECIAL CASES.
+
+DO NOT SACRIFICE HONESTY FOR IMPRESSIVE METRICS.
+
+MAKE PHASE 3 THE TECHNICAL CORE OF ULPF................................... And make sure that the antigravity token rate limits are very important for me so use it very wisely
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-06T01:39:37+05:30.
+
+The user's current state is as follows:
+Active Document: z:\Universal Log Preprocessing Framework\data\fixtures\real_world\luk\Cisco\cs_routers_5k.json (LANGUAGE_JSON)
+Cursor is on line: 1
+Other open documents:
+- z:\Universal Log Preprocessing Framework\data\fixtures\real_world\luk\Cisco\cs_routers_5k.json (LANGUAGE_JSON)
+</ADDITIONAL_METADATA>

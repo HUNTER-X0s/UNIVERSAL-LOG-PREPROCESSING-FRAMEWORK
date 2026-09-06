@@ -1,0 +1,368 @@
+{
+  "audit_version": "1.0.0-FINAL-EXIT",
+  "timestamp": "2026-09-06T13:46:39.567077+00:00",
+  "repo_root": "Z:\\Universal Log Preprocessing Framework",
+  "git": {
+    "branch": "main",
+    "commit": "75d2ca8",
+    "dirty_status_lines": 309
+  },
+  "semantic_inventory": [
+    {
+      "file": "packages/semantic/ulpf_semantic/errors.py",
+      "bytes": 2383,
+      "sha256": "8a524e15da07c1d6ee442cc61a321940c8a0aff772f7b8285f78f4e718c8ac00"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/models.py",
+      "bytes": 12134,
+      "sha256": "29adfe721c67d9e4cd64a59ec1ada45194c196a75594b51f5a37cb63275764c6"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/service.py",
+      "bytes": 1981,
+      "sha256": "84e8fbac513b7037cf8b96bda9d46791ea43fc2e955a25c7cf1f5e3bb288b409"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/validation.py",
+      "bytes": 1285,
+      "sha256": "9be5be8fdc85ab4a1b79e885aa567be951cc62a3963c1e43eb0c68568991cae6"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/__init__.py",
+      "bytes": 1894,
+      "sha256": "17e8522bb8c2f6a1a43d3c82d5135ab2cbc168ca38aa935a078bf896041deaf6"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/analytics/fingerprint.py",
+      "bytes": 3237,
+      "sha256": "e4e5f1cec18849a2fe42ee356aaf9e4a2b89264ae1354957d4afe6e3cdba9e54"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/classification/classifier.py",
+      "bytes": 11537,
+      "sha256": "e93fa85206a00402fd2cd662d168d4b209b89ff5b760094d76dc63404d80c829"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/entities/extractor.py",
+      "bytes": 4371,
+      "sha256": "db7a2048f523505bcd6fa6ee16b48d8eacbb1719aa9d8e4a641846a5f2f1a8c4"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/explainability/trace.py",
+      "bytes": 971,
+      "sha256": "c64f17a537d57d32ae41f1432534f302d276f389f8af0e5c9fb0272e54f8fe63"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/indicators/extractor.py",
+      "bytes": 3165,
+      "sha256": "016eb273e16f9ffbba59c2f3617309767c981eac1ffe6e3cf5c3c0f2b3070bff"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/mapping/engine.py",
+      "bytes": 6056,
+      "sha256": "e1103e9a65e9508977f32e4c44c2cc253011a666bad028fbca9a3515ac8df2f1"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/mapping/residue.py",
+      "bytes": 856,
+      "sha256": "cb89684733a5943e1bc6c2dd24833c56b603c814bf99d79ddc2978d96ee58e63"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/base.py",
+      "bytes": 1681,
+      "sha256": "9e8d898e04ce9cb57e1e3eaa4aec662b6915d0c6ef3fa2aec2b0c872298b8636"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/registry.py",
+      "bytes": 2667,
+      "sha256": "417658aaaa85e6b783ce88b0c4e130bb60a7ebdb6e7d61302284f8f084488676"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/relationships/builder.py",
+      "bytes": 3497,
+      "sha256": "74b06b593a44107f3ba4d79edb7cb63252dc51cf39832cfad0610860338b3e1f"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/risk/evaluator.py",
+      "bytes": 2077,
+      "sha256": "267a3190dd13d5d1298d9afab02f8c789205f0242fb03332ad29aea76c235cb1"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/taxonomy/actions.py",
+      "bytes": 4727,
+      "sha256": "25e057e00396c49606557c05a9c82b2620d3e84b399b2492526b1dd85e206b1a"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/taxonomy/categories.py",
+      "bytes": 3570,
+      "sha256": "f395b8c2d22cf0ae9c271d33d62a778cca0efa3f146dfbe346f30aeb2f3a1d56"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/taxonomy/dimensions.py",
+      "bytes": 1460,
+      "sha256": "487d249bb696a979dce291158d6814f60b4ca324b3a389603f5ea7b3b500d9e4"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/taxonomy/results.py",
+      "bytes": 3592,
+      "sha256": "5d5f3640c464948c59fa0b5e5c7cd81a44abf8b254f999d99ef5e6f228c59ff3"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/ocsf/mapper.py",
+      "bytes": 6909,
+      "sha256": "32c558075d2882655f14642ecb286313b6c5ac13933c6109d94ad5d6a562b771"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/ocsf/validator.py",
+      "bytes": 1921,
+      "sha256": "b928ef86d85478cb30b3c36e72e30129ee762f51fa8e66806f16a7c82dedfb4c"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/otel/mapper.py",
+      "bytes": 6077,
+      "sha256": "60b83e71c0635c06567fc461943d3a390bc616bd4a3533d6d73fe3b28029ad19"
+    },
+    {
+      "file": "packages/semantic/ulpf_semantic/projections/otel/validator.py",
+      "bytes": 1870,
+      "sha256": "dcba9d28c07a6109f5cd11f7c160ac7053f7c6c9f566dba974e49ff90d200087"
+    }
+  ],
+  "qa": {
+    "pytest_output": "247 passed, 2 warnings, 13 subtests passed in 1.79s",
+    "pytest_code": 0,
+    "ruff_pass": true,
+    "mypy_pass": true
+  },
+  "uce_immutability": {
+    "pass": true,
+    "details": {
+      "standard_firewall": {
+        "pass": true,
+        "sha256": "45214484e0ca558c45282b71a2891b94cc4c751e7fcf30a8c333b506373851db"
+      },
+      "nested_vendor_fields": {
+        "pass": true,
+        "sha256": "75a5c6e3f42ec4e415ae2f96d1b755ce8c186fa69f025783eef6f90e1ed02879"
+      },
+      "unicode_payload": {
+        "pass": true,
+        "sha256": "cf2f6008d5b4ae7da75f078e0488de5a3b5a30e10bc5afc934000c37fccd3929"
+      },
+      "empty_event": {
+        "pass": true,
+        "sha256": "9bd77eb653dae04bceb6bd3868a6f4cc7a552dbc9e7196fb87fec5e8e40e8fa5"
+      },
+      "huge_event_1000_fields": {
+        "pass": true,
+        "sha256": "7041e0305820206e068434327bb346278994d09a411b74a9e53b1b0943b3548c"
+      }
+    }
+  },
+  "residue_audit": {
+    "all_fields_preserved": true,
+    "ocsf_preserved": true,
+    "otel_preserved": true,
+    "fields_tested": [
+      "vendor.foo",
+      "vendor.bar",
+      "vendor.deep.nested",
+      "vendor.array",
+      "vendor.binary_string",
+      "vendor.unicode"
+    ]
+  },
+  "determinism_100_runs": {
+    "pass": true,
+    "unique_fingerprints": 1,
+    "unique_equiv_keys": 1,
+    "fingerprint": "fp:a1557950e6529268e8c520260b1b215bbbb8b1b6be4a940214afea945a16bcb0",
+    "equivalence_key": "eq:8a7a7e51bbf42cdb"
+  },
+  "classification_semantics": [
+    {
+      "label": "paloalto_deny",
+      "category": "SECURITY",
+      "action": "deny",
+      "result_status": "DENIED",
+      "confidence": 0.99,
+      "status": "FULL"
+    },
+    {
+      "label": "suricata_alert",
+      "category": "SECURITY",
+      "action": "alert",
+      "result_status": "UNKNOWN",
+      "confidence": 0.98,
+      "status": "FULL"
+    },
+    {
+      "label": "dns_query",
+      "category": "NETWORK",
+      "action": "unknown",
+      "result_status": "UNKNOWN",
+      "confidence": 0.92,
+      "status": "FULL"
+    },
+    {
+      "label": "http_access",
+      "category": "WEB",
+      "action": "get",
+      "result_status": "UNKNOWN",
+      "confidence": 0.94,
+      "status": "FULL"
+    },
+    {
+      "label": "unknown_vendor",
+      "category": "OTHER",
+      "action": "some_random_action",
+      "result_status": "UNKNOWN",
+      "confidence": 0.5,
+      "status": "UNKNOWN"
+    }
+  ],
+  "entities_and_relationships": {
+    "extracted_entity_count": 4,
+    "extracted_types": [
+      "IP",
+      "USER",
+      "HOST"
+    ],
+    "relationship_count": 2,
+    "relationships": [
+      {
+        "sub": "ent:ip:192.168.1.10",
+        "pred": "attempted_connection_to",
+        "obj": "ent:ip:2001:db8:85a3::8a2e:370:7334"
+      },
+      {
+        "sub": "ent:user:secops_admin",
+        "pred": "accessed_host",
+        "obj": "ent:host:perimeter-fw01.corp.internal"
+      }
+    ]
+  },
+  "indicator_audit": {
+    "indicator_count": 2,
+    "extracted_values": [
+      "HASH_SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "HASH_MD5:d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "redos_pass": true,
+    "redos_latency_ms": 0.008
+  },
+  "risk_evaluation": [
+    {
+      "severity": 1,
+      "score": 10.0,
+      "level": "INFORMATIONAL",
+      "reasons": []
+    },
+    {
+      "severity": 5,
+      "score": 60.0,
+      "level": "HIGH",
+      "reasons": [
+        "MEDIUM_OBSERVED_SEVERITY",
+        "SECURITY_FINDING_EVENT",
+        "RESTRICTIVE_POLICY_ACTION",
+        "BLOCKED_OR_FAILED_OUTCOME"
+      ]
+    },
+    {
+      "severity": 7,
+      "score": 80.0,
+      "level": "CRITICAL",
+      "reasons": [
+        "MEDIUM_OBSERVED_SEVERITY",
+        "SECURITY_FINDING_EVENT",
+        "RESTRICTIVE_POLICY_ACTION",
+        "BLOCKED_OR_FAILED_OUTCOME",
+        "EXTERNAL_INDICATOR_OBSERVED"
+      ]
+    },
+    {
+      "severity": 10,
+      "score": 100.0,
+      "level": "CRITICAL",
+      "reasons": [
+        "HIGH_OBSERVED_SEVERITY",
+        "SECURITY_FINDING_EVENT",
+        "RESTRICTIVE_POLICY_ACTION",
+        "BLOCKED_OR_FAILED_OUTCOME",
+        "EXTERNAL_INDICATOR_OBSERVED"
+      ]
+    }
+  ],
+  "projections_compliance": {
+    "ocsf_v1_1_0_verified": true,
+    "classes_verified": [
+      4001,
+      2004
+    ],
+    "otel_otlp_verified": true
+  },
+  "fault_isolation": {
+    "pass": true,
+    "broken_status": "FAILED"
+  },
+  "concurrency_audit": {
+    "pass": true,
+    "threads": 10,
+    "iterations": 100,
+    "unique_fingerprints": 1
+  },
+  "performance_benchmark": {
+    "samples": 2000,
+    "p50_ms": 0.0329,
+    "p95_ms": 0.0991,
+    "p99_ms": 0.1448,
+    "mean_ms": 0.0448,
+    "eps": 22161.5,
+    "gate_pass": true
+  },
+  "cross_vendor_convergence": {
+    "pass": true,
+    "convergences": [
+      {
+        "vendor": "Cisco ASA Deny",
+        "category": "SECURITY",
+        "class": "Firewall",
+        "type": "firewall.deny",
+        "action": "deny",
+        "result": "DENIED",
+        "ocsf_class": 4001
+      },
+      {
+        "vendor": "Fortinet Drop",
+        "category": "SECURITY",
+        "class": "Firewall",
+        "type": "firewall.deny",
+        "action": "deny",
+        "result": "DENIED",
+        "ocsf_class": 4001
+      },
+      {
+        "vendor": "Palo Alto Drop",
+        "category": "SECURITY",
+        "class": "Firewall",
+        "type": "firewall.deny",
+        "action": "drop",
+        "result": "BLOCKED",
+        "ocsf_class": 4001
+      }
+    ]
+  },
+  "findings_summary": {
+    "total_findings": 13,
+    "corrected_count": 4,
+    "open_count": 9,
+    "blockers": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 4
+  },
+  "final_decision": "PHASE4_EXIT_APPROVED_WITH_NON_BLOCKING_GAPS",
+  "score": 8.3
+}

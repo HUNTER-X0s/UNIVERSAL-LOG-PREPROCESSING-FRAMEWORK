@@ -1,0 +1,178 @@
+﻿{
+  "audit_version": "1.0.0",
+  "audit_date": "2026-09-06",
+  "git_commit": "75d2ca8",
+  "git_branch": "main",
+  "python_version": "3.12.10",
+  "phase4_status": "PHASE4_ACCEPTED_WITH_NON_BLOCKING_GAPS",
+  "phase5_ready": true,
+  "phase5_readiness": "READY_WITH_NON_BLOCKING_GAPS",
+  "tests": {
+    "total": 247,
+    "passed": 247,
+    "failed": 0,
+    "skipped": 0,
+    "subtests_passed": 13,
+    "duration_seconds": 2.93
+  },
+  "lint": {
+    "ruff": "PASS",
+    "files_checked": 95,
+    "errors": 0
+  },
+  "typing": {
+    "mypy": "PASS",
+    "files_checked": 95,
+    "errors": 0
+  },
+  "uce_immutability": {
+    "pass": true,
+    "method": "SHA-256 hash comparison before/after process_uce()",
+    "hash_stable": true
+  },
+  "determinism": {
+    "runs": 10,
+    "fingerprint_stable": true,
+    "equivalence_key_stable": true,
+    "triple_stable": true,
+    "action_stable": true,
+    "risk_stable": true
+  },
+  "raw_preservation": {
+    "uce_event_id_present": true,
+    "raw_event_id_present": true,
+    "raw_sha256_forwarded": false,
+    "note": "raw_sha256 gap documented as F-04 MEDIUM"
+  },
+  "unknown_field_preservation": {
+    "pass": true,
+    "method": "Runtime test with policyname + custom_field",
+    "propagates_to_ocsf": true,
+    "propagates_to_otel": true
+  },
+  "taxonomy": {
+    "categories_defined": 42,
+    "categories_mapped_in_classifier": 7,
+    "classes_defined": 19,
+    "event_types_defined": 29,
+    "action_mappings": 54,
+    "result_statuses": 9,
+    "duplicates": 0,
+    "contradictions": 0
+  },
+  "mapping": {
+    "version": "1.0.0",
+    "rules_count": 7,
+    "externalized": false,
+    "deterministic": true,
+    "conflict_handling": "first-match-wins",
+    "fallback_confidence": 0.50
+  },
+  "explainability": {
+    "classification_traced": true,
+    "risk_traced": false,
+    "fingerprint_traced": false,
+    "action_mapping_rule_present": true
+  },
+  "entities": {
+    "types_defined": 17,
+    "types_extracted": 5,
+    "extracted_types": ["IP", "USER", "HOST", "CLOUD_RESOURCE"],
+    "original_value_preserved": true,
+    "normalized_value_present": true
+  },
+  "relationships": {
+    "evidence_based_only": true,
+    "edge_types": 3,
+    "bounded": true,
+    "max_edges_per_event": "O(src_ips x dst_ips)"
+  },
+  "indicators": {
+    "types_defined": 7,
+    "types_extracted": 4,
+    "extracted_types": ["IP", "DOMAIN", "HASH_SHA256", "HASH_MD5"],
+    "redos_safe": true,
+    "confidence_deterministic": true
+  },
+  "risk": {
+    "deterministic": true,
+    "levels": ["INFORMATIONAL", "LOW", "MEDIUM", "HIGH", "CRITICAL"],
+    "reason_codes_present": true,
+    "version_tied": true,
+    "observed_vs_derived_separate": true
+  },
+  "fingerprint": {
+    "algorithm": "SHA-256",
+    "deterministic": true,
+    "version_aware": true,
+    "deduplication_policy": "CANDIDATES_ONLY"
+  },
+  "ocsf": {
+    "claimed_version": "1.1.0",
+    "classes_supported": 7,
+    "classes_correct": [4001, 2004, 3002, 4002, 4003, 6003, 1007],
+    "class_uid_corrected": true,
+    "status_id_corrected": true,
+    "full_schema_validation": false,
+    "projection_isolation": true,
+    "correction_f01": "class_uid 2002->2004 for Detection Finding",
+    "correction_f02": "status_id 1/2 -> OCSF standard 1=Unknown,2=Success,3=Failure"
+  },
+  "otel": {
+    "claimed_version": "1.0.0",
+    "structure": "ResourceLogs/ScopeLogs/LogRecords",
+    "time_unix_nano": true,
+    "observed_time": true,
+    "severity_number": true,
+    "attributes_correct": true,
+    "trace_id_supported": true,
+    "span_id_supported": true,
+    "semantic_convention_compliance": "ULPF_EXTENSION"
+  },
+  "security": {
+    "eval_exec_found": false,
+    "subprocess_found": false,
+    "network_imports_found": false,
+    "redos_patterns_found": 0,
+    "air_gapped": true,
+    "runtime_llm": false
+  },
+  "performance": {
+    "method": "500 samples, single-threaded, development machine",
+    "p50_ms": 0.167,
+    "p95_ms": 0.310,
+    "p99_ms": 0.602,
+    "events_per_sec": 5079,
+    "benchmark_script_present": false
+  },
+  "critical_findings": [],
+  "high_findings": [
+    {
+      "id": "F-01",
+      "status": "CORRECTED",
+      "description": "OCSF Detection Finding class_uid was 2002 (Vulnerability Finding), corrected to 2004"
+    },
+    {
+      "id": "F-02",
+      "status": "CORRECTED",
+      "description": "OCSF status_id mapping was inverted; corrected to OCSF 1.1.0 standard"
+    }
+  ],
+  "medium_findings": [
+    {"id": "F-03", "status": "OPEN", "description": "SemanticStatus always FULL; should be PARTIAL for fallback classifications"},
+    {"id": "F-04", "status": "OPEN", "description": "raw_sha256 not forwarded in SemanticEvent"},
+    {"id": "F-05", "status": "OPEN", "description": "15 Phase 4 documentation files absent"},
+    {"id": "F-06", "status": "OPEN", "description": "Mapping rules not externalized to config"},
+    {"id": "F-07", "status": "OPEN", "description": "12 of 17 entity types not extracted"},
+    {"id": "F-08", "status": "OPEN", "description": "Risk/fingerprint decisions not traced in DecisionTrace"},
+    {"id": "F-09", "status": "OPEN", "description": "scripts/run_phase4_benchmarks.py absent"}
+  ],
+  "low_findings": [
+    {"id": "F-10", "status": "OPEN", "description": "35 unused taxonomy categories"},
+    {"id": "F-11", "status": "OPEN", "description": "accept mapped to allow (approximation)"},
+    {"id": "F-12", "status": "OPEN", "description": "OCSF validator not full-schema backed"},
+    {"id": "F-13", "status": "OPEN", "description": "Email indicator type not extracted"},
+    {"id": "F-14", "status": "OPEN", "description": "Benchmark test threshold too low (500 eps)"}
+  ],
+  "final_score": 7.9
+}

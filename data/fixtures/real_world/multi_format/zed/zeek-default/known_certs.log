@@ -1,0 +1,44 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	known_certs
+#open	2024-04-12-19-29-12
+#fields	ts	host	port_num	subject	issuer_subject	serial
+#types	time	addr	port	string	string	string
+1521911720.629574	10.47.3.200	443	unstructuredName=1315656901\\,564d7761726520496e632e,CN=localhost.localdomain,emailAddress=ssl-certificates@vmware.com,OU=VMware ESX Server Default Certificate,O=VMware\\, Inc,L=Palo Alto,ST=California,C=US	O=VMware Installer	CC57FE54011E
+1521911720.788325	10.47.8.200	443	unstructuredName=1315656901\\,564d7761726520496e632e,CN=localhost.localdomain,emailAddress=ssl-certificates@vmware.com,OU=VMware ESX Server Default Certificate,O=VMware\\, Inc,L=Palo Alto,ST=California,C=US	O=VMware Installer	CC57FE54011E
+1521911720.921208	10.47.27.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911725.144597	10.47.8.208	443	CN=Snozberry	CN=Snozberry	4876EA91DF62A14F33FD188DB1BCAD
+1521911725.177168	10.47.3.100	9390	emailAddress=openvassd@nougat,CN=nougat,OU=Server certificate for nougat,O=OpenVAS Users United,L=Los Angeles,C=US	emailAddress=ca@nougat,CN=nougat,OU=Certification Authority for nougat,O=OpenVAS Users United,L=Los Angeles,C=US	01
+1521911731.006426	10.47.26.160	3389	CN=ParkingGarage	CN=ParkingGarage	2FF933D95486608C469D350152A5270B
+1521911731.883424	10.47.21.25	3389	CN=Kramer.jerry.land	CN=Kramer.jerry.land	42BD36A7672A9E8C4A48B8F31358DBCF
+1521911732.521729	10.150.0.85	443	CN=10.150.0.85,O=Internet Widgits Pty Ltd,ST=Some-State,C=AU	CN=10.150.0.85,O=Internet Widgits Pty Ltd,ST=Some-State,C=AU	C5F8CDF3FFCBBF2D
+1521911746.044279	10.47.23.166	3389	CN=ParkingGarage	CN=ParkingGarage	2FF933D95486608C469D350152A5270B
+1521911746.078075	10.47.21.172	3389	CN=ParkingGarage	CN=ParkingGarage	2FF933D95486608C469D350152A5270B
+1521911749.389791	10.47.27.55	143	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	F344CE69EA61BBD2
+1521911751.213195	10.47.21.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911759.152290	10.47.24.170	3389	CN=ParkingGarage	CN=ParkingGarage	2FF933D95486608C469D350152A5270B
+1521911774.863921	10.104.255.16	443	OU=VMware,O=VMware,L=Palo Alto,ST=California,C=US,CN=donbot.wrccdc.cpp.edu	OU=VMware,O=donbot,ST=California,C=US,DC=local,DC=vsphere,CN=donbot	C805D626FDCD9AC1
+1521911775.421651	10.47.2.156	8445	O=Symantec Corporation+CN=cottoncandy-PC+L=Mountain View+OU=ESG+ST=CA+C=US	O=Symantec Corporation+CN=cottoncandy-PC+L=Mountain View+OU=ESG+ST=CA+C=US	-569F830C7EFE69E6025EDBA0067250C4
+1521911787.112401	10.47.8.1	443	emailAddress=support@paloaltonetworks.com,CN=0ed5ec94a00f5c03cd779af8bafd670a73f40ab1597ac69ffa6a6b7af7e4e099,O=Palo Alto Networks,L=Santa Clara,ST=CA,C=US	emailAddress=support@paloaltonetworks.com,CN=localhost,OU=Support,O=Palo Alto Networks,L=Santa Clara,ST=CA,C=US	CE134D09196DB6D8
+1521911787.712362	10.47.3.155	3389	CN=CottonCandy2.factory.oompa.loompa	CN=CottonCandy2.factory.oompa.loompa	3503E93CD63AEAAE4CF046F3B9D2B482
+1521911797.606822	10.47.3.218	3389	CN=Smarties.factory.oompa.loompa	CN=Smarties.factory.oompa.loompa	47CE7E8472CC66BE4F499FC1C02CEF01
+1521911810.027890	10.47.8.208	3389	CN=Snozberry.factory.oompa.loompa	CN=Snozberry.factory.oompa.loompa	5D4C2B49708236AF4EF9E89F4C8E02BA
+1521911815.406922	10.47.22.55	143	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	F344CE69EA61BBD2
+1521911816.436333	10.47.23.55	143	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	F344CE69EA61BBD2
+1521911817.908232	10.47.8.218	3389	CN=Smarties.factory.oompa.loompa	CN=Smarties.factory.oompa.loompa	29299D055209A8934492903CF636F4FB
+1521911835.997784	10.47.1.208	443	CN=Snozberry	CN=Snozberry	4876EA91DF62A14F33FD188DB1BCAD
+1521911906.017839	10.47.25.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911906.043199	10.47.22.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911906.215872	10.47.26.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911906.440012	10.47.23.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521911910.966538	10.47.21.1	443	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	00
+1521911945.962216	10.47.9.1	443	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	00
+1521912191.533279	10.47.24.25	3389	CN=Kramer.jerry.land	CN=Kramer.jerry.land	42BD36A7672A9E8C4A48B8F31358DBCF
+1521912473.506163	10.47.23.1	443	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	00
+1521912578.239369	10.128.0.236	443	C=/C=US/ST=HI/O=Goldner and Sons/OU=1080p/CN=goldner.sons.net/emailAddress=1080p@goldner.sons.net	C=/C=US/ST=HI/O=Goldner and Sons/OU=1080p/CN=goldner.sons.net/emailAddress=1080p@goldner.sons.net	CB11D05B561B4BB1
+1521912650.561505	10.47.22.1	443	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	CN=pfSense-5955a05421c94,emailAddress=admin@pfSense.localdomain,O=pfSense webConfigurator Self-Signed Certificate,L=Locality,ST=State,C=US	00
+1521912657.588206	10.47.24.80	443	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	CN=www.example.com,OU=Certificate generated at installation time,O=Bitnami	EF97295FA8532CBA
+1521912835.084529	10.47.26.55	143	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	emailAddress=root@MartinvanNostrand.jerry.land,CN=MartinvanNostrand.jerry.land,OU=MartinvanNostrand.,O=Dovecot mail server	F344CE69EA61BBD2
+#close	2024-04-12-19-34-07

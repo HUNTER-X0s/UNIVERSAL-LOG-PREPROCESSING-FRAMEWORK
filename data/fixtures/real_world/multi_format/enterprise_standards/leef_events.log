@@ -1,0 +1,2 @@
+LEEF:1.0|IBM|Security Network Protection|5.4|100001|devTime=2026-09-05T14:00:00Z	devTimeFormat=yyyy-MM-dd'T'HH:mm:ss'Z'	src=198.51.100.12	dst=10.0.0.25	spt=51234	dpt=80	proto=TCP	act=Drop	cat=Malicious Botnet C2 Traffic
+LEEF:2.0|Trend Micro|Deep Security Agent|20.0|100|src=10.0.1.75	dst=198.51.100.200	spt=49821	dpt=443	act=Log	msg=Integrity Monitoring file modified	filePath=C:\Windows\System32\drivers\etc\hosts

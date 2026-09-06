@@ -1,0 +1,9 @@
+{
+    _path: "packet_filter",
+    ts: 2024-04-12T19:29:12.827586Z,
+    node: "zeek",
+    filter: "ip or not ip",
+    init: true,
+    success: true,
+    failure_reason: null::string
+}

@@ -1,0 +1,21 @@
+{
+  "time": "2026-09-05T14:00:00.1234567Z",
+  "resourceId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-network/providers/Microsoft.Network/networkSecurityGroups/nsg-perimeter",
+  "operationName": "Microsoft.Network/networkSecurityGroups/write",
+  "category": "Administrative",
+  "resultType": "Success",
+  "resultSignature": "Succeeded.OK",
+  "durationMs": "1500",
+  "caller": "sec_admin@corp.onmicrosoft.com",
+  "correlationId": "12345678-abcd-ef01-2345-6789abcdef01",
+  "identity": {
+    "authorization": {
+      "scope": "/subscriptions/00000000-0000-0000-0000-000000000000",
+      "action": "Microsoft.Network/networkSecurityGroups/write"
+    },
+    "claims": {
+      "ipaddr": "203.0.113.25"
+    }
+  },
+  "level": "Information"
+}

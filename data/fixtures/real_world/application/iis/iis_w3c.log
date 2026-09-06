@@ -1,0 +1,7 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2026-09-05 14:00:00
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2026-09-05 14:00:00 10.0.0.10 GET /default.aspx - 80 - 198.51.100.15 Mozilla/5.0 - 200 0 0 15
+2026-09-05 14:00:05 10.0.0.10 POST /api/login user=admin 443 corp\analyst 198.51.100.20 Mozilla/5.0 - 401 1 1326 45
+2026-09-05 14:00:10 10.0.0.10 GET /restricted/doc.pdf - 443 - 203.0.113.88 curl/7.88.1 - 403 4 5 10

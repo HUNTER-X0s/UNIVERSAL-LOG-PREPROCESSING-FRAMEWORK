@@ -1,0 +1,85 @@
+{
+  "resourceLogs": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "perimeter-auth-proxy"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "gw-01.corp.local"
+            }
+          },
+          {
+            "key": "deployment.environment",
+            "value": {
+              "stringValue": "production"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "com.ulpf.intake"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1757080800123456789",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Ingestion channel opened"
+              },
+              "attributes": [
+                {
+                  "key": "net.peer.ip",
+                  "value": {
+                    "stringValue": "198.51.100.25"
+                  }
+                },
+                {
+                  "key": "http.status_code",
+                  "value": {
+                    "intValue": 200
+                  }
+                }
+              ],
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+              "spanId": "00f067aa0ba902b7"
+            },
+            {
+              "timeUnixNano": "1757080805987654321",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "Authentication handshake rejected: client certificate expired"
+              },
+              "attributes": [
+                {
+                  "key": "net.peer.ip",
+                  "value": {
+                    "stringValue": "203.0.113.88"
+                  }
+                },
+                {
+                  "key": "error.type",
+                  "value": {
+                    "stringValue": "CertExpired"
+                  }
+                }
+              ],
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+              "spanId": "5fb397be34d23b0f"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

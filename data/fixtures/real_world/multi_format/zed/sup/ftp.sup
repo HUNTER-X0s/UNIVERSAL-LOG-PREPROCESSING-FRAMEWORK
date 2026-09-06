@@ -1,0 +1,2418 @@
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:15:24.699488Z,
+    uid: "CRJ34i2alWZXGHGfng",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45905::(port=uint16),
+        resp_h: 10.47.27.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,200,63).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 51263::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:15:24.704286Z,
+    uid: "CRJ34i2alWZXGHGfng",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45905::(port=uint16),
+        resp_h: 10.47.27.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "STOR",
+    arg: "ftp://10.47.27.80/nessus_test",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "Access is denied. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:15:24.728288Z,
+    uid: "CDLUSnwp86q8tTWd9",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37035::(port=uint16),
+        resp_h: 10.47.27.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,200,64).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 51264::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:32.257183Z,
+    uid: "CSeBlc2RJFbsTJsTSl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42047::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,185).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49337::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:32.260419Z,
+    uid: "CSeBlc2RJFbsTJsTSl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42047::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:32.262875Z,
+    uid: "CSeBlc2RJFbsTJsTSl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42047::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,186).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49338::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:32.266533Z,
+    uid: "CSeBlc2RJFbsTJsTSl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42047::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:33.417915Z,
+    uid: "CthKsh4JaZIKbserLe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45601::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,188).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49340::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:33.428759Z,
+    uid: "CthKsh4JaZIKbserLe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45601::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:40.103762Z,
+    uid: "Ci1VD243DzAtwMNnul",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35139::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,190).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49342::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:40.174147Z,
+    uid: "Ci1VD243DzAtwMNnul",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35139::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:43.214335Z,
+    uid: "CYHqhO3BvDgZWQF8Ik",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33239::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,191).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49343::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:43.221585Z,
+    uid: "CYHqhO3BvDgZWQF8Ik",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33239::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:46.026371Z,
+    uid: "CyXVer29F0B62ZfPQ3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33651::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,192).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49344::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:46.030299Z,
+    uid: "CyXVer29F0B62ZfPQ3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33651::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:47.059883Z,
+    uid: "Cq6SkQ3WqcsSBpoM4c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45117::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,195).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49347::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:47.067369Z,
+    uid: "Cq6SkQ3WqcsSBpoM4c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45117::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:48.17937Z,
+    uid: "CcZxcD3YVNU6PFDack",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45093::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,196).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49348::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:48.185309Z,
+    uid: "CcZxcD3YVNU6PFDack",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45093::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.../.../.../.../.../.../.../.../.../.../.../.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:49.298624Z,
+    uid: "Ccvf312bknFpju2Tne",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35341::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,198).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49350::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:49.324185Z,
+    uid: "Ccvf312bknFpju2Tne",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 35341::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.../.../.../.../.../.../.../.../.../.../.../.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:50.36586Z,
+    uid: "CeaEiF8WeGHlEJot",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33615::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,199).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49351::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:50.37618Z,
+    uid: "CeaEiF8WeGHlEJot",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33615::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:51.421769Z,
+    uid: "C2JDiR1Hcu89VJxdg4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38243::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,201).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49353::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:51.426094Z,
+    uid: "C2JDiR1Hcu89VJxdg4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38243::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\...\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:52.982637Z,
+    uid: "CEtE8BCkI4CGONPya",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42925::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,203).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49355::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:53.292722Z,
+    uid: "CEtE8BCkI4CGONPya",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 42925::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f...%2f/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:54.458307Z,
+    uid: "CoDpoi1dTrW95Pvg2e",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43409::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,204).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49356::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:54.639855Z,
+    uid: "CoDpoi1dTrW95Pvg2e",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43409::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c...%5c/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:55.92152Z,
+    uid: "Cu7je536wEzyIkvRk1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38641::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,205).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49357::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:55.979346Z,
+    uid: "Cu7je536wEzyIkvRk1",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 38641::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:57.800435Z,
+    uid: "C0aPmpy58j12lRm6l",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33979::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,206).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49358::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:58.052079Z,
+    uid: "C0aPmpy58j12lRm6l",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33979::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:59.282468Z,
+    uid: "CPQZ8T7JOTKcg5ds",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37417::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,207).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49359::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:19:59.309606Z,
+    uid: "CPQZ8T7JOTKcg5ds",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37417::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:00.355004Z,
+    uid: "CSzwm4daU02So0l0c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34149::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,208).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49360::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:00.357702Z,
+    uid: "CSzwm4daU02So0l0c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34149::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:01.781141Z,
+    uid: "CvMlfF4dbXa5f88y47",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34829::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,209).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49361::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:01.86699Z,
+    uid: "CvMlfF4dbXa5f88y47",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34829::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:03.805304Z,
+    uid: "Crtoqt3NUtcDflW7ze",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33685::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,210).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49362::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:03.866496Z,
+    uid: "Crtoqt3NUtcDflW7ze",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33685::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\../\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:04.909843Z,
+    uid: "CuFE7n2qH9Z2XraUr7",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,211).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49363::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:04.915186Z,
+    uid: "CuFE7n2qH9Z2XraUr7",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:06.614575Z,
+    uid: "Ca1JxL27LTn7TxoWX6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37375::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,213).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49365::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:06.617941Z,
+    uid: "Ca1JxL27LTn7TxoWX6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37375::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/..\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:07.83184Z,
+    uid: "ChUCdA2Arz5ac4Jdkl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46287::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,215).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49367::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:07.909538Z,
+    uid: "ChUCdA2Arz5ac4Jdkl",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46287::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:09.044379Z,
+    uid: "Cybk3T1vZ8fefvnPyc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39189::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,216).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49368::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:09.052294Z,
+    uid: "Cybk3T1vZ8fefvnPyc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39189::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:10.180729Z,
+    uid: "CsuP132mZ14CFUduKd",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37015::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,219).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49371::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:10.184302Z,
+    uid: "CsuP132mZ14CFUduKd",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 37015::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:11.273206Z,
+    uid: "Crof09apH2y0O4gCf",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44453::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,220).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49372::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:11.294995Z,
+    uid: "Crof09apH2y0O4gCf",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44453::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:12.371262Z,
+    uid: "CZbyAgLZYC4ZN10d4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41737::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,221).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49373::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:12.386262Z,
+    uid: "CZbyAgLZYC4ZN10d4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41737::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:18.300729Z,
+    uid: "CN5cLa1fBM9K2d0nzi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39529::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,222).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49374::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:18.31001Z,
+    uid: "CN5cLa1fBM9K2d0nzi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39529::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:19.510024Z,
+    uid: "Cn2OrJ2qD4os6zKmxe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43049::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,223).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49375::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:19.791378Z,
+    uid: "Cn2OrJ2qD4os6zKmxe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43049::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:24.69971Z,
+    uid: "CAMoeG2ma0fZvbxrSj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33067::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,224).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49376::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:24.706009Z,
+    uid: "CAMoeG2ma0fZvbxrSj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33067::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\.\\..\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:28.486037Z,
+    uid: "CzsNSL2QYDIYfv6Z1c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45157::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,225).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49377::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:28.507753Z,
+    uid: "CzsNSL2QYDIYfv6Z1c",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45157::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:29.703128Z,
+    uid: "CGdzRk1WOLWWI6KhX3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44833::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,226).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49378::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:29.737588Z,
+    uid: "CGdzRk1WOLWWI6KhX3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44833::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/../../../../../../../../../../../../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:31.082776Z,
+    uid: "CcpJVG3ymdHT9XYxGi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44489::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,227).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49379::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:31.092734Z,
+    uid: "CcpJVG3ymdHT9XYxGi",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44489::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:33.052007Z,
+    uid: "CL2SDU387ecNbhxgN4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34645::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,228).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49380::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:33.077929Z,
+    uid: "CL2SDU387ecNbhxgN4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 34645::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:37.582688Z,
+    uid: "CaJxqEd6nJXQ4UlW4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45963::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,229).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49381::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:37.615773Z,
+    uid: "CaJxqEd6nJXQ4UlW4",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45963::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:38.857871Z,
+    uid: "CYd0e427R8cJyV6ahf",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45021::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,230).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49382::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:38.901853Z,
+    uid: "CYd0e427R8cJyV6ahf",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45021::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:39.955248Z,
+    uid: "CGJ11z4HhX3EbuiBhc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46497::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,231).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49383::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:39.968682Z,
+    uid: "CGJ11z4HhX3EbuiBhc",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46497::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:41.412028Z,
+    uid: "CfzIcE2WF3HSJcUgxd",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46597::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,232).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49384::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:41.439649Z,
+    uid: "CfzIcE2WF3HSJcUgxd",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46597::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:42.631538Z,
+    uid: "CgcKymH1hDRbLWrzb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36279::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,233).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49385::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:42.667113Z,
+    uid: "CgcKymH1hDRbLWrzb",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36279::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/....../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:44.857108Z,
+    uid: "CJOMfx4XXovSLeCzSe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44553::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,235).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49387::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:44.952412Z,
+    uid: "CJOMfx4XXovSLeCzSe",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 44553::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./\\.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:46.308947Z,
+    uid: "C1zAdI2zRufE14J3gj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41057::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,236).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49388::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:46.319054Z,
+    uid: "C1zAdI2zRufE14J3gj",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 41057::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./\\.../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:47.471202Z,
+    uid: "CVA4t22M8VU0vfAvM5",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43429::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,237).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49389::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:47.508404Z,
+    uid: "CVA4t22M8VU0vfAvM5",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 43429::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:48.748784Z,
+    uid: "CGFYAH2y36ZKxx3U1a",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46725::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,238).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49390::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:48.761655Z,
+    uid: "CGFYAH2y36ZKxx3U1a",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46725::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./...\\/boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:49.893856Z,
+    uid: "Cv1ZEev23L5EVY27g",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39399::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,239).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49391::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:49.899013Z,
+    uid: "Cv1ZEev23L5EVY27g",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39399::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the path specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:51.455269Z,
+    uid: "CVPl3K3jzBmoEwuad9",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39223::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,240).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49392::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:51.459577Z,
+    uid: "CVPl3K3jzBmoEwuad9",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 39223::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/./..../boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The system cannot find the file specified. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:52.808757Z,
+    uid: "CUXC272BmKGAN3Vyl3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46023::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "PASV",
+    arg: null::string,
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 227::uint64,
+    reply_msg: "Entering Passive Mode (172,20,0,80,192,241).",
+    data_channel: {
+        passive: true,
+        orig_h: 10.164.94.120,
+        resp_h: 172.20.0.80,
+        resp_p: 49393::port
+    },
+    fuid: null::string
+}
+{
+    _path: "ftp",
+    ts: 2018-03-24T17:20:52.81345Z,
+    uid: "CUXC272BmKGAN3Vyl3",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46023::(port=uint16),
+        resp_h: 10.47.21.80,
+        resp_p: 21::port
+    },
+    user: "anonymous",
+    password: "nessus@nessus.org",
+    command: "RETR",
+    arg: "ftp://10.47.21.80/C:\\boot.ini",
+    mime_type: null::string,
+    file_size: null::uint64,
+    reply_code: 550::uint64,
+    reply_msg: "The parameter is incorrect. ",
+    data_channel: {
+        passive: null::bool,
+        orig_h: null::ip,
+        resp_h: null::ip,
+        resp_p: null::port
+    },
+    fuid: null::string
+}

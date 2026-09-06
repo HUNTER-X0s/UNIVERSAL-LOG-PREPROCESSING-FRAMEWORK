@@ -1,0 +1,132 @@
+[
+  {
+    "id": "PH4-FIND-01",
+    "title": "OCSF Detection Finding class_uid Corrected",
+    "severity": "HIGH",
+    "category": "STANDARDS_COMPLIANCE",
+    "status": "CORRECTED",
+    "file": "packages/semantic/ulpf_semantic/projections/ocsf/mapper.py",
+    "description": "Detection Finding previously used class_uid 2002 (Vulnerability Finding). Corrected to 2004 per OCSF v1.1.0.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-02",
+    "title": "OCSF status_id Mapping Corrected",
+    "severity": "HIGH",
+    "category": "STANDARDS_COMPLIANCE",
+    "status": "CORRECTED",
+    "file": "packages/semantic/ulpf_semantic/projections/ocsf/mapper.py",
+    "description": "OCSF status_id inverted/flat mapping corrected to official specification (1=Unknown, 2=Success, 3=Failure).",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-03",
+    "title": "Graduated SemanticStatus Implementation",
+    "severity": "MEDIUM",
+    "category": "SEMANTIC_CORRECTNESS",
+    "status": "CORRECTED",
+    "file": "packages/semantic/ulpf_semantic/mapping/engine.py",
+    "description": "Graduated status assignment implemented: >=0.90 FULL, >=0.70 PARTIAL, <0.70 UNKNOWN.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-04",
+    "title": "raw_sha256 Payload Hash Not Forwarded in SemanticEvent",
+    "severity": "MEDIUM",
+    "category": "PROVENANCE_INTEGRITY",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/mapping/engine.py",
+    "description": "SemanticEvent forwards uce_event_id and raw_event_id, but does not forward the raw payload sha256. Direct raw verification requires reading the UCE.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-05",
+    "title": "Semantic Classification Rules Hardcoded in Python Source",
+    "severity": "MEDIUM",
+    "category": "ARCHITECTURE",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/classification/classifier.py",
+    "description": "Classification rules are statically coded in Python. Externalizing rules to declarative JSON/YAML is the design charter of Phase 5.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-06",
+    "title": "Entity Types Process, File, Container, URL, Domain Unimplemented in Extractor",
+    "severity": "MEDIUM",
+    "category": "DATA_MODEL",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/entities/extractor.py",
+    "description": "Taxonomy defines 17 entity types; runtime extractor implements 4 (IP, HOST, USER, CLOUD_RESOURCE). Remaining 13 types are contract placeholders.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-07",
+    "title": "Risk Evaluation and Fingerprinting Lack Discrete Decision Traces",
+    "severity": "MEDIUM",
+    "category": "EXPLAINABILITY",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/mapping/engine.py",
+    "description": "Only classification produces an explicit DecisionTrace object. Risk evaluation records reason codes but no DecisionTrace.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-08",
+    "title": "OCSF Validation Covers Base Mandatory Fields Rather Than Full Bundled Metamodel",
+    "severity": "MEDIUM",
+    "category": "STANDARDS_COMPLIANCE",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/projections/ocsf/validator.py",
+    "description": "Validator checks mandatory base fields and types rather than validating against the official OCSF v1.1.0 JSON metamodel.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-09",
+    "title": "Benchmark Suite Implementation Added",
+    "severity": "MEDIUM",
+    "category": "TEST_QUALITY",
+    "status": "CORRECTED",
+    "file": "scripts/run_phase4_benchmarks.py",
+    "description": "Created standalone benchmark script producing reports/phase4_benchmarks.json.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-10",
+    "title": "35 Forward-Compatible EventCategory Enums Unmapped",
+    "severity": "LOW",
+    "category": "TAXONOMY",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/taxonomy/categories.py",
+    "description": "42 categories defined; 7 core categories mapped by classifier rules. 35 categories remain forward-compatible stubs.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-11",
+    "title": "Semantic Action Merges 'accept' and 'allow' into ActionTaxonomy.ALLOW",
+    "severity": "LOW",
+    "category": "TAXONOMY",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/taxonomy/actions.py",
+    "description": "Intentional canonical reduction; TCP session accept is unified with policy permit.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-12",
+    "title": "IndicatorType.EMAIL Unextracted",
+    "severity": "LOW",
+    "category": "INDICATORS",
+    "status": "OPEN",
+    "file": "packages/semantic/ulpf_semantic/indicators/extractor.py",
+    "description": "IndicatorType.EMAIL defined in enum but not extracted from unmapped fields.",
+    "blocking": false
+  },
+  {
+    "id": "PH4-FIND-13",
+    "title": "Conservative Throughput Assertion in Unit Tests (>500 eps)",
+    "severity": "LOW",
+    "category": "TEST_QUALITY",
+    "status": "OPEN",
+    "file": "tests/test_semantic_benchmarks.py",
+    "description": "Test asserts > 500 eps, whereas actual runtime throughput is > 11,000 eps.",
+    "blocking": false
+  }
+]

@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ulpf.local/schemas/semantic-event.v1.schema.json",
+  "title": "ULPF Semantic Event v1",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "semantic_event_id",
+    "uce_event_id",
+    "raw_event_id",
+    "timestamp",
+    "semantic_triple",
+    "action",
+    "result",
+    "confidence",
+    "decision_trace"
+  ],
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "semantic_event_id": { "type": "string" },
+    "uce_event_id": { "type": "string" },
+    "raw_event_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "semantic_triple": {
+      "type": "object",
+      "required": ["category", "class", "type"],
+      "properties": {
+        "category": { "type": "string" },
+        "class": { "type": "string" },
+        "type": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "action": {
+      "type": "object",
+      "required": ["semantic"],
+      "properties": {
+        "original": { "type": "string" },
+        "normalized": { "type": "string" },
+        "semantic": { "type": "string" },
+        "mapping_rule": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["SUCCESS", "FAILURE", "DENIED", "ALLOWED", "PARTIAL", "UNKNOWN", "TIMEOUT", "BLOCKED", "ERROR"]
+        },
+        "detail": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "severity": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "confidence": {
+      "type": "object",
+      "required": ["level", "score"],
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["EXACT", "HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "explanation": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_type", "value"],
+        "properties": {
+          "entity_id": { "type": "string" },
+          "entity_type": { "type": "string" },
+          "value": { "type": "string" },
+          "normalized_value": { "type": "string" },
+          "role": { "type": "string" },
+          "attributes": { "type": "object" },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "predicate", "object"],
+        "properties": {
+          "relationship_id": { "type": "string" },
+          "subject": { "type": "string" },
+          "predicate": { "type": "string" },
+          "object": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+          "provenance": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_type", "value"],
+        "properties": {
+          "indicator_type": { "type": "string" },
+          "value": { "type": "string" },
+          "source": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "security_context": {
+      "type": "object",
+      "properties": {
+        "threat": { "type": "string" },
+        "alert": { "type": "string" },
+        "rule": { "type": "string" },
+        "signature": { "type": "string" },
+        "attack_phase": { "type": "string" },
+        "policy": { "type": "string" },
+        "detection_source": { "type": "string" },
+        "mitre_attack": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["technique_id"],
+            "properties": {
+              "technique_id": { "type": "string" },
+              "tactic": { "type": "string" },
+              "evidence": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "risk_context": {
+      "type": "object",
+      "properties": {
+        "risk_level": { "type": "string", "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW", "INFORMATIONAL", "UNKNOWN"] },
+        "risk_score": { "type": "number", "minimum": 0.0, "maximum": 100.0 },
+        "reason_codes": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      },
+      "additionalProperties": false
+    },
+    "correlation_context": {
+      "type": "object",
+      "properties": {
+        "equivalence_key": { "type": "string" },
+        "event_fingerprint": { "type": "string" },
+        "source_ip": { "type": "string" },
+        "destination_ip": { "type": "string" },
+        "user": { "type": "string" },
+        "host": { "type": "string" },
+        "session_id": { "type": "string" },
+        "trace_id": { "type": "string" },
+        "span_id": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "decision_trace": {
+      "type": "object",
+      "required": ["rule_id", "rule_version", "mapping_id", "provenance_type"],
+      "properties": {
+        "rule_id": { "type": "string" },
+        "rule_version": { "type": "string" },
+        "mapping_id": { "type": "string" },
+        "provenance_type": {
+          "type": "string",
+          "enum": ["OBSERVED", "NORMALIZED", "DERIVED", "ENRICHED", "INFERRED"]
+        },
+        "evidence": { "type": "array", "items": { "type": "string" } },
+        "explanation": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "projections": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "unmapped_semantic_fields": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

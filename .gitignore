@@ -30,10 +30,13 @@ secrets/
 data/runtime/
 data/tmp/
 data/logs/
+data/benchmarks/
+data/evidence/
 datasets/restricted/
 artifacts/
 models/
 *.log
+!data/fixtures/**/*.log
 
 # Editor and operating-system state
 .idea/

@@ -1,0 +1,2 @@
+{"timestamp": "2026-09-05T14:00:00.123Z", "level": "info", "logger": "api.intake", "event": "worker_pool_spawned", "workers": 8, "pid": 1234}
+{"timestamp": "2026-09-05T14:00:05.456Z", "level": "error", "logger": "api.parser", "event": "parser_unhandled_exception", "input_length": 4096, "exc_info": "Traceback (most recent call last):\n  File \"/app/parser.py\", line 112, in parse\n    raise ValueError('Corrupted delimiter')\nValueError: Corrupted delimiter"}

@@ -1,0 +1,1170 @@
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:25.396014Z,
+    uid: "Com0DqIPOu8FjMTma",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 36643::(port=uint16),
+        resp_h: 10.47.3.151,
+        resp_p: 1030::port
+    },
+    rtt: 431us,
+    named_pipe: "1030",
+    endpoint: "samr",
+    operation: "SamrConnect2"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:41.35659Z,
+    uid: "CT1orU31pfzjVTClIh",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 33692::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 135::port
+    },
+    rtt: 684us,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "ComplexPing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:54.621588Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 2.721ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:54.63042Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 54.631ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:54.69324Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 8.842ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:54.711445Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 68.546ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:15:54.781888Z,
+    uid: "C6WWAQ2G8MqT1hrQHd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 41717::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 19.084ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:07.354081Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 2.534ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:07.380885Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 134.557ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:07.525144Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 53.299ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:07.589641Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 7.757ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:07.606206Z,
+    uid: "CPd22l18QxvwF9MS6f",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36333::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 5.285ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.286626Z,
+    uid: "CypCJJvnA8ObHdUGk",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43552::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 3.301ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.508635Z,
+    uid: "CTvBP8dB1l6RmCvjb",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52014::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 135::port
+    },
+    rtt: 77.165ms,
+    named_pipe: "135",
+    endpoint: "IRemoteSCMActivator",
+    operation: "RemoteCreateInstance"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.645727Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 214.749ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRegisterTask"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.865446Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 4.33ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRun"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.873943Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 3.235ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcGetLastRunInfo"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:16:15.880792Z,
+    uid: "CwQ3Tk4svaPqg2xCv9",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 43558::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 18.067ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcDelete"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:18:15.80557Z,
+    uid: "CGKaU345SbW9hhZca5",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52168::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 135::port
+    },
+    rtt: 37.68ms,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "ComplexPing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:20:16.063522Z,
+    uid: "Ca1GHMXOdERAoPxtb",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52366::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 135::port
+    },
+    rtt: 725us,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "SimplePing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.0342Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 13.835ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.076728Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 27.357ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.115289Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 26.895ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.177028Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 139.3ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.324698Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    rtt: 35.566ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.364312Z,
+    uid: "Cl81Dy1EF8qqSPFog2",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43414::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 8.104ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.385646Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    rtt: 25.74ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.429912Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    rtt: 98.75ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.546238Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    rtt: 35.053ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.600859Z,
+    uid: "CLoAcl2ZFH62O9no0e",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 37760::(port=uint16),
+        resp_h: 10.47.21.25,
+        resp_p: 445::port
+    },
+    rtt: 8.233ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.61881Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    rtt: 18.174ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.67143Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    rtt: 36.207ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:45.72686Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    rtt: 939.129ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:47.932018Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    rtt: 62.051ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.220086Z,
+    uid: "C2XJv93R26N3aooPTk",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 43119::(port=uint16),
+        resp_h: 10.47.22.25,
+        resp_p: 445::port
+    },
+    rtt: 7.299ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.884053Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 11.299ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.911907Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 13.404ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.934797Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 19.213ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.961078Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 8.115ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:22:48.977056Z,
+    uid: "CjMntf4TeTOceFXrL8",
+    id: {
+        orig_h: 10.150.0.20,
+        orig_p: 39025::(port=uint16),
+        resp_h: 10.47.24.25,
+        resp_p: 445::port
+    },
+    rtt: 5.86ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.065511Z,
+    uid: "C2ogBq46P9OYMGA8A4",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44126::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 2.619ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.284542Z,
+    uid: "CALapy4BfLmwWWyXOh",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52590::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 135::port
+    },
+    rtt: 4.887ms,
+    named_pipe: "135",
+    endpoint: "IRemoteSCMActivator",
+    operation: "RemoteCreateInstance"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.351558Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 185.596ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRegisterTask"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.542593Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 4.148ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRun"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.551479Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 5.342ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcGetLastRunInfo"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:23:26.560216Z,
+    uid: "CF0g772wEPFoRKyYg3",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 44132::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 445::port
+    },
+    rtt: 74.99ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcDelete"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:25:01.594256Z,
+    uid: "CuqnI52nucKpAKoRmk",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 46165::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 1053::port
+    },
+    rtt: 797us,
+    named_pipe: "1053",
+    endpoint: "samr",
+    operation: "SamrConnect2"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:25:26.524377Z,
+    uid: "C4MpOQ1maDtJFw71Fe",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 52810::(port=uint16),
+        resp_h: 10.47.21.82,
+        resp_p: 135::port
+    },
+    rtt: 1.231ms,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "ComplexPing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:56.37965Z,
+    uid: "CK9fc912gwgDOiMxH1",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38524::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    rtt: 2.945ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:56.600431Z,
+    uid: "CnZepj1A5hoph4Hd38",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 59246::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 135::port
+    },
+    rtt: 255.216ms,
+    named_pipe: "135",
+    endpoint: "IRemoteSCMActivator",
+    operation: "RemoteCreateInstance"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:56.912707Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    rtt: 587.707ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRegisterTask"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:57.506035Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    rtt: 31.191ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcRun"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:57.542008Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    rtt: 13.082ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcGetLastRunInfo"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:26:57.55825Z,
+    uid: "C1EEottIF6ikVCQ13",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 38536::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 445::port
+    },
+    rtt: 121.739ms,
+    named_pipe: "\\PIPE\\atsvc",
+    endpoint: "ITaskSchedulerService",
+    operation: "SchRpcDelete"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:28:57.180427Z,
+    uid: "CmKQKXj2Zn1Bu2bvg",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 59476::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 135::port
+    },
+    rtt: 26.139ms,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "ComplexPing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:29:46.096722Z,
+    uid: "C86BVo1paxrPDzfDNh",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37086::(port=uint16),
+        resp_h: 10.47.8.10,
+        resp_p: 445::port
+    },
+    rtt: 733us,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:29:46.152867Z,
+    uid: "CmIin524wEYNaSeAH",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 46940::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 2.465ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:05.061097Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 2.513ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:05.090172Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 125.827ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:05.223686Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 16.843ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:05.249478Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 6.584ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:05.262695Z,
+    uid: "C2iEQa33X6xgXoissc",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36131::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 5.114ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:34.070908Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 3.055ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:34.117454Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 28.936ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:34.152194Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 17.402ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:34.177376Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 6.043ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:34.190555Z,
+    uid: "CIBk9U12qmMhGixvjd",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 37373::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 4.788ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:30:57.44041Z,
+    uid: "CJzCOK32uaelqnfXv7",
+    id: {
+        orig_h: 10.128.0.233,
+        orig_p: 59636::(port=uint16),
+        resp_h: 10.47.21.81,
+        resp_p: 135::port
+    },
+    rtt: 632us,
+    named_pipe: "135",
+    endpoint: "IObjectExporter",
+    operation: "SimplePing"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:31:46.169036Z,
+    uid: "C6EYta3MG5Qq2x4SVh",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 48622::(port=uint16),
+        resp_h: 10.47.8.142,
+        resp_p: 445::port
+    },
+    rtt: 2.047ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:31:46.232267Z,
+    uid: "CgeKXx4v9ZpYukbIpg",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 34590::(port=uint16),
+        resp_h: 10.47.8.154,
+        resp_p: 445::port
+    },
+    rtt: 2.455ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:31:46.313204Z,
+    uid: "CoiBbC4xRbqsTi4zq3",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 55540::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 445::port
+    },
+    rtt: 2.41ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:31:46.353794Z,
+    uid: "CLdkTn43jKemAY5VG4",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 60016::(port=uint16),
+        resp_h: 10.47.8.208,
+        resp_p: 445::port
+    },
+    rtt: 2.03ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:31:46.469303Z,
+    uid: "CB9FnaHfsK8HYErac",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 57422::(port=uint16),
+        resp_h: 10.47.8.218,
+        resp_p: 445::port
+    },
+    rtt: 22.762ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:33:04.815292Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 3.407ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "OpenSCManagerW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:33:04.856289Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 16.904ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CreateServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:33:04.875976Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 6.596ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "StartServiceW"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:33:04.885462Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 2.665ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "DeleteService"
+}
+{
+    _path: "dce_rpc",
+    ts: 2018-03-24T17:33:04.890003Z,
+    uid: "C92OnpDt8JCSfFRq2",
+    id: {
+        orig_h: 10.128.0.214,
+        orig_p: 36173::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 445::port
+    },
+    rtt: 13.376ms,
+    named_pipe: "\\pipe\\ntsvcs",
+    endpoint: "svcctl",
+    operation: "CloseServiceHandle"
+}

@@ -1,0 +1,53 @@
+<Events>
+  <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'>
+    <System>
+      <Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/>
+      <EventID>4624</EventID>
+      <Version>2</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Opcode>0</Opcode>
+      <Keywords>0x8020000000000000</Keywords>
+      <TimeCreated SystemTime='2026-09-05T14:00:00.1234567Z'/>
+      <EventRecordID>987654</EventRecordID>
+      <Computer>DC-CORP-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name='SubjectUserSid'>S-1-5-18</Data>
+      <Data Name='SubjectUserName'>DC-CORP-01$</Data>
+      <Data Name='TargetUserSid'>S-1-5-21-12345-67890-12345-1001</Data>
+      <Data Name='TargetUserName'>corp_analyst</Data>
+      <Data Name='TargetDomainName'>CORP</Data>
+      <Data Name='LogonType'>3</Data>
+      <Data Name='LogonProcessName'>Kerberos</Data>
+      <Data Name='AuthenticationPackageName'>Kerberos</Data>
+      <Data Name='WorkstationName'>-</Data>
+      <Data Name='IpAddress'>10.0.1.50</Data>
+      <Data Name='IpPort'>54321</Data>
+    </EventData>
+  </Event>
+  <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'>
+    <System>
+      <Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/>
+      <EventID>4625</EventID>
+      <Version>2</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Opcode>0</Opcode>
+      <Keywords>0x8010000000000000</Keywords>
+      <TimeCreated SystemTime='2026-09-05T14:00:05.9876543Z'/>
+      <EventRecordID>987655</EventRecordID>
+      <Computer>DC-CORP-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name='TargetUserName'>administrator</Data>
+      <Data Name='TargetDomainName'>CORP</Data>
+      <Data Name='Status'>0xc000006d</Data>
+      <Data Name='FailureReason'>%%2313</Data>
+      <Data Name='SubStatus'>0xc000006a</Data>
+      <Data Name='LogonType'>3</Data>
+      <Data Name='IpAddress'>198.51.100.99</Data>
+      <Data Name='IpPort'>41234</Data>
+    </EventData>
+  </Event>
+</Events>

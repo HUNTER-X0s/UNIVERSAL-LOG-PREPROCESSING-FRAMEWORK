@@ -1,0 +1,2048 @@
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/base/init-bare.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/const.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/zeek.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/communityid.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/stats.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/reporter.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/strings.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/option.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/supervisor/api.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/supervisor.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/packet_analysis.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/CPP-load.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/mmdb.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/plugins/Zeek_SNMP.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/plugins/Zeek_KRB.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/event.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/packet-protocols/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/analyzer/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/frameworks/packet-filter/utils.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/bif/analyzer.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/bif/file_analysis.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/root/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/root/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ip/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ip/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/skip/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/skip/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ethernet/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ethernet/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/fddi/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/fddi/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ieee802_11/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ieee802_11/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ieee802_11_radio/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ieee802_11_radio/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/linux_sll/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/linux_sll/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/linux_sll2/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/linux_sll2/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/nflog/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/nflog/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/null/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/null/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ppp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ppp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ppp_serial/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ppp_serial/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/pppoe/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/pppoe/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/vlan/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/vlan/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/mpls/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/mpls/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/pbb/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/pbb/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/vntag/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/vntag/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/udp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/udp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/tcp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/tcp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/icmp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/icmp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/llc/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/llc/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/novell_802_3/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/novell_802_3/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/snap/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/snap/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/gre/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/gre/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/iptunnel/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/iptunnel/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/ayiya/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/ayiya/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/geneve/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/geneve/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/vxlan/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/vxlan/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/teredo/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/teredo/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/bif/plugins/Zeek_Teredo.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/packet-protocols/gtpv1/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/packet-protocols/gtpv1/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/bif/plugins/Zeek_GTPv1.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/spicy/init-bare.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/builtin-plugins/__preload__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/base/init-frameworks-and-bifs.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/logging/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/logging/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/logging.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/logging/postprocessors/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/logging/postprocessors/scp.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/logging/postprocessors/sftp.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/logging/writers/ascii.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/logging/writers/sqlite.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/logging/writers/none.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/broker/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/broker/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/comm.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/messaging.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/broker/store.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/data.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/store.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/broker/log.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/supervisor/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/supervisor/control.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/supervisor/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/input/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/bif/input.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/ascii.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/raw.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/benchmark.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/binary.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/config.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/input/readers/sqlite.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/cluster/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/cluster/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/control/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/frameworks/control/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/cluster/pools.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/utils/hash_hrw.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/config/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/config/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/config/input.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/config/weird.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/analyzer/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/analyzer/dpd.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/analyzer/logging.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/files/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/files/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/utils/site.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/utils/patterns.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/files/magic/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/telemetry.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/zeekygen.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/pcap.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/bloom-filter.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/cardinality-counter.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/top-k.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/spicy.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/bif/plugins/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_BitTorrent.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_ConnSize.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_ConnSize.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DCE_RPC.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DCE_RPC.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DCE_RPC.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DHCP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DHCP.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DNP3.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_DNS.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_File.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FTP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FTP.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Gnutella.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_GSSAPI.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_HTTP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_HTTP.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Ident.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_IMAP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_IRC.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_KRB.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Login.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Login.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_MIME.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_MIME.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Modbus.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_MQTT.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_MQTT.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_MySQL.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NCP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NCP.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NetBIOS.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NetBIOS.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NTLM.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NTLM.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NTP.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NTP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_POP3.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RADIUS.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RDP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RDP.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RFB.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RPC.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SIP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_check_directory.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_close.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_create_directory.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_echo.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_logoff_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_negotiate.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_nt_create_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_nt_cancel.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_query_information.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_read_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_session_setup_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_transaction.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_transaction_secondary.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_transaction2.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_transaction2_secondary.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_tree_connect_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_tree_disconnect.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_com_write_andx.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb1_events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_close.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_create.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_negotiate.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_read.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_session_setup.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_set_info.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_tree_connect.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_tree_disconnect.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_write.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_com_transform_header.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.smb2_events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMB.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMTP.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMTP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SMTP.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SNMP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SOCKS.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSH.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSH.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSL.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSL.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSL.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SSL.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_TCP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_TCP.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_TCP.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_WebSocket.consts.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_WebSocket.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_WebSocket.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_WebSocket.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_XMPP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_ARP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_UDP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_ICMP.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Geneve.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_VXLAN.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_Teredo.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_GTPv1.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FileEntropy.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FileExtract.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FileExtract.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_FileHash.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_PE.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_X509.events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_X509.types.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_X509.functions.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_X509.ocsp_events.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_AsciiReader.ascii.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_BenchmarkReader.benchmark.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_BinaryReader.binary.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_ConfigReader.config.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_RawReader.raw.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SQLiteReader.sqlite.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_AsciiWriter.ascii.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_NoneWriter.none.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_SQLiteWriter.sqlite.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/bif/plugins/Zeek_AF_Packet.af_packet.bif.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/spicy/init-framework.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/base/init-default.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/active-http.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/utils/exec.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/addrs.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/backtrace.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/conn-ids.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/dir.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/reporter/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/reporter/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/utils/paths.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/directions-and-hosts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/email.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/geoip-distance.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/numbers.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/queue.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/strings.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/thresholds.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/time.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/utils/urls.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/notice/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/weird.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/actions/email_admin.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/actions/page.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/actions/add-geodata.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/notice/actions/pp-alarms.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/signatures/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/signatures/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/packet-filter/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/packet-filter/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/packet-filter/netstats.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/software/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/software/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/intel/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/intel/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/intel/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/intel/input.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/sumstats/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/sumstats/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/average.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/hll_unique.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/last.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/max.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/min.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/sample.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/std-dev.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/variance.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/sum.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/topk.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/sumstats/plugins/unique.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/sumstats/non-cluster.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/tunnels/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/tunnels/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/conn/removal-hooks.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/openflow/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/openflow/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/openflow/types.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/openflow/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/openflow/plugins/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/openflow/plugins/ryu.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/openflow/plugins/log.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/openflow/plugins/broker.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/openflow/non-cluster.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/netcontrol/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/types.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugin.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/debug.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/openflow.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/packetfilter.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/broker.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/frameworks/netcontrol/plugins/acld.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/drop.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/shunt.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/netcontrol/non-cluster.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/telemetry/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/telemetry/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/misc/version.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/frameworks/spicy/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/frameworks/spicy/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/conn/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/conn/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/conn/contents.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/conn/inactivity.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/conn/polling.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/conn/thresholds.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/dce-rpc/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dce-rpc/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dce-rpc/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/dhcp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dhcp/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dhcp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/dnp3/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dnp3/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/dnp3/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/dns/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dns/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/dns/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/finger/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/finger/spicy-events.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/finger/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/ftp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ftp/utils-commands.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ftp/info.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ftp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/ftp/utils.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ftp/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ftp/gridftp.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/ssl/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/protocols/ssl/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/protocols/ssl/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/protocols/ssl/mozilla-ca-list.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/protocols/ssl/ct-list.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "        /opt/zeek/share/zeek/base/protocols/ssl/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "          /opt/zeek/share/zeek/base/files/x509/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "            /opt/zeek/share/zeek/base/files/x509/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "              /opt/zeek/share/zeek/base/files/hash/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "                /opt/zeek/share/zeek/base/files/hash/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "            /opt/zeek/share/zeek/base/files/x509/certificate-event-cache.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "            /opt/zeek/share/zeek/base/files/x509/log-ocsp.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/http/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/http/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/http/entities.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/http/utils.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/http/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/imap/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/imap/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/irc/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/irc/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/irc/dcc-send.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/irc/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/krb/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/krb/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/krb/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/krb/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/ldap/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ldap/spicy-events.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ldap/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ldap/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/modbus/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/modbus/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/modbus/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/mqtt/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/mqtt/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/mqtt/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/mysql/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/mysql/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/mysql/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/ntlm/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ntlm/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/ntp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ntp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ntp/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/pop3/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/quic/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/quic/spicy-events.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/quic/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/quic/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/radius/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/radius/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/base/protocols/radius/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/rdp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/rdp/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/rdp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/rfb/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/rfb/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/sip/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/sip/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/snmp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/snmp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/smb/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/const-dos-error.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/const-nt-status.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/smb1-main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/smb2-main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smb/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/smtp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smtp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smtp/entities.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/smtp/files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/socks/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/socks/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/socks/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/ssh/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/ssh/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/syslog/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/syslog/spicy-events.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/syslog/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/syslog/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/websocket/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/websocket/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/websocket/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/tunnels/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/protocols/xmpp/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/protocols/xmpp/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/files/pe/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/files/pe/consts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/files/pe/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/files/extract/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/base/files/extract/main.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/misc/find-checksum-offloading.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/misc/find-filtered-trace.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/base/misc/installation.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/builtin-plugins/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/builtin-plugins/Zeek_AF_Packet/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/builtin-plugins/Zeek_AF_Packet/init.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "/opt/zeek/share/zeek/site/local.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/misc/loaded-scripts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/tuning/defaults/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/policy/tuning/defaults/packet-fragments.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/policy/tuning/defaults/warnings.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/policy/tuning/defaults/extracted_file_limits.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/misc/capture-loss.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/misc/stats.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/software/vulnerable.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/software/version-changes.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ftp/software.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/smtp/software.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssh/software.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/http/software.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/dns/detect-external-names.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ftp/detect.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/conn/known-hosts.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/conn/known-services.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssl/known-certs.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssl/validate-certs.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssl/log-hostcerts-only.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssh/geo-data.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssh/detect-bruteforcing.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/ssh/interesting-hostnames.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/protocols/http/detect-sqli.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/files/hash-all-files.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/files/detect-MHR.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/notice/extend-email/hostnames.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/policy/frameworks/telemetry/log.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "  /opt/zeek/share/zeek/site/packages/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "    /opt/zeek/share/zeek/site/packages/json-streaming-logs/__load__.zeek"
+}
+{
+    _path: "loaded_scripts",
+    name: "      /opt/zeek/share/zeek/site/packages/json-streaming-logs/main.zeek"
+}

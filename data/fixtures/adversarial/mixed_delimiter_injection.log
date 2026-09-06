@@ -1,0 +1,2 @@
+field1,"quoted, field; with | pipes	and	tabs",field3
+CEF:0|Vendor|Prod|1.0|100|Name with | pipe|High|cs1="quoted; semicolon | and = equals" src=10.0.0.1

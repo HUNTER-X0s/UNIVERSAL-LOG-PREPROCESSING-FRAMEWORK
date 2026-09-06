@@ -1,0 +1,63 @@
+{
+    _path: "rfb",
+    ts: 2018-03-24T17:17:49.61413Z,
+    uid: "C22RRY2eUniPO7ldn7",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33671::(port=uint16),
+        resp_h: 10.47.3.142,
+        resp_p: 5900::port
+    },
+    client_major_version: "003",
+    client_minor_version: "008",
+    server_major_version: "003",
+    server_minor_version: "008",
+    authentication_method: "None",
+    auth: null::bool,
+    share_flag: null::bool,
+    desktop_name: null::string,
+    width: null::uint64,
+    height: null::uint64
+}
+{
+    _path: "rfb",
+    ts: 2018-03-24T17:21:26.207589Z,
+    uid: "CbLXnN1Hh3MPAZXvq",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 33187::(port=uint16),
+        resp_h: 10.47.8.19,
+        resp_p: 5900::port
+    },
+    client_major_version: "003",
+    client_minor_version: "008",
+    server_major_version: "003",
+    server_minor_version: "008",
+    authentication_method: "None",
+    auth: null::bool,
+    share_flag: null::bool,
+    desktop_name: null::string,
+    width: null::uint64,
+    height: null::uint64
+}
+{
+    _path: "rfb",
+    ts: 2018-03-24T17:28:03.303845Z,
+    uid: "CLwcLJ1Of2MLoRIzq6",
+    id: {
+        orig_h: 10.164.94.120,
+        orig_p: 45179::(port=uint16),
+        resp_h: 10.47.8.151,
+        resp_p: 5900::port
+    },
+    client_major_version: "003",
+    client_minor_version: "008",
+    server_major_version: "003",
+    server_minor_version: "008",
+    authentication_method: "None",
+    auth: null::bool,
+    share_flag: null::bool,
+    desktop_name: null::string,
+    width: null::uint64,
+    height: null::uint64
+}
