@@ -56,7 +56,7 @@ def get_nested_field(doc: dict[str, Any], path: str) -> Any:
                 found = False
                 break
             # Then index (non-negative only, guard against OOB)
-            if isinstance(container, (list, tuple)) and 0 <= idx < len(container):
+            if isinstance(container, list | tuple) and 0 <= idx < len(container):
                 curr = container[idx]
             else:
                 found = False

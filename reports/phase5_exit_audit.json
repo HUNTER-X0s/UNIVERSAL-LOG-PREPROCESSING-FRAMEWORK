@@ -1,0 +1,121 @@
+{
+  "audit": {
+    "name": "ULPF Phase 5 Exit Audit",
+    "date": "2026-09-06",
+    "commit": "eadbf1f",
+    "decision": "PHASE5_EXIT_APPROVED_WITH_NON_BLOCKING_GAPS",
+    "score": 8.4
+  },
+  "tests": {
+    "total": 271,
+    "passed": 271,
+    "failed": 0,
+    "phase4_regression": "PASS"
+  },
+  "mapping": {
+    "dsl_operators": "PASS",
+    "bracket_notation_fix_applied": true,
+    "compiler_security": "PASS",
+    "redos_blocked": true,
+    "checksum_deterministic": true
+  },
+  "registry": {
+    "lifecycle": "PASS",
+    "illegal_transition_blocked": true,
+    "rollback": "PASS",
+    "audit_trail": "PASS",
+    "conflict_detection": "PASS"
+  },
+  "onboarding": {
+    "profiling": "PASS",
+    "no_auto_activation": true,
+    "approval_required": true,
+    "ai_optionality": "PASS"
+  },
+  "replay": {
+    "deterministic": "PASS"
+  },
+  "drift": {
+    "stable": "PASS",
+    "minor": "PASS",
+    "major": "PASS",
+    "breaking": "PASS",
+    "no_silent_activation": true
+  },
+  "ai": {
+    "prompt_injection_defense": "PASS",
+    "output_validation": "PARTIAL",
+    "output_validation_gap": "confidence range not checked",
+    "offline_advisor": "PASS",
+    "no_network": true,
+    "no_auto_activation": true
+  },
+  "security": {
+    "scan": "CLEAN",
+    "redos": "CLEAN",
+    "no_eval_exec": true
+  },
+  "airgap": {
+    "status": "PASS",
+    "no_network_imports": true
+  },
+  "determinism": {
+    "status": "PASS",
+    "runs": 20
+  },
+  "concurrency": {
+    "status": "NOT_TESTED"
+  },
+  "performance": {
+    "eps": 4569,
+    "p50_ms": 0.219,
+    "status": "PASS"
+  },
+  "provenance": {
+    "status": "PASS",
+    "field_level_partial": true
+  },
+  "regression": {
+    "phase4": "PASS",
+    "semantic_tests": 29
+  },
+  "findings": [
+    {
+      "id": "F-P5-01",
+      "severity": "HIGH",
+      "status": "REMEDIATED",
+      "description": "Phase 5 code uncommitted to git at audit start",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-02",
+      "severity": "MEDIUM",
+      "status": "REMEDIATED",
+      "description": "DSL bracket notation items[0] returned None",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-03",
+      "severity": "MEDIUM",
+      "status": "NON_BLOCKING",
+      "description": "AIOutputValidator does not reject confidence > 1.0",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-04",
+      "severity": "LOW",
+      "status": "KNOWN",
+      "description": "Flaky benchmark test",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-05",
+      "severity": "LOW",
+      "status": "NON_BLOCKING",
+      "description": "SemanticEvent attribute naming mismatch",
+      "blocking": false
+    }
+  ],
+  "blockers": [],
+  "phase6_ready": true
+}

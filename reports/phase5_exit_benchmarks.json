@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-06",
+  "commit": "eadbf1f",
+  "semantic_hot_path": {
+    "samples": 500,
+    "elapsed_s": 0.109,
+    "eps": 4569,
+    "p50_ms": 0.219,
+    "phase4_baseline_eps": 5079,
+    "regression_pct": 10.0,
+    "status": "PASS"
+  },
+  "onboarding_pipeline": {
+    "status": "NOT_FORMALLY_BENCHMARKED"
+  }
+}

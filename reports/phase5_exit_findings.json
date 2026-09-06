@@ -1,0 +1,40 @@
+{
+  "findings": [
+    {
+      "id": "F-P5-01",
+      "severity": "HIGH",
+      "status": "REMEDIATED",
+      "description": "Phase 5 code uncommitted to git at audit start",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-02",
+      "severity": "MEDIUM",
+      "status": "REMEDIATED",
+      "description": "DSL bracket notation items[0] returned None",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-03",
+      "severity": "MEDIUM",
+      "status": "NON_BLOCKING",
+      "description": "AIOutputValidator does not reject confidence > 1.0",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-04",
+      "severity": "LOW",
+      "status": "KNOWN",
+      "description": "Flaky benchmark test",
+      "blocking": false
+    },
+    {
+      "id": "F-P5-05",
+      "severity": "LOW",
+      "status": "NON_BLOCKING",
+      "description": "SemanticEvent attribute naming mismatch",
+      "blocking": false
+    }
+  ],
+  "blockers": []
+}
