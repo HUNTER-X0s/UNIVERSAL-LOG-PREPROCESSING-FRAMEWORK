@@ -1,6 +1,6 @@
 {
   "audit_title": "ULPF Phase 10 Mission Operations Plane - Forensic Exit Audit",
-  "timestamp": "2026-09-07T20:38:03.829230+00:00",
+  "timestamp": "2026-09-07T20:43:14.527393+00:00",
   "phase": "PHASE_10",
   "gates_passed": 10,
   "gates_total": 10,
@@ -11,7 +11,7 @@
       "gate_id": "G-01",
       "name": "Unit/Integration Tests (33/33)",
       "status": "PASS",
-      "details": "33 passed, 2 warnings in 2.47s"
+      "details": "33 passed, 2 warnings in 5.07s"
     },
     {
       "gate_id": "G-02",
@@ -53,19 +53,19 @@
       "gate_id": "G-08",
       "name": "Posture Engine SLA (>=50k ops/s)",
       "status": "PASS",
-      "details": "benchmark: 66,137 ops/s (SLA: >=50,000) | audit smoke: 19,806 ops/s"
+      "details": "benchmark: 66,137 ops/s (SLA: >=50,000) | audit smoke: 18,331 ops/s"
     },
     {
       "gate_id": "G-09",
       "name": "Pipeline E2E SLA (>=100k eps)",
       "status": "PASS",
-      "details": "137,495 eps (SLA: >=100,000)"
+      "details": "132,065 eps (SLA: >=100,000)"
     },
     {
       "gate_id": "G-10",
       "name": "Phase 0-9 Regression Freeze",
       "status": "PASS",
-      "details": "583 passed, 2 warnings, 19 subtests passed in 43.62s"
+      "details": "583 passed, 2 warnings, 19 subtests passed in 57.42s"
     }
   ]
 }

@@ -14,9 +14,7 @@ Emits:
 from __future__ import annotations
 
 import json
-import os
 import sys
-import time
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -52,12 +50,9 @@ from ulpf_mission.copilot.advisor import AIAnalystCopilot
 from ulpf_mission.cross_domain.analytics import CrossDomainAnalytics
 from ulpf_mission.early_warning.engine import EarlyWarningEngine
 from ulpf_mission.fusion.engine import SignalFusionEngine
-from ulpf_mission.health.model import MissionHealthModel
-from ulpf_mission.models.health import SubsystemHealthState
 from ulpf_mission.models.state import MissionOperationalState
 from ulpf_mission.orchestration.pipeline import MissionAnalysisPipeline
 from ulpf_mission.posture.engine import SecurityPostureEngine
-
 
 # ---------------------------------------------------------------------------
 # Chaos Injection Harness
@@ -263,7 +258,7 @@ def main() -> int:
 
     print("\n" + "=" * 70)
     print(f"Chaos Verification: {passed_count}/{total_count} PASSED (100% Fault Containment)")
-    print(f"Reports saved to:")
+    print("Reports saved to:")
     print(f"  - {chaos_results_file}")
     print(f"  - {failure_matrix_file}")
     print("=" * 70)

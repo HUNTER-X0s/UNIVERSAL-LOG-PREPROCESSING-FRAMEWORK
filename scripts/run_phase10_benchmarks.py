@@ -16,7 +16,6 @@ Outputs reproducible benchmark metrics to reports/phase10_benchmarks.json.
 from __future__ import annotations
 
 import json
-import os
 import platform
 import sys
 import time
@@ -51,15 +50,8 @@ for pkg in (
     if pkg_path not in sys.path:
         sys.path.insert(0, pkg_path)
 
-from ulpf_mission.copilot.advisor import AIAnalystCopilot
-from ulpf_mission.coverage.matrix import DetectionCoverageMatrix
-from ulpf_mission.coverage.gap_analyzer import DetectionGapAnalyzer
-from ulpf_mission.coverage.reliability import SourceReliabilityCalculator
-from ulpf_mission.cross_domain.analytics import CrossDomainAnalytics
 from ulpf_mission.early_warning.engine import EarlyWarningEngine
 from ulpf_mission.fusion.engine import SignalFusionEngine
-from ulpf_mission.health.model import MissionHealthModel
-from ulpf_mission.metrics.sla import OperationalMetricsTracker
 from ulpf_mission.orchestration.pipeline import MissionAnalysisPipeline
 from ulpf_mission.playbooks.engine import ResponsePlaybookEngine
 from ulpf_mission.posture.engine import SecurityPostureEngine
@@ -98,7 +90,7 @@ def benchmark_early_warning_engine(iterations: int = 5000) -> dict[str, Any]:
     """Benchmark early warning acceleration analysis."""
     engine = EarlyWarningEngine()
     start = time.perf_counter()
-    for i in range(iterations):
+    for _ in range(iterations):
         engine.analyze(
             current_failure_rate=0.15,
             baseline_failure_rate=0.03,
