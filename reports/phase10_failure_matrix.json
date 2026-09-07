@@ -1,0 +1,57 @@
+{
+  "matrix_title": "ULPF Subsystem Fault Isolation Matrix",
+  "timestamp": "2026-09-07T20:27:47.838083+00:00",
+  "air_gap_compliant": true,
+  "scenarios": [
+    {
+      "test_id": "CHAOS-01",
+      "subsystem": "security_posture",
+      "failure_type": "RuntimeError: Memory segmentation in posture matrix",
+      "ingestion_blocked": false,
+      "fault_isolated": true,
+      "resulting_state": "DEGRADED",
+      "processed_events": 50,
+      "status": "PASS"
+    },
+    {
+      "test_id": "CHAOS-02",
+      "subsystem": "early_warning",
+      "failure_type": "ZeroDivisionError: Baseline drift overflow",
+      "ingestion_blocked": false,
+      "fault_isolated": true,
+      "resulting_state": "DEGRADED",
+      "processed_events": 50,
+      "status": "PASS"
+    },
+    {
+      "test_id": "CHAOS-03",
+      "subsystem": "signal_fusion",
+      "failure_type": "TimeoutError: Fusion lock acquisition timed out",
+      "ingestion_blocked": false,
+      "fault_isolated": true,
+      "resulting_state": "DEGRADED",
+      "processed_events": 51,
+      "status": "PASS"
+    },
+    {
+      "test_id": "CHAOS-04",
+      "subsystem": "cross_domain_analytics",
+      "failure_type": "KeyError: Missing schema attribute in domain graph",
+      "ingestion_blocked": false,
+      "fault_isolated": true,
+      "resulting_state": "DEGRADED",
+      "processed_events": 50,
+      "status": "PASS"
+    },
+    {
+      "test_id": "CHAOS-05",
+      "subsystem": "ai_analyst_copilot",
+      "failure_type": "ValueError: Prompt buffer overflow in advisory parser",
+      "ingestion_blocked": false,
+      "fault_isolated": true,
+      "resulting_state": "DEGRADED",
+      "processed_events": 51,
+      "status": "PASS"
+    }
+  ]
+}

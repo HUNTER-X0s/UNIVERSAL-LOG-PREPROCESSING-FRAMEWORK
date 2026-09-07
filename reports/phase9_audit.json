@@ -1,0 +1,74 @@
+{
+  "audit_name": "ULPF Phase 9 Advanced Security Analytics Plane Exit Audit",
+  "audit_timestamp": "2026-09-07T12:16:04.376383+00:00",
+  "mission": "NTRO / SIH26156 Universal Log Preprocessing Framework",
+  "phase": 9,
+  "final_gate_verdict": "APPROVED_PRODUCTION_HARDENED",
+  "platform": {
+    "os": "Windows",
+    "python": "3.12.10",
+    "machine": "AMD64"
+  },
+  "gates": {
+    "gate_1_phase9_tests": {
+      "status": "PASS",
+      "details": "23/23 tests passed cleanly",
+      "output_summary": "23 passed, 2 warnings in 1.11s"
+    },
+    "gate_2_full_regression": {
+      "status": "PASS",
+      "details": "551 tests across all phases pass with zero regressions",
+      "output_summary": "551 passed, 2 warnings, 19 subtests passed in 18.17s"
+    },
+    "gate_3_static_analysis": {
+      "status": "PASS",
+      "ruff_clean": true,
+      "mypy_clean": true,
+      "details": "0 lint errors, 40 source files fully typed"
+    },
+    "gate_4_air_gap_anti_fabrication": {
+      "status": "PASS",
+      "offline_deterministic_advisor": true,
+      "prompt_injection_redaction": true,
+      "external_network_calls": 0
+    },
+    "gate_5_threat_intel": {
+      "status": "PASS",
+      "matching_verified": true,
+      "lifecycle_states_supported": [
+        "DRAFT",
+        "VALIDATED",
+        "ACTIVE",
+        "EXPIRED",
+        "REVOKED",
+        "ARCHIVED"
+      ]
+    },
+    "gate_6_triage_and_flood_control": {
+      "status": "PASS",
+      "triage_classifier_ok": true,
+      "deduplication_fingerprinting_ok": true,
+      "flood_control_rate_limit_ok": true
+    },
+    "gate_7_evidence_lineage": {
+      "status": "PASS",
+      "manifest_sha256": "a87c6af7b97d2f34371d93f5245a49393a861336f56c54492b4fdcceb65833c1",
+      "backward_traceability_verified": true
+    },
+    "gate_8_soar_safety": {
+      "status": "PASS",
+      "permitted_action_executed": true,
+      "destructive_action_blocked": true
+    },
+    "gate_9_persistence_and_migrations": {
+      "status": "PASS",
+      "migrations_applied": true,
+      "repository_save_get_ok": true
+    },
+    "gate_10_artifacts_verification": {
+      "status": "PASS",
+      "soc_console_spa_exists": true,
+      "benchmarks_report_exists": true
+    }
+  }
+}

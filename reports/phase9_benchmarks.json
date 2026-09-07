@@ -1,0 +1,59 @@
+{
+  "suite": "ULPF Phase 9 Advanced Security Analytics Plane Benchmarks",
+  "benchmark_date": "2026-09-07T12:13:35.470151+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64",
+    "python_version": "3.12.10"
+  },
+  "benchmarks": {
+    "threat_intelligence_matching": {
+      "indicators_registered": 1000,
+      "registration_seconds": 0.0196,
+      "events_scanned": 10000,
+      "total_matches": 7591,
+      "scan_seconds": 0.1695,
+      "throughput_events_per_sec": 58994.23
+    },
+    "alert_deduplication": {
+      "total_detections": 10000,
+      "new_alerts_created": 50,
+      "deduplicated_detections": 9950,
+      "dedup_ratio_pct": 99.5,
+      "duration_seconds": 0.0527,
+      "throughput_detections_per_sec": 189673.42
+    },
+    "alert_triage_classification": {
+      "total_classifications": 20000,
+      "critical_tier_count": 4200,
+      "duration_seconds": 0.0209,
+      "throughput_classifications_per_sec": 956795.88
+    },
+    "behavioral_profiling_and_drift": {
+      "events_evaluated": 1000,
+      "anomalies_detected": 0,
+      "drift_state": "STABLE",
+      "baseline_risk": 15.0,
+      "duration_seconds": 0.0003,
+      "throughput_events_per_sec": 2897709.27
+    },
+    "attack_path_traversal": {
+      "traversals_executed": 200,
+      "total_path_edges_discovered": 640,
+      "duration_seconds": 0.0082,
+      "average_traversal_latency_ms": 0.041,
+      "traversals_per_sec": 24444.2
+    },
+    "evidence_packaging_sha256": {
+      "packages_sealed": 20,
+      "items_per_package": 510,
+      "overall_sha256_sample": "6642d759006ba998...",
+      "duration_seconds": 0.0668,
+      "packages_per_sec": 299.31,
+      "item_hashing_throughput_per_sec": 152646.39
+    }
+  },
+  "air_gap_guarantee": "100% OFFLINE \u2014 ZERO EXTERNAL NETWORK CALLS",
+  "status": "PASS"
+}

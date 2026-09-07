@@ -1,0 +1,67 @@
+{
+  "benchmark_suite": "Phase 10 \u2014 Mission Operations Plane Benchmark Suite",
+  "timestamp": "2026-09-07T20:24:51.476338+00:00",
+  "environment": {
+    "python_version": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_arch": "AMD64",
+    "air_gap_compliant": true,
+    "anti_fabrication": true
+  },
+  "benchmarks": {
+    "security_posture": {
+      "iterations": 20000,
+      "duration_s": 0.3024,
+      "throughput_ops_sec": 66136.89,
+      "latency_us": 15.12
+    },
+    "early_warning": {
+      "iterations": 10000,
+      "duration_s": 0.1785,
+      "throughput_ops_sec": 56035.15,
+      "latency_us": 17.85
+    },
+    "signal_fusion": {
+      "iterations": 10000,
+      "signals_fused_total": 40000,
+      "duration_s": 0.2294,
+      "throughput_fusions_sec": 43588.39,
+      "latency_us": 22.94
+    },
+    "scenario_validation": {
+      "iterations": 200,
+      "scenarios_evaluated": 1200,
+      "steps_validated": 2800,
+      "duration_s": 0.0171,
+      "scenarios_per_sec": 69992.88,
+      "steps_per_sec": 163316.73
+    },
+    "replay_lab": {
+      "events_replayed": 10000,
+      "output_sha256": "808ca19c405426af32f60363bb0f325ce9cecad689d61abcb42c078f34520ff3",
+      "duration_s": 0.0116,
+      "throughput_eps": 858907.31
+    },
+    "simulation_engine": {
+      "total_generated": 19996,
+      "attack_events": 4000,
+      "benign_events": 16000,
+      "duration_s": 0.1694,
+      "generation_rate_eps": 118092.48
+    },
+    "playbook_dry_run": {
+      "iterations": 5000,
+      "duration_s": 0.0404,
+      "throughput_dry_runs_sec": 123909.29,
+      "latency_us": 8.07
+    },
+    "mission_pipeline": {
+      "events_processed": 5000,
+      "operational_state": "ALERT_STORM",
+      "fused_signals_count": 1,
+      "duration_s": 0.0166,
+      "throughput_eps": 301535.42,
+      "stage_errors": {}
+    }
+  }
+}
