@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-07T22:04:02.593475+00:00",
+  "timestamp": "2026-09-07T22:11:25.750744+00:00",
   "forbidden_modules_scanned": [
-    "requests",
-    "websocket",
-    "boto3",
-    "google.cloud",
     "httpx",
+    "boto3",
+    "websocket",
+    "requests",
+    "google.cloud",
     "aiohttp",
     "urllib.request"
   ],

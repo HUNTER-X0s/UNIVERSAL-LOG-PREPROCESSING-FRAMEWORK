@@ -1,22 +1,11 @@
 {
-  "timestamp": "2026-09-07T22:04:04.329717+00:00",
-  "total_findings": 4,
+  "timestamp": "2026-09-07T22:11:27.253319+00:00",
+  "total_findings": 3,
   "critical_count": 0,
-  "high_count": 1,
+  "high_count": 0,
   "medium_count": 1,
   "low_count": 2,
   "findings": [
-    {
-      "id": "FINDING-GIT-01",
-      "severity": "HIGH",
-      "component": "Git Baseline",
-      "claim": "Repository is clean and at commit fab947e with PHASE11_MISSION_READY_APPROVED tag",
-      "evidence": "branch=main, head=fab947e, dirty_status=True",
-      "impact": "Release reproducibility compromised if working tree is dirty or tags missing",
-      "reproduction": "git status --porcelain",
-      "recommendation": "Commit or stash changes before release",
-      "status": "OPEN"
-    },
     {
       "id": "FINDING-PARSER-01",
       "severity": "LOW",

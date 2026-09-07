@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-09-07T22:04:04.310213+00:00",
+  "timestamp": "2026-09-07T22:11:27.248928+00:00",
   "benchmark_classification": "CONTROLLED COMPONENT BENCHMARK",
   "trials": [
-    301434.07,
-    311910.29,
-    271263.68
+    260316.68,
+    219217.72,
+    341363.92
   ],
-  "min_eps": 271263.68,
-  "max_eps": 311910.29,
-  "mean_eps": 294869.35,
-  "spread_percent": 14.98,
+  "min_eps": 219217.72,
+  "max_eps": 341363.92,
+  "mean_eps": 273632.77,
+  "spread_percent": 55.72,
   "target_threshold_eps": 10000.0,
   "status": "REPRODUCIBLE"
 }

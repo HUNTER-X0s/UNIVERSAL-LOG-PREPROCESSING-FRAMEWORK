@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-07T22:04:04.328768+00:00",
+  "timestamp": "2026-09-07T22:11:27.252318+00:00",
   "release_tag": "PHASE11_MISSION_READY_APPROVED",
-  "commit": "fab947e",
+  "commit": "b47b77c",
   "all_hashes_matched": true,
   "artifact_verification": {
     "reports/phase11_performance_certification.json": true,

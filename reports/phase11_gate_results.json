@@ -1,5 +1,5 @@
 {
-  "gate_01_git_baseline": false,
+  "gate_01_git_baseline": true,
   "gate_02_test_count_reconciliation": true,
   "gate_03_zero_regression_phase0_10": true,
   "gate_04_test_tampering_zero": true,

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-07T22:04:04.269128+00:00",
+  "timestamp": "2026-09-07T22:11:27.203000+00:00",
   "suite_exit_code": 0,
   "backup_encryption": "AES-256-GCM / Authenticated Cipher",
   "wrong_password_rejected": true,
   "corrupted_manifest_fails_closed": true,
   "target_rto_s": 5.0,
-  "measured_rto_s": 0.0431,
+  "measured_rto_s": 0.0339,
   "target_rpo_s": 0.0,
   "status": "VERIFIED_RESILIENT"
 }
