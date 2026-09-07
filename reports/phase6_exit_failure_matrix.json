@@ -1,0 +1,49 @@
+{
+  "scenarios": [
+    {
+      "id": "FAIL-01",
+      "component": "Intake Buffer",
+      "failure": "Buffer capacity exceeded (10,000 events in backlog)",
+      "policy": "REJECT / DLQ",
+      "expected": "Explicit BufferFullError raised or routed to DLQ; no silent dropping",
+      "actual": "BufferFullError raised on REJECT; DLQ overflow recorded on DLQ policy",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-02",
+      "component": "Raw Evidence Storage",
+      "failure": "Disk payload bit-rot or manual adversary tampering",
+      "policy": "Detect & Block",
+      "expected": "StorageIntegrityError raised on read; corrupted payload never delivered",
+      "actual": "SHA-256 verification mismatch detected; StorageIntegrityError raised",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-03",
+      "component": "Delivery Outbox",
+      "failure": "SIEM downstream sink offline or throwing HTTP 503",
+      "policy": "Fault Isolation & Retry",
+      "expected": "OCSF and OTel sinks succeed; SIEM failure marked in Outbox; pipeline unaffected",
+      "actual": "Partial fan-out failure isolated; SIEM marked FAILED; canonical pipeline intact",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-04",
+      "component": "Search Index",
+      "failure": "Search index in-memory crash or catastrophic deletion",
+      "policy": "Rebuild from Canonical Store",
+      "expected": "Zero canonical data loss; index rebuilt deterministically from UCE/semantic store",
+      "actual": "rebuild_index() repopulated all 15 records with identical IDs and attributes",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-05",
+      "component": "Parser / Normalization",
+      "failure": "Poison payload (nested null bytes, malformed framing)",
+      "policy": "DLQ Escalation",
+      "expected": "Pipeline does not crash worker; event routed to DLQManager with error context",
+      "actual": "DLQRecord created with error_type and payload_preview; worker continues",
+      "status": "PASS"
+    }
+  ]
+}

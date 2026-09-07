@@ -1,0 +1,36 @@
+{
+  "crash_recovery_matrix": [
+    {
+      "stage": "Raw Storage (Filesystem)",
+      "crash_point": "Crash immediately after file write",
+      "expected": "File exists on disk with valid SHA-256; survives restart",
+      "actual": "Survives process restart intact on filesystem",
+      "loss_possible": false,
+      "recovery": "Re-read from disk by raw_event_id"
+    },
+    {
+      "stage": "Canonical UCE (MemoryUCERepository)",
+      "crash_point": "Process crash / SIGKILL during processing",
+      "expected": "In-memory state lost; requires durable SQL/Postgres adapter in production",
+      "actual": "State lost on process death (Reference backend behavior)",
+      "loss_possible": true,
+      "recovery": "Replay from raw evidence store"
+    },
+    {
+      "stage": "Outbox Dispatcher",
+      "crash_point": "Crash between sink delivery and mark_delivered",
+      "expected": "Duplicate delivery intent retried on next startup (at-least-once)",
+      "actual": "At-least-once redelivery; idempotent sinks handle gracefully",
+      "loss_possible": false,
+      "recovery": "Dispatcher polls pending intents"
+    },
+    {
+      "stage": "Search Index",
+      "crash_point": "Process crash during indexing",
+      "expected": "Search index reconstructed from canonical UCE/semantic repository",
+      "actual": "rebuild_index() rebuilds from canonical store",
+      "loss_possible": false,
+      "recovery": "Rebuild trigger on startup"
+    }
+  ]
+}

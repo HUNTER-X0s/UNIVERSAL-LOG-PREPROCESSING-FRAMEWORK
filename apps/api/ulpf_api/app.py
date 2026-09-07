@@ -20,6 +20,7 @@ from ulpf_platform.middleware import FoundationMiddleware
 
 from ulpf_api.routes.foundation import router as foundation_router
 from ulpf_api.routes.intake import router as intake_router
+from ulpf_api.routes.intelligence import router as intelligence_router
 from ulpf_api.routes.platform import router as platform_router
 
 
@@ -59,6 +60,8 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
     app.include_router(intake_router, prefix=resolved_settings.api_prefix)
     app.include_router(platform_router, prefix=resolved_settings.api_prefix)
     app.include_router(platform_router)
+    app.include_router(intelligence_router, prefix=resolved_settings.api_prefix)
+    app.include_router(intelligence_router)
 
     @app.exception_handler(ApiError)
     async def handle_api_error(_: Request, exc: ApiError) -> JSONResponse:

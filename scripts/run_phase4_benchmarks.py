@@ -22,17 +22,14 @@ for pkg in ("packages/semantic", "packages/normalization", "packages/parser-runt
     if pkg_path not in sys.path:
         sys.path.insert(0, pkg_path)
 
-from ulpf_semantic.analytics.fingerprint import EventFingerprinter
 from ulpf_semantic.classification.classifier import SemanticClassifier
 from ulpf_semantic.entities.extractor import EntityExtractor
 from ulpf_semantic.indicators.extractor import IndicatorExtractor
 from ulpf_semantic.mapping.engine import SemanticMapper
-from ulpf_semantic.models import SemanticTriple
 from ulpf_semantic.projections.ocsf.mapper import OCSFProjection
 from ulpf_semantic.projections.otel.mapper import OTelProjection
 from ulpf_semantic.risk.evaluator import RiskEvaluator
 from ulpf_semantic.service import SemanticService
-from ulpf_semantic.taxonomy.actions import map_action
 
 FIREWALL_UCE = {
     "event_id": "bench-fw-001",

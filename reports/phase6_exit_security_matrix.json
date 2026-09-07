@@ -1,0 +1,44 @@
+{
+  "attacks": [
+    {
+      "attack": "Unauthenticated Administrative Role Claim",
+      "surface": "HTTP API Header: X-Role: platform-admin",
+      "test": "POST /api/v1/events/ingest without token",
+      "result": "Accepted with platform-admin privileges",
+      "severity": "HIGH (Classified as Reference / Dev Security Model per Rule 205)",
+      "finding_id": "F-P6-AUTH-01"
+    },
+    {
+      "attack": "Path Traversal in Raw Evidence Store",
+      "surface": "raw_event_id='../../etc/passwd'",
+      "test": "FilesystemRawEvidenceRepository.put()",
+      "result": "Sanitized and strictly contained inside base_dir sandbox",
+      "severity": "CLEAN / NEUTRALIZED",
+      "finding_id": null
+    },
+    {
+      "attack": "Search Query Pagination Resource Exhaustion",
+      "surface": "GET /api/v1/search?limit=1000000",
+      "test": "API Query Validation and MemorySearchIndex.search()",
+      "result": "API returns 422 Unprocessable Entity; memory store hard-caps at 100",
+      "severity": "CLEAN / BOUNDED",
+      "finding_id": null
+    },
+    {
+      "attack": "Dynamic Code Execution / Unsafe Deserialization",
+      "surface": "Payload and configuration parser",
+      "test": "Security AST scan for eval, exec, pickle, os.system",
+      "result": "Zero dynamic execution tokens found across apps and packages",
+      "severity": "CLEAN",
+      "finding_id": null
+    },
+    {
+      "attack": "Secret and Credential Leakage in Logs",
+      "surface": "Structured JSON logging formatter",
+      "test": "Log payload containing password=secret and Bearer token",
+      "result": "Automatic regex masking replaces secrets with [REDACTED]",
+      "severity": "CLEAN",
+      "finding_id": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "crash_recovery_matrix": [
+    {
+      "stage": "Durable UCE (Relational DB)",
+      "crash_point": "SIGKILL during write transaction",
+      "expected": "WAL journal recovers on startup; write-once integrity preserved; zero data loss",
+      "actual": "SQLite WAL rollback journal safely restores consistent state",
+      "loss_possible": false,
+      "recovery": "Automatic WAL recovery on connection open"
+    },
+    {
+      "stage": "Distributed Stream",
+      "crash_point": "Crash during event processing",
+      "expected": "Offset was NOT committed; event re-polled and reprocessed",
+      "actual": "Committed offset untouched; next poll receives uncommitted event",
+      "loss_possible": false,
+      "recovery": "Consumer group coordinator re-assigns partition"
+    },
+    {
+      "stage": "Durable Outbox",
+      "crash_point": "Process crash during external sink delivery",
+      "expected": "Intent remains in PENDING/FAILED state in DB; redelivered on startup",
+      "actual": "Outbox table retains pending intent; redelivery executed",
+      "loss_possible": false,
+      "recovery": "OutboxDispatcher polling loop sweeps pending intents"
+    },
+    {
+      "stage": "Disaster Recovery",
+      "crash_point": "Total host loss / disk destruction",
+      "expected": "Full cluster recovery from encrypted checksummed backup archive",
+      "actual": "BackupManager.restore_backup() restores all database and config state",
+      "loss_possible": false,
+      "recovery": "Cold restore drill restores DB and verifies checksums"
+    }
+  ]
+}

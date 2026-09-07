@@ -7,12 +7,16 @@ Enforces:
 - Rule 13/14: Repository interfaces / ports
 """
 
+from __future__ import annotations
+
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from ulpf_runtime.models import AuditActionRecord, DeliveryIntent
+if TYPE_CHECKING:
+    from ulpf_runtime.models import AuditActionRecord, DeliveryIntent
+
 
 
 @dataclass(frozen=True)

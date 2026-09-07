@@ -1,0 +1,59 @@
+{
+  "audit_meta": {
+    "phase": 6,
+    "title": "Operational Telemetry Processing Platform Exit Audit",
+    "auditor": "Final Independent Forensic Exit Auditor & Release-Gate Authority",
+    "audit_timestamp": "2026-09-06T20:58:53.020333+00:00",
+    "head_sha": "28f040177c9d23e92da4cf506f151c84cd61d9b0",
+    "baseline_commit": "8a7950d",
+    "verdict": "PHASE6_EXIT_APPROVED_WITH_NON_BLOCKING_GAPS",
+    "composite_score": 8.9,
+    "phase6_frozen": true,
+    "phase7_authorized": true
+  },
+  "regression": {
+    "total_tests": 319,
+    "passed": 319,
+    "failed": 0,
+    "subtests": 19,
+    "pytest_status": "PASS",
+    "ruff_status": "PASS",
+    "mypy_status": "PASS",
+    "phase0_5_regressions": 0
+  },
+  "benchmarks": {
+    "e2e_pipeline_eps": 35.0,
+    "p50_latency_ms": 27.668,
+    "p95_latency_ms": 51.326,
+    "p99_latency_ms": 66.949,
+    "max_latency_ms": 82.711,
+    "sample_count": 500
+  },
+  "invariants_verified": {
+    "I1_raw_evidence_immutable": true,
+    "I2_uce_immutable": true,
+    "I3_no_silent_data_loss": true,
+    "I4_explicit_ack_boundary": true,
+    "I5_bounded_retries": true,
+    "I6_bounded_queues": true,
+    "I7_explicit_dlq": true,
+    "I8_deterministic_idempotency": true,
+    "I9_pinned_mapping_replay": true,
+    "I10_search_derived_not_authoritative": true,
+    "I11_isolated_delivery_sinks": true,
+    "I12_authorized_admin_actions": true,
+    "I13_zero_dynamic_code_execution": true,
+    "I14_zero_mandatory_internet_access": true,
+    "I15_safe_bounded_observability": true,
+    "I16_phase1_5_contracts_intact": true,
+    "I17_reproducible_historical_lineage": true
+  },
+  "findings_summary": {
+    "blocker": 0,
+    "critical": 0,
+    "high": 1,
+    "medium": 1,
+    "low": 2,
+    "info": 0
+  }
+}

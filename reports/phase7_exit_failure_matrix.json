@@ -1,0 +1,58 @@
+{
+  "scenarios": [
+    {
+      "id": "FAIL-P7-01",
+      "component": "Authentication Gateway",
+      "failure": "Forged or tampered JWT token payload / signature",
+      "policy": "Fail Closed",
+      "expected": "AuthenticationError (HTTP 401); zero privileged access",
+      "actual": "Token rejected; AuthenticationError raised; no execution allowed",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-P7-02",
+      "component": "Durable Relational UCE",
+      "failure": "Attempted overwrite of existing canonical UCE record (duplicate ID)",
+      "policy": "Write-Once Rejection",
+      "expected": "PersistenceError raised; original UCE immutable",
+      "actual": "UNIQUE constraint violation caught; PersistenceError raised",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-P7-03",
+      "component": "Object Storage Adapter",
+      "failure": "Path traversal escape attempt ('../../etc/passwd')",
+      "policy": "Path Containment",
+      "expected": "PathTraversalError raised; access outside storage root blocked",
+      "actual": "PathTraversalError raised; disk access strictly confined to root",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-P7-04",
+      "component": "Database Transaction",
+      "failure": "Failure during multi-entity semantic batch write",
+      "policy": "Automatic Transaction Rollback",
+      "expected": "Zero partial records written; clean rollback to pre-transaction state",
+      "actual": "Transaction context manager caught exception and issued ROLLBACK",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-P7-05",
+      "component": "Distributed Consumer Group",
+      "failure": "Worker thread crash prior to post-persistence offset commit",
+      "policy": "At-Least-Once Replay",
+      "expected": "New or surviving consumer resumes from last committed offset; zero event loss",
+      "actual": "Uncommitted events replayed from committed offset table",
+      "status": "PASS"
+    },
+    {
+      "id": "FAIL-P7-06",
+      "component": "Search Index Adapter",
+      "failure": "Catastrophic index corruption / crash",
+      "policy": "Rebuild from Source-of-Truth",
+      "expected": "Canonical UCE/semantic store intact; search rebuilt completely via rebuild_index()",
+      "actual": "All indexed events restored from durable semantic repository",
+      "status": "PASS"
+    }
+  ]
+}

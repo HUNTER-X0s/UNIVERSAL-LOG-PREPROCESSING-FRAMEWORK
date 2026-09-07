@@ -28,8 +28,8 @@ ulpf-api = "ulpf_api.main:main"
 ulpf-worker = "ulpf_worker.main:main"
 
 [tool.setuptools.packages.find]
-where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability"]
-include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_normalization*", "ulpf_parser_runtime*", "ulpf_platform*", "ulpf_semantic*", "ulpf_mapping*", "ulpf_onboarding*", "ulpf_ai*", "ulpf_runtime*", "ulpf_streaming*", "ulpf_storage*", "ulpf_search*", "ulpf_delivery*", "ulpf_observability*"]
+where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence"]
+include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_normalization*", "ulpf_parser_runtime*", "ulpf_platform*", "ulpf_semantic*", "ulpf_mapping*", "ulpf_onboarding*", "ulpf_ai*", "ulpf_runtime*", "ulpf_streaming*", "ulpf_storage*", "ulpf_search*", "ulpf_delivery*", "ulpf_observability*", "ulpf_security*", "ulpf_intelligence*"]
 
 [tool.ruff]
 target-version = "py312"
@@ -42,12 +42,12 @@ ignore = ["S104", "E501"]
 
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["S101", "E501"]
-"tests/*.py" = ["S101", "E501"]
-"tests/**" = ["S101", "E501"]
-"scripts/*" = ["E501", "S101", "T201"]
-"scripts/*.py" = ["E501", "S101", "T201"]
-"scripts/**" = ["E501", "S101", "T201"]
+"tests/*" = ["S101", "S105", "S106", "E501"]
+"tests/*.py" = ["S101", "S105", "S106", "E501"]
+"tests/**" = ["S101", "S105", "S106", "E501"]
+"scripts/*" = ["E501", "S101", "S603", "S607", "T201"]
+"scripts/*.py" = ["E501", "S101", "S603", "S607", "T201"]
+"scripts/**" = ["E501", "S101", "S603", "S607", "T201"]
 
 
 
@@ -60,7 +60,7 @@ exclude = [
   "^build/",
 ]
 
-mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability"]
+mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence"]
 
 
 [[tool.mypy.overrides]]
@@ -94,4 +94,6 @@ pythonpath = [
   "packages/search",
   "packages/delivery",
   "packages/observability",
+  "packages/security",
+  "packages/intelligence",
 ]

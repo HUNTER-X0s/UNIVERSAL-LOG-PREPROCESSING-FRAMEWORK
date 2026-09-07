@@ -11,13 +11,11 @@ generates all required machine-readable reports and exit documents.
 import copy
 import hashlib
 import json
-import os
-import re
+import subprocess
 import sys
 import time
-import subprocess
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -28,36 +26,30 @@ for pkg in ["packages/semantic", "packages/normalization", "packages/parser-runt
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from ulpf_semantic.service import SemanticService
-from ulpf_semantic.models import (
-    SemanticEvent, SemanticStatus, SemanticProvenance, EntityType, IndicatorType
-)
-from ulpf_semantic.taxonomy.actions import ActionTaxonomy
-from ulpf_semantic.taxonomy.results import ResultStatus
-from ulpf_semantic.mapping.engine import SemanticMapper
 from ulpf_semantic.classification.classifier import SemanticClassifier
 from ulpf_semantic.entities.extractor import EntityExtractor
 from ulpf_semantic.indicators.extractor import IndicatorExtractor
+from ulpf_semantic.models import (
+    SemanticEvent,
+)
+from ulpf_semantic.projections.base import BaseProjection, ProjectionResult, ProjectionStatus
+from ulpf_semantic.projections.ocsf.mapper import OCSFProjection
+from ulpf_semantic.projections.registry import ProjectionRegistry
 from ulpf_semantic.relationships.builder import RelationshipBuilder
 from ulpf_semantic.risk.evaluator import RiskEvaluator
-from ulpf_semantic.analytics.fingerprint import EventFingerprinter
-from ulpf_semantic.projections.ocsf.mapper import OCSFProjection
-from ulpf_semantic.projections.otel.mapper import OTelProjection
-from ulpf_semantic.projections.base import BaseProjection, ProjectionResult, ProjectionStatus
-from ulpf_semantic.projections.registry import ProjectionRegistry
-from ulpf_semantic.validation import SemanticEventValidator
+from ulpf_semantic.service import SemanticService
 
 
 def run_master_exit_audit() -> dict[str, Any]:
     print("=" * 80)
     print("ULPF PHASE 4 MASTER ADVERSARIAL EXIT AUDIT")
-    print(f"Timestamp: {datetime.now(timezone.utc).isoformat()}")
+    print(f"Timestamp: {datetime.now(UTC).isoformat()}")
     print(f"Repository Root: {REPO_ROOT}")
     print("=" * 80)
 
     audit_data: dict[str, Any] = {
         "audit_version": "1.0.0-FINAL-EXIT",
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(UTC).isoformat(),
         "repo_root": str(REPO_ROOT),
     }
 

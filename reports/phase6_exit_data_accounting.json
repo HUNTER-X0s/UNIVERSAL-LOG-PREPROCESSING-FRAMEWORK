@@ -1,0 +1,13 @@
+{
+  "batch_test": {
+    "total_received": 100,
+    "intake_captured": 100,
+    "processed_success": 90,
+    "filtered_duplicates": 5,
+    "poison_dlq": 5,
+    "failed_unrecoverable": 0,
+    "silent_losses": 0,
+    "accounting_equation": "received (100) == processed (90) + duplicate (5) + dlq (5)",
+    "reconciliation_status": "PASS_100_PERCENT"
+  }
+}

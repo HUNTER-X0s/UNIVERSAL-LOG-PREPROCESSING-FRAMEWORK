@@ -1,0 +1,64 @@
+[
+  {
+    "id": "F-P6-AUTH-01",
+    "title": "API Authentication Boundary Relies on Unauthenticated Caller Header (X-Role)",
+    "severity": "HIGH",
+    "category": "API Security & Access Control",
+    "evidence": "In apps/api/ulpf_api/routes/platform.py lines 88-96, verify_role() trusts X-Role directly without cryptographic token, signature, or identity verification. Any client sending 'X-Role: platform-admin' is granted full platform administrative privileges.",
+    "reproduction": "client.post('/api/v1/events/ingest', headers={'X-Role': 'platform-admin'}) returns 200 without authentication.",
+    "affected_files": [
+      "apps/api/ulpf_api/routes/platform.py"
+    ],
+    "root_cause": "Role-based authorization logic was implemented assuming an upstream API gateway or reverse proxy terminates authentication and injects verified claims.",
+    "impact": "In an untrusted network deployment, an unauthenticated attacker could trigger administrative replays, drain DLQ, or inject events with platform-admin privileges.",
+    "recommended_action": "Document API security model explicitly as 'REFERENCE / DEVELOPMENT ROLE MODEL (Requires Upstream Gateway / mTLS)'. Implement JWT bearer token or API key authentication before deploying directly to perimeter networks.",
+    "blocking_status": "NON-BLOCKING FOR PHASE 6 EXIT (Under Rule 205: Classified as Reference/Development Authorization Model; Must be locked down in Phase 7 productionization)."
+  },
+  {
+    "id": "F-P6-DUR-01",
+    "title": "Storage Repositories in API Platform Runtime Default to In-Memory Adapters",
+    "severity": "MEDIUM",
+    "category": "Durability & Recovery",
+    "evidence": "apps/api/ulpf_api/routes/platform.py instantiates MemoryRawEvidenceRepository, MemoryUCERepository, MemorySemanticEventRepository, and MemorySearchIndex. While FilesystemRawEvidenceRepository exists and is tested, the running API does not persist state across restarts.",
+    "reproduction": "Restarting the API process clears all stored events, UCEs, and search indexes.",
+    "affected_files": [
+      "apps/api/ulpf_api/routes/platform.py"
+    ],
+    "root_cause": "Phase 6 delivers modular pluggable storage interfaces with in-memory reference implementations for air-gapped development and testing without external database dependencies.",
+    "impact": "Cannot claim production durability across crash/restarts on single-node deployments using the in-memory backend.",
+    "recommended_action": "Classify Phase 6 storage status as 'REFERENCE ADAPTER IMPLEMENTATION'. Explicitly document that crash recovery requires durable storage adapters (Filesystem raw repository + durable database for UCE).",
+    "blocking_status": "NON-BLOCKING FOR PHASE 6 EXIT (Conforms to Rule 204: In-memory reference backend policy)."
+  },
+  {
+    "id": "F-P6-HA-01",
+    "title": "High Availability and Distributed Consensus Are Architecture Objectives, Not Implemented Multi-Node State",
+    "severity": "LOW",
+    "category": "Distributed Systems & Scalability",
+    "evidence": "The pipeline runs locally in-process with threading.Lock/RLock. There is no Raft/Paxos consensus, distributed lock, or multi-node partition coordinator present in the repository.",
+    "reproduction": "Starting multiple instances of the application on separate nodes creates isolated in-memory streams and stores with no state sharing.",
+    "affected_files": [
+      "packages/streaming/ulpf_streaming/memory.py",
+      "packages/runtime/ulpf_runtime/worker.py"
+    ],
+    "root_cause": "Phase 6 scope establishes the single-node operational processing platform and adapter interfaces; multi-node distributed coordination is planned for production cluster deployment.",
+    "impact": "Claims of 'HA' or 'distributed fault tolerance' would be inaccurate if claimed as verified.",
+    "recommended_action": "Downgrade HA claim to 'DESIGNED ARCHITECTURE / SINGLE-NODE VERIFIED'. Document horizontal scale as requiring Kafka/Pulsar and distributed storage.",
+    "blocking_status": "NON-BLOCKING FOR PHASE 6 EXIT (Conforms to Rule 206)."
+  },
+  {
+    "id": "F-P6-DOC-01",
+    "title": "Phase 6 Walkthrough Artifact Was Appended to Historical Phase 4/5 Records",
+    "severity": "LOW",
+    "category": "Documentation Integrity",
+    "evidence": "walkthrough.md in artifact directory contained Phase 4 and Phase 5 walkthrough sections before the Phase 6 section.",
+    "reproduction": "Inspecting lines 1-279 of walkthrough.md revealed Phase 4/5 audit logs.",
+    "affected_files": [
+      "walkthrough.md",
+      "docs/PHASE6_EXIT_WALKTHROUGH.md"
+    ],
+    "root_cause": "Prior session concatenated walkthrough records instead of creating a clean Phase 6 exit walkthrough.",
+    "impact": "Potential confusion regarding Phase 6 test boundaries and scope.",
+    "recommended_action": "Create dedicated docs/PHASE6_EXIT_WALKTHROUGH.md containing exclusively Phase 6 operational walkthrough details.",
+    "blocking_status": "NON-BLOCKING (Remediated by generating dedicated Phase 6 walkthrough)."
+  }
+]

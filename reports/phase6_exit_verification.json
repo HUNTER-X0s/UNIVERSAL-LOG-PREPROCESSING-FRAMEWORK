@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-06T20:58:53.020333+00:00",
+  "environment": {
+    "os": "win32",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "runtime_mode": "airgap_offline_local"
+  },
+  "subsystem_checks": {
+    "runtime_pipeline": "PASS",
+    "lifecycle_state_machine": "PASS",
+    "streaming_partitioning": "PASS",
+    "backpressure_guard": "PASS",
+    "bounded_retry": "PASS",
+    "idempotency_cache": "PASS",
+    "dlq_manager": "PASS",
+    "raw_filesystem_storage": "PASS",
+    "uce_write_once": "PASS",
+    "semantic_repository": "PASS",
+    "search_index_rebuild": "PASS",
+    "delivery_outbox_isolation": "PASS",
+    "metrics_registry": "PASS",
+    "structured_logging_redaction": "PASS",
+    "health_probes": "PASS",
+    "historical_replay_pinning": "PASS",
+    "api_role_matrix": "PASS"
+  }
+}

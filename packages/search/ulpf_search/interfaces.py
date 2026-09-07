@@ -6,11 +6,14 @@ Enforces:
 - Rule 111/112: Derived index; rebuild capability from canonical store
 """
 
+from __future__ import annotations
+
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from ulpf_storage.interfaces import StoredSemanticEvent
+if TYPE_CHECKING:
+    from ulpf_storage.interfaces import StoredSemanticEvent
 
 
 @dataclass(frozen=True)

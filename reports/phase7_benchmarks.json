@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-09-07T09:23:08.993252+00:00",
+  "phase": 7,
+  "environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 16
+  },
+  "sample_event_bytes": 154,
+  "events_per_test": 200,
+  "stages": {
+    "cryptographic_auth": {
+      "operations": 200,
+      "duration_sec": 0.01332699996419251,
+      "ops_per_sec": 15007.128426305066
+    },
+    "durable_uce_persistence": {
+      "events": 200,
+      "duration_sec": 0.15448280004784465,
+      "eps": 1294.6425099626515
+    },
+    "object_storage_put": {
+      "operations": 200,
+      "duration_sec": 0.4537563999183476,
+      "ops_per_sec": 440.7651330890088
+    },
+    "object_storage_get": {
+      "operations": 200,
+      "duration_sec": 0.18144900002516806,
+      "ops_per_sec": 1102.2380942978953
+    },
+    "distributed_stream_publish": {
+      "events": 200,
+      "duration_sec": 0.0016371000092476606,
+      "eps": 122167.24627099064
+    },
+    "distributed_stream_poll_commit": {
+      "events": 200,
+      "duration_sec": 0.0001672001089900732,
+      "eps": 1196171.4690740672
+    },
+    "multi_worker_coordinator": {
+      "events": 200,
+      "duration_sec": 0.009471599943935871,
+      "eps": 21115.75670254619
+    },
+    "backup_creation": {
+      "duration_sec": 0.08669260004535317,
+      "backup_id": "bench-bk-01"
+    },
+    "backup_restoration_verify": {
+      "duration_sec": 0.09553489997051656,
+      "verified": true
+    },
+    "end_to_end_durable_pipeline": {
+      "events": 200,
+      "duration_sec": 0.8743159999139607,
+      "eps": 228.7502459290251,
+      "latency_p50_ms": 4.198200069367886,
+      "latency_p95_ms": 5.697400076314807,
+      "latency_p99_ms": 8.257499895989895
+    }
+  },
+  "gate_status": "PASS"
+}

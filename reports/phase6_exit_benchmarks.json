@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-09-06T20:58:53.020333+00:00",
+  "hardware": "Single-Node Local Workstation (AMD64)",
+  "python_runtime": "CPython 3.12 64-bit",
+  "tested_pipeline": "RuntimePipeline (Filesystem Raw Storage + In-Memory UCE/Semantic/Outbox)",
+  "filesystem_raw_pipeline_eps": 35.0,
+  "in_memory_pipeline_eps": 2166.4,
+  "latency_ms": {
+    "p50": 27.668,
+    "p95": 51.326,
+    "p99": 66.949,
+    "max": 82.711
+  },
+  "isolated_component_benchmarks": {
+    "raw_evidence_put_eps": 95890,
+    "streaming_memory_pub_eps": 90853,
+    "semantic_service_eps": 7031,
+    "in_memory_pipeline_eps": 2166.4,
+    "filesystem_raw_pipeline_eps": 35.0
+  },
+  "evaluation": "In-memory pipeline (2,166.4 EPS) exceeds 1,000 EPS operational target; synchronous NTFS filesystem raw evidence writes bounded at 35.0 EPS due to per-event disk I/O."
+}
