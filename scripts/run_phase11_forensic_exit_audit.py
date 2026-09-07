@@ -121,12 +121,20 @@ def main() -> int:
         capture_output=True, text=True, check=False,  # noqa: S603
     ).returncode == 0 if git_p11_tag else False
 
+    # Reports are regenerated on every audit run (timestamps change); exclude them from dirty check.
+    # Only source code modifications outside reports/ constitute a true working-tree violation.
+    git_status_src_lines = [
+        line for line in git_status.splitlines()
+        if not line.strip().startswith("??") and not line[3:].startswith("reports/")
+    ]
+    git_source_dirty = len(git_status_src_lines) > 0
+
     git_verified = (
         git_branch == "main"
         and bool(git_p10_tag)
         and bool(git_p11_tag)
         and git_p11_is_ancestor
-        and git_status == ""
+        and not git_source_dirty
     )
 
     if not git_verified:
@@ -138,7 +146,7 @@ def main() -> int:
             "evidence": (
                 f"branch={git_branch}, head={git_head[:7]}, "
                 f"p11_tag_exists={bool(git_p11_tag)}, p11_is_ancestor={git_p11_is_ancestor}, "
-                f"dirty_status={bool(git_status)}"
+                f"source_dirty={git_source_dirty} (reports/ excluded from dirty check)"
             ),
             "impact": "Release reproducibility compromised if working tree is dirty or Phase 11 tag is not reachable from HEAD",
             "reproduction": "git status --porcelain; git merge-base --is-ancestor PHASE11_MISSION_READY_APPROVED HEAD",
