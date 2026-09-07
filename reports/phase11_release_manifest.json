@@ -1,0 +1,97 @@
+{
+  "manifest_version": "1.0",
+  "release_tag": "PHASE11_MISSION_READY_APPROVED",
+  "timestamp": "2026-09-07T21:23:08.844130+00:00",
+  "artifacts": {
+    "reports/phase11_performance_certification.json": {
+      "exists": true,
+      "size_bytes": 7399,
+      "sha256": "5a4b6b95f47d6e2f543cbd966a7ade80b8b44f59aab8a98959a11bf68a9e49b7"
+    },
+    "reports/phase11_soak_results.json": {
+      "exists": true,
+      "size_bytes": 2293,
+      "sha256": "d1d3c098fcb979e658a2c39786365f0e5a65f2e7e4d21b8b212dd9e5812bb1d7"
+    },
+    "reports/phase11_chaos_results.json": {
+      "exists": true,
+      "size_bytes": 966,
+      "sha256": "dc0c19e879cb1cab10c67b81ef3c61607597f189771099b1c99e572fd8ac2455"
+    },
+    "reports/phase11_failure_matrix.json": {
+      "exists": true,
+      "size_bytes": 770,
+      "sha256": "8eb8a523d94544e157baffff7755c68fc9a9b1a0a546cfafb1cee0605ebc3489"
+    },
+    "docs/PHASE11_THREAT_MODEL.md": {
+      "exists": true,
+      "size_bytes": 5620,
+      "sha256": "c68f60736d014a8484f36cab465d85f81611506d30223cdcb0df75b253f6cb42"
+    },
+    "docs/PHASE11_ARCHITECTURE.md": {
+      "exists": true,
+      "size_bytes": 7616,
+      "sha256": "bc50d649b6b034696260723314787ebe1c41e61347beeddb5cc2c716a9f72ebe"
+    },
+    "docs/PHASE11_SECURITY_CERTIFICATION.md": {
+      "exists": true,
+      "size_bytes": 5013,
+      "sha256": "e2dbceed260d33b86562f9d41ea51b3a438890f2c9ad410d89bb40b25107302d"
+    },
+    "docs/PHASE11_RED_TEAM_REPORT.md": {
+      "exists": true,
+      "size_bytes": 4039,
+      "sha256": "a643f11fdd960c228e94fe0b93ff431639eecdb5d7c767015b5ce21d84cf1778"
+    },
+    "docs/PHASE11_PARSER_FUZZING.md": {
+      "exists": true,
+      "size_bytes": 3472,
+      "sha256": "2cb05847230ea758bc435353d23fda33d8bc1e7b2bce5857930605add8a7798d"
+    },
+    "docs/PHASE11_PERFORMANCE.md": {
+      "exists": true,
+      "size_bytes": 4823,
+      "sha256": "c3d4ee13148812ce8cc046f3a1f676377a29a499ac60eb9386e6acf8e9dd62d6"
+    },
+    "docs/PHASE11_SOAK.md": {
+      "exists": true,
+      "size_bytes": 3247,
+      "sha256": "7ce59439ba0f966b8a62ea88ac4149ed1107af7d15073f2aca8736e71e55a16f"
+    },
+    "docs/PHASE11_CHAOS.md": {
+      "exists": true,
+      "size_bytes": 2442,
+      "sha256": "1f9f58495a401a64232f26d425179fb7a88b9dff98998ba7eabf99e9f6e5bb33"
+    },
+    "docs/PHASE11_DR.md": {
+      "exists": true,
+      "size_bytes": 3092,
+      "sha256": "210757ab7ae9b0733343f4f0b56e8645aaf5cc98df25a4457296ce5753b4a32a"
+    },
+    "docs/PHASE11_AIRGAP.md": {
+      "exists": true,
+      "size_bytes": 2901,
+      "sha256": "84ea97bffc3da00dca5098270957f744fff261169764fe951a17589dc94953e2"
+    },
+    "docs/PHASE11_EVIDENCE_INTEGRITY.md": {
+      "exists": true,
+      "size_bytes": 3005,
+      "sha256": "a505a9bef57757759be211097ee6b56ffde22582149a863975c6f15ea1f84a5f"
+    },
+    "docs/PHASE11_SIH_DEMO_SCRIPT.md": {
+      "exists": true,
+      "size_bytes": 4542,
+      "sha256": "d9fd7de6c82736f6578788939f8c23aa8eaba4ad87cf073efcb599e83c1582d5"
+    },
+    "docs/PHASE11_JUDGE_CHECKLIST.md": {
+      "exists": true,
+      "size_bytes": 4462,
+      "sha256": "02e6799f9dbcf2282843b7e480b138a750cf85ea99c08ee3e80075fd4dfbcadf"
+    },
+    "docs/PHASE11_RELEASE_GATE.md": {
+      "exists": true,
+      "size_bytes": 3866,
+      "sha256": "16ff02301c8552515439881ceb6406033bae8c6955e0adac664db7880d0ec65d"
+    }
+  }
+}

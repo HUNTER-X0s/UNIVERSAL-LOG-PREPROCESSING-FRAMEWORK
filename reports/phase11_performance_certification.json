@@ -1,0 +1,237 @@
+{
+  "certification_suite": "Phase 11 \u2014 Unified Stack Performance Certification",
+  "timestamp": "2026-09-07T21:18:27.327297+00:00",
+  "overall_status": "CERTIFIED",
+  "anti_fabrication_attestation": {
+    "verified_hardware": true,
+    "real_clocks_used": true,
+    "no_synthetic_constants": true,
+    "air_gap_safe": true
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_arch": "AMD64",
+    "python_version": "3.12.10"
+  },
+  "certification_gates": {
+    "parser_throughput_min_5000_eps": true,
+    "graph_traversal_p95_under_10ms": true,
+    "posture_throughput_min_1000_evals_sec": true,
+    "early_warning_throughput_min_1000_evals_sec": true,
+    "pipeline_batch_p95_under_50ms": true
+  },
+  "metrics": {
+    "parser_performance": {
+      "aggregate_throughput_eps": 15740.57,
+      "total_parsed_records": 15000,
+      "format_benchmarks": {
+        "json": {
+          "iterations": 1000,
+          "duration_s": 0.0357,
+          "throughput_eps": 27972.89,
+          "avg_latency_ms": 0.0355,
+          "p50_latency_ms": 0.0522,
+          "p95_latency_ms": 0.0603,
+          "p99_latency_ms": 0.0715,
+          "status": "CERTIFIED"
+        },
+        "syslog_3164": {
+          "iterations": 1000,
+          "duration_s": 0.0439,
+          "throughput_eps": 22804.5,
+          "avg_latency_ms": 0.0435,
+          "p50_latency_ms": 0.0452,
+          "p95_latency_ms": 0.0754,
+          "p99_latency_ms": 0.1344,
+          "status": "CERTIFIED"
+        },
+        "syslog_5424": {
+          "iterations": 1000,
+          "duration_s": 0.0504,
+          "throughput_eps": 19831.55,
+          "avg_latency_ms": 0.0502,
+          "p50_latency_ms": 0.0198,
+          "p95_latency_ms": 0.0974,
+          "p99_latency_ms": 0.138,
+          "status": "CERTIFIED"
+        },
+        "cef": {
+          "iterations": 1000,
+          "duration_s": 0.0674,
+          "throughput_eps": 14836.36,
+          "avg_latency_ms": 0.0672,
+          "p50_latency_ms": 0.0354,
+          "p95_latency_ms": 0.1351,
+          "p99_latency_ms": 0.1877,
+          "status": "CERTIFIED"
+        },
+        "leef": {
+          "iterations": 1000,
+          "duration_s": 0.0473,
+          "throughput_eps": 21129.68,
+          "avg_latency_ms": 0.047,
+          "p50_latency_ms": 0.0608,
+          "p95_latency_ms": 0.0783,
+          "p99_latency_ms": 0.1266,
+          "status": "CERTIFIED"
+        },
+        "kv": {
+          "iterations": 1000,
+          "duration_s": 0.0462,
+          "throughput_eps": 21648.58,
+          "avg_latency_ms": 0.0459,
+          "p50_latency_ms": 0.0421,
+          "p95_latency_ms": 0.0819,
+          "p99_latency_ms": 0.1147,
+          "status": "CERTIFIED"
+        },
+        "csv": {
+          "iterations": 1000,
+          "duration_s": 0.1975,
+          "throughput_eps": 5064.57,
+          "avg_latency_ms": 0.1971,
+          "p50_latency_ms": 0.0927,
+          "p95_latency_ms": 0.4134,
+          "p99_latency_ms": 0.6822,
+          "status": "CERTIFIED"
+        },
+        "w3c": {
+          "iterations": 1000,
+          "duration_s": 0.0447,
+          "throughput_eps": 22364.91,
+          "avg_latency_ms": 0.0443,
+          "p50_latency_ms": 0.0183,
+          "p95_latency_ms": 0.0845,
+          "p99_latency_ms": 0.1263,
+          "status": "CERTIFIED"
+        },
+        "xml": {
+          "iterations": 1000,
+          "duration_s": 0.0594,
+          "throughput_eps": 16824.28,
+          "avg_latency_ms": 0.0591,
+          "p50_latency_ms": 0.0518,
+          "p95_latency_ms": 0.1088,
+          "p99_latency_ms": 0.1916,
+          "status": "CERTIFIED"
+        },
+        "cisco": {
+          "iterations": 1000,
+          "duration_s": 0.0348,
+          "throughput_eps": 28700.33,
+          "avg_latency_ms": 0.0345,
+          "p50_latency_ms": 0.0337,
+          "p95_latency_ms": 0.0583,
+          "p99_latency_ms": 0.0801,
+          "status": "CERTIFIED"
+        },
+        "paloalto": {
+          "iterations": 1000,
+          "duration_s": 0.1131,
+          "throughput_eps": 8838.19,
+          "avg_latency_ms": 0.1128,
+          "p50_latency_ms": 0.1469,
+          "p95_latency_ms": 0.1892,
+          "p99_latency_ms": 0.3057,
+          "status": "CERTIFIED"
+        },
+        "suricata": {
+          "iterations": 1000,
+          "duration_s": 0.0403,
+          "throughput_eps": 24818.08,
+          "avg_latency_ms": 0.04,
+          "p50_latency_ms": 0.0247,
+          "p95_latency_ms": 0.0672,
+          "p99_latency_ms": 0.1013,
+          "status": "CERTIFIED"
+        },
+        "fortigate": {
+          "iterations": 1000,
+          "duration_s": 0.0572,
+          "throughput_eps": 17490.28,
+          "avg_latency_ms": 0.0569,
+          "p50_latency_ms": 0.0781,
+          "p95_latency_ms": 0.0923,
+          "p99_latency_ms": 0.117,
+          "status": "CERTIFIED"
+        },
+        "linux_auditd": {
+          "iterations": 1000,
+          "duration_s": 0.0724,
+          "throughput_eps": 13810.76,
+          "avg_latency_ms": 0.0722,
+          "p50_latency_ms": 0.054,
+          "p95_latency_ms": 0.1787,
+          "p99_latency_ms": 0.201,
+          "status": "CERTIFIED"
+        },
+        "cloud_audit": {
+          "iterations": 1000,
+          "duration_s": 0.0425,
+          "throughput_eps": 23506.46,
+          "avg_latency_ms": 0.0423,
+          "p50_latency_ms": 0.0444,
+          "p95_latency_ms": 0.0753,
+          "p99_latency_ms": 0.1103,
+          "status": "CERTIFIED"
+        }
+      }
+    },
+    "graph_traversal": {
+      "queries": 500,
+      "nodes": 500,
+      "edges": 2000,
+      "duration_s": 0.0005,
+      "throughput_queries_sec": 961168.78,
+      "avg_latency_ms": 0.0008,
+      "p50_latency_ms": 0.0007,
+      "p95_latency_ms": 0.0012,
+      "p99_latency_ms": 0.0022,
+      "status": "CERTIFIED"
+    },
+    "mission_subsystems": {
+      "security_posture_engine": {
+        "iterations": 5000,
+        "duration_s": 0.0467,
+        "throughput_evals_sec": 107175.85,
+        "avg_latency_ms": 0.00916,
+        "p50_latency_ms": 0.0059,
+        "p95_latency_ms": 0.022,
+        "p99_latency_ms": 0.0243,
+        "status": "CERTIFIED"
+      },
+      "early_warning_engine": {
+        "iterations": 5000,
+        "duration_s": 0.1149,
+        "throughput_evals_sec": 43519.55,
+        "avg_latency_ms": 0.02266,
+        "p50_latency_ms": 0.0281,
+        "p95_latency_ms": 0.0348,
+        "p99_latency_ms": 0.06201,
+        "status": "CERTIFIED"
+      },
+      "signal_fusion_engine": {
+        "iterations": 2000,
+        "duration_s": 0.0417,
+        "throughput_evals_sec": 47919.92,
+        "avg_latency_ms": 0.02052,
+        "p50_latency_ms": 0.024,
+        "p95_latency_ms": 0.0282,
+        "p99_latency_ms": 0.0456,
+        "status": "CERTIFIED"
+      }
+    },
+    "end_to_end_pipeline": {
+      "batches": 500,
+      "events_per_batch": 20,
+      "total_events_processed": 10000,
+      "duration_s": 0.1059,
+      "pipeline_throughput_eps": 94399.29,
+      "batch_avg_latency_ms": 0.1589,
+      "batch_p50_latency_ms": 0.1328,
+      "batch_p95_latency_ms": 0.3053,
+      "batch_p99_latency_ms": 0.4136,
+      "status": "CERTIFIED"
+    }
+  }
+}

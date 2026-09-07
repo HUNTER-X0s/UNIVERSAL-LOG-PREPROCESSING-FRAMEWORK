@@ -1,0 +1,95 @@
+{
+  "certification_suite": "Phase 11 \u2014 Sustained Soak & Resource Integrity Certification",
+  "timestamp": "2026-09-07T21:18:32.576027+00:00",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_arch": "AMD64",
+    "python_version": "3.12.10"
+  },
+  "results": {
+    "cycles_executed": 2500,
+    "batch_size": 10,
+    "total_events": 25000,
+    "total_duration_s": 1.975,
+    "throughput_eps": 12660.6,
+    "errors_encountered": 0,
+    "latency_metrics": {
+      "avg_ms": 0.6345,
+      "p50_ms": 0.6238,
+      "p95_ms": 0.999,
+      "p99_ms": 1.3413,
+      "first_decile_avg_ms": 0.65,
+      "last_decile_avg_ms": 0.7992,
+      "latency_drift_factor": 1.23
+    },
+    "memory_metrics": {
+      "initial_heap_mb": 0.007,
+      "final_heap_mb": 0.344,
+      "peak_heap_mb": 0.376,
+      "heap_growth_mb": 0.337,
+      "samples": [
+        {
+          "cycle": 0,
+          "current_mb": 0.007,
+          "peak_mb": 0.008
+        },
+        {
+          "cycle": 250,
+          "current_mb": 0.066,
+          "peak_mb": 0.072
+        },
+        {
+          "cycle": 500,
+          "current_mb": 0.097,
+          "peak_mb": 0.105
+        },
+        {
+          "cycle": 750,
+          "current_mb": 0.127,
+          "peak_mb": 0.139
+        },
+        {
+          "cycle": 1000,
+          "current_mb": 0.161,
+          "peak_mb": 0.176
+        },
+        {
+          "cycle": 1250,
+          "current_mb": 0.193,
+          "peak_mb": 0.211
+        },
+        {
+          "cycle": 1500,
+          "current_mb": 0.222,
+          "peak_mb": 0.242
+        },
+        {
+          "cycle": 1750,
+          "current_mb": 0.251,
+          "peak_mb": 0.275
+        },
+        {
+          "cycle": 2000,
+          "current_mb": 0.281,
+          "peak_mb": 0.308
+        },
+        {
+          "cycle": 2250,
+          "current_mb": 0.312,
+          "peak_mb": 0.341
+        },
+        {
+          "cycle": 2500,
+          "current_mb": 0.344,
+          "peak_mb": 0.376
+        }
+      ]
+    },
+    "certification_gates": {
+      "zero_unhandled_errors": true,
+      "bounded_heap_growth_under_25mb": true,
+      "latency_drift_within_bounds": true
+    },
+    "status": "CERTIFIED"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "malformed_payload_containment",
+    "expected": "Containment without crash or unhandled exception",
+    "observed": "Contained successfully",
+    "passed": true
+  },
+  {
+    "scenario": "cyclic_graph_traversal",
+    "expected": "Containment without crash or unhandled exception",
+    "observed": "Contained successfully",
+    "passed": true
+  },
+  {
+    "scenario": "copilot_prompt_injection_containment",
+    "expected": "Containment without crash or unhandled exception",
+    "observed": "Contained successfully",
+    "passed": true
+  },
+  {
+    "scenario": "pipeline_fault_isolation",
+    "expected": "Containment without crash or unhandled exception",
+    "observed": "Contained successfully",
+    "passed": true
+  }
+]

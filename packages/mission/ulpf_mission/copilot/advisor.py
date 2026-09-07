@@ -24,6 +24,8 @@ _INJECTION_PATTERNS: list[re.Pattern[str]] = [
     re.compile(r"\binject\b", re.IGNORECASE),
     re.compile(r"\bexfiltrate\b", re.IGNORECASE),
     re.compile(r"\bprompt\s+injection\b", re.IGNORECASE),
+    re.compile(r"\bdan\s+mode\b", re.IGNORECASE),
+    re.compile(r"\bbypass\s+security\b", re.IGNORECASE),
 ]
 
 _MAX_INPUT_LEN = 2048
