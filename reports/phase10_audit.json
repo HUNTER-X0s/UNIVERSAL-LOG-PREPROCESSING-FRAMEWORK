@@ -1,0 +1,71 @@
+{
+  "audit_title": "ULPF Phase 10 Mission Operations Plane - Forensic Exit Audit",
+  "timestamp": "2026-09-07T20:28:50.851820+00:00",
+  "phase": "PHASE_10",
+  "gates_passed": 8,
+  "gates_total": 10,
+  "composite_score": 8.0,
+  "verdict": "PHASE10_EXIT_REQUIRES_REMEDIATION",
+  "gates": [
+    {
+      "gate_id": "G-01",
+      "name": "Unit/Integration Tests (33/33)",
+      "status": "PASS",
+      "details": "33 passed, 2 warnings in 3.68s"
+    },
+    {
+      "gate_id": "G-02",
+      "name": "Chaos Fault Isolation (5/5)",
+      "status": "PASS",
+      "details": "5/5 chaos scenarios PASS"
+    },
+    {
+      "gate_id": "G-03",
+      "name": "Static Type Check (mypy: 0 issues)",
+      "status": "PASS",
+      "details": "mypy: Success - 0 issues"
+    },
+    {
+      "gate_id": "G-04",
+      "name": "Linter (ruff: 0 issues)",
+      "status": "FAIL",
+      "details": "get(\"source\", \"DETECTION_RULE\")\n59 |             source = SignalSource(src_val) if isinstance(src_val, str) else SignalSource(str(src_val))\n   |                                                                                                     ^^ E501\n60 |             confidence = float(raw.get(\"confidence\", 0.5))\n61 |             raw_risk = float(raw.get(\"risk_score\", 50.0))\n   |\n\nFound 1 error."
+    },
+    {
+      "gate_id": "G-05",
+      "name": "Air-Gap Compliance (0 network deps)",
+      "status": "PASS",
+      "details": "Zero network imports detected"
+    },
+    {
+      "gate_id": "G-06",
+      "name": "Ingestion Availability (100%)",
+      "status": "PASS",
+      "details": "Ingestion availability: 100.0% | faults isolated: True"
+    },
+    {
+      "gate_id": "G-07",
+      "name": "Replay Determinism (SHA-256 verified)",
+      "status": "PASS",
+      "details": "3 runs verified deterministic"
+    },
+    {
+      "gate_id": "G-08",
+      "name": "Posture Engine SLA (>=50k ops/s)",
+      "status": "FAIL",
+      "details": "26,554 ops/s (SLA: >=50,000)"
+    },
+    {
+      "gate_id": "G-09",
+      "name": "Pipeline E2E SLA (>=100k eps)",
+      "status": "PASS",
+      "details": "120,217 eps (SLA: >=100,000)"
+    },
+    {
+      "gate_id": "G-10",
+      "name": "Phase 0-9 Regression Freeze",
+      "status": "PASS",
+      "details": "583 passed, 2 warnings, 19 subtests passed in 58.55s"
+    }
+  ]
+}

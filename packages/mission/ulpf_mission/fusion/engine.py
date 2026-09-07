@@ -56,7 +56,11 @@ class SignalFusionEngine:
 
         for raw in raw_signals:
             src_val = raw.get("source", "DETECTION_RULE")
-            source = SignalSource(src_val) if isinstance(src_val, str) else SignalSource(str(src_val))
+            source = (
+                SignalSource(src_val)
+                if isinstance(src_val, str)
+                else SignalSource(str(src_val))
+            )
             confidence = float(raw.get("confidence", 0.5))
             raw_risk = float(raw.get("risk_score", 50.0))
             weight = self._SOURCE_WEIGHTS.get(source, 0.5)
