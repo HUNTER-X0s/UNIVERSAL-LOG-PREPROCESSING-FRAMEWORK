@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-07T22:04:02.593475+00:00",
+  "forbidden_modules_scanned": [
+    "requests",
+    "websocket",
+    "boto3",
+    "google.cloud",
+    "httpx",
+    "aiohttp",
+    "urllib.request"
+  ],
+  "static_ast_violations_count": 0,
+  "static_ast_violations": [],
+  "runtime_intercepted_socket_calls": 0,
+  "runtime_socket_violations": 0,
+  "status": "CERTIFIED_AIR_GAP_COMPLIANT"
+}

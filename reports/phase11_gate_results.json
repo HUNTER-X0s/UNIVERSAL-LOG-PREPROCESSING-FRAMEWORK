@@ -1,0 +1,12 @@
+{
+  "gate_01_git_baseline": false,
+  "gate_02_test_count_reconciliation": true,
+  "gate_03_zero_regression_phase0_10": true,
+  "gate_04_test_tampering_zero": true,
+  "gate_05_parser_count_reconciled": true,
+  "gate_06_airgap_verified": true,
+  "gate_07_evidence_integrity_verified": true,
+  "gate_08_recovery_rto_verified": true,
+  "gate_09_security_auth_rbac_verified": true,
+  "gate_10_reproducible_benchmarks": true
+}

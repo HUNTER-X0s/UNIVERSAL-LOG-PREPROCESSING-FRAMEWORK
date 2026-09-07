@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-09-07T22:04:00.675531+00:00",
+  "total_concrete_parsers": 20,
+  "generic_parsers_count": 10,
+  "specialized_parsers_count": 10,
+  "discrepancy_explanation": "Claim '11 parsers' referred to the fuzz-tested subset in test_phase11_fuzzing.py. Claim '15 parsers' referred to the benchmarked subset in run_phase11_performance_certification.py. Actual codebase contains exactly 20 concrete parser classes inheriting from BaseParser.",
+  "parsers": [
+    {
+      "class_name": "CefParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/cef_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "GenericCsvParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/csv_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "GenericJsonParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/json_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "NdJsonParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/json_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "KeyValueParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/kv_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "LeefParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/leef_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "SyslogRFC3164Parser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/syslog_rfc3164.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "SyslogRFC5424Parser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/syslog_rfc5424.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "W3CParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/w3c_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "XmlParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/xml_parser.py",
+      "type": "generic"
+    },
+    {
+      "class_name": "CiscoSyslogParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/cisco.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "CloudAuditParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/cloud_audit.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "FortiGateParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/fortigate.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "LinuxAuditdParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/linux_auditd.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "OPNsenseFilterlogParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/opnsense.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "PaloAltoPanOSParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/paloalto.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "SnortFastParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/snort.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "SuricataEveParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/suricata.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "WebAccessLogParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/web_access.py",
+      "type": "specialized"
+    },
+    {
+      "class_name": "ZeekParser",
+      "file_path": "packages/parser-runtime/ulpf_parser_runtime/parsers/specialized/zeek.py",
+      "type": "specialized"
+    }
+  ]
+}

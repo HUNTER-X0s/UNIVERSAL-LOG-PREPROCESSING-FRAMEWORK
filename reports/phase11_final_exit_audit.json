@@ -1,0 +1,45 @@
+{
+  "audit_suite": "Phase 11 \u2014 Final Forensic Exit Audit",
+  "timestamp": "2026-09-07T22:04:04.332731+00:00",
+  "duration_s": 17.386,
+  "final_verdict": "PHASE11_BLOCKED",
+  "gates_summary": {
+    "gate_01_git_baseline": false,
+    "gate_02_test_count_reconciliation": true,
+    "gate_03_zero_regression_phase0_10": true,
+    "gate_04_test_tampering_zero": true,
+    "gate_05_parser_count_reconciled": true,
+    "gate_06_airgap_verified": true,
+    "gate_07_evidence_integrity_verified": true,
+    "gate_08_recovery_rto_verified": true,
+    "gate_09_security_auth_rbac_verified": true,
+    "gate_10_reproducible_benchmarks": true
+  },
+  "test_counts": {
+    "phase0_10_baseline": 584,
+    "phase11_additions": 30,
+    "total_executed": 614,
+    "total_passed": 614,
+    "pass_rate_percent": 100.0
+  },
+  "parser_counts": {
+    "total_concrete_classes": 20,
+    "generic": 10,
+    "specialized": 10
+  },
+  "performance_reproduction": {
+    "mean_eps": 294869.35,
+    "trials": [
+      301434.07,
+      311910.29,
+      271263.68
+    ]
+  },
+  "findings_summary": {
+    "total": 4,
+    "critical": 0,
+    "high": 1,
+    "medium": 1,
+    "low": 2
+  }
+}

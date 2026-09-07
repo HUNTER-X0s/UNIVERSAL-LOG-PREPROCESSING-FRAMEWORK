@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-09-07T22:04:04.329717+00:00",
+  "phases": {
+    "Phase 0": {
+      "covered": true,
+      "documentation": "docs/PHASE_0_* or docs/PHASE0_*"
+    },
+    "Phase 1": {
+      "covered": true,
+      "documentation": "docs/PHASE_1_* or docs/PHASE1_*"
+    },
+    "Phase 2": {
+      "covered": true,
+      "documentation": "docs/PHASE_2_* or docs/PHASE2_*"
+    },
+    "Phase 3": {
+      "covered": true,
+      "documentation": "docs/PHASE_3_* or docs/PHASE3_*"
+    },
+    "Phase 4": {
+      "covered": true,
+      "documentation": "docs/PHASE_4_* or docs/PHASE4_*"
+    },
+    "Phase 5": {
+      "covered": true,
+      "documentation": "docs/PHASE_5_* or docs/PHASE5_*"
+    },
+    "Phase 6": {
+      "covered": true,
+      "documentation": "docs/PHASE_6_* or docs/PHASE6_*"
+    },
+    "Phase 7": {
+      "covered": true,
+      "documentation": "docs/PHASE_7_* or docs/PHASE7_*"
+    },
+    "Phase 8": {
+      "covered": true,
+      "documentation": "docs/PHASE_8_* or docs/PHASE8_*"
+    },
+    "Phase 9": {
+      "covered": true,
+      "documentation": "docs/PHASE_9_* or docs/PHASE9_*"
+    },
+    "Phase 10": {
+      "covered": true,
+      "documentation": "docs/PHASE_10_* or docs/PHASE10_*"
+    },
+    "Phase 11": {
+      "covered": true,
+      "documentation": "docs/PHASE_11_* or docs/PHASE11_*"
+    }
+  }
+}

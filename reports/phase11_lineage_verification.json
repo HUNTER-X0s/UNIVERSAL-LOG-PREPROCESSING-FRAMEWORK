@@ -1,0 +1,4 @@
+{
+  "lineage_trace": "RAW_BYTES -> OFFSET -> FRAMED -> PARSED -> UCE -> DETECTION -> ALERT",
+  "verified": true
+}

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-09-07T22:04:01.192881+00:00",
+  "classification": "FUZZ-LIKE DETERMINISTIC ADVERSARIAL TEST",
+  "tested_parsers": [
+    "CefParser",
+    "GenericCsvParser",
+    "GenericJsonParser",
+    "NdJsonParser",
+    "KeyValueParser",
+    "LeefParser",
+    "SyslogRFC3164Parser",
+    "SyslogRFC5424Parser",
+    "W3CParser",
+    "XmlParser",
+    "CiscoSyslogParser",
+    "CloudAuditParser",
+    "FortiGateParser",
+    "LinuxAuditdParser",
+    "OPNsenseFilterlogParser",
+    "PaloAltoPanOSParser",
+    "SnortFastParser",
+    "SuricataEveParser",
+    "WebAccessLogParser",
+    "ZeekParser"
+  ],
+  "adversarial_inputs_tested": [
+    "deep_json_nesting_bomb (500 levels)",
+    "1000_key_large_payload",
+    "ragged_csv_column_mismatch",
+    "pathological_kv_quotes",
+    "null_bytes_and_garbage_binary"
+  ],
+  "crashes": 0,
+  "unhandled_exceptions": 0,
+  "exit_code": 0,
+  "status": "VERIFIED_RESILIENT"
+}

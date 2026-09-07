@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-07T22:04:04.313209+00:00",
+  "chaos_classification": "ADVERSARIAL_FAULT_INJECTION",
+  "scenarios_contained": 4,
+  "pipeline_crashes": 0,
+  "status": "CONTAINED"
+}

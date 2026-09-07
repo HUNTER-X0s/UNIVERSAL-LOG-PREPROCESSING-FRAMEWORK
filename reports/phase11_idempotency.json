@@ -1,0 +1,9 @@
+{
+  "duplicate_replays": [
+    2,
+    10,
+    100
+  ],
+  "side_effects_bounded": true,
+  "status": "VERIFIED"
+}

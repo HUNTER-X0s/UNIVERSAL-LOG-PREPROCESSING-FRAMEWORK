@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-07T22:03:49.523595+00:00",
+  "total_tests_audited": 614,
+  "tampering_checks": {
+    "skip_decorators": 0,
+    "xfail_decorators": 0,
+    "assert_true_statements": 0,
+    "pass_statements": 2,
+    "todo_fixme_comments": 0,
+    "pragma_no_cover_directives": 0
+  },
+  "suspicious_occurrences": {
+    "skip_decorator": [],
+    "xfail_decorator": [],
+    "assert_true": [],
+    "pass_statement": [
+      "tests\\test_database_failure.py:58: pass",
+      "tests\\test_golden_fixtures.py:296: pass"
+    ],
+    "todo_fixme": [],
+    "pragma_no_cover": []
+  },
+  "integrity_verdict": "VERIFIED_CLEAN"
+}
