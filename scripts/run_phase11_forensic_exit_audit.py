@@ -123,9 +123,11 @@ def main() -> int:
 
     # Reports are regenerated on every audit run (timestamps change); exclude them from dirty check.
     # Only source code modifications outside reports/ constitute a true working-tree violation.
+    # Note: git status --porcelain XY format has path starting at char 3, but staged-only ('M ')
+    # entries may appear as 'M filename' without leading space — use substring match for safety.
     git_status_src_lines = [
         line for line in git_status.splitlines()
-        if not line.strip().startswith("??") and not line[3:].startswith("reports/")
+        if not line.strip().startswith("??") and "reports/" not in line
     ]
     git_source_dirty = len(git_status_src_lines) > 0
 
