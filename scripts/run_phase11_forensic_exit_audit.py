@@ -115,11 +115,17 @@ def main() -> int:
     git_p11_tag = subprocess.run([git_bin, "rev-parse", "--verify", "PHASE11_MISSION_READY_APPROVED"], capture_output=True, text=True, check=False).stdout.strip()  # noqa: S603
     git_status = subprocess.run([git_bin, "status", "--porcelain"], capture_output=True, text=True, check=False).stdout.strip()  # noqa: S603
 
+    # Verify PHASE11 tag is an ancestor of HEAD (handles forensic audit commit on top)
+    git_p11_is_ancestor = subprocess.run(
+        [git_bin, "merge-base", "--is-ancestor", "PHASE11_MISSION_READY_APPROVED", "HEAD"],
+        capture_output=True, text=True, check=False,  # noqa: S603
+    ).returncode == 0 if git_p11_tag else False
+
     git_verified = (
         git_branch == "main"
-        and git_head.startswith("fab947e")
         and bool(git_p10_tag)
         and bool(git_p11_tag)
+        and git_p11_is_ancestor
         and git_status == ""
     )
 
@@ -128,11 +134,15 @@ def main() -> int:
             "id": "FINDING-GIT-01",
             "severity": "HIGH",
             "component": "Git Baseline",
-            "claim": "Repository is clean and at commit fab947e with PHASE11_MISSION_READY_APPROVED tag",
-            "evidence": f"branch={git_branch}, head={git_head[:7]}, dirty_status={bool(git_status)}",
-            "impact": "Release reproducibility compromised if working tree is dirty or tags missing",
-            "reproduction": "git status --porcelain",
-            "recommendation": "Commit or stash changes before release",
+            "claim": "Repository is on main, clean working tree, with PHASE11_MISSION_READY_APPROVED tag reachable from HEAD",
+            "evidence": (
+                f"branch={git_branch}, head={git_head[:7]}, "
+                f"p11_tag_exists={bool(git_p11_tag)}, p11_is_ancestor={git_p11_is_ancestor}, "
+                f"dirty_status={bool(git_status)}"
+            ),
+            "impact": "Release reproducibility compromised if working tree is dirty or Phase 11 tag is not reachable from HEAD",
+            "reproduction": "git status --porcelain; git merge-base --is-ancestor PHASE11_MISSION_READY_APPROVED HEAD",
+            "recommendation": "Ensure all changes are committed and PHASE11_MISSION_READY_APPROVED tag is an ancestor of HEAD",
             "status": "OPEN",
         })
 
