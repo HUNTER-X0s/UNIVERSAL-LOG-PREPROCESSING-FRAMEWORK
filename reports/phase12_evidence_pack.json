@@ -1,0 +1,42 @@
+{
+  "mission": "NTRO / Smart India Hackathon \u2014 SIH26156",
+  "timestamp": "2026-09-08T15:49:16.739415+00:00",
+  "release_candidate": "1.0.0-rc1",
+  "final_verdict": "PHASE12_RELEASE_REJECTED",
+  "metrics_summary": {
+    "test_count": 614,
+    "pass_rate_percent": 100.0,
+    "concrete_parsers": 20,
+    "sustained_throughput_eps": 94500,
+    "p50_latency_ms": 0.012,
+    "rto_seconds": 0.025,
+    "rpo_events": 0,
+    "outbound_sockets": 0,
+    "unshielded_secrets": 0
+  },
+  "evidence_files": [
+    "reports/phase12_baseline_inventory.json",
+    "reports/phase12_finding_register.json",
+    "reports/phase12_parser_truth.json",
+    "reports/phase12_claim_audit.json",
+    "reports/phase12_claim_consistency.json",
+    "reports/release_metrics.json",
+    "reports/phase12_sbom.json",
+    "reports/phase12_secret_scan.json",
+    "reports/phase12_config_audit.json",
+    "reports/phase12_artifact_hashes.json",
+    "reports/phase12_release_manifest.json",
+    "reports/phase12_installation_smoke.json",
+    "reports/phase12_airgap_cert.json",
+    "reports/phase12_security_audit.json",
+    "reports/phase12_e2e_results.json",
+    "reports/phase12_forensic_lineage.json",
+    "reports/phase12_dr_cert.json",
+    "reports/phase12_performance_results.json",
+    "reports/phase12_soak_results.json",
+    "reports/phase12_chaos_results.json",
+    "reports/phase12_traceability.json",
+    "reports/phase12_final_audit.json",
+    "reports/phase12_scorecard.json"
+  ]
+}

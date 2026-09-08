@@ -1,0 +1,126 @@
+{
+  "total_concrete_parsers": 20,
+  "generic_format_parsers": {
+    "count": 10,
+    "parsers": [
+      {
+        "name": "GenericJsonParser",
+        "module": "ulpf_parser_runtime.parsers.json_parser",
+        "format": "json"
+      },
+      {
+        "name": "NdJsonParser",
+        "module": "ulpf_parser_runtime.parsers.json_parser",
+        "format": "ndjson"
+      },
+      {
+        "name": "GenericCsvParser",
+        "module": "ulpf_parser_runtime.parsers.csv_parser",
+        "format": "csv/tsv"
+      },
+      {
+        "name": "KeyValueParser",
+        "module": "ulpf_parser_runtime.parsers.kv_parser",
+        "format": "kv"
+      },
+      {
+        "name": "SyslogRFC3164Parser",
+        "module": "ulpf_parser_runtime.parsers.syslog_rfc3164",
+        "format": "syslog_3164"
+      },
+      {
+        "name": "SyslogRFC5424Parser",
+        "module": "ulpf_parser_runtime.parsers.syslog_rfc5424",
+        "format": "syslog_5424"
+      },
+      {
+        "name": "CefParser",
+        "module": "ulpf_parser_runtime.parsers.cef_parser",
+        "format": "cef"
+      },
+      {
+        "name": "LeefParser",
+        "module": "ulpf_parser_runtime.parsers.leef_parser",
+        "format": "leef"
+      },
+      {
+        "name": "XmlParser",
+        "module": "ulpf_parser_runtime.parsers.xml_parser",
+        "format": "xml"
+      },
+      {
+        "name": "W3CParser",
+        "module": "ulpf_parser_runtime.parsers.w3c_parser",
+        "format": "w3c"
+      }
+    ]
+  },
+  "specialized_vendor_parsers": {
+    "count": 10,
+    "parsers": [
+      {
+        "name": "PaloAltoPanOSParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.paloalto",
+        "target": "Palo Alto PAN-OS Threat & Traffic"
+      },
+      {
+        "name": "CiscoSyslogParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.cisco",
+        "target": "Cisco ASA Syslog"
+      },
+      {
+        "name": "FortiGateParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.fortigate",
+        "target": "FortiGate UTM"
+      },
+      {
+        "name": "SuricataEveParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.suricata",
+        "target": "Suricata EVE JSON"
+      },
+      {
+        "name": "OPNsenseFilterlogParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.opnsense",
+        "target": "OPNsense filterlog"
+      },
+      {
+        "name": "SnortFastParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.snort",
+        "target": "Snort Fast Alert"
+      },
+      {
+        "name": "WebAccessLogParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.web_access",
+        "target": "Combined Web Access Log (Apache/Nginx)"
+      },
+      {
+        "name": "ZeekParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.zeek",
+        "target": "Zeek TSV"
+      },
+      {
+        "name": "CloudAuditParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.cloud_audit",
+        "target": "AWS CloudTrail / VPC Flow"
+      },
+      {
+        "name": "LinuxAuditdParser",
+        "module": "ulpf_parser_runtime.parsers.specialized.linux_auditd",
+        "target": "Linux Auditd Syscall"
+      }
+    ]
+  },
+  "subsets": {
+    "fuzz_test_subset": {
+      "count": 11,
+      "source": "tests/fuzz/test_phase11_fuzzing.py::ALL_PARSERS",
+      "description": "Representative subset subjected to ReDoS bombs, null bytes, and pathological inputs"
+    },
+    "benchmark_subset": {
+      "count": 15,
+      "source": "scripts/run_phase11_performance_certification.py",
+      "description": "High-volume throughput certification benchmark subset"
+    }
+  },
+  "reconciliation_verdict": "EXACT_MATCH_20_CONCRETE_PARSERS"
+}

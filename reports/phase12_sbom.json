@@ -1,0 +1,357 @@
+{
+  "sbom_version": "1.0",
+  "component": "Universal Log Pre-processing Framework (ULPF)",
+  "release_candidate": "1.0.0-rc1",
+  "timestamp": "2026-09-08T15:40:00Z",
+  "total_packages": 70,
+  "direct_runtime_dependencies": [
+    {
+      "name": "fastapi",
+      "version": "0.111.0"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.7.4"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.30.1"
+    }
+  ],
+  "dev_test_dependencies": [
+    {
+      "name": "httpx",
+      "version": "0.27.0"
+    },
+    {
+      "name": "mypy",
+      "version": "1.14.1"
+    },
+    {
+      "name": "pip_audit",
+      "version": "2.8.0"
+    },
+    {
+      "name": "ruff",
+      "version": "0.9.2"
+    }
+  ],
+  "all_dependencies": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.0"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "boolean.py",
+      "version": "5.0"
+    },
+    {
+      "name": "CacheControl",
+      "version": "0.14.4"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "cyclonedx-python-lib",
+      "version": "8.9.0"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0"
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.111.0"
+    },
+    {
+      "name": "fastapi-cli",
+      "version": "0.0.32"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.5"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0"
+    },
+    {
+      "name": "httpx",
+      "version": "0.27.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.19"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "license-expression",
+      "version": "30.4.4"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.2"
+    },
+    {
+      "name": "mypy",
+      "version": "1.14.1"
+    },
+    {
+      "name": "mypy_extensions",
+      "version": "1.1.0"
+    },
+    {
+      "name": "orjson",
+      "version": "3.12.0"
+    },
+    {
+      "name": "packageurl-python",
+      "version": "0.17.6"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1"
+    },
+    {
+      "name": "pip-api",
+      "version": "0.0.34"
+    },
+    {
+      "name": "pip_audit",
+      "version": "2.8.0"
+    },
+    {
+      "name": "pip-requirements-parser",
+      "version": "32.0.1"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.11.7"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0"
+    },
+    {
+      "name": "py-serializable",
+      "version": "1.1.2"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.7.4"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.18.4"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.3"
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "rich-toolkit",
+      "version": "0.20.4"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3"
+    },
+    {
+      "name": "ruff",
+      "version": "0.9.2"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0"
+    },
+    {
+      "name": "starlette",
+      "version": "0.37.2"
+    },
+    {
+      "name": "toml",
+      "version": "0.10.2"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.2"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "ujson",
+      "version": "6.0.0"
+    },
+    {
+      "name": "ulpf-foundation",
+      "version": "0.1.0",
+      "editable_project_location": "Z:\\Universal Log Preprocessing Framework"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.7.0"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.30.1"
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.2.0"
+    },
+    {
+      "name": "websockets",
+      "version": "17.1"
+    }
+  ],
+  "license_distribution": {
+    "MIT": [
+      "fastapi",
+      "uvicorn",
+      "pydantic",
+      "jsonschema",
+      "ruff",
+      "mypy"
+    ],
+    "Apache-2.0": [
+      "urllib3",
+      "anyio"
+    ],
+    "BSD-3-Clause": [
+      "starlette",
+      "idna",
+      "click",
+      "httpx"
+    ]
+  },
+  "airgap_compatibility": {
+    "status": "PASS",
+    "runtime_external_network_call_free": true,
+    "offline_wheels_packable": true
+  },
+  "known_vulnerability_summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "status": "AUDITED_CLEAN"
+  }
+}

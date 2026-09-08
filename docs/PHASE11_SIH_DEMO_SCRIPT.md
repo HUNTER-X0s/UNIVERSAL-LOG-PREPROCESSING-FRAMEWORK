@@ -75,7 +75,7 @@
 - **Show on Screen:**
   - **614 / 614 tests passing across all 11 phases (100% green)**.
 - **Closing Statement:**
-  - "ULPF is not a prototype; it is an enterprise-grade, production-hardened, air-gap certified sovereign cyber defense asset ready for deployment into NTRO and national security infrastructure today. Thank you."
+  - "ULPF is not a prototype; it is an enterprise-grade, production-hardened cyber defense framework with validated air-gap operation, tamper-evident forensic lineage, and deterministic replay ready for operational evaluation. Thank you."
 
 ---
 

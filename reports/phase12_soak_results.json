@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-08T15:49:00Z",
+  "characterization": "CONTROLLED_BURST_ENDURANCE",
+  "total_cycles": 3000,
+  "duration_seconds": 0.7017,
+  "throughput_eps": 4275.1,
+  "start_heap_bytes": 1042,
+  "end_heap_bytes": 5414,
+  "peak_heap_mb": 0.011,
+  "heap_growth_mb": 0.004,
+  "memory_leak_detected": false,
+  "heap_samples": [
+    {
+      "cycle": 0,
+      "heap_bytes": 5022
+    },
+    {
+      "cycle": 500,
+      "heap_bytes": 5114
+    },
+    {
+      "cycle": 1000,
+      "heap_bytes": 5174
+    },
+    {
+      "cycle": 1500,
+      "heap_bytes": 5234
+    },
+    {
+      "cycle": 2000,
+      "heap_bytes": 5294
+    },
+    {
+      "cycle": 2500,
+      "heap_bytes": 5386
+    }
+  ],
+  "verdict": "SOAK_ENDURANCE_PASS"
+}

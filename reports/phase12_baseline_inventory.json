@@ -1,0 +1,33 @@
+{
+  "audit_timestamp": "2026-09-08T15:35:00Z",
+  "git_branch": "main",
+  "git_head": "2a47f02c5849222dce6d5c4649497e4f1b67ec3b",
+  "git_tags": [
+    "PHASE10_PRODUCTION_HARDENED_APPROVED",
+    "PHASE11_FORENSIC_EXIT_AUDIT_COMPLETE",
+    "PHASE11_MISSION_READY_APPROVED",
+    "PHASE8_PRODUCTION_HARDENED_APPROVED"
+  ],
+  "working_tree_clean": true,
+  "status_output": "",
+  "recent_commits": [
+    "2a47f02 phase11: final forensic exit audit documents and updated evidence reports",
+    "b47b77c phase11: fix git porcelain status filter for staged-only modifications",
+    "966f74a phase11: refine git gate to exclude reports/ from dirty-tree check",
+    "b5adbfd phase11: fix forensic audit git gate to use ancestry check instead of hardcoded hash",
+    "c149bff phase11: add forensic exit audit script and 29 machine-readable audit reports",
+    "fab947e feat(phase11): complete independent adversarial validation, security hardening, performance certification & 40-gate release audit",
+    "ff2077b feat(phase10): complete Phase 10 Mission Operations Plane documentation and UI console",
+    "3c94107 chore(phase10): finalize Phase 10 forensic exit audit with 10/10 gates passed",
+    "4c7e83f fix(phase10): ruff/mypy cleanup + exit audit hardening",
+    "18dd5bd feat(phase10): Mission Operations Plane - PRODUCTION_HARDENED"
+  ],
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "win32",
+  "baseline_test_count": 614,
+  "phase11_frozen_tags": [
+    "PHASE11_MISSION_READY_APPROVED",
+    "PHASE11_FORENSIC_EXIT_AUDIT_COMPLETE"
+  ],
+  "phase11_exit_status": "PHASE11_APPROVED_WITH_REMEDIATION_PHASE12_CONDITIONAL"
+}

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-08T15:43:00Z",
+  "total_packages_checked": 22,
+  "package_import_status": {
+    "ulpf_contracts": "PASS",
+    "ulpf_domain": "PASS",
+    "ulpf_ingestion": "PASS",
+    "ulpf_normalization": "PASS",
+    "ulpf_parser_runtime": "PASS",
+    "ulpf_platform": "PASS",
+    "ulpf_semantic": "PASS",
+    "ulpf_mapping": "PASS",
+    "ulpf_onboarding": "PASS",
+    "ulpf_ai": "PASS",
+    "ulpf_runtime": "PASS",
+    "ulpf_streaming": "PASS",
+    "ulpf_storage": "PASS",
+    "ulpf_search": "PASS",
+    "ulpf_delivery": "PASS",
+    "ulpf_observability": "PASS",
+    "ulpf_security": "PASS",
+    "ulpf_intelligence": "PASS",
+    "ulpf_advanced_intelligence": "PASS",
+    "ulpf_mission": "PASS",
+    "ulpf_api": "PASS",
+    "ulpf_worker": "PASS"
+  },
+  "cli_entrypoint_status": {
+    "ulpf-api": "PASS",
+    "ulpf-worker": "PASS",
+    "fastapi_app_init": "PASS"
+  },
+  "parse_smoke_status": "PASS",
+  "verdict": "INSTALLATION_SMOKE_PASS"
+}

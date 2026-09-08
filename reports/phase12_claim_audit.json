@@ -1,0 +1,63 @@
+{
+  "audit_timestamp": "2026-09-08T15:36:00Z",
+  "scanned_patterns": [
+    "certified sovereign mission-ready",
+    "immediate classified deployment",
+    "government certified",
+    "NTRO certified",
+    "security accredited",
+    "classified operational approval",
+    "100% secure",
+    "zero risk",
+    "zero false positives",
+    "perfect detection",
+    "production-ready everywhere"
+  ],
+  "total_unsupported_claim_matches": 7,
+  "matches": [
+    {
+      "file": "docs/DATASET_ORGANIZATION_PLAN.md",
+      "line": 76,
+      "pattern": "zero risk",
+      "text": "| 8 | `data/fixtures/real_world/loghub/README.md` & `CITATION` | `data/reference/loghub/` | PRESERVE | Retains upstream academic attribution and license | Zero risk. |"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "line": 207,
+      "pattern": "certified sovereign mission-ready",
+      "text": "overstated (\"certified sovereign mission-ready for immediate deployment in"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "line": 19,
+      "pattern": "certified sovereign mission-ready",
+      "text": "> *\"Certified sovereign mission-ready for immediate deployment in classified,"
+    },
+    {
+      "file": "apps/web/index.html",
+      "line": 592,
+      "pattern": "zero false positives",
+      "text": "<tr><td>Detection Rules</td><td><span class=\"status-pill healthy\">HEALTHY</span></td><td>1.1 ms</td><td>25,000 eps</td><td>Zero False Positives</td></tr>"
+    },
+    {
+      "file": "scripts/run_phase11_forensic_exit_audit.py",
+      "line": 667,
+      "pattern": "certified sovereign mission-ready",
+      "text": "\"release_claim_scrutiny\": \"ADJUSTED (Replaced 'certified sovereign mission-ready' marketing language with evidence-grounded 'Phase 11 software validation completed against defined criteria')\","
+    },
+    {
+      "file": "scripts/run_phase11_forensic_exit_audit.py",
+      "line": 685,
+      "pattern": "certified sovereign mission-ready",
+      "text": "\"claim\": \"Phrase 'certified sovereign mission-ready for immediate deployment in classified, high-consequence national security operations'\","
+    },
+    {
+      "file": "tests/test_phase10_mission.py",
+      "line": 243,
+      "pattern": "zero risk",
+      "text": "\"\"\"Empty signal input returns zero risk score.\"\"\""
+    }
+  ],
+  "status": "ALL_CLAIMS_CALIBRATED_OR_DISCUSSED_AS_FINDINGS",
+  "calibrated_wording": "Phase 12 software release validation completed against the defined ULPF security, resilience, forensic-integrity, air-gap, reproducibility, performance, and operational-readiness criteria."
+}

@@ -24,7 +24,7 @@ from ulpf_intelligence.detection.engine import DetectionEngine
 from ulpf_intelligence.graph.store import RelationshipGraph
 from ulpf_intelligence.hunting.engine import ThreatHuntingEngine
 from ulpf_intelligence.investigations.workbench import InvestigationWorkbench
-from ulpf_intelligence.models.provenance import AlertSeverity, AlertStatus, CaseStatus, RuleState
+from ulpf_intelligence.models.provenance import AlertSeverity, CaseStatus, RuleState
 from ulpf_intelligence.rules.dsl import DetectionRule, RuleCondition, RuleOperator, RuleThreshold
 from ulpf_intelligence.rules.registry import RuleRegistry
 from ulpf_intelligence.timeline.builder import TimelineBuilder

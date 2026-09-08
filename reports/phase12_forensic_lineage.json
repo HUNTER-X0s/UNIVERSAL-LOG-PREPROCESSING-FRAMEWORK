@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-08T15:46:00Z",
+  "case_id": "case-p12-001",
+  "unbroken_chain_verified": true,
+  "missing_detection_refs": [],
+  "missing_event_refs": [],
+  "raw_to_canonical_hash_verified": true,
+  "verdict": "LINEAGE_CERTIFICATION_PASS"
+}

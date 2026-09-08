@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-08T15:50:00Z",
+  "total_scenarios": 3,
+  "passed_scenarios": 3,
+  "scenarios": [
+    {
+      "scenario": "json_depth_bomb_containment",
+      "description": "Deeply nested JSON recursion bomb handled without stack overflow",
+      "status": "PASS"
+    },
+    {
+      "scenario": "graph_cycle_protection",
+      "description": "Dense cycle graph traversal terminates deterministically",
+      "status": "PASS"
+    },
+    {
+      "scenario": "stream_backpressure_bounding",
+      "description": "In-memory stream queues enforce capacity boundaries and raise BufferFullError",
+      "status": "PASS"
+    }
+  ],
+  "verdict": "CHAOS_RESILIENCE_PASS"
+}

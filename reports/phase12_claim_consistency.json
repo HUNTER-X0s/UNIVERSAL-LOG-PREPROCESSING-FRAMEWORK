@@ -1,0 +1,113 @@
+{
+  "audit_timestamp": "2026-09-08T15:39:00Z",
+  "authoritative_source": "reports/release_metrics.json",
+  "total_claims_audited": 17,
+  "verified_consistent_count": 17,
+  "discrepancy_count": 0,
+  "discrepancies": [],
+  "verified_sample": [
+    {
+      "file": "README.md",
+      "claim_type": "test_count",
+      "value": 614,
+      "status": "CONSISTENT_WITH_SSOT"
+    },
+    {
+      "file": "README.md",
+      "claim_type": "parser_count",
+      "value": 20,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "test_count",
+      "value": 614,
+      "status": "CONSISTENT_WITH_SSOT"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "baseline_test_count",
+      "value": 584,
+      "status": "VALID_PHASE10_REFERENCE"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "test_count",
+      "value": 614,
+      "status": "CONSISTENT_WITH_SSOT"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "test_count",
+      "value": 614,
+      "status": "CONSISTENT_WITH_SSOT"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "parser_count",
+      "value": 11,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "parser_count",
+      "value": 15,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINAL_EXIT_AUDIT.md",
+      "claim_type": "parser_count",
+      "value": 20,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 11,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 15,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 11,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 15,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 20,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_FINDINGS.md",
+      "claim_type": "parser_count",
+      "value": 20,
+      "status": "VALID_RECONCILED_SUBSET"
+    },
+    {
+      "file": "docs/PHASE11_SIH_DEMO_SCRIPT.md",
+      "claim_type": "test_count",
+      "value": 614,
+      "status": "CONSISTENT_WITH_SSOT"
+    },
+    {
+      "file": "docs/PHASE11_JUDGE_CHECKLIST.md",
+      "claim_type": "parser_count",
+      "value": 15,
+      "status": "VALID_RECONCILED_SUBSET"
+    }
+  ],
+  "verdict": "CLAIM_CONSISTENCY_PASS"
+}
