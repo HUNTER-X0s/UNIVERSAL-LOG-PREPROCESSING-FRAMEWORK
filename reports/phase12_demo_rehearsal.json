@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-08T16:43:44.911623+00:00",
+  "timestamp": "2026-09-08T16:44:44.423897+00:00",
   "total_trials": 3,
   "passed_trials": 3,
   "rehearsals": [
     {
       "trial": 1,
-      "duration_seconds": 2.192,
+      "duration_seconds": 2.04,
       "status": "PASS",
       "offline_verified": true
     },
     {
       "trial": 2,
-      "duration_seconds": 2.182,
+      "duration_seconds": 2.224,
       "status": "PASS",
       "offline_verified": true
     },
     {
       "trial": 3,
-      "duration_seconds": 2.025,
+      "duration_seconds": 2.124,
       "status": "PASS",
       "offline_verified": true
     }

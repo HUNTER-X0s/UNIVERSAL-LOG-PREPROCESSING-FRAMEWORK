@@ -1,6 +1,6 @@
 {
   "timestamp": "2026-09-08T15:46:00Z",
-  "pipeline_duration_seconds": 0.0011,
+  "pipeline_duration_seconds": 0.0016,
   "total_vendors_tested": 8,
   "vendors": [
     "Palo Alto Networks",
@@ -16,8 +16,8 @@
   "raw_bytes_lossless": true,
   "detections_generated": 4,
   "case_id": "case-p12-001",
-  "evidence_package_id": "pkg-2eca50b1213b",
-  "package_overall_sha256": "a2736ff07723ef82548446910f40beaaf23ccb41eae176dcae9f3a4f485074b2",
+  "evidence_package_id": "pkg-ac41d18bc4d4",
+  "package_overall_sha256": "028cfe782e54a36a2c518da02450044aaae4c3a154f3f5d9c386b8cf72169118",
   "checksum_count": 8,
   "lineage_valid": true,
   "replay_determinism": true,

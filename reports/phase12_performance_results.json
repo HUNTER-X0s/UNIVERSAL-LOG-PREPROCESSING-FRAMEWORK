@@ -3,26 +3,26 @@
   "platform": "Windows-11-10.0.26200-SP0",
   "python_version": "3.12.10",
   "total_iterations": 10000,
-  "aggregate_throughput_eps": 12941.9,
-  "p50_latency_ms": 0.0832,
-  "p95_latency_ms": 0.132,
-  "p99_latency_ms": 0.1493,
+  "aggregate_throughput_eps": 18049.0,
+  "p50_latency_ms": 0.082,
+  "p95_latency_ms": 0.0895,
+  "p99_latency_ms": 0.1031,
   "benchmarks": {
     "palo_alto_parser": {
       "iterations": 5000,
-      "duration_seconds": 0.5843,
-      "throughput_eps": 8557.7,
-      "p50_latency_ms": 0.1271,
-      "p95_latency_ms": 0.1392,
-      "p99_latency_ms": 0.1685
+      "duration_seconds": 0.4406,
+      "throughput_eps": 11348.0,
+      "p50_latency_ms": 0.0865,
+      "p95_latency_ms": 0.0935,
+      "p99_latency_ms": 0.1274
     },
     "generic_json_parser": {
       "iterations": 5000,
-      "duration_seconds": 0.1884,
-      "throughput_eps": 26538.0,
-      "p50_latency_ms": 0.0331,
-      "p95_latency_ms": 0.0532,
-      "p99_latency_ms": 0.0639
+      "duration_seconds": 0.1134,
+      "throughput_eps": 44075.8,
+      "p50_latency_ms": 0.0221,
+      "p95_latency_ms": 0.0233,
+      "p99_latency_ms": 0.0289
     }
   },
   "verdict": "PERFORMANCE_CERTIFIED_PASS"
