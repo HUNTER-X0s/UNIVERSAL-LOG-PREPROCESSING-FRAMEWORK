@@ -1,15 +1,15 @@
 {
-  "audit_timestamp": "2026-09-08T15:49:16.738416+00:00",
+  "audit_timestamp": "2026-09-08T15:50:05.823445+00:00",
   "total_gates": 20,
-  "passed_gates": 19,
-  "failed_gates": 1,
-  "audit_duration_seconds": 6.921,
-  "verdict": "PHASE12_RELEASE_REJECTED",
+  "passed_gates": 20,
+  "failed_gates": 0,
+  "audit_duration_seconds": 6.262,
+  "verdict": "PHASE12_FINAL_RELEASE_CANDIDATE_APPROVED",
   "gates": [
     {
       "gate": "Gate 01: Git Integrity & Clean Working Tree",
-      "status": "FAIL",
-      "details": "16 dirty files outside reports/dist"
+      "status": "PASS",
+      "details": "0 dirty files outside reports/dist"
     },
     {
       "gate": "Gate 02: Phase 11 Finding Remediation",
