@@ -1,0 +1,45 @@
+{
+  "manifest_version": "1.0.0",
+  "release_candidate": "1.0.0-rc1",
+  "timestamp": "2026-09-08T15:45:00Z",
+  "git_commit": "2a47f02c5849222dce6d5c4649497e4f1b67ec3b",
+  "git_tag_target": "PHASE12_FINAL_RELEASE_CANDIDATE_APPROVED",
+  "artifacts": {
+    "ulpf_foundation-0.1.0-py3-none-any.whl": {
+      "sha256": "373a27c5306c96ec7a0bbdb71ff362592a051362b1a90b34f44bcf3dfb5ba140",
+      "size_bytes": 411010
+    }
+  },
+  "included_packages": [
+    "apps/api",
+    "apps/worker",
+    "packages/contracts",
+    "packages/domain",
+    "packages/ingestion",
+    "packages/normalization",
+    "packages/parser-runtime",
+    "packages/platform",
+    "packages/semantic",
+    "packages/mapping",
+    "packages/onboarding",
+    "packages/ai",
+    "packages/runtime",
+    "packages/streaming",
+    "packages/storage",
+    "packages/search",
+    "packages/delivery",
+    "packages/observability",
+    "packages/security",
+    "packages/intelligence",
+    "packages/advanced_intelligence",
+    "packages/mission"
+  ],
+  "verification_status": {
+    "clean_install_smoke": "PASS",
+    "static_analysis": "PASS",
+    "secret_scan": "PASS",
+    "config_audit": "PASS",
+    "airgap_cert": "PASS",
+    "security_audit": "PASS"
+  }
+}

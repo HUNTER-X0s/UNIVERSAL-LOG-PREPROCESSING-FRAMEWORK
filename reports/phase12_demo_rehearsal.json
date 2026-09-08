@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-09-08T16:43:44.911623+00:00",
+  "total_trials": 3,
+  "passed_trials": 3,
+  "rehearsals": [
+    {
+      "trial": 1,
+      "duration_seconds": 2.192,
+      "status": "PASS",
+      "offline_verified": true
+    },
+    {
+      "trial": 2,
+      "duration_seconds": 2.182,
+      "status": "PASS",
+      "offline_verified": true
+    },
+    {
+      "trial": 3,
+      "duration_seconds": 2.025,
+      "status": "PASS",
+      "offline_verified": true
+    }
+  ],
+  "verdict": "DEMO_REHEARSAL_PASS"
+}
