@@ -1,0 +1,102 @@
+{
+  "version": "1.5.0",
+  "timestamp": "2026-09-09T21:23:50Z",
+  "artifacts": {
+    "airgap_assurance_report.json": {
+      "sha256": "939f68f46a2bf8787ef165bb343f5b74ae92433a583e2fa291f5c69aab23e110",
+      "size_bytes": 269
+    },
+    "baseline_claims.json": {
+      "sha256": "0837d9d0fc3290a277d2325d05d21adac3096bd09f29a80ec549bb83c1809e0f",
+      "size_bytes": 4048
+    },
+    "baseline_git_state.json": {
+      "sha256": "6864b2b9ac0de111d5356f37d5f9c8de5273ad11a99d7654942243e1ff2b37fb",
+      "size_bytes": 580
+    },
+    "baseline_inventory.json": {
+      "sha256": "e07c49e4af39e92da16af53bf9a996195a9e49bee6f40a298500331f0c4db361",
+      "size_bytes": 2717
+    },
+    "baseline_metrics.json": {
+      "sha256": "edcf95bdcbd660ff0d3c39ad2b03e80916a813b9293f0e44a57e6f65eb848d1c",
+      "size_bytes": 570
+    },
+    "baseline_test_state.json": {
+      "sha256": "60b27dd488c0fd7c466abe3331c8b30d63d20281c569a30b295c352e279f9a00",
+      "size_bytes": 208
+    },
+    "benchmark_evidence.json": {
+      "sha256": "10c96f683e1f7800e31d7bdc967f67ccd9071bd31258e0f13d7679614f9ddd62",
+      "size_bytes": 3598
+    },
+    "clean_install_report.md": {
+      "sha256": "1659ee17f40a4af6685e20c70e652f083052de07704d859b23103283f0b8d506",
+      "size_bytes": 2929
+    },
+    "continuous_assurance_phase15_fast.json": {
+      "sha256": "8403dfb66ea5d98c5b9e535bd154601df2c6c05bd07dfe5e1daf3ee86a028e56",
+      "size_bytes": 1218
+    },
+    "continuous_assurance_phase15_security.json": {
+      "sha256": "fb8c2fdf82313f559f86dd96594e13da865061e323405d84789739ac986d6c14",
+      "size_bytes": 1220
+    },
+    "controlled_chaos_report.json": {
+      "sha256": "aba19704c42d533c25de7679098fc02fbb7ef55f78aa513bd310b3047a23a477",
+      "size_bytes": 2582
+    },
+    "forensic_lineage_report.json": {
+      "sha256": "13ba9948584f14e6d084daba6a0e2de7848165641fa705f1dd2a0c8256b3f10a",
+      "size_bytes": 793
+    },
+    "license_inventory.json": {
+      "sha256": "2eb83ae0fe22f0ee0bce1267ad5b702ea313f2d5adcfd514cbfc3a04727b3020",
+      "size_bytes": 3250
+    },
+    "ntro_traceability_matrix.json": {
+      "sha256": "c9e3e6187b71144de987b76b3c54fc40d41a100c5841c4aebf9a6286bc5d168b",
+      "size_bytes": 8957
+    },
+    "offline_install_report.md": {
+      "sha256": "2d78c1ecd07a449f3130a1d56880f5eb039729e3b14082508342f31451265974",
+      "size_bytes": 1369
+    },
+    "package_manifest.json": {
+      "sha256": "205d9b5fd0ee595991f8b613c9ead0b5e937c0e310a794cce7724ea892e863a2",
+      "size_bytes": 65124
+    },
+    "PHASE15_BASELINE_ATTESTATION.md": {
+      "sha256": "2ed953422da670540075ff125ed143ff72e481e70f22f0120b9e52a9a6a628ac",
+      "size_bytes": 5607
+    },
+    "PHASE15_EVIDENCE_AUDIT.md": {
+      "sha256": "64b25226992901669ffb05e19878e632b07ec01b46045a32c249e894b4d594f1",
+      "size_bytes": 6326
+    },
+    "phase15_evidence_audit_report.json": {
+      "sha256": "db6e82b7d67943de2ffb593cde270506083ba2f0b80475da035cd66bf4d1b20e",
+      "size_bytes": 19459
+    },
+    "README.md": {
+      "sha256": "94c56c664a51d2a4773674f98e02b11e007b25bd544bcdb0b378c8fd0e32b25c",
+      "size_bytes": 2488
+    },
+    "release_claims.json": {
+      "sha256": "0837d9d0fc3290a277d2325d05d21adac3096bd09f29a80ec549bb83c1809e0f",
+      "size_bytes": 4048
+    },
+    "sbom.json": {
+      "sha256": "caf77541df10408ad02ca55b2004b7789c747e155051b3d23b6d360c5e506620",
+      "size_bytes": 4904
+    },
+    "sih_judge_mode_report.json": {
+      "sha256": "58a6dfc47c4494fd9feab03ffd459b4366678c09e17904dd9071c7fac340306a",
+      "size_bytes": 4999
+    },
+    "standards_interoperability.json": {
+      "sha256": "2dc3f00a6efbc847b84f5fbd7fc1d9992b98c00133d4f958a00654c3cab6ba51",
+      "size_bytes": 1246
+    }
+  }
+}
