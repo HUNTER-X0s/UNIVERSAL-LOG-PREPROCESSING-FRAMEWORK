@@ -1,0 +1,77 @@
+{
+  "attestation_timestamp": "2026-09-09T19:51:31Z",
+  "claims": [
+    {
+      "claim": "Lossless Raw Payload Preservation",
+      "category": "Forensics & NTRO R01",
+      "evidence": "SHA-256 digest calculated at ingress, stored unmodified in RawLogRecord and DLQ, dual-view verified",
+      "verification_method": "Deterministic test & tamper injection",
+      "scope": "All parsed and unparsed events",
+      "limitations": "Requires storage volume configured for full payload retention",
+      "status": "verified"
+    },
+    {
+      "claim": "Heterogeneous Multi-Vendor Parsing",
+      "category": "Interoperability & NTRO R02/R03/R04",
+      "evidence": "20 unique concrete parsers (CEF, LEEF, Syslog RFC3164/5424, JSON, CSV, KV, XML, W3C, Palo Alto, FortiGate, Cisco, Linux Auditd, etc.)",
+      "verification_method": "AST source analysis + 104 dedicated parser tests",
+      "scope": "Enterprise network, host, and cloud audit feeds",
+      "limitations": "Proprietary binary proprietary formats require standard stream conversion",
+      "status": "verified"
+    },
+    {
+      "claim": "Unified Canonical Event (UCE) Normalization",
+      "category": "Normalization & NTRO R05/R06/R07",
+      "evidence": "Strict UCE schema with ECS and OCSF projection mappings",
+      "verification_method": "Contract and round-trip transformation tests",
+      "scope": "All ingested telemetry",
+      "limitations": "Projections are lossy adapters for standards differences; UCE is source of truth",
+      "status": "verified"
+    },
+    {
+      "claim": "Sovereign Air-Gapped Operation",
+      "category": "Security & NTRO R16",
+      "evidence": "0 static external API calls; 0 runtime socket connections; local IOC match; local LLM-free rule advisor",
+      "verification_method": "AST network call scanning + monkeypatched socket interceptor",
+      "scope": "Entire core processing engine",
+      "limitations": "External threat feeds must be imported via offline air-gap file transfer",
+      "status": "verified"
+    },
+    {
+      "claim": "Distributed Partitioned Ingestion & Lossless DLQ",
+      "category": "Reliability & NTRO R11",
+      "evidence": "DistributedIngestionFabric with 5 routing keys, bounded lateness buffer, DLQ cryptographic manifest",
+      "verification_method": "Distributed platform unit and chaos simulation tests",
+      "scope": "Streaming fabric and runtime backpressure",
+      "limitations": "Evaluated in in-process memory queue model simulating distributed cluster",
+      "status": "verified"
+    },
+    {
+      "claim": "High Availability Failover & Offset Preservation",
+      "category": "Reliability & Resilience",
+      "evidence": "FailoverCoordinator with heartbeat tracking, dynamic lease rebalance, exact offset resumption",
+      "verification_method": "Worker crash and recovery tests",
+      "scope": "Stream partition consumers",
+      "limitations": "Requires coordinator consensus backend in multi-node clusters",
+      "status": "verified"
+    },
+    {
+      "claim": "Zero-Side-Effect Playbook Simulation",
+      "category": "Analyst Operations & Security",
+      "evidence": "PlaybookSimulator executes dry-run action graph, predicts blast radius, captures rollbacks with zero live changes",
+      "verification_method": "Simulation isolation tests",
+      "scope": "Automated containment and remediation playbooks",
+      "limitations": "Simulated state relies on accurate network topology graph",
+      "status": "verified"
+    },
+    {
+      "claim": "Full NTRO Requirements Coverage (16/16)",
+      "category": "Compliance & NTRO Traceability",
+      "evidence": "docs/phase14_ntro_traceability.md mapping all 16 NTRO problem statement criteria to code and tests",
+      "verification_method": "Automated traceability verification gate",
+      "scope": "All NTRO SIH 2026 requirements",
+      "limitations": "None identified within hackathon problem statement boundary",
+      "status": "verified"
+    }
+  ]
+}

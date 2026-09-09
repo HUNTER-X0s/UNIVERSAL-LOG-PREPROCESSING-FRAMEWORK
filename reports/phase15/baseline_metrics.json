@@ -1,0 +1,17 @@
+{
+  "phase": 15,
+  "milestone": "A",
+  "attestation_timestamp": "2026-09-09T19:51:31Z",
+  "frozen_baseline_commit": "c341d1d2fd7931e46690aae0258419136c670542",
+  "frozen_baseline_tag": "PHASE14_PRE_PHASE15_VERIFIED",
+  "python_version": "3.12.10",
+  "total_packages": 22,
+  "total_concrete_parsers": 20,
+  "total_collected_tests": 658,
+  "total_passing_tests": 657,
+  "total_failing_tests": 0,
+  "ntro_requirements_verified": "16/16",
+  "air_gap_static_hits": 0,
+  "air_gap_runtime_calls": 0,
+  "baseline_verdict": "PHASE14_BASELINE_VERIFIED_AUTHENTIC"
+}

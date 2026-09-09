@@ -1,0 +1,15 @@
+{
+  "attestation_timestamp": "2026-09-09T19:51:25Z",
+  "head_commit": "c341d1d2fd7931e46690aae0258419136c670542",
+  "head_tags": [
+    "PHASE14_PRE_PHASE15_VERIFIED"
+  ],
+  "expected_p14_verified": "c341d1d2fd7931e46690aae0258419136c670542",
+  "p14_verified_matched": true,
+  "p14_release_candidate": "eddca36a9232d3468c59266b5e5e7c89d8f25bec",
+  "p13_verified_baseline": "1937aff0652b55ad9f2b030f8bc16dfb3877c076",
+  "p13_release_candidate": "f730e663aa00d53333ae9834a22136dcf78a373c",
+  "ancestry_intact": true,
+  "working_tree_clean": false,
+  "verdict": "FAIL"
+}

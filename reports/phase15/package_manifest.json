@@ -1,0 +1,1577 @@
+{
+  "timestamp": "2026-09-09T19:55:47Z",
+  "package_count": 22,
+  "total_source_files": 284,
+  "total_source_bytes": 1284715,
+  "undeclared_external_imports": [
+    {
+      "file": "packages\\contracts\\ulpf_contracts\\registry.py",
+      "import": "jsonschema"
+    },
+    {
+      "file": "packages\\contracts\\ulpf_contracts\\registry.py",
+      "import": "referencing"
+    },
+    {
+      "file": "packages\\mapping\\ulpf_mapping\\compiler\\compiler.py",
+      "import": "jsonschema"
+    },
+    {
+      "file": "packages\\semantic\\ulpf_semantic\\validation.py",
+      "import": "jsonschema"
+    }
+  ],
+  "packages": {
+    "advanced_intelligence": {
+      "has_pyproject": false,
+      "file_count": 39,
+      "files": [
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\errors.py",
+          "size": 1908,
+          "sha256": "738dffc8fcbc3243a9e138a67c69581554414ad7a563edf76692abee913125ce"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\__init__.py",
+          "size": 5033,
+          "sha256": "6279d7ed39aed9dc68cf2ed927c7ecc9af04ba3c30f8e214d086c4bcd27f805f"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\adaptive_detection\\engine.py",
+          "size": 7438,
+          "sha256": "8558febbc41a34b9be32ea201a19bb7d40ae3eefcf78f2002b52c356bcfa9f16"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\attack_paths\\analyzer.py",
+          "size": 4354,
+          "sha256": "53f172851dd12e57a1297a1f98dbcf68843343f3784d612a14c5a7144ee41b2d"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\automation\\actions.py",
+          "size": 2993,
+          "sha256": "6f85445c86dd676ef1e4e85e6e9592aa9ace92d2a9866feda33fa721ac383019"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\automation\\advisor.py",
+          "size": 3009,
+          "sha256": "3cf58a66e1afc5aa44fc38d5ca9deb57ccf575396199b3042ea79cc6a0bb6f38"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\behavior\\drift_detector.py",
+          "size": 3072,
+          "sha256": "691f431ca5a132a0e1bcf1e54a0f8730d3dc625ab247a17837fdaaa5515d55fe"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\behavior\\profiler.py",
+          "size": 7455,
+          "sha256": "4b2b49625a9e554cb46772c530616fd920dfea7a2c5615b9044f155647a97a8e"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\clustering\\campaign_engine.py",
+          "size": 3985,
+          "sha256": "fbb25c1b6d02d2802991a8c53d595ce7eb46aeca29c6b81d0a73cf4203dd5a66"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\content\\coverage.py",
+          "size": 2354,
+          "sha256": "9accc50410103e0b9fc7b7c5f9d1fcb9a2d2316d98ae03415a36b1bc4d97b4ac"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\content\\lifecycle.py",
+          "size": 7227,
+          "sha256": "d9ed015c728fed87796c06adf47652b20774620c2b0b53c0bbe3fe01d42be8d3"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\content\\test_harness.py",
+          "size": 2626,
+          "sha256": "2056b4f59391e91c5169174c21205b0e6fd9ec4590b843f7be42dd91200138cf"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\evidence\\lineage.py",
+          "size": 3761,
+          "sha256": "a75dbdb553fab20fb9561c62de7a4771fedabf4ae2b77eb75bd92df21bd8b829"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\evidence\\packaging.py",
+          "size": 3547,
+          "sha256": "e696a3b33210c0d9fc28e42f49bd2913243b83eca744e0343af2970cc2b2014d"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\governance\\conflict_detector.py",
+          "size": 4435,
+          "sha256": "4a7d13ef205558c526a387a92283e3d0668e9ee059371ebd51382f5edc8640bd"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\integrations\\dispatcher.py",
+          "size": 3203,
+          "sha256": "d283ce9cf99acc229dcdb5e47f61494b3443648bb4ce6cd444c388e490deee4c"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\alerts.py",
+          "size": 4257,
+          "sha256": "c5b506463d57e7921cf2fa4c31026e9ef8dca66632a16736b79e67ebfbe20fa5"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\attack_paths.py",
+          "size": 2807,
+          "sha256": "f1deb0a5622a62530388677ef38566a1cb7761d1653f5718accb2842cd1a2712"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\behavior.py",
+          "size": 3671,
+          "sha256": "da6430fde6281f362706cd839ea205c372cbc18a80ff56c7b18a75914696c3ed"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\campaigns.py",
+          "size": 2108,
+          "sha256": "3632094a6d057e56b5dd8b70d3d682d4c465dd0b2e60d090fb8fe7d55582d51d"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\evidence_package.py",
+          "size": 3183,
+          "sha256": "b49cdfc9698886792242a5b3448dfb215fb37b635ad64a315331d05b8d394c49"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\threat_intel.py",
+          "size": 8325,
+          "sha256": "78c5acd27c16bce8fafb6afd65a3ff55d0231391537a856eaf72c4ab067eaebd"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\workflows.py",
+          "size": 4303,
+          "sha256": "f50215b99d752bc3f7add70b3bcb146a01f0f594c163f614d8e4677cb6d6cbff"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\models\\__init__.py",
+          "size": 2115,
+          "sha256": "a239acdd6a9af26a89bc0826a15508587094e92907ef656ca1a4d5a4023ba048"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\repositories\\alert_repo.py",
+          "size": 3970,
+          "sha256": "794ad6dc135d347071767089835a9a77e92bb266d1a62b9af21919ffc89f8ee3"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\repositories\\incident_repo.py",
+          "size": 3707,
+          "sha256": "e518f1b3096844ed990f11739b7abb9ee5c534a8af7f5b42a1e6dd1fc0038f31"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\repositories\\sqlite_schema.py",
+          "size": 3256,
+          "sha256": "d8bd4badc5267aa994ed3a2677ce15e796312fd278084fdc32f486c0f918cac0"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\repositories\\threat_intel_repo.py",
+          "size": 4328,
+          "sha256": "92476af07ea8260c4453f82254920923ade9019c4f4c23321b617dca41f313ed"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\repositories\\__init__.py",
+          "size": 606,
+          "sha256": "c69d612b482ececd8867bdbbb2accb046a2e9dffb7a4cbe84235ebdc059403e0"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\search\\query_builder.py",
+          "size": 4301,
+          "sha256": "8c337c6cea84d30657ecaf70e038ff4c2cbb3f8a1a1530a0c17521127669e787"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\search\\query_explain.py",
+          "size": 2271,
+          "sha256": "8da066f83f9d75f7ace71d9b53d94953ceb7bd87d038d250901877f3bb246e3c"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\services\\investigation.py",
+          "size": 4019,
+          "sha256": "9b0ff9d48a9c2c5c2ac5fb328d6bc24ff3d534203db93d8317aaf9086386cb6b"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\threat_intel\\feed_parser.py",
+          "size": 11920,
+          "sha256": "9cea7a13142075a00d4eb5270c5b578918bafa70e561cec6933204406f5c4fdf"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\threat_intel\\lifecycle.py",
+          "size": 4832,
+          "sha256": "d18d08d4550239a15d0f010e5a448809446bee5b09eba590131408aa4913c563"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\threat_intel\\validator.py",
+          "size": 3743,
+          "sha256": "92c014dd3a6e07cdd6844275bf379e2b2f970808b5ac21a0474d6248d3f3f30d"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\ti_matching\\engine.py",
+          "size": 6101,
+          "sha256": "0c320ddab2b51b9c60394fbf81bf089f2deb90a370af616bc4b0f9da9152c637"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\triage\\classifier.py",
+          "size": 1801,
+          "sha256": "8c93315c059f40097f31df6e291622bcbb1953351719ef8ffb539dec6169ae4d"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\triage\\deduplication.py",
+          "size": 3964,
+          "sha256": "b270fb3766893b045d2912f01749892f66016261cb10ca2cd4fa819204a2e418"
+        },
+        {
+          "file": "packages\\advanced_intelligence\\ulpf_advanced_intelligence\\triage\\flood_control.py",
+          "size": 1878,
+          "sha256": "4ab091d6555023938cb6f5a3791b6cc74861ec80d7d38b0c7c20edbb549e4279"
+        }
+      ]
+    },
+    "ai": {
+      "has_pyproject": false,
+      "file_count": 6,
+      "files": [
+        {
+          "file": "packages\\ai\\ulpf_ai\\interfaces.py",
+          "size": 1502,
+          "sha256": "dfbed885ee9628ebc0599971e4be0a976424a797e18b84d7a96e08397a6cf972"
+        },
+        {
+          "file": "packages\\ai\\ulpf_ai\\models.py",
+          "size": 1217,
+          "sha256": "9234bbed66049aa9addd7d99fe3fc571c0ed3c38f42e2383c0992d42372c7b67"
+        },
+        {
+          "file": "packages\\ai\\ulpf_ai\\safety.py",
+          "size": 2785,
+          "sha256": "1b7dd6fae7b9f1f25f3b96eea7d54ad6ad0ef457fd3cee94fc212f223d0a23e3"
+        },
+        {
+          "file": "packages\\ai\\ulpf_ai\\__init__.py",
+          "size": 563,
+          "sha256": "4a40e906f472f40741dc1ff41b5dcafc2af62b7ee15215d55aabe39fc4766302"
+        },
+        {
+          "file": "packages\\ai\\ulpf_ai\\providers\\offline.py",
+          "size": 7199,
+          "sha256": "a77d428ec71ec9d6b407525627a88acd21b0fe40ebd165a953235a348f635497"
+        },
+        {
+          "file": "packages\\ai\\ulpf_ai\\providers\\__init__.py",
+          "size": 147,
+          "sha256": "117080800334e7d73585837e59a1ebdbb412f099effcea729a40778724ae52df"
+        }
+      ]
+    },
+    "contracts": {
+      "has_pyproject": false,
+      "file_count": 3,
+      "files": [
+        {
+          "file": "packages\\contracts\\ulpf_contracts\\foundation.py",
+          "size": 1141,
+          "sha256": "06489449fd80e0aef5c257f91ed97bb65b29fb73b6b7a065e7f557c9ae00e6f4"
+        },
+        {
+          "file": "packages\\contracts\\ulpf_contracts\\registry.py",
+          "size": 3295,
+          "sha256": "7f1cba2868b36dc96f75899446efde5b868db3ed82c53e41b8cc4080e7c73319"
+        },
+        {
+          "file": "packages\\contracts\\ulpf_contracts\\__init__.py",
+          "size": 147,
+          "sha256": "f988fbf032eb80e4a2125304a2d2443febdf4a949c80f6a6171083d5badc734f"
+        }
+      ]
+    },
+    "delivery": {
+      "has_pyproject": false,
+      "file_count": 4,
+      "files": [
+        {
+          "file": "packages\\delivery\\ulpf_delivery\\interfaces.py",
+          "size": 1496,
+          "sha256": "08b62959a401881c0903ab2618dd787f4e8b870704040e6698cd23abd75daa49"
+        },
+        {
+          "file": "packages\\delivery\\ulpf_delivery\\outbox.py",
+          "size": 2931,
+          "sha256": "b037b6112e94b7c8437e95d7b05da4e24cd1baa6fd707678a0257d73f17f3180"
+        },
+        {
+          "file": "packages\\delivery\\ulpf_delivery\\sinks.py",
+          "size": 7096,
+          "sha256": "5afc3c74f861ad41bc1b02b811b1b36cc9c21bc75387813553052995393e574e"
+        },
+        {
+          "file": "packages\\delivery\\ulpf_delivery\\__init__.py",
+          "size": 458,
+          "sha256": "b26e5b962d2e3e77bdb3eb98c46ddc42c0f170765f5411676e1d3a23577db3ea"
+        }
+      ]
+    },
+    "domain": {
+      "has_pyproject": false,
+      "file_count": 2,
+      "files": [
+        {
+          "file": "packages\\domain\\ulpf_domain\\primitives.py",
+          "size": 783,
+          "sha256": "b1ed25d2d3bfe23a32d408ce33b97a7004393cada7accdf5f08b506d95f75bcd"
+        },
+        {
+          "file": "packages\\domain\\ulpf_domain\\__init__.py",
+          "size": 223,
+          "sha256": "552a19432f772040395aa440f125b7168fbcae61d9585690f7d2d517bbff9acf"
+        }
+      ]
+    },
+    "ingestion": {
+      "has_pyproject": false,
+      "file_count": 9,
+      "files": [
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\adapters.py",
+          "size": 6114,
+          "sha256": "560dde9353b57b8b0e52e815e49d23bd11c29247332a4f9a6540bae4298c5cc6"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\evidence.py",
+          "size": 9734,
+          "sha256": "6e410ea4dab949c9e543789ee5c6917b4de92f2314cbe9491ffff1a846c1738f"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\listeners.py",
+          "size": 9999,
+          "sha256": "30a393987642ad25a0db1e9858da1f80bf7542006e98c5377a9dfab15c3d3c9c"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\metrics.py",
+          "size": 960,
+          "sha256": "842f128b938e7c55c3bd81f02d58bf8848b579c7adeb374210cfcd287d2fa812"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\models.py",
+          "size": 4940,
+          "sha256": "9bc859db9c009c5e30c29231b1a1840d453207e514b85d37be156687898bf145"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\ports.py",
+          "size": 909,
+          "sha256": "19102c02a546a7c2f6bd2640d36ab9fcd7442ec669ea21bf31734b56c2796e8f"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\runtime.py",
+          "size": 3090,
+          "sha256": "236a6b6e5811e2520163089030e912b1f988e799630cea59b30555b23cbc64bc"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\service.py",
+          "size": 4433,
+          "sha256": "476f9f3d73dd1288705e01c6a3d6a56469e3007ae1fa2e5a22fec2e8477f9f93"
+        },
+        {
+          "file": "packages\\ingestion\\ulpf_ingestion\\__init__.py",
+          "size": 391,
+          "sha256": "53220f1fa3667e068614035ea58247dbf7d52d597ac9ac371dca6924fd0f1b26"
+        }
+      ]
+    },
+    "integrations": {
+      "has_pyproject": false,
+      "file_count": 0,
+      "files": []
+    },
+    "intelligence": {
+      "has_pyproject": false,
+      "file_count": 35,
+      "files": [
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\errors.py",
+          "size": 1702,
+          "sha256": "fc7b4f58f0897ce8738ac7d02b366f0d795b376705abae0dd48af68506877d61"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\__init__.py",
+          "size": 2672,
+          "sha256": "a6898ae4c9f1ed6af3781ba63fdd67567ad4bd9fdafcdb31e90e9acf297a07be"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\ai_assistant\\advisor.py",
+          "size": 2591,
+          "sha256": "3bad0a2a9a8e727bf9eda159982d636f11b7b4dd70d1dafe721d38a5e585797e"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\anomaly\\engine.py",
+          "size": 5150,
+          "sha256": "f6a7714af80a829a0a3f4177ae28bcd309cc10ad472a6b3f5bd153e7d1d91f65"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\correlation\\engine.py",
+          "size": 5113,
+          "sha256": "1c172ea5da5e09398113d559b7a7ae49ac313511049b922b3a8265a9b44632db"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\correlation\\mission_correlator.py",
+          "size": 8656,
+          "sha256": "34a4870e3f49096bfc429c3fd4bf6784ff5852fa172b3dd092bfa26f3ccf3c8a"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\detection\\engine.py",
+          "size": 7327,
+          "sha256": "c5f2ed4e08d599224337c60003e512298180b41230ca5b19eb0e0689523c6b10"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\enrichment\\local.py",
+          "size": 3810,
+          "sha256": "6afc513b53bdc6d1000e678e946871fd904e6e9d59ee47d82b7a57240465ab84"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\entities\\resolver.py",
+          "size": 6581,
+          "sha256": "1b403abd2727432246e5f2018f2c249390f1fcb56d88b408dddcfcabbe4751a7"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\explainability\\engine.py",
+          "size": 3010,
+          "sha256": "954d47e061f2e82d25482fcef2b6ad4276c0891d163ca8667c0974a4e06d74d9"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\false_positives\\suppression.py",
+          "size": 4122,
+          "sha256": "089e9f9b8107d8f4833a0ba91f0aa8efbd056eb3af36a373442c504d5a19d233"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\feature_store\\extractor.py",
+          "size": 4636,
+          "sha256": "180b8eee77f69ef6d4cd727c8b711a8cd6b097b33b9b6f14499088955561bf6e"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\graph\\attack_graph.py",
+          "size": 8775,
+          "sha256": "a0e88c30b84e7c0ff82aaaac234b7468c9789e4d182f42540ff4b03d31410f34"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\graph\\store.py",
+          "size": 6444,
+          "sha256": "687d56bc9255f8e02a5b634b4169664066f221cf5a016f7b16861aa474c871f5"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\hunting\\engine.py",
+          "size": 4983,
+          "sha256": "dac07702547d9070398b65a77a1060e329f8e292b7878cfaea4e8b7982509a8b"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\attack_story.py",
+          "size": 6105,
+          "sha256": "57ff7ff4140fba0f7623d50907971de6d612b30c5581d4daab9dcefef7ab9c3f"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\case_package.py",
+          "size": 5917,
+          "sha256": "55d284a1c8c443a988e45dbb581955ca22c6a3e60325aafcc9ef61d4c7405ed6"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\context_graph.py",
+          "size": 5600,
+          "sha256": "d9d70cbbec49d5b3386e06a3064833e2e03e1204be1238ffdda361610679feb7"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\dual_view.py",
+          "size": 5554,
+          "sha256": "4f6fa03b769f7fb8a71c0e8db31c97bdba91647ba30c9d41f67ef943c234ad86"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\investigate.py",
+          "size": 5871,
+          "sha256": "ffb51dd8d29e514ee6ca6fb5a2193c4c10f7aefc0b5edb81214b7007db115292"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\investigations\\workbench.py",
+          "size": 7558,
+          "sha256": "211ffc7511d67aca5066ddbdb4128bb151ff2b4d0d03a88ba1a12ffb3c892c8b"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\models\\events.py",
+          "size": 29363,
+          "sha256": "eed545fab30eb57df316083e4b51bf3c845852942ba95d53cd5ecaf159ac3958"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\models\\provenance.py",
+          "size": 4996,
+          "sha256": "7861342908d9e7b4cf864d2b747b3fedf13be17ce431af191a241c1b7333d506"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\models\\__init__.py",
+          "size": 1392,
+          "sha256": "23616c17366ddf01dfa8bd1a31bcca2958ab7882b3ab5e0ee5d33c51dccf23a5"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\anomaly.py",
+          "size": 3259,
+          "sha256": "c62503eee3f41587ef16ac70761a401186811b0c7a9781e177a71519f744ad81"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\correlation.py",
+          "size": 2806,
+          "sha256": "8bee5f71f734d55c47538c750b52b562bff1d30a2dabcbecc86fa6f95762796f"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\detection.py",
+          "size": 5449,
+          "sha256": "8be81ca31abb437e3f9ad61459306499a06e3133f6daa3fe31610710ab1202be"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\investigation.py",
+          "size": 4189,
+          "sha256": "aa17bcd0a83c242b871fb17df1733f4b23d227e25955292ab9d6f1fc7ca10e78"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\rules.py",
+          "size": 3869,
+          "sha256": "28e731903956d0a1351fbf4e11caf939889666be3a5c59f19884e2e916e3966d"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\repositories\\__init__.py",
+          "size": 561,
+          "sha256": "4a924012de12d8651502e6427e895365a8f90939543d68a2bfdd1c4e4022b532"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\risk\\engine.py",
+          "size": 5406,
+          "sha256": "b04f3d5583057daf84454bacb7d0cc04e98e2fc5eb05a6ba55c72f3e7f52d3a2"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\rules\\dsl.py",
+          "size": 8304,
+          "sha256": "5f146250836f2d0d1339f1fcd651574f73ecdacfd6b8a145e7abf14f4b791103"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\rules\\registry.py",
+          "size": 8647,
+          "sha256": "b9b9fe851961b35bb96feb7ee52807c20239379dfb841168bbd49b1b456c7b2e"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\sequences\\engine.py",
+          "size": 6412,
+          "sha256": "5c7a43b77afd6f5bcb02b1d04165451ebbc47b3aaf80561431f3a075eab6981d"
+        },
+        {
+          "file": "packages\\intelligence\\ulpf_intelligence\\timeline\\builder.py",
+          "size": 3752,
+          "sha256": "f0ac7a5015ce5aba94a60597740140bfd7b6c7bd3c9a720e0e612576f3a9be3f"
+        }
+      ]
+    },
+    "lineage": {
+      "has_pyproject": false,
+      "file_count": 0,
+      "files": []
+    },
+    "mapping": {
+      "has_pyproject": false,
+      "file_count": 9,
+      "files": [
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\errors.py",
+          "size": 991,
+          "sha256": "1c1f9d474a11b8c78f8d40c059baa26b8d49ca27af7c7e94c646533015aa1c6f"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\models.py",
+          "size": 9604,
+          "sha256": "b1f19ea80527c46417359a3c4123b88483d4a18fa498c5c56153dea27bfdd524"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\__init__.py",
+          "size": 619,
+          "sha256": "60005a126fd379e5be1d9dc3601d0e19c718f45ef16d2aa156957064b674f455"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\compiler\\compiler.py",
+          "size": 5878,
+          "sha256": "e9f4e12d62bcda6976f5e49a2a4747eef0300ae8f7465b194c3442e32e51fa3b"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\compiler\\__init__.py",
+          "size": 131,
+          "sha256": "962af11a2aaebfa36b303bb70f42de3f3685298cd4495cdc9cc407dd5560ed5a"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\dsl\\operators.py",
+          "size": 6986,
+          "sha256": "57c9642387265f4f86f852b41c94170e2f5d9de3afea6d30d7bdf2a4f47593b6"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\dsl\\__init__.py",
+          "size": 251,
+          "sha256": "646dc8c5569ee61b1c4960a9051fc14c457dbe028a71773a7310ce40f5dff7e3"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\registry\\registry.py",
+          "size": 10921,
+          "sha256": "f918aca92d5a07e7acfab1b81473273f6044b39d5ce244731660ec30aa7f3a03"
+        },
+        {
+          "file": "packages\\mapping\\ulpf_mapping\\registry\\__init__.py",
+          "size": 131,
+          "sha256": "cea96841c5ea4187c2b355414ecd5c772ca404c35bbe6f0ad0589e76151845bc"
+        }
+      ]
+    },
+    "mission": {
+      "has_pyproject": false,
+      "file_count": 41,
+      "files": [
+        {
+          "file": "packages\\mission\\ulpf_mission\\__init__.py",
+          "size": 4672,
+          "sha256": "49c880345890cb9944179a34137441ae75144912779580d2922a1d513dd7fc94"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\copilot\\advisor.py",
+          "size": 12366,
+          "sha256": "ecf927b6f73661458ef31c5648f768a9d15e11d16cfe43d185d098552e7fbd9b"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\copilot\\__init__.py",
+          "size": 165,
+          "sha256": "ee620423b81da59b03210734eb339a343c7fea0738e242b66bb7bb3ef9b7238d"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\coverage\\gap_analyzer.py",
+          "size": 5359,
+          "sha256": "d735ffd8211f6409966c0e9215849c4940edb172b66114f9e0289610168e876f"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\coverage\\matrix.py",
+          "size": 7178,
+          "sha256": "5780297011e1857fa7334062be609448646728ff306d814c875dc0a1b320db99"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\coverage\\reliability.py",
+          "size": 2819,
+          "sha256": "3beb6dcbffcf4a976662ed852b8db93dec8df3b9fba41556af0868d6a94819be"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\coverage\\__init__.py",
+          "size": 595,
+          "sha256": "df037cb6ae9ee5b7863e7e8b91f9dc4355a053df370e5f0e372447f1a2c63886"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\cross_domain\\analytics.py",
+          "size": 5982,
+          "sha256": "76d8c6f128a6856dbe36868a839fb733be215259ed8f21c5eee6006d693a5988"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\cross_domain\\__init__.py",
+          "size": 361,
+          "sha256": "1f249dbe2c88684e29c3a59d643aa19125fc009252737b2f04575b742005cffb"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\early_warning\\engine.py",
+          "size": 7718,
+          "sha256": "05ceecb685e12d32a345ae8679cc59df165595e730fc11e1a5bd780a30708ea9"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\early_warning\\__init__.py",
+          "size": 138,
+          "sha256": "7f37635a0da8dcfea51bc0e4735dd9b07a01fc652f7ec0b164a3b37032c73bb8"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\fusion\\engine.py",
+          "size": 5284,
+          "sha256": "59433b452e675a7eea03665834ff83e4a12d3bed30080c388f3839e64f106b8a"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\fusion\\__init__.py",
+          "size": 124,
+          "sha256": "adf2032d3e9ac5c4a18fc6886380aa0775977047a9419d8aef2162b8ff820691"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\health\\model.py",
+          "size": 2815,
+          "sha256": "013fd8c595ef5e788928df92f4ff778d17a6e03229848b277a803474cd572cbf"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\health\\source_health.py",
+          "size": 7464,
+          "sha256": "44bce878b2448eb4009badd401fb0a8f7059ccae7f82c7e85e4199d34665f426"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\health\\__init__.py",
+          "size": 125,
+          "sha256": "30726bd6c385142b9cf5fc75ea8598e992452bff2fbf4b5cc75f1300309b2a6a"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\metrics\\sla.py",
+          "size": 4355,
+          "sha256": "f8ff9d3023186795207e191635c288ff4dd74991cab6cb9bcfd32a3b54904d25"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\metrics\\__init__.py",
+          "size": 240,
+          "sha256": "26f6c70dafd6d682e55e86b7f88ce1c2983519d707878509ff3958375b070274"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\early_warning.py",
+          "size": 2914,
+          "sha256": "b1f4528cb6f5af8542d74647b50d84ca13c8b44080e6569a734ad5d0671dfb9e"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\fusion.py",
+          "size": 2472,
+          "sha256": "4924dee3f590fb08c01d7371ed534d28112ffd9b345b972bbe1d9c5cd14c591d"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\health.py",
+          "size": 2399,
+          "sha256": "c5ebb0b29c1c6c2d91c6321639c4aec25df734ce857872e0ab7e9613a198a19a"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\playbooks.py",
+          "size": 3027,
+          "sha256": "f6f1ddef0f0102a60669171d26bcc0006efb7aaf17da0d8842357a680947d5fa"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\posture.py",
+          "size": 1349,
+          "sha256": "79eddf5b23472519329a8e5b64cbec919f00385627bfe320e642948e6b647716"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\scenarios.py",
+          "size": 3820,
+          "sha256": "3b1f07bdd784a41871ac62ea43918fb968fe43bc2796d3496b6b4fcde46d745f"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\state.py",
+          "size": 1661,
+          "sha256": "57c60790bfe4abd74bfea52b51994e3474248970e22ebb3cddf62a160b5b0043"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\models\\__init__.py",
+          "size": 1952,
+          "sha256": "6a7f0bf40e27ae9e8a5d7f9e88bb9f35dafa70fe22d046e275e47f53b689ae6d"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\orchestration\\pipeline.py",
+          "size": 19478,
+          "sha256": "c0bc5d5fe71bc414a9fc7ca3b9aac4c21e97183f1d5767bcd4b0df298a4b9a61"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\orchestration\\__init__.py",
+          "size": 224,
+          "sha256": "3c2ceb99dfda374af5542f7c5e98f3a70678f97022cbcd9d6a4320160db4b844"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\playbooks\\engine.py",
+          "size": 7446,
+          "sha256": "0e8719dce9b12bc6e92ff2102bb0ad0252e70c327730a7d1d4c8666c899cdac5"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\playbooks\\simulator.py",
+          "size": 4656,
+          "sha256": "720eb79a864c9415904246a0222695efc8e99680c07d266a314c9d1ab6f2cb2e"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\playbooks\\__init__.py",
+          "size": 138,
+          "sha256": "1bfc1c93f6397d4f02cf5747d95f115b19d34fdf77a5ff1d3e66a041bde054d9"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\posture\\engine.py",
+          "size": 6895,
+          "sha256": "50e3705e01594617b34dfa87d6cc8d981edc07080a3c4b22674b44e216012c47"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\posture\\__init__.py",
+          "size": 174,
+          "sha256": "7752991883040ce55da943e09fb05114e9a7a6b1195c656ded6d891d171f3404"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\replay\\lab.py",
+          "size": 6355,
+          "sha256": "eeef98dd6f11b9aa2d1e7e913d7d6abf097d100c97945782021a6dca63ad66ba"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\replay\\__init__.py",
+          "size": 171,
+          "sha256": "30c7e4555fac623de53870b4b84ef5ca2de141cbbc3bf7dccb781199f6d05256"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\scenarios\\definitions.py",
+          "size": 10639,
+          "sha256": "406f8b1f68af13e0999aecdc3746c6424ff9b53491b5364fb784e3ce508cbc46"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\scenarios\\differential.py",
+          "size": 3910,
+          "sha256": "67611e01c575ff80c3ae32575bf22c2b0c9377577af2952895c2569700b89482"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\scenarios\\harness.py",
+          "size": 5540,
+          "sha256": "4c5c46b10eab5ec4b3ffe81f5ffe04ab3bf1af2a304b9522f1e62b160c97bc8c"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\scenarios\\__init__.py",
+          "size": 349,
+          "sha256": "530306f6b405999a2c7f974f55804ba1a84139545303af482df90f73ec4d30a2"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\simulation\\engine.py",
+          "size": 6405,
+          "sha256": "59bc2640e7c32a4f43d6556528f8a03c6d592de07446a5979fddb5691e70c2e5"
+        },
+        {
+          "file": "packages\\mission\\ulpf_mission\\simulation\\__init__.py",
+          "size": 208,
+          "sha256": "a4ff57916315f51041952a088db0c9ff368217a1ae1d19dcded0234246fad2d8"
+        }
+      ]
+    },
+    "normalization": {
+      "has_pyproject": false,
+      "file_count": 12,
+      "files": [
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\assertions.py",
+          "size": 2232,
+          "sha256": "71277adedad8a68e3f1eb2a58acc707ae87ac196ad44ae66d7d28972d76eb0cd"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\canonical.py",
+          "size": 11712,
+          "sha256": "b58ded868a1885af18ba01d9e949079c78b172c5c9134b3035036f5a3624d630"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\dlq.py",
+          "size": 2684,
+          "sha256": "2eac3102332d4b115162ebf7953972d3363db84c63f87cc263249f2fa49f6643"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\unknown_fields.py",
+          "size": 1303,
+          "sha256": "d53035f5e406744a29d7b7620ec9a21a9cd85f05e1d0d1d51ad8d33b1bcbffa1"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\validation.py",
+          "size": 1168,
+          "sha256": "b697f9c861ad43a3fd2ba50319f1450f2af377d52edcc726dfff00da4d9a0946"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\__init__.py",
+          "size": 1483,
+          "sha256": "daedd3c21e2feafb614e02ca177c1f9664b4477bc3dc48647239de2f80a97afd"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\action.py",
+          "size": 1305,
+          "sha256": "ee55415ef5fab6bb3a0b56f0b90cf2335e8d90f924ea14ae9eb4e58269f1cc85"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\classification.py",
+          "size": 2473,
+          "sha256": "7d0b4bb4b05abe81d1292b91b5b9976fae7a45cb27e957fd0b00ba16b9bcea0d"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\network.py",
+          "size": 2447,
+          "sha256": "5d051a2426beae8f72724198255e6ca731fc5694e41c95ed5551ce30d6a2bb4c"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\severity.py",
+          "size": 2236,
+          "sha256": "d0e442f2ee98eb3f70633dc1091adcd46cae981de5e26ae475ca64e0d8e7c95c"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\timestamp.py",
+          "size": 4760,
+          "sha256": "278a7fd37212968adce663b230249ee7f26bf7186331248e5cdf52449b4be0c4"
+        },
+        {
+          "file": "packages\\normalization\\ulpf_normalization\\normalizers\\__init__.py",
+          "size": 790,
+          "sha256": "15262c9e59a362cdd32bdf8696f83fd8803ccdbecb7b5849da57cb18a9881db1"
+        }
+      ]
+    },
+    "observability": {
+      "has_pyproject": false,
+      "file_count": 6,
+      "files": [
+        {
+          "file": "packages\\observability\\ulpf_observability\\logging.py",
+          "size": 1856,
+          "sha256": "530e64b334e72c6242107417fdc9f9cc56213effeea1ebc1a50cfab42e322e27"
+        },
+        {
+          "file": "packages\\observability\\ulpf_observability\\metrics.py",
+          "size": 3032,
+          "sha256": "4321e1e76e425e2cf1166c84df91ac29c09b232291ecfc76687ddb5e6036477e"
+        },
+        {
+          "file": "packages\\observability\\ulpf_observability\\slo_engine.py",
+          "size": 6495,
+          "sha256": "e3a8c3c0f35889dbf831c240e9f74139e82422e717b291c60bb589736ed9f931"
+        },
+        {
+          "file": "packages\\observability\\ulpf_observability\\telemetry_slo.py",
+          "size": 3598,
+          "sha256": "f5f365e32128408ef3bd39858f9428567eacef139f13880443dd62271069d2ce"
+        },
+        {
+          "file": "packages\\observability\\ulpf_observability\\tracing.py",
+          "size": 2689,
+          "sha256": "2479f6bf00cbdf78c0b50e13fa45e2150e2e9772c77adf843d3fc879c2edb5db"
+        },
+        {
+          "file": "packages\\observability\\ulpf_observability\\__init__.py",
+          "size": 414,
+          "sha256": "f2959f89508e9645d11636db89ac7c964a1a3134e2856e9e094c924ce8331804"
+        }
+      ]
+    },
+    "onboarding": {
+      "has_pyproject": false,
+      "file_count": 11,
+      "files": [
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\canary.py",
+          "size": 6660,
+          "sha256": "f6f45f255b587dfd2d770e61c4690f7c504348c9667cd6b24ed44e1fe7d732b0"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\drift.py",
+          "size": 4878,
+          "sha256": "a70d7f67b3d12caad8126b8b246812fa9f4986116a2a11ffbd230051633e281a"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\drift_learning.py",
+          "size": 4627,
+          "sha256": "c797880d2cf8cddde686e33901bb60ff6ff0248d9cb58c6524491736a87252a6"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\lifecycle.py",
+          "size": 8359,
+          "sha256": "ab8fc05eac3580145c60aff38016ad2fa1b51fb9b0cd1aef330568ffd3803322"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\mapping_intel.py",
+          "size": 7887,
+          "sha256": "17fc617c30780eae8fd5f33ee5901ba1dad9c7097e03332ca6c70e52daeebb9e"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\models.py",
+          "size": 4808,
+          "sha256": "0bf55c63657ee1655ab969de47414867d7f5cc5c372faa373230ed0291bf2edb"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\profiler.py",
+          "size": 5754,
+          "sha256": "a6b77fc9d56a54e839a220565663a0a42589a0e9e12939ccad8dcbf65b4607c0"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\replay.py",
+          "size": 3998,
+          "sha256": "44fce1dc0c93f5e690841c5991e5b3e79240e69d9067f4ba29a2ac83be0231f1"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\service.py",
+          "size": 6354,
+          "sha256": "cb81fc030f2cc680ba3c537e4d4e7982d33703771f7a63e9b4b5374be4468aa2"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\source_intel.py",
+          "size": 11930,
+          "sha256": "ef12c72491e728c91494ebf271e54482dc00f9a6d7b450a7cdb5bbd1cc3358cc"
+        },
+        {
+          "file": "packages\\onboarding\\ulpf_onboarding\\__init__.py",
+          "size": 1038,
+          "sha256": "9e1be31292ae048346d1ee969d9a78104ef1fa7be6031602e7b54e88ae22bbad"
+        }
+      ]
+    },
+    "parser-runtime": {
+      "has_pyproject": false,
+      "file_count": 31,
+      "files": [
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\encoding.py",
+          "size": 2573,
+          "sha256": "e1e49c4254c3e8908301b3b4d31c34d4c6e3885d78946ce5197cfb5e79df5f74"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\errors.py",
+          "size": 3314,
+          "sha256": "aa40a975d576369d98a3dab517661b0a92e7234f5303fd87a6592a33cfc0871f"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\framing.py",
+          "size": 9348,
+          "sha256": "a84c1d759bf4e1bb88960604f275da7261b861996547f85e032d70f8db2dab42"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\models.py",
+          "size": 7427,
+          "sha256": "7b398f4e51074787c3bce553755f7755b0314f26371c12aa905ed1143d17bc23"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\registry.py",
+          "size": 8908,
+          "sha256": "767a3af9d6ea785192914ae3c1a4435724a749329b1e08790c91b838bf3dc1b9"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\__init__.py",
+          "size": 1479,
+          "sha256": "bc14131d336ec718ebb4f4af1db8eb27f6fecb6d4aa6e971c924dfd036d3a6d5"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\detection\\format_detector.py",
+          "size": 14793,
+          "sha256": "62cb42fee2bfee187fc4deba766f466ccae1a68216df18ec429d264dc297377f"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\detection\\source_detector.py",
+          "size": 13559,
+          "sha256": "df7b9dd015682dff735d6d3fe4ff242367307fcc97834e08f1541502a3fbb1bd"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\detection\\__init__.py",
+          "size": 255,
+          "sha256": "f2ef264e4e5addd43a81509550798c1af514f93cf082aafb81e8b240f0bfa34b"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\base.py",
+          "size": 2641,
+          "sha256": "298fdd496efc0cc66a4c5b9caf70ff3623dc7b34493842631d57a460c20bd824"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\cef_parser.py",
+          "size": 7508,
+          "sha256": "cf3fbffc02c2f7491f5bfd03e9be049009c3c39677cd6d5af8beefc193178a0b"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\csv_parser.py",
+          "size": 6627,
+          "sha256": "20b79b8a5bea19a1a16f12d36c32bbe9528948084a1483b6be42fc28cfcef364"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\json_parser.py",
+          "size": 7223,
+          "sha256": "22ef240a5511e1c85b60c684ec10ced6a49d4af8c4f2e11655a3d699f72d2f50"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\kv_parser.py",
+          "size": 4649,
+          "sha256": "da1920767ed8db7aaeb9f3cd44dba7724ec1113730287a7b50bae77b4226d186"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\leef_parser.py",
+          "size": 6640,
+          "sha256": "efac799e96488211a44bd08108605b49258d8863e36fed4f7c720280da7f0e38"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\syslog_rfc3164.py",
+          "size": 5299,
+          "sha256": "429928757439e3e6ec2205a4780950fe3933003ccc1eca1058067819ef08c61e"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\syslog_rfc5424.py",
+          "size": 5878,
+          "sha256": "63cd0a1fa8f0b4f7deeafa1e8fa87d5d6b87a909d9b5e81e3e41f123876ffd87"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\w3c_parser.py",
+          "size": 5454,
+          "sha256": "6a051d256f3d1d3a5fdb351b4775cd67b2dd20417b6d3295fa3e86ac9449b2db"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\xml_parser.py",
+          "size": 6820,
+          "sha256": "11ed48e5486c4e2770f0d16a22d130d4a41019a64c0fc5a6cfb93f1a33ab1a45"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\__init__.py",
+          "size": 1002,
+          "sha256": "60f6c6df5d0ca6616cfdc9eb17b5ea53705fef183729b948c13585f3efbede61"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\cisco.py",
+          "size": 10094,
+          "sha256": "91181763d17cd7e34eea0285604ff6e31badfa0a93a0a3dff9509476f08b8171"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\cloud_audit.py",
+          "size": 7928,
+          "sha256": "bbe38bf886c4efd2792b439e3bda8d0594bd51536fff1e41b5cbfcf410cb5339"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\fortigate.py",
+          "size": 3772,
+          "sha256": "a7b38430d936bcfff0722787a917e769289e15d879966c10d2d90e75a9436724"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\linux_auditd.py",
+          "size": 4017,
+          "sha256": "d87f2dbaa218820f09bb5f55e8146d25c11b32f51df11ae570d0b61e1ebc924d"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\opnsense.py",
+          "size": 7117,
+          "sha256": "4c562ab846298e2379f9d265d00409ec3d23936d18ffd3e38b5b16a31ed0e668"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\paloalto.py",
+          "size": 6648,
+          "sha256": "356fdc4cb8630ece47ca396ceec9943c3c6d169eb00d3cdd15b2665336ba3f7e"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\snort.py",
+          "size": 5439,
+          "sha256": "202bb27bb0bcfa374cd536fc93b10b6f48a39ecc3ed37dcf73664d0f2a5869cd"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\suricata.py",
+          "size": 7220,
+          "sha256": "3405fb80b3d80f1678405348cfc7bd75c369a48dfee75ff3adb8ab7858247b0d"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\web_access.py",
+          "size": 4637,
+          "sha256": "bffdde2855ba3007b17b13f3d962faec18f826dc93b8639b027bd651f9188498"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\zeek.py",
+          "size": 6138,
+          "sha256": "537383030ae1d53ae5d51c5b506513403feecf64dcbcb1bbf45bb9b835da5bc0"
+        },
+        {
+          "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\__init__.py",
+          "size": 1122,
+          "sha256": "9024307306a6e8c07155c919d717d729f6dcd9b85def62ba150a080b14a4312f"
+        }
+      ]
+    },
+    "platform": {
+      "has_pyproject": false,
+      "file_count": 8,
+      "files": [
+        {
+          "file": "packages\\platform\\ulpf_platform\\backup_restore.py",
+          "size": 4145,
+          "sha256": "1416095a6aa86c280f0d027139ef1ef2588da0ff8fc205f926d228310ccb97f5"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\config.py",
+          "size": 5948,
+          "sha256": "4f2c78bb9c27ebbb285580e370f8e20b7a25039bf7c27dcaf848c65edb2574ca"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\correlation.py",
+          "size": 1776,
+          "sha256": "c9734ed55d415fce9bf1ccb1c759333f60687932083313e3e8d45e60e8aa87b6"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\diagnostics.py",
+          "size": 3938,
+          "sha256": "73df107861d5c99259eacd7a6d3c3a1ffedc2ba9f631b98f6656f16ca9ec7dbd"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\errors.py",
+          "size": 3539,
+          "sha256": "e37f68442b0d922482e022cee2ca9829f8445b3b645c187d30f610f331f27fe9"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\logging.py",
+          "size": 1693,
+          "sha256": "8e8047f39697a35ea7284e353b376c64b21e8a50aaaa84d35f7c0a0062252b31"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\middleware.py",
+          "size": 2860,
+          "sha256": "9a78cd2a0433ba757a1c0d8f6fc6d05e2958ad4bdacbb8624c3161a225f5c489"
+        },
+        {
+          "file": "packages\\platform\\ulpf_platform\\__init__.py",
+          "size": 80,
+          "sha256": "5dd9a62c73ef3033a28d234a3e2fc13fd8a83c42484f4e9a024211d2ddbb4ba2"
+        }
+      ]
+    },
+    "runtime": {
+      "has_pyproject": false,
+      "file_count": 17,
+      "files": [
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\backpressure.py",
+          "size": 4380,
+          "sha256": "aa534710de34766a194bddaff44c9b5c7459b0f83f718be77daa3589e87958da"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\backup.py",
+          "size": 7648,
+          "sha256": "e89d140ea14134d3c35a076d2ace9f4cb8d37f83def0cb0d8ce4aa45ea2cc1ba"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\dlq.py",
+          "size": 4668,
+          "sha256": "043374a31c8f01f381526279526fe33cef17bf17ca526dfea9bee8a7e192455f"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\errors.py",
+          "size": 3732,
+          "sha256": "2cbde6c7d2536850fbbf337ea9037eedf2f36157000f5ecf3235754d4583d6e5"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\failover.py",
+          "size": 12538,
+          "sha256": "906f2e44662901996e304573135e029d1da673438d76aa5972ff23b951cbf908"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\health.py",
+          "size": 3875,
+          "sha256": "36ff6d5ecebf3d523db8d91de42126924b348b25dbd48f10cc4dc316763ce080"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\idempotency.py",
+          "size": 4108,
+          "sha256": "09af6266deef4b08737b98043b5b7c2fdb5679fd21f0f36744e758be828c4413"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\lifecycle.py",
+          "size": 4613,
+          "sha256": "1728bc7db8c2ea316501c41c8af01079a67f40de1627d03d53d0c13328fecc27"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\mission_backpressure.py",
+          "size": 8923,
+          "sha256": "3d92f4f6a4377787cdc83a41dc9729d983b5da74f15474e6bd64db0cfd4f8fd2"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\models.py",
+          "size": 1978,
+          "sha256": "e46f94dc0c9afde9099810d393ed2474ee9abf09398a239be0a60ff5937875ea"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\multi_worker.py",
+          "size": 6833,
+          "sha256": "d12aef070bedd1fb3afd374b143fa4efdd3a37b5697c96ff0b907ae0518aa833"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\pipeline.py",
+          "size": 15609,
+          "sha256": "5d9b1868d63a7361ff91957b45d067a54c2ddabf90d64c64d669b251543642f3"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\recovery.py",
+          "size": 6561,
+          "sha256": "2bede7977832d75290f7420399080b97e2f2972fc1e46f7d5f94a72deaa8ecdd"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\replay.py",
+          "size": 6167,
+          "sha256": "ab614ca6bb54c6a2b10cad4b237722a1dbc8e0bc9eb7b5425564db374971ed5b"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\retry.py",
+          "size": 2314,
+          "sha256": "bf018eaa7da542e826e64240f3c3cabafa2af119aefa002fc3e2fceb881684fe"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\worker.py",
+          "size": 5620,
+          "sha256": "865ae7cf6f0714b3aa17bd95c8dfe00d086a2c0bfa13f7eaa8c6ce8231963c95"
+        },
+        {
+          "file": "packages\\runtime\\ulpf_runtime\\__init__.py",
+          "size": 1826,
+          "sha256": "b28df78b6503bf15e76a18eb114b1e2f0e2e06b83b5f6f5a4c1b079ea4897cb9"
+        }
+      ]
+    },
+    "search": {
+      "has_pyproject": false,
+      "file_count": 3,
+      "files": [
+        {
+          "file": "packages\\search\\ulpf_search\\interfaces.py",
+          "size": 2005,
+          "sha256": "c38cd792ecb867cf1dcced2a010c1aad459da405b428ac0e454b431313f59dd4"
+        },
+        {
+          "file": "packages\\search\\ulpf_search\\memory.py",
+          "size": 5181,
+          "sha256": "b98846b78e87f28dab17a7cf2c82d6e37b177f2014c1c065108be7f87ca74e32"
+        },
+        {
+          "file": "packages\\search\\ulpf_search\\__init__.py",
+          "size": 293,
+          "sha256": "29930dd413c03aa721c3aa616b098950a625043649925acb20c9e0b96b419f4d"
+        }
+      ]
+    },
+    "security": {
+      "has_pyproject": false,
+      "file_count": 6,
+      "files": [
+        {
+          "file": "packages\\security\\ulpf_security\\audit.py",
+          "size": 2646,
+          "sha256": "c266c181f5afbe24fb217f2907b23fab336403dff3fef5e24c99c26aefc9a3c4"
+        },
+        {
+          "file": "packages\\security\\ulpf_security\\auth.py",
+          "size": 12433,
+          "sha256": "1eeba125e8972500e4c84282493eee665818247b43779db8a4a7a22401a00b69"
+        },
+        {
+          "file": "packages\\security\\ulpf_security\\errors.py",
+          "size": 1472,
+          "sha256": "cab0ba2df4dd3ca0b1c5c9f09ba8da5eac2d5ca50c31bbbf32a5e9c0ef589ecd"
+        },
+        {
+          "file": "packages\\security\\ulpf_security\\policy.py",
+          "size": 6502,
+          "sha256": "32160152287bfde4ce41aa0437d28734a202c61b01f28c2b9d9cc6b4846cc5fb"
+        },
+        {
+          "file": "packages\\security\\ulpf_security\\secrets.py",
+          "size": 3847,
+          "sha256": "b0f99221ad8c202315d0ec436d8f121d4dcf88e277a531afa1f50f1af9a2c70d"
+        },
+        {
+          "file": "packages\\security\\ulpf_security\\__init__.py",
+          "size": 1599,
+          "sha256": "ead58893153241294c98c9f9f16805cb3fb56447adaa839433c183a6a2a026be"
+        }
+      ]
+    },
+    "semantic": {
+      "has_pyproject": false,
+      "file_count": 24,
+      "files": [
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\errors.py",
+          "size": 2383,
+          "sha256": "8a524e15da07c1d6ee442cc61a321940c8a0aff772f7b8285f78f4e718c8ac00"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\models.py",
+          "size": 12134,
+          "sha256": "29adfe721c67d9e4cd64a59ec1ada45194c196a75594b51f5a37cb63275764c6"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\service.py",
+          "size": 2028,
+          "sha256": "eff07467a174b4431d2173ec0eb0f170b4438085c7349c5f007e250d8201e9d9"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\validation.py",
+          "size": 1285,
+          "sha256": "9be5be8fdc85ab4a1b79e885aa567be951cc62a3963c1e43eb0c68568991cae6"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\__init__.py",
+          "size": 1894,
+          "sha256": "17e8522bb8c2f6a1a43d3c82d5135ab2cbc168ca38aa935a078bf896041deaf6"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\analytics\\fingerprint.py",
+          "size": 3237,
+          "sha256": "e4e5f1cec18849a2fe42ee356aaf9e4a2b89264ae1354957d4afe6e3cdba9e54"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\classification\\classifier.py",
+          "size": 13410,
+          "sha256": "c070138ec632997cbef24aa59d71a58862c7042917322bba2dc73cb0a80b6b80"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\entities\\extractor.py",
+          "size": 8682,
+          "sha256": "4b8c517867b7dce0b001c00a56df57cafa5cac35dee352acfa6c8b7478e3b497"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\explainability\\trace.py",
+          "size": 971,
+          "sha256": "c64f17a537d57d32ae41f1432534f302d276f389f8af0e5c9fb0272e54f8fe63"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\indicators\\extractor.py",
+          "size": 5160,
+          "sha256": "7b2beccf7f36b838fe15de22d29d0ae283a7004c6cb27b17f3919f3bfdbaa4be"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\mapping\\engine.py",
+          "size": 6128,
+          "sha256": "e28ece4c29a7a94ecff0b2bcec63c2ba374913d1bc7c2496203fd48977c0c027"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\mapping\\residue.py",
+          "size": 856,
+          "sha256": "cb89684733a5943e1bc6c2dd24833c56b603c814bf99d79ddc2978d96ee58e63"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\base.py",
+          "size": 1681,
+          "sha256": "9e8d898e04ce9cb57e1e3eaa4aec662b6915d0c6ef3fa2aec2b0c872298b8636"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\registry.py",
+          "size": 2668,
+          "sha256": "0e0bb3b4bf6059e3bff8f7e1aa89d9c15722e4c83f1bf7f3cb12650682ce1d43"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\relationships\\builder.py",
+          "size": 3497,
+          "sha256": "74b06b593a44107f3ba4d79edb7cb63252dc51cf39832cfad0610860338b3e1f"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\risk\\evaluator.py",
+          "size": 2077,
+          "sha256": "267a3190dd13d5d1298d9afab02f8c789205f0242fb03332ad29aea76c235cb1"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\taxonomy\\actions.py",
+          "size": 4727,
+          "sha256": "25e057e00396c49606557c05a9c82b2620d3e84b399b2492526b1dd85e206b1a"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\taxonomy\\categories.py",
+          "size": 3570,
+          "sha256": "f395b8c2d22cf0ae9c271d33d62a778cca0efa3f146dfbe346f30aeb2f3a1d56"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\taxonomy\\dimensions.py",
+          "size": 1460,
+          "sha256": "487d249bb696a979dce291158d6814f60b4ca324b3a389603f5ea7b3b500d9e4"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\taxonomy\\results.py",
+          "size": 3597,
+          "sha256": "902eab1385fab5d68caf8787d4a47bfe57a64d7387ee347647a375ddd00615b9"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\ocsf\\mapper.py",
+          "size": 6909,
+          "sha256": "32c558075d2882655f14642ecb286313b6c5ac13933c6109d94ad5d6a562b771"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\ocsf\\validator.py",
+          "size": 1921,
+          "sha256": "b928ef86d85478cb30b3c36e72e30129ee762f51fa8e66806f16a7c82dedfb4c"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\otel\\mapper.py",
+          "size": 6053,
+          "sha256": "b3aaa56c319a1c787d1126b7995b7fb575acaf67872c2e4919b0072cb7d24e6b"
+        },
+        {
+          "file": "packages\\semantic\\ulpf_semantic\\projections\\otel\\validator.py",
+          "size": 1870,
+          "sha256": "dcba9d28c07a6109f5cd11f7c160ac7053f7c6c9f566dba974e49ff90d200087"
+        }
+      ]
+    },
+    "storage": {
+      "has_pyproject": false,
+      "file_count": 13,
+      "files": [
+        {
+          "file": "packages\\storage\\ulpf_storage\\durable_dlq.py",
+          "size": 4921,
+          "sha256": "162ee22aad9eb4d4efd037dc139d8dba873d9e4b543d7af26bcde0c6c92c8e52"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\durable_idempotency.py",
+          "size": 2395,
+          "sha256": "4960b81b8e98abd65d4a4e1e603bb799ef22ce166ea7e40256c8743430a72e2d"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\durable_outbox.py",
+          "size": 4404,
+          "sha256": "65510ca93b8bad2bee39806dbba42ea13fc0e161a66918d1609b3cf7ad515c39"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\durable_semantic.py",
+          "size": 4596,
+          "sha256": "c149182ebf5bb593f5ff514c4250381372d96ee8f9afcca52edf234a8f1f70d2"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\durable_uce.py",
+          "size": 3552,
+          "sha256": "cd7fa8adaae2de7b57ce24da37a0265f7287f775fadc900a7c768bb57119929e"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\interfaces.py",
+          "size": 4290,
+          "sha256": "987d585b734c484e5b045b27a9d1855048850f492a704dcdd585462e33fdbb73"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\memory.py",
+          "size": 8556,
+          "sha256": "55379a612aafa90266d1c05fcec7f28dd5ffe241f1b64d7d03fc84e428d4b972"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\object_store.py",
+          "size": 6053,
+          "sha256": "c0509c36736500591f06c9d20177479e12301d04950ec01e6f86acceffd5f142"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\raw_fs.py",
+          "size": 5665,
+          "sha256": "14b196dec353b4d96ded3171d88e5b38755cc142dc7144a2e5bee3c123d6f242"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\__init__.py",
+          "size": 941,
+          "sha256": "7d741d90c42e0de3931657c3ceeecc9a79ee08fb92190d0c0670a32bc95e763f"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\database\\relational.py",
+          "size": 7626,
+          "sha256": "f4926042d794d2a1b032867f36318120b448bab7a03ed6885e3c95321e37397a"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\database\\schema.py",
+          "size": 12305,
+          "sha256": "dacd0170b68d17097bc1ecc168472ae1160f1ef5eb493a0402ad367a348b925f"
+        },
+        {
+          "file": "packages\\storage\\ulpf_storage\\database\\__init__.py",
+          "size": 503,
+          "sha256": "687574fcdfc6c887988e29a6d030a671abc251757feaa1a54e9892b6abe1b4b7"
+        }
+      ]
+    },
+    "streaming": {
+      "has_pyproject": false,
+      "file_count": 5,
+      "files": [
+        {
+          "file": "packages\\streaming\\ulpf_streaming\\distributed.py",
+          "size": 9607,
+          "sha256": "0d2970e2a89a0dfb7052ecdf1da05e669bfd2dd9ed3806bc3e25f0bf39f841c8"
+        },
+        {
+          "file": "packages\\streaming\\ulpf_streaming\\fabric.py",
+          "size": 11611,
+          "sha256": "7b4b42a9fef1470f0a4781dc735b1823487fceb16e1727758f26fefc75275a53"
+        },
+        {
+          "file": "packages\\streaming\\ulpf_streaming\\interfaces.py",
+          "size": 2138,
+          "sha256": "a4a4c006ec62696d85f1d2f8a703f14ca9d6ada923fbe3ba3de96d6b8ba7b1da"
+        },
+        {
+          "file": "packages\\streaming\\ulpf_streaming\\memory.py",
+          "size": 5726,
+          "sha256": "9a89eaeac82ab79772e9048ff40559984558456687c207420265202f0379ae42"
+        },
+        {
+          "file": "packages\\streaming\\ulpf_streaming\\__init__.py",
+          "size": 324,
+          "sha256": "545be6a26bf5c37c51882fc5126fad6cc506b872fbf6f78324723fbb5027a853"
+        }
+      ]
+    }
+  },
+  "status": "VERIFIED_SELF_CONTAINED"
+}
