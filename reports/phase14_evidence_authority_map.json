@@ -1,0 +1,11 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "authorities": {
+    "tests": "pytest raw execution",
+    "parsers": "AST scan in parser-runtime",
+    "performance": "in-memory timeit benchmarks",
+    "air_gap": "static AST + socket mock",
+    "git": "git object database",
+    "demo": "fresh 3x demo execution"
+  }
+}

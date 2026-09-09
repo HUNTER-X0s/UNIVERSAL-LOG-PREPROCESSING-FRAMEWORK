@@ -1,0 +1,8 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "p0_p13_baseline": 633,
+  "p14_additions": 24,
+  "actual_passed": 657,
+  "claim_verified": true,
+  "verdict": "PASS"
+}

@@ -1,0 +1,7 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "failed_node_detected": true,
+  "partitions_rebalanced": true,
+  "offset_preserved": true,
+  "verdict": "PASS"
+}

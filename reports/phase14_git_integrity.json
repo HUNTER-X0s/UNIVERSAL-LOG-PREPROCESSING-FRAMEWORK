@@ -1,0 +1,10 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "head": "a185ece547269633132f454625ebaee6476b3dfd",
+  "branch": "main",
+  "p13_verified_tag": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
+  "p14_rc_tag": "a185ece547269633132f454625ebaee6476b3dfd",
+  "p13_frozen": true,
+  "clean_working_tree": false,
+  "verdict": "FAIL"
+}

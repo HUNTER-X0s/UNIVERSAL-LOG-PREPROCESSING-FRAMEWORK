@@ -1,0 +1,8 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "campaign_id": "9e32f7f24f54",
+  "indicators": [
+    "198.51.100.99"
+  ],
+  "verdict": "PASS"
+}

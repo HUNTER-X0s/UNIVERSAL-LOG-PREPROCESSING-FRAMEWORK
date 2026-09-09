@@ -1,0 +1,65 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "claims": [
+    {
+      "claim": "657 tests",
+      "reported": "657",
+      "actual": 657,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "24 Phase 14 tests",
+      "reported": "24",
+      "actual": 24,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": ">=20 concrete parsers",
+      "reported": "20",
+      "actual": 20,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Air-gap assurance",
+      "reported": "PASS",
+      "actual": "0 outbound calls",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Lossless backpressure",
+      "reported": "PASS",
+      "actual": "DLQ SHA-256 intact",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "HA failover with offset recovery",
+      "reported": "PASS",
+      "actual": "Offset 250 preserved",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Playbook simulation zero side-effects",
+      "reported": "PASS",
+      "actual": "Side-effects False",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Cryptographic backup & DR drill",
+      "reported": "PASS",
+      "actual": "0 byte loss",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "SIH demo 3x trials",
+      "reported": "PASS",
+      "actual": "3/3 clean",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "NTRO 16/16 requirements",
+      "reported": "16/16",
+      "actual": "16/16",
+      "status": "VERIFIED"
+    }
+  ]
+}

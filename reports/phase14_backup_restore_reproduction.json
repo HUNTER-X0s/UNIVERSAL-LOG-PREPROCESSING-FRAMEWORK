@@ -1,0 +1,6 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "manifest_sha256": "377c4776213349362e3152fb1df60ef4bb327681311b5bbd893efc930e67b3c3",
+  "drill_result": "RESTORED_VERIFIED",
+  "verdict": "PASS"
+}

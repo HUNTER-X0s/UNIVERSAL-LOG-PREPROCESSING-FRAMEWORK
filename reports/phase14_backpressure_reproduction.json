@@ -1,0 +1,7 @@
+{
+  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "overflow_spilled_to_dlq": true,
+  "dlq_sha256_intact": true,
+  "silent_data_loss": 0,
+  "verdict": "PASS"
+}
