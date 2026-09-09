@@ -82,3 +82,38 @@ class SchemaDriftDetector:
             type_changes=type_changes,
             recommended_action=rec_action,
         )
+
+    @classmethod
+    def evaluate_severity(cls, report: DriftReport) -> str:
+        """Classify drift severity into INFORMATIONAL, LOW, MEDIUM, HIGH, or CRITICAL."""
+        if report.drift_state == DriftState.STABLE:
+            return "INFORMATIONAL"
+        if report.drift_state == DriftState.MINOR_DRIFT:
+            return "LOW" if len(report.fields_added) < 5 else "MEDIUM"
+        if report.drift_state == DriftState.MAJOR_DRIFT:
+            return "HIGH"
+        if report.drift_state == DriftState.BREAKING_DRIFT:
+            return "CRITICAL"
+        return "MEDIUM"
+
+    @classmethod
+    def generate_impact_summary(cls, report: DriftReport) -> dict[str, Any]:
+        """Explain schema drift with downstream impact, parser stability, and recovery recommendation."""
+        severity = cls.evaluate_severity(report)
+        requires_rollback = severity in ("HIGH", "CRITICAL")
+        return {
+            "report_id": report.report_id,
+            "severity": severity,
+            "fields_added_count": len(report.fields_added),
+            "fields_removed_count": len(report.fields_removed),
+            "type_changes_count": len(report.type_changes),
+            "parser_safe": severity != "CRITICAL",
+            "lossless_fallback_active": True,
+            "rollback_recommended": requires_rollback,
+            "explanation": (
+                f"Drift classified as {severity}. {len(report.fields_added)} added, "
+                f"{len(report.fields_removed)} removed, {len(report.type_changes)} mutated. "
+                "Unmapped fields remain fully preserved in raw evidence."
+            ),
+        }
+

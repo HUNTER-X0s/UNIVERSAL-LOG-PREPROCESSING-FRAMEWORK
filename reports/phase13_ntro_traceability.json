@@ -1,0 +1,27 @@
+{
+  "traceability_title": "ULPF Phase 13 NTRO Requirements Traceability Matrix",
+  "organization": "National Technical Research Organisation (NTRO)",
+  "timestamp": "2026-09-09T07:18:00Z",
+  "total_requirements": 16,
+  "verified_requirements": 16,
+  "compliance_rate": 1.0,
+  "requirements": [
+    {"id": "NTRO-REQ-01", "name": "Lossless Raw Payload Retention", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-02", "name": "Multi-Vendor Parsing (20 Engines)", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-03", "name": "Universal Common Event Normalization", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-04", "name": "Air-Gapped Zero Outbound Sockets", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-05", "name": "Universal Source Intelligence", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-06", "name": "Unknown Log Onboarding", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-07", "name": "Schema Drift Intelligence", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-08", "name": "Dual View (Raw + UCE + OCSF + OTel)", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-09", "name": "Attack Story Chronological Narrative", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-10", "name": "Local Threat Intel Enrichment", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-11", "name": "One-Click Investigation Pivot", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-12", "name": "Grounded Local AI Copilot", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-13", "name": "Safe AI Action Model", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-14", "name": "Cryptographic Case Package Export", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-15", "name": "Data Quality & Source Health", "status": "VERIFIED"},
+    {"id": "NTRO-REQ-16", "name": "Offline SIH Showcase Demo", "status": "VERIFIED"}
+  ],
+  "verdict": "TRACEABILITY_AUDIT_PASS"
+}

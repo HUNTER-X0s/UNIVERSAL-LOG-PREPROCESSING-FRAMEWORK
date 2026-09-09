@@ -51,3 +51,36 @@ class LocalEnrichmentService:
 
     def register_asset(self, ip: str, metadata: dict[str, Any]) -> None:
         self._asset_db[ip] = metadata
+
+    def load_local_feed(self, feed_name: str, indicators: dict[str, dict[str, Any]]) -> None:
+        """Load an offline, air-gapped threat intelligence feed."""
+        for ind, meta in indicators.items():
+            self._ioc_list[ind] = meta.get("category", "MALICIOUS_INDICATOR")
+
+    def match_threat_indicators(self, event_dict: dict[str, Any]) -> list[dict[str, Any]]:
+        """Phase 13 Workstream J: Match local threat intel indicators with explicit provenance."""
+        matches: list[dict[str, Any]] = []
+        now_iso = datetime.now(UTC).isoformat()
+        
+        # Check source IP, destination IP, domain, hash
+        candidates = [
+            ("source.ip", event_dict.get("source.ip") or event_dict.get("src_ip")),
+            ("destination.ip", event_dict.get("destination.ip") or event_dict.get("dst_ip")),
+            ("file.hash", event_dict.get("file.hash") or event_dict.get("hash")),
+            ("url.domain", event_dict.get("url.domain") or event_dict.get("domain")),
+        ]
+
+        for field_name, val in candidates:
+            if val and str(val) in self._ioc_list:
+                cat = self._ioc_list[str(val)]
+                matches.append({
+                    "indicator": str(val),
+                    "indicator_type": field_name,
+                    "threat_category": cat,
+                    "confidence": 0.95,
+                    "source_feed": "airgap_local_intel_v1",
+                    "matched_at": now_iso,
+                    "evidence": f"Field '{field_name}' value '{val}' matched local threat intelligence database.",
+                })
+        return matches
+

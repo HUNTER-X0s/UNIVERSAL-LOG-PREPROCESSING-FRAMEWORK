@@ -17,9 +17,11 @@ from ulpf_mapping.models import MappingDefinition
 from ulpf_mapping.registry.registry import MappingRegistry
 
 from ulpf_onboarding.drift import SchemaDriftDetector
+from ulpf_onboarding.mapping_intel import MappingDiffEngine, MappingDiffResult, SEMANTIC_ALIAS_BANK
 from ulpf_onboarding.models import DriftReport, OnboardingResult, ReplayResult, SourceProfile
 from ulpf_onboarding.profiler import SampleProfiler
 from ulpf_onboarding.replay import MappingReplayEngine
+from ulpf_onboarding.source_intel import SourceIntelligenceDecision, UniversalSourceIntelligenceEngine
 
 
 class OnboardingService:
@@ -144,4 +146,13 @@ class OnboardingService:
         """Evaluate structural drift against a baseline profile."""
         return SchemaDriftDetector.detect_drift(baseline_profile, new_samples)
 
+    def analyze_source_intelligence(self, raw_sample: str | bytes) -> SourceIntelligenceDecision:
+        """Phase 13 Workstream A: Explainable source family, vendor, and format identification."""
+        return UniversalSourceIntelligenceEngine.analyze(raw_sample)
+
+    def diff_mappings(self, v1: dict[str, Any], v2: dict[str, Any]) -> MappingDiffResult:
+        """Phase 13 Workstream C: Compute structured field diff and impact analysis between mapping versions."""
+        return MappingDiffEngine.diff(v1, v2)
+
     onboard_new_source = onboard_sample_batch
+

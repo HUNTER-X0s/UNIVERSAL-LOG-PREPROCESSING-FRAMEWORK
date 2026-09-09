@@ -9,9 +9,11 @@ from ulpf_onboarding.models import (
     ReplayResult,
     SourceProfile,
 )
+from ulpf_onboarding.mapping_intel import DOMAIN_TEMPLATES, SEMANTIC_ALIAS_BANK, MappingDiffEngine, MappingDiffResult
 from ulpf_onboarding.profiler import SampleProfiler
 from ulpf_onboarding.replay import MappingReplayEngine
 from ulpf_onboarding.service import OnboardingService
+from ulpf_onboarding.source_intel import SourceIntelligenceDecision, UniversalSourceIntelligenceEngine
 
 __all__ = [
     "SourceProfile",
@@ -24,4 +26,11 @@ __all__ = [
     "MappingReplayEngine",
     "SchemaDriftDetector",
     "OnboardingService",
+    "UniversalSourceIntelligenceEngine",
+    "SourceIntelligenceDecision",
+    "MappingDiffEngine",
+    "MappingDiffResult",
+    "SEMANTIC_ALIAS_BANK",
+    "DOMAIN_TEMPLATES",
 ]
+
