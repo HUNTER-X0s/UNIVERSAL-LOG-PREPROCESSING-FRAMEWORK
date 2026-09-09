@@ -1,0 +1,46 @@
+{
+  "title": "ULPF Phase 14 Master Independent Certification Audit",
+  "timestamp": "2026-09-09T14:41:32.721695+00:00",
+  "head_sha": "2a6032ab39afe25d4fe6fc73365250d4eb953902",
+  "branch": "main",
+  "tests": {
+    "passed": 657,
+    "failed": 0,
+    "total": 657,
+    "target": 657
+  },
+  "categories": {
+    "Baseline integrity": "PASS",
+    "Regression (Phase 0-14)": "PASS",
+    "Distributed streaming fabric": "PASS",
+    "Backpressure & Lossless DLQ": "PASS",
+    "High availability failover": "PASS",
+    "Adaptive source lifecycle": "PASS",
+    "Parser canarying & drift learning": "PASS",
+    "Advanced correlation & early warning": "PASS",
+    "Attack path graph & risk propagation": "PASS",
+    "Analyst operations & case workflow": "PASS",
+    "Response playbook simulation": "PASS",
+    "Cryptographic backup & DR drill": "PASS",
+    "Operator self-diagnostics & SLOs": "PASS",
+    "Supply chain & security review": "PASS",
+    "Sovereign air-gap assurance": "PASS",
+    "SIH master demo (3x trials)": "PASS",
+    "NTRO traceability (16/16)": "PASS"
+  },
+  "score": 100,
+  "grade": "A+",
+  "findings": {
+    "critical": [],
+    "high": [],
+    "medium": [
+      {
+        "code": "GIT-001",
+        "description": "Tracked dirty files in working tree: ['M reports/phase14_demo_report.json']"
+      }
+    ],
+    "low": []
+  },
+  "verdict": "PHASE14_RELEASE_CANDIDATE_APPROVED",
+  "tag_to_create": "PHASE14_RELEASE_CANDIDATE_APPROVED"
+}

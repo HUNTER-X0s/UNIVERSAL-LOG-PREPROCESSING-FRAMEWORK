@@ -1,0 +1,61 @@
+{
+  "audit_timestamp": "2026-09-09T14:41:32.721695+00:00",
+  "claims": [
+    {
+      "claim": "657 regression tests pass",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Multi-key partitioned fabric",
+      "status": "PASS"
+    },
+    {
+      "claim": "Lossless backpressure & DLQ",
+      "status": "PASS"
+    },
+    {
+      "claim": "HA failover with offset recovery",
+      "status": "PASS"
+    },
+    {
+      "claim": "10-state adaptive source lifecycle",
+      "status": "PASS"
+    },
+    {
+      "claim": "Parser canary shadow validation",
+      "status": "PASS"
+    },
+    {
+      "claim": "Continuous schema drift learning",
+      "status": "PASS"
+    },
+    {
+      "claim": "Bounded attack graph traversal",
+      "status": "PASS"
+    },
+    {
+      "claim": "Explainable risk propagation",
+      "status": "PASS"
+    },
+    {
+      "claim": "Playbook simulation zero side-effects",
+      "status": "PASS"
+    },
+    {
+      "claim": "Cryptographic backup & restore drill",
+      "status": "PASS"
+    },
+    {
+      "claim": "100% sovereign air-gap compliance",
+      "status": "PASS"
+    },
+    {
+      "claim": "SIH demo 3x consecutive trials",
+      "status": "PASS"
+    },
+    {
+      "claim": "NTRO 16/16 requirements verified",
+      "status": "PASS"
+    }
+  ]
+}

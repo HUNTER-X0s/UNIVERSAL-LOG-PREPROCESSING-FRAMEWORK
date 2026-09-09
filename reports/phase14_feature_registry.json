@@ -1,0 +1,71 @@
+{
+  "audit_timestamp": "2026-09-09T14:41:32.721695+00:00",
+  "phase": 14,
+  "features": [
+    {
+      "name": "Distributed Ingestion Fabric",
+      "module": "ulpf_streaming.fabric",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Mission Backpressure & Lossless DLQ",
+      "module": "ulpf_runtime.mission_backpressure",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Worker Failover Coordinator",
+      "module": "ulpf_runtime.failover",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Adaptive Source Lifecycle",
+      "module": "ulpf_onboarding.lifecycle",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Parser Canary & Semantic Diff",
+      "module": "ulpf_onboarding.canary",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Continuous Schema Drift Learning",
+      "module": "ulpf_onboarding.drift_learning",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Attack Path Graph & Bounded Traversal",
+      "module": "ulpf_intelligence.graph.attack_graph",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Multi-Stage Correlator & Early Warning",
+      "module": "ulpf_intelligence.correlation.mission_correlator",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Investigation Context & Case Workflow",
+      "module": "ulpf_intelligence.investigations.context_graph",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Response Playbook Simulator",
+      "module": "ulpf_mission.playbooks.simulator",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Cryptographic DR Manager",
+      "module": "ulpf_platform.backup_restore",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Platform Self-Diagnostics",
+      "module": "ulpf_platform.diagnostics",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "Telemetry SLO Tracker",
+      "module": "ulpf_observability.telemetry_slo",
+      "status": "ACTIVE"
+    }
+  ]
+}

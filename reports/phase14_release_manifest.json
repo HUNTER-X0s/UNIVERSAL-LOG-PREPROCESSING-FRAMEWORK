@@ -1,0 +1,33 @@
+{
+  "release": "PHASE14_RELEASE_CANDIDATE_APPROVED",
+  "phase": 14,
+  "timestamp": "2026-09-09T14:42:00Z",
+  "baseline_commit": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
+  "total_tests": 657,
+  "tests_passed": 657,
+  "tests_failed": 0,
+  "audit_grade": "A+",
+  "audit_score": 100,
+  "airgap_compliant": true,
+  "sih_demo_repeatable": true,
+  "ntro_requirements_met": "16/16",
+  "core_deliverables": [
+    "packages/streaming/ulpf_streaming/fabric.py",
+    "packages/runtime/ulpf_runtime/mission_backpressure.py",
+    "packages/runtime/ulpf_runtime/failover.py",
+    "packages/onboarding/ulpf_onboarding/lifecycle.py",
+    "packages/onboarding/ulpf_onboarding/canary.py",
+    "packages/onboarding/ulpf_onboarding/drift_learning.py",
+    "packages/intelligence/ulpf_intelligence/graph/attack_graph.py",
+    "packages/intelligence/ulpf_intelligence/correlation/mission_correlator.py",
+    "packages/intelligence/ulpf_intelligence/investigations/context_graph.py",
+    "packages/mission/ulpf_mission/playbooks/simulator.py",
+    "packages/platform/ulpf_platform/backup_restore.py",
+    "packages/platform/ulpf_platform/diagnostics.py",
+    "packages/observability/ulpf_observability/telemetry_slo.py",
+    "scripts/run_phase14_sih_demo.py",
+    "scripts/run_phase14_judge_mode.py",
+    "scripts/run_phase14_baseline_attestation.py",
+    "scripts/run_phase14_final_audit.py"
+  ]
+}
