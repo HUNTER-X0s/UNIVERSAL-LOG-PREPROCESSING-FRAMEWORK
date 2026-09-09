@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-09-10T01:25:00Z",
+  "canonical_schema": "UCE v1.0",
+  "projections": {
+    "OCSF_v1_1_0": {
+      "status": "VALID",
+      "preserved_fields": [
+        "source.ip",
+        "destination.ip",
+        "destination.port",
+        "event.time",
+        "vendor",
+        "product"
+      ],
+      "transformed_fields": [
+        {
+          "uce_field": "event.severity (0-10)",
+          "ocsf_field": "severity_id (0-6)"
+        }
+      ],
+      "unmapped_residue_captured": true,
+      "lossless_uce_preservation": true
+    },
+    "OpenTelemetry_Logs_v1": {
+      "status": "VALID",
+      "preserved_fields": [
+        "source.ip",
+        "destination.ip",
+        "source.port",
+        "destination.port",
+        "event.severity"
+      ],
+      "transformed_fields": [
+        {
+          "uce_field": "event.time (ISO)",
+          "otel_field": "time_unix_nano (uint64)"
+        }
+      ],
+      "unmapped_residue_captured": true,
+      "lossless_uce_preservation": true
+    },
+    "JSON_NDJSON_Adapter": {
+      "status": "VALID",
+      "direct_serialization": true,
+      "lossless_uce_preservation": true
+    }
+  },
+  "verdict": "STANDARDS_INTEROPERABILITY_VERIFIED"
+}

@@ -1,0 +1,178 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "timestamp": "2026-09-09T19:58:14Z",
+  "components": [
+    {
+      "name": "advanced_intelligence",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "ai",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "contracts",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "delivery",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "domain",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "ingestion",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "integrations",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "intelligence",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "lineage",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "mapping",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "mission",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "normalization",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "observability",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "onboarding",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "parser-runtime",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "platform",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "runtime",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "search",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "security",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "semantic",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "storage",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    },
+    {
+      "name": "streaming",
+      "version": "1.0.0",
+      "type": "internal-library",
+      "license": "Apache-2.0 / NTRO Hackathon Spec",
+      "author": "ULPF Engineering Team"
+    }
+  ],
+  "dependencies": [
+    {
+      "package": "pydantic",
+      "license": "MIT",
+      "purpose": "Type validation"
+    },
+    {
+      "package": "starlette",
+      "license": "BSD-3-Clause",
+      "purpose": "Lightweight HTTP routing"
+    },
+    {
+      "package": "pytest",
+      "license": "MIT",
+      "purpose": "Testing & verification framework"
+    }
+  ]
+}

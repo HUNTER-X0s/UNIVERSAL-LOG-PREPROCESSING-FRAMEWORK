@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-09-10T01:25:00Z",
+  "provenance_queries": {
+    "why_alert_exists": {
+      "alert_id": "ALT-501",
+      "valid": true,
+      "chain_depth": 5,
+      "stages": [
+        "ALERT",
+        "DETECTION_RULE",
+        "CANONICAL_UCE",
+        "PARSER_RESOLUTION",
+        "RAW_EVIDENCE_SOURCE"
+      ]
+    },
+    "where_raw_event_went": {
+      "raw_sha256": "b87ef1758cdf192f0a2609908142fd7f16543de0b8fa7e3b795815809b710dc9",
+      "valid": true,
+      "chain_depth": 5,
+      "stages": [
+        "RAW_INGESTION",
+        "CANONICAL_NORMALIZATION",
+        "PROJECTION_OCSF_OTEL",
+        "TRIGGERED_ALERTS",
+        "INVESTIGATION_CASES"
+      ]
+    }
+  },
+  "anti_tamper_verified": true,
+  "verdict": "FORENSIC_LINEAGE_SUPERIORITY_VERIFIED"
+}

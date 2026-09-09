@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-09-09T19:58:14Z",
+  "internal_licenses": [
+    {
+      "package": "advanced_intelligence",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "ai",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "contracts",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "delivery",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "domain",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "ingestion",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "integrations",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "intelligence",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "lineage",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "mapping",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "mission",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "normalization",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "observability",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "onboarding",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "parser-runtime",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "platform",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "runtime",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "search",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "security",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "semantic",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "storage",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    },
+    {
+      "package": "streaming",
+      "declared_license": "Apache-2.0",
+      "compliance": "PERMISSIVE_CLEAN"
+    }
+  ],
+  "third_party": [
+    {
+      "package": "pydantic",
+      "license": "MIT",
+      "purpose": "Type validation"
+    },
+    {
+      "package": "starlette",
+      "license": "BSD-3-Clause",
+      "purpose": "Lightweight HTTP routing"
+    },
+    {
+      "package": "pytest",
+      "license": "MIT",
+      "purpose": "Testing & verification framework"
+    }
+  ]
+}
