@@ -6,22 +6,25 @@ verifies zero silent data loss, and computes exact RTO and RPO metrics.
 
 from __future__ import annotations
 
-import hashlib
 import json
-from pathlib import Path
 import statistics
 import time
+from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
 REPORTS_P15 = ROOT / "reports" / "phase15"
 REPORTS_P15.mkdir(parents=True, exist_ok=True)
 
-from ulpf_streaming.fabric import DistributedEnvelope, DistributedIngestionFabric, BoundedLatenessBuffer
-from ulpf_runtime.mission_backpressure import MissionBackpressureController, BackpressureState
-from ulpf_runtime.failover import FailoverCoordinator
-from ulpf_platform.backup_restore import DisasterRecoveryManager
 from ulpf_intelligence.investigations.case_package import CasePackageManager
+from ulpf_platform.backup_restore import DisasterRecoveryManager
+from ulpf_runtime.failover import FailoverCoordinator
+from ulpf_runtime.mission_backpressure import MissionBackpressureController
+from ulpf_streaming.fabric import (
+    BoundedLatenessBuffer,
+    DistributedEnvelope,
+    DistributedIngestionFabric,
+)
 
 
 def run_chaos_matrix() -> dict[str, Any]:
@@ -32,7 +35,7 @@ def run_chaos_matrix() -> dict[str, Any]:
     from ulpf_parser_runtime.parsers.cef_parser import CefParser
     cef = CefParser()
     try:
-        p_res = cef.parse("NOT_A_CEF_HEADER_GARBAGE_BYTES")
+        cef.parse("NOT_A_CEF_HEADER_GARBAGE_BYTES")
         # Parser gracefully handles without unhandled exception
         chaos_results["PARSER_FAILURE_INJECTION"] = {
             "condition": "Malformed non-CEF stream fed to CEF parser",

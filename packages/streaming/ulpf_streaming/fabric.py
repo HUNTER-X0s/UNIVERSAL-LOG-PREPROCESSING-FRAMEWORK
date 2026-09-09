@@ -14,9 +14,8 @@ import threading
 import time
 from collections import deque
 from dataclasses import dataclass, field
-from datetime import UTC, datetime
 from enum import Enum
-from typing import Any, Callable
+from typing import Any
 
 
 class PartitionStrategy(str, Enum):
@@ -71,9 +70,9 @@ class DistributedEnvelope:
     ) -> DistributedEnvelope:
         now = time.time()
         ev_time = event_time if event_time is not None else now
-        raw_bytes = raw_payload.encode("utf-8") if isinstance(raw_payload, str) else bytes(raw_payload)
+        raw_bytes = raw_payload.encode("utf-8")
         h = hashlib.sha256(raw_bytes).hexdigest()
-        env_id = hashlib.sha256(f"{source_id}:{h}:{now}".encode("utf-8")).hexdigest()[:16]
+        env_id = hashlib.sha256(f"{source_id}:{h}:{now}".encode()).hexdigest()[:16]
         return cls(
             envelope_id=env_id,
             source_id=source_id,
@@ -103,7 +102,10 @@ class DistributedIdempotencyRegistry:
 
     def compute_idempotency_key(self, envelope: DistributedEnvelope) -> str:
         """Compute deterministic processing key from source + content hash + event time."""
-        raw = f"{envelope.source_id}:{envelope.raw_sha256}:{envelope.event_time:.3f}:{envelope.tenant_id}"
+        raw = (
+            f"{envelope.source_id}:{envelope.raw_sha256}:"
+            f"{envelope.event_time:.3f}:{envelope.tenant_id}"
+        )
         return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
     def is_duplicate(self, envelope: DistributedEnvelope) -> bool:
@@ -170,7 +172,8 @@ class BoundedLatenessBuffer:
             ready = []
             remaining = []
             for env in self._buffer:
-                if env.event_time <= threshold or (now - env.ingestion_time) >= self.lateness_budget_seconds:
+                is_expired = (now - env.ingestion_time) >= self.lateness_budget_seconds
+                if env.event_time <= threshold or is_expired:
                     ready.append(env)
                 else:
                     remaining.append(env)
@@ -182,7 +185,10 @@ class BoundedLatenessBuffer:
     def flush_all(self) -> list[DistributedEnvelope]:
         """Flush entire buffer sorted deterministically."""
         with self._lock:
-            sorted_all = sorted(self._buffer, key=lambda e: (e.event_time, e.ingestion_time, e.raw_sha256))
+            sorted_all = sorted(
+                self._buffer,
+                key=lambda e: (e.event_time, e.ingestion_time, e.raw_sha256),
+            )
             self._buffer.clear()
             return sorted_all
 
@@ -291,7 +297,10 @@ class DistributedIngestionFabric:
     def get_stats(self) -> dict[str, Any]:
         """Return operational telemetry for the distributed fabric."""
         with self._lock:
-            queue_depths = {p: len(self._lateness_buffers[p]._buffer) for p in range(self.num_partitions)}
+            queue_depths = {
+                p: len(self._lateness_buffers[p]._buffer)
+                for p in range(self.num_partitions)
+            }
             return {
                 "num_partitions": self.num_partitions,
                 "strategy": self.strategy.value,

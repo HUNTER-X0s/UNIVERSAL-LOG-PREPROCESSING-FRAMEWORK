@@ -12,7 +12,6 @@ Provides strict object-level multi-tenant isolation validation for:
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from enum import Enum
 from typing import Any
@@ -33,7 +32,13 @@ class TenantViolationType(str, Enum):
 class TenantIsolationError(PermissionError):
     """Raised when an authenticated identity attempts to access cross-tenant resources."""
 
-    def __init__(self, message: str, violation_type: TenantViolationType, requestor_tenant: str | None, resource_tenant: str | None) -> None:
+    def __init__(
+        self,
+        message: str,
+        violation_type: TenantViolationType,
+        requestor_tenant: str | None,
+        resource_tenant: str | None,
+    ) -> None:
         super().__init__(message)
         self.violation_type = violation_type
         self.requestor_tenant = requestor_tenant
@@ -57,15 +62,21 @@ class MultiTenantGuard:
         """Validates that identity has permission and strictly matches resource tenant."""
         # 1. Permission check
         if not self.policy_engine.is_authorized(identity, required_permission):
-            raise PermissionError(f"Identity '{identity.subject}' lacks permission '{required_permission.value}'")
+            raise PermissionError(
+                f"Identity '{identity.subject}' lacks permission '{required_permission.value}'"
+            )
 
         # 2. Cross-tenant isolation check: Identity tenant MUST equal resource tenant
         # Exception: platform-admin role with explicit cross-tenant audit authorization
-        is_cross_tenant_admin = "platform-admin" in identity.roles and identity.attributes.get("cross_tenant_audit", False)
+        is_cross_tenant_admin = (
+            "platform-admin" in identity.roles
+            and identity.attributes.get("cross_tenant_audit", False)
+        )
 
         if identity.tenant_id != resource_tenant and not is_cross_tenant_admin:
             raise TenantIsolationError(
-                f"Cross-tenant access blocked: tenant '{identity.tenant_id}' cannot access resource belonging to tenant '{resource_tenant}'",
+                f"Cross-tenant access blocked: tenant '{identity.tenant_id}' "
+                f"cannot access resource belonging to tenant '{resource_tenant}'",
                 violation_type=violation_type,
                 requestor_tenant=identity.tenant_id,
                 resource_tenant=resource_tenant,
@@ -73,19 +84,34 @@ class MultiTenantGuard:
 
         return True
 
-    def filter_query_by_tenant(self, identity: IdentityContext, records: list[dict[str, Any]], tenant_field: str = "tenant_id") -> list[dict[str, Any]]:
+    def filter_query_by_tenant(
+        self,
+        identity: IdentityContext,
+        records: list[dict[str, Any]],
+        tenant_field: str = "tenant_id",
+    ) -> list[dict[str, Any]]:
         """Filter a list of entity dictionaries to only include the caller's tenant."""
-        if "platform-admin" in identity.roles and identity.attributes.get("cross_tenant_audit", False):
+        is_cross_admin = (
+            "platform-admin" in identity.roles
+            and identity.attributes.get("cross_tenant_audit", False)
+        )
+        if is_cross_admin:
             return records
         return [r for r in records if r.get(tenant_field) == identity.tenant_id]
 
-    def redact_tenant_ai_context(self, identity: IdentityContext, context_entities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    def redact_tenant_ai_context(
+        self,
+        identity: IdentityContext,
+        context_entities: list[dict[str, Any]],
+    ) -> list[dict[str, Any]]:
         """Ensure no cross-tenant context or raw tokens leak into AI copilot prompts."""
         safe_entities = []
         for ent in context_entities:
             ent_tenant = ent.get("tenant_id")
-            if ent_tenant == identity.tenant_id or (
-                "platform-admin" in identity.roles and identity.attributes.get("cross_tenant_audit", False)
-            ):
+            is_admin = (
+                "platform-admin" in identity.roles
+                and identity.attributes.get("cross_tenant_audit", False)
+            )
+            if ent_tenant == identity.tenant_id or is_admin:
                 safe_entities.append(ent)
         return safe_entities

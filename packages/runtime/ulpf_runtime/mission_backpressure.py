@@ -11,10 +11,9 @@ Fulfills Phase 14 Workstreams E and F:
 from __future__ import annotations
 
 import hashlib
-import json
 import threading
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
 from typing import Any
 
@@ -65,10 +64,10 @@ class LosslessDeadLetterQueue:
         state: BackpressureState,
     ) -> DeadLetterRecord:
         """Seal and record rejected or spilled event."""
-        raw_bytes = raw_payload.encode("utf-8") if isinstance(raw_payload, str) else bytes(raw_payload)
+        raw_bytes = raw_payload.encode("utf-8")
         h = hashlib.sha256(raw_bytes).hexdigest()
         ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-        dlq_id = hashlib.sha256(f"{source_id}:{h}:{ts}".encode("utf-8")).hexdigest()[:16]
+        dlq_id = hashlib.sha256(f"{source_id}:{h}:{ts}".encode()).hexdigest()[:16]
 
         rec = DeadLetterRecord(
             dlq_id=dlq_id,
@@ -178,7 +177,8 @@ class MissionBackpressureController:
         """
         state = self.evaluate_state(current_queue_depth)
         with self._lock:
-            if state == BackpressureState.CRITICAL_OVERLOAD and current_queue_depth >= self.max_queue_depth:
+            at_capacity = current_queue_depth >= self.max_queue_depth
+            if state == BackpressureState.CRITICAL_OVERLOAD and at_capacity:
                 rec = self.dlq.record_rejection(
                     source_id=source_id,
                     raw_payload=raw_payload,
@@ -208,7 +208,10 @@ class MissionBackpressureController:
                 current_worker_count=current_workers,
                 recommended_worker_count=target,
                 scale_direction="UP",
-                reason=f"Critical queue depth ({current_queue_depth}/{self.max_queue_depth}) & lag ({consumer_lag})",
+                reason=(
+                    f"Critical queue depth ({current_queue_depth}/{self.max_queue_depth}) "
+                    f"& lag ({consumer_lag})"
+                ),
                 throttle_rate_percent=50.0,
             )
         elif state == BackpressureState.OVERLOAD:
@@ -222,7 +225,11 @@ class MissionBackpressureController:
                 reason=f"Elevated queue depth ({current_queue_depth})",
                 throttle_rate_percent=15.0,
             )
-        elif state == BackpressureState.NORMAL and current_queue_depth < (self.max_queue_depth * 0.1) and current_workers > 2:
+        elif (
+            state == BackpressureState.NORMAL
+            and current_queue_depth < (self.max_queue_depth * 0.1)
+            and current_workers > 2
+        ):
             target = max(2, current_workers - 1)
             return AutoscaleSignal(
                 timestamp=now,

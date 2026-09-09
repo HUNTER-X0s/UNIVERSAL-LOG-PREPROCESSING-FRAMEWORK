@@ -8,14 +8,12 @@ Performs:
 
 from __future__ import annotations
 
-import ast
 import json
-import os
-from pathlib import Path
 import re
 import socket
 import sys
 import time
+from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,7 +42,7 @@ def scan_static_airgap() -> list[dict[str, Any]]:
             continue
         try:
             txt = pyf.read_text(encoding="utf-8")
-        except Exception:
+        except Exception:  # noqa: S112
             continue
 
         for pat in PROHIBITED_CLIENT_CALLS:
@@ -69,10 +67,9 @@ def verify_runtime_airgap() -> dict[str, Any]:
     socket.socket.connect = fake_connect
     try:
         # Import core packages and run local copilot, local threat intel, and pipeline
-        from ulpf_mission.copilot.advisor import AIAnalystCopilot
         from ulpf_intelligence.enrichment.local import LocalEnrichmentService
-        from ulpf_streaming.fabric import DistributedIngestionFabric, DistributedEnvelope
-        from ulpf_runtime.mission_backpressure import MissionBackpressureController
+        from ulpf_mission.copilot.advisor import AIAnalystCopilot
+        from ulpf_streaming.fabric import DistributedEnvelope, DistributedIngestionFabric
 
         copilot = AIAnalystCopilot()
         summary = copilot.summarise_case(
@@ -161,7 +158,7 @@ def main():
     print(f"  [2] Runtime Network Interception: {runtime_res['runtime_interception_count']} outbound socket calls")
 
     generate_sbom_and_licenses()
-    print(f"  [3] SBOM & License Inventory generated in reports/phase15/")
+    print("  [3] SBOM & License Inventory generated in reports/phase15/")
 
     airgap_ok = (len(static_hits) == 0) and runtime_res["runtime_airgap_verified"]
 

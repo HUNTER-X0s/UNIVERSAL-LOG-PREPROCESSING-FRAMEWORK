@@ -45,7 +45,7 @@ def sha256_hex(data: str) -> str:
 
 def scenario_01_raw_ingestion() -> dict[str, Any]:
     """S01: Multi-Protocol Raw Ingestion — Syslog, JSON, CEF, XML."""
-    rng = random.Random(SEED + 1)
+    rng = random.Random(SEED + 1)  # noqa: S311 — deterministic test ID generation, not security use
     results = {}
     for fmt, sample in [("syslog", SYSLOG_SAMPLE), ("json", JSON_SAMPLE),
                          ("cef", CEF_SAMPLE), ("xml", XML_SAMPLE)]:
@@ -63,7 +63,12 @@ def scenario_01_raw_ingestion() -> dict[str, Any]:
 
 def scenario_02_parsing_normalization() -> dict[str, Any]:
     """S02: Parsing & UCE Normalization -- Convert raw to Unified Canonical Event."""
-    from ulpf_normalization import normalize_timestamp, normalize_action, normalize_ip, UnknownFieldPreserver
+    from ulpf_normalization import (
+        UnknownFieldPreserver,
+        normalize_action,
+        normalize_ip,
+        normalize_timestamp,
+    )
     # Demonstrate field-level normalization as part of UCE pipeline
     ts_norm = normalize_timestamp("2026-09-09T12:00:00Z")
     action_norm = normalize_action("DENY")
@@ -84,10 +89,10 @@ def scenario_02_parsing_normalization() -> dict[str, Any]:
 
 def scenario_03_threat_detection() -> dict[str, Any]:
     """S03: Rule-Based Threat Detection."""
-    from ulpf_intelligence.rules.dsl import DetectionRule, RuleCondition, RuleOperator
-    from ulpf_intelligence.models import AlertSeverity
-    from ulpf_intelligence.rules.registry import RuleRegistry
     from ulpf_intelligence.detection.engine import DetectionEngine
+    from ulpf_intelligence.models import AlertSeverity
+    from ulpf_intelligence.rules.dsl import DetectionRule, RuleCondition, RuleOperator
+    from ulpf_intelligence.rules.registry import RuleRegistry
     rr = RuleRegistry()
     rule = DetectionRule(
         rule_id="JDG-R001",
@@ -124,7 +129,7 @@ def scenario_03_threat_detection() -> dict[str, Any]:
 
 def scenario_04_attack_path_analysis() -> dict[str, Any]:
     """S04: Attack Path Graph -- Multi-Hop Lateral Movement."""
-    from ulpf_intelligence.graph.attack_graph import AttackPathGraph, NodeType, EdgeRelation
+    from ulpf_intelligence.graph.attack_graph import AttackPathGraph, EdgeRelation, NodeType
     graph = AttackPathGraph()
     graph.add_node("attacker-ip", NodeType.IP, label="Attacker", base_risk=90.0)
     graph.add_node("web-dmz-01", NodeType.ASSET, label="Web DMZ Host", base_risk=60.0)
@@ -168,7 +173,13 @@ def scenario_05_forensic_case_packaging() -> dict[str, Any]:
 
 def scenario_06_tenant_isolation() -> dict[str, Any]:
     """S06: Multi-Tenant Data Isolation."""
-    from ulpf_security.tenant_isolation import MultiTenantGuard, IdentityContext, Permission, TenantViolationType, TenantIsolationError
+    from ulpf_security.tenant_isolation import (
+        IdentityContext,
+        MultiTenantGuard,
+        Permission,
+        TenantIsolationError,
+        TenantViolationType,
+    )
     guard = MultiTenantGuard()
     # Grant the analyst identity READ permission on their own tenant
     id_alpha = IdentityContext(
@@ -206,7 +217,6 @@ def scenario_06_tenant_isolation() -> dict[str, Any]:
 
 def scenario_07_air_gap_verification() -> dict[str, Any]:
     """S07: Air-Gap Sovereignty — Zero Outbound Network Calls."""
-    import ast
     core_packages = ROOT / "packages"
     outbound_patterns = ["socket.connect", "urllib.request", "requests.get",
                          "httpx.get", "http.client.HTTPConnection"]
@@ -219,7 +229,7 @@ def scenario_07_air_gap_verification() -> dict[str, Any]:
             for pat in outbound_patterns:
                 if pat in src:
                     violations.append({"file": py_file.name, "pattern": pat})
-        except Exception:
+        except Exception:  # noqa: S110 — file read failures are non-critical during air-gap scan
             pass
     return {
         "scenario": "S07 — Air-Gap Sovereignty",
@@ -232,7 +242,7 @@ def scenario_07_air_gap_verification() -> dict[str, Any]:
 
 def scenario_08_performance_benchmark() -> dict[str, Any]:
     """S08: Performance — Latency & Throughput Measurement."""
-    from ulpf_streaming.fabric import DistributedIngestionFabric, DistributedEnvelope
+    from ulpf_streaming.fabric import DistributedEnvelope, DistributedIngestionFabric
     fabric = DistributedIngestionFabric(num_partitions=4)
     # Warmup
     for i in range(20):

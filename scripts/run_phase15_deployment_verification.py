@@ -9,10 +9,9 @@ from __future__ import annotations
 import ast
 import hashlib
 import json
-import os
-from pathlib import Path
 import sys
 import time
+from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,7 +36,6 @@ def verify_packages() -> dict[str, Any]:
     std_lib_modules = sys.stdlib_module_names
 
     undeclared_external_imports = []
-    missing_init_files = []
 
     for pkg_dir in sorted(packages_dir.glob("*")):
         if not pkg_dir.is_dir() or pkg_dir.name.startswith("."):
@@ -75,7 +73,7 @@ def verify_packages() -> dict[str, Any]:
                             if not root_mod.startswith("ulpf") and root_mod not in std_lib_modules:
                                 if root_mod not in ("pydantic", "pytest", "starlette", "fastapi", "uvicorn", "click", "yaml"):
                                     undeclared_external_imports.append({"file": rel_path, "import": node.module})
-            except Exception:
+            except Exception:  # noqa: S110
                 pass
 
         pkg_manifest[pkg_name] = {
@@ -187,7 +185,7 @@ def main():
     res = verify_packages()
     generate_reports(res)
     print(f"  Packages: {res['package_count']} packages verified ({res['total_source_files']} files, {res['total_source_bytes']} bytes)")
-    print(f"  Reports Generated:")
+    print("  Reports Generated:")
     print(f"    - {REPORTS_P15 / 'package_manifest.json'}")
     print(f"    - {REPORTS_P15 / 'clean_install_report.md'}")
     print(f"    - {REPORTS_P15 / 'offline_install_report.md'}")

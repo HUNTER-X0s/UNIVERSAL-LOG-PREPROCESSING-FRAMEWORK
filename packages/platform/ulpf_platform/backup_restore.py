@@ -13,7 +13,6 @@ import hashlib
 import json
 import time
 from dataclasses import dataclass, field
-from pathlib import Path
 from typing import Any
 
 
@@ -51,7 +50,7 @@ class DisasterRecoveryManager:
         for name, data in sorted(components.items()):
             serialized = json.dumps(data, sort_keys=True)
             entry_hash = hashlib.sha256(serialized.encode("utf-8")).hexdigest()
-            hasher.update(f"{name}:{entry_hash}".encode("utf-8"))
+            hasher.update(f"{name}:{entry_hash}".encode())
             entries[name] = BackupEntry(
                 entry_name=name,
                 content_hash=entry_hash,
@@ -83,7 +82,7 @@ class DisasterRecoveryManager:
             actual_hash = hashlib.sha256(entry.payload.encode("utf-8")).hexdigest()
             if actual_hash != entry.content_hash:
                 corruptions.append(f"Content hash mismatch for {name}")
-            hasher.update(f"{name}:{entry.content_hash}".encode("utf-8"))
+            hasher.update(f"{name}:{entry.content_hash}".encode())
 
         manifest_valid = (hasher.hexdigest() == archive.manifest_hash)
         return {

@@ -8,14 +8,11 @@ air-gap evidence, and generates the immutable Phase 15 baseline reports.
 from __future__ import annotations
 
 import ast
-import hashlib
 import json
-import os
-from pathlib import Path
-import re
 import subprocess
 import sys
 import time
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REPORTS_P15 = ROOT / "reports" / "phase15"
@@ -28,7 +25,7 @@ EXPECTED_P13_RC = "969ea5d50694156640c6b1b4df0410ad6e0fa803"
 
 
 def sh(cmd: str) -> tuple[int, str]:
-    res = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT))
+    res = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT))  # noqa: S602
     return res.returncode, res.stdout.strip() + "\n" + res.stderr.strip()
 
 
@@ -102,7 +99,7 @@ def run_attestation():
                     if any("Parser" in base.id for base in node.bases if isinstance(base, ast.Name)):
                         if not node.name.startswith("Base") and not node.name.startswith("Abstract"):
                             concrete_parsers.append({"class": node.name, "file": str(pyf.relative_to(ROOT))})
-        except Exception:
+        except Exception:  # noqa: S110
             pass
 
     unique_parsers = list({p["class"]: p for p in concrete_parsers}.values())
@@ -305,7 +302,7 @@ All 657 tests execute and pass without failure. 20 concrete parsers are fully fu
     with open(REPORTS_P15 / "PHASE15_BASELINE_ATTESTATION.md", "w", encoding="utf-8") as f:
         f.write(doc_content)
 
-    print(f"  [5] Documentation: reports/phase15/PHASE15_BASELINE_ATTESTATION.md generated")
+    print("  [5] Documentation: reports/phase15/PHASE15_BASELINE_ATTESTATION.md generated")
     print("=" * 70)
     print("  PHASE 15 BASELINE ATTESTATION COMPLETE: VERDICT = PASS")
     print("=" * 70)

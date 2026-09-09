@@ -8,16 +8,14 @@ Detects test tampering, tautologies, skipped tests, and benchmark manipulation.
 from __future__ import annotations
 
 import argparse
-import ast
-import hashlib
 import json
 import os
-from pathlib import Path
 import platform
 import re
 import subprocess
 import sys
 import time
+from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,7 +25,7 @@ REPORTS_P15.mkdir(parents=True, exist_ok=True)
 
 def sh(cmd: str, timeout: int = 180) -> tuple[int, str]:
     try:
-        res = subprocess.run(
+        res = subprocess.run(  # noqa: S602
             cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT), timeout=timeout
         )
         return res.returncode, res.stdout.strip() + "\n" + res.stderr.strip()
@@ -42,7 +40,7 @@ def scan_anti_tampering() -> dict[str, Any]:
     for pyf in tests_dir.rglob("*.py"):
         try:
             txt = pyf.read_text(encoding="utf-8")
-        except Exception:
+        except Exception:  # noqa: S112
             continue
 
         # 1. Tautological assert True / assert 1 == 1
