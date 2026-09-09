@@ -1,0 +1,7 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "clean_valid": true,
+  "payload_detected": true,
+  "meta_detected": true,
+  "verdict": "PASS"
+}

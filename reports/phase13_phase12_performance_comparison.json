@@ -1,0 +1,31 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "note": "Phase 13 source_intelligence, dual_view, attack_story are new; no Phase 12 baseline exists.",
+  "p13_benchmarks": {
+    "source_intelligence": {
+      "n": 200,
+      "mean_ms": 0.164,
+      "median_ms": 0.154,
+      "p95_ms": 0.248,
+      "min_ms": 0.082,
+      "max_ms": 0.337
+    },
+    "dual_view": {
+      "n": 200,
+      "mean_ms": 0.043,
+      "median_ms": 0.042,
+      "p95_ms": 0.051,
+      "min_ms": 0.016,
+      "max_ms": 0.471
+    },
+    "case_verify": {
+      "n": 200,
+      "mean_ms": 0.055,
+      "median_ms": 0.044,
+      "p95_ms": 0.072,
+      "min_ms": 0.042,
+      "max_ms": 0.832
+    }
+  },
+  "verdict": "INCOMPARABLE_NEW_COMPONENTS"
+}

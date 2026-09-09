@@ -1,0 +1,38 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "modules": {
+    "ulpf_onboarding.source_intel": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_onboarding.mapping_intel": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_intelligence.investigations.dual_view": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_intelligence.investigations.attack_story": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_intelligence.investigations.case_package": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_intelligence.investigations.investigate": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_mission.copilot.advisor": {
+      "ok": true,
+      "in_repo": true
+    },
+    "ulpf_mission.health.source_health": {
+      "ok": true,
+      "in_repo": true
+    }
+  },
+  "verdict": "PASS"
+}

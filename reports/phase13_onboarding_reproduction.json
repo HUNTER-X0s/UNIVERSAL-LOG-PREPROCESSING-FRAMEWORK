@@ -1,0 +1,8 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "input": "APPLOG 2026-09-09T12:00:00Z [WARN] src=10.1.1.5 dst=8.8.8.8 code=403 latency=120ms",
+  "is_unknown": true,
+  "confidence": 0.16,
+  "approval_boundary": "Flagged for human onboarding review (is_unknown=True)",
+  "verdict": "PASS"
+}

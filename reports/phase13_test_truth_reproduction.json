@@ -1,0 +1,16 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "exit_code": 0,
+  "duration_s": 39.22,
+  "summary": "633 passed, 2 warnings, 19 subtests passed in 37.88s",
+  "passed": 633,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "xfailed": 0,
+  "total": 633,
+  "claim_633": true,
+  "phase12_baseline": 614,
+  "phase13_additions": 19,
+  "verdict": "PASS"
+}

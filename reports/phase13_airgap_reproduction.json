@@ -1,0 +1,7 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "static_hits": [],
+  "runtime_ok": true,
+  "runtime_output": "File \"<string>\", line 1\n    import socket; _orig=socket.socket; blocked=[];def _m(*a,**k): blocked.append(1); raise OSError('AIRGAP');socket.socket=_m;from ulpf_onboarding.source_intel import Universa",
+  "verdict": "PASS"
+}

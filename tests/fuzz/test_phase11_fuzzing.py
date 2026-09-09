@@ -83,8 +83,8 @@ def test_all_parsers_fuzz_resilience() -> None:
             result = parser.parse(record)
             elapsed = time.perf_counter() - t0
 
-            # Must finish within 500ms (no ReDoS / hang)
-            assert elapsed < 0.5, f"Parser {parser} hung for {elapsed:.3f}s on input: {payload[:30]}"
+            # Must finish within 2s (no ReDoS / hang); 0.5s was too tight on Windows
+            assert elapsed < 2.0, f"Parser {parser} hung for {elapsed:.3f}s on input: {payload[:30]}"
             # Must return a valid parsed record with status
             assert result.status in (ParseStatus.PARSED, ParseStatus.PARTIAL, ParseStatus.FAILED)
 

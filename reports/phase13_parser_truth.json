@@ -1,0 +1,88 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "concrete_count": 20,
+  "claim_20": true,
+  "parsers": [
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\cef_parser.py",
+      "class": "CefParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\csv_parser.py",
+      "class": "GenericCsvParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\json_parser.py",
+      "class": "GenericJsonParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\json_parser.py",
+      "class": "NdJsonParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\kv_parser.py",
+      "class": "KeyValueParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\leef_parser.py",
+      "class": "LeefParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\syslog_rfc3164.py",
+      "class": "SyslogRFC3164Parser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\syslog_rfc5424.py",
+      "class": "SyslogRFC5424Parser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\w3c_parser.py",
+      "class": "W3CParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\xml_parser.py",
+      "class": "XmlParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\cisco.py",
+      "class": "CiscoSyslogParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\cloud_audit.py",
+      "class": "CloudAuditParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\fortigate.py",
+      "class": "FortiGateParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\linux_auditd.py",
+      "class": "LinuxAuditdParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\opnsense.py",
+      "class": "OPNsenseFilterlogParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\paloalto.py",
+      "class": "PaloAltoPanOSParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\snort.py",
+      "class": "SnortFastParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\suricata.py",
+      "class": "SuricataEveParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\web_access.py",
+      "class": "WebAccessLogParser"
+    },
+    {
+      "file": "packages\\parser-runtime\\ulpf_parser_runtime\\parsers\\specialized\\zeek.py",
+      "class": "ZeekParser"
+    }
+  ],
+  "verdict": "PASS"
+}

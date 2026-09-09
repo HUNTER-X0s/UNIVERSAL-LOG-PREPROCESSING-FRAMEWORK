@@ -1,0 +1,8 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "total_pattern_hits": 9,
+  "real_secrets": 0,
+  "test_fixtures": 9,
+  "venv_excluded": true,
+  "verdict": "PASS"
+}

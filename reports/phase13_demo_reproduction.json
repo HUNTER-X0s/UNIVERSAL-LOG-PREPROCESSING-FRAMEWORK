@@ -1,0 +1,26 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "trials": [
+    {
+      "trial": 1,
+      "exit": 0,
+      "dur_s": 0.718,
+      "ok": true
+    },
+    {
+      "trial": 2,
+      "exit": 0,
+      "dur_s": 0.843,
+      "ok": true
+    },
+    {
+      "trial": 3,
+      "exit": 0,
+      "dur_s": 0.677,
+      "ok": true
+    }
+  ],
+  "all_passed": true,
+  "data_type": "reference/controlled fixtures (offline, deterministic)",
+  "verdict": "PASS"
+}

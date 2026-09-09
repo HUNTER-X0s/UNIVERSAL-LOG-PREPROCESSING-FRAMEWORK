@@ -1,0 +1,8 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "raw_len_bytes": 75,
+  "sha256_match": true,
+  "raw_recoverable": true,
+  "lineage_ok": true,
+  "verdict": "PASS"
+}

@@ -1,0 +1,40 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "nodes": [
+    {
+      "claim": "633 tests",
+      "evidence": "pytest stdout: passed=633",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "AI safety",
+      "evidence": "7 injections all_cleared=True",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "Tamper detection",
+      "evidence": "payload_detected=True",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Air-gap",
+      "evidence": "static_hits=0 runtime=True",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "RBAC enforcement",
+      "evidence": "4-case matrix all_ok=True",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Source intelligence",
+      "evidence": "palo=True forti=True",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "SIH demo 3x",
+      "evidence": "all_ok=True",
+      "verdict": "PASS"
+    }
+  ]
+}

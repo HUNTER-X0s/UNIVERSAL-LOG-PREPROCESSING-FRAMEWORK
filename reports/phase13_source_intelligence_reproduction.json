@@ -1,0 +1,50 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "cases_tested": 5,
+  "palo_ok": true,
+  "forti_ok": true,
+  "unknown_ok": true,
+  "results": [
+    {
+      "input_preview": "1,2024/09/01,001234,TRAFFIC,drop,1,2024/09/01,10.0.0.1,192.1",
+      "vendor": "Palo Alto Networks",
+      "confidence": 0.65,
+      "is_unknown": false,
+      "expected_vendor": "Palo Alto Networks",
+      "vendor_match": true
+    },
+    {
+      "input_preview": "devname=\"FGT-500E\" type=\"traffic\" action=\"deny\" policyid=42 ",
+      "vendor": "Fortinet",
+      "confidence": 0.999,
+      "is_unknown": false,
+      "expected_vendor": "Fortinet",
+      "vendor_match": true
+    },
+    {
+      "input_preview": "Sep  9 10:00:00 host sshd[1234]: Failed password for root fr",
+      "vendor": "Unknown",
+      "confidence": 0.15,
+      "is_unknown": true,
+      "expected_vendor": null,
+      "vendor_match": true
+    },
+    {
+      "input_preview": "COMPLETELY_UNKNOWN_GARBAGE_XYZ_123_NOTAVENDOR",
+      "vendor": "Unknown",
+      "confidence": 0.15,
+      "is_unknown": true,
+      "expected_vendor": null,
+      "vendor_match": true
+    },
+    {
+      "input_preview": "action=accept rule=5 src=10.0.0.1 dst=8.8.8.8 proto=tcp",
+      "vendor": "Unknown",
+      "confidence": 0.15,
+      "is_unknown": true,
+      "expected_vendor": null,
+      "vendor_match": true
+    }
+  ],
+  "verdict": "PASS"
+}

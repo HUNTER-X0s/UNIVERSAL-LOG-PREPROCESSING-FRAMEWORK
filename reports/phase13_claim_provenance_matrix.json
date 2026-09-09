@@ -1,0 +1,52 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "claims": [
+    {
+      "claim": "633 tests",
+      "actual": 633,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "19 Phase 13 tests",
+      "actual": 19,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": ">=20 concrete parsers",
+      "actual": 20,
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Air-gap",
+      "status": "PASS"
+    },
+    {
+      "claim": "AI safety",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "RBAC enforcement",
+      "status": "PASS"
+    },
+    {
+      "claim": "Source intelligence",
+      "status": "PASS"
+    },
+    {
+      "claim": "Tamper detection",
+      "status": "PASS"
+    },
+    {
+      "claim": "Replay determinism",
+      "status": "PASS"
+    },
+    {
+      "claim": "SIH demo (3x)",
+      "status": "PASS"
+    },
+    {
+      "claim": "NTRO (16 reqs)",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "head_sha": "969ea5dd4edec8c887b55b3bf0ca1f13fde2960c",
+  "p12_tag": "PHASE12_FINAL_RELEASE_CANDIDATE_APPROVED",
+  "p12_target": "545e4ba66d776291999e9a1d8e65f3a8599bcc1c",
+  "p12_pre_tag": "PHASE12_PRE_PHASE13_VERIFIED",
+  "p12_pre_target": "545e4ba66d776291999e9a1d8e65f3a8599bcc1c",
+  "p13_tag": "PHASE13_RELEASE_CANDIDATE_APPROVED",
+  "p13_target": "969ea5dd4edec8c887b55b3bf0ca1f13fde2960c",
+  "p14_tag_target": "969ea5dd4edec8c887b55b3bf0ca1f13fde2960c",
+  "p13_tag_type": "tag",
+  "ancestry_commits": "969ea5d fix(phase13): advisor.py Any import + audit [11] injection-check semantics\n874f563 feat(phase13): Milestones B-F - source intel, forensic investigations, AI copilot, health monitoring, audit scripts and documentation (633 tests pass)\n26e9327 docs(audit): commit phase 12 pre-phase-13 independent verification reports",
+  "head_beyond_p13": false,
+  "p12_tags_present": true
+}

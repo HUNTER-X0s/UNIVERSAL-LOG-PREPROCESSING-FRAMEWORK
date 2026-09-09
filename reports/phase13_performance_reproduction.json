@@ -1,0 +1,34 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "head_sha": "969ea5dd4edec8c887b55b3bf0ca1f13fde2960c",
+  "benchmarks": {
+    "source_intelligence": {
+      "n": 200,
+      "mean_ms": 0.164,
+      "median_ms": 0.154,
+      "p95_ms": 0.248,
+      "min_ms": 0.082,
+      "max_ms": 0.337
+    },
+    "dual_view": {
+      "n": 200,
+      "mean_ms": 0.043,
+      "median_ms": 0.042,
+      "p95_ms": 0.051,
+      "min_ms": 0.016,
+      "max_ms": 0.471
+    },
+    "case_verify": {
+      "n": 200,
+      "mean_ms": 0.055,
+      "median_ms": 0.044,
+      "p95_ms": 0.072,
+      "min_ms": 0.042,
+      "max_ms": 0.832
+    }
+  },
+  "scope": "Component micro-benchmarks only. NOT full-system throughput.",
+  "verdict": "VERIFIED_WITH_LIMITATION"
+}

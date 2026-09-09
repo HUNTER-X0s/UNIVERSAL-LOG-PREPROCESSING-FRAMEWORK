@@ -1,0 +1,15 @@
+{
+  "audit_timestamp": "2026-09-09T14:10:17.342250+00:00",
+  "authorities": {
+    "tests": "raw pytest execution (sec 06)",
+    "parsers": "AST source scan packages/parser-runtime/ (sec 10)",
+    "performance": "fresh timeit bench (sec 32)",
+    "air_gap": "static pkg/ scan + socket mock (sec 27)",
+    "git": "git object DB (sec 04)",
+    "demo": "3 live executions (sec 35)",
+    "package": "importlib live import (sec 28)",
+    "ai_safety": "7 live injection tests (sec 23)",
+    "tamper_detection": "live bit-mutation test (sec 17)",
+    "threat_intelligence": "live LocalEnrichmentService (sec 22)"
+  }
+}
