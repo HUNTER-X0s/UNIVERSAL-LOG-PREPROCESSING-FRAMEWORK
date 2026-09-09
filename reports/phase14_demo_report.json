@@ -1,0 +1,18 @@
+{
+  "title": "ULPF Phase 14 SIH Master Demo Report",
+  "timestamp": "2026-09-09T14:36:13.768902+00:00",
+  "duration_seconds": 0.001,
+  "stages_executed": 9,
+  "all_stages_passed": true,
+  "metrics": {
+    "ingested_envelopes": 4,
+    "deduplicated": true,
+    "canary_safe": true,
+    "correlation_stage": "DETECTION",
+    "attack_graph_nodes": 3,
+    "case_state": "CONTAINMENT_RECOMMENDED",
+    "simulation_zero_side_effects": true,
+    "dr_drill_status": "RESTORED_VERIFIED"
+  },
+  "verdict": "SIH_MASTER_DEMO_PASSED"
+}

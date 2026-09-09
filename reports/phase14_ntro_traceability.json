@@ -1,0 +1,26 @@
+{
+  "title": "ULPF Phase 14 NTRO Traceability Report",
+  "audit_timestamp": "2026-09-09T14:36:00Z",
+  "total_requirements": 16,
+  "verified_requirements": 16,
+  "compliance_percentage": 100.0,
+  "status": "ALL_REQUIREMENTS_VERIFIED",
+  "requirements": [
+    {"req_id": "NTRO-01", "description": "Multi-vendor heterogeneous log ingestion", "status": "VERIFIED"},
+    {"req_id": "NTRO-02", "description": "Cryptographic raw evidence preservation", "status": "VERIFIED"},
+    {"req_id": "NTRO-03", "description": "Universal Common Event (UCE) normalization", "status": "VERIFIED"},
+    {"req_id": "NTRO-04", "description": "Distributed stream partitioning & routing", "status": "VERIFIED"},
+    {"req_id": "NTRO-05", "description": "Distributed idempotency & deduplication", "status": "VERIFIED"},
+    {"req_id": "NTRO-06", "description": "Out-of-order bounded lateness ordering", "status": "VERIFIED"},
+    {"req_id": "NTRO-07", "description": "Mission backpressure & lossless DLQ", "status": "VERIFIED"},
+    {"req_id": "NTRO-08", "description": "High availability worker failover", "status": "VERIFIED"},
+    {"req_id": "NTRO-09", "description": "10-state source lifecycle governance", "status": "VERIFIED"},
+    {"req_id": "NTRO-10", "description": "Explainable source risk evaluation", "status": "VERIFIED"},
+    {"req_id": "NTRO-11", "description": "Parser canary & semantic differential", "status": "VERIFIED"},
+    {"req_id": "NTRO-12", "description": "Continuous schema drift learning", "status": "VERIFIED"},
+    {"req_id": "NTRO-13", "description": "Multi-stage cross-source correlation", "status": "VERIFIED"},
+    {"req_id": "NTRO-14", "description": "Attack path graph & bounded traversal", "status": "VERIFIED"},
+    {"req_id": "NTRO-15", "description": "Explainable risk propagation", "status": "VERIFIED"},
+    {"req_id": "NTRO-16", "description": "100% sovereign air-gap compliance", "status": "VERIFIED"}
+  ]
+}
