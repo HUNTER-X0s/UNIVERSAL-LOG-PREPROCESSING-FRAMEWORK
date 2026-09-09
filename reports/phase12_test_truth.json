@@ -1,0 +1,11 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:16.300611+00:00",
+  "claimed_count": 614,
+  "collected_in_tests_dir": 614,
+  "collected_in_workspace_root": 615,
+  "reconciliation_explanation": "Directory tests/ contains exactly 614 test cases (584 Phase 0-10 baseline + 30 Phase 11 additions). A bare root pytest collection additionally discovers scripts/test_installation_smoke.py (615th item). The authoritative test suite in tests/ is exactly 614 tests.",
+  "executed_passed": 614,
+  "executed_failed": 0,
+  "executed_skipped": 0,
+  "verdict": "PASS"
+}

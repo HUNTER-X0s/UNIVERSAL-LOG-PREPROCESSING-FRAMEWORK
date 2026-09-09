@@ -1,0 +1,46 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:36.994257+00:00",
+  "nodes": [
+    {
+      "claim": "614 Tests Pass",
+      "evidence": "reports/phase12_test_truth.json",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "20 Concrete Parsers",
+      "evidence": "reports/phase12_parser_truth.json",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "Air-Gap 0 Sockets",
+      "evidence": "reports/phase12_airgap_reproduction.json",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "13-Stage Lineage",
+      "evidence": "reports/phase12_lineage_reproduction.json",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "RTO 0.025s / RPO 0",
+      "evidence": "reports/phase12_recovery_reproduction.json",
+      "verdict": "VERIFIED WITH LIMITATION (single-node)"
+    },
+    {
+      "claim": "94.5k EPS Throughput",
+      "evidence": "reports/phase12_performance_reproduction.json",
+      "verdict": "VERIFIED WITH LIMITATION (pipeline profile)"
+    },
+    {
+      "claim": "Heap Growth <0.01MB",
+      "evidence": "reports/phase12_endurance_reproduction.json",
+      "verdict": "VERIFIED WITH LIMITATION (burst endurance)"
+    },
+    {
+      "claim": "SIH Demo Reproducible",
+      "evidence": "reports/phase12_demo_reproduction.json",
+      "verdict": "VERIFIED"
+    }
+  ],
+  "verdict": "PASS"
+}

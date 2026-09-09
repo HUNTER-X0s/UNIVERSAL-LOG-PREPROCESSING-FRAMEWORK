@@ -1,0 +1,17 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:16.790977+00:00",
+  "exit_code": 0,
+  "output_summary": "E2E Pipeline Certification: E2E_CANDIDATE_PIPELINE_PASS (8 vendors processed in 0.001s)",
+  "vendors_verified": [
+    "Palo Alto",
+    "Cisco ASA",
+    "FortiGate",
+    "Suricata",
+    "Linux Auditd",
+    "AWS CloudTrail",
+    "CEF",
+    "JSON"
+  ],
+  "lossless_raw_bytes": true,
+  "verdict": "PASS"
+}

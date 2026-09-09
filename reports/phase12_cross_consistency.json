@@ -1,0 +1,9 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:36.993748+00:00",
+  "metrics_test_count": 614,
+  "truth_test_count": 614,
+  "metrics_parser_count": 20,
+  "truth_parser_count": 20,
+  "cross_consistent": true,
+  "verdict": "PASS"
+}

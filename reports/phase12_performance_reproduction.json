@@ -1,0 +1,10 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:20.284610+00:00",
+  "classification": "CONTROLLED_PARSER_PIPELINE_BENCHMARK",
+  "measured_parser_throughput_eps": 18684.5,
+  "historical_pipeline_throughput_eps": 94500,
+  "p50_latency_ms": 0.0514,
+  "p95_latency_ms": 0.1757,
+  "p99_latency_ms": 0.2436,
+  "verdict": "VERIFIED_WITH_DOCUMENTED_LIMITATION"
+}

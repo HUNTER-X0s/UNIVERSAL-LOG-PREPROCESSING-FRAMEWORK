@@ -1,0 +1,24 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:33.282836+00:00",
+  "trials": [
+    {
+      "trial": 1,
+      "duration_s": 2.057,
+      "status": "PASS"
+    },
+    {
+      "trial": 2,
+      "duration_s": 2.143,
+      "status": "PASS"
+    },
+    {
+      "trial": 3,
+      "duration_s": 2.024,
+      "status": "PASS"
+    }
+  ],
+  "all_passed": true,
+  "timebox_limit_s": 120,
+  "average_duration_s": 2.075,
+  "verdict": "PASS"
+}

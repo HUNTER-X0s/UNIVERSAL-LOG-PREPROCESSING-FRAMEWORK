@@ -1,0 +1,16 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:36.994257+00:00",
+  "authoritative_reports": {
+    "test_counts": "reports/phase12_test_truth.json",
+    "parser_counts": "reports/phase12_parser_truth.json",
+    "release_metrics": "reports/release_metrics.json",
+    "airgap": "reports/phase12_airgap_reproduction.json",
+    "security": "reports/phase12_security_reproduction.json",
+    "e2e": "reports/phase12_e2e_reproduction.json",
+    "performance": "reports/phase12_performance_reproduction.json",
+    "recovery": "reports/phase12_recovery_reproduction.json",
+    "demo": "reports/phase12_demo_reproduction.json",
+    "lineage": "reports/phase12_lineage_reproduction.json"
+  },
+  "verdict": "PASS"
+}

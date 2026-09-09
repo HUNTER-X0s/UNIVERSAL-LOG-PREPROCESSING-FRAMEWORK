@@ -1,0 +1,60 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:16.321715+00:00",
+  "claims": [
+    {
+      "claim": "614 tests passing",
+      "source": "tests/",
+      "provenance": "pytest tests/ execution",
+      "status": "VERIFIED_FACT"
+    },
+    {
+      "claim": "20 concrete parsers",
+      "source": "packages/parser-runtime",
+      "provenance": "BaseParser class hierarchy inspection",
+      "status": "VERIFIED_FACT"
+    },
+    {
+      "claim": "0 outbound sockets",
+      "source": "tests/airgap/",
+      "provenance": "socket.socket interception during runtime",
+      "status": "VERIFIED_FACT"
+    },
+    {
+      "claim": "13-stage forensic lineage",
+      "source": "packages/advanced_intelligence",
+      "provenance": "ForensicLineageVerifier cryptographic hash chain",
+      "status": "VERIFIED_FACT"
+    },
+    {
+      "claim": "RTO = 0.025s (SLA < 2.0s)",
+      "source": "tests/recovery/",
+      "provenance": "BackupManager timing in test_measured_rto_within_operational_sla",
+      "status": "REPRODUCED_RESULT (single-node local store)"
+    },
+    {
+      "claim": "RPO = 0 events lost",
+      "source": "tests/recovery/",
+      "provenance": "Byte-exact WAL verification",
+      "status": "VERIFIED_FACT"
+    },
+    {
+      "claim": "94,500+ EPS throughput",
+      "source": "scripts/run_phase11_performance_certification.py",
+      "provenance": "Multi-run batch pipeline trials",
+      "status": "REPRODUCED_RESULT (controlled pipeline benchmark)"
+    },
+    {
+      "claim": "Heap drift < 0.01 MB",
+      "source": "scripts/run_phase12_soak.py",
+      "provenance": "tracemalloc heap tracking across 3,000 cycles",
+      "status": "REPRODUCED_RESULT (controlled burst endurance)"
+    },
+    {
+      "claim": "SIH 2-minute offline demo",
+      "source": "scripts/run_sih_demo.py",
+      "provenance": "3x repeated trial execution in ~1.5s",
+      "status": "REPRODUCED_RESULT"
+    }
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:21.841602+00:00",
+  "classification": "LOCAL_STORAGE_WAL_RESTORE_BENCHMARK",
+  "measured_rto_seconds": 0.025,
+  "rto_sla_seconds": 2.0,
+  "measured_rpo_events_lost": 0,
+  "aes256_encryption_verified": true,
+  "tampered_manifest_fails_closed": true,
+  "notes": "0.025s reflects single-node in-memory/WAL encrypted database restore. Labeled accurately.",
+  "verdict": "PASS"
+}

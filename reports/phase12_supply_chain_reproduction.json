@@ -1,0 +1,7 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:26.969175+00:00",
+  "sbom_verified": true,
+  "secret_scan_pass": true,
+  "unshielded_credentials": 0,
+  "verdict": "PASS"
+}

@@ -1,0 +1,9 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:23.719050+00:00",
+  "wheel_present": true,
+  "wheel_path": "dist\\ulpf_foundation-0.1.0-py3-none-any.whl",
+  "wheel_size_bytes": 411010,
+  "module_imports_verified": 22,
+  "cli_entrypoints_callable": true,
+  "verdict": "PASS"
+}

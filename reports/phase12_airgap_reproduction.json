@@ -1,0 +1,9 @@
+{
+  "audit_timestamp": "2026-09-09T06:30:18.654313+00:00",
+  "test_results": "4 passed in 0.20s",
+  "runtime_outbound_sockets": 0,
+  "static_network_imports_in_packages": 0,
+  "offline_bloom_filter_intel": true,
+  "offline_heuristic_copilot": true,
+  "verdict": "PASS"
+}
