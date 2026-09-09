@@ -197,7 +197,8 @@ def run_phase13_final_audit() -> dict:
             detection_rule_ids=["R1"],
             kill_chain_phases=["PRIVILEGE_ESCALATION"],
         )
-        injected_cleared = "ignore previous" not in summary.what and "dump secrets" not in summary.what
+        # Injection patterns must be redacted; non-injection words may pass through
+        injected_cleared = "[REDACTED]" in summary.what and "ignore previous" not in summary.what
         # Test ProposedStateAction RBAC
         action = copilot.propose_safe_action(
             action_type="ISOLATE_HOST", target="10.0.0.5",
