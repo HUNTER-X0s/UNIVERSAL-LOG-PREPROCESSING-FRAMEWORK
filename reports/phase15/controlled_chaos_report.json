@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-09-09T20:39:17Z",
+  "failure_modes_tested": 8,
+  "chaos_matrix": {
+    "PARSER_FAILURE_INJECTION": {
+      "condition": "Malformed non-CEF stream fed to CEF parser",
+      "bounded_degradation": true,
+      "fail_fast_exception": "AttributeError",
+      "silent_data_loss": 0,
+      "status": "HANDLED_GRACEFULLY"
+    },
+    "MAPPING_FAILURE_INJECTION": {
+      "condition": "Unknown telemetry schema field without defined mapping",
+      "unmapped_fields_preserved": true,
+      "silent_data_loss": 0,
+      "status": "PRESERVED_WITHOUT_LOSS"
+    },
+    "QUEUE_SATURATION_BACKPRESSURE": {
+      "condition": "Queue depth exceeds max capacity threshold",
+      "backpressure_state": "CRITICAL_OVERLOAD",
+      "overflow_routed_to_dlq": true,
+      "silent_data_loss": 0,
+      "status": "PASS"
+    },
+    "WORKER_CRASH_FAILOVER": {
+      "condition": "Primary partition consumer drops heartbeat",
+      "failed_workers_detected": [
+        "worker-primary"
+      ],
+      "offset_preserved": true,
+      "measured_rto_seconds": 0.2505,
+      "silent_data_loss": 0,
+      "status": "PASS"
+    },
+    "OUT_OF_ORDER_DELIVERY": {
+      "condition": "Stream delivers events with reverse temporal offsets",
+      "reordered_in_event_time": true,
+      "event_times_sorted": [
+        95.0,
+        98.0,
+        100.0
+      ],
+      "silent_data_loss": 0,
+      "status": "PASS"
+    },
+    "DUPLICATE_DELIVERY_INJECTION": {
+      "condition": "Network retransmission submits identical event duplicate",
+      "first_accepted": true,
+      "duplicate_rejected": true,
+      "duplicate_count": 0,
+      "status": "PASS"
+    },
+    "EVIDENCE_TAMPER_INJECTION": {
+      "condition": "Adversary alters byte payload inside sealed case package",
+      "tamper_detected": true,
+      "status": "PASS"
+    },
+    "DISASTER_RECOVERY_DRILL": {
+      "condition": "Complete site storage recovery drill from cold archive",
+      "restoration_status": "RESTORED_VERIFIED",
+      "data_loss_bytes": 0,
+      "measured_rpo": "0 BYTES",
+      "status": "PASS"
+    }
+  },
+  "rto_summary": {
+    "description": "Time elapsed from worker heartbeat timeout to partition lease reassignment",
+    "mean_rto_seconds": 0.2505,
+    "sla_target_seconds": 2.0,
+    "status": "MET"
+  },
+  "rpo_summary": {
+    "description": "Maximum data loss interval under lossless DLQ and verified backup drill",
+    "rpo_data_loss_bytes": 0,
+    "status": "MET (Zero Data Loss)"
+  },
+  "verdict": "CHAOS_RECOVERY_MATRIX_PASSED"
+}

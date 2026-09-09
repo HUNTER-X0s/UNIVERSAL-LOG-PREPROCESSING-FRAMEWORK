@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-09-09T20:55:22Z",
+  "seed": 20260912,
+  "judge_mode": "DETERMINISTIC_SEEDED_FIXTURES",
+  "total_scenarios": 10,
+  "passed": 10,
+  "failed": 0,
+  "total_elapsed_seconds": 0.64,
+  "scenarios": [
+    {
+      "scenario_number": 1,
+      "name": "S01 \u2014 Multi-Protocol Raw Ingestion",
+      "ntro_req": "REQ-01: Accept heterogeneous log formats",
+      "verdict": "PASS",
+      "elapsed_ms": 0.2,
+      "details": {
+        "formats_ingested": [
+          "syslog",
+          "json",
+          "cef",
+          "xml"
+        ],
+        "sha256_evidence": {
+          "syslog": "8b0cd37f6e0b5da5...",
+          "json": "18211fa680267f6a...",
+          "cef": "b3c35c3134366ea4...",
+          "xml": "c9f9cd8f2f9adbda..."
+        }
+      }
+    },
+    {
+      "scenario_number": 2,
+      "name": "S02 -- Parsing & UCE Normalization",
+      "ntro_req": "REQ-02: Parse and normalize into UCE schema",
+      "verdict": "PASS",
+      "elapsed_ms": 262.4,
+      "details": {
+        "timestamp_normalized": true,
+        "action_normalized": "deny",
+        "ip_normalized": "198.51.100.1",
+        "unmapped_fields_preserved": 1
+      }
+    },
+    {
+      "scenario_number": 3,
+      "name": "S03 -- Rule-Based Threat Detection",
+      "ntro_req": "REQ-03: Detect threats via deterministic rules",
+      "verdict": "PASS",
+      "elapsed_ms": 207.4,
+      "details": {
+        "rule_activated": "JDG-R001",
+        "mitre_technique": "T1110 (Brute Force)",
+        "events_evaluated": 5,
+        "detections_raised": 5
+      }
+    },
+    {
+      "scenario_number": 4,
+      "name": "S04 -- Attack Path Graph Analysis",
+      "ntro_req": "REQ-06: Map multi-stage attack paths",
+      "verdict": "PASS",
+      "elapsed_ms": 6.1,
+      "details": {
+        "nodes": [
+          "attacker-ip",
+          "web-dmz-01",
+          "db-internal-01",
+          "ad-controller"
+        ],
+        "kill_chain_stages": 3,
+        "paths_found": 4,
+        "bounded_depth_limit": 3
+      }
+    },
+    {
+      "scenario_number": 5,
+      "name": "S05 \u2014 Forensic Case Packaging",
+      "ntro_req": "REQ-07: Tamper-evident evidence sealing",
+      "verdict": "PASS",
+      "elapsed_ms": 5.1,
+      "details": {
+        "case_id": "JUDGE-CASE-001",
+        "events_sealed": 2,
+        "cryptographic_seal": "...",
+        "tamper_verification": "VALID"
+      }
+    },
+    {
+      "scenario_number": 6,
+      "name": "S06 -- Multi-Tenant Isolation",
+      "ntro_req": "REQ-09: Strict tenant data boundary enforcement",
+      "verdict": "PASS",
+      "elapsed_ms": 13.5,
+      "details": {
+        "same_tenant_access": true,
+        "cross_tenant_blocked": true
+      }
+    },
+    {
+      "scenario_number": 7,
+      "name": "S07 \u2014 Air-Gap Sovereignty",
+      "ntro_req": "REQ-08: Zero outbound network calls in core",
+      "verdict": "PASS",
+      "elapsed_ms": 111.3,
+      "details": {
+        "files_scanned": 286,
+        "violations_found": 0
+      }
+    },
+    {
+      "scenario_number": 8,
+      "name": "S08 \u2014 Performance Benchmark",
+      "ntro_req": "REQ-04: Real-time processing performance",
+      "verdict": "PASS",
+      "elapsed_ms": 26.6,
+      "details": {
+        "events_measured": 500,
+        "p50_ms": 0.0324,
+        "p99_ms": 0.1487,
+        "throughput_eps": 26668
+      }
+    },
+    {
+      "scenario_number": 9,
+      "name": "S09 -- SRE Operational Health",
+      "ntro_req": "REQ-10: Observable system health and SLO tracking",
+      "verdict": "PASS",
+      "elapsed_ms": 6.3,
+      "details": {
+        "slos_evaluated": 10,
+        "overall_health": "{'timestamp': '2026-09-09T20:55:22.177443+00:00', 'overall_posture': 'HEALTHY', 'slos_met': 10, 'slos_total': 10, 'breached_slos': [], 'details': {'SLO-INGEST': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-PARSE': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-NORM': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-EVID': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-DLQ': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-REPLAY': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-LATENCY': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-QUEUE': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-FRESH': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}, 'SLO-AVAIL': {'status': 'HEALTHY', 'pct': 100.0, 'budget_left': 100.0}}}"
+      }
+    },
+    {
+      "scenario_number": 10,
+      "name": "S10 \u2014 NTRO Requirements Traceability",
+      "ntro_req": "ALL: End-to-end requirement coverage",
+      "verdict": "PASS",
+      "elapsed_ms": 0.2,
+      "details": {
+        "total_requirements": 16,
+        "verified_requirements": 16,
+        "coverage_pct": 100.0
+      }
+    }
+  ],
+  "overall_verdict": "PASS"
+}

@@ -1,0 +1,124 @@
+{
+  "timestamp": "2026-09-09T20:33:45Z",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 16,
+    "timestamp": "2026-09-09T20:33:45Z"
+  },
+  "taxonomy_reference": "docs/performance/benchmark_taxonomy.md",
+  "workload_distribution": {
+    "syslog": "<134>1 2026-09-09T12:00:00Z firewall01 p...",
+    "json": "{\"event_id\": \"evt-01\", \"timestamp\": \"202...",
+    "cef": "CEF:0|Fortinet|FortiGate|v7.0|102|Failed...",
+    "xml": "<Event><System><TimeCreated SystemTime='...",
+    "malformed": "CORRUPTED_DELIMITER###NULL\u0000BYTE###NO_HEA...",
+    "oversized": "OVERSIZED_AUDIT_PAYLOAD_XXXXXXXXXXXXXXXX..."
+  },
+  "benchmarks": {
+    "MICRO": {
+      "sha256_hashing": {
+        "repetitions": 500,
+        "min_ms": 0.0016,
+        "mean_ms": 0.0018,
+        "median_ms": 0.0017,
+        "p95_ms": 0.0019,
+        "p99_ms": 0.0025,
+        "std_ms": 0.0003,
+        "throughput_eps": 564717
+      },
+      "envelope_creation": {
+        "repetitions": 500,
+        "min_ms": 0.0096,
+        "mean_ms": 0.0108,
+        "median_ms": 0.0101,
+        "p95_ms": 0.011,
+        "p99_ms": 0.0228,
+        "std_ms": 0.0082,
+        "throughput_eps": 92833
+      },
+      "risk_evaluation": {
+        "repetitions": 500,
+        "min_ms": 0.0081,
+        "mean_ms": 0.0085,
+        "median_ms": 0.0084,
+        "p95_ms": 0.0092,
+        "p99_ms": 0.0104,
+        "std_ms": 0.001,
+        "throughput_eps": 117233
+      }
+    },
+    "COMPONENT": {
+      "distributed_routing": {
+        "repetitions": 500,
+        "min_ms": 0.0144,
+        "mean_ms": 0.0159,
+        "median_ms": 0.0149,
+        "p95_ms": 0.0167,
+        "p99_ms": 0.0406,
+        "std_ms": 0.0077,
+        "throughput_eps": 62877
+      },
+      "backpressure_admission": {
+        "repetitions": 500,
+        "min_ms": 0.0016,
+        "mean_ms": 0.0018,
+        "median_ms": 0.0018,
+        "p95_ms": 0.0019,
+        "p99_ms": 0.0021,
+        "std_ms": 0.0006,
+        "throughput_eps": 554262
+      },
+      "graph_traversal": {
+        "repetitions": 500,
+        "min_ms": 0.0032,
+        "mean_ms": 0.0035,
+        "median_ms": 0.0035,
+        "p95_ms": 0.0038,
+        "p99_ms": 0.0041,
+        "std_ms": 0.0005,
+        "throughput_eps": 284398
+      },
+      "multistage_correlation": {
+        "repetitions": 500,
+        "min_ms": 0.041,
+        "mean_ms": 0.1742,
+        "median_ms": 0.1605,
+        "p95_ms": 0.3386,
+        "p99_ms": 0.5231,
+        "std_ms": 0.0966,
+        "throughput_eps": 5741
+      }
+    },
+    "BURST": {
+      "burst_100_records": {
+        "repetitions": 20,
+        "min_ms": 2.5272,
+        "mean_ms": 2.9121,
+        "median_ms": 2.9455,
+        "p95_ms": 3.207,
+        "p99_ms": 3.207,
+        "std_ms": 0.1956,
+        "throughput_eps": 343
+      }
+    },
+    "ENDURANCE": {
+      "endurance_1000_cycles": {
+        "repetitions": 5,
+        "min_ms": 25.9849,
+        "mean_ms": 28.4346,
+        "median_ms": 28.9034,
+        "p95_ms": 29.646,
+        "p99_ms": 29.646,
+        "std_ms": 1.4679,
+        "throughput_eps": 35
+      }
+    }
+  },
+  "limitations": [
+    "Measurements conducted in in-process Python memory environment simulating distributed cluster.",
+    "Network card physical I/O and rotational disk physical write seek latencies are excluded.",
+    "Component throughput must not be cited as a multi-node platform scale claim."
+  ],
+  "verdict": "BENCHMARKS_RECORDED_WITH_HONEST_LIMITATIONS"
+}
