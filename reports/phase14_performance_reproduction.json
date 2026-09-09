@@ -1,17 +1,17 @@
 {
-  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
+  "audit_timestamp": "2026-09-09T15:30:18.215446+00:00",
   "benchmarks": {
     "envelope_creation": {
-      "mean_ms": 0.015,
-      "p95_ms": 0.02
+      "mean_ms": 0.021,
+      "p95_ms": 0.024
     },
     "risk_evaluation": {
       "mean_ms": 0.008,
       "p95_ms": 0.009
     },
     "graph_traversal": {
-      "mean_ms": 0.005,
-      "p95_ms": 0.011
+      "mean_ms": 0.002,
+      "p95_ms": 0.002
     }
   },
   "classification": "Component micro-benchmarks (in-memory)",

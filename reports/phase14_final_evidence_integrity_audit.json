@@ -1,7 +1,7 @@
 {
   "title": "ULPF Phase 14 Final Evidence-Integrity Audit",
-  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
-  "head_sha": "a185ece547269633132f454625ebaee6476b3dfd",
+  "audit_timestamp": "2026-09-09T15:30:18.215446+00:00",
+  "head_sha": "f399af9c9981dba696c655ae1a94ee959cb49dde",
   "branch": "main",
   "p13_verified_commit": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
   "p14_rc_tag": "a185ece547269633132f454625ebaee6476b3dfd",
@@ -51,6 +51,6 @@
   "score": 100,
   "grade": "A+",
   "verdict": "PHASE15_READY",
-  "working_tree": "WARN",
+  "working_tree": "PASS",
   "verification_tag": "PHASE14_PRE_PHASE15_VERIFIED"
 }

@@ -1,15 +1,13 @@
 {
-  "audit_timestamp": "2026-09-09T15:29:31.331388+00:00",
-  "head_sha": "a185ece547269633132f454625ebaee6476b3dfd",
+  "audit_timestamp": "2026-09-09T15:30:18.215446+00:00",
+  "head_sha": "f399af9c9981dba696c655ae1a94ee959cb49dde",
   "branch": "main",
   "p13_verified_commit": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
   "p13_frozen": true,
   "p14_rc_commit": "a185ece547269633132f454625ebaee6476b3dfd",
-  "p14_commit_match": true,
-  "working_tree_clean": false,
-  "tracked_dirty": [
-    "M reports/phase14_demo_report.json"
-  ],
+  "p14_commit_match": false,
+  "working_tree_clean": true,
+  "tracked_dirty": [],
   "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
   "platform": "Windows-11-10.0.26200-SP0"
 }
