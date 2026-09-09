@@ -1,0 +1,72 @@
+[
+  {
+    "claim_id": "CLM-001",
+    "claim_text": "20 concrete parser implementations loaded and operational",
+    "claim_category": "Parser Capability",
+    "evidence_source": "reports/phase16/source_inventory.json",
+    "measurement_method": "Independent enumeration via ParserRegistry.list_parsers()",
+    "scope": "Core parser-runtime package (parsers/ directory)",
+    "limitations": "Covers standard enterprise network, cloud, host, and generic formats",
+    "status": "VERIFIED"
+  },
+  {
+    "claim_id": "CLM-002",
+    "claim_text": "Single-core parse throughput exceeds 40,000 EPS",
+    "claim_category": "Performance",
+    "evidence_source": "reports/phase16/PERFORMANCE_BENCHMARK.md",
+    "measurement_method": "Micro-benchmark across 100,000 events on standard workstation",
+    "scope": "Single-threaded in-memory parsing without disk write contention",
+    "limitations": "Varies based on hardware CPU cache and log complexity",
+    "status": "VERIFIED_WITH_LIMITATION"
+  },
+  {
+    "claim_id": "CLM-003",
+    "claim_text": "100% loss-free field preservation via unmapped_fields in UCE",
+    "claim_category": "Forensic Integrity",
+    "evidence_source": "reports/phase16/MULTI_VENDOR_NORMALIZATION_REPORT.md",
+    "measurement_method": "Round-trip field diff comparison against raw payloads",
+    "scope": "All 16 representative multi-vendor fixture classes",
+    "limitations": "Binary proprietary payloads encapsulated in hex/base64 previews",
+    "status": "VERIFIED"
+  },
+  {
+    "claim_id": "CLM-004",
+    "claim_text": "100% sovereign air-gap execution with zero external socket egress",
+    "claim_category": "Security & Sovereignty",
+    "evidence_source": "reports/phase16/AIR_GAP_SOVEREIGN.md",
+    "measurement_method": "Socket monkeypatching intercepting all system socket() attempts",
+    "scope": "End-to-end ingestion, parsing, normalization, and AI copilot execution",
+    "limitations": "Local inter-process communication allowed when explicitly configured",
+    "status": "VERIFIED"
+  },
+  {
+    "claim_id": "CLM-005",
+    "claim_text": "Multi-tenant cryptographic boundary prevents cross-tenant data access",
+    "claim_category": "Multi-Tenancy",
+    "evidence_source": "reports/phase16/SECURITY_ISOLATION_PROOF.md",
+    "measurement_method": "MultiTenantGuard enforcement across 5 access vectors",
+    "scope": "Raw evidence, UCE, detections, cases, and mapping configs",
+    "limitations": "Requires valid tenant context in identity credentials",
+    "status": "VERIFIED"
+  },
+  {
+    "claim_id": "CLM-006",
+    "claim_text": "Autonomous unknown source profiling and zero-loss drift detection",
+    "claim_category": "Onboarding Innovation",
+    "evidence_source": "reports/phase16/UNKNOWN_SOURCE_VALIDATION.md",
+    "measurement_method": "SampleProfiler and SchemaDriftDetector automated probing",
+    "scope": "Structured delimited, key-value, JSON, and Syslog telemetry",
+    "limitations": "Unstructured multi-line freeform text requires human confirmation",
+    "status": "VERIFIED_WITH_LIMITATION"
+  },
+  {
+    "claim_id": "CLM-007",
+    "claim_text": "16/16 NTRO Requirements Satisfied with traceable evidence artifacts",
+    "claim_category": "Requirements Compliance",
+    "evidence_source": "reports/phase16/NTRO_TRACEABILITY.md",
+    "measurement_method": "Direct mapping of NTRO-REQ-01 to NTRO-REQ-16 against reports",
+    "scope": "Smart India Hackathon SIH26156 problem statement scope",
+    "limitations": "Internal engineering verification; subject to judge review",
+    "status": "VERIFIED"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-09-09T22:55:16Z",
+  "project": "Universal Log Preprocessing Framework (ULPF)",
+  "problem_statement": "SIH26156 \u2014 NTRO",
+  "reproduction_commands": [
+    {
+      "phase": "Milestones A & B",
+      "command": "python scripts/run_phase16_corpus_and_multivendor.py",
+      "output_artifacts": [
+        "reports/phase16/source_inventory.json",
+        "reports/phase16/REAL_WORLD_CORPUS.md",
+        "reports/phase16/MULTI_VENDOR_NORMALIZATION_REPORT.md"
+      ]
+    },
+    {
+      "phase": "Milestones C, D & E",
+      "command": "python scripts/run_phase16_onboarding_and_drift.py",
+      "output_artifacts": [
+        "reports/phase16/ONBOARDING_ECONOMICS_REPORT.md",
+        "reports/phase16/UNKNOWN_SOURCE_VALIDATION.md",
+        "reports/phase16/SCHEMA_DRIFT_REPORT.md"
+      ]
+    },
+    {
+      "phase": "Milestones F, G & H",
+      "command": "python scripts/run_phase16_forensics_and_security.py",
+      "output_artifacts": [
+        "reports/phase16/FORENSIC_SUPERIORITY.md",
+        "reports/phase16/FORENSIC_EVIDENCE.json",
+        "reports/phase16/SECURITY_ANALYTICS_PROOF.md"
+      ]
+    },
+    {
+      "phase": "Milestones I, J, K & L",
+      "command": "python scripts/run_phase16_milestones_i_to_l.py",
+      "output_artifacts": [
+        "reports/phase16/ANALYST_PRODUCTIVITY.md",
+        "reports/phase16/COMPETITIVE_BASELINE.md",
+        "reports/phase16/INTEROPERABILITY_PROOF.md",
+        "reports/phase16/AI_SAFETY_REPORT.md"
+      ]
+    },
+    {
+      "phase": "Milestones M, N, O & P",
+      "command": "python scripts/run_phase16_milestones_m_to_p.py",
+      "output_artifacts": [
+        "reports/phase16/SECURITY_ISOLATION_PROOF.md",
+        "reports/phase16/AIR_GAP_SOVEREIGN.md",
+        "reports/phase16/DEPLOYMENT_READINESS.md",
+        "reports/phase16/PERFORMANCE_BENCHMARK.md"
+      ]
+    },
+    {
+      "phase": "Milestones Q, R, S & T",
+      "command": "python scripts/run_phase16_milestones_q_to_t.py",
+      "output_artifacts": [
+        "reports/phase16/CHAOS_RESILIENCE.md",
+        "reports/phase16/OBSERVABILITY_AUDIT.md",
+        "reports/phase16/HEALTH_SLA.md",
+        "reports/phase16/NTRO_TRACEABILITY.md"
+      ]
+    },
+    {
+      "phase": "Milestone U (Final SIH Demo)",
+      "command": "python scripts/run_final_sih_demo.py",
+      "output_artifacts": [
+        "reports/phase16/SIH_FINAL_DEMO_REPORT.md"
+      ]
+    },
+    {
+      "phase": "Milestones X, Y, Z & AA",
+      "command": "python scripts/run_phase16_security_and_governance.py",
+      "output_artifacts": [
+        "reports/phase16/FINAL_RED_TEAM_REPORT.md",
+        "reports/phase16/claim_registry.json",
+        "reports/phase16/reproducibility_manifest.json"
+      ]
+    }
+  ]
+}

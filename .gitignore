@@ -32,6 +32,8 @@ data/tmp/
 data/logs/
 data/benchmarks/
 data/evidence/
+data/vault/
+data/demo/
 datasets/restricted/
 artifacts/
 models/

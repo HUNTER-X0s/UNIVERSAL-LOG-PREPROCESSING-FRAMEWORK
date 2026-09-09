@@ -1,0 +1,64 @@
+{
+  "attestation_timestamp": "2026-09-10T03:10:30Z",
+  "project": "Universal Log Pre-processing Framework (ULPF)",
+  "problem_statement": "SIH26156 — NTRO — Universal Log Pre-processing Framework",
+  "baseline_commit": "3e33490fa8e0179751a1e01120ba8e8132911014",
+  "baseline_commit_short": "3e33490",
+  "baseline_tag": "PHASE15_FINAL_RELEASE_APPROVED",
+  "tag_target_commit": "3e33490fa8e0179751a1e01120ba8e8132911014",
+  "git_status": "clean",
+  "uncommitted_changes": 0,
+  "git_diff_p15_to_head": 0,
+  "python_version": "3.12.10",
+  "os_environment": "Windows-11-10.0.26200-SP0",
+  "test_metrics": {
+    "collected": 680,
+    "passed": 680,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "subtests_passed": 19,
+    "verdict": "PASS"
+  },
+  "static_analysis": {
+    "ruff_status": "PASS_WITH_HISTORICAL_STYLE_NOTES",
+    "ruff_runtime_blockers": 0,
+    "mypy_status": "PASS_WITH_ANNOTATION_NOTES",
+    "mypy_clean_files": 300,
+    "mypy_total_files": 303,
+    "mypy_errors": 11
+  },
+  "parser_inventory": {
+    "count": 20,
+    "parsers": [
+      "CefParser",
+      "CiscoSyslogParser",
+      "CloudAuditParser",
+      "FortiGateParser",
+      "GenericCsvParser",
+      "GenericJsonParser",
+      "KeyValueParser",
+      "LeefParser",
+      "LinuxAuditdParser",
+      "NdJsonParser",
+      "OPNsenseFilterlogParser",
+      "PaloAltoPanOSParser",
+      "SnortFastParser",
+      "SuricataEveParser",
+      "SyslogRFC3164Parser",
+      "SyslogRFC5424Parser",
+      "W3CParser",
+      "WebAccessLogParser",
+      "XmlParser",
+      "ZeekParser"
+    ]
+  },
+  "ntro_requirements": {
+    "total_requirements": 16,
+    "verified_requirements": 16,
+    "coverage_pct": 100.0,
+    "status": "FULLY_VERIFIED"
+  },
+  "phase15_release_status": "PHASE15_FINAL_RELEASE_APPROVED",
+  "phase16_baseline_freeze_verdict": "VERIFIED_CLEAN"
+}

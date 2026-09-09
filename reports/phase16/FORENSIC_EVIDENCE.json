@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-09T22:20:34Z",
+  "original_raw_sha256": "f0e2eb5d273c93e08467ce6ba7b6a5c8ecbafb0dee52c651549322738c45ac23",
+  "retrieved_raw_sha256": "f0e2eb5d273c93e08467ce6ba7b6a5c8ecbafb0dee52c651549322738c45ac23",
+  "bit_exact_match": true,
+  "raw_event_id": "raw-evt-f0e2eb5d273c93e0",
+  "uce_id": "uce-f0e2eb5d273c",
+  "lineage_trace_valid": true,
+  "lineage_stages_count": 5,
+  "court_package_id": "pkg-caacfb5224da",
+  "court_manifest_hash": "f446676cb7aa6e9a8e847d4ffc19506fd6e26099a697b645c83c671e82ecf110",
+  "tamper_test": {
+    "tamper_detected": true,
+    "verification_valid_after_tamper": false,
+    "tamper_errors": [
+      "Tamper detected in event 0 (raw-evt-f0e2eb5d273c93e0): Declared f0e2eb5d273c93e08467ce6ba7b6a5c8ecbafb0dee52c651549322738c45ac23, actual 400435c4e3609e278e9e24342753e14f50c43a133276819ab3b4b8e1a6464873.",
+      "Overall manifest checksum mismatch: Recorded f446676cb7aa6e9a8e847d4ffc19506fd6e26099a697b645c83c671e82ecf110, recomputed b393005debca298d299391d552e31aa080a3ede74f645c75f52e60b93ff75d83."
+    ]
+  }
+}
