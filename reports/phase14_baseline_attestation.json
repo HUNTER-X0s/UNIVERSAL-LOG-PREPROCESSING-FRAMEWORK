@@ -1,0 +1,56 @@
+{
+  "title": "ULPF Phase 14 Milestone A Baseline Attestation",
+  "timestamp": "2026-09-09T14:29:11.791319+00:00",
+  "head_sha": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
+  "branch": "main",
+  "expected_commit": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
+  "commit_match": true,
+  "working_tree_clean": true,
+  "phase_tags": {
+    "PHASE13_PRE_PHASE14_VERIFIED": "b23c0c7d347cedef7d2c36b5bc44b35ae1d66c7e",
+    "PHASE13_RELEASE_CANDIDATE_APPROVED": "969ea5dd4edec8c887b55b3bf0ca1f13fde2960c",
+    "PHASE12_FINAL_RELEASE_CANDIDATE_APPROVED": "545e4ba66d776291999e9a1d8e65f3a8599bcc1c"
+  },
+  "environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "python_executable": "C:\\Users\\HUNTER\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "timestamp": "2026-09-09T14:29:11.791319+00:00"
+  },
+  "packages_count": 22,
+  "packages": [
+    "advanced_intelligence",
+    "ai",
+    "contracts",
+    "delivery",
+    "domain",
+    "ingestion",
+    "integrations",
+    "intelligence",
+    "lineage",
+    "mapping",
+    "mission",
+    "normalization",
+    "observability",
+    "onboarding",
+    "parser-runtime",
+    "platform",
+    "runtime",
+    "search",
+    "security",
+    "semantic",
+    "storage",
+    "streaming"
+  ],
+  "regression": {
+    "exit_code": 0,
+    "passed": 633,
+    "failed": 0,
+    "total": 633,
+    "duration_seconds": 24.57,
+    "claim_633": true
+  },
+  "gate_a_passed": true,
+  "verdict": "PHASE13_TRUSTED_GATE_A_PASSED"
+}
