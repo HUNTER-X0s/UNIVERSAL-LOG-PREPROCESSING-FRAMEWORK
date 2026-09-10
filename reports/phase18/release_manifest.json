@@ -1,0 +1,33 @@
+{
+  "release_name": "ULPF v1.0.0-sih",
+  "problem_statement": "SIH26156",
+  "organization": "National Technical Research Organisation (NTRO)",
+  "git_commit": "7d77934",
+  "release_tag": "PHASE18_FINAL_RELEASE_APPROVED",
+  "build_timestamp": "2026-09-10T07:07:39.501238+00:00",
+  "packages": [
+    "ulpf_platform",
+    "ulpf_storage",
+    "ulpf_ingestion",
+    "ulpf_parser_runtime",
+    "ulpf_semantic",
+    "ulpf_mapping",
+    "ulpf_onboarding",
+    "ulpf_runtime",
+    "ulpf_streaming",
+    "ulpf_search",
+    "ulpf_delivery",
+    "ulpf_observability",
+    "ulpf_security",
+    "ulpf_intelligence",
+    "ulpf_advanced_intelligence",
+    "ulpf_mission",
+    "ulpf_ai",
+    "ulpf_api"
+  ],
+  "concrete_parsers": 20,
+  "entrypoint_ui": "apps/web/index.html",
+  "entrypoint_api": "apps/api/ulpf_api/main.py",
+  "demo_runner": "scripts/run_final_sih_demo.py",
+  "demo_reset": "scripts/demo_reset.py"
+}

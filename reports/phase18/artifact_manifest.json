@@ -1,0 +1,24 @@
+{
+  "phase": "Phase 18",
+  "generated_at": "2026-09-10T07:07:39.501238+00:00",
+  "reports": [
+    "PHASE18_BASELINE_ATTESTATION.md",
+    "PHASE18_FRONTEND_AUDIT.md",
+    "PHASE18_UX_REVIEW.md",
+    "PHASE18_SECURITY_UI_AUDIT.md",
+    "PHASE18_DEMO_VALIDATION.md",
+    "PHASE18_NTRO_TRACEABILITY.md",
+    "PHASE18_CLAIM_AUDIT.md",
+    "PHASE18_RELEASE_READINESS.md",
+    "PHASE18_SCORECARD.md"
+  ],
+  "documentation": [
+    "docs/PHASE18_FINAL_SIH_GUIDE.md",
+    "docs/ULPF_USER_GUIDE.md",
+    "docs/ULPF_DEMO_SCRIPT.md",
+    "docs/ULPF_2_MINUTE_SIH_SCRIPT.md",
+    "docs/SIH_JUDGE_QA.md",
+    "docs/ULPF_CLAIM_GUIDANCE.md",
+    "docs/ULPF_5_SLIDE_PRESENTATION.md"
+  ]
+}

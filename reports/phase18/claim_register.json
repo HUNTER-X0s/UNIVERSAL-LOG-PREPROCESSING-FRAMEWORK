@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "claims": [
+    {
+      "claim": "680 Regression Tests Pass",
+      "proof": "pytest tests/ -q",
+      "verified": true
+    },
+    {
+      "claim": "20 Concrete Parsers Operational",
+      "proof": "ulpf_parser_runtime.registry",
+      "verified": true
+    },
+    {
+      "claim": "16/16 NTRO Requirements Satisfied",
+      "proof": "reports/phase18/PHASE18_NTRO_TRACEABILITY.md",
+      "verified": true
+    },
+    {
+      "claim": "100% Air-Gapped Operation",
+      "proof": "tests/test_airgap.py",
+      "verified": true
+    },
+    {
+      "claim": "Lossless Raw Capture",
+      "proof": "ulpf_storage.raw_fs (SHA-256 CAS)",
+      "verified": true
+    }
+  ]
+}

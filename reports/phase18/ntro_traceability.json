@@ -1,0 +1,71 @@
+{
+  "total_requirements": 16,
+  "verified_requirements": 16,
+  "compliance_ratio": 1.0,
+  "requirements": [
+    {
+      "id": "NTRO-01",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-02",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-03",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-04",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-05",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-06",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-07",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-08",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-09",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-10",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-11",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-12",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-13",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-14",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-15",
+      "status": "FULLY_VERIFIED"
+    },
+    {
+      "id": "NTRO-16",
+      "status": "FULLY_VERIFIED"
+    }
+  ]
+}

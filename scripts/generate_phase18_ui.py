@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1514,3 +1516,13 @@ Cloud Dependencies: NONE (Local Deterministic Inference Only)</div>`
   </script>
 </body>
 </html>
+"""
+
+def main():
+    target = os.path.join("apps", "web", "index.html")
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(HTML)
+    print(f"Successfully generated {target} ({len(HTML)} bytes)")
+
+if __name__ == "__main__":
+    main()

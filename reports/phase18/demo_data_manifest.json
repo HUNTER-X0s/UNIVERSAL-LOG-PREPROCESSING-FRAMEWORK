@@ -1,0 +1,15 @@
+{
+  "scenario": "Multi-Vendor Telemetry Threat Correlation",
+  "sources": [
+    "pfsense",
+    "iptables",
+    "cisco_asa",
+    "snort",
+    "suricata",
+    "sshd",
+    "windows_security",
+    "sysmon"
+  ],
+  "synthetic_attribution": "Clearly marked reference datasets generated for deterministic SIH testing",
+  "clean_state_reproducible": true
+}
