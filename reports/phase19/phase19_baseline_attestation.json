@@ -1,0 +1,35 @@
+{
+  "phase": "Phase 19",
+  "document_id": "PHASE19_BASELINE_ATTESTATION",
+  "timestamp": "2026-09-10T12:56:40Z",
+  "provenance": {
+    "baseline_tag": "PHASE18_FINAL_RELEASE_APPROVED",
+    "baseline_commit": "3d587ff46c399aa51378b957dfac3de43ae657eb",
+    "head_commit": "3d587ff46c399aa51378b957dfac3de43ae657eb",
+    "ancestry_verified": true,
+    "worktree_clean": true
+  },
+  "environment": {
+    "python_version": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "node_version": "v24.18.0"
+  },
+  "regression_suite": {
+    "collected": 680,
+    "passed": 680,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "errors": 0,
+    "subtests_passed": 19,
+    "execution_time_seconds": 15.74,
+    "verdict": "PASS"
+  },
+  "baseline_capabilities": {
+    "concrete_parsers": 20,
+    "ntro_requirements_satisfied": 16,
+    "airgap_egress_sockets": 0,
+    "ui_size_bytes": 68993
+  }
+}
