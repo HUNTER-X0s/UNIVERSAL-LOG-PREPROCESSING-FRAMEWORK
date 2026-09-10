@@ -1,0 +1,15 @@
+{
+  "claimed_phase16_count": 680,
+  "actual_collected_count": 680,
+  "actual_executed_count": 680,
+  "actual_passed_count": 680,
+  "actual_failed_count": 0,
+  "actual_skipped_count": 0,
+  "actual_xfailed_count": 0,
+  "actual_xpassed_count": 0,
+  "subtests_count": 19,
+  "total_ast_assertions": 1142,
+  "suspicious_patterns_count": 0,
+  "suspicious_patterns_detail": [],
+  "reconciliation_verdict": "VERIFIED_EXACT_MATCH"
+}

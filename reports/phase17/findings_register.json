@@ -1,0 +1,26 @@
+[
+  {
+    "id": "FIND-P17-01",
+    "title": "Performance Claim Scoping Qualification",
+    "severity": "LOW",
+    "status": "ACCEPTED_WITH_RISK",
+    "description": "Throughput (>40k EPS) is achieved on in-memory single-core processing. Distributed cluster deployment requires horizontal scaling.",
+    "remediation": "Scoped explicitly in all Phase 17 reports."
+  },
+  {
+    "id": "FIND-P17-02",
+    "title": "RTO/RPO Recovery Boundary Documentation",
+    "severity": "LOW",
+    "status": "ACCEPTED_WITH_RISK",
+    "description": "RTO (~0.05s) applies to application checkpoint restart, not petabyte-scale storage disaster recovery.",
+    "remediation": "Boundary explicitly defined in dr_rto_rpo_report.md."
+  },
+  {
+    "id": "FIND-P17-03",
+    "title": "Analyst Productivity Metric Classification",
+    "severity": "INFO",
+    "status": "ACCEPTED_WITH_RISK",
+    "description": "5.8x acceleration represents a controlled internal comparison, not a statistical field trial across external SOCs.",
+    "remediation": "Classified as internal controlled measurement."
+  }
+]

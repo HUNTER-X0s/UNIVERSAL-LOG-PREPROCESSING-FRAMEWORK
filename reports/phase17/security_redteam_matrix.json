@@ -1,0 +1,47 @@
+[
+  {
+    "test_id": "SEC-01",
+    "attack": "Cross-Tenant Raw Evidence Read",
+    "entry_point": "MultiTenantGuard.enforce_tenant_boundary",
+    "expected_defense": "Raise TenantIsolationError",
+    "actual_result": "BLOCKED: TenantIsolationError raised successfully",
+    "status": "PASS",
+    "severity": "CRITICAL"
+  },
+  {
+    "test_id": "SEC-02",
+    "attack": "Cross-Tenant UCE Access",
+    "entry_point": "MultiTenantGuard.enforce_tenant_boundary",
+    "expected_defense": "Raise TenantIsolationError",
+    "actual_result": "BLOCKED: TenantIsolationError raised successfully",
+    "status": "PASS",
+    "severity": "CRITICAL"
+  },
+  {
+    "test_id": "SEC-03",
+    "attack": "Cross-Tenant Investigation Case Access",
+    "entry_point": "MultiTenantGuard.enforce_tenant_boundary",
+    "expected_defense": "Raise TenantIsolationError",
+    "actual_result": "BLOCKED: TenantIsolationError raised successfully",
+    "status": "PASS",
+    "severity": "CRITICAL"
+  },
+  {
+    "test_id": "SEC-04",
+    "attack": "Unprivileged Analyst Role Escalation to System Admin",
+    "entry_point": "PolicyEngine.is_authorized",
+    "expected_defense": "Return False",
+    "actual_result": "BLOCKED: Permission denied",
+    "status": "PASS",
+    "severity": "HIGH"
+  },
+  {
+    "test_id": "SEC-05",
+    "attack": "Directory Traversal via raw_event_id (../../etc/passwd)",
+    "entry_point": "FilesystemRawEvidenceRepository._compute_path",
+    "expected_defense": "Sanitize path or raise PersistenceError",
+    "actual_result": "BLOCKED: Sanitized safely within base directory",
+    "status": "PASS",
+    "severity": "HIGH"
+  }
+]

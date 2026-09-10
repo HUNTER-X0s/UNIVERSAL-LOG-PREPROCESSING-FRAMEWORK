@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "20 Concrete Parsers",
+    "classification": "A \u2014 Independently Reproduced",
+    "evidence": "reports/phase17/parser_truth_report.md"
+  },
+  {
+    "claim": "16 Evaluated Sources (10 Real-World, 6 Spec)",
+    "classification": "A \u2014 Independently Reproduced",
+    "evidence": "reports/phase17/dataset_provenance_report.md"
+  },
+  {
+    "claim": "Under 30s Assisted Onboarding",
+    "classification": "A \u2014 Independently Reproduced (< 1s locally)",
+    "evidence": "reports/phase17/onboarding_reproduction_report.md"
+  },
+  {
+    "claim": "5.8x Analyst Acceleration",
+    "classification": "B \u2014 Reproduced with Limitation (Controlled internal workflow)",
+    "evidence": "reports/phase17/analyst_productivity_report.md"
+  },
+  {
+    "claim": ">40k EPS Throughput",
+    "classification": "B \u2014 Reproduced with Limitation (Single-core in-memory microbenchmark)",
+    "evidence": "reports/phase17/performance_analysis.md"
+  },
+  {
+    "claim": "P99 Latency < 5ms",
+    "classification": "A \u2014 Independently Reproduced (Measured mean ~2.4ms)",
+    "evidence": "reports/phase17/performance_analysis.md"
+  },
+  {
+    "claim": "RTO ~0.05s / RPO 0",
+    "classification": "B \u2014 Reproduced with Limitation (Scoped to local state snapshot recovery)",
+    "evidence": "reports/phase17/dr_rto_rpo_report.md"
+  },
+  {
+    "claim": "Air-Gapped Sovereign Operation",
+    "classification": "A \u2014 Independently Reproduced (0 egress attempts)",
+    "evidence": "reports/phase17/airgap_validation_report.md"
+  },
+  {
+    "claim": "Lossless Raw Preservation",
+    "classification": "A \u2014 Independently Reproduced (SHA-256 byte verified)",
+    "evidence": "reports/phase17/raw_evidence_integrity_report.md"
+  },
+  {
+    "claim": "Cryptographic Tamper Detection",
+    "classification": "A \u2014 Independently Reproduced (1-bit mutation caught)",
+    "evidence": "reports/phase17/raw_evidence_integrity_report.md"
+  },
+  {
+    "claim": "15/15 SIH Judge Scenarios",
+    "classification": "A \u2014 Independently Reproduced",
+    "evidence": "reports/phase17/judge_challenge_report.md"
+  },
+  {
+    "claim": "16/16 NTRO Requirements",
+    "classification": "A \u2014 Independently Reproduced",
+    "evidence": "reports/phase17/ntro_traceability_report.md"
+  }
+]

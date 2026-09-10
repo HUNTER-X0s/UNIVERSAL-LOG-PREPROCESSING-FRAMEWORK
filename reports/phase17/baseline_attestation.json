@@ -1,0 +1,29 @@
+{
+  "git_head": "4055405c5e28997a69a879387f13812d7444e8c2",
+  "phase16_tag": "PHASE16_FINAL_RELEASE_APPROVED",
+  "resolved_tag_commit": "4055405c5e28997a69a879387f13812d7444e8c2",
+  "expected_baseline_commit": "4055405c5e28997a69a879387f13812d7444e8c2",
+  "baseline_commit_match": true,
+  "branch": "main",
+  "ancestry_verified": true,
+  "working_tree_clean": false,
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "os": "Windows",
+  "os_release": "11",
+  "os_version": "10.0.26200",
+  "architecture": "AMD64",
+  "test_command": "pytest tests/ -q",
+  "initial_test_collection_count": 680,
+  "initial_test_executed_count": 680,
+  "initial_test_passed_count": 680,
+  "timestamp_utc": "2026-09-10T05:52:10.498627+00:00",
+  "critical_release_hashes": {
+    "reports/phase16/release_manifest.json": "cd50c5c2d3875adfa4ea09ca542e6550aa7c237e835778f6fde1861809f07efc",
+    "reports/phase16/reproducibility_manifest.json": "88e8f1ad10fca2eb54beccdeb1ed506154bf676abd07f0920257a377890d88d9",
+    "reports/phase16/final_audit_report.json": "4ffaa2fd9c560152671a1b2903af4dfab90b537d4f9f19d81a62d6bd346ac561",
+    "reports/phase16/claim_registry.json": "b967b9123567fd63e1bd7920cf214717ac49d50ff9b06301638e5d9e38f37814",
+    "reports/phase16/source_inventory.json": "8639e8bde05569c386c69b85e25fc4ec7c0973d064a661c840b53e45c8ac7efa",
+    "reports/phase16/PHASE16_FINAL_RELEASE_CERTIFICATE.md": "4d0b2f9642eeff5d0a87624a160e67376f3919fd3d16cd5f15b821db357e2726",
+    "scripts/run_phase16_final_evidence_audit.py": "29b2e3705b1031165f399fe847df82d08e5780cadf6a2f9129f5f14663ef4b55"
+  }
+}
