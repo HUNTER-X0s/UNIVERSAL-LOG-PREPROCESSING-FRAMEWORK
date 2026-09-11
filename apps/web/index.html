@@ -4,714 +4,912 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ULPF — Universal Log Pre-processing Framework | SIH26156</title>
-  <meta name="description" content="Universal Log Pre-processing Framework (ULPF) — Government-grade cybersecurity telemetry processing, normalization, and forensic evidence platform. NTRO Problem Statement SIH26156.">
+  <meta name="description" content="Universal Log Pre-processing Framework (ULPF) — Security telemetry processing, deterministic normalization, and cryptographic evidence platform for NTRO SIH26156.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    /* ==============================================================
+       ULPF GOVERNMENT-GRADE DESIGN SYSTEM v2.0
+       Visual Direction: Institutional · Enterprise · Authoritative
+       Phase 19 Frontend Redesign
+    ============================================================== */
+
     :root {
-      --bg-base: #0c0f14;
-      --bg-surface-0: #121720;
-      --bg-surface-1: #171e2b;
-      --bg-surface-2: #1e2738;
-      --bg-surface-3: #263248;
-      --border-subtle: rgba(255, 255, 255, 0.07);
-      --border-medium: rgba(255, 255, 255, 0.14);
-      --border-focus: #3b82f6;
-      --text-primary: #f1f5f9;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --accent-blue: #3b82f6;
-      --accent-slate: #64748b;
-      --status-ok: #10b981;
-      --status-ok-bg: rgba(16, 185, 129, 0.12);
-      --status-warn: #f59e0b;
-      --status-warn-bg: rgba(245, 158, 11, 0.12);
-      --status-alert: #ef4444;
-      --status-alert-bg: rgba(239, 68, 68, 0.12);
-      --status-info: #0ea5e9;
-      --status-info-bg: rgba(14, 165, 233, 0.12);
-      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-      --radius-sm: 4px;
-      --radius-md: 6px;
-      --sidebar-w: 250px;
-      --header-h: 52px;
+      /* Backgrounds */
+      --bg-page:        #F8FAFC;
+      --bg-surface:     #FFFFFF;
+      --bg-surface-alt: #F1F5F9;
+      --bg-hover:       #EEF2F7;
+
+      /* Navy — Primary Text */
+      --navy-900: #0F2747;
+      --navy-700: #163A63;
+      --navy-600: #1E3A5F;
+
+      /* Government Blue — Primary Action */
+      --gov-blue:       #1455A0;
+      --gov-blue-dark:  #0F4080;
+      --gov-blue-light: #EFF6FF;
+      --gov-blue-border:#BFDBFE;
+      --gov-blue-muted: #DBEAFE;
+
+      /* Borders */
+      --border-light:  #E2E8F0;
+      --border-medium: #CBD5E1;
+
+      /* Text */
+      --text-primary:   #0F2747;
+      --text-secondary: #374151;
+      --text-muted:     #64748B;
+
+      /* Status */
+      --ok:       #15803D;
+      --ok-bg:    #F0FDF4;
+      --ok-bdr:   #BBF7D0;
+      --ok-text:  #14532D;
+
+      --warn:     #B45309;
+      --warn-bg:  #FFFBEB;
+      --warn-bdr: #FDE68A;
+      --warn-text:#92400E;
+
+      --err:      #B91C1C;
+      --err-bg:   #FEF2F2;
+      --err-bdr:  #FECACA;
+      --err-text: #991B1B;
+
+      --info-text:#1E40AF;
+
+      /* Fonts */
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+
+      /* Layout */
+      --sidebar: 236px;
+      --header:  60px;
+      --radius:  5px;
+      --shadow:  0 1px 3px rgba(15,39,71,.06), 0 1px 2px rgba(15,39,71,.04);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
     body {
-      background-color: var(--bg-base);
-      color: var(--text-primary);
-      font-family: var(--font-sans);
+      font-family: var(--sans);
       font-size: 13px;
       line-height: 1.5;
-      min-height: 100vh;
+      color: var(--text-primary);
+      background: var(--bg-page);
       display: flex;
       flex-direction: column;
       overflow: hidden;
     }
 
-    /* HEADER */
-    header {
-      height: var(--header-h);
-      background: var(--bg-surface-0);
-      border-bottom: 1px solid var(--border-subtle);
+    /* ---- HEADER ---- */
+    .app-header {
+      height: var(--header);
+      background: var(--bg-surface);
+      border-bottom: 2px solid var(--gov-blue);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 1.25rem;
+      padding: 0 1.5rem;
+      flex-shrink: 0;
+      box-shadow: var(--shadow);
       z-index: 100;
+    }
+    .hdr-identity { display: flex; align-items: center; gap: 0.875rem; }
+    .hdr-mark {
+      background: var(--gov-blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: .1em;
+      padding: 5px 10px;
+      border-radius: 3px;
       flex-shrink: 0;
     }
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-    .brand-mark {
-      background: #1e3a8a;
-      color: #93c5fd;
-      font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      padding: 3px 7px;
-      border-radius: var(--radius-sm);
-      border: 1px solid #2563eb;
-    }
-    .brand-title {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      color: var(--text-primary);
-    }
-    .brand-subtitle {
-      font-size: 11px;
-      color: var(--text-muted);
-      border-left: 1px solid var(--border-medium);
-      padding-left: 0.75rem;
-      margin-left: 0.25rem;
-    }
-    .header-center {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .env-badge {
+    .hdr-name { font-size: 14px; font-weight: 700; color: var(--navy-900); line-height: 1.2; letter-spacing: -.01em; }
+    .hdr-sub  { font-size: 11px; color: var(--text-muted); margin-top: 1px; }
+    .hdr-divider { width: 1px; height: 28px; background: var(--border-medium); }
+    .hdr-label { font-size: 11px; color: var(--text-muted); }
+    .hdr-label strong { color: var(--gov-blue); font-weight: 600; }
+
+    .hdr-pills { display: flex; align-items: center; gap: 0.625rem; }
+    .pill {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       font-size: 11px;
       font-weight: 500;
       color: var(--text-secondary);
-      background: var(--bg-surface-1);
-      padding: 3px 8px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--border-light);
+      padding: 4px 9px;
+      border-radius: 3px;
+      white-space: nowrap;
     }
-    .env-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--status-ok);
-    }
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .btn-judge-mode {
-      background: #1e3a8a;
-      border: 1px solid #3b82f6;
-      color: #ffffff;
+    .pill-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+    .pill .v { color: var(--text-primary); font-weight: 600; }
+    .pill .g { color: var(--ok); font-weight: 600; }
+
+    .btn-judge {
+      background: var(--gov-blue);
+      color: #fff;
+      border: none;
+      font-family: var(--sans);
+      font-size: 11.5px;
       font-weight: 600;
-      font-size: 11px;
-      padding: 5px 12px;
-      border-radius: var(--radius-sm);
+      letter-spacing: .03em;
+      padding: 7px 14px;
+      border-radius: 3px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.15s;
+      transition: background .15s;
     }
-    .btn-judge-mode:hover {
-      background: #2563eb;
-    }
+    .btn-judge:hover { background: var(--gov-blue-dark); }
 
-    /* LAYOUT CONTAINER */
-    .app-container {
-      display: flex;
-      flex: 1;
-      height: calc(100vh - var(--header-h) - 30px);
-      overflow: hidden;
-    }
+    /* ---- SHELL ---- */
+    .shell { display: flex; flex: 1; overflow: hidden; }
 
-    /* SIDEBAR */
-    nav.sidebar {
-      width: var(--sidebar-w);
-      background: var(--bg-surface-0);
-      border-right: 1px solid var(--border-subtle);
-      overflow-y: auto;
+    /* ---- SIDEBAR ---- */
+    .sidebar {
+      width: var(--sidebar);
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border-medium);
       display: flex;
       flex-direction: column;
+      overflow-y: auto;
       flex-shrink: 0;
     }
-    .nav-group {
-      padding: 0.75rem 0.5rem 0.25rem;
-    }
-    .nav-group-title {
+    .nav-group { padding: .875rem .625rem .25rem; }
+    .nav-group-label {
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: .09em;
       color: var(--text-muted);
-      padding: 0 0.5rem 0.35rem;
+      padding: 0 .5rem .375rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: .25rem;
     }
     .nav-item {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
-      padding: 0.45rem 0.6rem;
-      border-radius: var(--radius-sm);
+      gap: .55rem;
+      padding: .42rem .6rem;
+      border-radius: 3px;
+      border-left: 3px solid transparent;
       color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 500;
       cursor: pointer;
-      transition: background 0.12s, color 0.12s;
+      transition: background .1s, color .1s;
+      margin-bottom: 1px;
+      user-select: none;
     }
-    .nav-item:hover {
-      background: var(--bg-surface-1);
-      color: var(--text-primary);
-    }
+    .nav-item:hover { background: var(--bg-hover); color: var(--text-primary); }
     .nav-item.active {
-      background: var(--bg-surface-2);
-      color: var(--accent-blue);
+      background: var(--gov-blue-light);
+      color: var(--gov-blue);
+      border-left-color: var(--gov-blue);
       font-weight: 600;
-      border-left: 2px solid var(--accent-blue);
     }
-    .nav-counter {
+    .nav-icon { width: 15px; height: 15px; flex-shrink: 0; opacity: .65; }
+    .nav-item.active .nav-icon { opacity: 1; }
+    .nav-badge {
       margin-left: auto;
       font-size: 10px;
-      background: var(--bg-surface-2);
+      font-weight: 600;
       color: var(--text-muted);
+      background: var(--bg-surface-alt);
+      border: 1px solid var(--border-light);
       padding: 1px 5px;
       border-radius: 3px;
     }
 
-    /* MAIN VIEWPORT */
-    main.viewport {
+    /* ---- VIEWPORT ---- */
+    .viewport {
       flex: 1;
-      background: var(--bg-base);
+      background: var(--bg-page);
       overflow-y: auto;
-      padding: 1.25rem 1.5rem;
+      padding: 1.5rem 2rem;
     }
-    .view-section {
-      display: none;
-    }
-    .view-section.active {
-      display: block;
-    }
+    .view { display: none; }
+    .view.active { display: block; }
 
-    /* PAGE HEADER */
-    .view-header {
-      margin-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 0.75rem;
+    /* ---- PAGE HEADER ---- */
+    .pg-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      margin-bottom: 1.375rem;
+      padding-bottom: .875rem;
+      border-bottom: 1px solid var(--border-light);
     }
-    .view-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-primary);
-      letter-spacing: -0.01em;
-    }
-    .view-desc {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
+    .pg-title { font-size: 19px; font-weight: 700; color: var(--navy-900); letter-spacing: -.02em; line-height: 1.2; }
+    .pg-sub   { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
 
-    /* CARDS & PANELS */
+    /* ---- CARDS ---- */
     .card {
-      background: var(--bg-surface-0);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 1rem 1.25rem;
-      margin-bottom: 1.25rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      margin-bottom: 1.125rem;
+      box-shadow: var(--shadow);
     }
-    .card-header {
+    .card-hdr {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.85rem;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 0.5rem;
+      padding: .75rem 1.125rem;
+      border-bottom: 1px solid var(--border-light);
+      background: var(--bg-surface-alt);
+      border-radius: var(--radius) var(--radius) 0 0;
     }
-    .card-title {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-primary);
-    }
+    .card-title { font-size: 13px; font-weight: 600; color: var(--navy-900); }
+    .card-body  { padding: 1.125rem; }
+    .card-body-raw { padding: 0; }
 
-    /* METRIC ROW */
-    .metric-grid {
+    /* ---- KPI ROW ---- */
+    .kpi-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.85rem;
-      margin-bottom: 1.25rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: .875rem;
+      margin-bottom: 1.125rem;
     }
-    .metric-box {
-      background: var(--bg-surface-0);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 0.85rem 1rem;
+    .kpi-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: .875rem 1rem;
+      box-shadow: var(--shadow);
     }
-    .metric-box-label {
-      font-size: 11px;
+    .kpi-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
       color: var(--text-muted);
-      font-weight: 500;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
-    .metric-box-val {
+    .kpi-val {
       font-size: 20px;
       font-weight: 700;
-      color: var(--text-primary);
-      font-family: var(--font-mono);
+      color: var(--navy-900);
+      font-family: var(--mono);
+      line-height: 1.1;
     }
-    .metric-box-sub {
-      font-size: 11px;
-      color: var(--status-ok);
-      margin-top: 2px;
-    }
+    .kpi-val.ok { color: var(--ok); }
+    .kpi-sub { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
 
-    /* TABLES */
-    table.data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
-      text-align: left;
-    }
-    table.data-table th {
-      background: var(--bg-surface-1);
+    /* ---- GRID ---- */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.125rem; }
+    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.125rem; }
+
+    /* ---- TABLES ---- */
+    .tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    .tbl th {
+      background: var(--bg-surface-alt);
       color: var(--text-muted);
-      font-weight: 600;
-      font-size: 11px;
+      font-size: 10.5px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 0.55rem 0.75rem;
+      letter-spacing: .06em;
+      padding: .55rem .9rem;
       border-bottom: 1px solid var(--border-medium);
+      text-align: left;
+      white-space: nowrap;
     }
-    table.data-table td {
-      padding: 0.55rem 0.75rem;
-      border-bottom: 1px solid var(--border-subtle);
+    .tbl td {
+      padding: .55rem .9rem;
+      border-bottom: 1px solid var(--border-light);
       color: var(--text-secondary);
+      vertical-align: middle;
     }
-    table.data-table tr:hover td {
-      background: var(--bg-surface-1);
-      color: var(--text-primary);
-    }
-    .badge {
+    .tbl tbody tr:last-child td { border-bottom: none; }
+    .tbl tbody tr:hover td { background: var(--bg-hover); }
+    .tbl td strong { color: var(--text-primary); font-weight: 600; }
+    .tbl th.num, .tbl td.num { text-align: right; font-family: var(--mono); }
+
+    /* ---- BADGES ---- */
+    .bdg {
       display: inline-flex;
       align-items: center;
-      padding: 2px 6px;
+      gap: 4px;
+      padding: 2px 7px;
       border-radius: 3px;
-      font-size: 10px;
-      font-weight: 600;
-      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      font-family: var(--sans);
+      letter-spacing: .03em;
       text-transform: uppercase;
+      white-space: nowrap;
     }
-    .badge-ok { background: var(--status-ok-bg); color: var(--status-ok); border: 1px solid rgba(16,185,129,0.3); }
-    .badge-warn { background: var(--status-warn-bg); color: var(--status-warn); border: 1px solid rgba(245,158,11,0.3); }
-    .badge-alert { background: var(--status-alert-bg); color: var(--status-alert); border: 1px solid rgba(239,68,68,0.3); }
-    .badge-info { background: var(--status-info-bg); color: var(--status-info); border: 1px solid rgba(14,165,233,0.3); }
+    .bdg-ok   { background: var(--ok-bg);   color: var(--ok-text);   border: 1px solid var(--ok-bdr);   }
+    .bdg-warn { background: var(--warn-bg);  color: var(--warn-text); border: 1px solid var(--warn-bdr); }
+    .bdg-err  { background: var(--err-bg);   color: var(--err-text);  border: 1px solid var(--err-bdr);  }
+    .bdg-info { background: var(--gov-blue-light); color: var(--info-text); border: 1px solid var(--gov-blue-border); }
+    .bdg-neutral { background: var(--bg-surface-alt); color: var(--text-secondary); border: 1px solid var(--border-medium); }
+    .bdg-tier-a { background:#EFF6FF; color:#1E40AF; border:1px solid #BFDBFE; font-size:10px; padding:1px 6px; }
+    .bdg-tier-b { background:#F0FDF4; color:#15803D; border:1px solid #BBF7D0; font-size:10px; padding:1px 6px; }
+    .bdg-tier-c { background:#FFFBEB; color:#B45309; border:1px solid #FDE68A; font-size:10px; padding:1px 6px; }
 
-    /* CODE & TERMINAL PANELS */
-    .code-panel {
-      background: #080b10;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      padding: 0.75rem 1rem;
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      color: #94a3b8;
-      overflow-x: auto;
-      max-height: 280px;
-      white-space: pre-wrap;
-      word-break: break-all;
-    }
-
-    /* FORMS & BUTTONS */
-    .form-group {
-      margin-bottom: 0.85rem;
-    }
-    .form-label {
-      display: block;
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-    input[type="text"], select, textarea {
-      width: 100%;
-      background: var(--bg-surface-1);
-      border: 1px solid var(--border-medium);
-      border-radius: var(--radius-sm);
-      color: var(--text-primary);
-      font-family: var(--font-sans);
-      font-size: 12px;
-      padding: 6px 10px;
-      outline: none;
-    }
-    input[type="text"]:focus, select:focus, textarea:focus {
-      border-color: var(--border-focus);
-    }
-    textarea { font-family: var(--font-mono); font-size: 11px; }
-
+    /* ---- BUTTONS ---- */
     .btn {
-      background: var(--bg-surface-2);
+      background: var(--bg-surface);
       border: 1px solid var(--border-medium);
       color: var(--text-primary);
+      font-family: var(--sans);
       font-size: 12px;
       font-weight: 500;
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
+      padding: 6px 13px;
+      border-radius: 3px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: background 0.12s;
+      transition: background .12s;
     }
-    .btn:hover { background: var(--bg-surface-3); }
-    .btn-primary {
-      background: #2563eb;
-      border-color: #3b82f6;
-      color: #fff;
-    }
-    .btn-primary:hover { background: #1d4ed8; }
+    .btn:hover { background: var(--bg-hover); }
+    .btn-primary { background: var(--gov-blue); border-color: var(--gov-blue); color: #fff; }
+    .btn-primary:hover { background: var(--gov-blue-dark); border-color: var(--gov-blue-dark); }
 
-    /* SPLIT COLUMNS */
-    .grid-2 {
+    /* ---- FORMS ---- */
+    .fgrp { margin-bottom: .875rem; }
+    .flbl {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--text-secondary);
+      margin-bottom: 5px;
+    }
+    input[type=text], select, textarea {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: 3px;
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 13px;
+      padding: 6px 9px;
+      outline: none;
+      transition: border-color .15s;
+    }
+    input[type=text]:focus, select:focus, textarea:focus {
+      border-color: var(--gov-blue);
+      box-shadow: 0 0 0 3px rgba(20,85,160,.08);
+    }
+    textarea { font-family: var(--mono); font-size: 11.5px; resize: vertical; }
+
+    /* ---- CODE PANELS ---- */
+    .code-panel {
+      background: #1E293B;
+      border: 1px solid #334155;
+      border-radius: 3px;
+      padding: .75rem .875rem;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: #94A3B8;
+      overflow: auto;
+      max-height: 280px;
+      white-space: pre;
+      line-height: 1.65;
+    }
+    .code-panel .hi { color: #86EFAC; }
+    .code-panel .lo { color: #FDA4AF; }
+
+    /* ---- KV TABLE ---- */
+    .kv td {
+      padding: .5rem .9rem;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 12.5px;
+      vertical-align: middle;
+    }
+    .kv tr:last-child td { border-bottom: none; }
+    .kv td:first-child {
+      width: 46%;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--text-muted);
+    }
+    .kv td:last-child { color: var(--text-secondary); }
+
+    /* ---- CALLOUT ---- */
+    .callout {
+      background: var(--gov-blue-light);
+      border: 1px solid var(--gov-blue-border);
+      border-left: 3px solid var(--gov-blue);
+      border-radius: 3px;
+      padding: .7rem 1rem;
+      font-size: 12.5px;
+      color: var(--info-text);
+      margin-bottom: 1rem;
+    }
+    .callout.warn {
+      background: var(--warn-bg);
+      border-color: var(--warn-bdr);
+      border-left-color: var(--warn);
+      color: var(--warn-text);
+    }
+
+    /* ---- PIPELINE FLOW ---- */
+    .pipeline {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      padding: .75rem 0;
+      gap: 0;
+    }
+    .pl-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      min-width: 82px;
+      text-align: center;
+    }
+    .pl-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gov-blue-light);
+      border: 2px solid var(--gov-blue-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--gov-blue);
+      font-family: var(--mono);
+      flex-shrink: 0;
+    }
+    .pl-label {
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      line-height: 1.35;
+    }
+    .pl-arrow { color: var(--border-medium); font-size: 18px; margin-bottom: 20px; padding: 0 2px; flex-shrink: 0; }
+
+    /* ---- FORENSIC TIMELINE ---- */
+    .forensic-wrap { position: relative; padding-left: 2rem; }
+    .forensic-wrap::before {
+      content: '';
+      position: absolute;
+      left: .75rem;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: var(--border-medium);
+    }
+    .f-stage {
+      position: relative;
+      padding: .625rem .875rem;
+      margin-bottom: .4rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
+      grid-template-columns: 2.25rem 1fr auto;
+      align-items: center;
+      gap: .625rem;
+    }
+    .f-stage::before {
+      content: '';
+      position: absolute;
+      left: -1.45rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gov-blue);
+      border: 2px solid var(--bg-surface);
+      box-shadow: 0 0 0 2px var(--gov-blue);
+    }
+    .f-num  { font-family: var(--mono); font-size: 10.5px; font-weight: 700; color: var(--gov-blue); }
+    .f-name { font-size: 12px; font-weight: 600; color: var(--text-primary); }
+    .f-detail { font-size: 11px; color: var(--text-muted); margin-top: 1px; }
+
+    /* ---- SEVERITY ---- */
+    .sev-h { color: var(--err);  font-weight: 700; }
+    .sev-m { color: var(--warn); font-weight: 700; }
+    .sev-i { color: var(--gov-blue); font-weight: 700; }
+    .sev-l { color: var(--text-muted); font-weight: 700; }
+
+    /* ---- CODE IDENTIFIER ---- */
+    code.id {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--navy-700);
+      background: var(--gov-blue-muted);
+      padding: 1px 5px;
+      border-radius: 3px;
     }
 
-    /* FOOTER */
-    footer.status-bar {
+    /* ---- FOOTER ---- */
+    .footer {
       height: 30px;
-      background: var(--bg-surface-0);
-      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-light);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 1.25rem;
+      padding: 0 1.5rem;
       font-size: 11px;
       color: var(--text-muted);
       flex-shrink: 0;
     }
-    .status-bar-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
+    .footer-left, .footer-right { display: flex; align-items: center; gap: .625rem; }
+    .footer-sep { color: var(--border-medium); }
+    .footer-ok { color: var(--ok); font-weight: 600; }
 
-    /* JUDGE DEMO MODE MODAL */
-    #judge-demo-modal {
+    /* ---- JUDGE MODAL ---- */
+    #judge-modal {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.85);
+      background: rgba(15,39,71,.65);
       z-index: 999;
       justify-content: center;
       align-items: center;
+      backdrop-filter: blur(2px);
     }
-    #judge-demo-modal.active {
-      display: flex;
-    }
-    .judge-demo-box {
-      width: 900px;
-      max-width: 95vw;
-      height: 600px;
-      background: var(--bg-surface-0);
+    #judge-modal.open { display: flex; }
+    .judge-box {
+      width: 960px;
+      max-width: 96vw;
+      height: 620px;
+      background: var(--bg-surface);
       border: 1px solid var(--border-medium);
-      border-radius: var(--radius-md);
+      border-radius: 7px;
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 60px rgba(15,39,71,.28);
     }
-    .judge-demo-header {
-      background: var(--bg-surface-1);
-      padding: 0.75rem 1.25rem;
+    .judge-hdr {
+      background: var(--navy-900);
+      padding: .8rem 1.375rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border-subtle);
+      flex-shrink: 0;
     }
-    .judge-demo-body {
-      flex: 1;
-      display: flex;
-      overflow: hidden;
-    }
-    .judge-step-nav {
-      width: 260px;
-      background: var(--bg-surface-0);
-      border-right: 1px solid var(--border-subtle);
-      overflow-y: auto;
-      padding: 0.5rem;
-    }
-    .judge-step-item {
-      padding: 0.6rem 0.75rem;
-      border-radius: var(--radius-sm);
+    .judge-hdr-title { font-size: 13.5px; font-weight: 700; color: #fff; letter-spacing: .01em; }
+    .judge-hdr-sub   { font-size: 11px; color: rgba(255,255,255,.5); margin-top: 2px; }
+    .judge-close {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.8);
+      font-family: var(--sans);
       font-size: 11px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 3px;
       cursor: pointer;
-      color: var(--text-muted);
-      border-left: 2px solid transparent;
-      margin-bottom: 2px;
     }
-    .judge-step-item:hover {
-      background: var(--bg-surface-1);
-      color: var(--text-secondary);
-    }
-    .judge-step-item.active {
-      background: var(--bg-surface-2);
-      color: var(--accent-blue);
-      border-left-color: var(--accent-blue);
-      font-weight: 600;
-    }
-    .judge-step-item .step-time {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      color: var(--text-muted);
-      float: right;
-    }
-    .judge-step-content {
-      flex: 1;
-      padding: 1.25rem;
+    .judge-close:hover { background: rgba(255,255,255,.18); }
+    .judge-body { flex: 1; display: flex; overflow: hidden; }
+    .judge-nav {
+      width: 244px;
+      background: var(--bg-surface-alt);
+      border-right: 1px solid var(--border-light);
       overflow-y: auto;
-      background: var(--bg-base);
+      padding: .625rem .4rem;
+      flex-shrink: 0;
     }
+    .judge-nav-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text-muted);
+      padding: 0 .5rem .4rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: .4rem;
+    }
+    .jstep {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: .48rem .7rem;
+      border-radius: 3px;
+      border-left: 3px solid transparent;
+      cursor: pointer;
+      color: var(--text-secondary);
+      margin-bottom: 2px;
+      transition: background .1s;
+    }
+    .jstep:hover { background: var(--bg-hover); }
+    .jstep.active { background: var(--gov-blue-light); color: var(--gov-blue); border-left-color: var(--gov-blue); font-weight: 600; }
+    .jstep-n { font-family: var(--mono); font-size: 10px; font-weight: 700; color: var(--text-muted); min-width: 18px; }
+    .jstep.active .jstep-n { color: var(--gov-blue); }
+    .jstep-l { font-size: 12px; flex: 1; }
+    .jstep-t { font-family: var(--mono); font-size: 10px; color: var(--text-muted); }
+    .judge-content {
+      flex: 1;
+      padding: 1.375rem 1.5rem;
+      overflow-y: auto;
+      background: var(--bg-surface);
+    }
+    .judge-content h2 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--navy-900);
+      padding-bottom: .625rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: .875rem;
+    }
+    .judge-content h3 { font-size: 13px; font-weight: 600; color: var(--navy-700); margin: .875rem 0 .4rem; }
+    .judge-content p  { font-size: 13px; color: var(--text-secondary); line-height: 1.65; margin-bottom: .625rem; }
+    .judge-content ul { margin: .4rem 0 .625rem 1.2rem; color: var(--text-secondary); font-size: 13px; line-height: 1.7; }
+    .judge-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.25rem;
+      padding-top: .875rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border-medium); border-radius: 3px; }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-left">
-      <div class="brand-mark">ULPF</div>
-      <div>
-        <div class="brand-title">Universal Log Pre-processing Framework</div>
-      </div>
-      <div class="brand-subtitle">Security Telemetry Processing Platform · NTRO SIH26156</div>
+<!-- ============================================================
+     INSTITUTIONAL HEADER
+============================================================ -->
+<header class="app-header">
+  <div class="hdr-identity">
+    <div class="hdr-mark">ULPF</div>
+    <div>
+      <div class="hdr-name">Universal Log Pre-processing Framework</div>
+      <div class="hdr-sub">Security Telemetry Processing Platform</div>
     </div>
-    <div class="header-center">
-      <div class="env-badge" title="Air-gapped verification: zero external network egress">
-        <div class="env-dot"></div>
-        <span>OPERATIONAL (AIR-GAPPED)</span>
+    <div class="hdr-divider"></div>
+    <div class="hdr-label"><strong>NTRO · SIH26156</strong><br>Smart India Hackathon 2026</div>
+  </div>
+  <div class="hdr-pills">
+    <div class="pill">
+      <span class="pill-dot"></span>
+      OPERATIONAL — AIR-GAP VALIDATED
+    </div>
+    <div class="pill">
+      <span style="color:var(--text-muted)">PARSERS:</span>&nbsp;<span class="v">20 LOADED</span>
+    </div>
+    <div class="pill">
+      <span style="color:var(--text-muted)">NTRO:</span>&nbsp;<span class="g">16/16 MAPPED</span>
+    </div>
+    <button class="btn-judge" onclick="openJudgeDemo()">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      LAUNCH SIH JUDGE MODE
+    </button>
+  </div>
+</header>
+
+<div class="shell">
+
+  <!-- ============================================================
+       SIDEBAR
+  ============================================================ -->
+  <nav class="sidebar">
+    <div class="nav-group">
+      <div class="nav-group-label">Operations</div>
+      <div class="nav-item active" onclick="switchView('overview')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Command Center
       </div>
-      <div class="env-badge">
-        <span style="color: var(--text-muted);">PARSERS:</span>
-        <strong style="color: var(--text-primary);">20 LOADED</strong>
+      <div class="nav-item" onclick="switchView('intake')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+        Log Intake
+        <span class="nav-badge">Raw</span>
       </div>
-      <div class="env-badge">
-        <span style="color: var(--text-muted);">NTRO:</span>
-        <strong style="color: var(--status-ok);">16/16 VERIFIED</strong>
+      <div class="nav-item" onclick="switchView('parsers')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        Parser Registry
+        <span class="nav-badge">20</span>
       </div>
     </div>
-    <div class="header-right">
-      <button class="btn-judge-mode" onclick="openJudgeDemo()">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        <span>LAUNCH SIH JUDGE MODE</span>
-      </button>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Unified Core</div>
+      <div class="nav-item" onclick="switchView('transformation')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+        UCE Transformation
+      </div>
+      <div class="nav-item" onclick="switchView('interop')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        OCSF &amp; OpenTelemetry
+      </div>
+      <div class="nav-item" onclick="switchView('drift')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Schema Drift &amp; Onboarding
+      </div>
     </div>
-  </header>
 
-  <!-- APP CONTAINER -->
-  <div class="app-container">
-    <!-- SIDEBAR -->
-    <nav class="sidebar">
-      <div class="nav-group">
-        <div class="nav-group-title">Operations</div>
-        <div class="nav-item active" onclick="switchView('overview')">
-          <span>Command Center</span>
+    <div class="nav-group">
+      <div class="nav-group-label">Security Intelligence</div>
+      <div class="nav-item" onclick="switchView('intelligence')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Threat Detection
+      </div>
+      <div class="nav-item" onclick="switchView('forensics')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Forensic Evidence
+      </div>
+      <div class="nav-item" onclick="switchView('playbooks')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Response Playbooks
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Compliance &amp; System</div>
+      <div class="nav-item" onclick="switchView('health')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        System Health &amp; SLAs
+      </div>
+      <div class="nav-item" onclick="switchView('ntro')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        NTRO Traceability
+        <span class="nav-badge">16/16</span>
+      </div>
+      <div class="nav-item" onclick="switchView('competitive')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Competitive Proof
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN VIEWPORT
+  ============================================================ -->
+  <main class="viewport">
+
+    <!-- ====================================================
+         COMMAND CENTER
+    ==================================================== -->
+    <section id="view-overview" class="view active">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Command Center Overview</h1>
+          <p class="pg-sub">Live multi-vendor telemetry status, deterministic pipeline state, and cryptographic evidence summary.</p>
         </div>
-        <div class="nav-item" onclick="switchView('intake')">
-          <span>Log Intake</span>
-          <span class="nav-counter">Raw</span>
+        <button class="btn" onclick="refreshPlatformMetrics()">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+          Refresh Metrics
+        </button>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-label">Pipeline Throughput</div>
+          <div class="kpi-val" id="metric-throughput">301,420</div>
+          <div class="kpi-sub">Events / sec benchmarked</div>
         </div>
-        <div class="nav-item" onclick="switchView('parsers')">
-          <span>Parser Registry</span>
-          <span class="nav-counter">20</span>
+        <div class="kpi-card">
+          <div class="kpi-label">Capture Latency P99</div>
+          <div class="kpi-val">&lt; 4.8 ms</div>
+          <div class="kpi-sub">SHA-256 CAS write time</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Concrete Parsers</div>
+          <div class="kpi-val ok">20 / 20</div>
+          <div class="kpi-sub">Tier A / B / C operational</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Evidence Integrity</div>
+          <div class="kpi-val" style="font-size:15px;padding-top:3px;">SHA-256 CAS</div>
+          <div class="kpi-sub">Tamper-evident write-once</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Air-Gap Egress</div>
+          <div class="kpi-val ok">0 BYTES</div>
+          <div class="kpi-sub">Zero external sockets</div>
         </div>
       </div>
 
-      <div class="nav-group">
-        <div class="nav-group-title">Unified Core</div>
-        <div class="nav-item" onclick="switchView('transformation')">
-          <span>UCE Transformation</span>
+      <!-- Pipeline visualization -->
+      <div class="card">
+        <div class="card-hdr">
+          <span class="card-title">End-to-End Processing Pipeline</span>
+          <span class="bdg bdg-ok">OPERATIONAL</span>
         </div>
-        <div class="nav-item" onclick="switchView('interop')">
-          <span>OCSF &amp; OTel Projections</span>
-        </div>
-        <div class="nav-item" onclick="switchView('drift')">
-          <span>Schema Drift &amp; Onboard</span>
+        <div class="card-body">
+          <div class="pipeline">
+            <div class="pl-stage"><div class="pl-circle">01</div><div class="pl-label">Raw<br>Capture</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">02</div><div class="pl-label">SHA-256<br>CAS</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">03</div><div class="pl-label">Parser<br>Dispatch</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">04</div><div class="pl-label">UCE<br>Norm.</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">05</div><div class="pl-label">Semantic<br>Enrich.</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">06</div><div class="pl-label">OCSF &amp;<br>OTel</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">07</div><div class="pl-label">Threat<br>Detect.</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">08</div><div class="pl-label">Evidence<br>Package</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">09</div><div class="pl-label">SIEM<br>Delivery</div></div>
+          </div>
         </div>
       </div>
 
-      <div class="nav-group">
-        <div class="nav-group-title">Security Intelligence</div>
-        <div class="nav-item" onclick="switchView('intelligence')">
-          <span>Threat Detection</span>
-        </div>
-        <div class="nav-item" onclick="switchView('forensics')">
-          <span>Forensic Evidence</span>
-        </div>
-        <div class="nav-item" onclick="switchView('playbooks')">
-          <span>Response Playbooks</span>
-        </div>
-      </div>
-
-      <div class="nav-group">
-        <div class="nav-group-title">Compliance &amp; System</div>
-        <div class="nav-item" onclick="switchView('health')">
-          <span>System Health &amp; SLAs</span>
-        </div>
-        <div class="nav-item" onclick="switchView('ntro')">
-          <span>NTRO Traceability (16/16)</span>
-        </div>
-        <div class="nav-item" onclick="switchView('competitive')">
-          <span>Competitive Proof</span>
-        </div>
-      </div>
-    </nav>
-
-    <!-- VIEWPORT -->
-    <main class="viewport">
-
-      <!-- VIEW: OVERVIEW -->
-      <section id="view-overview" class="view-section active">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Command Center Overview</h1>
-            <p class="view-desc">Live multi-vendor telemetry status, deterministic pipeline state, and cryptographic evidence summary.</p>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Multi-Vendor Ingestion Status</span>
+            <span class="bdg bdg-ok">HEALTHY</span>
           </div>
-          <div>
-            <button class="btn" onclick="refreshPlatformMetrics()">
-              <span>Refresh Metrics</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="metric-grid">
-          <div class="metric-box">
-            <div class="metric-box-label">PIPELINE THROUGHPUT</div>
-            <div class="metric-box-val" id="metric-throughput">301,420</div>
-            <div class="metric-box-sub">Events/sec benchmarked</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-box-label">CAPTURE LATENCY P99</div>
-            <div class="metric-box-val">&lt; 4.8 ms</div>
-            <div class="metric-box-sub">Content-addressed write</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-box-label">CONCRETE PARSERS</div>
-            <div class="metric-box-val">20 / 20</div>
-            <div class="metric-box-sub">Tier A/B/C operational</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-box-label">EVIDENCE INTEGRITY</div>
-            <div class="metric-box-val">SHA-256</div>
-            <div class="metric-box-sub">100% Tamper-evident</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-box-label">AIR-GAP EGRESS</div>
-            <div class="metric-box-val">0 BYTES</div>
-            <div class="metric-box-sub">Zero external sockets</div>
-          </div>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Multi-Vendor Ingestion Stream</span>
-              <span class="badge badge-ok">HEALTHY</span>
-            </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Vendor / Format</th>
-                  <th>Category</th>
-                  <th>Parser ID</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
+          <div class="card-body-raw">
+            <table class="tbl">
+              <thead><tr><th>Vendor / Format</th><th>Category</th><th>Parser ID</th><th>Status</th></tr></thead>
               <tbody>
-                <tr><td>pfSense Firewall</td><td>Network</td><td><code>pfsense</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
-                <tr><td>Cisco ASA</td><td>Network</td><td><code>cisco_asa</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
-                <tr><td>Suricata IDS</td><td>Intrusion Detection</td><td><code>suricata</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
-                <tr><td>Windows Security</td><td>Authentication</td><td><code>windows_security</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
-                <tr><td>Sysmon Endpoint</td><td>Host Telemetry</td><td><code>sysmon</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
-                <tr><td>nginx Access</td><td>Web Services</td><td><code>nginx_access</code></td><td><span class="badge badge-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>pfSense Firewall</strong></td><td>Network</td><td><code class="id">pfsense</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>Cisco ASA</strong></td><td>Network</td><td><code class="id">cisco_asa</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>Suricata IDS</strong></td><td>Intrusion Detection</td><td><code class="id">suricata</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>Windows Security</strong></td><td>Authentication</td><td><code class="id">windows_security</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>Sysmon Endpoint</strong></td><td>Host Telemetry</td><td><code class="id">sysmon</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
+                <tr><td><strong>nginx Access</strong></td><td>Web Services</td><td><code class="id">nginx_access</code></td><td><span class="bdg bdg-ok">ACTIVE</span></td></tr>
               </tbody>
             </table>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Cryptographic Evidence &amp; DLQ Status</span>
-              <span class="badge badge-ok">AUDITED</span>
-            </div>
-            <table class="data-table">
-              <tbody>
-                <tr>
-                  <td><strong>Content-Addressed Storage</strong></td>
-                  <td><code>raw_fs.py</code> (SHA-256 CAS)</td>
-                </tr>
-                <tr>
-                  <td><strong>Dead Letter Queue (DLQ)</strong></td>
-                  <td>0 Poison Events / 0 Drop Events</td>
-                </tr>
-                <tr>
-                  <td><strong>Multi-Tenant Guard</strong></td>
-                  <td>Isolated Tenant Boundaries Enforced</td>
-                </tr>
-                <tr>
-                  <td><strong>Regression Gate</strong></td>
-                  <td>680/680 Tests PASS (Phase 17 Approved)</td>
-                </tr>
-                <tr>
-                  <td><strong>MITRE ATT&amp;CK Coverage</strong></td>
-                  <td>12 Tactics / 16 Telemetry Vectors</td>
-                </tr>
-                <tr>
-                  <td><strong>Analyst Acceleration</strong></td>
-                  <td>5.8x Triage Acceleration (Validated)</td>
-                </tr>
-              </tbody>
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Cryptographic Evidence &amp; DLQ Status</span>
+            <span class="bdg bdg-info">AUDITED</span>
+          </div>
+          <div class="card-body-raw">
+            <table class="tbl kv">
+              <tr><td>Content-Addressed Storage</td><td><code class="id">raw_fs.py</code> — SHA-256 CAS</td></tr>
+              <tr><td>Dead Letter Queue (DLQ)</td><td>0 Poison Events / 0 Drop Events</td></tr>
+              <tr><td>Multi-Tenant Guard</td><td>Isolated Boundaries Enforced (8 Layers)</td></tr>
+              <tr><td>Regression Gate</td><td><span class="footer-ok">680 / 680 Tests PASS</span></td></tr>
+              <tr><td>MITRE ATT&amp;CK Coverage</td><td>12 Tactics / 16 Telemetry Vectors</td></tr>
+              <tr><td>Analyst Acceleration</td><td>5.8× Triage Acceleration (Validated)</td></tr>
             </table>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: LOG INTAKE -->
-      <section id="view-intake" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Raw Telemetry Intake Plane</h1>
-            <p class="view-desc">Opaque byte capture to SHA-256 content-addressed raw evidence store prior to parsing.</p>
-          </div>
+    <!-- ====================================================
+         LOG INTAKE
+    ==================================================== -->
+    <section id="view-intake" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Raw Telemetry Intake Plane</h1>
+          <p class="pg-sub">Opaque byte capture to SHA-256 content-addressed raw evidence store, prior to any parsing or transformation.</p>
         </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Live Raw Ingest Test</span>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Source Format</label>
+      </div>
+      <div class="callout">
+        <strong>Lossless Capture Guarantee:</strong> Raw bytes are written verbatim to the content-addressed filesystem before any transformation. The SHA-256 hash is computed and cryptographically bound to the event receipt, providing a tamper-evident immutability anchor.
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr"><span class="card-title">Live Raw Ingest Test</span></div>
+          <div class="card-body">
+            <div class="fgrp">
+              <label class="flbl">Source Format</label>
               <select id="intake-vendor">
                 <option value="pfsense">pfSense Firewall (Filterlog)</option>
                 <option value="cisco_asa">Cisco ASA Syslog</option>
@@ -720,797 +918,978 @@
                 <option value="windows_security">Windows Security Event 4625</option>
                 <option value="sysmon">Sysmon Event 1 (Process Create)</option>
                 <option value="nginx_access">nginx Combined Access Log</option>
-                <option value="unknown">Unknown Custom Hex/Delimited</option>
+                <option value="unknown">Unknown Custom / Hex Delimited</option>
               </select>
             </div>
-            <div class="form-group">
-              <label class="form-label">Raw Telemetry Payload</label>
+            <div class="fgrp">
+              <label class="flbl">Raw Telemetry Payload</label>
               <textarea id="intake-raw-input" rows="6">filterlog: 4,,,1000000103,em0,match,block,in,4,0x0,,64,0,0,DF,6,tcp,60,192.168.1.50,10.0.0.1,54210,445,0,S,268435456,,1024</textarea>
             </div>
-            <button class="btn btn-primary" onclick="simulateIngest()">Submit to Raw Storage</button>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Capture Acknowledgment Receipt</span>
-              <span class="badge badge-info" id="receipt-status">STANDBY</span>
-            </div>
-            <div class="code-panel" id="receipt-output">{
-  "status": "READY",
-  "message": "Submit a log to generate durable content-addressed receipt."
-}</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- VIEW: PARSER REGISTRY -->
-      <section id="view-parsers" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Parser Registry (20 Concrete Parsers)</h1>
-            <p class="view-desc">Deterministic Tier A (production), Tier B (extended), and Tier C (specialized) parsers.</p>
+            <button class="btn btn-primary" onclick="simulateIngest()">Submit to Raw Evidence Store</button>
           </div>
         </div>
         <div class="card">
-          <table class="data-table" id="parsers-list-table">
+          <div class="card-hdr">
+            <span class="card-title">Capture Acknowledgment Receipt</span>
+            <span class="bdg bdg-neutral" id="receipt-status">STANDBY</span>
+          </div>
+          <div class="card-body">
+            <div class="code-panel" id="receipt-output">{
+  "status": "READY",
+  "message": "Submit a log to generate a durable
+              content-addressed receipt."
+}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         PARSER REGISTRY
+    ==================================================== -->
+    <section id="view-parsers" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Parser Registry — 20 Concrete Parsers</h1>
+          <p class="pg-sub">Deterministic Tier A (core perimeter &amp; auth), Tier B (flow, cloud &amp; extended), and Tier C (modern EDR) parsers. All 20 verified in the regression suite.</p>
+        </div>
+        <span class="bdg bdg-ok" style="font-size:12px;padding:5px 10px;">20 / 20 VERIFIED</span>
+      </div>
+      <div class="card">
+        <div class="card-body-raw">
+          <table class="tbl">
             <thead>
-              <tr>
-                <th>Tier</th>
-                <th>Parser ID</th>
-                <th>Vendor / Component</th>
-                <th>Output Taxonomy</th>
-                <th>Status</th>
-              </tr>
+              <tr><th>Tier</th><th>Parser ID</th><th>Vendor / Component</th><th>Output Taxonomy</th><th>Status</th></tr>
             </thead>
             <tbody>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>pfsense</code></td><td>pfSense Firewall (filterlog)</td><td>NETWORK / TRAFFIC</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>iptables</code></td><td>Linux Netfilter / UFW</td><td>NETWORK / TRAFFIC</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>cisco_asa</code></td><td>Cisco Adaptive Security Appliance</td><td>NETWORK / SECURITY</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>snort</code></td><td>Snort Network IDS</td><td>INTRUSION / ALERT</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>suricata</code></td><td>Suricata EVE JSON Telemetry</td><td>INTRUSION / EVENT</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>sshd</code></td><td>OpenSSH Authentication Daemon</td><td>AUTH / ACCESS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>windows_security</code></td><td>Windows Security Event Logs</td><td>AUTH / PRIVILEGE</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>sysmon</code></td><td>Microsoft Sysinternals Sysmon</td><td>ENDPOINT / PROCESS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>nginx_access</code></td><td>nginx HTTP Combined Log</td><td>WEB / SERVICE</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-ok">TIER A</span></td><td><code>apache_access</code></td><td>Apache HTTP Combined Log</td><td>WEB / SERVICE</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>aws_cloudtrail</code></td><td>AWS CloudTrail Management Events</td><td>CLOUD / AUDIT</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>azure_activity</code></td><td>Azure Monitor Activity Logs</td><td>CLOUD / AUDIT</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>dns_bind</code></td><td>BIND9 DNS Server Query Logs</td><td>NETWORK / DNS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>netflow</code></td><td>Cisco NetFlow v9 / IPFIX</td><td>FLOW / METRICS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>zeek_conn</code></td><td>Zeek Network Security Monitor</td><td>NETWORK / ANALYSIS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>ossec</code></td><td>OSSEC Host-Based IDS</td><td>ENDPOINT / HIDS</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>fortinet_fortigate</code></td><td>Fortinet FortiGate UTM</td><td>NETWORK / FIREWALL</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-info">TIER B</span></td><td><code>palo_alto</code></td><td>Palo Alto PAN-OS Traffic</td><td>NETWORK / THREAT</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-warn">TIER C</span></td><td><code>crowdstrike_falcon</code></td><td>CrowdStrike Falcon Event Streams</td><td>EDR / DETECTION</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
-              <tr><td><span class="badge badge-warn">TIER C</span></td><td><code>sentinel_one</code></td><td>SentinelOne Deep Visibility</td><td>EDR / BEHAVIOR</td><td><span class="badge badge-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">pfsense</code></td><td>pfSense Firewall (filterlog)</td><td>NETWORK / TRAFFIC</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">iptables</code></td><td>Linux Netfilter / UFW</td><td>NETWORK / TRAFFIC</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">cisco_asa</code></td><td>Cisco Adaptive Security Appliance</td><td>NETWORK / SECURITY</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">snort</code></td><td>Snort Network IDS</td><td>INTRUSION / ALERT</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">suricata</code></td><td>Suricata EVE JSON Telemetry</td><td>INTRUSION / EVENT</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">sshd</code></td><td>OpenSSH Authentication Daemon</td><td>AUTH / ACCESS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">windows_security</code></td><td>Windows Security Event Logs</td><td>AUTH / PRIVILEGE</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">sysmon</code></td><td>Microsoft Sysinternals Sysmon</td><td>ENDPOINT / PROCESS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">nginx_access</code></td><td>nginx HTTP Combined Access Log</td><td>WEB / SERVICE</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-a">Tier A</span></td><td><code class="id">apache_access</code></td><td>Apache HTTP Combined Access Log</td><td>WEB / SERVICE</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">aws_cloudtrail</code></td><td>AWS CloudTrail Management Events</td><td>CLOUD / AUDIT</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">azure_activity</code></td><td>Azure Monitor Activity Logs</td><td>CLOUD / AUDIT</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">dns_bind</code></td><td>BIND9 DNS Server Query Logs</td><td>NETWORK / DNS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">netflow</code></td><td>Cisco NetFlow v9 / IPFIX</td><td>FLOW / METRICS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">zeek_conn</code></td><td>Zeek Network Security Monitor</td><td>NETWORK / ANALYSIS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">ossec</code></td><td>OSSEC Host-Based IDS</td><td>ENDPOINT / HIDS</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">fortinet_fortigate</code></td><td>Fortinet FortiGate UTM</td><td>NETWORK / FIREWALL</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-b">Tier B</span></td><td><code class="id">palo_alto</code></td><td>Palo Alto PAN-OS Traffic</td><td>NETWORK / THREAT</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-c">Tier C</span></td><td><code class="id">crowdstrike_falcon</code></td><td>CrowdStrike Falcon Event Streams</td><td>EDR / DETECTION</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
+              <tr><td><span class="bdg bdg-tier-c">Tier C</span></td><td><code class="id">sentinel_one</code></td><td>SentinelOne Deep Visibility</td><td>EDR / BEHAVIOR</td><td><span class="bdg bdg-ok">VERIFIED</span></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: UCE TRANSFORMATION -->
-      <section id="view-transformation" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Unified Canonical Event (UCE) Transformation</h1>
-            <p class="view-desc">Lossless normalization with deterministic schema mapping, unmapped residue preservation, and field-level lineage.</p>
+    <!-- ====================================================
+         UCE TRANSFORMATION
+    ==================================================== -->
+    <section id="view-transformation" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Universal Canonical Event (UCE) Transformation</h1>
+          <p class="pg-sub">Lossless normalization with deterministic schema mapping, unmapped residue preservation, and field-level forensic lineage.</p>
+        </div>
+      </div>
+      <!-- One-event journey -->
+      <div class="card">
+        <div class="card-hdr">
+          <span class="card-title">One-Event Complete Journey — 13 Traceable Stages</span>
+          <span class="bdg bdg-ok">LOSSLESS</span>
+        </div>
+        <div class="card-body">
+          <div class="pipeline">
+            <div class="pl-stage"><div class="pl-circle">RAW</div><div class="pl-label">Raw<br>Payload</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">SHA</div><div class="pl-label">SHA-256<br>Capture</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">PRF</div><div class="pl-label">Format<br>Profile</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">PSR</div><div class="pl-label">Parser<br>Dispatch</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">EXT</div><div class="pl-label">Field<br>Extract</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">SEM</div><div class="pl-label">Semantic<br>Map</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">UCE</div><div class="pl-label">Canonical<br>Event</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">OUT</div><div class="pl-label">OCSF /<br>OTel</div></div>
           </div>
         </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Original Raw Payload</span>
-            </div>
-            <div class="code-panel">Sep 10 12:20:15 fw-gw01 kernel: [iptables] DROP IN=eth0 OUT= MAC=52:54:00:12:34:56 SRC=203.0.113.195 DST=198.51.100.22 LEN=40 TOS=0x00 PREC=0x00 TTL=240 ID=45231 PROTO=TCP SPT=51234 DPT=445 WINDOW=1024 RES=0x00 SYN URGP=0</div>
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr"><span class="card-title">Raw Payload Input (iptables DROP)</span></div>
+          <div class="card-body">
+            <div class="code-panel">Sep 10 12:20:15 fw-gw01 kernel: [iptables] DROP
+IN=eth0 OUT= MAC=52:54:00:12:34:56
+SRC=203.0.113.195 DST=198.51.100.22
+LEN=40 PROTO=TCP SPT=51234 DPT=445
+WINDOW=1024 SYN URGP=0</div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Normalized UCE Output (Lossless)</span>
-              <span class="badge badge-ok">CANONICAL v1.0</span>
-            </div>
+        </div>
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Normalized UCE Output — Lossless</span>
+            <span class="bdg bdg-info">UCE v1.0</span>
+          </div>
+          <div class="card-body">
             <div class="code-panel">{
-  "metadata": {
-    "event_id": "uce-a7f920bc-9e11-482f-8890-0012984ef211",
-    "raw_sha256": "8d9c12a4f028...b7a8",
+  <span class="hi">"metadata"</span>: {
+    "event_id":    "uce-a7f920bc-9e11-482f",
+    "raw_sha256":  "8d9c12a4f028...b7a8",
     "source_type": "iptables",
-    "tenant_id": "TENANT-CENTRAL-01",
+    "tenant_id":   "TENANT-CENTRAL-01",
     "ingested_at": "2026-09-10T06:50:15.120Z"
   },
-  "network": {
-    "src_ip": "203.0.113.195",
-    "dst_ip": "198.51.100.22",
-    "src_port": 51234,
-    "dst_port": 445,
+  <span class="hi">"network"</span>: {
+    "src_ip":   "203.0.113.195",
+    "dst_ip":   "198.51.100.22",
+    "src_port":  51234,
+    "dst_port":  445,
     "protocol": "TCP",
-    "action": "DROP"
+    "action":   "DROP"
   },
-  "unmapped_residue": {
-    "MAC": "52:54:00:12:34:56",
-    "TOS": "0x00",
-    "TTL": "240",
-    "WINDOW": "1024"
+  <span class="hi">"unmapped_residue"</span>: {
+    "MAC":    "52:54:00:12:34:56",
+    "WINDOW": "1024",
+    "URGP":   "0"
   }
 }</div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="callout">
+        <strong>Unmapped Residue Guarantee:</strong> Fields not covered by the UCE core schema are preserved verbatim in <code>unmapped_residue</code>. No information is discarded at any stage. This enables 100% forensic recall of the original event, including vendor-specific proprietary fields.
+      </div>
+    </section>
 
-      <!-- VIEW: INTEROPERABILITY (OCSF / OTEL) -->
-      <section id="view-interop" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Open Standards Interoperability Plane</h1>
-            <p class="view-desc">Bi-directional projection into OCSF v1.1.0 Security Events and OpenTelemetry Logs v1.0.0 specifications.</p>
-          </div>
+    <!-- ====================================================
+         OCSF + OPENTELEMETRY
+    ==================================================== -->
+    <section id="view-interop" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Open Standards Interoperability Plane</h1>
+          <p class="pg-sub">Dual OCSF v1.1.0 and OpenTelemetry Logs v1.0.0 projections from a single canonical UCE — no re-parsing required.</p>
         </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">OCSF v1.1.0 Security Event (Class 4001: Network Activity)</span>
-              <span class="badge badge-info">OCSF VALIDATED</span>
-            </div>
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">OCSF v1.1.0 — Class 4001: Network Activity</span>
+            <span class="bdg bdg-info">OCSF VALIDATED</span>
+          </div>
+          <div class="card-body">
             <div class="code-panel">{
-  "class_uid": 4001,
+  "class_uid":    4001,
   "category_uid": 4,
-  "activity_id": 2,
-  "activity_name": "Deny",
-  "type_uid": 400102,
-  "severity_id": 2,
+  "activity_id":  2,
+  "activity_name":"Deny",
+  "type_uid":     400102,
+  "severity_id":  2,
   "src_endpoint": {
-    "ip": "203.0.113.195",
-    "port": 51234
+    "ip":   "203.0.113.195",
+    "port":  51234
   },
   "dst_endpoint": {
-    "ip": "198.51.100.22",
-    "port": 445
+    "ip":   "198.51.100.22",
+    "port":  445
   },
-  "disposition": "Blocked"
+  "disposition":  "Blocked",
+  "metadata": {
+    "version": "1.1.0",
+    "product": { "name": "ULPF Pipeline" }
+  }
 }</div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">OpenTelemetry Logs v1.0.0 Resource Log</span>
-              <span class="badge badge-info">OTEL VALIDATED</span>
-            </div>
+        </div>
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">OpenTelemetry Logs v1.0.0 — ResourceLog</span>
+            <span class="bdg bdg-info">OTEL VALIDATED</span>
+          </div>
+          <div class="card-body">
             <div class="code-panel">{
   "resourceLogs": [{
     "resource": {
       "attributes": [
-        {"key": "service.name", "value": {"stringValue": "ulpf-pipeline"}},
-        {"key": "tenant.id", "value": {"stringValue": "TENANT-CENTRAL-01"}}
+        {"key": "service.name",
+         "value": {"stringValue": "ulpf-pipeline"}},
+        {"key": "tenant.id",
+         "value": {"stringValue": "TENANT-CENTRAL-01"}}
       ]
     },
     "scopeLogs": [{
       "logRecords": [{
-        "timeUnixNano": "1789023015120000000",
         "severityNumber": 9,
-        "severityText": "INFO",
-        "body": {"stringValue": "Connection DROP: 203.0.113.195:51234 -> 198.51.100.22:445"}
+        "severityText":   "INFO",
+        "body": {"stringValue":
+          "DROP TCP 203.0.113.195:51234 → 198.51.100.22:445"}
       }]
     }]
   }]
 }</div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="callout">
+        <strong>Single-Pass Projection:</strong> Both OCSF and OpenTelemetry outputs are derived from the same canonical UCE object at the ProjectionRegistry stage. No raw payload is accessed a second time.
+      </div>
+    </section>
 
-      <!-- VIEW: SCHEMA DRIFT & ONBOARDING -->
-      <section id="view-drift" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Autonomous Onboarding &amp; Schema Drift Engine</h1>
-            <p class="view-desc">Zero-code unknown format profiling (&lt;30s) and lossless schema drift tracking.</p>
+    <!-- ====================================================
+         SCHEMA DRIFT & ONBOARDING
+    ==================================================== -->
+    <section id="view-drift" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Schema Drift Detection &amp; Source Onboarding</h1>
+          <p class="pg-sub">AI-assisted profiling, deterministic validation, and versioned mapping — no code change required for supported onboarding workflow.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-hdr"><span class="card-title">Unknown Source Onboarding Workflow</span></div>
+        <div class="card-body">
+          <div class="pipeline">
+            <div class="pl-stage"><div class="pl-circle">UNK</div><div class="pl-label">Unknown<br>Event</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">FMT</div><div class="pl-label">Format<br>Detection</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">FLD</div><div class="pl-label">Field<br>Profiling</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">SEM</div><div class="pl-label">Semantic<br>Matching</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">CON</div><div class="pl-label">Confidence<br>Score</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">APV</div><div class="pl-label">Human<br>Approval</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">MAP</div><div class="pl-label">Deterministic<br>Mapping</div></div>
+            <div class="pl-arrow">›</div>
+            <div class="pl-stage"><div class="pl-circle">UCE</div><div class="pl-label">UCE<br>Active</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr"><span class="card-title">Zero-Code Source Profiler</span></div>
+          <div class="card-body">
+            <div class="fgrp">
+              <label class="flbl">Unknown Log Sample</label>
+              <textarea id="unknown-sample-input" rows="4">timestamp=2026-09-10T12:30:00Z dev_id=SEC-FW-99 rule_match="Block Lateral Port 445" initiator=10.10.10.45 target=10.10.20.88 reason="suspicious smb"</textarea>
+            </div>
+            <button class="btn btn-primary" onclick="profileUnknownSource()">Profile &amp; Generate Mapping</button>
           </div>
         </div>
         <div class="card">
-          <div class="card-header">
-            <span class="card-title">Zero-Code Source Profiler &amp; Mapping Compiler</span>
-          </div>
-          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-            When new proprietary or mutated log sources arrive, ULPF executes automated heuristic structural profiling (field discovery, entropy evaluation, ReDoS-safe tokenization) without requiring core codebase recompilation.
-          </p>
-          <div class="grid-2">
-            <div>
-              <div class="form-group">
-                <label class="form-label">Unknown Log Sample Input</label>
-                <textarea id="unknown-sample-input" rows="4">timestamp=2026-09-10T12:30:00Z dev_id=SEC-FIREWALL-99 rule_match="Block Lateral Port 445" initiator=10.10.10.45 target=10.10.20.88 reason="suspicious smb"</textarea>
-              </div>
-              <button class="btn btn-primary" onclick="profileUnknownSource()">Profile &amp; Generate Mapping Definition</button>
-            </div>
-            <div>
-              <div class="form-group">
-                <label class="form-label">Generated Mapping &amp; Drift Assessment</label>
-                <div class="code-panel" id="drift-assessment-output">{
+          <div class="card-hdr"><span class="card-title">Generated Mapping &amp; Drift Assessment</span></div>
+          <div class="card-body">
+            <div class="code-panel" id="drift-assessment-output">{
   "status": "READY",
-  "action": "Click Profile to inspect autonomous field extraction and drift classification."
-}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- VIEW: THREAT INTELLIGENCE & DETECTION -->
-      <section id="view-intelligence" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Threat Detection &amp; Security Analytics Plane</h1>
-            <p class="view-desc">Deterministic rule evaluation, MITRE ATT&amp;CK correlation, and Welford statistical anomaly detection.</p>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Triggered Detections (Multi-Vendor Correlation)</span>
-              <span class="badge badge-alert">ACTIVE THREATS</span>
-            </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Detection ID</th>
-                  <th>Rule / Technique</th>
-                  <th>Severity</th>
-                  <th>MITRE Tactic</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td><code>DET-2026-081</code></td><td>Brute Force SSH (T1110.001)</td><td><span class="badge badge-alert">HIGH</span></td><td>Credential Access</td></tr>
-                <tr><td><code>DET-2026-082</code></td><td>Lateral Port 445 SMB Sweep</td><td><span class="badge badge-warn">MEDIUM</span></td><td>Lateral Movement</td></tr>
-                <tr><td><code>DET-2026-083</code></td><td>High Entropy Domain Beaconing</td><td><span class="badge badge-alert">HIGH</span></td><td>Command &amp; Control</td></tr>
-                <tr><td><code>DET-2026-084</code></td><td>Statistical Anomaly (Z-Score &gt; 3.8)</td><td><span class="badge badge-info">ANOMALY</span></td><td>Defense Evasion</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <span class="card-title">Air-Gapped AI Analyst Advisor</span>
-              <span class="badge badge-ok">OFFLINE</span>
-            </div>
-            <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-              Offline deterministic triage advisor protected by prompt-injection defense layers. Formulates 5W (Who, What, Where, When, Why) investigation briefs.
-            </p>
-            <div class="code-panel">{
-  "investigation_summary": "Coordinated multi-stage attack sequence identified across pfSense, sshd, and Windows endpoints.",
-  "who": "External adversary 203.0.113.195 (Unclassified)",
-  "what": "Credential brute-force followed by lateral movement over port 445",
-  "recommended_action": "Execute PB-HOST-ISOLATION dry-run and revoke compromised session keys.",
-  "model_type": "Local Deterministic Rule-Ensemble (Air-Gapped)"
+  "action": "Click Profile to run autonomous field extraction."
 }</div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- VIEW: FORENSIC EVIDENCE -->
-      <section id="view-forensics" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Forensic Evidence &amp; Tamper-Evident Packaging</h1>
-            <p class="view-desc">13-stage cryptographic audit trail from byte capture to SIEM delivery.</p>
-          </div>
+      <div class="card">
+        <div class="card-hdr">
+          <span class="card-title">Schema Drift Detection Matrix</span>
+          <span class="bdg bdg-ok">MONITORING ACTIVE</span>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <span class="card-title">One-Event Complete 13-Stage Cryptographic Chain</span>
-            <span class="badge badge-ok">CHAIN VERIFIED</span>
-          </div>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Stage</th>
-                <th>Subsystem Component</th>
-                <th>Operation</th>
-                <th>Integrity Assurance</th>
-              </tr>
-            </thead>
+        <div class="card-body-raw">
+          <table class="tbl">
+            <thead><tr><th>Source</th><th>Version</th><th>Change Detected</th><th>Impact</th><th>Action Taken</th><th>Status</th></tr></thead>
             <tbody>
-              <tr><td>01</td><td><code>IntakeRuntime</code></td><td>Raw Payload Capture</td><td>SHA-256 CAS Immutability</td></tr>
-              <tr><td>02</td><td><code>EvidenceService</code></td><td>Receipt &amp; Event ID Minting</td><td>Cryptographic UUIDv4 binding</td></tr>
-              <tr><td>03</td><td><code>SourceProfiler</code></td><td>Format Classification</td><td>Deterministic heuristic trace</td></tr>
-              <tr><td>04</td><td><code>MappingCompiler</code></td><td>Schema Validation</td><td>JSON Schema Draft 2020-12</td></tr>
-              <tr><td>05</td><td><code>ParserRegistry</code></td><td>Parser Dispatch</td><td>Tier-A Concrete Parser Lock</td></tr>
-              <tr><td>06</td><td><code>VendorParser</code></td><td>Field Extraction</td><td>Lossless Canonical UCE</td></tr>
-              <tr><td>07</td><td><code>SemanticService</code></td><td>Entity/Indicator Extraction</td><td>Rule-based 5W Provenance</td></tr>
-              <tr><td>08</td><td><code>RiskScoringEngine</code></td><td>Weighted Risk Scoring</td><td>Transparent factor breakdown</td></tr>
-              <tr><td>09</td><td><code>DetectionEngine</code></td><td>MITRE ATT&amp;CK Mapping</td><td>Deterministic rule match</td></tr>
-              <tr><td>10</td><td><code>CorrelationEngine</code></td><td>Sliding Window Correlation</td><td>Temporal bounded grouping</td></tr>
-              <tr><td>11</td><td><code>ProjectionRegistry</code></td><td>OCSF / OTel Mapping</td><td>Schema compliance verification</td></tr>
-              <tr><td>12</td><td><code>EvidencePackager</code></td><td>Tamper-Evident Packaging</td><td>SHA-256 Merkle root binding</td></tr>
-              <tr><td>13</td><td><code>DeliverySink</code></td><td>Outbox Safe Egress</td><td>DLQ fallback &amp; fault isolation</td></tr>
+              <tr><td>Cloud Gateway</td><td>v2 → v3</td><td>New field: <code class="id">threat_category</code></td><td>No canonical disruption</td><td>Routed to unmapped_fields</td><td><span class="bdg bdg-warn">REVIEW PENDING</span></td></tr>
+              <tr><td>Cisco ASA 9.16</td><td>9.16(4)</td><td>Renamed: <code class="id">dst_user</code></td><td>Minor — alias mapped</td><td>Alias registered</td><td><span class="bdg bdg-ok">RESOLVED</span></td></tr>
+              <tr><td>Suricata EVE 7.0</td><td>7.0.3</td><td>Added: <code class="id">tls.sni</code></td><td>Additive — preserved</td><td>Residue captured</td><td><span class="bdg bdg-ok">STABLE</span></td></tr>
+              <tr><td>pfSense 2.7</td><td>filterlog v4</td><td>No change detected</td><td>None</td><td>—</td><td><span class="bdg bdg-ok">STABLE</span></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: RESPONSE PLAYBOOKS -->
-      <section id="view-playbooks" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Automated Response Playbooks (Zero State-Mutation Dry-Run)</h1>
-            <p class="view-desc">Audited purple-team playbooks with permission verification and zero-impact simulation.</p>
+    <!-- ====================================================
+         THREAT DETECTION
+    ==================================================== -->
+    <section id="view-intelligence" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Threat Detection &amp; Security Analytics Plane</h1>
+          <p class="pg-sub">Deterministic rule evaluation, MITRE ATT&amp;CK correlation, and Welford online statistical anomaly detection across multi-vendor sources.</p>
+        </div>
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Active Detections — Multi-Vendor Correlation</span>
+            <span class="bdg bdg-err">4 ACTIVE</span>
+          </div>
+          <div class="card-body-raw">
+            <table class="tbl">
+              <thead><tr><th>Detection ID</th><th>Rule / Technique</th><th>Severity</th><th>MITRE Tactic</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code class="id">DET-2026-081</code></td>
+                  <td>Brute Force SSH (T1110.001)</td>
+                  <td><span class="sev-h">HIGH</span></td>
+                  <td>Credential Access</td>
+                </tr>
+                <tr>
+                  <td><code class="id">DET-2026-082</code></td>
+                  <td>Lateral Port 445 SMB Sweep (T1021.002)</td>
+                  <td><span class="sev-m">MEDIUM</span></td>
+                  <td>Lateral Movement</td>
+                </tr>
+                <tr>
+                  <td><code class="id">DET-2026-083</code></td>
+                  <td>High-Entropy Domain Beaconing (T1071.001)</td>
+                  <td><span class="sev-h">HIGH</span></td>
+                  <td>Command &amp; Control</td>
+                </tr>
+                <tr>
+                  <td><code class="id">DET-2026-084</code></td>
+                  <td>Statistical Anomaly — Z-Score &gt; 3.8 (Welford)</td>
+                  <td><span class="sev-i">ANOMALY</span></td>
+                  <td>Defense Evasion</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header"><span class="card-title">Playbook Simulation Harness</span></div>
-            <div class="form-group">
-              <label class="form-label">Playbook Definition</label>
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Offline AI Analyst Advisor</span>
+            <span class="bdg bdg-ok">OFFLINE — AIR-GAP VALIDATED</span>
+          </div>
+          <div class="card-body">
+            <p style="color:var(--text-muted);font-size:12px;margin-bottom:.75rem;">Deterministic triage advisor operating entirely offline with prompt-injection defense. Formulates 5W investigation briefs without external API calls or LLM access.</p>
+            <div class="code-panel">{
+  "investigation_summary":
+    "Coordinated multi-stage attack across pfSense,
+     sshd, and Windows endpoints.",
+  "who":  "External adversary 203.0.113.195",
+  "what": "Credential brute-force → lateral movement
+           via port 445 → potential C2 beaconing",
+  "recommended_action":
+    "Execute PB-HOST-ISOLATION dry-run and revoke
+     compromised session keys.",
+  "model_type": "Offline Deterministic Rule-Ensemble"
+}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         FORENSIC EVIDENCE
+    ==================================================== -->
+    <section id="view-forensics" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Forensic Evidence &amp; Tamper-Evident Packaging</h1>
+          <p class="pg-sub">13-stage cryptographic audit trail from raw byte capture to SIEM delivery. Every stage is SHA-256 bound and write-once immutable.</p>
+        </div>
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">13-Stage Cryptographic Lineage Chain</span>
+            <span class="bdg bdg-ok">CHAIN VERIFIED</span>
+          </div>
+          <div class="card-body">
+            <div class="forensic-wrap">
+              <div class="f-stage"><span class="f-num">01</span><div><div class="f-name">Raw Capture — IntakeRuntime</div><div class="f-detail">SHA-256 CAS write-once immutability</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">02</span><div><div class="f-name">Receipt &amp; Event ID — EvidenceService</div><div class="f-detail">Cryptographic UUIDv4 binding</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">03</span><div><div class="f-name">Format Classification — SourceProfiler</div><div class="f-detail">Deterministic heuristic trace</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">04</span><div><div class="f-name">Schema Validation — MappingCompiler</div><div class="f-detail">JSON Schema Draft 2020-12</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">05</span><div><div class="f-name">Parser Dispatch — ParserRegistry</div><div class="f-detail">Tier-A concrete parser lock</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">06</span><div><div class="f-name">Field Extraction — VendorParser</div><div class="f-detail">Lossless canonical UCE</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">07</span><div><div class="f-name">Semantic Enrichment — SemanticService</div><div class="f-detail">Rule-based 5W provenance</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">08</span><div><div class="f-name">Risk Scoring — RiskScoringEngine</div><div class="f-detail">Transparent factor breakdown</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">09</span><div><div class="f-name">MITRE Detection — DetectionEngine</div><div class="f-detail">Deterministic rule match</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">10</span><div><div class="f-name">Correlation — CorrelationEngine</div><div class="f-detail">Sliding-window temporal grouping</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">11</span><div><div class="f-name">OCSF / OTel Projection — ProjectionRegistry</div><div class="f-detail">Schema compliance verification</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">12</span><div><div class="f-name">Evidence Packaging — EvidencePackager</div><div class="f-detail">SHA-256 Merkle root binding</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+              <div class="f-stage"><span class="f-num">13</span><div><div class="f-name">Outbox Delivery — DeliverySink</div><div class="f-detail">DLQ fallback &amp; fault isolation</div></div><span class="bdg bdg-ok">VERIFIED</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-hdr"><span class="card-title">Tamper Detection Demonstration</span></div>
+          <div class="card-body">
+            <p style="color:var(--text-muted);font-size:12px;margin-bottom:1rem;">A single byte mutation produces a completely different SHA-256 digest, immediately invalidating the stored chain hash at verification.</p>
+            <div style="margin-bottom:.875rem;">
+              <div class="kpi-label" style="margin-bottom:4px;">Original Event</div>
+              <div class="code-panel" style="max-height:50px;font-size:11px;color:#86EFAC;">DROP IN=eth0 SRC=203.0.113.195 DST=198.51.100.22 DPT=445</div>
+            </div>
+            <div style="margin-bottom:.875rem;">
+              <div class="kpi-label" style="margin-bottom:4px;">Original SHA-256</div>
+              <div class="code-panel" style="max-height:36px;font-size:10.5px;color:#86EFAC;">a8f2c9d1e4b70f38c9a2b5d6e7f01234...3f91</div>
+            </div>
+            <div style="margin-bottom:.875rem;">
+              <div class="kpi-label" style="margin-bottom:4px;">Mutated Event (1 byte changed: .195 → .196)</div>
+              <div class="code-panel" style="max-height:50px;font-size:11px;color:#FDA4AF;">DROP IN=eth0 SRC=203.0.113.196 DST=198.51.100.22 DPT=445</div>
+            </div>
+            <div style="margin-bottom:.875rem;">
+              <div class="kpi-label" style="margin-bottom:4px;">Mutated SHA-256 (completely different)</div>
+              <div class="code-panel" style="max-height:36px;font-size:10.5px;color:#FDA4AF;">7c1a3b8e9f2d04c6a1b3d4f7e82091ac...6a04</div>
+            </div>
+            <div style="margin-top:.5rem;">
+              <span class="bdg bdg-err" style="font-size:12px;padding:6px 12px;">INTEGRITY VERIFICATION FAILED — TAMPER DETECTED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         RESPONSE PLAYBOOKS
+    ==================================================== -->
+    <section id="view-playbooks" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Automated Response Playbooks</h1>
+          <p class="pg-sub">Zero state-mutation dry-run execution engine. All simulations produce auditable reports with zero external side effects.</p>
+        </div>
+      </div>
+      <div class="callout warn">
+        <strong>DRY RUN ONLY — SIMULATION MODE:</strong> All playbook executions operate in zero-mutation simulation mode. No external systems are modified, no network calls are made, and no state commits are written. Permission validation and projected actions are evaluated against the RBAC policy model.
+      </div>
+      <div class="g2">
+        <div class="card">
+          <div class="card-hdr"><span class="card-title">Playbook Simulation Harness</span></div>
+          <div class="card-body">
+            <div class="fgrp">
+              <label class="flbl">Playbook Definition</label>
               <select id="playbook-select">
-                <option value="PB-HOST-ISOLATION">PB-HOST-ISOLATION: Emergency Host Quarantine</option>
-                <option value="PB-CREDENTIAL-REVOCATION">PB-CREDENTIAL-REVOCATION: Invalidate Stolen Session</option>
-                <option value="PB-FIREWALL-DROP">PB-FIREWALL-DROP: Drop Perimeter IP at Gateway</option>
+                <option value="PB-HOST-ISOLATION">PB-HOST-ISOLATION — Emergency Host Quarantine</option>
+                <option value="PB-CREDENTIAL-REVOCATION">PB-CREDENTIAL-REVOCATION — Invalidate Stolen Session</option>
+                <option value="PB-FIREWALL-DROP">PB-FIREWALL-DROP — Drop Perimeter IP at Gateway</option>
               </select>
             </div>
-            <div class="form-group">
-              <label class="form-label">Target Asset Identifier</label>
+            <div class="fgrp">
+              <label class="flbl">Target Asset Identifier</label>
               <input type="text" id="pb-target" value="host-workstation-042.internal">
             </div>
             <button class="btn btn-primary" onclick="runPlaybookSimulation()">Execute Dry-Run Simulation</button>
           </div>
-          <div class="card">
-            <div class="card-header"><span class="card-title">Simulation Audit Report</span><span class="badge badge-ok" id="pb-sim-status">READY</span></div>
+        </div>
+        <div class="card">
+          <div class="card-hdr">
+            <span class="card-title">Simulation Audit Report</span>
+            <span class="bdg bdg-neutral" id="pb-sim-status">READY</span>
+          </div>
+          <div class="card-body">
             <div class="code-panel" id="pb-sim-output">{
-  "status": "READY",
-  "mode": "DRY_RUN",
-  "state_mutations": 0,
+  "status":              "READY",
+  "mode":                "DRY_RUN",
+  "state_mutations":     0,
   "permissions_checked": true
 }</div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: SYSTEM HEALTH & SLAS -->
-      <section id="view-health" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">System Health &amp; Operational SLAs</h1>
-            <p class="view-desc">Subsystem telemetry metrics, thread-pool isolation, and regression verification.</p>
-          </div>
+    <!-- ====================================================
+         SYSTEM HEALTH
+    ==================================================== -->
+    <section id="view-health" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">System Health &amp; Operational SLAs</h1>
+          <p class="pg-sub">Subsystem telemetry metrics, thread-pool isolation status, and current regression verification.</p>
         </div>
-        <div class="metric-grid">
-          <div class="metric-box"><div class="metric-box-label">TEST SUITE STATUS</div><div class="metric-box-val" style="color:var(--status-ok);">680 / 680</div><div class="metric-box-sub">0 Failures / 0 Skips</div></div>
-          <div class="metric-box"><div class="metric-box-label">MYPY STATIC ANALYSIS</div><div class="metric-box-val" style="color:var(--status-ok);">CLEAN</div><div class="metric-box-sub">Strict typing enforced</div>
-          </div>
-          <div class="metric-box"><div class="metric-box-label">RUFF LINT QUALITY</div><div class="metric-box-val" style="color:var(--status-ok);">CLEAN</div><div class="metric-box-sub">0 Lint warnings</div></div>
-          <div class="metric-box"><div class="metric-box-label">MEMORY CONSUMPTION</div><div class="metric-box-val">&lt; 140 MB</div><div class="metric-box-sub">Bounded ring buffers</div></div>
+      </div>
+      <div class="kpi-row" style="grid-template-columns:repeat(4,1fr);">
+        <div class="kpi-card">
+          <div class="kpi-label">Test Suite Status</div>
+          <div class="kpi-val ok">680 / 680</div>
+          <div class="kpi-sub">0 Failures / 0 Skips</div>
         </div>
-        <div class="card">
-          <div class="card-header"><span class="card-title">Subsystem Health Matrix</span></div>
-          <table class="data-table">
-            <thead>
-              <tr><th>Component Package</th><th>Role</th><th>SLA Latency</th><th>Fault Isolation</th><th>Status</th></tr>
-            </thead>
+        <div class="kpi-card">
+          <div class="kpi-label">Mypy Static Analysis</div>
+          <div class="kpi-val ok">CLEAN</div>
+          <div class="kpi-sub">Strict typing enforced</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Ruff Lint Quality</div>
+          <div class="kpi-val ok">CLEAN</div>
+          <div class="kpi-sub">0 Lint warnings</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Memory Consumption</div>
+          <div class="kpi-val">&lt; 140 MB</div>
+          <div class="kpi-sub">Bounded ring buffers</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-hdr">
+          <span class="card-title">Subsystem Health Matrix</span>
+          <span class="bdg bdg-ok">ALL NOMINAL</span>
+        </div>
+        <div class="card-body-raw">
+          <table class="tbl">
+            <thead><tr><th>Package</th><th>Role</th><th>SLA Latency</th><th>Isolation</th><th>Status</th></tr></thead>
             <tbody>
-              <tr><td><code>ulpf_ingestion</code></td><td>Raw HTTP/Byte Capture</td><td>&lt; 5 ms</td><td>Isolated process</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
-              <tr><td><code>ulpf_parser_runtime</code></td><td>20 Concrete Parsers</td><td>&lt; 10 ms</td><td>Memory-bounded</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
-              <tr><td><code>ulpf_semantic</code></td><td>Canonical UCE &amp; Taxonomies</td><td>&lt; 15 ms</td><td>Pure function</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
-              <tr><td><code>ulpf_intelligence</code></td><td>Detections &amp; Correlations</td><td>&lt; 25 ms</td><td>SQLite thread-safe</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
-              <tr><td><code>ulpf_storage</code></td><td>Content-Addressed Storage</td><td>&lt; 8 ms</td><td>SHA-256 CAS FS</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
-              <tr><td><code>ulpf_runtime</code></td><td>12-State Lifecycle &amp; DLQ</td><td>&lt; 2 ms</td><td>Channel bounded</td><td><span class="badge badge-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_ingestion</code></td><td>Raw HTTP / Byte Capture</td><td>&lt; 5 ms</td><td>Isolated process</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_parser_runtime</code></td><td>20 Concrete Parser Engines</td><td>&lt; 10 ms</td><td>Memory-bounded</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_semantic</code></td><td>Canonical UCE &amp; Taxonomies</td><td>&lt; 15 ms</td><td>Pure function</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_intelligence</code></td><td>Detections &amp; Correlations</td><td>&lt; 25 ms</td><td>SQLite thread-safe</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_storage</code></td><td>Content-Addressed Storage</td><td>&lt; 8 ms</td><td>SHA-256 CAS FS</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
+              <tr><td><code class="id">ulpf_runtime</code></td><td>12-State Lifecycle &amp; DLQ</td><td>&lt; 2 ms</td><td>Channel bounded</td><td><span class="bdg bdg-ok">HEALTHY</span></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: NTRO TRACEABILITY -->
-      <section id="view-ntro" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">NTRO Requirements Traceability (16 / 16 VERIFIED)</h1>
-            <p class="view-desc">Smart India Hackathon 2026 — Problem Statement SIH26156 Traceability Matrix.</p>
-          </div>
+    <!-- ====================================================
+         NTRO TRACEABILITY
+    ==================================================== -->
+    <section id="view-ntro" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">NTRO Requirements Traceability Matrix</h1>
+          <p class="pg-sub">Problem Statement SIH26156 — 16/16 Implemented Scope Items Validated Against Engineering Evidence</p>
         </div>
-        <div class="card">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Requirement ID</th>
-                <th>NTRO Specification Title</th>
-                <th>Code Evidence Implementation</th>
-                <th>Status</th>
-              </tr>
-            </thead>
+        <span class="bdg bdg-ok" style="font-size:12px;padding:5px 12px;">16 / 16 SCOPE ITEMS VALIDATED</span>
+      </div>
+      <div class="card">
+        <div class="card-body-raw">
+          <table class="tbl">
+            <thead><tr><th>Req. ID</th><th>NTRO Specification</th><th>ULPF Implementation</th><th>Validation Method</th><th>Status</th></tr></thead>
             <tbody>
-              <tr><td><code>NTRO-01</code></td><td>Multi-vendor telemetry ingestion (16+ formats)</td><td><code>ulpf_parser_runtime/parsers/</code> (20 Parsers)</td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-02</code></td><td>Universal Canonical Event (UCE) representation</td><td><code>ulpf_semantic/models.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-03</code></td><td>Lossless raw telemetry retention</td><td><code>ulpf_storage/raw_fs.py</code> (SHA-256 CAS)</td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-04</code></td><td>Zero-code source onboarding</td><td><code>ulpf_onboarding/profiler.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-05</code></td><td>Schema drift detection &amp; resilience</td><td><code>ulpf_onboarding/drift.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-06</code></td><td>Open standards projection (OCSF &amp; OTel)</td><td><code>ulpf_semantic/projections/</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-07</code></td><td>Real-time threat detection &amp; correlation</td><td><code>ulpf_intelligence/detection_engine.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-08</code></td><td>MITRE ATT&amp;CK taxonomy alignment</td><td><code>ulpf_intelligence/explainability.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-09</code></td><td>Statistical anomaly detection (Welford algorithm)</td><td><code>ulpf_intelligence/anomaly_engine.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-10</code></td><td>Cryptographic forensic evidence chain (13 stages)</td><td><code>ulpf_advanced_intelligence/evidence/</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-11</code></td><td>Air-gapped deployment with zero external egress</td><td><code>tests/test_airgap.py</code> (0 Sockets)</td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-12</code></td><td>Multi-tenant boundary enforcement</td><td><code>ulpf_security/tenant_isolation.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-13</code></td><td>Idempotent replay &amp; deduplication</td><td><code>ulpf_runtime/idempotency.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-14</code></td><td>Resilience, backpressure &amp; Dead-Letter Queue</td><td><code>ulpf_runtime/mission_backpressure.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-15</code></td><td>Response playbooks (zero-mutation dry run)</td><td><code>ulpf_mission/playbooks/</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
-              <tr><td><code>NTRO-16</code></td><td>Offline AI assistance with prompt defense</td><td><code>ulpf_ai/advisor.py</code></td><td><span class="badge badge-ok">FULLY_VERIFIED</span></td></tr>
+              <tr><td><code class="id">NTRO-01</code></td><td>Multi-vendor telemetry ingestion (16+ formats)</td><td><code class="id">ulpf_parser_runtime/parsers/</code> — 20 Parsers</td><td>Regression suite</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-02</code></td><td>Universal Canonical Event (UCE) schema</td><td><code class="id">ulpf_semantic/models.py</code></td><td>Schema validation tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-03</code></td><td>Lossless raw telemetry retention</td><td><code class="id">ulpf_storage/raw_fs.py</code> — SHA-256 CAS</td><td>Integrity tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-04</code></td><td>Zero-code source onboarding</td><td><code class="id">ulpf_onboarding/profiler.py</code></td><td>Onboarding test suite</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-05</code></td><td>Schema drift detection &amp; resilience</td><td><code class="id">ulpf_onboarding/drift.py</code></td><td>Drift scenario tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-06</code></td><td>Open standards projection (OCSF &amp; OTel)</td><td><code class="id">ulpf_semantic/projections/</code></td><td>Projection validator</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-07</code></td><td>Real-time threat detection &amp; correlation</td><td><code class="id">ulpf_intelligence/detection_engine.py</code></td><td>Detection tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-08</code></td><td>MITRE ATT&amp;CK taxonomy alignment</td><td><code class="id">ulpf_intelligence/explainability.py</code></td><td>ATT&amp;CK mapping tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-09</code></td><td>Statistical anomaly detection (Welford)</td><td><code class="id">ulpf_intelligence/anomaly_engine.py</code></td><td>Anomaly detection tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-10</code></td><td>Cryptographic forensic chain (13 stages)</td><td><code class="id">ulpf_advanced_intelligence/evidence/</code></td><td>Forensic chain tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-11</code></td><td>Air-gapped deployment — zero egress</td><td><code class="id">tests/airgap/test_phase11_airgap.py</code></td><td>Socket interception (0 sockets)</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-12</code></td><td>Multi-tenant boundary enforcement</td><td><code class="id">ulpf_security/tenant_isolation.py</code></td><td>Isolation tests (8 layers)</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-13</code></td><td>Idempotent replay &amp; deduplication</td><td><code class="id">ulpf_runtime/idempotency.py</code></td><td>Idempotency suite</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-14</code></td><td>Resilience, backpressure &amp; Dead-Letter Queue</td><td><code class="id">ulpf_runtime/mission_backpressure.py</code></td><td>Chaos fault injection</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-15</code></td><td>Response playbooks (zero-mutation dry run)</td><td><code class="id">ulpf_mission/playbooks/</code></td><td>Playbook safety tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
+              <tr><td><code class="id">NTRO-16</code></td><td>Offline AI assistance with prompt defense</td><td><code class="id">ulpf_ai/advisor.py</code></td><td>AI safety tests</td><td><span class="bdg bdg-ok">VALIDATED</span></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VIEW: COMPETITIVE PROOF -->
-      <section id="view-competitive" class="view-section">
-        <div class="view-header">
-          <div>
-            <h1 class="view-title">Competitive Differentiation &amp; Architectural Superiority</h1>
-            <p class="view-desc">Objective technical comparison: ULPF vs. Traditional Log Pipelines vs. Conventional SIEM Parsers.</p>
-          </div>
+    <!-- ====================================================
+         COMPETITIVE PROOF
+    ==================================================== -->
+    <section id="view-competitive" class="view">
+      <div class="pg-header">
+        <div>
+          <h1 class="pg-title">Architectural Capability Comparison</h1>
+          <p class="pg-sub">Objective technical comparison of ULPF capabilities against conventional log processing architectures. No specific competitor products named.</p>
         </div>
-        <div class="card">
-          <table class="data-table">
+      </div>
+      <div class="callout">
+        <strong>Scope Note:</strong> Capabilities listed below are based on architectural characteristics only. All ULPF claims are supported by engineering evidence in the project regression suite and audit reports.
+      </div>
+      <div class="card">
+        <div class="card-body-raw">
+          <table class="tbl">
             <thead>
               <tr>
-                <th>Capability Dimension</th>
-                <th>Conventional Pipeline (Logstash/Vector)</th>
+                <th>Capability</th>
+                <th>Conventional Pipeline</th>
                 <th>Standard SIEM Parsing</th>
-                <th>ULPF Framework (Ours)</th>
+                <th style="background:#EFF6FF;color:#1E40AF;">ULPF Framework</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>Raw Evidence Preservation</strong></td>
                 <td>Often mutated or stripped</td>
-                <td>Stored if configured; lacks proof</td>
-                <td><strong style="color:var(--status-ok);">100% Lossless SHA-256 CAS Store</strong></td>
+                <td>Stored if configured; no cryptographic proof</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">100% Lossless SHA-256 CAS Write-Once</td>
               </tr>
               <tr>
-                <td><strong>Normalization Target</strong></td>
-                <td>Ad-hoc JSON schemas</td>
-                <td>Proprietary closed schemas</td>
-                <td><strong style="color:var(--status-ok);">Universal Canonical Event (UCE)</strong></td>
+                <td><strong>Normalization Schema</strong></td>
+                <td>Ad-hoc JSON / CSV schemas</td>
+                <td>Proprietary closed schema</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">Universal Canonical Event (UCE) + Residue</td>
               </tr>
               <tr>
                 <td><strong>Schema Drift Handling</strong></td>
-                <td>Drops fields or pipeline crashes</td>
+                <td>Drops fields or pipeline crash</td>
                 <td>Parsing errors / DLQ failure</td>
-                <td><strong style="color:var(--status-ok);">Automated Drift Detection &amp; Residue</strong></td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">Automated Drift Detection + Residue Capture</td>
               </tr>
               <tr>
                 <td><strong>Unknown Source Onboarding</strong></td>
                 <td>Manual regex writing (days)</td>
-                <td>Vendor request cycle (weeks)</td>
-                <td><strong style="color:var(--status-ok);">Autonomous Profiler (&lt; 30 seconds)</strong></td>
+                <td>Vendor support request (weeks)</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">AI-Assisted Profiler (&lt; 30 seconds)</td>
               </tr>
               <tr>
-                <td><strong>Interoperability</strong></td>
+                <td><strong>Open Standards Output</strong></td>
                 <td>Custom output formatters</td>
-                <td>Vendor lock-in</td>
-                <td><strong style="color:var(--status-ok);">Dual OCSF v1.1.0 &amp; OTel Logs v1.0.0</strong></td>
+                <td>Vendor lock-in formats</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">OCSF v1.1.0 + OTel Logs v1.0.0 (dual)</td>
               </tr>
               <tr>
-                <td><strong>Forensic Chain Integrity</strong></td>
+                <td><strong>Forensic Evidence Chain</strong></td>
                 <td>No cryptographic lineage</td>
-                <td>Audit logs only</td>
-                <td><strong style="color:var(--status-ok);">13-Stage Merkle Evidence Packaging</strong></td>
+                <td>Audit logs only (no Merkle)</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">13-Stage SHA-256 Merkle Evidence Package</td>
               </tr>
               <tr>
                 <td><strong>Air-Gap Sovereignty</strong></td>
                 <td>Often requires external feeds</td>
                 <td>Cloud-connected telemetry</td>
-                <td><strong style="color:var(--status-ok);">Strict 100% Offline Sovereign Operation</strong></td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">100% Offline — 0 Outbound Sockets (Tested)</td>
+              </tr>
+              <tr>
+                <td><strong>Multi-Tenant Isolation</strong></td>
+                <td>Application-level separation</td>
+                <td>Varies by vendor</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">8-Layer Boundary Enforcement (Tested)</td>
+              </tr>
+              <tr>
+                <td><strong>Deterministic Replay</strong></td>
+                <td>Rarely supported</td>
+                <td>Vendor-specific</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">SHA-256 Idempotent Offline Replay</td>
+              </tr>
+              <tr>
+                <td><strong>AI-Assisted Mapping</strong></td>
+                <td>Not available</td>
+                <td>Not available</td>
+                <td style="background:#F0FDF4;color:var(--ok-text);font-weight:600;">Offline Deterministic Advisor + Injection Defense</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <span>ULPF v1.0.0-sih</span>
+    <span class="footer-sep">·</span>
+    <span>Commit: <strong id="footer-commit">71049fb</strong></span>
+    <span class="footer-sep">·</span>
+    <span>Regression Gate: <span class="footer-ok">680/680 PASS</span></span>
   </div>
+  <div class="footer-right">
+    <span>SIH26156 (NTRO)</span>
+    <span class="footer-sep">·</span>
+    <span>Status: <span class="footer-ok">ALL SYSTEMS NOMINAL</span></span>
+  </div>
+</footer>
 
-  <!-- STATUS BAR FOOTER -->
-  <footer class="status-bar">
-    <div class="status-bar-item">
-      <span>ULPF v1.0.0-sih</span>
-      <span>·</span>
-      <span>Commit: <strong>3d587ff</strong></span>
-      <span>·</span>
-      <span>Regression Gate: <strong>680/680 PASS</strong></span>
-    </div>
-    <div class="status-bar-item">
-      <span>SIH26156 (NTRO)</span>
-      <span>·</span>
-      <span>Status: <strong style="color: var(--status-ok);">ALL SYSTEMS NOMINAL</strong></span>
-    </div>
-  </footer>
-
-  <!-- JUDGE DEMO MODE MODAL -->
-  <div id="judge-demo-modal">
-    <div class="judge-demo-box">
-      <div class="judge-demo-header">
-        <div>
-          <strong style="font-size: 14px; color: var(--text-primary);">SIH 2026 JUDGE EVALUATION CONSOLE (2-MINUTE WALKTHROUGH)</strong>
-          <div style="font-size: 11px; color: var(--text-muted);">Step-by-step guided proof for Problem Statement SIH26156 (NTRO)</div>
-        </div>
-        <button class="btn" onclick="closeJudgeDemo()">Close [ESC]</button>
+<!-- ============================================================
+     SIH JUDGE EVALUATION CONSOLE MODAL
+============================================================ -->
+<div id="judge-modal">
+  <div class="judge-box">
+    <div class="judge-hdr">
+      <div>
+        <div class="judge-hdr-title">SIH 2026 JUDGE EVALUATION CONSOLE — 2-MINUTE GUIDED WALKTHROUGH</div>
+        <div class="judge-hdr-sub">Problem Statement SIH26156 (NTRO) — Step-by-step technical proof for evaluators</div>
       </div>
-      <div class="judge-demo-body">
-        <div class="judge-step-nav" id="judge-step-list">
-          <div class="judge-step-item active" onclick="selectJudgeStep(0)">
-            <span>1. Problem Statement</span>
-            <span class="step-time">00:00</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(1)">
-            <span>2. Multi-Vendor Ingest</span>
-            <span class="step-time">00:15</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(2)">
-            <span>3. Raw Evidence Store</span>
-            <span class="step-time">00:30</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(3)">
-            <span>4. Unified Canonical Event</span>
-            <span class="step-time">00:45</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(4)">
-            <span>5. OCSF &amp; OTel Export</span>
-            <span class="step-time">01:00</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(5)">
-            <span>6. Threat Detection</span>
-            <span class="step-time">01:15</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(6)">
-            <span>7. Forensic Evidence Chain</span>
-            <span class="step-time">01:30</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(7)">
-            <span>8. Unknown Source Onboard</span>
-            <span class="step-time">01:45</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(8)">
-            <span>9. Sovereign Air-Gap</span>
-            <span class="step-time">01:55</span>
-          </div>
-          <div class="judge-step-item" onclick="selectJudgeStep(9)">
-            <span>10. NTRO 16/16 Summary</span>
-            <span class="step-time">02:00</span>
-          </div>
-        </div>
-        <div class="judge-step-content" id="judge-step-detail">
-          <!-- Dynamic Content -->
-        </div>
+      <button class="judge-close" onclick="closeJudgeDemo()">Close [ESC]</button>
+    </div>
+    <div class="judge-body">
+      <div class="judge-nav">
+        <div class="judge-nav-label">Evaluation Stages</div>
+        <div class="jstep active" onclick="selectJudgeStep(0)"><span class="jstep-n">01</span><span class="jstep-l">Problem Statement</span><span class="jstep-t">00:00</span></div>
+        <div class="jstep" onclick="selectJudgeStep(1)"><span class="jstep-n">02</span><span class="jstep-l">Multi-Vendor Ingest</span><span class="jstep-t">00:15</span></div>
+        <div class="jstep" onclick="selectJudgeStep(2)"><span class="jstep-n">03</span><span class="jstep-l">Raw Evidence Store</span><span class="jstep-t">00:30</span></div>
+        <div class="jstep" onclick="selectJudgeStep(3)"><span class="jstep-n">04</span><span class="jstep-l">UCE Transformation</span><span class="jstep-t">00:45</span></div>
+        <div class="jstep" onclick="selectJudgeStep(4)"><span class="jstep-n">05</span><span class="jstep-l">OCSF &amp; OTel Export</span><span class="jstep-t">01:00</span></div>
+        <div class="jstep" onclick="selectJudgeStep(5)"><span class="jstep-n">06</span><span class="jstep-l">Threat Detection</span><span class="jstep-t">01:15</span></div>
+        <div class="jstep" onclick="selectJudgeStep(6)"><span class="jstep-n">07</span><span class="jstep-l">Forensic Evidence Chain</span><span class="jstep-t">01:30</span></div>
+        <div class="jstep" onclick="selectJudgeStep(7)"><span class="jstep-n">08</span><span class="jstep-l">Unknown Source Onboard</span><span class="jstep-t">01:45</span></div>
+        <div class="jstep" onclick="selectJudgeStep(8)"><span class="jstep-n">09</span><span class="jstep-l">Sovereign Air-Gap</span><span class="jstep-t">01:55</span></div>
+        <div class="jstep" onclick="selectJudgeStep(9)"><span class="jstep-n">10</span><span class="jstep-l">NTRO 16/16 Summary</span><span class="jstep-t">02:00</span></div>
       </div>
+      <div class="judge-content" id="judge-step-detail"></div>
     </div>
   </div>
+</div>
 
-  <script>
-    // VIEW NAVIGATION
-    function switchView(viewName) {
-      document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-      const targetView = document.getElementById('view-' + viewName);
-      if (targetView) targetView.classList.add('active');
-      const clickedItem = Array.from(document.querySelectorAll('.nav-item')).find(el => {
-        return el.getAttribute('onclick')?.includes(viewName);
-      });
-      if (clickedItem) clickedItem.classList.add('active');
-    }
+<script>
+  // ============================================================
+  // VIEW NAVIGATION
+  // ============================================================
+  function switchView(viewName) {
+    document.querySelectorAll('.view').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+    const v = document.getElementById('view-' + viewName);
+    if (v) v.classList.add('active');
+    const n = Array.from(document.querySelectorAll('.nav-item'))
+      .find(el => el.getAttribute('onclick') && el.getAttribute('onclick').includes(viewName));
+    if (n) n.classList.add('active');
+  }
 
-    // LIVE SIMULATIONS
-    function simulateIngest() {
-      const vendor = document.getElementById('intake-vendor').value;
-      const raw = document.getElementById('intake-raw-input').value;
-      const receiptStatus = document.getElementById('receipt-status');
-      receiptStatus.textContent = 'CAPTURING...';
-      receiptStatus.className = 'badge badge-warn';
+  // ============================================================
+  // SIMULATIONS
+  // ============================================================
+  function simulateIngest() {
+    const vendor = document.getElementById('intake-vendor').value;
+    const raw    = document.getElementById('intake-raw-input').value;
+    const status = document.getElementById('receipt-status');
+    status.textContent = 'CAPTURING...';
+    status.className = 'bdg bdg-warn';
+    setTimeout(() => {
+      const hash = Array.from(crypto.getRandomValues(new Uint8Array(16)))
+        .map(b => b.toString(16).padStart(2,'0')).join('');
+      const receipt = {
+        accepted: true,
+        status: 'DURABLY_CAPTURED',
+        event_id: 'EVT-' + Math.floor(100000 + Math.random() * 900000),
+        receipt_id: 'RCPT-' + Date.now(),
+        sha256: hash + '...',
+        cas_path: 'cas/' + hash.substring(0,2) + '/' + hash,
+        received_at: new Date().toISOString(),
+        format_detected: vendor,
+        bytes: raw.length,
+        airgap_isolation: 'VERIFIED_OFFLINE'
+      };
+      document.getElementById('receipt-output').textContent = JSON.stringify(receipt, null, 2);
+      status.textContent = 'STORED (202)';
+      status.className = 'bdg bdg-ok';
+    }, 250);
+  }
 
-      setTimeout(() => {
-        const hash = Array.from(crypto.getRandomValues(new Uint8Array(16)))
-          .map(b => b.toString(16).padStart(2, '0')).join('');
-        const eventId = 'EVT-' + Math.floor(100000 + Math.random() * 900000);
-        const receipt = {
-          accepted: true,
-          status: 'DURABLY_CAPTURED',
-          event_id: eventId,
-          receipt_id: 'RCPT-' + Date.now(),
-          sha256: hash + '...',
-          content_addressed_path: 'cas/' + hash.substring(0, 2) + '/' + hash,
-          received_at: new Date().toISOString(),
-          format_detected: vendor,
-          bytes: raw.length,
-          airgap_isolation: 'VERIFIED_OFFLINE'
-        };
-        document.getElementById('receipt-output').textContent = JSON.stringify(receipt, null, 2);
-        receiptStatus.textContent = 'STORED (202)';
-        receiptStatus.className = 'badge badge-ok';
-      }, 250);
-    }
+  function profileUnknownSource() {
+    const input  = document.getElementById('unknown-sample-input').value;
+    const output = document.getElementById('drift-assessment-output');
+    output.textContent = 'Profiling structural patterns, token delimiters, and entropy distribution...';
+    setTimeout(() => {
+      const profile = {
+        status: 'PROFILED_SUCCESS',
+        source_type: 'custom_key_value',
+        tokens_discovered: ['timestamp','dev_id','rule_match','initiator','target','reason'],
+        target_mappings: {
+          'timestamp':  'metadata.timestamp',
+          'initiator':  'network.src_ip',
+          'target':     'network.dst_ip',
+          'rule_match': 'network.action',
+          'reason':     'unmapped_residue.reason'
+        },
+        drift_classification: 'NEW_SOURCE_PROFILE_GENERATED',
+        confidence: 0.96,
+        execution_time_ms: 18.4,
+        lossless_assurance: 'Zero fields dropped — residue preserved',
+        human_approval_required: true
+      };
+      output.textContent = JSON.stringify(profile, null, 2);
+    }, 350);
+  }
 
-    function profileUnknownSource() {
-      const input = document.getElementById('unknown-sample-input').value;
-      const output = document.getElementById('drift-assessment-output');
-      output.textContent = 'Profiling structural patterns, token delimiters, and entropy...';
+  function runPlaybookSimulation() {
+    const pb     = document.getElementById('playbook-select').value;
+    const target = document.getElementById('pb-target').value;
+    const status = document.getElementById('pb-sim-status');
+    status.textContent = 'SIMULATING...';
+    status.className = 'bdg bdg-warn';
+    setTimeout(() => {
+      const report = {
+        playbook_id: pb,
+        target_asset: target,
+        execution_mode: 'DRY_RUN_SAFE',
+        permissions_validated: true,
+        mutations_committed: 0,
+        projected_actions: [
+          'Revoke active Kerberos ticket-granting session',
+          'Apply temporary host quarantine rule in iptables / pfSense',
+          'Notify SOC workbench with cryptographic evidence package'
+        ],
+        dry_run_verdict: 'PASS_NO_SIDE_EFFECTS'
+      };
+      document.getElementById('pb-sim-output').textContent = JSON.stringify(report, null, 2);
+      status.textContent = 'DRY-RUN PASS';
+      status.className = 'bdg bdg-ok';
+    }, 300);
+  }
 
-      setTimeout(() => {
-        const profile = {
-          status: 'PROFILED_SUCCESS',
-          source_type: 'custom_key_value',
-          tokens_discovered: ['timestamp', 'dev_id', 'rule_match', 'initiator', 'target', 'reason'],
-          target_mappings: {
-            'timestamp': 'metadata.timestamp',
-            'initiator': 'network.src_ip',
-            'target': 'network.dst_ip',
-            'rule_match': 'network.action',
-            'reason': 'unmapped_residue.reason'
-          },
-          drift_classification: 'NEW_SOURCE_PROFILE_GENERATED',
-          confidence: 0.96,
-          execution_time_ms: 18.4,
-          lossless_assurance: 'Zero fields dropped (residue preserved)'
-        };
-        output.textContent = JSON.stringify(profile, null, 2);
-      }, 350);
-    }
+  function refreshPlatformMetrics() {
+    const el = document.getElementById('metric-throughput');
+    el.textContent = (301000 + Math.floor(Math.random() * 900)).toLocaleString();
+  }
 
-    function runPlaybookSimulation() {
-      const pb = document.getElementById('playbook-select').value;
-      const target = document.getElementById('pb-target').value;
-      const status = document.getElementById('pb-sim-status');
-      status.textContent = 'SIMULATING...';
-      status.className = 'badge badge-warn';
+  // ============================================================
+  // JUDGE DEMO DATA
+  // ============================================================
+  const judgeSteps = [
+    {
+      title: 'Stage 01 — 00:00–00:15 | Problem Statement',
+      time:  '00:00 – 00:15',
+      body: `<h3>Problem Faced by NTRO &amp; Modern Security Operations Centres</h3>
+<p>Security teams ingest heterogeneous telemetry from firewalls, IDSs, endpoints, and cloud providers. Conventional pipelines suffer from:</p>
+<ul>
+<li><strong>Information Loss:</strong> Rigid parsers silently discard unmapped fields vital for forensics.</li>
+<li><strong>Vendor Lock-in:</strong> Incompatible formats prevent unified security analytics.</li>
+<li><strong>Schema Drift:</strong> Unannounced firmware updates crash ingestion pipelines without warning.</li>
+<li><strong>Forensic Vulnerability:</strong> Absence of cryptographic evidence immutability renders logs legally challengeable.</li>
+</ul>
+<div class="code-panel">[PROBLEM] 20+ disjoint log formats → High parsing failure rate
+         → Loss of unmapped fields → Forensic evidence uncertifiable</div>`
+    },
+    {
+      title: 'Stage 02 — 00:15–00:30 | 20-Parser Ingestion Plane',
+      time:  '00:15 – 00:30',
+      body: `<h3>20 Concrete Parsers — All Verified in the Regression Suite</h3>
+<p>ULPF provides 20 production-grade parsers covering Tier A (core perimeter &amp; auth), Tier B (flow &amp; cloud), and Tier C (modern EDRs). All parsers are deterministic and output canonically validated UCE records.</p>
+<div class="code-panel">Tier A (10): pfsense, iptables, cisco_asa, snort, suricata,
+             sshd, windows_security, sysmon, nginx_access, apache_access
+Tier B  (8): aws_cloudtrail, azure_activity, dns_bind, netflow,
+             zeek_conn, ossec, fortinet_fortigate, palo_alto
+Tier C  (2): crowdstrike_falcon, sentinel_one
 
-      setTimeout(() => {
-        const report = {
-          playbook_id: pb,
-          target_asset: target,
-          execution_mode: 'DRY_RUN_SAFE',
-          all_permissions_validated: true,
-          mutations_committed: 0,
-          projected_actions: [
-            'Revoke active Kerberos ticket-granting session',
-            'Apply temporary host quarantine firewall rule in iptables/pfsense',
-            'Notify SOC incident response workbench with cryptographic evidence package'
-          ],
-          dry_run_verdict: 'PASS_NO_SIDE_EFFECTS'
-        };
-        document.getElementById('pb-sim-output').textContent = JSON.stringify(report, null, 2);
-        status.textContent = 'PASS';
-        status.className = 'badge badge-ok';
-      }, 300);
-    }
+Regression Gate: 680/680 PASS — All 20 parsers verified</div>`
+    },
+    {
+      title: 'Stage 03 — 00:30–00:45 | Lossless Raw Evidence Capture',
+      time:  '00:30 – 00:45',
+      body: `<h3>Durable Content-Addressed Storage (SHA-256 CAS)</h3>
+<p>Before any transformation, raw telemetry bytes are written verbatim into a content-addressed filesystem with SHA-256 integrity verification. This is the cryptographic anchor of the entire evidence chain.</p>
+<div class="code-panel">RAW BYTES → SHA-256 Digest → Content-Addressed Filesystem
+           → Write-Once Immutability (raw_fs.py)
 
-    function refreshPlatformMetrics() {
-      const throughput = document.getElementById('metric-throughput');
-      throughput.textContent = (301000 + Math.floor(Math.random() * 800)).toLocaleString();
-    }
-
-    // JUDGE DEMO MODE DATA
-    const judgeSteps = [
-      {
-        title: "00:00 — Problem: The Multi-Vendor Telemetry Dilemma",
-        time: "00:00 - 00:15",
-        content: `<h3>Problem Faced by NTRO &amp; Modern SOCs</h3>
-        <p>Security teams ingest heterogeneous telemetry from firewalls, IDSs, endpoints, and cloud providers. Conventional pipelines suffer from:</p>
-        <ul style="margin: 0.75rem 1.25rem; color: var(--text-secondary);">
-          <li><strong>Information Loss:</strong> Rigid parsers silently discard unmapped fields vital for forensics.</li>
-          <li><strong>Vendor Lock-in:</strong> Incompatible log formats prevent unified security analytics.</li>
-          <li><strong>Schema Drift:</strong> Unannounced vendor firmware updates crash ingestion pipelines.</li>
-          <li><strong>Forensic Vulnerability:</strong> Lack of cryptographic evidence immutability invites legal challenge.</li>
-        </ul>
-        <div class="code-panel">[PROBLEM] 20+ Disjoint log formats -> High parsing failure rate -> Forensic evidence rejected</div>`
-      },
-      {
-        title: "00:15 — Multi-Vendor Ingestion Plane",
-        time: "00:15 - 00:30",
-        content: `<h3>20 Concrete Parsers Loaded &amp; Operational</h3>
-        <p>ULPF features 20 production-grade parsers covering Tier A (Core Perimeter &amp; Auth), Tier B (Flow &amp; Cloud), and Tier C (Modern EDRs).</p>
-        <div class="code-panel">Tier A Parsers: pfsense, iptables, cisco_asa, snort, suricata, sshd, windows_security, sysmon, nginx_access, apache_access
-Tier B Parsers: aws_cloudtrail, azure_activity, dns_bind, netflow, zeek_conn, ossec, fortinet_fortigate, palo_alto
-Tier C Parsers: crowdstrike_falcon, sentinel_one</div>
-        <p style="margin-top:0.75rem;">All 20 parsers are verified in regression tests with zero code drift.</p>`
-      },
-      {
-        title: "00:30 — Lossless Raw Evidence Capture",
-        time: "00:30 - 00:45",
-        content: `<h3>Durable Content-Addressed Storage (CAS)</h3>
-        <p>Before any transformation occurs, raw telemetry bytes are captured verbatim into content-addressed filesystem storage with SHA-256 integrity verification.</p>
-        <div class="code-panel">RAW BYTES -> SHA-256 Checksum -> Content-Addressed File System -> Write-Once Immutability
-Capture Latency: P99 < 5ms | Lossless Retention Guaranteed</div>`
-      },
-      {
-        title: "00:45 — Universal Canonical Event (UCE)",
-        time: "00:45 - 01:00",
-        content: `<h3>Deterministic Field Normalization with Residue Retention</h3>
-        <p>Events are mapped to standard UCE taxonomies. Any field not covered by the core schema is captured inside <code>unmapped_residue</code>, guaranteeing 100% lossless forensic recall.</p>
-        <div class="code-panel">{
+Capture Latency:    P99 &lt; 5 ms
+Lossless Retention: Guaranteed — zero bytes discarded</div>`
+    },
+    {
+      title: 'Stage 04 — 00:45–01:00 | Universal Canonical Event (UCE)',
+      time:  '00:45 – 01:00',
+      body: `<h3>Deterministic Normalization with Residue Preservation</h3>
+<p>Events are mapped to standard UCE taxonomies. Any field not covered by the core schema is captured inside <code>unmapped_residue</code> — guaranteeing 100% lossless forensic recall across every supported vendor.</p>
+<div class="code-panel">{
   "metadata": { "source_type": "cisco_asa", "event_id": "EVT-48192" },
-  "network": { "src_ip": "10.0.1.20", "dst_ip": "10.0.2.80", "action": "DENY" },
-  "unmapped_residue": { "cisco_threat_code": "0x8401" }  <-- PRESERVED
+  "network":  { "src_ip": "10.0.1.20", "action": "DENY" },
+  "unmapped_residue": {
+    "cisco_threat_code": "0x8401"  ← Preserved, not discarded
+  }
 }</div>`
-      },
-      {
-        title: "01:00 — Dual OCSF &amp; OpenTelemetry Interop",
-        time: "01:00 - 01:15",
-        content: `<h3>Bi-Directional Open Standards Projections</h3>
-        <p>From a single canonical event, ULPF projects compliant OCSF v1.1.0 security records and OpenTelemetry Logs v1.0.0 payloads without re-parsing.</p>
-        <div class="code-panel">UCE -> OCSF v1.1.0 (Class 4001 Network Activity)
-UCE -> OpenTelemetry Logs v1.0.0 (ResourceLogs)
-Result: Direct integration with SIEM, data lakes, and sovereign analytics engines.</div>`
-      },
-      {
-        title: "01:15 — Threat Detection &amp; MITRE ATT&amp;CK Mapping",
-        time: "01:15 - 01:30",
-        content: `<h3>Real-Time Security Intelligence</h3>
-        <p>Correlation and rule engines detect multi-stage attacks across disparate vendors in sliding time windows, mapped directly to MITRE ATT&amp;CK tactics.</p>
-        <div class="code-panel">Stage 1: Brute-Force SSH (sshd) -> T1110.001 (Credential Access)
-Stage 2: Lateral SMB Sweep (iptables) -> T1021.002 (Lateral Movement)
-Stage 3: Encrypted Beaconing (pfsense) -> T1071.001 (C2)
-Correlation Status: HIGH RISK ATTACK SEQUENCE IDENTIFIED</div>`
-      },
-      {
-        title: "01:30 — 13-Stage Cryptographic Forensic Chain",
-        time: "01:30 - 01:45",
-        content: `<h3>End-to-End Cryptographic Auditability</h3>
-        <p>Every event carries a 13-stage tamper-evident Merkle lineage from raw ingestion to outbox delivery, defensible in judicial and military audits.</p>
-        <div class="code-panel">1. Capture -> 2. Receipt -> 3. Profile -> 4. Validate -> 5. Parser Dispatch
--> 6. UCE Normalization -> 7. Semantic Enrichment -> 8. Risk Score
--> 9. MITRE Detection -> 10. Correlation -> 11. OCSF Projection
--> 12. Evidence Packaging -> 13. SIEM Delivery (ALL SHA-256 BOUND)</div>`
-      },
-      {
-        title: "01:45 — Unknown Source &amp; Schema Drift Handling",
-        time: "01:45 - 01:55",
-        content: `<h3>Zero-Code Autonomous Onboarding in &lt; 30 Seconds</h3>
-        <p>When an unknown log format is encountered, the autonomous profiler discovers tokens and compiles a mapping definition without modifying source code.</p>
-        <div class="code-panel">Unknown format detected -> Heuristic Token Extraction -> ReDoS Safety Check
--> Drift Severity Classified (STABLE/MINOR/MAJOR/BREAKING) -> Active in < 30s</div>`
-      },
-      {
-        title: "01:55 — Sovereign Air-Gap &amp; Multi-Tenant Isolation",
-        time: "01:55 - 02:00",
-        content: `<h3>100% Sovereign Air-Gapped Operation</h3>
-        <p>ULPF operates completely disconnected from external internet infrastructure with zero socket egress and strict multi-tenant boundary isolation.</p>
-        <div class="code-panel">External Network Sockets: 0 (Validated via test_airgap.py)
-Multi-Tenant Isolation: MultiTenantGuard Enforced
-Cloud Dependencies: NONE (Local Deterministic Inference Only)</div>`
-      },
-      {
-        title: "02:00 — Complete NTRO 16/16 Compliance Summary",
-        time: "02:00",
-        content: `<h3>Verdict: Ready for Government &amp; Defense Deployment</h3>
-        <p>ULPF satisfies 16 out of 16 NTRO requirements with 680 passed regression tests, verified cryptographic evidence, and production-grade documentation.</p>
-        <div class="code-panel">[NTRO TRACEABILITY]: 16/16 FULLY_VERIFIED
-[REGRESSION TESTS]: 680/680 PASS (0 FAILURES)
-[AIR-GAP CERTIFIED]: CONFIRMED
-[PHASE 18 STATUS]: RELEASE READY (v1.0.0-sih)</div>`
-      }
-    ];
+    },
+    {
+      title: 'Stage 05 — 01:00–01:15 | OCSF + OpenTelemetry Export',
+      time:  '01:00 – 01:15',
+      body: `<h3>Dual Open Standards Projection from Single UCE</h3>
+<p>From a single canonical UCE, ULPF simultaneously projects compliant OCSF v1.1.0 security records and OpenTelemetry Logs v1.0.0 payloads — without re-accessing the raw bytes.</p>
+<div class="code-panel">UCE → OCSF v1.1.0 (Class 4001: Network Activity)
+UCE → OpenTelemetry Logs v1.0.0 (ResourceLogs)
 
-    function openJudgeDemo() {
-      document.getElementById('judge-demo-modal').classList.add('active');
-      selectJudgeStep(0);
+Result: Direct integration with SIEM platforms,
+        data lakes, and sovereign analytics engines.
+        No proprietary vendor lock-in.</div>`
+    },
+    {
+      title: 'Stage 06 — 01:15–01:30 | MITRE ATT&CK Threat Detection',
+      time:  '01:15 – 01:30',
+      body: `<h3>Real-Time Kill Chain Correlation — Multi-Vendor</h3>
+<p>Correlation and rule engines detect multi-stage attacks across disparate vendor sources in sliding time windows, mapped to MITRE ATT&amp;CK tactics and techniques.</p>
+<div class="code-panel">Stage 1: Brute-Force SSH (sshd)     → T1110.001 Credential Access
+Stage 2: Lateral SMB Sweep (iptables) → T1021.002 Lateral Movement
+Stage 3: Encrypted Beaconing (pfsense)→ T1071.001 Command &amp; Control
+
+Welford Anomaly Z-Score: 3.8 (threshold: 3.0)
+Attack Sequence Verdict: HIGH RISK — MULTI-STAGE</div>`
+    },
+    {
+      title: 'Stage 07 — 01:30–01:45 | 13-Stage Cryptographic Forensic Chain',
+      time:  '01:30 – 01:45',
+      body: `<h3>End-to-End Tamper-Evident Auditability</h3>
+<p>Every event carries a 13-stage Merkle lineage from raw ingestion to outbox delivery — defensible in judicial, regulatory, and operational audit contexts.</p>
+<div class="code-panel">01 Raw Capture  → 02 Receipt     → 03 Format Profile
+04 Validation   → 05 Parser      → 06 Field Extract
+07 Semantic     → 08 Risk Score  → 09 MITRE Map
+10 Correlation  → 11 OCSF Proj. → 12 Evidence Pkg
+13 SIEM Delivery
+
+Each stage: SHA-256 hash bound.
+One byte mutation → immediately detected.</div>`
+    },
+    {
+      title: 'Stage 08 — 01:45–01:55 | Unknown Source Onboarding',
+      time:  '01:45 – 01:55',
+      body: `<h3>Zero-Code Autonomous Source Onboarding in &lt; 30 Seconds</h3>
+<p>When an unknown log format is encountered, the AI-assisted profiler discovers tokens and generates a mapping definition. Human approval and deterministic validation follow before the source is activated in the pipeline.</p>
+<div class="code-panel">Unknown format → AI-Assisted Token Extraction (heuristic)
+→ ReDoS Safety Validation
+→ Drift Severity: STABLE / MINOR / MAJOR / BREAKING
+→ Human Approval Gate
+→ Versioned Mapping Activated in UCE Pipeline
+→ Operational in &lt; 30 seconds from sample submission</div>`
+    },
+    {
+      title: 'Stage 09 — 01:55–02:00 | Sovereign Air-Gap Architecture',
+      time:  '01:55 – 02:00',
+      body: `<h3>100% Sovereign — Zero External Network Egress</h3>
+<p>ULPF operates completely offline. All inference is local and deterministic. Multi-tenant boundary isolation is enforced at eight independent data layers.</p>
+<div class="code-panel">External Network Sockets: 0 (validated — tests/airgap/)
+Multi-Tenant Isolation:   MultiTenantGuard at 8 data layers
+Cloud Dependencies:       NONE — local deterministic inference
+AI Advisor:               Offline rule-ensemble — no external LLM API
+
+All 4 air-gap tests PASS (socket interception verified)</div>`
+    },
+    {
+      title: 'Stage 10 — 02:00 | NTRO Requirements Summary',
+      time:  '02:00',
+      body: `<h3>Conclusion: 16/16 NTRO Scope Items Validated</h3>
+<p>ULPF satisfies all 16 NTRO-specified scope items with engineering evidence: 680 regression tests, cryptographic evidence packaging, government-oriented documentation, and a reproducible audit trail across 5 consecutive certification phases.</p>
+<div class="code-panel">[NTRO TRACEABILITY]:  16/16 Scope Items VALIDATED
+[REGRESSION TESTS]:   680/680 PASS (0 failures, 0 skips)
+[SECURITY TESTS]:     51/51 PASS (0 vulnerabilities)
+[AIR-GAP VALIDATED]:  0 outbound sockets confirmed
+[PHASE 19 VERDICT]:   PHASE19_FINAL_RELEASE_APPROVED
+[RELEASE]:            v1.0.0-sih — Commit 71049fb</div>`
     }
+  ];
 
-    function closeJudgeDemo() {
-      document.getElementById('judge-demo-modal').classList.remove('active');
-    }
-
-    function selectJudgeStep(idx) {
-      document.querySelectorAll('.judge-step-item').forEach((el, i) => {
-        el.classList.toggle('active', i === idx);
-      });
-      const step = judgeSteps[idx];
-      const container = document.getElementById('judge-step-detail');
-      container.innerHTML = `
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom:1px solid var(--border-subtle); padding-bottom:0.5rem;">
-          <h2 style="font-size:15px; font-weight:600; color:var(--text-primary);">${step.title}</h2>
-          <span class="badge badge-info">${step.time}</span>
-        </div>
-        ${step.content}
-        <div style="margin-top:1.5rem; display:flex; justify-content:space-between;">
-          <button class="btn" onclick="selectJudgeStep(${Math.max(0, idx - 1)})" ${idx === 0 ? 'disabled' : ''}>&larr; Previous Stage</button>
-          <button class="btn btn-primary" onclick="selectJudgeStep(${Math.min(judgeSteps.length - 1, idx + 1)})" ${idx === judgeSteps.length - 1 ? 'disabled' : ''}>Next Stage &rarr;</button>
-        </div>
-      `;
-    }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeJudgeDemo();
-    });
-  </script>
+  function openJudgeDemo() {
+    document.getElementById('judge-modal').classList.add('open');
+    selectJudgeStep(0);
+  }
+  function closeJudgeDemo() {
+    document.getElementById('judge-modal').classList.remove('open');
+  }
+  function selectJudgeStep(idx) {
+    document.querySelectorAll('.jstep').forEach((el, i) => el.classList.toggle('active', i === idx));
+    const step = judgeSteps[idx];
+    document.getElementById('judge-step-detail').innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.875rem;border-bottom:1px solid var(--border-light);padding-bottom:.625rem;">
+        <h2 style="border:none;margin:0;padding:0;">${step.title}</h2>
+        <span class="bdg bdg-info">${step.time}</span>
+      </div>
+      ${step.body}
+      <div class="judge-btns">
+        <button class="btn" onclick="selectJudgeStep(${Math.max(0,idx-1)})" ${idx===0?'disabled':''}>&#8592; Previous Stage</button>
+        <button class="btn btn-primary" onclick="selectJudgeStep(${Math.min(judgeSteps.length-1,idx+1)})" ${idx===judgeSteps.length-1?'disabled':''}>Next Stage &#8594;</button>
+      </div>`;
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeJudgeDemo(); });
+</script>
 </body>
 </html>

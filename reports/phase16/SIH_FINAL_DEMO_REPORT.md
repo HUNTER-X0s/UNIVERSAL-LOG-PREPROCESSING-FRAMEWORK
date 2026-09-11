@@ -2,7 +2,7 @@
 
 **Problem Statement:** SIH26156 — Universal Log Pre-processing Framework (ULPF)  
 **Evaluator:** NTRO / Smart India Hackathon 2026 Technical Evaluation Board  
-**Timestamp:** 2026-09-09T22:52:11Z  
+**Timestamp:** 2026-09-10T13:14:21Z  
 **Execution Duration:** 0.01 seconds (< 2 minutes SLA)  
 **Overall Verdict:** **PHASE16_FINAL_DEMO_PASSED (10/10 Stages PASS) ✅**  
 
@@ -17,7 +17,7 @@
 | `00:25-00:40` | **Stage 3: Format Intelligence** | Format detected: 'cef' | Source: 'Palo Alto Networks PAN-OS' | Reliable: False | ✅ `PASS` |
 | `00:40-00:55` | **Stage 4: Canonical Normalization (UCE)** | Canonical UCE v2.1 built | 14 vendor fields preserved in unmapped_fields | ✅ `PASS` |
 | `00:55-01:10` | **Stage 5: Standards Interoperability** | Projected to OCSF v1.1.0 class=4001 & OTel Logs v1.0.0 | ✅ `PASS` |
-| `01:10-01:25` | **Stage 6: Tamper-Evident Lineage** | Evidence Package ID=pkg-7d5ca73a314c | Manifest SHA-256=1f34fdd916c68bf1... | ✅ `PASS` |
+| `01:10-01:25` | **Stage 6: Tamper-Evident Lineage** | Evidence Package ID=pkg-f7111c3e8bc7 | Manifest SHA-256=34015201891ef0d1... | ✅ `PASS` |
 | `01:25-01:40` | **Stage 7: MITRE ATT&CK Correlation** | Correlated 2 stages across T1110 -> T1078 | Story: Brute force attempts from 198.51.100.12 followed by anomalous login to root | ✅ `PASS` |
 | `01:40-01:50` | **Stage 8: Unknown Onboarding & Drift** | Drift state='MINOR_DRIFT' | New fields safely preserved=['threat_category'] | ✅ `PASS` |
 | `01:50-01:55` | **Stage 9: Air-Gap & AI Copilot** | Air-gap egress=0 sockets | Copilot 5W summary generated offline: Credential brute force attack detected from e... | ✅ `PASS` |
