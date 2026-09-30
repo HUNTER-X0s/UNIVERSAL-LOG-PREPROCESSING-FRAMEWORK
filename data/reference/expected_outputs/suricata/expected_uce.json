@@ -1,0 +1,189 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_7565dde109ea4307",
+  "raw_event_id": "raw_b5f8fe1c40844f3a",
+  "source_id": "src_9a801fa5fafc478f",
+  "evidence": {
+    "raw_event_id": "raw_b5f8fe1c40844f3a",
+    "payload": {
+      "uri": "file://intake/raw/raw_b5f8fe1c40844f3a.dat",
+      "sha256": "c782f577fb7b1c67275709184d9050b17dac9298378548af804ff8ec0cdecd0e",
+      "byte_length": 351,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "c782f577fb7b1c67275709184d9050b17dac9298378548af804ff8ec0cdecd0e",
+    "evidence_manifest_id": "evm_0856e287d6c34f01"
+  },
+  "event": {
+    "time": "2026-09-16T12:00:01.000123+00:00",
+    "category": "security",
+    "type": "alert",
+    "class": "network_ids_alert",
+    "action": "deny",
+    "severity": 2,
+    "source": {
+      "ip": "198.51.100.105",
+      "port": 41230
+    },
+    "destination": {
+      "ip": "10.0.1.20"
+    },
+    "network": {
+      "protocol": "TCP"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.suricata.eve",
+      "format": "suricata_eve_json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "OISF",
+      "product": "Suricata EVE IDS/IPS"
+    }
+  },
+  "unmapped_fields": {
+    "flow_id": 192837465,
+    "event_type": "alert",
+    "dest_ip": "10.0.1.20",
+    "dest_port": 80,
+    "proto": "TCP",
+    "alert.action": "blocked",
+    "alert.gid": 1,
+    "alert.signature_id": 2010935,
+    "alert.rev": 3,
+    "alert.signature": "ET SCAN Potential SSH Brute Force",
+    "alert.category": "Attempted Information Leak",
+    "alert.severity": 2
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.action": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:action"
+      ],
+      "input_field_paths": [
+        "action"
+      ]
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "suricata_eve_json:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_a4cf1b49980f460d",
+    "source_profile": {
+      "id": "srcprof.oisf.suricata eve ids/ips",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.suricata.eve",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.suricata_eve_json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_a4cf1b49980f460d/evt_7565dde109ea4307",
+    "sha256": "c782f577fb7b1c67275709184d9050b17dac9298378548af804ff8ec0cdecd0e",
+    "byte_length": 351,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

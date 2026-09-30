@@ -1,0 +1,185 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_0c59fc4b6b24496d",
+  "raw_event_id": "raw_cf71594fb70e4594",
+  "source_id": "src_120c41b446d34c2b",
+  "evidence": {
+    "raw_event_id": "raw_cf71594fb70e4594",
+    "payload": {
+      "uri": "file://intake/raw/raw_cf71594fb70e4594.dat",
+      "sha256": "c159091371c1c3a6784f9017a938f895439a5d579b296d7e59dec393eec3bf9f",
+      "byte_length": 237,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "c159091371c1c3a6784f9017a938f895439a5d579b296d7e59dec393eec3bf9f",
+    "evidence_manifest_id": "evm_610248ef5b60428c"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.447864+00:00",
+    "category": "security",
+    "type": "alert",
+    "class": "network_ids_alert",
+    "action": "unknown",
+    "severity": 1,
+    "source": {
+      "ip": "198.51.100.15",
+      "port": 49152
+    },
+    "destination": {
+      "ip": "10.0.0.10",
+      "port": 80
+    },
+    "network": {
+      "protocol": "TCP"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.snort.fast",
+      "format": "snort_fast",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Cisco / Sourcefire",
+      "product": "Snort IDS"
+    }
+  },
+  "unmapped_fields": {
+    "trailer": "TTL:64 TOS:0x0 ID:12345 IpLen:20 DgmLen:450 [**]",
+    "gid": "1",
+    "sid": "1000001",
+    "rev": "1",
+    "signature": "COMMUNITY WEB-ATTACK /etc/passwd access attempt",
+    "classification": "Web Application Attack",
+    "priority": 1
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.destination.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:dst_port"
+      ],
+      "input_field_paths": [
+        "dst_port"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "snort_fast:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_332b2808fb914e28",
+    "source_profile": {
+      "id": "srcprof.cisco / sourcefire.snort ids",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.snort.fast",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.snort_fast.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_332b2808fb914e28/evt_0c59fc4b6b24496d",
+    "sha256": "c159091371c1c3a6784f9017a938f895439a5d579b296d7e59dec393eec3bf9f",
+    "byte_length": 237,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

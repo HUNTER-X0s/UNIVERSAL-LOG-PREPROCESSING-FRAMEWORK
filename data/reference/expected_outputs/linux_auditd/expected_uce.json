@@ -1,0 +1,101 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_228a85332da64f8f",
+  "raw_event_id": "raw_4b3a11547be54d41",
+  "source_id": "src_300e3ad759a84bb8",
+  "evidence": {
+    "raw_event_id": "raw_4b3a11547be54d41",
+    "payload": {
+      "uri": "file://intake/raw/raw_4b3a11547be54d41.dat",
+      "sha256": "2b99a39c1660b38432cca9a15b355818d310c70d5373ed3ab656b2c7e1b5e68d",
+      "byte_length": 88,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "2b99a39c1660b38432cca9a15b355818d310c70d5373ed3ab656b2c7e1b5e68d",
+    "evidence_manifest_id": "evm_ced5e51187484d92"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.454768+00:00",
+    "category": "audit",
+    "type": "control_plane",
+    "class": "cloud_audit_activity",
+    "action": "unknown",
+    "severity": 0,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.linux.auditd",
+      "format": "linux_auditd",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Linux Foundation",
+      "product": "Linux Kernel Auditd"
+    }
+  },
+  "unmapped_fields": {
+    "record_type": "EXECVE",
+    "audit_epoch": "1789560000.500",
+    "audit_serial": "102",
+    "argc": "3",
+    "a0": "cat",
+    "a1": "/etc/shadow",
+    "a2": "--quiet"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_5f0fcc2d96304238",
+    "source_profile": {
+      "id": "srcprof.linux foundation.linux kernel auditd",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.linux.auditd",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.linux_auditd.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_5f0fcc2d96304238/evt_228a85332da64f8f",
+    "sha256": "2b99a39c1660b38432cca9a15b355818d310c70d5373ed3ab656b2c7e1b5e68d",
+    "byte_length": 88,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

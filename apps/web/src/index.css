@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==============================================================
+   ULPF GOVERNMENT-GRADE INSTITUTIONAL DESIGN SYSTEM
+   National Security Telemetry Operations Console · SIH26156
+   100% Air-Gap Sovereign: Zero External Network Font/Asset Calls
+   ============================================================== */
+
+:root {
+  --bg-page:        #F8FAFC;
+  --bg-surface:     #FFFFFF;
+  --bg-surface-alt: #F1F5F9;
+  --bg-hover:       #EEF2F7;
+
+  --navy-900: #0F2747;
+  --navy-800: #163A63;
+  --navy-700: #1E3A5F;
+
+  --gov-blue:       #1455A0;
+  --gov-blue-dark:  #0F4080;
+  --gov-blue-light: #EFF6FF;
+  --gov-blue-border:#BFDBFE;
+
+  --border-light:  #E2E8F0;
+  --border-medium: #CBD5E1;
+
+  --ok:       #15803D;
+  --ok-bg:    #F0FDF4;
+  --ok-bdr:   #BBF7D0;
+
+  --warn:     #B45309;
+  --warn-bg:  #FFFBEB;
+  --warn-bdr: #FDE68A;
+
+  --danger:   #B91C1C;
+  --danger-bg:#FEF2F2;
+  --danger-bdr:#FECACA;
+
+  --sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+}
+
+html, body {
+  min-height: 100%;
+  overflow-y: auto !important;
+}
+
+#root {
+  min-height: 100%;
+}
+
+html {
+  font-size: 16px; /* Full 16px base — all rem/em values scale up cleanly */
+}
+
+body {
+  font-family: var(--sans);
+  background-color: var(--bg-page);
+  color: var(--navy-900);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==============================================================
+   GLOBAL FONT SIZE FLOOR — ensures no text across the entire site
+   renders below 13px regardless of Tailwind arbitrary value used.
+   Targets text-[9px], text-[10px], text-[11px] which are embedded
+   in page components via hardcoded Tailwind JIT classes.
+   ============================================================== */
+
+/* Stat labels, table sub-headers, metadata captions (was 9-10px) */
+[class*="text-[9px]"],
+[class*="text-[10px]"] {
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+/* Secondary labels, table headers, status chips (was 11px) */
+[class*="text-[11px]"] {
+  font-size: 13.5px !important;
+  line-height: 19px !important;
+}
+
+/* Institutional Header Branding Hierarchy */
+.header-brand-title {
+  font-size: 16px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.header-brand-subtitle {
+  font-size: 10px !important;
+  line-height: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* User Profile Header Hierarchy */
+.header-user-name {
+  font-size: 15px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+}
+
+.header-user-role {
+  font-size: 10px !important;
+  line-height: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Dedicated ULPF Panel Scrollbar — always visible, easy to drag with mouse */
+.ulpf-panel-scrollbar {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  scrollbar-width: thin;
+  scrollbar-color: #94A3B8 #F1F5F9;
+  overscroll-behavior-y: contain;
+}
+
+.ulpf-panel-scrollbar::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+.ulpf-panel-scrollbar::-webkit-scrollbar-track {
+  background: #F1F5F9 !important;
+  border-left: 1px solid #CBD5E1 !important;
+}
+
+.ulpf-panel-scrollbar::-webkit-scrollbar-thumb {
+  background: #94A3B8 !important;
+  border-radius: 6px !important;
+  border: 2px solid #F1F5F9 !important;
+  min-height: 40px !important;
+}
+
+.ulpf-panel-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #475569 !important;
+}
+
+.ulpf-panel-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #0F2747 !important;
+}
+
+
+/* Ensure unified font size, placeholder metrics & styling for auth inputs */
+#login-username,
+#login-password {
+  font-size: 15.5px !important;
+  line-height: 23px !important;
+  border-radius: 10px !important;
+}
+
+#login-username::placeholder,
+#login-password::placeholder {
+  font-size: 15.5px !important;
+  font-family: var(--sans) !important;
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+}
+
+/* Ensure all icon-prefixed search and text inputs maintain clear text clearance */
+.relative > input[type="text"][style*="paddingLeft"] {
+  box-sizing: border-box !important;
+}
+
+.relative > input[type="text"][style*="paddingLeft"]::placeholder {
+  font-family: var(--sans) !important;
+  opacity: 1 !important;
+}
+
+/* Ensure select elements in flex toolbars maintain natural width */
+.flex > select {
+  max-width: max-content;
+}
+
+/* ==============================================================
+   STATUTORY PRINT STYLES · SECTION 65B COURT CERTIFICATE
+   Ensures ONLY the official Government of India Section 65B
+   Certificate is rendered when printing or saving as PDF
+   ============================================================== */
+@media print {
+  /* Hide all default web application chrome, navbars, sidebars, headers, and buttons */
+  header,
+  aside,
+  nav,
+  .print\:hidden,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  /* Unconstrain viewport and scroll containers so printing doesn't get clipped */
+  html,
+  body,
+  #root,
+  .h-screen,
+  .w-screen,
+  .overflow-hidden,
+  .overflow-y-auto,
+  main {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    position: static !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000000 !important;
+  }
+
+  /* Exclusive isolation: hide all elements except #section-65b-formal-doc when printing 65B */
+  body.printing-section-65b-only * {
+    visibility: hidden !important;
+  }
+
+  body.printing-section-65b-only #section-65b-formal-doc,
+  body.printing-section-65b-only #section-65b-formal-doc * {
+    visibility: visible !important;
+  }
+
+  body.printing-section-65b-only #section-65b-formal-doc {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm 12mm !important;
+    border: 2px solid #0f2747 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #0f2747 !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+}
+

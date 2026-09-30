@@ -1,0 +1,152 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_894790f3448a47bb",
+  "raw_event_id": "raw_68ea4f5819c54a43",
+  "source_id": "src_40a604b78db74a7a",
+  "evidence": {
+    "raw_event_id": "raw_68ea4f5819c54a43",
+    "payload": {
+      "uri": "file://intake/raw/raw_68ea4f5819c54a43.dat",
+      "sha256": "01889c44bdc2ff8e077ed2a17cc3972178e0d25304e0beda103fcaffdaa3acdd",
+      "byte_length": 172,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "01889c44bdc2ff8e077ed2a17cc3972178e0d25304e0beda103fcaffdaa3acdd",
+    "evidence_manifest_id": "evm_8cc01b91f9b54ece"
+  },
+  "event": {
+    "time": "2026-09-16T12:34:56+00:00",
+    "category": "web",
+    "type": "access",
+    "class": "web_access_log",
+    "action": "unknown",
+    "severity": 0,
+    "source": {
+      "ip": "198.51.100.44"
+    },
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN",
+      "bytes": 452
+    },
+    "device": {},
+    "identity": {
+      "user": {
+        "name": "john.doe"
+      }
+    },
+    "metadata": {
+      "parser_id": "parser.web.access",
+      "format": "combined_access",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Apache / Nginx",
+      "product": "Combined Web Access Log"
+    }
+  },
+  "unmapped_fields": {
+    "client_ip": "198.51.100.44",
+    "status_code": 200,
+    "remote_user": "john.doe",
+    "response_bytes": 452,
+    "referer": "https://portal.enterprise.com",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "http_method": "POST",
+    "request_uri": "/api/v1/auth/login",
+    "http_version": "HTTP/1.1"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "combined_access:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "combined_access:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.network.bytes": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "combined_access:bytes"
+      ],
+      "input_field_paths": [
+        "bytes"
+      ]
+    },
+    "event.identity.user.name": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "combined_access:user"
+      ],
+      "input_field_paths": [
+        "user"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_ec9c878be3084c27",
+    "source_profile": {
+      "id": "srcprof.apache / nginx.combined web access log",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.web.access",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.combined_access.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_ec9c878be3084c27/evt_894790f3448a47bb",
+    "sha256": "01889c44bdc2ff8e077ed2a17cc3972178e0d25304e0beda103fcaffdaa3acdd",
+    "byte_length": 172,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

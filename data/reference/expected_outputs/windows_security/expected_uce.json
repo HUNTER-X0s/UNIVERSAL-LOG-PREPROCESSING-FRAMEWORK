@@ -1,0 +1,101 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_51d41605f3ab4dee",
+  "raw_event_id": "raw_0430141d48b64083",
+  "source_id": "src_d6564ee0a02e4671",
+  "evidence": {
+    "raw_event_id": "raw_0430141d48b64083",
+    "payload": {
+      "uri": "file://intake/raw/raw_0430141d48b64083.dat",
+      "sha256": "26c141b084b7411803634f69d739e6b8a310079f4364a31dc753f6dd4593c774",
+      "byte_length": 507,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "26c141b084b7411803634f69d739e6b8a310079f4364a31dc753f6dd4593c774",
+    "evidence_manifest_id": "evm_048e0e60ac39477d"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.477786+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 0,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.xml",
+      "format": "xml",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Microsoft",
+      "product": "Windows Security / Sysmon XML"
+    }
+  },
+  "unmapped_fields": {
+    "Event.System.Provider@Name": "Microsoft-Windows-Security-Auditing",
+    "Event.System.Provider@Guid": "{54849625-5478-4994-A5BA-3E3B0328C30D}",
+    "Event.System.EventID": "4624",
+    "Event.System.Level": "0",
+    "Event.System.TimeCreated@SystemTime": "2026-09-16T13:00:00.0000000Z",
+    "Event.EventData.Data@Name": "LogonType",
+    "Event.EventData.Data": "3"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_d32172d3be16498c",
+    "source_profile": {
+      "id": "srcprof.microsoft.windows security / sysmon xml",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.xml",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.xml.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_d32172d3be16498c/evt_51d41605f3ab4dee",
+    "sha256": "26c141b084b7411803634f69d739e6b8a310079f4364a31dc753f6dd4593c774",
+    "byte_length": 507,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

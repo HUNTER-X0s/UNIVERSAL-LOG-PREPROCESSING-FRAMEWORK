@@ -1,0 +1,165 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_9005b12e4df34175",
+  "raw_event_id": "raw_6975a282d21d49a9",
+  "source_id": "src_14330d8312e84159",
+  "evidence": {
+    "raw_event_id": "raw_6975a282d21d49a9",
+    "payload": {
+      "uri": "file://intake/raw/raw_6975a282d21d49a9.dat",
+      "sha256": "1dc50361bc92f32dca4bab627b2231f6dc93543e2fb58bfea74549ee5c6e184d",
+      "byte_length": 109,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "1dc50361bc92f32dca4bab627b2231f6dc93543e2fb58bfea74549ee5c6e184d",
+    "evidence_manifest_id": "evm_0fc174f615de462a"
+  },
+  "event": {
+    "time": "2026-09-16T12:00:00.123456+00:00",
+    "category": "network",
+    "type": "flow",
+    "class": "network_flow_record",
+    "action": "unknown",
+    "severity": 0,
+    "source": {
+      "ip": "198.51.100.22",
+      "port": 49150
+    },
+    "destination": {
+      "ip": "203.0.113.5"
+    },
+    "network": {
+      "protocol": "UDP"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.zeek.telemetry",
+      "format": "zeek_tsv",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Zeek",
+      "product": "Zeek Network Security Monitor"
+    }
+  },
+  "unmapped_fields": {
+    "ts": "1789560000.123456",
+    "uid": "CH9281",
+    "id.orig_h": "198.51.100.22",
+    "id.orig_p": "49150",
+    "id.resp_h": "203.0.113.5",
+    "id.resp_p": "53",
+    "proto": "udp",
+    "service": "dns",
+    "duration": "0.002100",
+    "orig_bytes": "84",
+    "resp_bytes": "150",
+    "conn_state": "SF",
+    "missed_bytes": "0",
+    "history": "Dd",
+    "orig_pkts": "1",
+    "orig_ip_bytes": "112",
+    "resp_pkts": "1",
+    "resp_ip_bytes": "178"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "zeek_tsv:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "zeek_tsv:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "zeek_tsv:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "zeek_tsv:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_cb3fb7765dfc4218",
+    "source_profile": {
+      "id": "srcprof.zeek.zeek network security monitor",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.zeek.telemetry",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.zeek_tsv.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_cb3fb7765dfc4218/evt_9005b12e4df34175",
+    "sha256": "1dc50361bc92f32dca4bab627b2231f6dc93543e2fb58bfea74549ee5c6e184d",
+    "byte_length": 109,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

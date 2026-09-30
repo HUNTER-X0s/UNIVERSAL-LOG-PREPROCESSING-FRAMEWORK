@@ -17,6 +17,7 @@ from ulpf_platform.correlation import request_context
 from ulpf_platform.errors import ApiError, ErrorCode, api_error_response
 
 router = APIRouter(prefix="/intake", tags=["raw-intake"])
+ingest_alias_router = APIRouter(prefix="/ingest", tags=["raw-intake"])
 
 
 class RawIntakeAcknowledgement(BaseModel):
@@ -50,6 +51,29 @@ async def capture_raw(request: Request) -> RawIntakeAcknowledgement | JSONRespon
         runtime.authorizer.authorize(request.headers.get("authorization"))
         runtime.rate_limiter.check()
         payload = await read_bounded_body(request.stream(), settings.intake_max_event_bytes)
+        
+        # Transparent decompression for edge forwarders (Vector, Fluent Bit, OTel)
+        encoding = (request.headers.get("content-encoding") or "").strip().lower()
+        if encoding == "gzip" or (payload.startswith(b"\x1f\x8b") and len(payload) > 2):
+            try:
+                import gzip
+                payload = gzip.decompress(payload)
+            except Exception:
+                pass
+        elif encoding in ("zstd", "zstandard") or (payload.startswith(b"\x28\xb5\x2f\xfd") and len(payload) > 4):
+            try:
+                import zstandard as zstd
+                dctx = zstd.ZstdDecompressor()
+                payload = dctx.decompress(payload)
+            except Exception:
+                pass
+        elif encoding in ("deflate", "zlib"):
+            try:
+                import zlib
+                payload = zlib.decompress(payload)
+            except Exception:
+                pass
+
         context = request_context()
         acknowledgement = await run_in_threadpool(
             runtime.http.capture,
@@ -84,6 +108,12 @@ async def capture_raw(request: Request) -> RawIntakeAcknowledgement | JSONRespon
         correlation_id=acknowledgement.correlation_id,
         trace_id=acknowledgement.trace_id,
     )
+
+
+@ingest_alias_router.post("/raw", response_model=RawIntakeAcknowledgement, status_code=202)
+async def capture_raw_alias(request: Request) -> RawIntakeAcknowledgement | JSONResponse:
+    """Alias for /intake/raw to support enterprise forwarder default paths."""
+    return await capture_raw(request)
 
 
 @router.get("/raw/{event_id}", include_in_schema=False, response_model=None)

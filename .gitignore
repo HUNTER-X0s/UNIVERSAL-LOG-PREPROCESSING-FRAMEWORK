@@ -45,3 +45,8 @@ models/
 .vscode/*.local.json
 .DS_Store
 Thumbs.db
+
+# Large Zed dataset files (exceed GitHub 100MB limit)
+data/fixtures/real_world/multi_format/zed/sup/*.sup
+data/fixtures/real_world/multi_format/zed/zeek-default/*.log
+data/fixtures/real_world/multi_format/zed/zeek-json/*.json

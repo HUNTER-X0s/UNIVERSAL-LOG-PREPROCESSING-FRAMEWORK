@@ -190,14 +190,114 @@ class RuntimePipeline:
                     uce_doc = dict(custom_uce)
                 else:
                     raw_text = payload_bytes.decode("utf-8", errors="replace")
-                    uce_doc = {
-                        "event_id": uce_event_id,
-                        "raw_id": raw_id,
-                        "timestamp": datetime.now(UTC).isoformat(),
-                        "observer": {"vendor": "Generic", "product": "Log"},
-                        "message": raw_text,
-                        "unmapped_fields": {},
-                    }
+                    try:
+                        from ulpf_parser_runtime.framing import FramedRecord
+                        from ulpf_parser_runtime.registry import create_default_registry
+                        from ulpf_normalization.canonical import CanonicalEventBuilder
+
+                        reg = create_default_registry()
+                        record = FramedRecord(
+                            record_index=0,
+                            text=raw_text,
+                            raw_bytes=payload_bytes,
+                            start_byte_offset=0,
+                            end_byte_offset=len(payload_bytes),
+                            line_count=raw_text.count("\n") + 1,
+                        )
+
+                        selected_parser = None
+                        if format_str:
+                            alias_map = {
+                                "palo_alto": "parser.paloalto.panos",
+                                "palo_alto_panos": "parser.paloalto.panos",
+                                "panos": "parser.paloalto.panos",
+                                "fortinet": "parser.fortinet.fortigate",
+                                "fortigate_utm": "parser.fortinet.fortigate",
+                                "cisco_asa": "parser.cisco.asa_ios",
+                                "suricata": "parser.suricata.eve",
+                                "suricata_eve": "parser.suricata.eve",
+                                "zeek": "parser.zeek.telemetry",
+                                "snort": "parser.snort.fast",
+                                "linux_auditd": "parser.linux.auditd",
+                                "arcsight_cef": "parser.generic.cef",
+                                "cef": "parser.generic.cef",
+                                "qradar_leef": "parser.generic.leef",
+                                "leef": "parser.generic.leef",
+                                "syslog_rfc5424": "parser.syslog.rfc5424",
+                                "syslog_rfc3164": "parser.syslog.rfc3164",
+                                "json": "parser.generic.json",
+                                "opentelemetry": "parser.generic.json",
+                                "splunk_hec": "parser.generic.json",
+                                "crowdstrike": "parser.generic.json",
+                                "gcp_audit": "parser.generic.json",
+                                "k8s_audit": "parser.generic.json",
+                                "okta": "parser.generic.json",
+                                "aws_cloudtrail": "parser.cloud.audit_flow",
+                                "nginx": "parser.web.access",
+                                "apache": "parser.web.access",
+                                "pfsense": "parser.generic.csv",
+                                "sysmon": "parser.generic.xml",
+                                "windows_security": "parser.generic.xml",
+                            }
+                            pid = alias_map.get(format_str.lower())
+                            if pid:
+                                selected_parser = reg.get(pid)
+
+                        if not selected_parser:
+                            if "%ASA-" in raw_text:
+                                selected_parser = reg.get("parser.cisco.asa_ios")
+                            elif "devname=" in raw_text or "devid=" in raw_text:
+                                selected_parser = reg.get("parser.fortinet.fortigate")
+                            elif "CEF:" in raw_text:
+                                selected_parser = reg.get("parser.generic.cef")
+                            elif "LEEF:" in raw_text:
+                                selected_parser = reg.get("parser.generic.leef")
+                            elif "[**]" in raw_text:
+                                selected_parser = reg.get("parser.snort.fast")
+                            elif ("TRAFFIC" in raw_text or "THREAT" in raw_text) and "," in raw_text and not raw_text.startswith("{"):
+                                selected_parser = reg.get("parser.paloalto.panos")
+                            elif '"event_type"' in raw_text and ('"alert"' in raw_text or '"flow_id"' in raw_text):
+                                selected_parser = reg.get("parser.suricata.eve")
+                            elif raw_text.startswith("{") and raw_text.endswith("}"):
+                                selected_parser = reg.get("parser.generic.json")
+                            elif raw_text.startswith("<") and ("<Event" in raw_text or "<System" in raw_text or raw_text.startswith("<?xml")):
+                                selected_parser = reg.get("parser.generic.xml")
+                            elif raw_text.startswith("<"):
+                                selected_parser = reg.get("parser.syslog.rfc5424") or reg.get("parser.syslog.rfc3164")
+                            elif "=" in raw_text:
+                                selected_parser = reg.get("parser.generic.keyvalue")
+                            elif "," in raw_text:
+                                selected_parser = reg.get("parser.generic.csv")
+
+                        if selected_parser:
+                            parse_res = selected_parser.parse(record)
+                            builder = CanonicalEventBuilder()
+                            uce_doc = builder.build_uce(
+                                parse_res,
+                                raw_event_id=raw_id,
+                                source_id=source_id,
+                                raw_payload_bytes=payload_bytes,
+                            )
+                        else:
+                            uce_doc = {
+                                "event_id": uce_event_id,
+                                "raw_id": raw_id,
+                                "timestamp": datetime.now(UTC).isoformat(),
+                                "observer": {"vendor": "Generic", "product": "Log"},
+                                "message": raw_text,
+                                "unmapped_fields": {},
+                            }
+                    except Exception:
+                        uce_doc = {
+                            "event_id": uce_event_id,
+                            "raw_id": raw_id,
+                            "timestamp": datetime.now(UTC).isoformat(),
+                            "observer": {"vendor": "Generic", "product": "Log"},
+                            "message": raw_text,
+                            "unmapped_fields": {},
+                        }
+
+                uce_event_id = uce_doc.get("event_id", uce_event_id)
 
                 # Store UCE (Write-Once)
                 uce_rec = UCERecord(

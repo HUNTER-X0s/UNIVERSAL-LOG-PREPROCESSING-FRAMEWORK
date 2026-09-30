@@ -1,0 +1,211 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_f1e4cf2c48664717",
+  "raw_event_id": "raw_f2d2f42c19564ecd",
+  "source_id": "src_8cb56acb354f409a",
+  "evidence": {
+    "raw_event_id": "raw_f2d2f42c19564ecd",
+    "payload": {
+      "uri": "file://intake/raw/raw_f2d2f42c19564ecd.dat",
+      "sha256": "48595509491369d65cd1caf435bb3aee5acf06b2c9b2c24751f4ffd2121dc39d",
+      "byte_length": 177,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "48595509491369d65cd1caf435bb3aee5acf06b2c9b2c24751f4ffd2121dc39d",
+    "evidence_manifest_id": "evm_58ad4d0542944723"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.464767+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "deny",
+    "severity": 7,
+    "source": {
+      "ip": "198.51.100.60",
+      "port": 51234
+    },
+    "destination": {
+      "ip": "10.0.0.15",
+      "port": 80
+    },
+    "network": {
+      "protocol": "TCP"
+    },
+    "device": {
+      "hostname": "SecurityCompany"
+    },
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.cef",
+      "format": "cef",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Micro Focus / ArcSight",
+      "product": "Common Event Format (CEF)"
+    }
+  },
+  "unmapped_fields": {
+    "cef_version": "0",
+    "device_vendor": "SecurityCompany",
+    "device_product": "ThreatDetector",
+    "device_version": "3.2.1",
+    "device_event_class_id": "PORT_SCAN",
+    "name": "TCP Port Scan Detected",
+    "src": "198.51.100.60",
+    "dst": "10.0.0.15",
+    "spt": "51234",
+    "dpt": "80",
+    "proto": "TCP",
+    "act": "blocked",
+    "msg": "High rate of SYN packets"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.action": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:action"
+      ],
+      "input_field_paths": [
+        "action"
+      ]
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.destination.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:dst_port"
+      ],
+      "input_field_paths": [
+        "dst_port"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    },
+    "event.device.hostname": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cef:hostname"
+      ],
+      "input_field_paths": [
+        "hostname"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_20dd1c688b90456e",
+    "source_profile": {
+      "id": "srcprof.micro focus / arcsight.common event format (cef)",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.cef",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.cef.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_20dd1c688b90456e/evt_f1e4cf2c48664717",
+    "sha256": "48595509491369d65cd1caf435bb3aee5acf06b2c9b2c24751f4ffd2121dc39d",
+    "byte_length": 177,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

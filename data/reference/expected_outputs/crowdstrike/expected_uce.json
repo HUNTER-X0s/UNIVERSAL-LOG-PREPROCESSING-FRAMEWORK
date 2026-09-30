@@ -1,0 +1,108 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_f9248a0ecb97414c",
+  "raw_event_id": "raw_e175b81c213647b3",
+  "source_id": "src_fa53ae74e63f4d18",
+  "evidence": {
+    "raw_event_id": "raw_e175b81c213647b3",
+    "payload": {
+      "uri": "file://intake/raw/raw_e175b81c213647b3.dat",
+      "sha256": "015ca2a7f9d62deb2c4fcd3997da4e4604e5efa18caa1fb4e3a6b3628b85a978",
+      "byte_length": 342,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "015ca2a7f9d62deb2c4fcd3997da4e4604e5efa18caa1fb4e3a6b3628b85a978",
+    "evidence_manifest_id": "evm_e2303d3545fc47f1"
+  },
+  "event": {
+    "time": "2026-09-16T13:40:00+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 0,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.json",
+      "format": "json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "CrowdStrike",
+      "product": "CrowdStrike Falcon Sensor"
+    }
+  },
+  "unmapped_fields": {
+    "event_simpleName": "ProcessRollup2",
+    "aid": "a1b2c3d4e5f67890abcdef1234567890",
+    "ComputerName": "CORP-SEC-01",
+    "UserName": "analyst",
+    "FileName": "powershell.exe",
+    "CommandLine": "powershell.exe -Enc SGVsbG8=",
+    "SHA256HashData": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Severity": "High"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_dfea4fc4ccc44433",
+    "source_profile": {
+      "id": "srcprof.crowdstrike.crowdstrike falcon sensor",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.json",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_dfea4fc4ccc44433/evt_f9248a0ecb97414c",
+    "sha256": "015ca2a7f9d62deb2c4fcd3997da4e4604e5efa18caa1fb4e3a6b3628b85a978",
+    "byte_length": 342,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

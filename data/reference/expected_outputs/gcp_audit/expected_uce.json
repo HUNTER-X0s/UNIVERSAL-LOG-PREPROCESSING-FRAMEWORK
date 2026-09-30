@@ -1,0 +1,120 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_08a988b317154d37",
+  "raw_event_id": "raw_44fb8e12ded148c4",
+  "source_id": "src_a0195637c92049b8",
+  "evidence": {
+    "raw_event_id": "raw_44fb8e12ded148c4",
+    "payload": {
+      "uri": "file://intake/raw/raw_44fb8e12ded148c4.dat",
+      "sha256": "be1c0620bf8c3d8783eaea847d20e12c3d6c3d0f5ec5cec31d889565f8e29924",
+      "byte_length": 468,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "be1c0620bf8c3d8783eaea847d20e12c3d6c3d0f5ec5cec31d889565f8e29924",
+    "evidence_manifest_id": "evm_5de0e87e48474038"
+  },
+  "event": {
+    "time": "2026-09-16T13:15:00+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 4,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.json",
+      "format": "json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Google Cloud",
+      "product": "GCP Cloud Audit Logs"
+    }
+  },
+  "unmapped_fields": {
+    "protoPayload.@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "protoPayload.authenticationInfo.principalEmail": "admin@enterprise.com",
+    "protoPayload.serviceName": "compute.googleapis.com",
+    "protoPayload.methodName": "v1.compute.instances.delete",
+    "protoPayload.resourceName": "projects/prod-cluster/zones/us-central1-a/instances/vm-db-primary",
+    "insertId": "gcp_audit_019283",
+    "resource.type": "gce_instance",
+    "resource.labels.instance_id": "918237192"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_447fe40fd93b400b",
+    "source_profile": {
+      "id": "srcprof.google cloud.gcp cloud audit logs",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.json",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_447fe40fd93b400b/evt_08a988b317154d37",
+    "sha256": "be1c0620bf8c3d8783eaea847d20e12c3d6c3d0f5ec5cec31d889565f8e29924",
+    "byte_length": 468,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

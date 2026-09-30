@@ -1,0 +1,262 @@
+=== VIEWER (7 perms) ===
+Permissions: event.read, event.search, intelligence.read, mapping.read, raw.read, semantic.read, uce.read
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (7/7 items):
+    + Parser Registry (/parsers)
+    + Parser Workbench (/parser-workbench)
+    + Parser Auto-Synthesizer (/parser-synthesizer)
+    + ReDoS Shield & Debugger (/redos-debugger)
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+  [ACTIVE] UNIFIED CORE (7/8 items):
+    + UCE Normalization (/uce)
+    + Data Privacy & PII Shield (/data-privacy)
+    + Timestamp & Chronos Engine (/timestamp-chronos)
+    + Log Quality & Conformance (/log-quality)
+    + Standards Interoperability (/standards)
+    + Schemas & Export (/schemas-export)
+    + Cross-SIEM Query Translator (/query-translator)
+    - Schema Drift & Onboarding (HIDDEN - lacks config.read)
+  [ACTIVE] SECURITY INTELLIGENCE (4/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Response Playbooks (/playbooks)
+    - Investigation Desk (HIDDEN - lacks intelligence.investigate)
+  [EMPTY GROUP] COMPLIANCE & FORENSICS
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 25 / 28
+
+=== OPERATOR (11 perms) ===
+Permissions: dlq.read, dlq.replay, event.read, event.search, intelligence.investigate, intelligence.read, mapping.read, raw.read, replay.execute, semantic.read, uce.read
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (7/7 items):
+    + Parser Registry (/parsers)
+    + Parser Workbench (/parser-workbench)
+    + Parser Auto-Synthesizer (/parser-synthesizer)
+    + ReDoS Shield & Debugger (/redos-debugger)
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+  [ACTIVE] UNIFIED CORE (7/8 items):
+    + UCE Normalization (/uce)
+    + Data Privacy & PII Shield (/data-privacy)
+    + Timestamp & Chronos Engine (/timestamp-chronos)
+    + Log Quality & Conformance (/log-quality)
+    + Standards Interoperability (/standards)
+    + Schemas & Export (/schemas-export)
+    + Cross-SIEM Query Translator (/query-translator)
+    - Schema Drift & Onboarding (HIDDEN - lacks config.read)
+  [ACTIVE] SECURITY INTELLIGENCE (5/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Investigation Desk (/investigation)
+    + Response Playbooks (/playbooks)
+  [ACTIVE] COMPLIANCE & FORENSICS (1/1 items):
+    + Forensic Lineage & §65B (/forensics)
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 27 / 28
+
+=== ANALYST (9 perms) ===
+Permissions: case.write, event.read, event.search, intelligence.hunt, intelligence.investigate, intelligence.read, raw.read, semantic.read, uce.read
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (3/7 items):
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+    - Parser Registry (HIDDEN - lacks mapping.read)
+    - Parser Workbench (HIDDEN - lacks mapping.read)
+    - Parser Auto-Synthesizer (HIDDEN - lacks mapping.read)
+    - ReDoS Shield & Debugger (HIDDEN - lacks mapping.read)
+  [ACTIVE] UNIFIED CORE (7/8 items):
+    + UCE Normalization (/uce)
+    + Data Privacy & PII Shield (/data-privacy)
+    + Timestamp & Chronos Engine (/timestamp-chronos)
+    + Log Quality & Conformance (/log-quality)
+    + Standards Interoperability (/standards)
+    + Schemas & Export (/schemas-export)
+    + Cross-SIEM Query Translator (/query-translator)
+    - Schema Drift & Onboarding (HIDDEN - lacks config.read)
+  [ACTIVE] SECURITY INTELLIGENCE (5/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Investigation Desk (/investigation)
+    + Response Playbooks (/playbooks)
+  [ACTIVE] COMPLIANCE & FORENSICS (1/1 items):
+    + Forensic Lineage & §65B (/forensics)
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 23 / 28
+
+=== THREAT-HUNTER (10 perms) ===
+Permissions: case.write, event.read, event.search, intelligence.hunt, intelligence.investigate, intelligence.read, raw.read, rule.review, semantic.read, uce.read
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (3/7 items):
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+    - Parser Registry (HIDDEN - lacks mapping.read)
+    - Parser Workbench (HIDDEN - lacks mapping.read)
+    - Parser Auto-Synthesizer (HIDDEN - lacks mapping.read)
+    - ReDoS Shield & Debugger (HIDDEN - lacks mapping.read)
+  [ACTIVE] UNIFIED CORE (7/8 items):
+    + UCE Normalization (/uce)
+    + Data Privacy & PII Shield (/data-privacy)
+    + Timestamp & Chronos Engine (/timestamp-chronos)
+    + Log Quality & Conformance (/log-quality)
+    + Standards Interoperability (/standards)
+    + Schemas & Export (/schemas-export)
+    + Cross-SIEM Query Translator (/query-translator)
+    - Schema Drift & Onboarding (HIDDEN - lacks config.read)
+  [ACTIVE] SECURITY INTELLIGENCE (5/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Investigation Desk (/investigation)
+    + Response Playbooks (/playbooks)
+  [ACTIVE] COMPLIANCE & FORENSICS (1/1 items):
+    + Forensic Lineage & §65B (/forensics)
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 23 / 28
+
+=== DETECTION-ENGINEER (7 perms) ===
+Permissions: detection.manage, event.read, event.search, intelligence.hunt, intelligence.read, rule.activate, rule.review
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (3/7 items):
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+    - Parser Registry (HIDDEN - lacks mapping.read)
+    - Parser Workbench (HIDDEN - lacks mapping.read)
+    - Parser Auto-Synthesizer (HIDDEN - lacks mapping.read)
+    - ReDoS Shield & Debugger (HIDDEN - lacks mapping.read)
+  [EMPTY GROUP] UNIFIED CORE
+  [ACTIVE] SECURITY INTELLIGENCE (4/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Response Playbooks (/playbooks)
+    - Investigation Desk (HIDDEN - lacks intelligence.investigate)
+  [EMPTY GROUP] COMPLIANCE & FORENSICS
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 14 / 28
+
+=== INGEST-SERVICE (1 perms) ===
+Permissions: event.ingest
+  [EMPTY GROUP] OPERATIONS HUB
+  [EMPTY GROUP] PARSERS & PIPELINE
+  [EMPTY GROUP] UNIFIED CORE
+  [HIDDEN GROUP] SECURITY INTELLIGENCE (Requires 'intelligence.read')
+  [EMPTY GROUP] COMPLIANCE & FORENSICS
+  [EMPTY GROUP] BLOCKCHAIN & TRUST
+Total Visible in Left Panel: 0 / 28
+
+=== MAPPING-REVIEWER (2 perms) ===
+Permissions: mapping.approve, mapping.read
+  [EMPTY GROUP] OPERATIONS HUB
+  [ACTIVE] PARSERS & PIPELINE (4/7 items):
+    + Parser Registry (/parsers)
+    + Parser Workbench (/parser-workbench)
+    + Parser Auto-Synthesizer (/parser-synthesizer)
+    + ReDoS Shield & Debugger (/redos-debugger)
+    - Pipeline Routing & Replay (HIDDEN - lacks event.read)
+    - SIEM Cost & Data Reduction (HIDDEN - lacks event.read)
+    - SIEM Agent Exporter (HIDDEN - lacks event.read)
+  [EMPTY GROUP] UNIFIED CORE
+  [HIDDEN GROUP] SECURITY INTELLIGENCE (Requires 'intelligence.read')
+  [EMPTY GROUP] COMPLIANCE & FORENSICS
+  [EMPTY GROUP] BLOCKCHAIN & TRUST
+Total Visible in Left Panel: 4 / 28
+
+=== MAPPING-ADMIN (4 perms) ===
+Permissions: mapping.activate, mapping.approve, mapping.read, mapping.rollback
+  [EMPTY GROUP] OPERATIONS HUB
+  [ACTIVE] PARSERS & PIPELINE (4/7 items):
+    + Parser Registry (/parsers)
+    + Parser Workbench (/parser-workbench)
+    + Parser Auto-Synthesizer (/parser-synthesizer)
+    + ReDoS Shield & Debugger (/redos-debugger)
+    - Pipeline Routing & Replay (HIDDEN - lacks event.read)
+    - SIEM Cost & Data Reduction (HIDDEN - lacks event.read)
+    - SIEM Agent Exporter (HIDDEN - lacks event.read)
+  [EMPTY GROUP] UNIFIED CORE
+  [HIDDEN GROUP] SECURITY INTELLIGENCE (Requires 'intelligence.read')
+  [EMPTY GROUP] COMPLIANCE & FORENSICS
+  [EMPTY GROUP] BLOCKCHAIN & TRUST
+Total Visible in Left Panel: 4 / 28
+
+=== PLATFORM-ADMIN (24 perms) ===
+Permissions: admin.manage, case.write, config.modify, config.read, detection.manage, dlq.read, dlq.replay, event.ingest, event.read, event.search, intelligence.hunt, intelligence.investigate, intelligence.read, mapping.activate, mapping.approve, mapping.read, mapping.rollback, raw.read, replay.execute, retention.modify, rule.activate, rule.review, semantic.read, uce.read
+  [ACTIVE] OPERATIONS HUB (6/6 items):
+    + Command Center (/command-center)
+    + AI Pipeline Copilot (/ai-copilot)
+    + Live Logs Stream (/live-logs)
+    + Log Intake Plane (/log-intake)
+    + System Health & SLAs (/health)
+    + Telemetry Simulator (/telemetry-simulator)
+  [ACTIVE] PARSERS & PIPELINE (7/7 items):
+    + Parser Registry (/parsers)
+    + Parser Workbench (/parser-workbench)
+    + Parser Auto-Synthesizer (/parser-synthesizer)
+    + ReDoS Shield & Debugger (/redos-debugger)
+    + Pipeline Routing & Replay (/pipeline-routing)
+    + SIEM Cost & Data Reduction (/cost-optimizer)
+    + SIEM Agent Exporter (/agent-exporter)
+  [ACTIVE] UNIFIED CORE (8/8 items):
+    + UCE Normalization (/uce)
+    + Data Privacy & PII Shield (/data-privacy)
+    + Timestamp & Chronos Engine (/timestamp-chronos)
+    + Log Quality & Conformance (/log-quality)
+    + Standards Interoperability (/standards)
+    + Schemas & Export (/schemas-export)
+    + Schema Drift & Onboarding (/onboarding)
+    + Cross-SIEM Query Translator (/query-translator)
+  [ACTIVE] SECURITY INTELLIGENCE (5/5 items):
+    + Alerts & Detection (/alerts)
+    + Threat Detection (/threat-detection)
+    + Threat Intel & GeoIP (/threat-intelligence)
+    + Investigation Desk (/investigation)
+    + Response Playbooks (/playbooks)
+  [ACTIVE] COMPLIANCE & FORENSICS (1/1 items):
+    + Forensic Lineage & §65B (/forensics)
+  [ACTIVE] BLOCKCHAIN & TRUST (1/1 items):
+    + Blockchain Ledger (/blockchain)
+Total Visible in Left Panel: 28 / 28
+

@@ -1,0 +1,146 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_8b70e2d7a3b84912",
+  "raw_event_id": "raw_3dd22776f7264ed9",
+  "source_id": "src_3a8b4f7c79cb402f",
+  "evidence": {
+    "raw_event_id": "raw_3dd22776f7264ed9",
+    "payload": {
+      "uri": "file://intake/raw/raw_3dd22776f7264ed9.dat",
+      "sha256": "0114a9b789d81f9f9064ee56b4e50054686cbc6e60591efcdb6a8ce1c36f72d3",
+      "byte_length": 136,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "0114a9b789d81f9f9064ee56b4e50054686cbc6e60591efcdb6a8ce1c36f72d3",
+    "evidence_manifest_id": "evm_41e657a049384b23"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.467767+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 0,
+    "source": {
+      "ip": "198.51.100.72"
+    },
+    "destination": {
+      "ip": "10.0.0.8"
+    },
+    "network": {
+      "protocol": "TCP"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.leef",
+      "format": "leef",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "IBM",
+      "product": "QRadar LEEF"
+    }
+  },
+  "unmapped_fields": {
+    "leef_version": "2.0",
+    "vendor": "IBM",
+    "product": "CustomApp",
+    "version": "4.0",
+    "event_id": "AuthFailed",
+    "src": "198.51.100.72",
+    "dst": "10.0.0.8",
+    "srcPort": "52110",
+    "dstPort": "22",
+    "usrName": "admin",
+    "proto": "TCP",
+    "cat": "Authentication"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "leef:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "leef:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "leef:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_431cf6332a6a45d7",
+    "source_profile": {
+      "id": "srcprof.ibm.qradar leef",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.leef",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.leef.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_431cf6332a6a45d7/evt_8b70e2d7a3b84912",
+    "sha256": "0114a9b789d81f9f9064ee56b4e50054686cbc6e60591efcdb6a8ce1c36f72d3",
+    "byte_length": 136,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

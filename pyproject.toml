@@ -28,8 +28,8 @@ ulpf-api = "ulpf_api.main:main"
 ulpf-worker = "ulpf_worker.main:main"
 
 [tool.setuptools.packages.find]
-where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence", "packages/advanced_intelligence", "packages/mission"]
-include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_normalization*", "ulpf_parser_runtime*", "ulpf_platform*", "ulpf_semantic*", "ulpf_mapping*", "ulpf_onboarding*", "ulpf_ai*", "ulpf_runtime*", "ulpf_streaming*", "ulpf_storage*", "ulpf_search*", "ulpf_delivery*", "ulpf_observability*", "ulpf_security*", "ulpf_intelligence*", "ulpf_advanced_intelligence*", "ulpf_mission*"]
+where = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence", "packages/advanced_intelligence", "packages/mission", "packages/blockchain"]
+include = ["ulpf_api*", "ulpf_worker*", "ulpf_contracts*", "ulpf_domain*", "ulpf_ingestion*", "ulpf_normalization*", "ulpf_parser_runtime*", "ulpf_platform*", "ulpf_semantic*", "ulpf_mapping*", "ulpf_onboarding*", "ulpf_ai*", "ulpf_runtime*", "ulpf_streaming*", "ulpf_storage*", "ulpf_search*", "ulpf_delivery*", "ulpf_observability*", "ulpf_security*", "ulpf_intelligence*", "ulpf_advanced_intelligence*", "ulpf_mission*", "ulpf_blockchain*"]
 
 [tool.ruff]
 target-version = "py312"
@@ -60,7 +60,7 @@ exclude = [
   "^build/",
 ]
 
-mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence", "packages/advanced_intelligence", "packages/mission"]
+mypy_path = ["apps/api", "apps/worker", "packages/contracts", "packages/domain", "packages/ingestion", "packages/normalization", "packages/parser-runtime", "packages/platform", "packages/semantic", "packages/mapping", "packages/onboarding", "packages/ai", "packages/runtime", "packages/streaming", "packages/storage", "packages/search", "packages/delivery", "packages/observability", "packages/security", "packages/intelligence", "packages/advanced_intelligence", "packages/mission", "packages/blockchain"]
 
 
 [[tool.mypy.overrides]]
@@ -98,4 +98,5 @@ pythonpath = [
   "packages/intelligence",
   "packages/advanced_intelligence",
   "packages/mission",
+  "packages/blockchain",
 ]

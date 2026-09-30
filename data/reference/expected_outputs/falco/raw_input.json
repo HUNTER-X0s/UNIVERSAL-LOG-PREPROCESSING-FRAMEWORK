@@ -1,0 +1,1 @@
+{"time":"2026-09-16T13:50:00.000Z","rule":"PTRACE attached to process in container","priority":"WARNING","output":"Warning Detected ptrace PTRACE_ATTACH attempt","output_fields":{"container.id":"c10928a","k8s.pod.name":"ingress-pod","evt.type":"ptrace","proc.cmdline":"ptrace_inject -p 1"},"hostname":"node-k8s-01","source":"syscalls"}

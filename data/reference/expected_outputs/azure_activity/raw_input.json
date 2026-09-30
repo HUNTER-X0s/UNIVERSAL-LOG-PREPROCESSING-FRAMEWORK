@@ -1,0 +1,1 @@
+{"time":"2026-09-16T13:20:00.000Z","resourceId":"/subscriptions/sub-001/resourceGroups/SecOps/providers/Microsoft.Network/networkSecurityGroups/nsg-perimeter","operationName":"Microsoft.Network/networkSecurityGroups/write","category":"Administrative","resultType":"Success","caller":"admin@azurecorp.com","clientIpAddress":"198.51.100.90"}

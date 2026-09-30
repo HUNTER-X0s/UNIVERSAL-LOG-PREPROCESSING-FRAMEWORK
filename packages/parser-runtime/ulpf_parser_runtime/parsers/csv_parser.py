@@ -152,6 +152,24 @@ class GenericCsvParser(BaseParser):
             )
 
         if not rows:
+            if headers:
+                fields = {}
+                for idx, col_val in enumerate(headers):
+                    fields[f"col_{idx}"] = self.make_field(
+                        f"col_{idx}",
+                        col_val,
+                        Origin.OBSERVED,
+                        raw_locator=f"csv:col_{idx}",
+                    )
+                return ParseResult(
+                    status=ParseStatus.PARSED,
+                    parser_id=self.metadata.parser_id,
+                    parser_version=self.metadata.version,
+                    format="csv",
+                    extracted_fields=fields,
+                    errors=tuple(errors),
+                    duration_ms=self.measure_duration(t0),
+                )
             return ParseResult(
                 status=ParseStatus.PARTIAL,
                 parser_id=self.metadata.parser_id,

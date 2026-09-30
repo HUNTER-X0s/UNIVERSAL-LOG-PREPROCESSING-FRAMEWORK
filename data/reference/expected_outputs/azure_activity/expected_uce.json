@@ -1,0 +1,101 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_9cb29b937b1b48d7",
+  "raw_event_id": "raw_820372e3fa3a417d",
+  "source_id": "src_8e522bced6914ebf",
+  "evidence": {
+    "raw_event_id": "raw_820372e3fa3a417d",
+    "payload": {
+      "uri": "file://intake/raw/raw_820372e3fa3a417d.dat",
+      "sha256": "a89b6c49897e50f9da2b789353423172e7e81745e9d8f443d7c7d13645ed8a2c",
+      "byte_length": 339,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "a89b6c49897e50f9da2b789353423172e7e81745e9d8f443d7c7d13645ed8a2c",
+    "evidence_manifest_id": "evm_c1132701fbe24e05"
+  },
+  "event": {
+    "time": "2026-09-16T13:20:00+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 0,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.json",
+      "format": "json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Microsoft Azure",
+      "product": "Azure Monitor Activity Log"
+    }
+  },
+  "unmapped_fields": {
+    "time": "2026-09-16T13:20:00.000Z",
+    "resourceId": "/subscriptions/sub-001/resourceGroups/SecOps/providers/Microsoft.Network/networkSecurityGroups/nsg-perimeter",
+    "operationName": "Microsoft.Network/networkSecurityGroups/write",
+    "category": "Administrative",
+    "resultType": "Success",
+    "caller": "admin@azurecorp.com",
+    "clientIpAddress": "198.51.100.90"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_284c1b8cbb924fb4",
+    "source_profile": {
+      "id": "srcprof.microsoft azure.azure monitor activity log",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.json",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_284c1b8cbb924fb4/evt_9cb29b937b1b48d7",
+    "sha256": "a89b6c49897e50f9da2b789353423172e7e81745e9d8f443d7c7d13645ed8a2c",
+    "byte_length": 339,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

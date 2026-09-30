@@ -1,0 +1,97 @@
+[
+  {
+    "actor": {
+      "id": "00u87a19bc019deF2",
+      "type": "User",
+      "alternateId": "sarah.connor@acme-corp.com",
+      "displayName": "Sarah Connor"
+    },
+    "client": {
+      "userAgent": {
+        "rawUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/128.0.0.0",
+        "os": "Mac OS X",
+        "browser": "CHROME"
+      },
+      "zone": "CORPORATE_OFFICE",
+      "device": "Computer",
+      "ipAddress": "198.51.100.42",
+      "geographicalContext": {
+        "city": "Austin",
+        "state": "Texas",
+        "country": "United States",
+        "postalCode": "78701",
+        "geolocation": {
+          "lat": 30.2672,
+          "lon": -97.7431
+        }
+      }
+    },
+    "outcome": {
+      "result": "SUCCESS",
+      "reason": "MFA verified via Okta Verify Push"
+    },
+    "eventType": "user.authentication.verify",
+    "displayMessage": "Verification of user factor succeeded",
+    "published": "2026-09-16T12:30:45.000Z",
+    "severity": "INFO",
+    "target": [
+      {
+        "id": "fct123abc456",
+        "type": "Factor",
+        "alternateId": "OKTA_VERIFY_PUSH",
+        "displayName": "Okta Verify with Push"
+      }
+    ],
+    "transaction": {
+      "id": "tx_998124801bfe",
+      "type": "WEB"
+    },
+    "uuid": "evt_okta_01928374"
+  },
+  {
+    "actor": {
+      "id": "00u99b22ca033eeG4",
+      "type": "User",
+      "alternateId": "alex.morgan@acme-corp.com",
+      "displayName": "Alex Morgan"
+    },
+    "client": {
+      "userAgent": {
+        "rawUserAgent": "python-requests/2.31.0",
+        "os": "Linux",
+        "browser": "UNKNOWN"
+      },
+      "zone": "UNTRUSTED_EXTERNAL",
+      "device": "Unknown",
+      "ipAddress": "203.0.113.88",
+      "geographicalContext": {
+        "city": "Bucharest",
+        "country": "Romania",
+        "geolocation": {
+          "lat": 44.4268,
+          "lon": 26.1025
+        }
+      }
+    },
+    "outcome": {
+      "result": "FAILURE",
+      "reason": "INVALID_CREDENTIALS: Password incorrect. Rate limit triggered."
+    },
+    "eventType": "user.session.start",
+    "displayMessage": "User login to Okta failed",
+    "published": "2026-09-16T12:35:10.000Z",
+    "severity": "WARN",
+    "target": [
+      {
+        "id": "app_salesforce_01",
+        "type": "AppInstance",
+        "displayName": "Salesforce Production"
+      }
+    ],
+    "transaction": {
+      "id": "tx_998124991cba",
+      "type": "API"
+    },
+    "uuid": "evt_okta_01928375"
+  }
+]

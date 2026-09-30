@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from ulpf_ingestion.runtime import IntakeRuntime
@@ -19,7 +20,10 @@ from ulpf_platform.logging import configure_logging, get_logger
 from ulpf_platform.middleware import FoundationMiddleware
 
 from ulpf_api.routes.advanced_intelligence import router as advanced_intelligence_router
+from ulpf_api.routes.auth import router as auth_router
+from ulpf_api.routes.blockchain import router as blockchain_router
 from ulpf_api.routes.foundation import router as foundation_router
+from ulpf_api.routes.intake import ingest_alias_router
 from ulpf_api.routes.intake import router as intake_router
 from ulpf_api.routes.intelligence import router as intelligence_router
 from ulpf_api.routes.mission import router as mission_router
@@ -58,8 +62,30 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
     app.state.settings = resolved_settings
     app.state.intake_runtime = intake_runtime
     app.add_middleware(FoundationMiddleware, settings=resolved_settings)
+    # CORS: allow the React frontend dev server and any local origin
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=[
+            "http://localhost:8080",
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "http://localhost:8000",
+            "http://127.0.0.1:8000",
+            "http://0.0.0.0:8080",
+        ],
+        allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+    app.include_router(auth_router, prefix=resolved_settings.api_prefix)
     app.include_router(foundation_router, prefix=resolved_settings.api_prefix)
     app.include_router(intake_router, prefix=resolved_settings.api_prefix)
+    app.include_router(ingest_alias_router, prefix=resolved_settings.api_prefix)
+    app.include_router(intake_router)
+    app.include_router(ingest_alias_router)
     app.include_router(platform_router, prefix=resolved_settings.api_prefix)
     app.include_router(platform_router)
     app.include_router(intelligence_router, prefix=resolved_settings.api_prefix)
@@ -68,6 +94,9 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
     app.include_router(advanced_intelligence_router)
     app.include_router(mission_router, prefix=resolved_settings.api_prefix)
     app.include_router(mission_router)
+    # Blockchain — permissioned chain of custody for NTRO SIH 2026
+    app.include_router(blockchain_router, prefix=resolved_settings.api_prefix)
+    app.include_router(blockchain_router)
 
     @app.exception_handler(ApiError)
     async def handle_api_error(_: Request, exc: ApiError) -> JSONResponse:

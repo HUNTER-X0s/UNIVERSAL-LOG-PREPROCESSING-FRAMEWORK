@@ -1,0 +1,129 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_8ae66aaf97b94c35",
+  "raw_event_id": "raw_d633097a3216411e",
+  "source_id": "src_f3bf6f7a45b743e3",
+  "evidence": {
+    "raw_event_id": "raw_d633097a3216411e",
+    "payload": {
+      "uri": "file://intake/raw/raw_d633097a3216411e.dat",
+      "sha256": "8c8b5813f08b104543afdd6246f4d054eebdc97bb8bd603fe1af32906b3e51b4",
+      "byte_length": 335,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "8c8b5813f08b104543afdd6246f4d054eebdc97bb8bd603fe1af32906b3e51b4",
+    "evidence_manifest_id": "evm_c7363e874c6f42fd"
+  },
+  "event": {
+    "time": "2026-09-16T13:50:00+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 5,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {
+      "hostname": "node-k8s-01"
+    },
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.json",
+      "format": "json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "CNCF / Sysdig",
+      "product": "Falco Runtime Security"
+    }
+  },
+  "unmapped_fields": {
+    "time": "2026-09-16T13:50:00.000Z",
+    "rule": "PTRACE attached to process in container",
+    "priority": "WARNING",
+    "output": "Warning Detected ptrace PTRACE_ATTACH attempt",
+    "output_fields.container.id": "c10928a",
+    "output_fields.k8s.pod.name": "ingress-pod",
+    "output_fields.evt.type": "ptrace",
+    "output_fields.proc.cmdline": "ptrace_inject -p 1",
+    "source": "syscalls"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.device.hostname": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:hostname"
+      ],
+      "input_field_paths": [
+        "hostname"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_80cd5613877f4181",
+    "source_profile": {
+      "id": "srcprof.cncf / sysdig.falco runtime security",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.json",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_80cd5613877f4181/evt_8ae66aaf97b94c35",
+    "sha256": "8c8b5813f08b104543afdd6246f4d054eebdc97bb8bd603fe1af32906b3e51b4",
+    "byte_length": 335,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

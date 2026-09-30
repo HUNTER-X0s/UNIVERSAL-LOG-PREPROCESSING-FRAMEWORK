@@ -1,0 +1,53 @@
+[
+  {
+    "output": "14:37:27.505989596: Warning Detected ptrace PTRACE_ATTACH attempt (proc_pcmdline=sshd, evt_type=ptrace, user=root, container_id=e184bf92a, k8s_pod=payment-gateway-7b9f8, k8s_ns=production)",
+    "priority": "WARNING",
+    "rule": "PTRACE attached to process in container",
+    "time": "2026-09-16T14:37:27.505989596Z",
+    "output_fields": {
+      "container.id": "e184bf92a019",
+      "container.name": "payment-api",
+      "container.image": "docker.io/enterprise/payment-gateway:v2.4.1",
+      "k8s.pod.name": "payment-gateway-7b9f8",
+      "k8s.ns.name": "production",
+      "evt.type": "ptrace",
+      "proc.cmdline": "ptrace_inject -p 1042",
+      "proc.name": "ptrace_inject",
+      "proc.pcmdline": "/usr/sbin/sshd -D",
+      "user.name": "root",
+      "user.uid": 0,
+      "fd.name": "/proc/1042/mem"
+    },
+    "hostname": "k8s-worker-node-04.internal",
+    "source": "syscalls",
+    "tags": [
+      "maturity_stable",
+      "mitre_privilege_escalation",
+      "container_escape"
+    ]
+  },
+  {
+    "output": "14:39:10.120482011: Critical Sensitive file read in container (/etc/shadow accessed by unauthorized process)",
+    "priority": "CRITICAL",
+    "rule": "Read sensitive file untrusted",
+    "time": "2026-09-16T14:39:10.120482011Z",
+    "output_fields": {
+      "container.id": "a902bf81c331",
+      "container.name": "web-frontend",
+      "k8s.pod.name": "web-ingress-44c11",
+      "k8s.ns.name": "frontend",
+      "evt.type": "openat",
+      "proc.cmdline": "cat /etc/shadow",
+      "proc.name": "cat",
+      "user.name": "www-data",
+      "user.uid": 33,
+      "fd.name": "/etc/shadow"
+    },
+    "hostname": "k8s-worker-node-02.internal",
+    "source": "syscalls",
+    "tags": [
+      "mitre_credential_access",
+      "compliance_pci_dss"
+    ]
+  }
+]

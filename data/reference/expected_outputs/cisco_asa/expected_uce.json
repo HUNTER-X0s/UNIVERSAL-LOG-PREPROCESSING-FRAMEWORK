@@ -1,0 +1,190 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_26b7e32404174b2a",
+  "raw_event_id": "raw_f550821358514a2e",
+  "source_id": "src_19347dfb7e904ab7",
+  "evidence": {
+    "raw_event_id": "raw_f550821358514a2e",
+    "payload": {
+      "uri": "file://intake/raw/raw_f550821358514a2e.dat",
+      "sha256": "90f3faf03681d84d7d86918e5fdaf312275a02b1d9a8daf42eea1f2225437393",
+      "byte_length": 125,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "90f3faf03681d84d7d86918e5fdaf312275a02b1d9a8daf42eea1f2225437393",
+    "evidence_manifest_id": "evm_019b0a8ac7d54622"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.435776+00:00",
+    "category": "security",
+    "type": "firewall",
+    "class": "perimeter_firewall_event",
+    "action": "deny",
+    "severity": 5,
+    "source": {
+      "ip": "198.51.100.80",
+      "port": 51234
+    },
+    "destination": {
+      "ip": "10.0.0.5",
+      "port": 80
+    },
+    "network": {
+      "protocol": "TCP"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.cisco.asa_ios",
+      "format": "cisco_syslog",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Cisco",
+      "product": "Adaptive Security Appliance (ASA)"
+    }
+  },
+  "unmapped_fields": {
+    "cisco_facility": "ASA",
+    "cisco_severity": 4,
+    "cisco_mnemonic": "106023",
+    "message": "Deny tcp src outside:198.51.100.80/51234 dst inside:10.0.0.5/80 by access_group \"outside_access_in\" [0x0, 0x0]",
+    "src_interface": "outside",
+    "dst_interface": "inside"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.action": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:action"
+      ],
+      "input_field_paths": [
+        "action"
+      ]
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.destination.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:dst_port"
+      ],
+      "input_field_paths": [
+        "dst_port"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cisco_syslog:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_21d2ebdccebe40ce",
+    "source_profile": {
+      "id": "srcprof.cisco.adaptive security appliance (asa)",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.cisco.asa_ios",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.cisco_syslog.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_21d2ebdccebe40ce/evt_26b7e32404174b2a",
+    "sha256": "90f3faf03681d84d7d86918e5fdaf312275a02b1d9a8daf42eea1f2225437393",
+    "byte_length": 125,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

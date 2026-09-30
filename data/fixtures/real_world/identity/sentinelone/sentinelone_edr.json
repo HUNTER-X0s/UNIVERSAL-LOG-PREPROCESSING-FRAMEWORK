@@ -1,0 +1,36 @@
+[
+  {
+    "id": "s1_threat_8492019",
+    "createdAt": "2026-09-16T13:45:00.000Z",
+    "siteName": "North America HQ",
+    "agentRealtimeInfo": {
+      "agentVersion": "23.4.1.20",
+      "computerName": "SRV-FIN-SQL01",
+      "machineType": "Server",
+      "networkInterfaces": [
+        {
+          "inet": [
+            "10.200.5.15"
+          ]
+        }
+      ]
+    },
+    "threatInfo": {
+      "threatName": "Ransomware.SuspiciousShadowCopyDeletion",
+      "classification": "Ransomware",
+      "confidenceLevel": "Malicious",
+      "mitigationStatus": "Mitigated (Killed & Quarantined)",
+      "processUser": "NT AUTHORITY\\SYSTEM",
+      "filePath": "C:\\Windows\\System32\\vssadmin.exe",
+      "fileSha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "commandLine": "vssadmin.exe delete shadows /all /quiet",
+      "storyline": "s1_story_99214002"
+    },
+    "indicators": [
+      {
+        "category": "Defense Evasion",
+        "description": "Attempted to delete volume shadow copies to inhibit system recovery"
+      }
+    ]
+  }
+]

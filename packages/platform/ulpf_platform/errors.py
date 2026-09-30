@@ -31,6 +31,8 @@ class ErrorCode(str, Enum):
     INTAKE_CAPTURE_FAILURE = "intake_capture_failure"
     INTAKE_EVIDENCE_NOT_FOUND = "intake_evidence_not_found"
     INTERNAL_ERROR = "internal_error"
+    UNAUTHORIZED = "unauthorized"
+    FORBIDDEN = "forbidden"
 
 
 class ApiError(Exception):
@@ -83,11 +85,20 @@ def validation_error_response(request: Request, exc: RequestValidationError) -> 
 
 
 def http_error_response(exc: StarletteHTTPException) -> JSONResponse:
-    """Normalize framework routing errors without exposing implementation details."""
-    code = ErrorCode.NOT_FOUND if exc.status_code == 404 else ErrorCode.UNSUPPORTED_OPERATION
-    message = (
-        "Requested resource was not found."
-        if exc.status_code == 404
-        else "Requested operation is not supported."
-    )
+    """Normalize framework routing errors without exposing raw internal implementation details."""
+    if exc.status_code == 404:
+        code = ErrorCode.NOT_FOUND
+        message = str(exc.detail) if exc.detail and exc.detail != "Not Found" else "Requested resource was not found."
+    elif exc.status_code == 401:
+        code = ErrorCode.UNAUTHORIZED
+        message = str(exc.detail) if exc.detail else "Authentication failed."
+    elif exc.status_code == 403:
+        code = ErrorCode.FORBIDDEN
+        message = str(exc.detail) if exc.detail else "Access denied."
+    elif exc.status_code in (400, 422):
+        code = ErrorCode.VALIDATION_ERROR
+        message = str(exc.detail) if exc.detail else "Request validation failed."
+    else:
+        code = ErrorCode.UNSUPPORTED_OPERATION
+        message = str(exc.detail) if exc.detail else "Requested operation is not supported."
     return api_error_response(ApiError(exc.status_code, code, message))

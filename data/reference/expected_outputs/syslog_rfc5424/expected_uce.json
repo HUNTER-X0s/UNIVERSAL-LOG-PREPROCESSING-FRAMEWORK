@@ -1,0 +1,138 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_64b2895e6bd14043",
+  "raw_event_id": "raw_2a443a5ac75644e4",
+  "source_id": "src_ad334c810bd74d54",
+  "evidence": {
+    "raw_event_id": "raw_2a443a5ac75644e4",
+    "payload": {
+      "uri": "file://intake/raw/raw_2a443a5ac75644e4.dat",
+      "sha256": "4ca402dc04e243da07d0369cab88358348360ef23cff3cb97465565bbed845ca",
+      "byte_length": 131,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "4ca402dc04e243da07d0369cab88358348360ef23cff3cb97465565bbed845ca",
+    "evidence_manifest_id": "evm_44a8e90890da4dba"
+  },
+  "event": {
+    "time": "2026-09-16T12:45:00.123000+00:00",
+    "category": "system",
+    "type": "log",
+    "class": "system_syslog_event",
+    "action": "unknown",
+    "severity": 4,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {
+      "hostname": "gateway.corp.internal"
+    },
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.syslog.rfc5424",
+      "format": "syslog_rfc5424",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "IETF",
+      "product": "RFC 5424 Syslog Protocol"
+    }
+  },
+  "unmapped_fields": {
+    "pri": 165,
+    "facility": 20,
+    "version": 1,
+    "app_name": "firewall",
+    "process_id": "8492",
+    "message_id": "ID47",
+    "structured_data": {
+      "meta": {
+        "sequenceId": "1042"
+      }
+    },
+    "message": "Connection dropped by ingress ACL"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc5424:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc5424:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.device.hostname": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc5424:hostname"
+      ],
+      "input_field_paths": [
+        "hostname"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_b23d1aef72474333",
+    "source_profile": {
+      "id": "srcprof.ietf.rfc 5424 syslog protocol",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.syslog.rfc5424",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.syslog_rfc5424.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_b23d1aef72474333/evt_64b2895e6bd14043",
+    "sha256": "4ca402dc04e243da07d0369cab88358348360ef23cff3cb97465565bbed845ca",
+    "byte_length": 131,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

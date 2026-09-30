@@ -1,0 +1,233 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_da0b452dd9264862",
+  "raw_event_id": "raw_eb83434724374f14",
+  "source_id": "src_b90bb5348bbe4654",
+  "evidence": {
+    "raw_event_id": "raw_eb83434724374f14",
+    "payload": {
+      "uri": "file://intake/raw/raw_eb83434724374f14.dat",
+      "sha256": "0bb114623c67b5720a3db38be3589ce7f3cc75656976252805ed2e390d57e8b0",
+      "byte_length": 355,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "0bb114623c67b5720a3db38be3589ce7f3cc75656976252805ed2e390d57e8b0",
+    "evidence_manifest_id": "evm_d325bec9ed3944ba"
+  },
+  "event": {
+    "time": "2026-09-16T11:20:00+00:00",
+    "category": "security",
+    "type": "firewall",
+    "class": "perimeter_firewall_event",
+    "action": "unknown",
+    "severity": 4,
+    "source": {
+      "ip": "10.10.10.25",
+      "port": 54321
+    },
+    "destination": {
+      "ip": "198.51.100.40",
+      "port": 443
+    },
+    "network": {
+      "protocol": "TCP",
+      "bytes": 1200
+    },
+    "device": {
+      "hostname": "FGT-CORP-01"
+    },
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.fortinet.fortigate",
+      "format": "fortigate_kv",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Fortinet",
+      "product": "FortiGate UTM"
+    }
+  },
+  "unmapped_fields": {
+    "date": "2026-09-16",
+    "time": "11:20:00",
+    "devname": "FGT-CORP-01",
+    "devid": "FGT60D4614041234",
+    "logid": "0000000013",
+    "type": "traffic",
+    "subtype": "forward",
+    "level": "notice",
+    "vd": "root",
+    "srcip": "10.10.10.25",
+    "srcport": "54321",
+    "srcintf": "port1",
+    "dstip": "198.51.100.40",
+    "dstport": "443",
+    "dstintf": "port2",
+    "proto": "6",
+    "policyid": "1",
+    "service": "HTTPS",
+    "trandisp": "snat",
+    "duration": "12",
+    "sentbyte": "1200",
+    "rcvdbyte": "4500"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.action": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:action"
+      ],
+      "input_field_paths": [
+        "action"
+      ]
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.destination.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:dst_port"
+      ],
+      "input_field_paths": [
+        "dst_port"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    },
+    "event.network.bytes": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:bytes"
+      ],
+      "input_field_paths": [
+        "bytes"
+      ]
+    },
+    "event.device.hostname": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "fortigate_kv:hostname"
+      ],
+      "input_field_paths": [
+        "hostname"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_ad017e4e125b466a",
+    "source_profile": {
+      "id": "srcprof.fortinet.fortigate utm",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.fortinet.fortigate",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.fortigate_kv.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_ad017e4e125b466a/evt_da0b452dd9264862",
+    "sha256": "0bb114623c67b5720a3db38be3589ce7f3cc75656976252805ed2e390d57e8b0",
+    "byte_length": 355,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

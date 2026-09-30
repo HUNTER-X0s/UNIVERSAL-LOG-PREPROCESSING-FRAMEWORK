@@ -1,0 +1,120 @@
+Name	            Username	                Role	                    Password
+==========================================================================================
+PRADYUMNA BISWAL    pradyumna.biswal            Analyst                     Ulpf@N4!yst#8x2K    
+RAJESH MARSHALL     rajesh.marshall             Viewer                      Ulpf@V!3wer#4mZ9
+RASHI KAITHWAS      rashu.kaithwas              Operator                    Ulpf@0p3r#7nR1q
+SWADHEENTA SAMAL    swadheenta.jeenu            Threat Hunter               Ulpf@H4nt3r#9kLm
+Subhankar Swain     Subhankar.Swain             Detection Engineer          Ulpf@D3tect#2pQw
+SIMRAN SWAIN        simran.swain                Mapping Reviewer            Ulpf@R3v!ew#6sYt
+JAHANABI DALAI      jahanabi.dalai              Mapping Admin               Ulpf@Adm!n#3fGh
+ANURAG SWAIN        anurag.swain                Platform Admin              Ulpf@Pl@tf#1rM!x
+
+
+
+📊 Comprehensive Audit of Every Role & Left Panel Visibility
+
+1. 👑 Platform Admin (platform-admin)
+Demo Account: anurag.swain (Ulpf@Pl@tf#1rM!x) — ANURAG SWAIN
+Effective Permissions (24 / 24 — Full Authority): admin.manage, case.write, config.modify, config.read, detection.manage, dlq.read, dlq.replay, event.ingest, event.read, event.search, intelligence.hunt, intelligence.investigate, intelligence.read, mapping.activate, mapping.approve, mapping.read, mapping.rollback, raw.read, replay.execute, retention.modify, rule.activate, rule.review, semantic.read, uce.read.
+Left ULPF Panel Features Displayed: 30 / 30 Items Visible (100%)
+✅ OPERATIONS HUB (6/6): Command Center, AI Pipeline Copilot, Live Logs Stream, Log Intake Plane, System Health & SLAs, Telemetry Simulator.
+✅ PARSERS & PIPELINE (7/7): Parser Registry, Parser Workbench, Parser Auto-Synthesizer, ReDoS Shield & Debugger, Pipeline Routing & Replay, SIEM Cost & Data Reduction, SIEM Agent Exporter.
+✅ UNIFIED CORE (8/8): UCE Normalization, Data Privacy & PII Shield, Timestamp & Chronos Engine, Log Quality & Conformance, Standards Interoperability, Schemas & Export, Schema Drift & Onboarding, Cross-SIEM Query Translator.
+✅ SECURITY INTELLIGENCE (5/5): Alerts & Detection, Threat Detection, Threat Intel & GeoIP, Investigation Desk, Response Playbooks.
+✅ COMPLIANCE & FORENSICS (3/3): Forensic Lineage & §65B, MITRE ATT&CK® Coverage, India Regulatory Compliance.
+✅ BLOCKCHAIN & TRUST (1/1): Blockchain Ledger.
+👑 ADMINISTRATION (Top-Right Menu): Full access to User Provisioning (/admin/users), Role Catalog (/admin/roles), and Auth Security Audit Logs (/admin/audit).
+
+
+2. 🔍 SecOps Analyst (analyst)
+Demo Account: pradyumna.biswal (Ulpf@N4!yst#8x2K) — PRADYUMNA BISWAL
+Effective Permissions (9 Permissions): event.read, event.search, raw.read, uce.read, semantic.read, intelligence.read, intelligence.hunt, intelligence.investigate, case.write.
+Left ULPF Panel Features Displayed: 25 / 30 Items Visible
+✅ OPERATIONS HUB (6/6): Full access to Command Center, AI Copilot, Live Logs, Intake Plane, Health & SLAs, Simulator (has event.read).
+⚠️ PARSERS & PIPELINE (3/7): Can see Pipeline Routing & Replay, SIEM Cost & Data Reduction, and SIEM Agent Exporter (event.read). Parser authoring engines (Registry, Workbench, Auto-Synthesizer, ReDoS Debugger) are hidden because they require mapping.read.
+✅ UNIFIED CORE (7/8): UCE Normalization, Data Privacy & PII, Chronos Engine, Log Quality, Standards Interoperability, Schemas & Export, Query Translator (has uce.read). (Schema Drift & Onboarding is hidden; requires config.read).
+✅ SECURITY INTELLIGENCE (5/5): Full access to Alerts & Detection, Threat Detection, Threat Intel & GeoIP, Investigation Desk, and Response Playbooks (intelligence.read, intelligence.investigate).
+✅ COMPLIANCE & FORENSICS (3/3): Forensic Lineage & §65B (intelligence.investigate), MITRE ATT&CK® Coverage (intelligence.read), and India Regulatory Compliance (event.read).
+✅ BLOCKCHAIN & TRUST (1/1): Blockchain Ledger (event.read).
+🚫 ADMINISTRATION: Restricted (admin.manage required).
+
+
+3. 👁️ Read-Only Viewer / Auditor (viewer)
+Demo Account: rajesh.marshall (Ulpf@V!3wer#4mZ9) — RAJESH MARSHALL
+Effective Permissions (7 Permissions): event.read, event.search, raw.read, uce.read, semantic.read, mapping.read, intelligence.read.
+Left ULPF Panel Features Displayed: 27 / 30 Items Visible
+✅ OPERATIONS HUB (6/6): All monitoring tools visible (event.read).
+✅ PARSERS & PIPELINE (7/7): All parser inspection & cost reduction tools visible (mapping.read, event.read).
+✅ UNIFIED CORE (7/8): All UCE schemas and normalization tools visible (uce.read). Schema Drift is hidden (config.read required).
+⚠️ SECURITY INTELLIGENCE (4/5): Alerts & Detection, Threat Detection, Threat Intel & GeoIP, and Response Playbooks are visible (intelligence.read); Investigation Desk is hidden (intelligence.investigate required).
+⚠️ COMPLIANCE & FORENSICS (2/3): MITRE ATT&CK® Coverage (intelligence.read) and India Regulatory Compliance (event.read) are visible. Forensic Lineage & §65B Certificate generation is hidden (intelligence.investigate required).
+✅ BLOCKCHAIN & TRUST (1/1): Blockchain Ledger visible (event.read).
+🚫 ADMINISTRATION: Restricted.
+
+
+4. ⚙️ System Operator (operator)
+Demo Account: rashu.kaithwas (Ulpf@0p3r#7nR1q) — RASHI KAITHWAS
+Effective Permissions (11 Permissions): event.read, event.search, raw.read, uce.read, semantic.read, dlq.read, dlq.replay, replay.execute, mapping.read, intelligence.read, intelligence.investigate.
+Left ULPF Panel Features Displayed: 29 / 30 Items Visible
+✅ OPERATIONS HUB (6/6): All items visible (event.read).
+✅ PARSERS & PIPELINE (7/7): All items visible (has mapping.read, event.read, and DLQ replay permissions).
+✅ UNIFIED CORE (7/8): All normalization & quality tools visible (uce.read). Schema Drift hidden (config.read).
+✅ SECURITY INTELLIGENCE (5/5): All items visible (intelligence.read, intelligence.investigate).
+✅ COMPLIANCE & FORENSICS (3/3): All items visible (Forensic Lineage, MITRE ATT&CK, India Compliance).
+✅ BLOCKCHAIN & TRUST (1/1): Blockchain Ledger visible (event.read).
+🚫 ADMINISTRATION: Restricted.
+
+
+5. 🎯 Threat Hunter (threat-hunter)
+Demo Account: swadheenta.jeenu (Ulpf@H4nt3r#9kLm) — SWADHEENTA SAMAL
+Effective Permissions (10 Permissions): event.read, event.search, raw.read, uce.read, semantic.read, intelligence.read, intelligence.hunt, intelligence.investigate, rule.review, case.write.
+Left ULPF Panel Features Displayed: 25 / 30 Items Visible
+Identical UI visibility to Analyst (25 / 30), with additional authority to review detection rules (rule.review) and execute proactive hypothesis queries (intelligence.hunt).
+Full access to Operations Hub (6/6), Parsers & Pipeline (3/7), Unified Core (7/8), Security Intelligence (5/5), Compliance & Forensics (3/3), and Blockchain Ledger (1/1).
+🚫 ADMINISTRATION: Restricted.
+
+
+6. 🛡️ Detection Engineer (detection-engineer)
+Demo Account: Subhankar.Swain (Ulpf@D3tect#2pQw) — Subhankar Swain
+Effective Permissions (7 Permissions): detection.manage, event.read, event.search, intelligence.hunt, intelligence.read, rule.activate, rule.review.
+Left ULPF Panel Features Displayed: 16 / 30 Items Visible
+✅ OPERATIONS HUB (6/6): Visible (event.read).
+⚠️ PARSERS & PIPELINE (3/7): Pipeline Routing, Cost Optimizer, and Agent Exporter are visible (event.read).
+🚫 UNIFIED CORE (0/8): Empty / hidden (lacks uce.read).
+⚠️ SECURITY INTELLIGENCE (4/5): Alerts, Threat Detection, Threat Intel, and Response Playbooks visible (intelligence.read). (Investigation Desk hidden; requires intelligence.investigate).
+⚠️ COMPLIANCE & FORENSICS (2/3): MITRE ATT&CK® Coverage (intelligence.read) and India Regulatory Compliance (event.read) visible. Forensic Lineage & §65B is hidden (requires intelligence.investigate).
+✅ BLOCKCHAIN & TRUST (1/1): Blockchain Ledger visible (event.read).
+🚫 ADMINISTRATION: Restricted.
+
+
+7. 📝 Mapping Reviewer (mapping-reviewer)
+Demo Account: simran.swain (Ulpf@R3v!ew#6sYt) — SIMRAN SWAIN
+Effective Permissions (2 Permissions): mapping.read, mapping.approve.
+Left ULPF Panel Features Displayed: 4 / 30 Items Visible
+✅ PARSERS & PIPELINE (4/7): Parser Registry, Parser Workbench, Parser Auto-Synthesizer, and ReDoS Shield & Debugger are visible (mapping.read).
+🚫 OPERATIONS HUB (0/6): Hidden (lacks event.read).
+🚫 UNIFIED CORE (0/8): Hidden.
+🚫 SECURITY INTELLIGENCE (0/5): Hidden (lacks intelligence.read).
+🚫 COMPLIANCE & FORENSICS (0/3): Hidden.
+🚫 BLOCKCHAIN & TRUST (0/1): Hidden.
+🚫 ADMINISTRATION: Restricted.
+
+
+8. 📝 Mapping Admin (mapping-admin)
+Demo Account: jahanabi.dalai (Ulpf@Adm!n#3fGh) — JAHANABI DALAI
+Effective Permissions (4 Permissions): mapping.read, mapping.approve, mapping.activate, mapping.rollback.
+Left ULPF Panel Features Displayed: 4 / 30 Items Visible
+✅ PARSERS & PIPELINE (4/7): Parser Registry, Parser Workbench, Parser Auto-Synthesizer, and ReDoS Shield & Debugger are visible (mapping.read). Has administrative activation and rollback authority over parser grammar definitions.
+🚫 OPERATIONS HUB (0/6): Hidden.
+🚫 UNIFIED CORE (0/8): Hidden.
+🚫 SECURITY INTELLIGENCE (0/5): Hidden.
+🚫 COMPLIANCE & FORENSICS (0/3): Hidden.
+🚫 BLOCKCHAIN & TRUST (0/1): Hidden.
+🚫 ADMINISTRATION: Restricted.
+
+
+9. 🤖 Automated Ingest Service (ingest-service)
+Daemon / Machine-to-Machine Service Account
+Permission (1): event.ingest
+Left ULPF Panel Features Displayed: 0 / 30 Items Visible
+100% Correct: Machine-to-machine daemon account with zero interactive UI surface.

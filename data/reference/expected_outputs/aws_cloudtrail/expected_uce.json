@@ -1,0 +1,137 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_c19fd40b0cb34adf",
+  "raw_event_id": "raw_4e7b305acae84325",
+  "source_id": "src_87d4576ececc4de9",
+  "evidence": {
+    "raw_event_id": "raw_4e7b305acae84325",
+    "payload": {
+      "uri": "file://intake/raw/raw_4e7b305acae84325.dat",
+      "sha256": "962c722840c44c8cad91b1e43852026bd8d81ba3661cf696ee45173986ddbbcb",
+      "byte_length": 496,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "962c722840c44c8cad91b1e43852026bd8d81ba3661cf696ee45173986ddbbcb",
+    "evidence_manifest_id": "evm_0e8768ca9112491a"
+  },
+  "event": {
+    "time": "2026-09-16T12:00:00+00:00",
+    "category": "audit",
+    "type": "control_plane",
+    "class": "cloud_audit_activity",
+    "action": "unknown",
+    "severity": 0,
+    "source": {
+      "ip": "198.51.100.50"
+    },
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {
+      "user": {
+        "name": "Alice"
+      }
+    },
+    "metadata": {
+      "parser_id": "parser.cloud.audit_flow",
+      "format": "cloud_audit_json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Amazon Web Services",
+      "product": "AWS CloudTrail"
+    }
+  },
+  "unmapped_fields": {
+    "eventVersion": "1.08",
+    "eventTime": "2026-09-16T12:00:00Z",
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "CreateAccessKey",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "198.51.100.50",
+    "userAgent": "aws-cli/2.15.0",
+    "userIdentity.type": "IAMUser",
+    "userIdentity.principalId": "AIDASAMPLEUSER",
+    "userIdentity.arn": "arn:aws:iam::123456789012:user/Alice",
+    "userIdentity.accountId": "123456789012",
+    "userIdentity.userName": "Alice",
+    "cloud_provider": "AWS"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cloud_audit_json:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.identity.user.name": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "cloud_audit_json:user"
+      ],
+      "input_field_paths": [
+        "user"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_8b60237d3b974e9d",
+    "source_profile": {
+      "id": "srcprof.amazon web services.aws cloudtrail",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.cloud.audit_flow",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.cloud_audit_json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_8b60237d3b974e9d/evt_c19fd40b0cb34adf",
+    "sha256": "962c722840c44c8cad91b1e43852026bd8d81ba3661cf696ee45173986ddbbcb",
+    "byte_length": 496,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

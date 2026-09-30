@@ -1,0 +1,114 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_ba25946d69b6485e",
+  "raw_event_id": "raw_5c034ad9e63841a1",
+  "source_id": "src_1c29128021ef453f",
+  "evidence": {
+    "raw_event_id": "raw_5c034ad9e63841a1",
+    "payload": {
+      "uri": "file://intake/raw/raw_5c034ad9e63841a1.dat",
+      "sha256": "48c800d0f05494a2584b46d73a25822ad36a785ba9b4effa39eaadaa7924e886",
+      "byte_length": 318,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "48c800d0f05494a2584b46d73a25822ad36a785ba9b4effa39eaadaa7924e886",
+    "evidence_manifest_id": "evm_ecc69cd8d8ac402f"
+  },
+  "event": {
+    "time": "2026-09-16T18:34:45.484842+00:00",
+    "category": "system",
+    "type": "generic",
+    "class": "unclassified_event",
+    "action": "unknown",
+    "severity": 2,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.generic.json",
+      "format": "json",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Okta",
+      "product": "Okta Identity Cloud"
+    }
+  },
+  "unmapped_fields": {
+    "published": "2026-09-16T13:30:00.000Z",
+    "eventType": "user.authentication.verify",
+    "actor.alternateId": "dev@enterprise.com",
+    "actor.displayName": "Developer",
+    "client.ipAddress": "198.51.100.44",
+    "client.device": "Computer",
+    "outcome.result": "SUCCESS",
+    "displayMessage": "User MFA factor verification succeeded"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "json:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_0794e7f7c1b44806",
+    "source_profile": {
+      "id": "srcprof.okta.okta identity cloud",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.generic.json",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.json.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_0794e7f7c1b44806/evt_ba25946d69b6485e",
+    "sha256": "48c800d0f05494a2584b46d73a25822ad36a785ba9b4effa39eaadaa7924e886",
+    "byte_length": 318,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

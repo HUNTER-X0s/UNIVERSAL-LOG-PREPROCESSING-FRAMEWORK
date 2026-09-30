@@ -1,0 +1,131 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_6dc0dfaaf57449ef",
+  "raw_event_id": "raw_dd1d6daeca084dcb",
+  "source_id": "src_02bc696f819248aa",
+  "evidence": {
+    "raw_event_id": "raw_dd1d6daeca084dcb",
+    "payload": {
+      "uri": "file://intake/raw/raw_dd1d6daeca084dcb.dat",
+      "sha256": "b571647ff407612e98ced573fb92187c7bf14b41a67bd92c01aaef69b0def75f",
+      "byte_length": 119,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "b571647ff407612e98ced573fb92187c7bf14b41a67bd92c01aaef69b0def75f",
+    "evidence_manifest_id": "evm_2353950d12364dbe"
+  },
+  "event": {
+    "time": "2026-09-16T12:50:22+00:00",
+    "category": "system",
+    "type": "log",
+    "class": "system_syslog_event",
+    "action": "unknown",
+    "severity": 8,
+    "source": {},
+    "destination": {},
+    "network": {
+      "protocol": "UNKNOWN"
+    },
+    "device": {
+      "hostname": "edge-router-01"
+    },
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.syslog.rfc3164",
+      "format": "syslog_rfc3164",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "IETF",
+      "product": "RFC 3164 BSD Syslog"
+    }
+  },
+  "unmapped_fields": {
+    "pri": 34,
+    "facility": 4,
+    "app_name": "sshd",
+    "process_id": "9124",
+    "message": "Failed password for invalid user root from 198.51.100.89 port 41298 ssh2"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc3164:timestamp"
+      ],
+      "input_field_paths": [
+        "timestamp"
+      ]
+    },
+    "event.severity": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc3164:severity"
+      ],
+      "input_field_paths": [
+        "severity"
+      ]
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.device.hostname": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "syslog_rfc3164:hostname"
+      ],
+      "input_field_paths": [
+        "hostname"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_184bf8d9e9da4ea2",
+    "source_profile": {
+      "id": "srcprof.ietf.rfc 3164 bsd syslog",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.syslog.rfc3164",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.syslog_rfc3164.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_184bf8d9e9da4ea2/evt_6dc0dfaaf57449ef",
+    "sha256": "b571647ff407612e98ced573fb92187c7bf14b41a67bd92c01aaef69b0def75f",
+    "byte_length": 119,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

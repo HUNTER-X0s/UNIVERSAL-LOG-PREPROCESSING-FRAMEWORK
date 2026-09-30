@@ -1,0 +1,214 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "evt_6be8704cebf14c1d",
+  "raw_event_id": "raw_c21c9b664bbb441d",
+  "source_id": "src_50df063e35a7439f",
+  "evidence": {
+    "raw_event_id": "raw_c21c9b664bbb441d",
+    "payload": {
+      "uri": "file://intake/raw/raw_c21c9b664bbb441d.dat",
+      "sha256": "f77b28e61180f69bc552d6007346d96672dac3f1149b9e8fbdc38fbe5203603f",
+      "byte_length": 258,
+      "media_type": "text/plain",
+      "encoding": "utf-8",
+      "retention_class": "standard"
+    },
+    "payload_sha256": "f77b28e61180f69bc552d6007346d96672dac3f1149b9e8fbdc38fbe5203603f",
+    "evidence_manifest_id": "evm_5aa25bc08ab7462e"
+  },
+  "event": {
+    "time": "2026-09-16T10:15:30+00:00",
+    "category": "security",
+    "type": "firewall",
+    "class": "perimeter_firewall_event",
+    "action": "deny",
+    "severity": 0,
+    "source": {
+      "ip": "198.51.100.25",
+      "port": 49152
+    },
+    "destination": {
+      "ip": "203.0.113.10",
+      "port": 22
+    },
+    "network": {
+      "protocol": "TCP",
+      "bytes": 128
+    },
+    "device": {},
+    "identity": {},
+    "metadata": {
+      "parser_id": "parser.paloalto.panos",
+      "format": "panos_csv",
+      "ingest_timestamp": "2026-09-16T14:00:00+00:00",
+      "vendor": "Palo Alto Networks",
+      "product": "PA-Series Firewall"
+    }
+  },
+  "unmapped_fields": {
+    "col_0": "1",
+    "col_5": "1",
+    "col_21": "1",
+    "receive_time": "2026/09/16 10:15:30",
+    "serial_number": "001234567890",
+    "type": "TRAFFIC",
+    "subtype": "drop",
+    "generate_time": "2026/09/16 10:15:30",
+    "nat_src_ip": "0.0.0.0",
+    "nat_dst_ip": "0.0.0.0",
+    "rule_name": "Perimeter-Drop",
+    "app": "ssh",
+    "vsys": "vsys1",
+    "src_zone": "trust",
+    "dst_zone": "untrust",
+    "inbound_iface": "ethernet1/1",
+    "outbound_iface": "ethernet1/2",
+    "log_action": "default",
+    "session_id": "1001",
+    "repeat_count": "1",
+    "nat_src_port": "0",
+    "nat_dst_port": "0",
+    "flags": "0x0",
+    "bytes_sent": "64",
+    "bytes_received": "64",
+    "packets": "2",
+    "start_time": "2026/09/16 10:15:30",
+    "elapsed_time": "0",
+    "category": "any"
+  },
+  "field_provenance": {
+    "event.time": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.category": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.type": {
+      "origin": "inferred",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0
+    },
+    "event.action": {
+      "origin": "derived",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:action"
+      ],
+      "input_field_paths": [
+        "action"
+      ]
+    },
+    "event.source.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:src_ip"
+      ],
+      "input_field_paths": [
+        "src_ip"
+      ]
+    },
+    "event.source.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:src_port"
+      ],
+      "input_field_paths": [
+        "src_port"
+      ]
+    },
+    "event.destination.ip": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:dst_ip"
+      ],
+      "input_field_paths": [
+        "dst_ip"
+      ]
+    },
+    "event.destination.port": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:dst_port"
+      ],
+      "input_field_paths": [
+        "dst_port"
+      ]
+    },
+    "event.network.protocol": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:protocol"
+      ],
+      "input_field_paths": [
+        "protocol"
+      ]
+    },
+    "event.network.bytes": {
+      "origin": "observed",
+      "transformation_id": "ulpf.normalization.canonical:1.0.0",
+      "rule_version": "1.0.0",
+      "confidence": 1.0,
+      "raw_paths": [
+        "panos_csv:bytes"
+      ],
+      "input_field_paths": [
+        "bytes"
+      ]
+    }
+  },
+  "processing": {
+    "processing_run_id": "run_a7d633e7a8e743ec",
+    "source_profile": {
+      "id": "srcprof.palo alto networks.pa-series firewall",
+      "version": "1.0.0"
+    },
+    "parser": {
+      "id": "parser.paloalto.panos",
+      "version": "1.0.0"
+    },
+    "mapping": {
+      "id": "map.panos_csv.uce_v1",
+      "version": "1.0.0"
+    },
+    "schema": {
+      "id": "https://ulpf.local/contracts/jsonschema/normalized-event.v1.schema.json",
+      "version": "1.0.0"
+    },
+    "processed_at": "2026-09-16T14:00:00+00:00"
+  },
+  "lineage": {
+    "uri": "ulpf://lineage/run_a7d633e7a8e743ec/evt_6be8704cebf14c1d",
+    "sha256": "f77b28e61180f69bc552d6007346d96672dac3f1149b9e8fbdc38fbe5203603f",
+    "byte_length": 258,
+    "media_type": "application/json"
+  },
+  "output_projections": [
+    "ulpf",
+    "json",
+    "ndjson"
+  ]
+}

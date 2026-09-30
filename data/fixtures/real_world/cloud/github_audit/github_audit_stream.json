@@ -1,0 +1,33 @@
+[
+  {
+    "@timestamp": 1789564800000,
+    "action": "repo.create",
+    "actor": "devops-lead",
+    "actor_id": 481920,
+    "actor_is_bot": false,
+    "business": "Global-SecOps",
+    "org": "Core-Infrastructure",
+    "org_id": 892100,
+    "repo": "Core-Infrastructure/pki-certificates-vault",
+    "repo_id": 99482104,
+    "visibility": "private",
+    "operation_type": "create",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "actor_ip": "198.51.100.12",
+    "request_id": "req-991204-gh-01"
+  },
+  {
+    "@timestamp": 1789565100000,
+    "action": "secret_scanning_alert.create",
+    "actor": "github-secret-scanner",
+    "actor_is_bot": true,
+    "business": "Global-SecOps",
+    "org": "Core-Infrastructure",
+    "repo": "Core-Infrastructure/pki-certificates-vault",
+    "token_type": "aws_access_key_id",
+    "operation_type": "create",
+    "secret_type": "AWS IAM Key",
+    "resolution": "unresolved",
+    "request_id": "req-991205-gh-02"
+  }
+]

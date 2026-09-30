@@ -1,0 +1,1 @@
+{"timestamp":"2026-09-16T12:00:01.000123+0000","flow_id":192837465,"event_type":"alert","src_ip":"198.51.100.105","src_port":41230,"dest_ip":"10.0.1.20","dest_port":80,"proto":"TCP","alert":{"action":"blocked","gid":1,"signature_id":2010935,"rev":3,"signature":"ET SCAN Potential SSH Brute Force","category":"Attempted Information Leak","severity":2}}

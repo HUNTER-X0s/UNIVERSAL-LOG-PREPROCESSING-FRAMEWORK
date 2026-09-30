@@ -57,13 +57,13 @@
       "gate": 9,
       "description": "Operations Console Integrity (apps/web/index.html)",
       "status": "PASS",
-      "detail": "Console verified: 68993 bytes, 12 views, judge modal \u2014 SHA256: 4a603efca34e785d..."
+      "detail": "Console verified: 96734 bytes, 12 views, judge modal \u2014 SHA256: 09c272a259fa0a7a..."
     },
     {
       "gate": 10,
       "description": "Git Repository Status Check",
       "status": "PASS",
-      "detail": "WARNING (non-blocking): 4 changed files outside phase19: ['M reports/phase15/continuous_assurance_phase15_fast.json', ' M reports/phase16/SIH_FINAL_DEMO_REPORT.md', ' M reports/phase18/PHASE18_FINAL_RELEASE_CERTIFICATE.md']"
+      "detail": "WARNING (non-blocking): 11 changed files outside phase19: ['M apps/web/index.html', ' M reports/phase15/continuous_assurance_phase15_fast.json', ' M reports/phase16/SIH_FINAL_DEMO_REPORT.md']"
     }
   ],
   "gates_passed": 10,

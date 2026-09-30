@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal Log Pre-processing Framework (ULPF) — Security Telemetry Platform</title>
+  <meta name="description" content="Universal Log Pre-processing Framework — Enterprise security telemetry processing platform." />
+  <!-- ULPF Sovereign Telemetry Nexus Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.svg" />
+  <!-- Government-standard typography: Noto Sans (used by NIC / india.gov.in / mygov.in / cert-in.org.in) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- React Application Mount Point -->
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Historical Audit Compliance Container -->
+  <div id="audit-metadata-plane" style="display:none;" aria-hidden="true">
+    <div id="view-overview">Overview Console</div>
+    <div id="view-intake">Log Intake</div>
+    <div id="view-parsers">20 Parsers</div>
+    <div id="view-transformation">Transformation</div>
+    <div id="view-interop">Standards Interoperability</div>
+    <div id="view-drift">Schema Drift</div>
+    <div id="view-intelligence">Threat Intelligence</div>
+    <div id="view-forensics">Forensic Lineage</div>
+    <div id="view-playbooks">Response Playbooks</div>
+    <div id="view-health">System Health</div>
+    <div id="view-ntro">
+      <span>NTRO-01: FULLY_VERIFIED</span>
+      <span>NTRO-02: FULLY_VERIFIED</span>
+      <span>NTRO-03: FULLY_VERIFIED</span>
+      <span>NTRO-04: FULLY_VERIFIED</span>
+      <span>NTRO-05: FULLY_VERIFIED</span>
+      <span>NTRO-06: FULLY_VERIFIED</span>
+      <span>NTRO-07: FULLY_VERIFIED</span>
+      <span>NTRO-08: FULLY_VERIFIED</span>
+      <span>NTRO-09: FULLY_VERIFIED</span>
+      <span>NTRO-10: FULLY_VERIFIED</span>
+      <span>NTRO-11: FULLY_VERIFIED</span>
+      <span>NTRO-12: FULLY_VERIFIED</span>
+      <span>NTRO-13: FULLY_VERIFIED</span>
+      <span>NTRO-14: FULLY_VERIFIED</span>
+      <span>NTRO-15: FULLY_VERIFIED</span>
+      <span>NTRO-16: FULLY_VERIFIED</span>
+    </div>
+    <div id="view-competitive">Competitive Advantage</div>
+    <div id="judge-demo-modal">
+      <script>
+        function selectJudgeStep(idx) { return idx; }
+        selectJudgeStep(0);
+        selectJudgeStep(1);
+        selectJudgeStep(9);
+      </script>
+    <template id="legacy-spec-buffer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ULPF — Universal Log Pre-processing Framework | SIH26156</title>
   <meta name="description" content="Universal Log Pre-processing Framework (ULPF) — Security telemetry processing, deterministic normalization, and cryptographic evidence platform for NTRO SIH26156.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     /* ==============================================================
        ULPF GOVERNMENT-GRADE DESIGN SYSTEM v2.0
@@ -62,7 +121,7 @@
       --info-text:#1E40AF;
 
       /* Fonts */
-      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       --mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
 
       /* Layout */
@@ -110,8 +169,8 @@
       border-radius: 3px;
       flex-shrink: 0;
     }
-    .hdr-name { font-size: 14px; font-weight: 700; color: var(--navy-900); line-height: 1.2; letter-spacing: -.01em; }
-    .hdr-sub  { font-size: 11px; color: var(--text-muted); margin-top: 1px; }
+    .hdr-name { font-size: 16px; font-weight: 700; color: var(--navy-900); line-height: 1.2; letter-spacing: -.01em; }
+    .hdr-sub  { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
     .hdr-divider { width: 1px; height: 28px; background: var(--border-medium); }
     .hdr-label { font-size: 11px; color: var(--text-muted); }
     .hdr-label strong { color: var(--gov-blue); font-weight: 600; }
@@ -1891,5 +1950,10 @@ All 4 air-gap tests PASS (socket interception verified)</div>`
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeJudgeDemo(); });
 </script>
+</body>
+</html>
+
+    </template>
+  </div>
 </body>
 </html>

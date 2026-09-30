@@ -34,14 +34,15 @@ from ulpf_parser_runtime.models import (
 )
 from ulpf_parser_runtime.parsers.base import BaseParser
 
-# Regex for Snort fast alert header
+# Regex for Snort fast alert header (supports Snort 2 and Snort 3 fast alerts)
 RE_SNORT_FAST = re.compile(
     r"^\[\*\*\]\s+\[(\d+):(\d+):(\d+)\]\s+(.*?)\s+\[\*\*\]"
     r"(?:\s+\[Classification:\s+([^\]]+)\])?"
     r"(?:\s+\[Priority:\s+(\d+)\])?"
-    r"\s+(\d{2}/\d{2}-\d{2}:\d{2}:\d{2}(?:\.\d+)?)"
+    r"(?:\s+(\d{2}/\d{2}-\d{2}:\d{2}:\d{2}(?:\.\d+)?))?"
+    r"(?:\s+\{([A-Za-z0-9]+)\})?"
     r"\s+([^\s]+)\s+->\s+([^\s]+)"
-    r"(?:\s+([A-Za-z0-9]+))?",
+    r"(?:\s+\{?([A-Za-z0-9]+)\}?)?",
     re.DOTALL,
 )
 
@@ -102,9 +103,10 @@ class SnortFastParser(BaseParser):
                 duration_ms=self.measure_duration(t0),
             )
 
-        gid, sid, rev, sig, classification, priority, ts, src_token, dst_token, proto = (
+        gid, sid, rev, sig, classification, priority, ts, proto_pre, src_token, dst_token, proto_post = (
             match.groups()
         )
+        proto = proto_pre or proto_post
 
         src_ip, src_port = _split_host_port(src_token)
         dst_ip, dst_port = _split_host_port(dst_token)
@@ -116,7 +118,6 @@ class SnortFastParser(BaseParser):
             "signature": self.make_field(
                 "signature", sig.strip(), Origin.OBSERVED, raw_locator="snort:sig"
             ),
-            "timestamp": self.make_field("timestamp", ts, Origin.OBSERVED, raw_locator="snort:ts"),
             "src_ip": self.make_field(
                 "src_ip", src_ip, Origin.OBSERVED, raw_locator="snort:src_ip"
             ),
@@ -125,6 +126,8 @@ class SnortFastParser(BaseParser):
             ),
         }
 
+        if ts:
+            fields["timestamp"] = self.make_field("timestamp", ts, Origin.OBSERVED, raw_locator="snort:ts")
         if classification:
             fields["classification"] = self.make_field(
                 "classification", classification.strip(), Origin.OBSERVED
