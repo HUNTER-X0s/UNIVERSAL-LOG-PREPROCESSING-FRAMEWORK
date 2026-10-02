@@ -167,6 +167,14 @@ The ULPF web application is built using modern **React 18**, **TypeScript**, **T
    RUN_ULPF.bat
    ```
 
+> [!TIP]
+> **Official Release v1.0.0 Assets & Offline Binaries:**
+> If you require offline video files or real-world evaluation datasets without generating them locally, download the official release assets directly from GitHub:
+> - 🎬 **Demo Video (MP4, 318 MB):** [Download Demo_video.mp4](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/Demo_video.mp4) (or stream on [YouTube](https://youtu.be/A_AA40wPyMQ))
+> - 📦 **Multi-Format Datasets (ZIP, 210 MB):** [Download ulpf_multi_format_datasets.zip](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/ulpf_multi_format_datasets.zip) (extracts to 1.9 GB of Zeek/Zed connection, DNS, HTTP, and SSL telemetry)
+> - 📑 **Presentation Documents:** [SIH-2026-ULPF.pdf](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pdf) · [SIH-2026-ULPF.pptx](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pptx)
+> - 🏷️ **GitHub Release Page:** [ULPF v1.0.0 Release](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/tag/v1.0.0)
+
 ---
 
 ### 2.2 Default Credentials & RBAC Roles

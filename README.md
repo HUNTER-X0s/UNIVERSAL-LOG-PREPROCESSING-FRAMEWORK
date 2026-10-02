@@ -12,6 +12,13 @@
 [![Parsers](https://img.shields.io/badge/Parsers-20%20Deterministic%20Engines-7C3AED?style=flat-square)](packages/parser-runtime/)
 [![Air-Gap](https://img.shields.io/badge/Air--Gap-100%25%20Offline%20Verified-DC2626?style=flat-square)](packages/security/)
 [![Standards](https://img.shields.io/badge/Standards-OCSF%201.1%20%7C%20OTel%201.0%20%7C%20ECS%208.11-F59E0B?style=flat-square)](packages/normalization/)
+[![Release](https://img.shields.io/badge/Release-v1.0.0%20Official-blue?style=flat-square&logo=github)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/tag/v1.0.0)
+
+> 🚀 **Official Production Release Assets (v1.0.0)**:
+> - 🎬 **Live Demo**: [Watch on YouTube (1080p)](https://youtu.be/A_AA40wPyMQ) · [Download Demo Video (318 MB MP4)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/Demo_video.mp4)
+> - 📦 **Real-World Datasets**: [Download Multi-Format Zed/Zeek Datasets (1.9 GB uncompressed, 210 MB ZIP)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/ulpf_multi_format_datasets.zip)
+> - 📑 **SIH 2026 Presentation**: [Download PDF (1.6 MB)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pdf) · [Download PPTX (4.2 MB)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pptx)
+> - 📖 **Operations Manual**: [Comprehensive Frontend User Guide](FRONTEND_USER_GUIDE.md)
 
 ---
 
