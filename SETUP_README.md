@@ -371,7 +371,7 @@ python scripts/run_final_sih_demo.py
 
 | File | Description |
 |---|---|
-| [`docs/JUDGES_FRONTEND_USER_GUIDE.md`](docs/JUDGES_FRONTEND_USER_GUIDE.md) | **Comprehensive Frontend & Judge Manual** covering all 32 panels, workflows, and evaluation journeys |
+| [`FRONTEND_USER_GUIDE.md`](FRONTEND_USER_GUIDE.md) | **Comprehensive Frontend Operations & User Guide** covering all 32 panels, workflows, and evaluation journeys |
 | [`ARCHITECTURE_DOCUMENT.pdf`](ARCHITECTURE_DOCUMENT.pdf) | 2-page architecture overview with flow diagrams |
 | [`SETUP_README.md`](SETUP_README.md) | This file |
 
