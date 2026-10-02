@@ -1,0 +1,1 @@
+type=EXECVE msg=audit(1789560000.500:102): argc=3 a0="cat" a1="/etc/shadow" a2="--quiet"

@@ -1,0 +1,1 @@
+LEEF:2.0|IBM|CustomApp|4.0|AuthFailed|src=198.51.100.72	dst=10.0.0.8	srcPort=52110	dstPort=22	usrName=admin	proto=TCP	cat=Authentication

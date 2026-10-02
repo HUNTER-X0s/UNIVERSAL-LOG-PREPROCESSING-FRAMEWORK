@@ -39,6 +39,7 @@ artifacts/
 models/
 *.log
 !data/fixtures/**/*.log
+!data/reference/**/*.log
 
 # Editor and operating-system state
 .idea/

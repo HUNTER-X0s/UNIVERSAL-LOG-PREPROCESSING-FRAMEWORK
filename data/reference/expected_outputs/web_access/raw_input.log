@@ -1,0 +1,1 @@
+198.51.100.44 - john.doe [16/Sep/2026:12:34:56 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 452 "https://portal.enterprise.com" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"

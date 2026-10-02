@@ -1,0 +1,1 @@
+CEF:0|SecurityCompany|ThreatDetector|3.2.1|PORT_SCAN|TCP Port Scan Detected|7|src=198.51.100.60 dst=10.0.0.15 spt=51234 dpt=80 proto=TCP act=blocked msg=High rate of SYN packets

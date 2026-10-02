@@ -1,0 +1,1 @@
+%ASA-4-106023: Deny tcp src outside:198.51.100.80/51234 dst inside:10.0.0.5/80 by access_group "outside_access_in" [0x0, 0x0]
