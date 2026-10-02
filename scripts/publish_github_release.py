@@ -164,6 +164,7 @@ def main():
     assets = [
         (ROOT_DIR / "Demo video.mp4", "Demo_video.mp4", "video/mp4"),
         (SCRATCH_DIR / "ulpf_zed_datasets.zip", "ulpf_multi_format_datasets.zip", "application/zip"),
+        (SCRATCH_DIR / "ulpf_benchmark_datasets.zip", "ulpf_benchmark_datasets.zip", "application/zip"),
         (ROOT_DIR / "SIH-2026-ULPF.pdf", "SIH-2026-ULPF.pdf", "application/pdf"),
         (ROOT_DIR / "SIH-2026-ULPF.pptx", "SIH-2026-ULPF.pptx", "application/vnd.openxmlformats-officedocument.presentationml.presentation"),
     ]

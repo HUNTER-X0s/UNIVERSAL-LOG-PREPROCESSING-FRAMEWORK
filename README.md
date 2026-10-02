@@ -16,7 +16,8 @@
 
 > 🚀 **Official Production Release Assets (v1.0.0)**:
 > - 🎬 **Live Demo**: [Watch on YouTube (1080p)](https://youtu.be/A_AA40wPyMQ) · [Download Demo Video (318 MB MP4)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/Demo_video.mp4)
-> - 📦 **Real-World Datasets**: [Download Multi-Format Zed/Zeek Datasets (1.9 GB uncompressed, 210 MB ZIP)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/ulpf_multi_format_datasets.zip)
+> - 📦 **Multi-Format Telemetry Datasets**: [Download Zed/Zeek Multi-Format Logs (1.9 GB uncompressed, 210 MB ZIP)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/ulpf_multi_format_datasets.zip)
+> - 📊 **SecRepo Benchmark Datasets**: [Download Benchmark Datasets (4.2 GB uncompressed, 634 MB ZIP)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/ulpf_benchmark_datasets.zip)
 > - 📑 **SIH 2026 Presentation**: [Download PDF (1.6 MB)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pdf) · [Download PPTX (4.2 MB)](https://github.com/HUNTER-X0s/UNIVERSAL-LOG-PREPROCESSING-FRAMEWORK/releases/download/v1.0.0/SIH-2026-ULPF.pptx)
 > - 📖 **Operations Manual**: [Comprehensive Frontend User Guide](FRONTEND_USER_GUIDE.md)
 
